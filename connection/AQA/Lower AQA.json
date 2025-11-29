@@ -103,7 +103,7 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between AQA Save Station East Central and Neo-Draygon Access",
+      "description": "Horizontal Door connection between AQA Save Station East Central and Meta Draygon-X Access",
       "direction": "Bidirectional",
       "nodes": [
         {
@@ -119,7 +119,7 @@
           "area": "AQA",
           "subarea": "Lower AQA",
           "roomid": 20,
-          "roomName": "Neo-Draygon Access",
+          "roomName": "Meta Draygon-X Access",
           "nodeid": 179,
           "nodeName": "East-Upper Door",
           "position": "right"
@@ -678,14 +678,14 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between Neo-Draygon Access and Sunken Ruins",
+      "description": "Horizontal Door connection between Meta Draygon-X Access and Sunken Ruins",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "AQA",
           "subarea": "Lower AQA",
           "roomid": 20,
-          "roomName": "Neo-Draygon Access",
+          "roomName": "Meta Draygon-X Access",
           "nodeid": 178,
           "nodeName": "West-Upper Door",
           "position": "left"
@@ -703,14 +703,14 @@
     },
     {
       "connectionType": "VerticalDoor",
-      "description": "Vertical Door connection between Neo-Draygon Access and Neo-Draygon Arena",
+      "description": "Vertical Door connection between Meta Draygon-X Access and Meta Draygon-X Arena",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "AQA",
           "subarea": "Lower AQA",
           "roomid": 20,
-          "roomName": "Neo-Draygon Access",
+          "roomName": "Meta Draygon-X Access",
           "nodeid": 180,
           "nodeName": "South Door",
           "position": "left"
@@ -719,7 +719,7 @@
           "area": "AQA",
           "subarea": "Lower AQA",
           "roomid": 21,
-          "roomName": "Neo-Draygon Arena",
+          "roomName": "Meta Draygon-X Arena",
           "nodeid": 181,
           "nodeName": "North-East Door",
           "position": "right"
@@ -728,14 +728,14 @@
     },
     {
       "connectionType": "VerticalDoor",
-      "description": "Vertical Door connection between Neo-Draygon Arena and Speedbooster Lv. 2 Tutorial Room",
+      "description": "Vertical Door connection between Meta Draygon-X Arena and Speedbooster Lv. 2 Tutorial Room",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "AQA",
           "subarea": "Lower AQA",
           "roomid": 21,
-          "roomName": "Neo-Draygon Arena",
+          "roomName": "Meta Draygon-X Arena",
           "nodeid": 182,
           "nodeName": "South Door",
           "position": "right"
