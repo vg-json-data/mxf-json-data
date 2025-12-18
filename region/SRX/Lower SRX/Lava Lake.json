@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 292,
+  "id": 291,
   "name": "Lava Lake",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -8,86 +8,64 @@
   "roomAddress": "0x7A000",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 90,
-      "name": "Item",
+      "id": 63,
+      "idMinorItemPlm": "0x15",
+      "name": "Missile Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Missile Tank 3",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": "Left-most floating platform"
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7D6E2",
+      "mapTileX": 24,
+      "mapTileY": 16
     },
     {
-      "id": 851,
+      "id": 810,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "top",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 852,
+      "id": 811,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 853,
+      "id": 812,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

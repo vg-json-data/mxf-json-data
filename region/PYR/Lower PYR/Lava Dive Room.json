@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 245,
+  "id": 244,
   "name": "Lava Dive Room",
   "area": "PYR",
   "subarea": "Lower PYR",
@@ -8,51 +8,40 @@
   "roomAddress": "0x7A300",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 736,
+      "id": 695,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 737,
+      "id": 696,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

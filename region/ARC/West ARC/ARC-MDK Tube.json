@@ -8,51 +8,40 @@
   "roomAddress": "0x0",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 375,
+      "id": 336,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 376,
+      "id": 337,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

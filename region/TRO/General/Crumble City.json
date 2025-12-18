@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 326,
+  "id": 325,
   "name": "Crumble City",
   "area": "TRO",
   "subarea": "General",
@@ -8,104 +8,75 @@
   "roomAddress": "0x78E00",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 105,
-      "name": "Item",
+      "id": 72,
+      "idMinorItemPlm": "0x26",
+      "name": "Power Bomb Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Missile Tank 32",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7D7EA",
+      "mapTileX": 25,
+      "mapTileY": 16
     },
     {
-      "id": 106,
-      "name": "Item",
+      "id": 73,
+      "idMinorItemPlm": "0x25",
+      "name": "Missile Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Power Bomb Tank 9",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7D7F0",
+      "mapTileX": 24,
+      "mapTileY": 15
     },
     {
-      "id": 936,
+      "id": 895,
       "name": "East-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "top",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 937,
+      "id": 896,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 938,
+      "id": 897,
       "name": "East-South Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "bottom",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

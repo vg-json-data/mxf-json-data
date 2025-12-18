@@ -8,104 +8,75 @@
   "roomAddress": "0x0",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 49,
-      "name": "Item",
+      "id": 34,
+      "idMinorItemPlm": "0x03",
+      "name": "Energy Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Energy Tank 7",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "ETank",
+      "nodeAddress": "0x7D3F0",
+      "mapTileX": 29,
+      "mapTileY": 11
     },
     {
-      "id": 50,
-      "name": "Item",
+      "id": 35,
+      "idMinorItemPlm": "0x04",
+      "name": "Energy Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Energy Tank 14",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "ETank",
+      "nodeAddress": "0x7D3F6",
+      "mapTileX": 31,
+      "mapTileY": 11
     },
     {
-      "id": 552,
+      "id": 513,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 553,
+      "id": 514,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 554,
+      "id": 515,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "bottom",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

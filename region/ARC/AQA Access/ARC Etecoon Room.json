@@ -8,52 +8,27 @@
   "roomAddress": "0x79500",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 21,
-      "name": "Item",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "nodeItem": "Etecoon 4",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
-    },
-    {
-      "id": 295,
+      "id": 256,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

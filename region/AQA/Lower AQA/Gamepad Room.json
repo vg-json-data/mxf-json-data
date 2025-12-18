@@ -8,52 +8,38 @@
   "roomAddress": "0x7AC00",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 5,
-      "name": "Item",
+      "id": 4,
+      "idMinorItemPlm": "0x4A",
+      "name": "Hidden Missile Tank",
       "nodeType": "item",
-      "nodeSubType": "visible",
-      "nodeItem": "Missile Tank 43",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": "Shoot the top button on the right side of the controller"
+      "nodeSubType": "hidden",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7DDF4",
+      "mapTileX": 26,
+      "mapTileY": 16
     },
     {
-      "id": 172,
+      "id": 133,
       "name": "West-Upper Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

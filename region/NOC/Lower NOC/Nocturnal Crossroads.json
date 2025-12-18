@@ -8,121 +8,77 @@
   "roomAddress": "0x7AE00",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 60,
-      "name": "Item",
+      "id": 42,
+      "idMinorItemPlm": "0x6A",
+      "name": "Missile Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Missile Tank 27",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": "Use Morph Ball to get into the wall directly to the left of the door in the middle of the room"
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7E2A0",
+      "mapTileX": 22,
+      "mapTileY": 13
     },
     {
-      "id": 61,
-      "name": "Item",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "nodeItem": "Aux Power Cell 2",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": "Jump through the wall at the bottom-right of the room"
-    },
-    {
-      "id": 647,
+      "id": 608,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 648,
+      "id": 609,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 649,
+      "id": 610,
       "name": "East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 650,
+      "id": 611,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

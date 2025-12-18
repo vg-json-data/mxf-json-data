@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 335,
+  "id": 334,
   "name": "Owtch Office",
   "area": "TRO",
   "subarea": "General",
@@ -8,52 +8,38 @@
   "roomAddress": "0x79200",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 112,
-      "name": "Item",
+      "id": 78,
+      "idMinorItemPlm": "0x28",
+      "name": "Hidden Power Bomb Tank",
       "nodeType": "item",
-      "nodeSubType": "visible",
-      "nodeItem": "Power Bomb Tank 23",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeSubType": "hidden",
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7D818",
+      "mapTileX": 25,
+      "mapTileY": 20
     },
     {
-      "id": 971,
+      "id": 930,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

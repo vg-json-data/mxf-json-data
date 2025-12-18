@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 272,
+  "id": 271,
   "name": "Big Red Maintenance Storage",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -8,104 +8,75 @@
   "roomAddress": "0x79300",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 81,
-      "name": "Item",
+      "id": 54,
+      "idMinorItemPlm": "0x36",
+      "name": "Missile Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Missile Tank 16",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7DA8E",
+      "mapTileX": 34,
+      "mapTileY": 13
     },
     {
-      "id": 82,
-      "name": "Item",
+      "id": 55,
+      "idMinorItemPlm": "0x37",
+      "name": "Missile Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Missile Tank 19",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7DA94",
+      "mapTileX": 34,
+      "mapTileY": 14
     },
     {
-      "id": 794,
+      "id": 753,
       "name": "North-East Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 795,
+      "id": 754,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 796,
+      "id": 755,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

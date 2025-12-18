@@ -8,52 +8,38 @@
   "roomAddress": "0x0",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 52,
-      "name": "Item",
+      "id": 37,
+      "idMinorItemPlm": "0x01",
+      "name": "Power Bomb Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Power Bomb Tank 4",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7D2FC",
+      "mapTileX": 23,
+      "mapTileY": 18
     },
     {
-      "id": 580,
+      "id": 541,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

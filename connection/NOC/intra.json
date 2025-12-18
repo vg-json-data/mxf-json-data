@@ -11,7 +11,7 @@
           "subarea": "Lower NOC",
           "roomid": 190,
           "roomName": "Ice-X Shaft",
-          "nodeid": 609,
+          "nodeid": 570,
           "nodeName": "North Door",
           "position": "top"
         },
@@ -20,7 +20,7 @@
           "subarea": "Turbo Tubes",
           "roomid": 212,
           "roomName": "East Turbo Tube",
-          "nodeid": 664,
+          "nodeid": 625,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -36,7 +36,7 @@
           "subarea": "Lower NOC",
           "roomid": 191,
           "roomName": "Lower Crane Pit",
-          "nodeid": 613,
+          "nodeid": 574,
           "nodeName": "North Door",
           "position": "top"
         },
@@ -45,7 +45,7 @@
           "subarea": "Turbo Tubes",
           "roomid": 213,
           "roomName": "West Turbo Tube",
-          "nodeid": 666,
+          "nodeid": 627,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -61,7 +61,7 @@
           "subarea": "Lower NOC",
           "roomid": 193,
           "roomName": "Nightmare Arena Access",
-          "nodeid": 618,
+          "nodeid": 579,
           "nodeName": "North Door",
           "position": "top"
         },
@@ -70,7 +70,7 @@
           "subarea": "Upper NOC",
           "roomid": 226,
           "roomName": "NOC Data Room",
-          "nodeid": 697,
+          "nodeid": 658,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -86,7 +86,7 @@
           "subarea": "Lower NOC",
           "roomid": 196,
           "roomName": "NOC Entrance Lobby South",
-          "nodeid": 626,
+          "nodeid": 587,
           "nodeName": "West-North Door",
           "position": "top"
         },
@@ -95,7 +95,7 @@
           "subarea": "Turbo Tubes",
           "roomid": 211,
           "roomName": "Central Turbo Tube",
-          "nodeid": 662,
+          "nodeid": 623,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -111,7 +111,7 @@
           "subarea": "Turbo Tubes",
           "roomid": 211,
           "roomName": "Central Turbo Tube",
-          "nodeid": 661,
+          "nodeid": 622,
           "nodeName": "North Door",
           "position": "top"
         },
@@ -120,7 +120,7 @@
           "subarea": "Upper NOC",
           "roomid": 215,
           "roomName": "Central Turbo Tube Access",
-          "nodeid": 670,
+          "nodeid": 631,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -136,7 +136,7 @@
           "subarea": "Turbo Tubes",
           "roomid": 212,
           "roomName": "East Turbo Tube",
-          "nodeid": 663,
+          "nodeid": 624,
           "nodeName": "North Door",
           "position": "top"
         },
@@ -145,7 +145,7 @@
           "subarea": "Upper NOC",
           "roomid": 216,
           "roomName": "East Turbo Tube Access",
-          "nodeid": 673,
+          "nodeid": 634,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -161,16 +161,16 @@
           "subarea": "Turbo Tubes",
           "roomid": 213,
           "roomName": "West Turbo Tube",
-          "nodeid": 665,
+          "nodeid": 626,
           "nodeName": "North Door",
           "position": "top"
         },
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 237,
+          "roomid": 236,
           "roomName": "West Turbo Tube Access",
-          "nodeid": 722,
+          "nodeid": 681,
           "nodeName": "South Door",
           "position": "bottom"
         }

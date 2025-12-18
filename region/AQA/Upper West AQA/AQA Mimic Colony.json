@@ -8,52 +8,38 @@
   "roomAddress": "0x79A00",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 15,
-      "name": "Item",
+      "id": 10,
+      "idMinorItemPlm": "0x43",
+      "name": "Hidden Missile Tank",
       "nodeType": "item",
-      "nodeSubType": "visible",
-      "nodeItem": "Missile Tank 23",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeSubType": "hidden",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7DD0E",
+      "mapTileX": 28,
+      "mapTileY": 9
     },
     {
-      "id": 238,
+      "id": 199,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

@@ -8,52 +8,38 @@
   "roomAddress": "0x7A200",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 59,
-      "name": "Item",
+      "id": 41,
+      "idMinorItemPlm": "0x66",
+      "name": "Energy Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Energy Tank 5",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "ETank",
+      "nodeAddress": "0x7E1FE",
+      "mapTileX": 36,
+      "mapTileY": 17
     },
     {
-      "id": 637,
+      "id": 598,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

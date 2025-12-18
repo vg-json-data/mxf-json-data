@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 261,
+  "id": 260,
   "name": "Hot Potato",
   "area": "PYR",
   "subarea": "Neo-Crocomire\u0027s Lair",
@@ -8,69 +8,51 @@
   "roomAddress": "0x79B00",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 77,
-      "name": "Item",
+      "id": 52,
+      "idMinorItemPlm": "0x3A",
+      "name": "Energy Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Energy Tank 3",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "ETank",
+      "nodeAddress": "0x7DB22",
+      "mapTileX": 40,
+      "mapTileY": 16
     },
     {
-      "id": 771,
+      "id": 730,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 772,
+      "id": 731,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

@@ -1818,8 +1818,7 @@
           "id",
           "name",
           "nodeType",
-          "nodeSubType",
-          "mapTileMask"
+          "nodeSubType"
         ],
         "additionalProperties": false,
         "properties": {
@@ -1830,6 +1829,24 @@
             "examples": [
               1
             ]
+          },
+          "idMinorItemPlm": {
+            "type": "string",
+            "title": "Minor Item PLM ID",
+            "description": "The PLM (Point LoaD Message) identifier for this item",
+            "pattern": "^0x[0-9A-Fa-f]+$"
+          },
+          "mapTileX": {
+            "type": "integer",
+            "title": "Map Tile X Coordinate",
+            "description": "X coordinate of this item on the map",
+            "minimum": 0
+          },
+          "mapTileY": {
+            "type": "integer",
+            "title": "Map Tile Y Coordinate", 
+            "description": "Y coordinate of this item on the map",
+            "minimum": 0
           },
           "name": {
             "type": "string",

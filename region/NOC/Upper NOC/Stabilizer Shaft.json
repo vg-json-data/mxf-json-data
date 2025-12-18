@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 235,
+  "id": 234,
   "name": "Stabilizer Shaft",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -8,69 +8,51 @@
   "roomAddress": "0x79200",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 69,
-      "name": "Item",
+      "id": 48,
+      "idMinorItemPlm": "0x61",
+      "name": "Power Bomb Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
-      "nodeItem": "Power Bomb Tank 13",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7E178",
+      "mapTileX": 38,
+      "mapTileY": 9
     },
     {
-      "id": 716,
+      "id": 675,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     },
     {
-      "id": 717,
+      "id": 676,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],

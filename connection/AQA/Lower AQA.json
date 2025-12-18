@@ -11,7 +11,7 @@
           "subarea": "Lower AQA",
           "roomid": 1,
           "roomName": "AQA Auxiliary Room Access",
-          "nodeid": 126,
+          "nodeid": 87,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -20,7 +20,7 @@
           "subarea": "Lower AQA",
           "roomid": 27,
           "roomName": "Yard Firing Range",
-          "nodeid": 196,
+          "nodeid": 157,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -36,7 +36,7 @@
           "subarea": "Lower AQA",
           "roomid": 1,
           "roomName": "AQA Auxiliary Room Access",
-          "nodeid": 127,
+          "nodeid": 88,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -45,7 +45,7 @@
           "subarea": "Lower AQA",
           "roomid": 9,
           "roomName": "AQA Security Room South",
-          "nodeid": 141,
+          "nodeid": 102,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -61,7 +61,7 @@
           "subarea": "Lower AQA",
           "roomid": 1,
           "roomName": "AQA Auxiliary Room Access",
-          "nodeid": 128,
+          "nodeid": 89,
           "nodeName": "South-West Door",
           "position": "left"
         },
@@ -70,7 +70,7 @@
           "subarea": "Lower AQA",
           "roomid": 2,
           "roomName": "AQA Auxiliary Room",
-          "nodeid": 129,
+          "nodeid": 90,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -86,7 +86,7 @@
           "subarea": "Lower AQA",
           "roomid": 3,
           "roomName": "AQA Data Room",
-          "nodeid": 130,
+          "nodeid": 91,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -95,7 +95,7 @@
           "subarea": "Lower AQA",
           "roomid": 12,
           "roomName": "Aquarium Hub East",
-          "nodeid": 150,
+          "nodeid": 111,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -111,7 +111,7 @@
           "subarea": "Lower AQA",
           "roomid": 4,
           "roomName": "AQA Save Station East Central",
-          "nodeid": 131,
+          "nodeid": 92,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -120,7 +120,7 @@
           "subarea": "Lower AQA",
           "roomid": 20,
           "roomName": "Meta Draygon-X Access",
-          "nodeid": 179,
+          "nodeid": 140,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -136,7 +136,7 @@
           "subarea": "Lower AQA",
           "roomid": 4,
           "roomName": "AQA Save Station East Central",
-          "nodeid": 132,
+          "nodeid": 93,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -145,7 +145,7 @@
           "subarea": "Lower AQA",
           "roomid": 24,
           "roomName": "Sunken Tower",
-          "nodeid": 188,
+          "nodeid": 149,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -161,7 +161,7 @@
           "subarea": "Lower AQA",
           "roomid": 5,
           "roomName": "AQA Save Station South",
-          "nodeid": 133,
+          "nodeid": 94,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -170,7 +170,7 @@
           "subarea": "Lower AQA",
           "roomid": 19,
           "roomName": "Glass Tube",
-          "nodeid": 177,
+          "nodeid": 138,
           "nodeName": "South Door",
           "position": "right"
         }
@@ -186,7 +186,7 @@
           "subarea": "Lower AQA",
           "roomid": 6,
           "roomName": "AQA Security Room East",
-          "nodeid": 134,
+          "nodeid": 95,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -195,7 +195,7 @@
           "subarea": "Lower AQA",
           "roomid": 24,
           "roomName": "Sunken Tower",
-          "nodeid": 190,
+          "nodeid": 151,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -211,7 +211,7 @@
           "subarea": "Lower AQA",
           "roomid": 6,
           "roomName": "AQA Security Room East",
-          "nodeid": 135,
+          "nodeid": 96,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -220,7 +220,7 @@
           "subarea": "Lower AQA",
           "roomid": 11,
           "roomName": "AQA-MDK Elevator",
-          "nodeid": 146,
+          "nodeid": 107,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -236,7 +236,7 @@
           "subarea": "Lower AQA",
           "roomid": 7,
           "roomName": "AQA Security Room North",
-          "nodeid": 136,
+          "nodeid": 97,
           "nodeName": "North Door",
           "position": "left"
         },
@@ -245,7 +245,7 @@
           "subarea": "Lower AQA",
           "roomid": 15,
           "roomName": "Cheddar Bay",
-          "nodeid": 165,
+          "nodeid": 126,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -261,7 +261,7 @@
           "subarea": "Lower AQA",
           "roomid": 7,
           "roomName": "AQA Security Room North",
-          "nodeid": 137,
+          "nodeid": 98,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -270,7 +270,7 @@
           "subarea": "Lower AQA",
           "roomid": 15,
           "roomName": "Cheddar Bay",
-          "nodeid": 166,
+          "nodeid": 127,
           "nodeName": "East-South Morph Ball Hole",
           "position": "right"
         }
@@ -286,7 +286,7 @@
           "subarea": "Lower AQA",
           "roomid": 7,
           "roomName": "AQA Security Room North",
-          "nodeid": 138,
+          "nodeid": 99,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -295,7 +295,7 @@
           "subarea": "Lower AQA",
           "roomid": 23,
           "roomName": "Sunken Ruins",
-          "nodeid": 185,
+          "nodeid": 146,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -311,7 +311,7 @@
           "subarea": "Lower AQA",
           "roomid": 8,
           "roomName": "AQA Security Room South Access",
-          "nodeid": 139,
+          "nodeid": 100,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -320,7 +320,7 @@
           "subarea": "Lower AQA",
           "roomid": 9,
           "roomName": "AQA Security Room South",
-          "nodeid": 142,
+          "nodeid": 103,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -336,7 +336,7 @@
           "subarea": "Lower AQA",
           "roomid": 8,
           "roomName": "AQA Security Room South Access",
-          "nodeid": 140,
+          "nodeid": 101,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -345,7 +345,7 @@
           "subarea": "Lower AQA",
           "roomid": 24,
           "roomName": "Sunken Tower",
-          "nodeid": 191,
+          "nodeid": 152,
           "nodeName": "South-West Door",
           "position": "left"
         }
@@ -361,7 +361,7 @@
           "subarea": "Lower AQA",
           "roomid": 10,
           "roomName": "AQA-L-X Tube",
-          "nodeid": 144,
+          "nodeid": 105,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -370,7 +370,7 @@
           "subarea": "Lower AQA",
           "roomid": 16,
           "roomName": "Drowned Junction",
-          "nodeid": 168,
+          "nodeid": 129,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -386,7 +386,7 @@
           "subarea": "Lower AQA",
           "roomid": 12,
           "roomName": "Aquarium Hub East",
-          "nodeid": 147,
+          "nodeid": 108,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -395,7 +395,7 @@
           "subarea": "Lower AQA",
           "roomid": 13,
           "roomName": "Aquarium Hub West",
-          "nodeid": 155,
+          "nodeid": 116,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -411,7 +411,7 @@
           "subarea": "Lower AQA",
           "roomid": 12,
           "roomName": "Aquarium Hub East",
-          "nodeid": 148,
+          "nodeid": 109,
           "nodeName": "North Door",
           "position": "top"
         },
@@ -420,7 +420,7 @@
           "subarea": "Lower AQA",
           "roomid": 15,
           "roomName": "Cheddar Bay",
-          "nodeid": 164,
+          "nodeid": 125,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -436,7 +436,7 @@
           "subarea": "Lower AQA",
           "roomid": 12,
           "roomName": "Aquarium Hub East",
-          "nodeid": 149,
+          "nodeid": 110,
           "nodeName": "West Door",
           "position": "left"
         },
@@ -445,7 +445,7 @@
           "subarea": "Lower AQA",
           "roomid": 13,
           "roomName": "Aquarium Hub West",
-          "nodeid": 157,
+          "nodeid": 118,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -461,7 +461,7 @@
           "subarea": "Lower AQA",
           "roomid": 12,
           "roomName": "Aquarium Hub East",
-          "nodeid": 151,
+          "nodeid": 112,
           "nodeName": "South-West Door",
           "position": "left"
         },
@@ -470,7 +470,7 @@
           "subarea": "Lower AQA",
           "roomid": 19,
           "roomName": "Glass Tube",
-          "nodeid": 174,
+          "nodeid": 135,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -486,7 +486,7 @@
           "subarea": "Lower AQA",
           "roomid": 12,
           "roomName": "Aquarium Hub East",
-          "nodeid": 152,
+          "nodeid": 113,
           "nodeName": "South Door",
           "position": "right"
         },
@@ -495,7 +495,7 @@
           "subarea": "Lower AQA",
           "roomid": 27,
           "roomName": "Yard Firing Range",
-          "nodeid": 195,
+          "nodeid": 156,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -511,7 +511,7 @@
           "subarea": "Lower AQA",
           "roomid": 13,
           "roomName": "Aquarium Hub West",
-          "nodeid": 153,
+          "nodeid": 114,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -520,7 +520,7 @@
           "subarea": "Lower AQA",
           "roomid": 15,
           "roomName": "Cheddar Bay",
-          "nodeid": 162,
+          "nodeid": 123,
           "nodeName": "West Door",
           "position": "left"
         }
@@ -536,7 +536,7 @@
           "subarea": "Lower AQA",
           "roomid": 13,
           "roomName": "Aquarium Hub West",
-          "nodeid": 154,
+          "nodeid": 115,
           "nodeName": "East-Upper Morph Ball Hole",
           "position": "right"
         },
@@ -545,7 +545,7 @@
           "subarea": "Lower AQA",
           "roomid": 18,
           "roomName": "Gamepad Room",
-          "nodeid": 172,
+          "nodeid": 133,
           "nodeName": "West-Upper Morph Ball Hole",
           "position": "left"
         }
@@ -561,7 +561,7 @@
           "subarea": "Lower AQA",
           "roomid": 13,
           "roomName": "Aquarium Hub West",
-          "nodeid": 156,
+          "nodeid": 117,
           "nodeName": "South Door",
           "position": "bottom"
         },
@@ -570,7 +570,7 @@
           "subarea": "Lower AQA",
           "roomid": 19,
           "roomName": "Glass Tube",
-          "nodeid": 173,
+          "nodeid": 134,
           "nodeName": "North Door",
           "position": "top"
         }
@@ -586,7 +586,7 @@
           "subarea": "Lower AQA",
           "roomid": 14,
           "roomName": "Cheddar Bay Speedway",
-          "nodeid": 158,
+          "nodeid": 119,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -595,7 +595,7 @@
           "subarea": "Lower AQA",
           "roomid": 16,
           "roomName": "Drowned Junction",
-          "nodeid": 169,
+          "nodeid": 130,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -611,7 +611,7 @@
           "subarea": "Lower AQA",
           "roomid": 14,
           "roomName": "Cheddar Bay Speedway",
-          "nodeid": 159,
+          "nodeid": 120,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -620,7 +620,7 @@
           "subarea": "Lower AQA",
           "roomid": 15,
           "roomName": "Cheddar Bay",
-          "nodeid": 161,
+          "nodeid": 122,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -636,7 +636,7 @@
           "subarea": "Lower AQA",
           "roomid": 17,
           "roomName": "East Tunnel",
-          "nodeid": 170,
+          "nodeid": 131,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -645,7 +645,7 @@
           "subarea": "Lower AQA",
           "roomid": 19,
           "roomName": "Glass Tube",
-          "nodeid": 176,
+          "nodeid": 137,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -661,7 +661,7 @@
           "subarea": "Lower AQA",
           "roomid": 19,
           "roomName": "Glass Tube",
-          "nodeid": 175,
+          "nodeid": 136,
           "nodeName": "West Door",
           "position": "left"
         },
@@ -670,7 +670,7 @@
           "subarea": "Lower AQA",
           "roomid": 26,
           "roomName": "West Tunnel",
-          "nodeid": 194,
+          "nodeid": 155,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -686,7 +686,7 @@
           "subarea": "Lower AQA",
           "roomid": 20,
           "roomName": "Meta Draygon-X Access",
-          "nodeid": 178,
+          "nodeid": 139,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -695,7 +695,7 @@
           "subarea": "Lower AQA",
           "roomid": 23,
           "roomName": "Sunken Ruins",
-          "nodeid": 186,
+          "nodeid": 147,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -711,7 +711,7 @@
           "subarea": "Lower AQA",
           "roomid": 20,
           "roomName": "Meta Draygon-X Access",
-          "nodeid": 180,
+          "nodeid": 141,
           "nodeName": "South Door",
           "position": "left"
         },
@@ -720,7 +720,7 @@
           "subarea": "Lower AQA",
           "roomid": 21,
           "roomName": "Meta Draygon-X Arena",
-          "nodeid": 181,
+          "nodeid": 142,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -736,7 +736,7 @@
           "subarea": "Lower AQA",
           "roomid": 21,
           "roomName": "Meta Draygon-X Arena",
-          "nodeid": 182,
+          "nodeid": 143,
           "nodeName": "South Door",
           "position": "right"
         },
@@ -745,7 +745,7 @@
           "subarea": "Lower AQA",
           "roomid": 22,
           "roomName": "Speedbooster Lv. 2 Tutorial Room",
-          "nodeid": 183,
+          "nodeid": 144,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -761,7 +761,7 @@
           "subarea": "Lower AQA",
           "roomid": 22,
           "roomName": "Speedbooster Lv. 2 Tutorial Room",
-          "nodeid": 184,
+          "nodeid": 145,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -770,7 +770,7 @@
           "subarea": "Lower AQA",
           "roomid": 24,
           "roomName": "Sunken Tower",
-          "nodeid": 189,
+          "nodeid": 150,
           "nodeName": "West Door",
           "position": "left"
         }
@@ -786,7 +786,7 @@
           "subarea": "Lower AQA",
           "roomid": 24,
           "roomName": "Sunken Tower",
-          "nodeid": 187,
+          "nodeid": 148,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -795,7 +795,7 @@
           "subarea": "Lower AQA",
           "roomid": 25,
           "roomName": "Sunken Treasury",
-          "nodeid": 192,
+          "nodeid": 153,
           "nodeName": "East-Upper Door",
           "position": "right"
         }

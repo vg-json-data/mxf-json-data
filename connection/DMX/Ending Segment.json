@@ -11,7 +11,7 @@
           "subarea": "Ending Segment",
           "roomid": 117,
           "roomName": "Gold Gadora-X Arena",
-          "nodeid": 421,
+          "nodeid": 382,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -20,7 +20,7 @@
           "subarea": "Ending Segment",
           "roomid": 118,
           "roomName": "Golden Four Containment",
-          "nodeid": 423,
+          "nodeid": 384,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -36,7 +36,7 @@
           "subarea": "Ending Segment",
           "roomid": 117,
           "roomName": "Gold Gadora-X Arena",
-          "nodeid": 422,
+          "nodeid": 383,
           "nodeName": "South Door",
           "position": "bottom"
         },
@@ -45,7 +45,7 @@
           "subarea": "Ending Segment",
           "roomid": 119,
           "roomName": "Hornoad Sewer",
-          "nodeid": 425,
+          "nodeid": 386,
           "nodeName": "West-North Door",
           "position": "top"
         }
@@ -61,7 +61,7 @@
           "subarea": "Ending Segment",
           "roomid": 118,
           "roomName": "Golden Four Containment",
-          "nodeid": 424,
+          "nodeid": 385,
           "nodeName": "West-South Door",
           "position": "bottom"
         },
@@ -70,7 +70,7 @@
           "subarea": "Ending Segment",
           "roomid": 120,
           "roomName": "Karid-X Arena",
-          "nodeid": 427,
+          "nodeid": 388,
           "nodeName": "North Door",
           "position": "top"
         }
@@ -86,7 +86,7 @@
           "subarea": "Ending Segment",
           "roomid": 120,
           "roomName": "Karid-X Arena",
-          "nodeid": 428,
+          "nodeid": 389,
           "nodeName": "West-Upper Morph Ball Hole",
           "position": "left"
         },
@@ -95,7 +95,7 @@
           "subarea": "Ending Segment",
           "roomid": 121,
           "roomName": "Ventilation B",
-          "nodeid": 430,
+          "nodeid": 391,
           "nodeName": "North-West Morph Ball Hole",
           "position": "left"
         }
@@ -111,7 +111,7 @@
           "subarea": "Ending Segment",
           "roomid": 120,
           "roomName": "Karid-X Arena",
-          "nodeid": 429,
+          "nodeid": 390,
           "nodeName": "East-Upper Morph Ball Hole",
           "position": "right"
         },
@@ -120,7 +120,7 @@
           "subarea": "Ending Segment",
           "roomid": 121,
           "roomName": "Ventilation B",
-          "nodeid": 431,
+          "nodeid": 392,
           "nodeName": "North-East Morph Ball Hole",
           "position": "right"
         }

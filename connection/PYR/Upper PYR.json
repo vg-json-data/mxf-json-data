@@ -9,18 +9,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 271,
+          "roomid": 270,
           "roomName": "Big Red Geron Gate Room",
-          "nodeid": 792,
+          "nodeid": 751,
           "nodeName": "South-West Door",
           "position": "left"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 273,
+          "roomid": 272,
           "roomName": "Big Red",
-          "nodeid": 801,
+          "nodeid": 760,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -34,18 +34,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 271,
+          "roomid": 270,
           "roomName": "Big Red Geron Gate Room",
-          "nodeid": 793,
+          "nodeid": 752,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 279,
+          "roomid": 278,
           "roomName": "Geron\u0027s Treasure",
-          "nodeid": 818,
+          "nodeid": 777,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -59,18 +59,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 272,
+          "roomid": 271,
           "roomName": "Big Red Maintenance Storage",
-          "nodeid": 794,
+          "nodeid": 753,
           "nodeName": "North-East Morph Ball Hole",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 273,
+          "roomid": 272,
           "roomName": "Big Red",
-          "nodeid": 800,
+          "nodeid": 759,
           "nodeName": "West Morph Ball Hole",
           "position": "left"
         }
@@ -84,18 +84,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 272,
+          "roomid": 271,
           "roomName": "Big Red Maintenance Storage",
-          "nodeid": 795,
+          "nodeid": 754,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 280,
+          "roomid": 279,
           "roomName": "Overthinking Chamber",
-          "nodeid": 820,
+          "nodeid": 779,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -109,18 +109,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 272,
+          "roomid": 271,
           "roomName": "Big Red Maintenance Storage",
-          "nodeid": 796,
+          "nodeid": 755,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 273,
+          "roomid": 272,
           "roomName": "Big Red",
-          "nodeid": 802,
+          "nodeid": 761,
           "nodeName": "South-West Door",
           "position": "left"
         }
@@ -134,18 +134,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 273,
+          "roomid": 272,
           "roomName": "Big Red",
-          "nodeid": 797,
+          "nodeid": 756,
           "nodeName": "North-West Door",
           "position": "left"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 281,
+          "roomid": 280,
           "roomName": "PYR Save Station North",
-          "nodeid": 821,
+          "nodeid": 780,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -159,18 +159,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 273,
+          "roomid": 272,
           "roomName": "Big Red",
-          "nodeid": 798,
+          "nodeid": 757,
           "nodeName": "North-East Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 283,
+          "roomid": 282,
           "roomName": "PYR-ARC Access",
-          "nodeid": 823,
+          "nodeid": 782,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -184,18 +184,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 273,
+          "roomid": 272,
           "roomName": "Big Red",
-          "nodeid": 799,
+          "nodeid": 758,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 276,
+          "roomid": 275,
           "roomName": "Deserted Runway",
-          "nodeid": 810,
+          "nodeid": 769,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -209,18 +209,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 274,
+          "roomid": 273,
           "roomName": "Bob\u0027s Abode",
-          "nodeid": 804,
+          "nodeid": 763,
           "nodeName": "North Door",
           "position": "top"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 276,
+          "roomid": 275,
           "roomName": "Deserted Runway",
-          "nodeid": 811,
+          "nodeid": 770,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -234,18 +234,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 274,
+          "roomid": 273,
           "roomName": "Bob\u0027s Abode",
-          "nodeid": 805,
+          "nodeid": 764,
           "nodeName": "West Door",
           "position": "left"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 285,
+          "roomid": 284,
           "roomName": "PYR-TRO Elevator / PYR Entrance Lobby",
-          "nodeid": 832,
+          "nodeid": 791,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -259,18 +259,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 274,
+          "roomid": 273,
           "roomName": "Bob\u0027s Abode",
-          "nodeid": 806,
+          "nodeid": 765,
           "nodeName": "East Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 280,
+          "roomid": 279,
           "roomName": "Overthinking Chamber",
-          "nodeid": 819,
+          "nodeid": 778,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -284,18 +284,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 275,
+          "roomid": 274,
           "roomName": "Chute Pit",
-          "nodeid": 807,
+          "nodeid": 766,
           "nodeName": "West-North Door",
           "position": "top"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 278,
+          "roomid": 277,
           "roomName": "Garbage Chute",
-          "nodeid": 816,
+          "nodeid": 775,
           "nodeName": "West-South Door",
           "position": "bottom"
         }
@@ -309,18 +309,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 276,
+          "roomid": 275,
           "roomName": "Deserted Runway",
-          "nodeid": 809,
+          "nodeid": 768,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 285,
+          "roomid": 284,
           "roomName": "PYR-TRO Elevator / PYR Entrance Lobby",
-          "nodeid": 828,
+          "nodeid": 787,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -334,18 +334,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 277,
+          "roomid": 276,
           "roomName": "Garbage Chute Runway",
-          "nodeid": 812,
+          "nodeid": 771,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 278,
+          "roomid": 277,
           "roomName": "Garbage Chute",
-          "nodeid": 815,
+          "nodeid": 774,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -359,18 +359,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 277,
+          "roomid": 276,
           "roomName": "Garbage Chute Runway",
-          "nodeid": 813,
+          "nodeid": 772,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 285,
+          "roomid": 284,
           "roomName": "PYR-TRO Elevator / PYR Entrance Lobby",
-          "nodeid": 830,
+          "nodeid": 789,
           "nodeName": "West Door",
           "position": "left"
         }
@@ -384,18 +384,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 278,
+          "roomid": 277,
           "roomName": "Garbage Chute",
-          "nodeid": 814,
+          "nodeid": 773,
           "nodeName": "North-East Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 288,
+          "roomid": 287,
           "roomName": "Trash Gap",
-          "nodeid": 839,
+          "nodeid": 798,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -409,18 +409,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 278,
+          "roomid": 277,
           "roomName": "Garbage Chute",
-          "nodeid": 817,
+          "nodeid": 776,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 286,
+          "roomid": 285,
           "roomName": "Sova Processing Access",
-          "nodeid": 834,
+          "nodeid": 793,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -434,18 +434,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 282,
+          "roomid": 281,
           "roomName": "PYR Save Station West",
-          "nodeid": 822,
+          "nodeid": 781,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 285,
+          "roomid": 284,
           "roomName": "PYR-TRO Elevator / PYR Entrance Lobby",
-          "nodeid": 831,
+          "nodeid": 790,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -459,18 +459,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 283,
+          "roomid": 282,
           "roomName": "PYR-ARC Access",
-          "nodeid": 824,
+          "nodeid": 783,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 284,
+          "roomid": 283,
           "roomName": "PYR-ARC Tube",
-          "nodeid": 825,
+          "nodeid": 784,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -484,18 +484,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 285,
+          "roomid": 284,
           "roomName": "PYR-TRO Elevator / PYR Entrance Lobby",
-          "nodeid": 829,
+          "nodeid": 788,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 288,
+          "roomid": 287,
           "roomName": "Trash Gap",
-          "nodeid": 840,
+          "nodeid": 799,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -509,18 +509,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 285,
+          "roomid": 284,
           "roomName": "PYR-TRO Elevator / PYR Entrance Lobby",
-          "nodeid": 833,
+          "nodeid": 792,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 287,
+          "roomid": 286,
           "roomName": "Sova Processing",
-          "nodeid": 836,
+          "nodeid": 795,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -534,18 +534,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 286,
+          "roomid": 285,
           "roomName": "Sova Processing Access",
-          "nodeid": 835,
+          "nodeid": 794,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 287,
+          "roomid": 286,
           "roomName": "Sova Processing",
-          "nodeid": 837,
+          "nodeid": 796,
           "nodeName": "West-Upper Door",
           "position": "left"
         }

@@ -9,18 +9,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 324,
+          "roomid": 323,
           "roomName": "Cloister",
-          "nodeid": 926,
+          "nodeid": 885,
           "nodeName": "North-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 343,
+          "roomid": 342,
           "roomName": "TRO Entrance Lobby",
-          "nodeid": 990,
+          "nodeid": 949,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -34,18 +34,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 324,
+          "roomid": 323,
           "roomName": "Cloister",
-          "nodeid": 927,
+          "nodeid": 886,
           "nodeName": "North-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 346,
+          "roomid": 345,
           "roomName": "TRO Save Station North",
-          "nodeid": 994,
+          "nodeid": 953,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -59,18 +59,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 324,
+          "roomid": 323,
           "roomName": "Cloister",
-          "nodeid": 928,
+          "nodeid": 887,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 329,
+          "roomid": 328,
           "roomName": "Fusion Cathedral",
-          "nodeid": 948,
+          "nodeid": 907,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -84,18 +84,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 324,
+          "roomid": 323,
           "roomName": "Cloister",
-          "nodeid": 930,
+          "nodeid": 889,
           "nodeName": "South-West Morph Ball Hole",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 329,
+          "roomid": 328,
           "roomName": "Fusion Cathedral",
-          "nodeid": 949,
+          "nodeid": 908,
           "nodeName": "East-North Morph Ball Hole",
           "position": "right"
         }
@@ -109,18 +109,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 325,
+          "roomid": 324,
           "roomName": "Crum-Ball Tower",
-          "nodeid": 932,
+          "nodeid": 891,
           "nodeName": "North-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 329,
+          "roomid": 328,
           "roomName": "Fusion Cathedral",
-          "nodeid": 951,
+          "nodeid": 910,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -134,18 +134,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 325,
+          "roomid": 324,
           "roomName": "Crum-Ball Tower",
-          "nodeid": 934,
+          "nodeid": 893,
           "nodeName": "South-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 347,
+          "roomid": 346,
           "roomName": "TRO Save Station South",
-          "nodeid": 996,
+          "nodeid": 955,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -159,18 +159,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 325,
+          "roomid": 324,
           "roomName": "Crum-Ball Tower",
-          "nodeid": 935,
+          "nodeid": 894,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 334,
+          "roomid": 333,
           "roomName": "Overgrown Cache",
-          "nodeid": 970,
+          "nodeid": 929,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -184,18 +184,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 326,
+          "roomid": 325,
           "roomName": "Crumble City",
-          "nodeid": 936,
+          "nodeid": 895,
           "nodeName": "East-North Door",
           "position": "top"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 327,
+          "roomid": 326,
           "roomName": "Crumble Crossing",
-          "nodeid": 941,
+          "nodeid": 900,
           "nodeName": "East-South Door",
           "position": "bottom"
         }
@@ -209,18 +209,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 326,
+          "roomid": 325,
           "roomName": "Crumble City",
-          "nodeid": 937,
+          "nodeid": 896,
           "nodeName": "West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 328,
+          "roomid": 327,
           "roomName": "Cultivation Station",
-          "nodeid": 943,
+          "nodeid": 902,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -234,18 +234,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 326,
+          "roomid": 325,
           "roomName": "Crumble City",
-          "nodeid": 938,
+          "nodeid": 897,
           "nodeName": "East-South Door",
           "position": "bottom"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 332,
+          "roomid": 331,
           "roomName": "Oasis",
-          "nodeid": 965,
+          "nodeid": 924,
           "nodeName": "East-North Door",
           "position": "top"
         }
@@ -259,18 +259,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 327,
+          "roomid": 326,
           "roomName": "Crumble Crossing",
-          "nodeid": 939,
+          "nodeid": 898,
           "nodeName": "North-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 336,
+          "roomid": 335,
           "roomName": "Puyo Palace",
-          "nodeid": 974,
+          "nodeid": 933,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -284,18 +284,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 327,
+          "roomid": 326,
           "roomName": "Crumble Crossing",
-          "nodeid": 940,
+          "nodeid": 899,
           "nodeName": "North-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 329,
+          "roomid": 328,
           "roomName": "Fusion Cathedral",
-          "nodeid": 947,
+          "nodeid": 906,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -309,18 +309,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 328,
+          "roomid": 327,
           "roomName": "Cultivation Station",
-          "nodeid": 942,
+          "nodeid": 901,
           "nodeName": "West-North Door",
           "position": "top"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 337,
+          "roomid": 336,
           "roomName": "Reo Courtyard",
-          "nodeid": 977,
+          "nodeid": 936,
           "nodeName": "West-South Door",
           "position": "bottom"
         }
@@ -334,18 +334,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 328,
+          "roomid": 327,
           "roomName": "Cultivation Station",
-          "nodeid": 944,
+          "nodeid": 903,
           "nodeName": "West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 348,
+          "roomid": 347,
           "roomName": "TRO Save Station West",
-          "nodeid": 997,
+          "nodeid": 956,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -359,18 +359,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 328,
+          "roomid": 327,
           "roomName": "Cultivation Station",
-          "nodeid": 945,
+          "nodeid": 904,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 344,
+          "roomid": 343,
           "roomName": "TRO Navigation Room",
-          "nodeid": 991,
+          "nodeid": 950,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -384,18 +384,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 328,
+          "roomid": 327,
           "roomName": "Cultivation Station",
-          "nodeid": 946,
+          "nodeid": 905,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 330,
+          "roomid": 329,
           "roomName": "Moldy Bridge",
-          "nodeid": 956,
+          "nodeid": 915,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -409,18 +409,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 329,
+          "roomid": 328,
           "roomName": "Fusion Cathedral",
-          "nodeid": 950,
+          "nodeid": 909,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 332,
+          "roomid": 331,
           "roomName": "Oasis",
-          "nodeid": 964,
+          "nodeid": 923,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -434,18 +434,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 329,
+          "roomid": 328,
           "roomName": "Fusion Cathedral",
-          "nodeid": 952,
+          "nodeid": 911,
           "nodeName": "East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 347,
+          "roomid": 346,
           "roomName": "TRO Save Station South",
-          "nodeid": 995,
+          "nodeid": 954,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -459,18 +459,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 329,
+          "roomid": 328,
           "roomName": "Fusion Cathedral",
-          "nodeid": 953,
+          "nodeid": 912,
           "nodeName": "South-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 340,
+          "roomid": 339,
           "roomName": "TRO Data Room Access",
-          "nodeid": 984,
+          "nodeid": 943,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -484,18 +484,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 330,
+          "roomid": 329,
           "roomName": "Moldy Bridge",
-          "nodeid": 957,
+          "nodeid": 916,
           "nodeName": "North-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 338,
+          "roomid": 337,
           "roomName": "Sanctum Access",
-          "nodeid": 978,
+          "nodeid": 937,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -509,18 +509,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 330,
+          "roomid": 329,
           "roomName": "Moldy Bridge",
-          "nodeid": 958,
+          "nodeid": 917,
           "nodeName": "South-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 345,
+          "roomid": 344,
           "roomName": "TRO Reserve X Room",
-          "nodeid": 993,
+          "nodeid": 952,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -534,18 +534,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 330,
+          "roomid": 329,
           "roomName": "Moldy Bridge",
-          "nodeid": 959,
+          "nodeid": 918,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 335,
+          "roomid": 334,
           "roomName": "Owtch Office",
-          "nodeid": 971,
+          "nodeid": 930,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -559,18 +559,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 331,
+          "roomid": 330,
           "roomName": "Oasis Storage",
-          "nodeid": 960,
+          "nodeid": 919,
           "nodeName": "North-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 349,
+          "roomid": 348,
           "roomName": "TRO Security Room",
-          "nodeid": 999,
+          "nodeid": 958,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -584,18 +584,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 331,
+          "roomid": 330,
           "roomName": "Oasis Storage",
-          "nodeid": 961,
+          "nodeid": 920,
           "nodeName": "North-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 332,
+          "roomid": 331,
           "roomName": "Oasis",
-          "nodeid": 963,
+          "nodeid": 922,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -609,18 +609,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 331,
+          "roomid": 330,
           "roomName": "Oasis Storage",
-          "nodeid": 962,
+          "nodeid": 921,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 332,
+          "roomid": 331,
           "roomName": "Oasis",
-          "nodeid": 966,
+          "nodeid": 925,
           "nodeName": "South-West Door",
           "position": "left"
         }
@@ -634,18 +634,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 333,
+          "roomid": 332,
           "roomName": "Omega Lobby",
-          "nodeid": 967,
+          "nodeid": 926,
           "nodeName": "North Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 350,
+          "roomid": 349,
           "roomName": "TRO-L-X Tube",
-          "nodeid": 1000,
+          "nodeid": 959,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -659,18 +659,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 333,
+          "roomid": 332,
           "roomName": "Omega Lobby",
-          "nodeid": 968,
+          "nodeid": 927,
           "nodeName": "South-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 336,
+          "roomid": 335,
           "roomName": "Puyo Palace",
-          "nodeid": 972,
+          "nodeid": 931,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -684,18 +684,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 333,
+          "roomid": 332,
           "roomName": "Omega Lobby",
-          "nodeid": 969,
+          "nodeid": 928,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 343,
+          "roomid": 342,
           "roomName": "TRO Entrance Lobby",
-          "nodeid": 987,
+          "nodeid": 946,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -709,18 +709,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 336,
+          "roomid": 335,
           "roomName": "Puyo Palace",
-          "nodeid": 973,
+          "nodeid": 932,
           "nodeName": "South-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 337,
+          "roomid": 336,
           "roomName": "Reo Courtyard",
-          "nodeid": 975,
+          "nodeid": 934,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -734,18 +734,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 337,
+          "roomid": 336,
           "roomName": "Reo Courtyard",
-          "nodeid": 976,
+          "nodeid": 935,
           "nodeName": "South-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 352,
+          "roomid": 351,
           "roomName": "TRO-PYR Access",
-          "nodeid": 1006,
+          "nodeid": 965,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -759,18 +759,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 338,
+          "roomid": 337,
           "roomName": "Sanctum Access",
-          "nodeid": 979,
+          "nodeid": 938,
           "nodeName": "East-South Door",
           "position": "bottom"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 339,
+          "roomid": 338,
           "roomName": "Sanctum",
-          "nodeid": 980,
+          "nodeid": 939,
           "nodeName": "East-North Door",
           "position": "top"
         }
@@ -784,18 +784,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 339,
+          "roomid": 338,
           "roomName": "Sanctum",
-          "nodeid": 981,
+          "nodeid": 940,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 340,
+          "roomid": 339,
           "roomName": "TRO Data Room Access",
-          "nodeid": 982,
+          "nodeid": 941,
           "nodeName": "North Door",
           "position": "right"
         }
@@ -809,18 +809,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 340,
+          "roomid": 339,
           "roomName": "TRO Data Room Access",
-          "nodeid": 983,
+          "nodeid": 942,
           "nodeName": "South-West Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 341,
+          "roomid": 340,
           "roomName": "TRO Data Room",
-          "nodeid": 985,
+          "nodeid": 944,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -834,18 +834,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 342,
+          "roomid": 341,
           "roomName": "TRO Entrance Lobby Storage",
-          "nodeid": 986,
+          "nodeid": 945,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 343,
+          "roomid": 342,
           "roomName": "TRO Entrance Lobby",
-          "nodeid": 989,
+          "nodeid": 948,
           "nodeName": "South-West Door",
           "position": "left"
         }
@@ -859,18 +859,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 343,
+          "roomid": 342,
           "roomName": "TRO Entrance Lobby",
-          "nodeid": 988,
+          "nodeid": 947,
           "nodeName": "North-East Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 351,
+          "roomid": 350,
           "roomName": "TRO-MDK Tube",
-          "nodeid": 1003,
+          "nodeid": 962,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -884,18 +884,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 344,
+          "roomid": 343,
           "roomName": "TRO Navigation Room",
-          "nodeid": 992,
+          "nodeid": 951,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 349,
+          "roomid": 348,
           "roomName": "TRO Security Room",
-          "nodeid": 998,
+          "nodeid": 957,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -909,18 +909,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 352,
+          "roomid": 351,
           "roomName": "TRO-PYR Access",
-          "nodeid": 1005,
+          "nodeid": 964,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 353,
+          "roomid": 352,
           "roomName": "TRO-PYR Elevator",
-          "nodeid": 1007,
+          "nodeid": 966,
           "nodeName": "East-Upper Door",
           "position": "right"
         }

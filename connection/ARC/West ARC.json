@@ -11,7 +11,7 @@
           "subarea": "West ARC",
           "roomid": 93,
           "roomName": "ARC Auxiliary Room Access",
-          "nodeid": 367,
+          "nodeid": 328,
           "nodeName": "North Door",
           "position": "top"
         },
@@ -20,7 +20,7 @@
           "subarea": "West ARC",
           "roomid": 98,
           "roomName": "Brain Freezer",
-          "nodeid": 378,
+          "nodeid": 339,
           "nodeName": "West-South Door",
           "position": "bottom"
         }
@@ -36,7 +36,7 @@
           "subarea": "West ARC",
           "roomid": 93,
           "roomName": "ARC Auxiliary Room Access",
-          "nodeid": 368,
+          "nodeid": 329,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -45,7 +45,7 @@
           "subarea": "West ARC",
           "roomid": 103,
           "roomName": "Freezer Shaft West",
-          "nodeid": 392,
+          "nodeid": 353,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -61,7 +61,7 @@
           "subarea": "West ARC",
           "roomid": 93,
           "roomName": "ARC Auxiliary Room Access",
-          "nodeid": 369,
+          "nodeid": 330,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -70,7 +70,7 @@
           "subarea": "West ARC",
           "roomid": 94,
           "roomName": "ARC Auxiliary Room",
-          "nodeid": 370,
+          "nodeid": 331,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -86,7 +86,7 @@
           "subarea": "West ARC",
           "roomid": 95,
           "roomName": "ARC Save Station West",
-          "nodeid": 371,
+          "nodeid": 332,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -95,7 +95,7 @@
           "subarea": "West ARC",
           "roomid": 103,
           "roomName": "Freezer Shaft West",
-          "nodeid": 391,
+          "nodeid": 352,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -111,7 +111,7 @@
           "subarea": "West ARC",
           "roomid": 95,
           "roomName": "ARC Save Station West",
-          "nodeid": 372,
+          "nodeid": 333,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -120,7 +120,7 @@
           "subarea": "West ARC",
           "roomid": 101,
           "roomName": "Freezer Hallway",
-          "nodeid": 383,
+          "nodeid": 344,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -136,7 +136,7 @@
           "subarea": "West ARC",
           "roomid": 96,
           "roomName": "ARC Security Room",
-          "nodeid": 373,
+          "nodeid": 334,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -145,7 +145,7 @@
           "subarea": "West ARC",
           "roomid": 104,
           "roomName": "Underpressure",
-          "nodeid": 394,
+          "nodeid": 355,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -161,7 +161,7 @@
           "subarea": "West ARC",
           "roomid": 97,
           "roomName": "ARC-MDK Tube",
-          "nodeid": 376,
+          "nodeid": 337,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -170,7 +170,7 @@
           "subarea": "West ARC",
           "roomid": 103,
           "roomName": "Freezer Shaft West",
-          "nodeid": 390,
+          "nodeid": 351,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -186,7 +186,7 @@
           "subarea": "West ARC",
           "roomid": 98,
           "roomName": "Brain Freezer",
-          "nodeid": 377,
+          "nodeid": 338,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -195,7 +195,7 @@
           "subarea": "West ARC",
           "roomid": 102,
           "roomName": "Freezer Shaft East",
-          "nodeid": 388,
+          "nodeid": 349,
           "nodeName": "South-West Door",
           "position": "left"
         }
@@ -211,7 +211,7 @@
           "subarea": "West ARC",
           "roomid": 99,
           "roomName": "Chilling Passage",
-          "nodeid": 379,
+          "nodeid": 340,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -220,7 +220,7 @@
           "subarea": "West ARC",
           "roomid": 102,
           "roomName": "Freezer Shaft East",
-          "nodeid": 387,
+          "nodeid": 348,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -236,7 +236,7 @@
           "subarea": "West ARC",
           "roomid": 100,
           "roomName": "Cryopipe",
-          "nodeid": 381,
+          "nodeid": 342,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -245,7 +245,7 @@
           "subarea": "West ARC",
           "roomid": 102,
           "roomName": "Freezer Shaft East",
-          "nodeid": 389,
+          "nodeid": 350,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -261,7 +261,7 @@
           "subarea": "West ARC",
           "roomid": 100,
           "roomName": "Cryopipe",
-          "nodeid": 382,
+          "nodeid": 343,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -270,7 +270,7 @@
           "subarea": "West ARC",
           "roomid": 104,
           "roomName": "Underpressure",
-          "nodeid": 393,
+          "nodeid": 354,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -286,7 +286,7 @@
           "subarea": "West ARC",
           "roomid": 101,
           "roomName": "Freezer Hallway",
-          "nodeid": 384,
+          "nodeid": 345,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -295,7 +295,7 @@
           "subarea": "West ARC",
           "roomid": 102,
           "roomName": "Freezer Shaft East",
-          "nodeid": 386,
+          "nodeid": 347,
           "nodeName": "West-Upper Door",
           "position": "left"
         }

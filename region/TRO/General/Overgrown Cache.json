@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 334,
+  "id": 333,
   "name": "Overgrown Cache",
   "area": "TRO",
   "subarea": "General",
@@ -8,52 +8,38 @@
   "roomAddress": "0x79C00",
   "roomEnvironments": [
     {
-      "physics": "air",
       "heated": false
     }
   ],
   "mapTileMask": [
     [
-      [
-        1
-      ]
+      0
     ]
   ],
   "nodes": [
     {
-      "id": 111,
-      "name": "Item",
+      "id": 77,
+      "idMinorItemPlm": "0x2B",
+      "name": "Hidden Energy Tank",
       "nodeType": "item",
-      "nodeSubType": "visible",
-      "nodeItem": "Energy Tank 8",
-      "nodeAddress": "0x0",
-      "doorOrientation": "",
-      "doorEnvironments": [],
-      "mapTileMask": [
-        [
-          [
-            2
-          ]
-        ]
-      ],
-      "comment": ""
+      "nodeSubType": "hidden",
+      "nodeItem": "ETank",
+      "nodeAddress": "0x7D88C",
+      "mapTileX": 37,
+      "mapTileY": 19
     },
     {
-      "id": 970,
+      "id": 929,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
-      "nodeItem": null,
       "nodeAddress": "0x0",
       "doorOrientation": "left",
       "doorEnvironments": [
         {
-          "physics": "air",
-          "heated": false
+          "physics": "air"
         }
-      ],
-      "mapTileMask": [],
-      "comment": ""
+      ]
     }
   ],
   "enemies": [],
