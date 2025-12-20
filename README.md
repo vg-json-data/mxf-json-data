@@ -10,7 +10,7 @@ JSON representations of Super Metroid: X-Fusion Game Data
 
 ## Credits
 
-- [**Metaquarius**](https://metaquarium.wordpress.com/xfusion) – For developing [Super Metroid: X-Fusion](https://metroidconstruction.com/hack.php?id=837) and providing images of every room.
+- [**Metaquarius**](https://metaquarium.wordpress.com/xfusion) – For developing [Super Metroid: X-Fusion](https://metroidconstruction.com/hack.php?id=837), reworking the game for randomizer development, providing valuable internal documentation, and providing images of every room of the game.
 - [**InsaneFirebat**](https://github.com/InsaneFirebat) – For creating the practice ROM, sharing internal game data, and performing useful reverse-engineering research.
 - [**Super Metroid Map Randomizer Team**](https://maprando.com/) - For creating the foundation that inspired this project
 - [**Minnie A. Trethewey**](https://github.com/miketrethewey) - SM Map Rando Logic Designer and X-Fusion Rando Design Consultant
