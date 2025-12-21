@@ -37,7 +37,8 @@
       "nodeItem": "Missile",
       "nodeAddress": "0x7E1B0",
       "mapTileX": 34,
-      "mapTileY": 10
+      "mapTileY": 10,
+      "note": "Center-Right"
     },
     {
       "id": 711,

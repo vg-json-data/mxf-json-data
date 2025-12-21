@@ -26,7 +26,8 @@
       "nodeItem": "ETank",
       "nodeAddress": "0x7D3F0",
       "mapTileX": 29,
-      "mapTileY": 11
+      "mapTileY": 11,
+      "note": "Bottom-Left"
     },
     {
       "id": 50,
@@ -37,7 +38,8 @@
       "nodeItem": "ETank",
       "nodeAddress": "0x7D3F6",
       "mapTileX": 31,
-      "mapTileY": 11
+      "mapTileY": 11,
+      "note": "Bottom-Right"
     },
     {
       "id": 551,

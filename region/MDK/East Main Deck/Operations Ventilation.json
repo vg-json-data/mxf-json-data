@@ -26,7 +26,8 @@
       "nodeItem": "Missile",
       "nodeAddress": "0x7D426",
       "mapTileX": 32,
-      "mapTileY": 13
+      "mapTileY": 13,
+      "note": "Upper"
     },
     {
       "id": 44,
@@ -37,7 +38,8 @@
       "nodeItem": "Missile",
       "nodeAddress": "0x7D42C",
       "mapTileX": 32,
-      "mapTileY": 16
+      "mapTileY": 16,
+      "note": "Lower"
     },
     {
       "id": 517,
