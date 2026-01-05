@@ -730,6 +730,37 @@
     },
     {
       "id": 25,
+      "name": "Ice-X",
+      "attacks": [
+        {
+          "name": "contact",
+          "baseDamage": 0
+        }
+      ],
+      "hp": 32767,
+      "amountOfDrops": 0,
+      "drops": {
+        "noDrop": 0,
+        "yellowX": 0,
+        "greenX": 0,
+        "redX": 0
+      },
+      "dims": {
+        "w": 16,
+        "h": 26
+      },
+      "freezable": false,
+      "grapplable": false,
+      "damageMultipliers": [],
+      "invul": [],
+      "areas": [
+        "ARC",
+        "NOC"
+      ],
+      "note": ""
+    },
+    {
+      "id": 26,
       "name": "Kago",
       "attacks": [
         {
@@ -759,7 +790,7 @@
       "note": "10 PowerBeam Shots... must be 200 HP?"
     },
     {
-      "id": 26,
+      "id": 27,
       "name": "Kago-X",
       "attacks": [
         {
@@ -789,7 +820,7 @@
       "note": "Dies in exactly 11 shots, regardless of beam"
     },
     {
-      "id": 27,
+      "id": 28,
       "name": "Kihunter",
       "attacks": [
         {
@@ -819,7 +850,7 @@
       "note": ""
     },
     {
-      "id": 28,
+      "id": 29,
       "name": "Kihunter Cocoon",
       "attacks": [
         {
@@ -849,7 +880,7 @@
       "note": ""
     },
     {
-      "id": 29,
+      "id": 30,
       "name": "Kzan-X",
       "attacks": [
         {
@@ -879,7 +910,7 @@
       "note": ""
     },
     {
-      "id": 30,
+      "id": 31,
       "name": "Menu",
       "attacks": [
         {
@@ -909,7 +940,7 @@
       "note": ""
     },
     {
-      "id": 31,
+      "id": 32,
       "name": "Metroid",
       "attacks": [
         {
@@ -939,7 +970,7 @@
       "note": ""
     },
     {
-      "id": 32,
+      "id": 33,
       "name": "Mini B.O.X.",
       "attacks": [
         {
@@ -969,7 +1000,7 @@
       "note": ""
     },
     {
-      "id": 33,
+      "id": 34,
       "name": "Mochtroid-X",
       "attacks": [
         {
@@ -999,7 +1030,7 @@
       "note": ""
     },
     {
-      "id": 34,
+      "id": 35,
       "name": "Moto",
       "attacks": [
         {
@@ -1029,7 +1060,7 @@
       "note": ""
     },
     {
-      "id": 35,
+      "id": 36,
       "name": "Owtch",
       "attacks": [
         {
@@ -1060,7 +1091,7 @@
       "note": ""
     },
     {
-      "id": 36,
+      "id": 37,
       "name": "Powamp",
       "attacks": [
         {
@@ -1090,7 +1121,7 @@
       "note": "[16,20] when small; [16,48] when expanded"
     },
     {
-      "id": 37,
+      "id": 38,
       "name": "Puyo",
       "attacks": [
         {
@@ -1120,7 +1151,7 @@
       "note": ""
     },
     {
-      "id": 38,
+      "id": 39,
       "name": "Reo",
       "attacks": [
         {
@@ -1150,7 +1181,7 @@
       "note": ""
     },
     {
-      "id": 39,
+      "id": 40,
       "name": "Ripper",
       "attacks": [
         {
@@ -1181,7 +1212,7 @@
       "note": ""
     },
     {
-      "id": 40,
+      "id": 41,
       "name": "SA-X",
       "attacks": [
         {
@@ -1212,7 +1243,7 @@
       "note": ""
     },
     {
-      "id": 41,
+      "id": 42,
       "name": "Samus Eater Bud Particles",
       "attacks": [
         {
@@ -1242,7 +1273,7 @@
       "note": ""
     },
     {
-      "id": 42,
+      "id": 43,
       "name": "Sciser",
       "attacks": [
         {
@@ -1272,7 +1303,7 @@
       "note": ""
     },
     {
-      "id": 43,
+      "id": 44,
       "name": "Sidehopper",
       "attacks": [
         {
@@ -1302,7 +1333,7 @@
       "note": ""
     },
     {
-      "id": 44,
+      "id": 45,
       "name": "Skultera",
       "attacks": [
         {
@@ -1333,7 +1364,7 @@
       "note": ""
     },
     {
-      "id": 45,
+      "id": 46,
       "name": "Skultera-X",
       "attacks": [
         {
@@ -1363,7 +1394,7 @@
       "note": ""
     },
     {
-      "id": 46,
+      "id": 47,
       "name": "Soldier-X",
       "attacks": [
         {
@@ -1394,7 +1425,7 @@
       "note": ""
     },
     {
-      "id": 47,
+      "id": 48,
       "name": "Sova",
       "attacks": [
         {
@@ -1424,7 +1455,7 @@
       "note": ""
     },
     {
-      "id": 48,
+      "id": 49,
       "name": "Waver",
       "attacks": [
         {
@@ -1455,7 +1486,7 @@
       "note": "187 HP in SRX?"
     },
     {
-      "id": 49,
+      "id": 50,
       "name": "Work Robot",
       "attacks": [
         {
@@ -1486,7 +1517,7 @@
       "note": "Dies to PBs and pushed into water tiles"
     },
     {
-      "id": 50,
+      "id": 51,
       "name": "Yameba (Large)",
       "attacks": [
         {
@@ -1516,7 +1547,7 @@
       "note": ""
     },
     {
-      "id": 51,
+      "id": 52,
       "name": "Yameba (Medium)",
       "attacks": [
         {
@@ -1547,7 +1578,7 @@
       "note": ""
     },
     {
-      "id": 52,
+      "id": 53,
       "name": "Yameba (Small)",
       "attacks": [
         {
@@ -1578,7 +1609,7 @@
       "note": ""
     },
     {
-      "id": 53,
+      "id": 54,
       "name": "Yard",
       "attacks": [
         {
@@ -1608,7 +1639,7 @@
       "note": ""
     },
     {
-      "id": 54,
+      "id": 55,
       "name": "Zebesian",
       "attacks": [
         {
@@ -1638,7 +1669,7 @@
       "note": ""
     },
     {
-      "id": 55,
+      "id": 56,
       "name": "Zebetite",
       "attacks": [
         {
@@ -1668,7 +1699,7 @@
       "note": ""
     },
     {
-      "id": 56,
+      "id": 57,
       "name": "Zeebo-X",
       "attacks": [
         {
@@ -1698,7 +1729,7 @@
       "note": ""
     },
     {
-      "id": 57,
+      "id": 58,
       "name": "Zeela-X",
       "attacks": [
         {
@@ -1728,7 +1759,7 @@
       "note": "Freezer Shaft West"
     },
     {
-      "id": 58,
+      "id": 59,
       "name": "Zombie Researcher",
       "attacks": [
         {
@@ -1760,7 +1791,7 @@
       "note": ""
     },
     {
-      "id": 59,
+      "id": 60,
       "name": "Zoro",
       "attacks": [
         {
@@ -1790,7 +1821,7 @@
       "note": ""
     },
     {
-      "id": 60,
+      "id": 61,
       "name": "Zozoro",
       "attacks": [
         {

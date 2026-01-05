@@ -1020,7 +1020,11 @@
                 },
                 "heated": {
                   "type": "boolean",
-                  "description": "Whether the runway is used in a heated environment. This only needs to be specified if the room is only sometimes heated (e.g. Volcano Room)."
+                  "description": "Whether the runway is used in a heated environment. This only needs to be specified if the room is only sometimes heated (e.g. Garbage Chute)."
+                },
+                "cold": {
+                  "type": "boolean",
+                  "description": "Whether the runway is used in a cold environment. This only needs to be specified if the room is only sometimes cold (e.g. Arctic Containment)."
                 }
               }
             },
@@ -1770,13 +1774,19 @@
         "title": "Room Environment",
         "description": "An object that describes the room-wide portion of the game environment, which can optionally depend on what node Samus entered from.",
         "required": [
-          "heated"
+          "heated",
+          "cold"
         ],
         "additionalProperties": false,
         "properties": {
           "heated": {
             "title": "Heated",
             "description": "Indicates whether the room is heated",
+            "type": "boolean"
+          },
+          "cold": {
+            "title": "Cold",
+            "description": "Indicates whether the room is cold",
             "type": "boolean"
           },
           "entranceNodes": {

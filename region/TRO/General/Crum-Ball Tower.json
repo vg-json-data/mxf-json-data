@@ -8,7 +8,8 @@
   "roomAddress": "0x79D00",
   "roomEnvironments": [
     {
-      "heated": false
+      "heated": false,
+      "cold": false
     }
   ],
   "mapTileMask": [

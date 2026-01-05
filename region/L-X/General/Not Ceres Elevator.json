@@ -8,7 +8,8 @@
   "roomAddress": "0x78800",
   "roomEnvironments": [
     {
-      "heated": false
+      "heated": false,
+      "cold": false
     }
   ],
   "mapTileMask": [
@@ -27,20 +28,6 @@
       "doorEnvironments": [
         {
           "physics": "air"
-        }
-      ],
-      "locks": [
-        {
-          "name": "Not Ceres Elevator Gray Lock (to Sector 0 Hard Exit Tube)",
-          "lockType": "gameFlag",
-          "unlockStrats": [
-            {
-              "name": "Base",
-              "requires": [
-                "f_OmegaMetroidEscapeActivated"
-              ]
-            }
-          ]
         }
       ]
     },
