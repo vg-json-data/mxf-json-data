@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 329,
+  "id": 330,
   "name": "Crumble City",
   "area": "TRO",
   "subarea": "General",
@@ -41,7 +41,7 @@
       "mapTileY": 15
     },
     {
-      "id": 948,
+      "id": 950,
       "name": "East-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "id": 949,
+      "id": 951,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "id": 950,
+      "id": 952,
       "name": "East-South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 369,
+  "id": 370,
   "name": "TRO Etecoon Room",
   "area": "TRO",
   "subarea": "Zazabi\u0027s Area",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 1052,
+      "id": 1054,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

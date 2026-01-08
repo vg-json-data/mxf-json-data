@@ -72,6 +72,19 @@
     },
     {
       "id": 857,
+      "name": "South Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 858,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

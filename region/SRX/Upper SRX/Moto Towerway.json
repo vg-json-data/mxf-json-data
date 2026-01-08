@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 315,
+  "id": 316,
   "name": "Moto Towerway",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -30,7 +30,7 @@
       "mapTileY": 11
     },
     {
-      "id": 908,
+      "id": 910,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 909,
+      "id": 911,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

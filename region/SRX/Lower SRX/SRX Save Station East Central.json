@@ -1,10 +1,10 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 317,
-  "name": "SRX Auxiliary Room",
+  "id": 299,
+  "name": "SRX Save Station East Central",
   "area": "SRX",
-  "subarea": "Upper SRX",
-  "roomImageFile": "Misc Room Aux 1.jpg",
+  "subarea": "Lower SRX",
+  "roomImageFile": "Misc Room Reusable 5.jpg",
   "roomAddress": "0x0",
   "roomEnvironments": [
     {
@@ -19,21 +19,12 @@
   ],
   "nodes": [
     {
-      "id": 101,
-      "name": "SRX Aux Power Cell",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "nodeItem": "Major",
-      "nodeAddress": "0x0",
-      "note": ""
-    },
-    {
-      "id": 912,
-      "name": "West-Upper Door",
+      "id": 870,
+      "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "nodeAddress": "0x0",
-      "doorOrientation": "left",
+      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"

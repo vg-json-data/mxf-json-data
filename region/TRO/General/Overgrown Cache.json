@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 337,
+  "id": 338,
   "name": "Overgrown Cache",
   "area": "TRO",
   "subarea": "General",
@@ -30,7 +30,7 @@
       "mapTileY": 19
     },
     {
-      "id": 982,
+      "id": 984,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 305,
+  "id": 306,
   "name": "Vacuum Verge",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -30,7 +30,7 @@
       "mapTileY": 22
     },
     {
-      "id": 881,
+      "id": 883,
       "name": "West-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 882,
+      "id": 884,
       "name": "East-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",

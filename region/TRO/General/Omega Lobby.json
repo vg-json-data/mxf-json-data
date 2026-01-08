@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 336,
+  "id": 337,
   "name": "Omega Lobby",
   "area": "TRO",
   "subarea": "General",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 979,
+      "id": 981,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 980,
+      "id": 982,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "id": 981,
+      "id": 983,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

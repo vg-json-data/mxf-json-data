@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 340,
+  "id": 341,
   "name": "Reo Courtyard",
   "area": "TRO",
   "subarea": "General",
@@ -30,7 +30,7 @@
       "mapTileY": 13
     },
     {
-      "id": 988,
+      "id": 990,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 989,
+      "id": 991,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 990,
+      "id": 992,
       "name": "West-South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

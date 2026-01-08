@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 341,
+  "id": 342,
   "name": "Sanctum Access",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 991,
+      "id": 993,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 992,
+      "id": 994,
       "name": "East-South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

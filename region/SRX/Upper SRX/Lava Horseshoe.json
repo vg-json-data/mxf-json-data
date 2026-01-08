@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 313,
+  "id": 314,
   "name": "Lava Horseshoe",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -30,7 +30,7 @@
       "mapTileY": 14
     },
     {
-      "id": 904,
+      "id": 906,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

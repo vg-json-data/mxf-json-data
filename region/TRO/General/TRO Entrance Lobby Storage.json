@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 345,
+  "id": 346,
   "name": "TRO Entrance Lobby Storage",
   "area": "TRO",
   "subarea": "General",
@@ -30,7 +30,7 @@
       "mapTileY": 12
     },
     {
-      "id": 999,
+      "id": 1001,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

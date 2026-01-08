@@ -18,9 +18,9 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 306,
+          "roomid": 307,
           "roomName": "West Spike Tower",
-          "nodeid": 886,
+          "nodeid": 888,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -43,9 +43,9 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 306,
+          "roomid": 307,
           "roomName": "West Spike Tower",
-          "nodeid": 887,
+          "nodeid": 889,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -68,11 +68,36 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 301,
+          "roomid": 302,
           "roomName": "SRX-NOC Elevator Access",
-          "nodeid": 872,
+          "nodeid": 874,
           "nodeName": "West-Upper Door",
           "position": "left"
+        }
+      ]
+    },
+    {
+      "connectionType": "VerticalDoor",
+      "description": "Vertical Door connection between Cruciform Hall and SRX Save Station East Central",
+      "direction": "Bidirectional",
+      "nodes": [
+        {
+          "area": "SRX",
+          "subarea": "Lower SRX",
+          "roomid": 292,
+          "roomName": "Cruciform Hall",
+          "nodeid": 857,
+          "nodeName": "South Door",
+          "position": "left"
+        },
+        {
+          "area": "SRX",
+          "subarea": "Lower SRX",
+          "roomid": 299,
+          "roomName": "SRX Save Station East Central",
+          "nodeid": 870,
+          "nodeName": "East-Upper Door",
+          "position": "right"
         }
       ]
     },
@@ -86,7 +111,7 @@
           "subarea": "Lower SRX",
           "roomid": 293,
           "roomName": "East Spike Tower",
-          "nodeid": 858,
+          "nodeid": 859,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -95,7 +120,7 @@
           "subarea": "Lower SRX",
           "roomid": 294,
           "roomName": "Golden Arachnus-X Arena",
-          "nodeid": 861,
+          "nodeid": 862,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -111,16 +136,16 @@
           "subarea": "Lower SRX",
           "roomid": 293,
           "roomName": "East Spike Tower",
-          "nodeid": 859,
+          "nodeid": 860,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 299,
+          "roomid": 300,
           "roomName": "SRX Save Station South East",
-          "nodeid": 869,
+          "nodeid": 871,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -136,16 +161,16 @@
           "subarea": "Lower SRX",
           "roomid": 293,
           "roomName": "East Spike Tower",
-          "nodeid": 860,
+          "nodeid": 861,
           "nodeName": "South Door",
           "position": "bottom"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 305,
+          "roomid": 306,
           "roomName": "Vacuum Verge",
-          "nodeid": 882,
+          "nodeid": 884,
           "nodeName": "East-North Door",
           "position": "top"
         }
@@ -161,7 +186,7 @@
           "subarea": "Lower SRX",
           "roomid": 294,
           "roomName": "Golden Arachnus-X Arena",
-          "nodeid": 862,
+          "nodeid": 863,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -170,7 +195,7 @@
           "subarea": "Lower SRX",
           "roomid": 297,
           "roomName": "Spikespawn Arena",
-          "nodeid": 867,
+          "nodeid": 868,
           "nodeName": "South Door",
           "position": "right"
         }
@@ -186,16 +211,16 @@
           "subarea": "Lower SRX",
           "roomid": 295,
           "roomName": "Lava Lake",
-          "nodeid": 864,
+          "nodeid": 865,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 303,
+          "roomid": 304,
           "roomName": "Turbo Tunnel",
-          "nodeid": 877,
+          "nodeid": 879,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -211,16 +236,16 @@
           "subarea": "Lower SRX",
           "roomid": 295,
           "roomName": "Lava Lake",
-          "nodeid": 865,
+          "nodeid": 866,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 304,
+          "roomid": 305,
           "roomName": "Twin-Wing Crossing",
-          "nodeid": 879,
+          "nodeid": 881,
           "nodeName": "West Door",
           "position": "left"
         }
@@ -236,16 +261,16 @@
           "subarea": "Lower SRX",
           "roomid": 296,
           "roomName": "Searpent\u0027s Coil",
-          "nodeid": 866,
+          "nodeid": 867,
           "nodeName": "South-East Door",
           "position": "right"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 306,
+          "roomid": 307,
           "roomName": "West Spike Tower",
-          "nodeid": 885,
+          "nodeid": 887,
           "nodeName": "West Door",
           "position": "left"
         }
@@ -261,16 +286,16 @@
           "subarea": "Lower SRX",
           "roomid": 298,
           "roomName": "SRX Etecoon Room",
-          "nodeid": 868,
+          "nodeid": 869,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 304,
+          "roomid": 305,
           "roomName": "Twin-Wing Crossing",
-          "nodeid": 878,
+          "nodeid": 880,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -284,18 +309,18 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 300,
+          "roomid": 301,
           "roomName": "SRX-ARC Tube",
-          "nodeid": 871,
+          "nodeid": 873,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 303,
+          "roomid": 304,
           "roomName": "Turbo Tunnel",
-          "nodeid": 876,
+          "nodeid": 878,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -309,18 +334,18 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 301,
+          "roomid": 302,
           "roomName": "SRX-NOC Elevator Access",
-          "nodeid": 873,
+          "nodeid": 875,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 302,
+          "roomid": 303,
           "roomName": "SRX-NOC Elevator",
-          "nodeid": 874,
+          "nodeid": 876,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -334,18 +359,18 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 304,
+          "roomid": 305,
           "roomName": "Twin-Wing Crossing",
-          "nodeid": 880,
+          "nodeid": 882,
           "nodeName": "East Door",
           "position": "right"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 306,
+          "roomid": 307,
           "roomName": "West Spike Tower",
-          "nodeid": 884,
+          "nodeid": 886,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -359,18 +384,18 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 305,
+          "roomid": 306,
           "roomName": "Vacuum Verge",
-          "nodeid": 881,
+          "nodeid": 883,
           "nodeName": "West-North Door",
           "position": "top"
         },
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 306,
+          "roomid": 307,
           "roomName": "West Spike Tower",
-          "nodeid": 888,
+          "nodeid": 890,
           "nodeName": "South Door",
           "position": "bottom"
         }

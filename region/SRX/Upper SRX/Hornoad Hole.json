@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 310,
+  "id": 311,
   "name": "Hornoad Hole",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -30,7 +30,7 @@
       "mapTileY": 12
     },
     {
-      "id": 897,
+      "id": 899,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 898,
+      "id": 900,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

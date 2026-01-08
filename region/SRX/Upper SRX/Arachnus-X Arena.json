@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 307,
+  "id": 308,
   "name": "Arachnus-X Arena",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 889,
+      "id": 891,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 890,
+      "id": 892,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "id": 891,
+      "id": 893,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

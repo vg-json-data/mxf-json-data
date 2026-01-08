@@ -18,9 +18,9 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 353,
+          "roomid": 354,
           "roomName": "TRO-L-X Tube",
-          "nodeid": 1015,
+          "nodeid": 1017,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -243,9 +243,9 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 300,
+          "roomid": 301,
           "roomName": "SRX-ARC Tube",
-          "nodeid": 870,
+          "nodeid": 872,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -293,9 +293,9 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 339,
+          "roomid": 340,
           "roomName": "Puyo Palace",
-          "nodeid": 984,
+          "nodeid": 986,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -343,9 +343,9 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 353,
+          "roomid": 354,
           "roomName": "TRO-L-X Tube",
-          "nodeid": 1014,
+          "nodeid": 1016,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -368,9 +368,9 @@
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 311,
+          "roomid": 312,
           "roomName": "Just Don\u0027t Die Bend",
-          "nodeid": 900,
+          "nodeid": 902,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -393,9 +393,9 @@
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 312,
+          "roomid": 313,
           "roomName": "L-X-SRX Normal Exit Tube",
-          "nodeid": 901,
+          "nodeid": 903,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -443,9 +443,9 @@
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 323,
+          "roomid": 324,
           "roomName": "SRX-MDK Tube",
-          "nodeid": 925,
+          "nodeid": 927,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -468,9 +468,9 @@
         {
           "area": "TRO",
           "subarea": "Nettori\u0027s Area",
-          "roomid": 362,
+          "roomid": 363,
           "roomName": "Overgrown Entrance",
-          "nodeid": 1035,
+          "nodeid": 1037,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -518,9 +518,9 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 354,
+          "roomid": 355,
           "roomName": "TRO-MDK Tube",
-          "nodeid": 1017,
+          "nodeid": 1019,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -543,9 +543,9 @@
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 312,
+          "roomid": 313,
           "roomName": "L-X-SRX Normal Exit Tube",
-          "nodeid": 902,
+          "nodeid": 904,
           "nodeName": "West Door",
           "position": "left"
         }
@@ -568,9 +568,9 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 302,
+          "roomid": 303,
           "roomName": "SRX-NOC Elevator",
-          "nodeid": 875,
+          "nodeid": 877,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -595,7 +595,7 @@
           "subarea": "Lower SRX",
           "roomid": 292,
           "roomName": "Cruciform Hall",
-          "nodeid": 857,
+          "nodeid": 858,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -618,9 +618,9 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 356,
+          "roomid": 357,
           "roomName": "TRO-PYR Elevator",
-          "nodeid": 1021,
+          "nodeid": 1023,
           "nodeName": "South Door",
           "position": "bottom"
         }
