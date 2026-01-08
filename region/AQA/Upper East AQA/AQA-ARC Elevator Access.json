@@ -56,6 +56,19 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 209,
+      "name": "South Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "down",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
     }
   ],
   "enemies": [],

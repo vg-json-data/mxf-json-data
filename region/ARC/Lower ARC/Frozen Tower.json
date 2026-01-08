@@ -43,7 +43,7 @@
       "note": "Hidden Alcove"
     },
     {
-      "id": 330,
+      "id": 332,
       "name": "North-West Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 331,
+      "id": 333,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 332,
+      "id": 334,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": 333,
+      "id": 335,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

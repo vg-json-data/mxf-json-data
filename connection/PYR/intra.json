@@ -11,7 +11,7 @@
           "subarea": "Lower PYR",
           "roomid": 247,
           "roomName": "Lava Dive Room",
-          "nodeid": 743,
+          "nodeid": 745,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -20,7 +20,7 @@
           "subarea": "Upper PYR",
           "roomid": 290,
           "roomName": "Sova Processing",
-          "nodeid": 848,
+          "nodeid": 850,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -36,7 +36,7 @@
           "subarea": "Lower PYR",
           "roomid": 256,
           "roomName": "PYR Security Room",
-          "nodeid": 762,
+          "nodeid": 764,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -45,7 +45,7 @@
           "subarea": "Neo-Crocomire\u0027s Lair",
           "roomid": 267,
           "roomName": "PYR Data Room Access",
-          "nodeid": 789,
+          "nodeid": 791,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -61,7 +61,7 @@
           "subarea": "Neo-Crocomire\u0027s Lair",
           "roomid": 269,
           "roomName": "PYR Navigation Room",
-          "nodeid": 793,
+          "nodeid": 795,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -70,7 +70,7 @@
           "subarea": "Upper PYR",
           "roomid": 276,
           "roomName": "Big Red",
-          "nodeid": 813,
+          "nodeid": 815,
           "nodeName": "South-East Door",
           "position": "right"
         }

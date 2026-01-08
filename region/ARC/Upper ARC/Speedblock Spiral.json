@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 363,
+      "id": 365,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 364,
+      "id": 366,
       "name": "South-West Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",

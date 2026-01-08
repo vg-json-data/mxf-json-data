@@ -11,7 +11,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 357,
           "roomName": "Double Helix",
-          "nodeid": 1021,
+          "nodeid": 1023,
           "nodeName": "South-East Door",
           "position": "right"
         },
@@ -20,7 +20,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 361,
           "roomName": "Overgrown Checkpoint",
-          "nodeid": 1029,
+          "nodeid": 1031,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -36,7 +36,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 358,
           "roomName": "Needlepoint",
-          "nodeid": 1022,
+          "nodeid": 1024,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -45,7 +45,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 363,
           "roomName": "Overgrown Pipeway",
-          "nodeid": 1036,
+          "nodeid": 1038,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -61,7 +61,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 359,
           "roomName": "Nettori Arena Access",
-          "nodeid": 1023,
+          "nodeid": 1025,
           "nodeName": "North Door",
           "position": "top"
         },
@@ -70,7 +70,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 367,
           "roomName": "Thornvault",
-          "nodeid": 1048,
+          "nodeid": 1050,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -86,7 +86,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 359,
           "roomName": "Nettori Arena Access",
-          "nodeid": 1024,
+          "nodeid": 1026,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -95,7 +95,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 365,
           "roomName": "Overgrown Spire",
-          "nodeid": 1043,
+          "nodeid": 1045,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -111,7 +111,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 359,
           "roomName": "Nettori Arena Access",
-          "nodeid": 1025,
+          "nodeid": 1027,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -120,7 +120,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 360,
           "roomName": "Nettori Arena",
-          "nodeid": 1026,
+          "nodeid": 1028,
           "nodeName": "North Door",
           "position": "left"
         }
@@ -136,7 +136,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 360,
           "roomName": "Nettori Arena",
-          "nodeid": 1027,
+          "nodeid": 1029,
           "nodeName": "South-West Door",
           "position": "left"
         },
@@ -145,7 +145,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 365,
           "roomName": "Overgrown Spire",
-          "nodeid": 1044,
+          "nodeid": 1046,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -161,7 +161,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 360,
           "roomName": "Nettori Arena",
-          "nodeid": 1028,
+          "nodeid": 1030,
           "nodeName": "South-East Door",
           "position": "right"
         },
@@ -170,7 +170,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 362,
           "roomName": "Overgrown Entrance",
-          "nodeid": 1032,
+          "nodeid": 1034,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -186,7 +186,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 361,
           "roomName": "Overgrown Checkpoint",
-          "nodeid": 1030,
+          "nodeid": 1032,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -195,7 +195,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 362,
           "roomName": "Overgrown Entrance",
-          "nodeid": 1034,
+          "nodeid": 1036,
           "nodeName": "South-West Door",
           "position": "left"
         }
@@ -211,7 +211,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 361,
           "roomName": "Overgrown Checkpoint",
-          "nodeid": 1031,
+          "nodeid": 1033,
           "nodeName": "South-West Door",
           "position": "left"
         },
@@ -220,7 +220,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 368,
           "roomName": "TRO Auxiliary Room",
-          "nodeid": 1049,
+          "nodeid": 1051,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -236,7 +236,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 363,
           "roomName": "Overgrown Pipeway",
-          "nodeid": 1037,
+          "nodeid": 1039,
           "nodeName": "East Morph Ball Hole",
           "position": "right"
         },
@@ -245,7 +245,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 366,
           "roomName": "Overgrown Vineyard",
-          "nodeid": 1045,
+          "nodeid": 1047,
           "nodeName": "West-Upper Morph Ball Hole",
           "position": "left"
         }
@@ -261,7 +261,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 364,
           "roomName": "Overgrown Speedway",
-          "nodeid": 1039,
+          "nodeid": 1041,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -270,7 +270,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 365,
           "roomName": "Overgrown Spire",
-          "nodeid": 1040,
+          "nodeid": 1042,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -286,7 +286,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 365,
           "roomName": "Overgrown Spire",
-          "nodeid": 1041,
+          "nodeid": 1043,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -295,7 +295,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 367,
           "roomName": "Thornvault",
-          "nodeid": 1047,
+          "nodeid": 1049,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -311,7 +311,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 365,
           "roomName": "Overgrown Spire",
-          "nodeid": 1042,
+          "nodeid": 1044,
           "nodeName": "West Door",
           "position": "left"
         },
@@ -320,7 +320,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 366,
           "roomName": "Overgrown Vineyard",
-          "nodeid": 1046,
+          "nodeid": 1048,
           "nodeName": "East-Upper Door",
           "position": "right"
         }

@@ -39,7 +39,7 @@
       "note": "Jump through the wall at the bottom-right of the room"
     },
     {
-      "id": 656,
+      "id": 658,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "id": 657,
+      "id": 659,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "id": 658,
+      "id": 660,
       "name": "East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "id": 659,
+      "id": 661,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

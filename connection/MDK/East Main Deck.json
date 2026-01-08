@@ -11,7 +11,7 @@
           "subarea": "East Main Deck",
           "roomid": 153,
           "roomName": "Crew Quarters Hallway",
-          "nodeid": 509,
+          "nodeid": 511,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -20,7 +20,7 @@
           "subarea": "East Main Deck",
           "roomid": 155,
           "roomName": "Crew Quarters",
-          "nodeid": 514,
+          "nodeid": 516,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -36,7 +36,7 @@
           "subarea": "East Main Deck",
           "roomid": 153,
           "roomName": "Crew Quarters Hallway",
-          "nodeid": 510,
+          "nodeid": 512,
           "nodeName": "West Door",
           "position": "left"
         },
@@ -45,7 +45,7 @@
           "subarea": "East Main Deck",
           "roomid": 155,
           "roomName": "Crew Quarters",
-          "nodeid": 516,
+          "nodeid": 518,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -61,7 +61,7 @@
           "subarea": "East Main Deck",
           "roomid": 153,
           "roomName": "Crew Quarters Hallway",
-          "nodeid": 511,
+          "nodeid": 513,
           "nodeName": "East Door",
           "position": "right"
         },
@@ -70,7 +70,7 @@
           "subarea": "East Main Deck",
           "roomid": 159,
           "roomName": "MDK-SRX Tube",
-          "nodeid": 525,
+          "nodeid": 527,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -86,7 +86,7 @@
           "subarea": "East Main Deck",
           "roomid": 154,
           "roomName": "Crew Quarters NOC Access",
-          "nodeid": 512,
+          "nodeid": 514,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -95,7 +95,7 @@
           "subarea": "East Main Deck",
           "roomid": 161,
           "roomName": "Operations Ventilation",
-          "nodeid": 528,
+          "nodeid": 530,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -111,7 +111,7 @@
           "subarea": "East Main Deck",
           "roomid": 154,
           "roomName": "Crew Quarters NOC Access",
-          "nodeid": 513,
+          "nodeid": 515,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -120,7 +120,7 @@
           "subarea": "East Main Deck",
           "roomid": 158,
           "roomName": "MDK-NOC Tube",
-          "nodeid": 523,
+          "nodeid": 525,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -136,7 +136,7 @@
           "subarea": "East Main Deck",
           "roomid": 155,
           "roomName": "Crew Quarters",
-          "nodeid": 515,
+          "nodeid": 517,
           "nodeName": "West Door",
           "position": "left"
         },
@@ -145,7 +145,7 @@
           "subarea": "East Main Deck",
           "roomid": 161,
           "roomName": "Operations Ventilation",
-          "nodeid": 530,
+          "nodeid": 532,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -161,7 +161,7 @@
           "subarea": "East Main Deck",
           "roomid": 155,
           "roomName": "Crew Quarters",
-          "nodeid": 517,
+          "nodeid": 519,
           "nodeName": "East Door",
           "position": "right"
         },
@@ -170,7 +170,7 @@
           "subarea": "East Main Deck",
           "roomid": 157,
           "roomName": "MDK Save Station East",
-          "nodeid": 522,
+          "nodeid": 524,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -186,7 +186,7 @@
           "subarea": "East Main Deck",
           "roomid": 156,
           "roomName": "Genesis Speedway",
-          "nodeid": 521,
+          "nodeid": 523,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -195,7 +195,7 @@
           "subarea": "East Main Deck",
           "roomid": 161,
           "roomName": "Operations Ventilation",
-          "nodeid": 531,
+          "nodeid": 533,
           "nodeName": "South-West Door",
           "position": "left"
         }

@@ -42,7 +42,7 @@
       "note": "Center-Right"
     },
     {
-      "id": 721,
+      "id": 723,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "id": 722,
+      "id": 724,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

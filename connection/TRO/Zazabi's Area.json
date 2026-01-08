@@ -11,7 +11,7 @@
           "subarea": "Zazabi\u0027s Area",
           "roomid": 370,
           "roomName": "Zazabi Arena Access",
-          "nodeid": 1052,
+          "nodeid": 1054,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -20,7 +20,7 @@
           "subarea": "Zazabi\u0027s Area",
           "roomid": 371,
           "roomName": "Zazabi Arena",
-          "nodeid": 1054,
+          "nodeid": 1056,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -36,7 +36,7 @@
           "subarea": "Zazabi\u0027s Area",
           "roomid": 370,
           "roomName": "Zazabi Arena Access",
-          "nodeid": 1053,
+          "nodeid": 1055,
           "nodeName": "South-East Door",
           "position": "right"
         },
@@ -45,7 +45,7 @@
           "subarea": "Zazabi\u0027s Area",
           "roomid": 371,
           "roomName": "Zazabi Arena",
-          "nodeid": 1056,
+          "nodeid": 1058,
           "nodeName": "South-West Door",
           "position": "left"
         }
@@ -61,7 +61,7 @@
           "subarea": "Zazabi\u0027s Area",
           "roomid": 371,
           "roomName": "Zazabi Arena",
-          "nodeid": 1055,
+          "nodeid": 1057,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -70,7 +70,7 @@
           "subarea": "Zazabi\u0027s Area",
           "roomid": 372,
           "roomName": "Zazabi Speedway Access",
-          "nodeid": 1057,
+          "nodeid": 1059,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -86,7 +86,7 @@
           "subarea": "Zazabi\u0027s Area",
           "roomid": 372,
           "roomName": "Zazabi Speedway Access",
-          "nodeid": 1058,
+          "nodeid": 1060,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -95,7 +95,7 @@
           "subarea": "Zazabi\u0027s Area",
           "roomid": 373,
           "roomName": "Zazabi Speedway",
-          "nodeid": 1059,
+          "nodeid": 1061,
           "nodeName": "North-West Door",
           "position": "left"
         }

@@ -43,7 +43,7 @@
       "note": "Middle"
     },
     {
-      "id": 824,
+      "id": 826,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 825,
+      "id": 827,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 826,
+      "id": 828,
       "name": "West-South Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": 827,
+      "id": 829,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
