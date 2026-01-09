@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 260,
+  "id": 262,
   "name": "Bubble Heights",
   "area": "PYR",
   "subarea": "Neo-Crocomire\u0027s Lair",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 773,
+      "id": 781,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 774,
+      "id": 782,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 775,
+      "id": 783,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "id": 776,
+      "id": 784,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

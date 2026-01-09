@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 187,
+  "id": 189,
   "name": "Quarantine Bay",
   "area": "MDK",
   "subarea": "West Main Deck",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 603,
+      "id": 611,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 604,
+      "id": 612,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

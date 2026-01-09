@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 202,
+  "id": 204,
   "name": "NOC Maintenance Wing",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 645,
+      "id": 653,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 646,
+      "id": 654,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 647,
+      "id": 655,
       "name": "South-West Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 312,
+  "id": 314,
   "name": "Just Don\u0027t Die Bend",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 98,
+      "id": 97,
       "name": "SRX Reserve X",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 901,
+      "id": 909,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 902,
+      "id": 910,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

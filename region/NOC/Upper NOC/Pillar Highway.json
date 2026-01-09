@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 235,
+  "id": 237,
   "name": "Pillar Highway",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 65,
+      "id": 64,
       "idMinorItemPlm": "0x64",
       "name": "Energy Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 7
     },
     {
-      "id": 722,
+      "id": 730,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

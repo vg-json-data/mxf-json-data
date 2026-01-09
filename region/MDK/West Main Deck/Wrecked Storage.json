@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 188,
+  "id": 190,
   "name": "Wrecked Storage",
   "area": "MDK",
   "subarea": "West Main Deck",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 53,
+      "id": 52,
       "idMinorItemPlm": "0x05",
       "name": "Hidden Power Bomb Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 17
     },
     {
-      "id": 605,
+      "id": 613,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,8 +43,8 @@
       ]
     },
     {
-      "id": 606,
-      "name": "West Door",
+      "id": 614,
+      "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "nodeAddress": "0x0",

@@ -43,7 +43,7 @@
       "note": "Bottom-Right"
     },
     {
-      "id": 159,
+      "id": 158,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 160,
+      "id": 159,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 161,
+      "id": 160,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": 162,
+      "id": 161,
       "name": "East-Upper Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": 163,
+      "id": 162,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": 164,
+      "id": 163,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 164,
       "name": "East-South Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",

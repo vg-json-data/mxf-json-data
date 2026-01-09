@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 349,
+  "id": 351,
   "name": "TRO Reserve X Room",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 116,
+      "id": 115,
       "name": "TRO Reserve X",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 1008,
+      "id": 1016,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

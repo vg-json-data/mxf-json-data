@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 320,
+  "id": 322,
   "name": "SRX Entrance Lobby",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 103,
+      "id": 102,
       "idMinorItemPlm": "0x11",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 11
     },
     {
-      "id": 917,
+      "id": 925,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 918,
+      "id": 926,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 919,
+      "id": 927,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 920,
+      "id": 928,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": 921,
+      "id": 929,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

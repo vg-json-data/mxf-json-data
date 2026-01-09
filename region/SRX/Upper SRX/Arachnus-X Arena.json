@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 308,
+  "id": 310,
   "name": "Arachnus-X Arena",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 95,
+      "id": 94,
       "name": "Morph Ball",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 891,
+      "id": 899,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 892,
+      "id": 900,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "id": 893,
+      "id": 901,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

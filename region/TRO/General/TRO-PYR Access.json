@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 356,
+  "id": 358,
   "name": "TRO-PYR Access",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 117,
+      "id": 116,
       "idMinorItemPlm": "0x24",
       "name": "Energy Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 15
     },
     {
-      "id": 1020,
+      "id": 1028,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 1021,
+      "id": 1029,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

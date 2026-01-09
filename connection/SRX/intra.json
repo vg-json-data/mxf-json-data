@@ -9,18 +9,18 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 292,
+          "roomid": 294,
           "roomName": "Cruciform Hall",
-          "nodeid": 853,
+          "nodeid": 861,
           "nodeName": "North Door",
           "position": "left"
         },
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 310,
+          "roomid": 312,
           "roomName": "Fool\u0027s Dead End",
-          "nodeid": 898,
+          "nodeid": 906,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -34,18 +34,18 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 295,
+          "roomid": 297,
           "roomName": "Lava Lake",
-          "nodeid": 864,
+          "nodeid": 872,
           "nodeName": "North Door",
           "position": "top"
         },
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 315,
+          "roomid": 317,
           "roomName": "Lava Tornado",
-          "nodeid": 909,
+          "nodeid": 917,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -59,18 +59,18 @@
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 307,
+          "roomid": 309,
           "roomName": "West Spike Tower",
-          "nodeid": 885,
+          "nodeid": 893,
           "nodeName": "North-East Door",
           "position": "right"
         },
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 310,
+          "roomid": 312,
           "roomName": "Fool\u0027s Dead End",
-          "nodeid": 897,
+          "nodeid": 905,
           "nodeName": "South-West Door",
           "position": "left"
         }

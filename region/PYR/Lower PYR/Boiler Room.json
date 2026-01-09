@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 240,
+  "id": 242,
   "name": "Boiler Room",
   "area": "PYR",
   "subarea": "Lower PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 69,
+      "id": 68,
       "name": "PYR Reserve X",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 732,
+      "id": 740,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

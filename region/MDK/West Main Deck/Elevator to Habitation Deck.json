@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 178,
+  "id": 180,
   "name": "Elevator to Habitation Deck",
   "area": "MDK",
   "subarea": "West Main Deck",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 583,
+      "id": 591,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,8 +32,8 @@
       ]
     },
     {
-      "id": 584,
-      "name": "West Door",
+      "id": 592,
+      "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "nodeAddress": "0x0",
@@ -45,8 +45,8 @@
       ]
     },
     {
-      "id": 585,
-      "name": "East Door",
+      "id": 593,
+      "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "nodeAddress": "0x0",

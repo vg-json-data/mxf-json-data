@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 341,
+  "id": 343,
   "name": "Reo Courtyard",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 113,
+      "id": 112,
       "idMinorItemPlm": "0x23",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 13
     },
     {
-      "id": 990,
+      "id": 998,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 991,
+      "id": 999,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 992,
+      "id": 1000,
       "name": "West-South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

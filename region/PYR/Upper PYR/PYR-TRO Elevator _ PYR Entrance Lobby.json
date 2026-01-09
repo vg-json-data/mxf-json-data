@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 288,
+  "id": 290,
   "name": "PYR-TRO Elevator / PYR Entrance Lobby",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 839,
+      "id": 847,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 840,
+      "id": 848,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 841,
+      "id": 849,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "id": 842,
+      "id": 850,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "id": 843,
+      "id": 851,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "id": 844,
+      "id": 852,
       "name": "East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "id": 845,
+      "id": 853,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

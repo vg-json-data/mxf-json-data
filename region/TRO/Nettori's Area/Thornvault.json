@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 368,
+  "id": 370,
   "name": "Thornvault",
   "area": "TRO",
   "subarea": "Nettori\u0027s Area",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 120,
+      "id": 119,
       "idMinorItemPlm": "0x2D",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 13
     },
     {
-      "id": 1051,
+      "id": 1059,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 1052,
+      "id": 1060,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

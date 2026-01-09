@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 247,
+  "id": 249,
   "name": "Lava Dive Room",
   "area": "PYR",
   "subarea": "Lower PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 745,
+      "id": 753,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 746,
+      "id": 754,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

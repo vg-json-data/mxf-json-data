@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 340,
+  "id": 342,
   "name": "Puyo Palace",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 112,
+      "id": 111,
       "idMinorItemPlm": "0x22",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 12
     },
     {
-      "id": 986,
+      "id": 994,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 987,
+      "id": 995,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 988,
+      "id": 996,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 989,
+      "id": 997,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

@@ -11,7 +11,7 @@
           "subarea": "General",
           "roomid": 135,
           "roomName": "L-X-TRO Tube",
-          "nodeid": 472,
+          "nodeid": 471,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -20,7 +20,7 @@
           "subarea": "General",
           "roomid": 148,
           "roomName": "Sector 0 Omega Exit",
-          "nodeid": 500,
+          "nodeid": 499,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -36,7 +36,7 @@
           "subarea": "General",
           "roomid": 136,
           "roomName": "Not 58 Escape Room",
-          "nodeid": 473,
+          "nodeid": 472,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -45,7 +45,7 @@
           "subarea": "General",
           "roomid": 139,
           "roomName": "Not Dead Scientist Room",
-          "nodeid": 482,
+          "nodeid": 481,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -61,7 +61,7 @@
           "subarea": "General",
           "roomid": 136,
           "roomName": "Not 58 Escape Room",
-          "nodeid": 474,
+          "nodeid": 473,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -70,7 +70,7 @@
           "subarea": "General",
           "roomid": 138,
           "roomName": "Not Ceres Ridley\u0027s Arena",
-          "nodeid": 479,
+          "nodeid": 478,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -86,7 +86,7 @@
           "subarea": "General",
           "roomid": 137,
           "roomName": "Not Ceres Elevator",
-          "nodeid": 475,
+          "nodeid": 474,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -95,7 +95,7 @@
           "subarea": "General",
           "roomid": 146,
           "roomName": "Sector 0 Hard Exit Tube",
-          "nodeid": 497,
+          "nodeid": 496,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -111,7 +111,7 @@
           "subarea": "General",
           "roomid": 137,
           "roomName": "Not Ceres Elevator",
-          "nodeid": 476,
+          "nodeid": 475,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -120,7 +120,7 @@
           "subarea": "General",
           "roomid": 144,
           "roomName": "Revival Room",
-          "nodeid": 492,
+          "nodeid": 491,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -136,7 +136,7 @@
           "subarea": "General",
           "roomid": 137,
           "roomName": "Not Ceres Elevator",
-          "nodeid": 477,
+          "nodeid": 476,
           "nodeName": "South-East Door",
           "position": "right"
         },
@@ -145,7 +145,7 @@
           "subarea": "General",
           "roomid": 140,
           "roomName": "Not Falling Tile Room",
-          "nodeid": 483,
+          "nodeid": 482,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -161,7 +161,7 @@
           "subarea": "General",
           "roomid": 138,
           "roomName": "Not Ceres Ridley\u0027s Arena",
-          "nodeid": 478,
+          "nodeid": 477,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -170,7 +170,7 @@
           "subarea": "General",
           "roomid": 147,
           "roomName": "Sector 0 Normal Exit Tube",
-          "nodeid": 498,
+          "nodeid": 497,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -186,7 +186,7 @@
           "subarea": "General",
           "roomid": 138,
           "roomName": "Not Ceres Ridley\u0027s Arena",
-          "nodeid": 480,
+          "nodeid": 479,
           "nodeName": "East-South Door",
           "position": "bottom"
         },
@@ -195,7 +195,7 @@
           "subarea": "General",
           "roomid": 142,
           "roomName": "Omega Metroid Arena",
-          "nodeid": 488,
+          "nodeid": 487,
           "nodeName": "East-North Door",
           "position": "top"
         }
@@ -211,7 +211,7 @@
           "subarea": "General",
           "roomid": 139,
           "roomName": "Not Dead Scientist Room",
-          "nodeid": 481,
+          "nodeid": 480,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -220,7 +220,7 @@
           "subarea": "General",
           "roomid": 141,
           "roomName": "Not Magnet Stairs",
-          "nodeid": 487,
+          "nodeid": 486,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -236,7 +236,7 @@
           "subarea": "General",
           "roomid": 140,
           "roomName": "Not Falling Tile Room",
-          "nodeid": 484,
+          "nodeid": 483,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -245,7 +245,7 @@
           "subarea": "General",
           "roomid": 141,
           "roomName": "Not Magnet Stairs",
-          "nodeid": 485,
+          "nodeid": 484,
           "nodeName": "North Door",
           "position": "left"
         }
@@ -261,7 +261,7 @@
           "subarea": "General",
           "roomid": 141,
           "roomName": "Not Magnet Stairs",
-          "nodeid": 486,
+          "nodeid": 485,
           "nodeName": "South-West Door",
           "position": "left"
         },
@@ -270,7 +270,7 @@
           "subarea": "General",
           "roomid": 145,
           "roomName": "Sector 0 Escape",
-          "nodeid": 493,
+          "nodeid": 492,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -286,7 +286,7 @@
           "subarea": "General",
           "roomid": 142,
           "roomName": "Omega Metroid Arena",
-          "nodeid": 489,
+          "nodeid": 488,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -295,7 +295,7 @@
           "subarea": "General",
           "roomid": 143,
           "roomName": "Omega Metroid Escape",
-          "nodeid": 491,
+          "nodeid": 490,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -311,7 +311,7 @@
           "subarea": "General",
           "roomid": 143,
           "roomName": "Omega Metroid Escape",
-          "nodeid": 490,
+          "nodeid": 489,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -320,7 +320,7 @@
           "subarea": "General",
           "roomid": 145,
           "roomName": "Sector 0 Escape",
-          "nodeid": 495,
+          "nodeid": 494,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -336,7 +336,7 @@
           "subarea": "General",
           "roomid": 145,
           "roomName": "Sector 0 Escape",
-          "nodeid": 494,
+          "nodeid": 493,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -345,7 +345,7 @@
           "subarea": "General",
           "roomid": 148,
           "roomName": "Sector 0 Omega Exit",
-          "nodeid": 501,
+          "nodeid": 500,
           "nodeName": "East-Upper Door",
           "position": "right"
         }

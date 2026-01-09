@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 264,
+  "id": 266,
   "name": "Neo-Crocomire Arena",
   "area": "PYR",
   "subarea": "Neo-Crocomire\u0027s Lair",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 783,
+      "id": 791,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 784,
+      "id": 792,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 785,
+      "id": 793,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

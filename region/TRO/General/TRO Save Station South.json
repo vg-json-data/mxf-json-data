@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 351,
+  "id": 353,
   "name": "TRO Save Station South",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 1010,
+      "id": 1018,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 1011,
+      "id": 1019,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

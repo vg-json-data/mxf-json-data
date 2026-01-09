@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 310,
+  "id": 312,
   "name": "Fool\u0027s Dead End",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 96,
+      "id": 95,
       "idMinorItemPlm": "0x13",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 14
     },
     {
-      "id": 896,
+      "id": 904,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 897,
+      "id": 905,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 898,
+      "id": 906,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 293,
+  "id": 295,
   "name": "East Spike Tower",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 859,
+      "id": 867,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 860,
+      "id": 868,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 861,
+      "id": 869,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

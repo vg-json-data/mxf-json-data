@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 277,
+  "id": 279,
   "name": "Bob\u0027s Abode",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 82,
+      "id": 81,
       "idMinorItemPlm": "0x34",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 13
     },
     {
-      "id": 816,
+      "id": 824,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 817,
+      "id": 825,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 818,
+      "id": 826,
       "name": "East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

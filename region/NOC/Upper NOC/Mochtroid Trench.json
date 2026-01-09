@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 226,
+  "id": 228,
   "name": "Mochtroid Trench",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 701,
+      "id": 709,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 702,
+      "id": 710,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 703,
+      "id": 711,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

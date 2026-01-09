@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 346,
+  "id": 348,
   "name": "TRO Entrance Lobby Storage",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 115,
+      "id": 114,
       "idMinorItemPlm": "0x20",
       "name": "Hidden Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 12
     },
     {
-      "id": 1001,
+      "id": 1009,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

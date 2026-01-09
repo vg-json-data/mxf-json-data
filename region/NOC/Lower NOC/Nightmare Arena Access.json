@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 196,
+  "id": 198,
   "name": "Nightmare Arena Access",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 629,
+      "id": 637,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 630,
+      "id": 638,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 631,
+      "id": 639,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

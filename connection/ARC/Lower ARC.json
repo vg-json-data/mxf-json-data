@@ -11,7 +11,7 @@
           "subarea": "Lower ARC",
           "roomid": 70,
           "roomName": "ARC Data Room Access",
-          "nodeid": 309,
+          "nodeid": 308,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -20,7 +20,7 @@
           "subarea": "Lower ARC",
           "roomid": 76,
           "roomName": "Cellar",
-          "nodeid": 327,
+          "nodeid": 326,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -36,7 +36,7 @@
           "subarea": "Lower ARC",
           "roomid": 70,
           "roomName": "ARC Data Room Access",
-          "nodeid": 310,
+          "nodeid": 309,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -45,7 +45,7 @@
           "subarea": "Lower ARC",
           "roomid": 71,
           "roomName": "ARC Data Room",
-          "nodeid": 311,
+          "nodeid": 310,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -61,7 +61,7 @@
           "subarea": "Lower ARC",
           "roomid": 71,
           "roomName": "ARC Data Room",
-          "nodeid": 312,
+          "nodeid": 311,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -70,7 +70,7 @@
           "subarea": "Lower ARC",
           "roomid": 78,
           "roomName": "Frozen Tower",
-          "nodeid": 335,
+          "nodeid": 334,
           "nodeName": "South-West Door",
           "position": "left"
         }
@@ -86,7 +86,7 @@
           "subarea": "Lower ARC",
           "roomid": 72,
           "roomName": "ARC Reserve X Room",
-          "nodeid": 313,
+          "nodeid": 312,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -95,7 +95,7 @@
           "subarea": "Lower ARC",
           "roomid": 78,
           "roomName": "Frozen Tower",
-          "nodeid": 334,
+          "nodeid": 333,
           "nodeName": "West Door",
           "position": "left"
         }
@@ -111,7 +111,7 @@
           "subarea": "Lower ARC",
           "roomid": 73,
           "roomName": "ARC Save Station South",
-          "nodeid": 314,
+          "nodeid": 313,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -120,7 +120,7 @@
           "subarea": "Lower ARC",
           "roomid": 76,
           "roomName": "Cellar",
-          "nodeid": 326,
+          "nodeid": 325,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -136,7 +136,7 @@
           "subarea": "Lower ARC",
           "roomid": 74,
           "roomName": "Arctic Containment",
-          "nodeid": 315,
+          "nodeid": 314,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -145,7 +145,7 @@
           "subarea": "Lower ARC",
           "roomid": 80,
           "roomName": "Zeela Speedway",
-          "nodeid": 339,
+          "nodeid": 338,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -161,7 +161,7 @@
           "subarea": "Lower ARC",
           "roomid": 74,
           "roomName": "Arctic Containment",
-          "nodeid": 316,
+          "nodeid": 315,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -170,7 +170,7 @@
           "subarea": "Lower ARC",
           "roomid": 77,
           "roomName": "Frostbite Hall",
-          "nodeid": 329,
+          "nodeid": 328,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -186,7 +186,7 @@
           "subarea": "Lower ARC",
           "roomid": 74,
           "roomName": "Arctic Containment",
-          "nodeid": 317,
+          "nodeid": 316,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -195,7 +195,7 @@
           "subarea": "Lower ARC",
           "roomid": 75,
           "roomName": "Arctic Gauntlet",
-          "nodeid": 322,
+          "nodeid": 321,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -211,7 +211,7 @@
           "subarea": "Lower ARC",
           "roomid": 74,
           "roomName": "Arctic Containment",
-          "nodeid": 318,
+          "nodeid": 317,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -220,7 +220,7 @@
           "subarea": "Lower ARC",
           "roomid": 77,
           "roomName": "Frostbite Hall",
-          "nodeid": 330,
+          "nodeid": 329,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -236,7 +236,7 @@
           "subarea": "Lower ARC",
           "roomid": 74,
           "roomName": "Arctic Containment",
-          "nodeid": 319,
+          "nodeid": 318,
           "nodeName": "South-West Door",
           "position": "left"
         },
@@ -245,7 +245,7 @@
           "subarea": "Lower ARC",
           "roomid": 75,
           "roomName": "Arctic Gauntlet",
-          "nodeid": 324,
+          "nodeid": 323,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -261,7 +261,7 @@
           "subarea": "Lower ARC",
           "roomid": 74,
           "roomName": "Arctic Containment",
-          "nodeid": 320,
+          "nodeid": 319,
           "nodeName": "South-East Door",
           "position": "right"
         },
@@ -270,7 +270,7 @@
           "subarea": "Lower ARC",
           "roomid": 76,
           "roomName": "Cellar",
-          "nodeid": 325,
+          "nodeid": 324,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -286,7 +286,7 @@
           "subarea": "Lower ARC",
           "roomid": 77,
           "roomName": "Frostbite Hall",
-          "nodeid": 331,
+          "nodeid": 330,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -295,7 +295,7 @@
           "subarea": "Lower ARC",
           "roomid": 78,
           "roomName": "Frozen Tower",
-          "nodeid": 333,
+          "nodeid": 332,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -311,7 +311,7 @@
           "subarea": "Lower ARC",
           "roomid": 79,
           "roomName": "Zeela Speedway Cache",
-          "nodeid": 336,
+          "nodeid": 335,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -320,7 +320,7 @@
           "subarea": "Lower ARC",
           "roomid": 80,
           "roomName": "Zeela Speedway",
-          "nodeid": 338,
+          "nodeid": 337,
           "nodeName": "South-West Door",
           "position": "left"
         }

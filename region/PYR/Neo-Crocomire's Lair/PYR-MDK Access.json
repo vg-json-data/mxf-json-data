@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 272,
+  "id": 274,
   "name": "PYR-MDK Access",
   "area": "PYR",
   "subarea": "Neo-Crocomire\u0027s Lair",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 79,
+      "id": 78,
       "idMinorItemPlm": "0x39",
       "name": "Hidden Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 16
     },
     {
-      "id": 800,
+      "id": 808,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 801,
+      "id": 809,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

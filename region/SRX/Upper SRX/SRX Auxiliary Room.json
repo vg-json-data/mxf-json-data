@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 317,
+  "id": 319,
   "name": "SRX Auxiliary Room",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 101,
+      "id": 100,
       "name": "SRX Aux Power Cell",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 912,
+      "id": 920,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

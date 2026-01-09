@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 224,
+  "id": 226,
   "name": "Mochtroid Tower Closet",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 64,
+      "id": 63,
       "idMinorItemPlm": "0x60",
       "name": "Hidden Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 5
     },
     {
-      "id": 695,
+      "id": 703,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

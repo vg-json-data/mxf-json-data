@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 364,
+  "id": 366,
   "name": "Overgrown Pipeway",
   "area": "TRO",
   "subarea": "Nettori\u0027s Area",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 1039,
+      "id": 1047,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 1040,
+      "id": 1048,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 1041,
+      "id": 1049,
       "name": "East Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",

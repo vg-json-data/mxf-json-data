@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 193,
+  "id": 195,
   "name": "Ice-X Shaft",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 55,
+      "id": 54,
       "idMinorItemPlm": "0x67",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 13
     },
     {
-      "id": 619,
+      "id": 627,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 620,
+      "id": 628,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 621,
+      "id": 629,
       "name": "West-Upper Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 622,
+      "id": 630,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": 623,
+      "id": 631,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

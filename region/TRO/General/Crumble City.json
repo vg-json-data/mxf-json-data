@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 330,
+  "id": 332,
   "name": "Crumble City",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 104,
+      "id": 103,
       "idMinorItemPlm": "0x26",
       "name": "Power Bomb Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 16
     },
     {
-      "id": 105,
+      "id": 104,
       "idMinorItemPlm": "0x25",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -41,7 +41,7 @@
       "mapTileY": 15
     },
     {
-      "id": 950,
+      "id": 958,
       "name": "East-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "id": 951,
+      "id": 959,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "id": 952,
+      "id": 960,
       "name": "East-South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

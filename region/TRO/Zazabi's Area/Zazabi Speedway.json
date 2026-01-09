@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 374,
+  "id": 376,
   "name": "Zazabi Speedway",
   "area": "TRO",
   "subarea": "Zazabi\u0027s Area",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 124,
+      "id": 123,
       "idMinorItemPlm": "0x2A",
       "name": "Power Bomb Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 20
     },
     {
-      "id": 1063,
+      "id": 1071,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

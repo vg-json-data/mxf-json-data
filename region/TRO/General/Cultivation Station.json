@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 332,
+  "id": 334,
   "name": "Cultivation Station",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 107,
+      "id": 106,
       "idMinorItemPlm": "0x27",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 17
     },
     {
-      "id": 956,
+      "id": 964,
       "name": "West-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 957,
+      "id": 965,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 958,
+      "id": 966,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 959,
+      "id": 967,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": 960,
+      "id": 968,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 304,
+  "id": 306,
   "name": "Turbo Tunnel",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 878,
+      "id": 886,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 879,
+      "id": 887,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

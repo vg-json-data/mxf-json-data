@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 335,
+  "id": 337,
   "name": "Oasis Storage",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 108,
+      "id": 107,
       "idMinorItemPlm": "0x2C",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 18
     },
     {
-      "id": 974,
+      "id": 982,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 975,
+      "id": 983,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 976,
+      "id": 984,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

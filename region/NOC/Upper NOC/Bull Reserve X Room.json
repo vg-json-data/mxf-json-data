@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 217,
+  "id": 219,
   "name": "Bull Reserve X Room",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 63,
+      "id": 62,
       "name": "NOC Reserve X",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 678,
+      "id": 686,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 679,
+      "id": 687,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

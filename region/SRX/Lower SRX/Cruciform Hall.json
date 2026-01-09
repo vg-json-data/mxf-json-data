@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 292,
+  "id": 294,
   "name": "Cruciform Hall",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 853,
+      "id": 861,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 854,
+      "id": 862,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 855,
+      "id": 863,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "id": 856,
+      "id": 864,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "id": 857,
+      "id": 865,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "id": 858,
+      "id": 866,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

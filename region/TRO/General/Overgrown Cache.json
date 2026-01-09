@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 338,
+  "id": 340,
   "name": "Overgrown Cache",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 110,
+      "id": 109,
       "idMinorItemPlm": "0x2B",
       "name": "Hidden Energy Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 19
     },
     {
-      "id": 984,
+      "id": 992,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

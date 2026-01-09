@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 190,
+  "id": 192,
   "name": "Barrier Core-X Chozo Room",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 609,
+      "id": 617,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 610,
+      "id": 618,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

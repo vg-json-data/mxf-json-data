@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 203,
+  "id": 205,
   "name": "NOC Mimic Lodge",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 59,
+      "id": 58,
       "idMinorItemPlm": "0x66",
       "name": "Energy Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 17
     },
     {
-      "id": 648,
+      "id": 656,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

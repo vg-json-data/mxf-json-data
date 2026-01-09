@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 371,
+  "id": 373,
   "name": "Zazabi Arena Access",
   "area": "TRO",
   "subarea": "Zazabi\u0027s Area",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 122,
+      "id": 121,
       "idMinorItemPlm": "0x29",
       "name": "Hidden Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 20
     },
     {
-      "id": 1055,
+      "id": 1063,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 1056,
+      "id": 1064,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 1057,
+      "id": 1065,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

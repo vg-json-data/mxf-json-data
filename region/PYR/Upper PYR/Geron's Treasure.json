@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 282,
+  "id": 284,
   "name": "Geron\u0027s Treasure",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 85,
+      "id": 84,
       "idMinorItemPlm": "0x38",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 13
     },
     {
-      "id": 830,
+      "id": 838,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

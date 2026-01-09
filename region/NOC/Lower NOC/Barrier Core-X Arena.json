@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 189,
+  "id": 191,
   "name": "Barrier Core-X Arena",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 54,
+      "id": 53,
       "name": "Varia Suit",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 607,
+      "id": 615,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 608,
+      "id": 616,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

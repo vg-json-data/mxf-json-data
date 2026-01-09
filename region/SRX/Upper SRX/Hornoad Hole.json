@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 311,
+  "id": 313,
   "name": "Hornoad Hole",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 97,
+      "id": 96,
       "idMinorItemPlm": "0x12",
       "name": "Energy Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 12
     },
     {
-      "id": 899,
+      "id": 907,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 900,
+      "id": 908,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

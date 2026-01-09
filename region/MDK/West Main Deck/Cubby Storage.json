@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schema/mxf-room.schema.json",
+  "id": 178,
+  "name": "Cubby Storage",
+  "area": "MDK",
+  "subarea": "West Main Deck",
+  "roomImageFile": "MDK Room Cubby Storage.png",
+  "roomAddress": "0x0",
+  "roomEnvironments": [
+    {
+      "heated": false,
+      "cold": false
+    }
+  ],
+  "mapTileMask": [
+    [
+      0
+    ]
+  ],
+  "nodes": [
+    {
+      "id": 587,
+      "name": "West-Upper Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 588,
+      "name": "East-Upper Morph Ball Hole",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    }
+  ],
+  "enemies": [],
+  "links": [],
+  "strats": [],
+  "notables": [],
+  "nextStratId": 1,
+  "nextNotableId": 1
+}

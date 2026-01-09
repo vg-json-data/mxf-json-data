@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 199,
+  "id": 201,
   "name": "NOC Entrance Lobby South",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 57,
+      "id": 56,
       "idMinorItemPlm": "0x65",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 18
     },
     {
-      "id": 637,
+      "id": 645,
       "name": "West-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 638,
+      "id": 646,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 639,
+      "id": 647,
       "name": "East-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 640,
+      "id": 648,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": 641,
+      "id": 649,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

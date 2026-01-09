@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 361,
+  "id": 363,
   "name": "Nettori Arena",
   "area": "TRO",
   "subarea": "Nettori\u0027s Area",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 119,
+      "id": 118,
       "name": "Plasma Beam",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 1030,
+      "id": 1038,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 1031,
+      "id": 1039,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "id": 1032,
+      "id": 1040,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

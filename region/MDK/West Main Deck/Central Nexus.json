@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schema/mxf-room.schema.json",
+  "id": 175,
+  "name": "Central Nexus",
+  "area": "MDK",
+  "subarea": "West Main Deck",
+  "roomImageFile": "MDK Room Central Nexus.png",
+  "roomAddress": "0x0",
+  "roomEnvironments": [
+    {
+      "heated": false,
+      "cold": false
+    }
+  ],
+  "mapTileMask": [
+    [
+      0
+    ]
+  ],
+  "nodes": [
+    {
+      "id": 572,
+      "name": "North-West Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 573,
+      "name": "North-East Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 574,
+      "name": "East-Upper Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 575,
+      "name": "South-West Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 576,
+      "name": "South-East Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    }
+  ],
+  "enemies": [],
+  "links": [],
+  "strats": [],
+  "notables": [],
+  "nextStratId": 1,
+  "nextNotableId": 1
+}

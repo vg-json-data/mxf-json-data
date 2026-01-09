@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 227,
+  "id": 229,
   "name": "NOC Auxiliary Room Access",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 704,
+      "id": 712,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 705,
+      "id": 713,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

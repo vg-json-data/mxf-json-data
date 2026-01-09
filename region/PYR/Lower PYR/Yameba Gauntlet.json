@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 257,
+  "id": 259,
   "name": "Yameba Gauntlet",
   "area": "PYR",
   "subarea": "Lower PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 765,
+      "id": 773,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 766,
+      "id": 774,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 270,
+  "id": 272,
   "name": "PYR Save Station East",
   "area": "PYR",
   "subarea": "Neo-Crocomire\u0027s Lair",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 797,
+      "id": 805,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

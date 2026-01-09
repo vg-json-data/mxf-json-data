@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 313,
+  "id": 315,
   "name": "L-X-SRX Normal Exit Tube",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 903,
+      "id": 911,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 904,
+      "id": 912,
       "name": "West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 905,
+      "id": 913,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

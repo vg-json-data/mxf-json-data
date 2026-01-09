@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 184,
+  "id": 186,
   "name": "MDK-TRO Access",
   "area": "MDK",
   "subarea": "West Main Deck",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 595,
+      "id": 603,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 596,
+      "id": 604,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

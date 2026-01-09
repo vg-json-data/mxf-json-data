@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 255,
+  "id": 257,
   "name": "PYR Security Room Access",
   "area": "PYR",
   "subarea": "Lower PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 73,
+      "id": 72,
       "idMinorItemPlm": "0x3D",
       "name": "Power Bomb Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 18
     },
     {
-      "id": 761,
+      "id": 769,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 762,
+      "id": 770,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

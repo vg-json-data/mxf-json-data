@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 211,
+  "id": 213,
   "name": "Shiverclimb",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 62,
+      "id": 61,
       "idMinorItemPlm": "0x69",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 16
     },
     {
-      "id": 662,
+      "id": 670,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 663,
+      "id": 671,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

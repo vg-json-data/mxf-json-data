@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 327,
+  "id": 329,
   "name": "Yameba Corridor",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 938,
+      "id": 946,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 939,
+      "id": 947,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

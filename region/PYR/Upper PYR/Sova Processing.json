@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 290,
+  "id": 292,
   "name": "Sova Processing",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 88,
+      "id": 87,
       "idMinorItemPlm": "0x33",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 15
     },
     {
-      "id": 848,
+      "id": 856,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 849,
+      "id": 857,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 850,
+      "id": 858,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

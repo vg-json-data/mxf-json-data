@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 286,
+  "id": 288,
   "name": "PYR-ARC Access",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 835,
+      "id": 843,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 836,
+      "id": 844,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

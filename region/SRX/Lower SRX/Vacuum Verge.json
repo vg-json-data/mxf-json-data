@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 306,
+  "id": 308,
   "name": "Vacuum Verge",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 94,
+      "id": 93,
       "idMinorItemPlm": "0x18",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 22
     },
     {
-      "id": 883,
+      "id": 891,
       "name": "West-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 884,
+      "id": 892,
       "name": "East-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",

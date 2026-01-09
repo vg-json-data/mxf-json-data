@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 181,
+  "id": 183,
   "name": "MDK-AQA Access",
   "area": "MDK",
   "subarea": "West Main Deck",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 589,
+      "id": 597,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 590,
+      "id": 598,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

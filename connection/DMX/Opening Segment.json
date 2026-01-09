@@ -11,7 +11,7 @@
           "subarea": "Opening Segment",
           "roomid": 125,
           "roomName": "DMX Entrance",
-          "nodeid": 443,
+          "nodeid": 442,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -20,7 +20,7 @@
           "subarea": "Opening Segment",
           "roomid": 126,
           "roomName": "DMX Hallway",
-          "nodeid": 445,
+          "nodeid": 444,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -36,7 +36,7 @@
           "subarea": "Opening Segment",
           "roomid": 126,
           "roomName": "DMX Hallway",
-          "nodeid": 446,
+          "nodeid": 445,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -45,7 +45,7 @@
           "subarea": "Opening Segment",
           "roomid": 127,
           "roomName": "DMX Hub",
-          "nodeid": 447,
+          "nodeid": 446,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -61,7 +61,7 @@
           "subarea": "Opening Segment",
           "roomid": 127,
           "roomName": "DMX Hub",
-          "nodeid": 450,
+          "nodeid": 449,
           "nodeName": "East Door",
           "position": "right"
         },
@@ -70,7 +70,7 @@
           "subarea": "Opening Segment",
           "roomid": 134,
           "roomName": "Xenometroid Birthplace",
-          "nodeid": 469,
+          "nodeid": 468,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -86,7 +86,7 @@
           "subarea": "Opening Segment",
           "roomid": 128,
           "roomName": "Dusty Arachnus",
-          "nodeid": 452,
+          "nodeid": 451,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -95,7 +95,7 @@
           "subarea": "Opening Segment",
           "roomid": 132,
           "roomName": "Omega Queen\u0027s Room",
-          "nodeid": 461,
+          "nodeid": 460,
           "nodeName": "North-East Door",
           "position": "right"
         }
@@ -111,7 +111,7 @@
           "subarea": "Opening Segment",
           "roomid": 128,
           "roomName": "Dusty Arachnus",
-          "nodeid": 453,
+          "nodeid": 452,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -120,7 +120,7 @@
           "subarea": "Opening Segment",
           "roomid": 129,
           "roomName": "Metroid Nest",
-          "nodeid": 454,
+          "nodeid": 453,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -136,7 +136,7 @@
           "subarea": "Opening Segment",
           "roomid": 129,
           "roomName": "Metroid Nest",
-          "nodeid": 455,
+          "nodeid": 454,
           "nodeName": "South-West Morph Ball Hole",
           "position": "left"
         },
@@ -145,7 +145,7 @@
           "subarea": "Opening Segment",
           "roomid": 132,
           "roomName": "Omega Queen\u0027s Room",
-          "nodeid": 462,
+          "nodeid": 461,
           "nodeName": "East-Upper Morph Ball Hole",
           "position": "right"
         }
@@ -161,7 +161,7 @@
           "subarea": "Opening Segment",
           "roomid": 129,
           "roomName": "Metroid Nest",
-          "nodeid": 456,
+          "nodeid": 455,
           "nodeName": "South-East Morph Ball Hole",
           "position": "right"
         },
@@ -170,7 +170,7 @@
           "subarea": "Opening Segment",
           "roomid": 133,
           "roomName": "Ventilation A",
-          "nodeid": 464,
+          "nodeid": 463,
           "nodeName": "North Morph Ball Hole",
           "position": "left"
         }
@@ -186,7 +186,7 @@
           "subarea": "Opening Segment",
           "roomid": 130,
           "roomName": "Metroid Room 1",
-          "nodeid": 457,
+          "nodeid": 456,
           "nodeName": "West-North Door",
           "position": "top"
         },
@@ -195,7 +195,7 @@
           "subarea": "Opening Segment",
           "roomid": 134,
           "roomName": "Xenometroid Birthplace",
-          "nodeid": 470,
+          "nodeid": 469,
           "nodeName": "East-South Door",
           "position": "bottom"
         }
@@ -211,7 +211,7 @@
           "subarea": "Opening Segment",
           "roomid": 130,
           "roomName": "Metroid Room 1",
-          "nodeid": 458,
+          "nodeid": 457,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -220,7 +220,7 @@
           "subarea": "Opening Segment",
           "roomid": 131,
           "roomName": "Metroid Room 2",
-          "nodeid": 460,
+          "nodeid": 459,
           "nodeName": "South-West Door",
           "position": "left"
         }
@@ -236,7 +236,7 @@
           "subarea": "Opening Segment",
           "roomid": 131,
           "roomName": "Metroid Room 2",
-          "nodeid": 459,
+          "nodeid": 458,
           "nodeName": "North-West Door",
           "position": "left"
         },
@@ -245,7 +245,7 @@
           "subarea": "Opening Segment",
           "roomid": 133,
           "roomName": "Ventilation A",
-          "nodeid": 467,
+          "nodeid": 466,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -261,7 +261,7 @@
           "subarea": "Opening Segment",
           "roomid": 132,
           "roomName": "Omega Queen\u0027s Room",
-          "nodeid": 463,
+          "nodeid": 462,
           "nodeName": "South Door",
           "position": "bottom"
         },
@@ -270,7 +270,7 @@
           "subarea": "Opening Segment",
           "roomid": 134,
           "roomName": "Xenometroid Birthplace",
-          "nodeid": 468,
+          "nodeid": 467,
           "nodeName": "North Door",
           "position": "top"
         }
@@ -286,7 +286,7 @@
           "subarea": "Opening Segment",
           "roomid": 133,
           "roomName": "Ventilation A",
-          "nodeid": 465,
+          "nodeid": 464,
           "nodeName": "West Door",
           "position": "left"
         },
@@ -295,7 +295,7 @@
           "subarea": "Opening Segment",
           "roomid": 133,
           "roomName": "Ventilation A",
-          "nodeid": 465,
+          "nodeid": 464,
           "nodeName": "West Door",
           "position": "left"
         }
@@ -311,7 +311,7 @@
           "subarea": "Opening Segment",
           "roomid": 133,
           "roomName": "Ventilation A",
-          "nodeid": 466,
+          "nodeid": 465,
           "nodeName": "East Door",
           "position": "right"
         },
@@ -320,7 +320,7 @@
           "subarea": "Opening Segment",
           "roomid": 133,
           "roomName": "Ventilation A",
-          "nodeid": 466,
+          "nodeid": 465,
           "nodeName": "East Door",
           "position": "right"
         }

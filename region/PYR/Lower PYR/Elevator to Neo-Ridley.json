@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 243,
+  "id": 245,
   "name": "Elevator to Neo-Ridley",
   "area": "PYR",
   "subarea": "Lower PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 70,
+      "id": 69,
       "idMinorItemPlm": "0x3C",
       "name": "Energy Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 16
     },
     {
-      "id": 736,
+      "id": 744,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 737,
+      "id": 745,
       "name": "South Door",
       "nodeType": "door",
       "nodeSubType": "blue",

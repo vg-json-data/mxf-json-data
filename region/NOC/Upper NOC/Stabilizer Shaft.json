@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 237,
+  "id": 239,
   "name": "Stabilizer Shaft",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 68,
+      "id": 67,
       "idMinorItemPlm": "0x61",
       "name": "Power Bomb Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 9
     },
     {
-      "id": 725,
+      "id": 733,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 726,
+      "id": 734,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

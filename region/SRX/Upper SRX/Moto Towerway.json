@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 316,
+  "id": 318,
   "name": "Moto Towerway",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 100,
+      "id": 99,
       "idMinorItemPlm": "0x10",
       "name": "Hidden Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 11
     },
     {
-      "id": 910,
+      "id": 918,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 911,
+      "id": 919,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

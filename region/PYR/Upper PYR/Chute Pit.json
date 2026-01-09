@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 278,
+  "id": 280,
   "name": "Chute Pit",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 819,
+      "id": 827,
       "name": "West-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 820,
+      "id": 828,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

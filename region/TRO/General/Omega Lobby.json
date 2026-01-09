@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 337,
+  "id": 339,
   "name": "Omega Lobby",
   "area": "TRO",
   "subarea": "General",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 109,
+      "id": 108,
       "name": "TRO Aux Power Cell",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 981,
+      "id": 989,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 982,
+      "id": 990,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "id": 983,
+      "id": 991,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

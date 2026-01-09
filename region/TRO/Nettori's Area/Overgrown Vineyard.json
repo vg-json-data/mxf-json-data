@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 367,
+  "id": 369,
   "name": "Overgrown Vineyard",
   "area": "TRO",
   "subarea": "Nettori\u0027s Area",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 1049,
+      "id": 1057,
       "name": "West-Upper Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 1050,
+      "id": 1058,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

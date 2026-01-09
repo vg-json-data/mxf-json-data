@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 424,
+      "id": 423,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 425,
+      "id": 424,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

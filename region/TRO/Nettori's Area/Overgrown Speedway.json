@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 365,
+  "id": 367,
   "name": "Overgrown Speedway",
   "area": "TRO",
   "subarea": "Nettori\u0027s Area",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 1042,
+      "id": 1050,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 1043,
+      "id": 1051,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

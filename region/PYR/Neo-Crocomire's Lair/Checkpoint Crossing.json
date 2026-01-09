@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 262,
+  "id": 264,
   "name": "Checkpoint Crossing",
   "area": "PYR",
   "subarea": "Neo-Crocomire\u0027s Lair",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 75,
+      "id": 74,
       "name": "PYR Aux Power Cell",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -28,7 +28,7 @@
       "note": ""
     },
     {
-      "id": 778,
+      "id": 786,
       "name": "North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": 779,
+      "id": 787,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "id": 780,
+      "id": 788,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

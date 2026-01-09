@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 271,
+  "id": 273,
   "name": "PYR-AQA Tube",
   "area": "PYR",
   "subarea": "Neo-Crocomire\u0027s Lair",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 798,
+      "id": 806,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 799,
+      "id": 807,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

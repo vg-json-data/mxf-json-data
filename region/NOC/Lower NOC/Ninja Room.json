@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 198,
+  "id": 200,
   "name": "Ninja Room",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 633,
+      "id": 641,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": 634,
+      "id": 642,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": 635,
+      "id": 643,
       "name": "East Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "id": 636,
+      "id": 644,
       "name": "South-East Morph Ball Hole",
       "nodeType": "door",
       "nodeSubType": "passage",

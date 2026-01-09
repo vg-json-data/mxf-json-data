@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 359,
+  "id": 361,
   "name": "Needlepoint",
   "area": "TRO",
   "subarea": "Nettori\u0027s Area",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 118,
+      "id": 117,
       "idMinorItemPlm": "0x2E",
       "name": "Hidden Power Bomb Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 14
     },
     {
-      "id": 1026,
+      "id": 1034,
       "name": "West-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

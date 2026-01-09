@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 210,
+  "id": 212,
   "name": "Nocturnal Crossroads",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 60,
+      "id": 59,
       "idMinorItemPlm": "0x6A",
       "name": "Missile Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 13
     },
     {
-      "id": 61,
+      "id": 60,
       "name": "NOC Aux Power Cell",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -39,7 +39,7 @@
       "note": "Jump through the wall at the bottom-right of the room"
     },
     {
-      "id": 658,
+      "id": 666,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "id": 659,
+      "id": 667,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "id": 660,
+      "id": 668,
       "name": "East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "id": 661,
+      "id": 669,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",

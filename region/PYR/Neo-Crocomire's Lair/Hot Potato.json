@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 263,
+  "id": 265,
   "name": "Hot Potato",
   "area": "PYR",
   "subarea": "Neo-Crocomire\u0027s Lair",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 76,
+      "id": 75,
       "idMinorItemPlm": "0x3A",
       "name": "Energy Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 16
     },
     {
-      "id": 781,
+      "id": 789,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 782,
+      "id": 790,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

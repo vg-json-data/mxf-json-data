@@ -11,7 +11,7 @@
           "subarea": "Docking Bay",
           "roomid": 149,
           "roomName": "Docking Bay Access",
-          "nodeid": 502,
+          "nodeid": 501,
           "nodeName": "West-Upper Door",
           "position": "left"
         },
@@ -20,7 +20,7 @@
           "subarea": "Docking Bay",
           "roomid": 150,
           "roomName": "Docking Bay Climb",
-          "nodeid": 508,
+          "nodeid": 507,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -36,7 +36,7 @@
           "subarea": "Docking Bay",
           "roomid": 149,
           "roomName": "Docking Bay Access",
-          "nodeid": 503,
+          "nodeid": 502,
           "nodeName": "East-Upper Door",
           "position": "right"
         },
@@ -45,7 +45,7 @@
           "subarea": "Docking Bay",
           "roomid": 152,
           "roomName": "Docking Bay",
-          "nodeid": 510,
+          "nodeid": 509,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -61,7 +61,7 @@
           "subarea": "Docking Bay",
           "roomid": 150,
           "roomName": "Docking Bay Climb",
-          "nodeid": 505,
+          "nodeid": 504,
           "nodeName": "North-East Door",
           "position": "right"
         },
@@ -70,7 +70,7 @@
           "subarea": "Docking Bay",
           "roomid": 151,
           "roomName": "Docking Bay Supply Room",
-          "nodeid": 509,
+          "nodeid": 508,
           "nodeName": "West-Upper Door",
           "position": "left"
         }

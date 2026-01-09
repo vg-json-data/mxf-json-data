@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 182,
+  "id": 184,
   "name": "MDK-AQA Elevator Cache",
   "area": "MDK",
   "subarea": "West Main Deck",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 52,
+      "id": 51,
       "idMinorItemPlm": "0x01",
       "name": "Power Bomb Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 18
     },
     {
-      "id": 591,
+      "id": 599,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",

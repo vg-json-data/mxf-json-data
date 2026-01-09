@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 314,
+  "id": 316,
   "name": "Lava Horseshoe",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 99,
+      "id": 98,
       "idMinorItemPlm": "0x14",
       "name": "Hidden Power Bomb Tank",
       "nodeType": "item",
@@ -30,7 +30,7 @@
       "mapTileY": 14
     },
     {
-      "id": 906,
+      "id": 914,
       "name": "East-Upper Door",
       "nodeType": "door",
       "nodeSubType": "blue",
