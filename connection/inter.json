@@ -20,7 +20,7 @@
           "subarea": "General",
           "roomid": 356,
           "roomName": "TRO-L-X Tube",
-          "nodeid": 1025,
+          "nodeid": 1027,
           "nodeName": "East Door",
           "position": "right"
         }
@@ -220,7 +220,7 @@
           "subarea": "Upper PYR",
           "roomid": 289,
           "roomName": "PYR-ARC Tube",
-          "nodeid": 846,
+          "nodeid": 847,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -245,7 +245,7 @@
           "subarea": "Lower SRX",
           "roomid": 303,
           "roomName": "SRX-ARC Tube",
-          "nodeid": 880,
+          "nodeid": 882,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -295,7 +295,7 @@
           "subarea": "General",
           "roomid": 342,
           "roomName": "Puyo Palace",
-          "nodeid": 994,
+          "nodeid": 996,
           "nodeName": "North-West Door",
           "position": "left"
         }
@@ -345,7 +345,7 @@
           "subarea": "General",
           "roomid": 356,
           "roomName": "TRO-L-X Tube",
-          "nodeid": 1024,
+          "nodeid": 1026,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -370,7 +370,7 @@
           "subarea": "Upper SRX",
           "roomid": 314,
           "roomName": "Just Don\u0027t Die Bend",
-          "nodeid": 910,
+          "nodeid": 912,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -395,7 +395,7 @@
           "subarea": "Upper SRX",
           "roomid": 315,
           "roomName": "L-X-SRX Normal Exit Tube",
-          "nodeid": 911,
+          "nodeid": 913,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -445,7 +445,7 @@
           "subarea": "Upper SRX",
           "roomid": 326,
           "roomName": "SRX-MDK Tube",
-          "nodeid": 935,
+          "nodeid": 937,
           "nodeName": "West-Upper Door",
           "position": "left"
         }
@@ -470,7 +470,7 @@
           "subarea": "Nettori\u0027s Area",
           "roomid": 365,
           "roomName": "Overgrown Entrance",
-          "nodeid": 1045,
+          "nodeid": 1047,
           "nodeName": "North-East Morph Ball Hole",
           "position": "right"
         }
@@ -520,7 +520,7 @@
           "subarea": "General",
           "roomid": 357,
           "roomName": "TRO-MDK Tube",
-          "nodeid": 1027,
+          "nodeid": 1029,
           "nodeName": "East-Upper Door",
           "position": "right"
         }
@@ -545,7 +545,7 @@
           "subarea": "Upper SRX",
           "roomid": 315,
           "roomName": "L-X-SRX Normal Exit Tube",
-          "nodeid": 912,
+          "nodeid": 914,
           "nodeName": "West Door",
           "position": "left"
         }
@@ -570,7 +570,7 @@
           "subarea": "Lower SRX",
           "roomid": 305,
           "roomName": "SRX-NOC Elevator",
-          "nodeid": 885,
+          "nodeid": 887,
           "nodeName": "South Door",
           "position": "bottom"
         }
@@ -595,7 +595,7 @@
           "subarea": "Lower SRX",
           "roomid": 294,
           "roomName": "Cruciform Hall",
-          "nodeid": 866,
+          "nodeid": 868,
           "nodeName": "South-East Door",
           "position": "right"
         }
@@ -611,7 +611,7 @@
           "subarea": "Upper PYR",
           "roomid": 290,
           "roomName": "PYR-TRO Elevator / PYR Entrance Lobby",
-          "nodeid": 848,
+          "nodeid": 849,
           "nodeName": "North Door",
           "position": "top"
         },
@@ -620,7 +620,7 @@
           "subarea": "General",
           "roomid": 359,
           "roomName": "TRO-PYR Elevator",
-          "nodeid": 1031,
+          "nodeid": 1033,
           "nodeName": "South Door",
           "position": "bottom"
         }

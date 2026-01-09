@@ -4,8 +4,8 @@
   "name": "Sunken Tower",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomAddress": "0x7B400",
   "roomImageFile": "AQA Room 7B400.jpg",
+  "roomAddress": "0x7B400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -98,7 +98,6 @@
       "id": 1,
       "name": "Middle of the room",
       "nodeType": "junction",
-      "nodeSubType": "visible",
       "x": 96,
       "y": 616,
       "w": 64,
@@ -117,7 +116,6 @@
       "color": "#0000ff"
     }
   ],
-  "links": [],
   "obstacles": [
     {
       "name": "Upper Speed booster blocks",
@@ -140,100 +138,10 @@
       "id": "D"
     }
   ],
-  "strats": [
-    {
-      "name": "Reach Middle of the room from Top of the Room",
-      "link": [
-        0,
-        1
-      ],
-      "requires": {
-        "and": [
-          {
-            "ammo": {
-              "type": "Missile",
-              "count": 1
-            }
-          },
-          {
-            "item": "Morph Ball"
-          }
-        ]
-      },
-      "clearsObstacles": [
-        "C"
-      ],
-      "resetsObstacles": [
-        "D"
-      ],
-      "id": "1"
-    },
-    {
-      "name": "Reach Middle of the Room from Bottom of the Room",
-      "link": [
-        2,
-        1
-      ],
-      "requires": {
-        "and": [
-          {
-            "or": [
-              {
-                "item": "Speed Booster Level 1"
-              },
-              {
-                "item": "Speed Booster Level 2"
-              }
-            ]
-          }
-        ]
-      },
-      "clearsObstacles": [
-        "B"
-      ],
-      "resetsObstacles": [
-        "A",
-        "B"
-      ],
-      "id": "2"
-    },
-    {
-      "name": "Reach North West Door from Top of the Room",
-      "link": [
-        0,
-        186
-      ],
-      "id": "3"
-    },
-    {
-      "name": "Reach West Upper Door from Middle of the Room",
-      "link": [
-        1,
-        187
-      ],
-      "id": "4"
-    },
-    {
-      "name": "Reach West Door from Bottom of the Room",
-      "link": [
-        2,
-        188
-      ],
-      "id": "5"
-    },
-    {
-      "name": "Reach South West Door from Bottom of the Room",
-      "id": "6"
-    },
-    {
-      "name": "Reach East Door from Bottom of the Room",
-      "link": [
-        2,
-        189
-      ],
-      "id": "7"
-    }
-  ],
+  "enemies": [],
+  "links": [],
+  "strats": [],
+  "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1
 }

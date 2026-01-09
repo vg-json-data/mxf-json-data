@@ -1927,6 +1927,31 @@
             ],
             "pattern": "^(.*)$"
           },
+          "x":{
+            "type": "integer",
+            "title": "Node X-Position",
+            "description": "This node's X-Position within the room"
+          },
+          "y":{
+            "type": "integer",
+            "title": "Node Y-Position",
+            "description": "This node's Y-Position within the room"
+          },
+          "w":{
+            "type": "integer",
+            "title": "Node Width",
+            "description": "This node's occupied width within the room"
+          },
+          "h":{
+            "type": "integer",
+            "title": "Node Height",
+            "description": "This node's occupied height within the room"
+          },
+          "color":{
+            "type": "string",
+            "title": "Node Color",
+            "description": "The color to display this node (for the visual JSON editor)"
+          },
           "nodeItem": {
             "type": "string",
             "title": "Vanilla Item",

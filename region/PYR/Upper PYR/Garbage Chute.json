@@ -70,6 +70,19 @@
     },
     {
       "id": 836,
+      "name": "East Morph Ball Hole",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 837,
       "name": "West-South Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -82,7 +95,7 @@
       ]
     },
     {
-      "id": 837,
+      "id": 838,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",

@@ -30,7 +30,7 @@
       "mapTileY": 22
     },
     {
-      "id": 891,
+      "id": 893,
       "name": "West-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 892,
+      "id": 894,
       "name": "East-North Door",
       "nodeType": "door",
       "nodeSubType": "blue",
