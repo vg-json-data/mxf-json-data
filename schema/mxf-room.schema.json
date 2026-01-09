@@ -599,52 +599,6 @@
                 }
               }
             },
-            "comeInWithRMode": {
-              "type": "object",
-              "title": "Come in With R-Mode",
-              "description": "Represents that Samus must obtain R-mode coming through this door.",
-              "required": [],
-              "additionalProperties": false,
-              "properties": {}
-            },
-            "comeInWithGMode": {
-              "type": "object",
-              "title": "Come in With G-Mode",
-              "description": "Represents that Samus must have or obtain G-mode coming through this door.",
-              "required": [
-                "mode",
-                "morphed"
-              ],
-              "additionalProperties": false,
-              "properties": {
-                "mode": {
-                  "type": "string",
-                  "enum": [
-                    "direct",
-                    "indirect",
-                    "any"
-                  ],
-                  "title": "Mode",
-                  "description": "Whether we must come in with direct G-mode, indirect G-mode, or either"
-                },
-                "morphed": {
-                  "type": "boolean",
-                  "title": "Artificial Morph",
-                  "description": "If true, then the strat assumes entering in a morphed state, either with artificial morph or by having Morph collected."
-                },
-                "mobility": {
-                  "type": "string",
-                  "enum": [
-                    "mobile",
-                    "immobile",
-                    "any"
-                  ],
-                  "default": "any",
-                  "title": "Mobility",
-                  "description": "Whether Samus must come in mobile, immobile, or either."
-                }
-              }
-            },
             "comeInWithWallJumpBelow": {
               "type": "object",
               "description": "Represents that Samus must come up through this door with momentum by wall-jumping in the door frame below.",
@@ -926,8 +880,6 @@
             {"required": ["comeInSpinning"]},
             {"required": ["comeInBlueSpinning"]},
             {"required": ["comeInWithStoredFallSpeed"]},
-            {"required": ["comeInWithRMode"]},
-            {"required": ["comeInWithGMode"]},
             {"required": ["comeInWithWallJumpBelow"]},
             {"required": ["comeInWithSpaceJumpBelow"]},
             {"required": ["comeInWithPlatformBelow"]},
@@ -1209,35 +1161,6 @@
                 }
               }
             },
-            "leaveWithGModeSetup": {
-              "type": "object",
-              "title": "Leave With G-Mode Setup",
-              "description": "Represents that Samus can leave through this door while taking damage through the transition, in a pose that would allow using X-Ray on the first frame after the transition. This is for setting up to enter R-mode or direct G-mode in the next room.",
-              "required": [],
-              "additionalProperties": false,
-              "properties": {
-                "knockback": {
-                  "type": "boolean",
-                  "default": true,
-                  "title": "Leaves With Knockback",
-                  "description": "If true, then Samus gets knockback frames through the transition."
-                }
-              }
-            },
-            "leaveWithGMode": {
-              "type": "object",
-              "title": "Leave With G-Mode",
-              "description": "Represents that Samus can leave through this door while in G-mode, resulting in indirect G-mode in the next room.",
-              "required": ["morphed"],
-              "additionalProperties": false,
-              "properties": {
-                "morphed": {
-                  "type": "boolean",
-                  "title": "Morphed",
-                  "description": "If true, then this strat results in leaving the room in a morphed state, either by maintaining artificial morph or by having the Morph item."
-                }
-              }
-            },
             "leaveWithDoorFrameBelow": {
               "type": "object",
               "description": "Represents that Samus can leave through this door with a jump in the door frame, e.g. using a wall-jump or Space Jump.",
@@ -1385,42 +1308,6 @@
                 }
               }
             },
-            "leaveWithSamusEaterTeleport": {
-              "type": "object",
-              "description": "Represents that Samus can leave through this door immediately after exiting G-mode, in such a way that Samus is teleported to the position of a Samus Eater at the start of the transition.",
-              "required": ["floorPositions", "ceilingPositions"],
-              "additionalProperties": false,
-              "properties": {
-                "floorPositions": {
-                  "type": "array",
-                  "description": "A list of screen-local tile coordinates of floor Samus Eaters, indicating the left-most tile of the Samus Eater that Samus can interact with.",
-                  "items": {
-                    "type": "array",
-                    "minItems": 2,
-                    "maxItems": 2,
-                    "items": {
-                      "type": "integer",
-                      "description": "X or Y coordinate measured as a tile count, with 0 representing the top or left-most tile of the screen.",
-                      "minimum": 0,
-                      "maximum": 15
-                    }
-                  }
-                },
-                "ceilingPositions": {
-                  "type": "array",
-                  "description": "A list of screen-local tile coordinates of ceiling Samus Eaters, indicating the left-most tile of the Samus Eater that Samus can interact with.",
-                  "items": {
-                    "type": "array",
-                    "minItems": 2,
-                    "maxItems": 2,
-                    "items": {
-                      "type": "integer",
-                      "description": "X or Y coordinate measured as a tile count, with 0 representing the top or left-most tile of the screen."
-                    }
-                  }
-                }
-              }
-            },
             "leaveWithSuperSink": {
               "type": "object",
               "description": "Represents that Samus can leave through this door while morphed and continuing to gain fall speed from a super sink.",
@@ -1428,13 +1315,6 @@
               "properties": {}
             }
           }
-        },
-        "gModeRegainMobility": {
-          "type": "object",
-          "description": "Indicates that this strat allows Samus, after entering with G-mode immobile, to regain mobility (by taking knockback from an enemy) while staying in G-mode.",
-          "required": [],
-          "additionalProperties": false,
-          "properties": {}
         },
         "bypassesDoorShell": {
           "type": ["boolean", "string"],
@@ -1909,15 +1789,11 @@
               "elevator",
               "eye",
               "gray",
-              "green",
               "passage",
-              "red",
-              "sandpit",
               "vertical",
               "yellow",
 
               "junction",
-              "g-mode",
 
               "save",
               "missile",
@@ -2015,14 +1891,6 @@
           "useImplicitComeInWithMockball": {
             "type": "boolean",
             "description": "Whether a standard strat should implicitly be included for entering the room at this node with a mockball."
-          },
-          "useImplicitCarryGModeBackThrough": {
-            "type": "boolean",
-            "description": "Whether a standard strat should implicitly be included for entering the room with direct G-mode (not morphed) and exiting."
-          },
-          "useImplicitCarryGModeMorphBackThrough": {
-            "type": "boolean",
-            "description": "Whether a standard strat should implicitly be included for entering the room with direct G-mode morphed and exiting."
           },
           "useImplicitComeInWithGrappleJump": {
             "type": "boolean",

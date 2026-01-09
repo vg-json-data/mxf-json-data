@@ -234,12 +234,6 @@ ENTRANCE:
     position: top
 
 ENTRANCE:
-  comeInWithGMode:
-    mode: direct
-    morphed: true
-    mobility: mobile
-
-ENTRANCE:
   comeInWithMockball:
     speedBooster: any
     adjacentMinTiles: 12
@@ -349,14 +343,6 @@ EXIT:
     direction: right
 
 EXIT:
-  leaveWithGModeSetup:
-    knockback: true
-
-EXIT:
-  leaveWithGMode:
-    morphed: false
-
-EXIT:
   leaveWithDoorFrameBelow:
     height: 5
 
@@ -437,12 +423,6 @@ ENDS_WITH_CHARGE: true
 STARTS_WITH_CHARGE: true
 WALL_JUMP_AVOID: true
 FLASH_SUIT_CHECKED: true
-```
-
-### G-Mode
-
-```
-GMODE_REGAIN_MOBILITY: {}
 ```
 
 ### Farm Drops

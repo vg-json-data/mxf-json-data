@@ -941,11 +941,6 @@
                 "default": true,
                 "description": "Whether Power Bombs can be used during the fight."
               },
-              "gMode": {
-                "type": "boolean",
-                "default": false,
-                "description": "Whether the Ridley kill happens while in G-mode, preventing heat damage while making Ridley's fireballs immobile."
-              },
               "stuck": {
                 "type": "string",
                 "enum": [null, "top", "bottom"],

@@ -503,7 +503,6 @@ For strats that require entering the room in a specific way:
 - `comeInShinecharging`: Charging shine spark
 - `comeInShinecharged`: Already shinecharged
 - `comeInWithSpark`: Shinesparking through door
-- `comeInWithGMode`: G-mode entry
 - `comeInSpinning`: Spin jumping through
 - And many more...
 
@@ -534,7 +533,6 @@ For strats that require entering the room in a specific way:
 - `leaveWithRunway`: Exit with runway data
 - `leaveShinecharged`: Exit shinecharged
 - `leaveWithSpark`: Exit shinesparking
-- `leaveWithGMode`: Exit in G-mode
 - And many more...
 
 ### Strat with Effects
