@@ -163,8 +163,32 @@
     },
 
     "gameFlags": {
-      "type": "array",
-      "items": { "type": "string" }
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "address", "bit", "description"],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string",
+              "pattern": "^[0-9A-Fa-f]{6}$"
+            },
+            "bit": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 7
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
     }
   }
 }

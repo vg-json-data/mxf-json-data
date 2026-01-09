@@ -460,171 +460,1889 @@
       "resourceAmount": 5
     }
   ],
-  "gameFlags": [
-    "f_FinalEscapeStarted",
-    "f_FinalEscapeCheckpoint",
-    "f_EndingDialogueStarted",
-    "f_ShipPickupCompleted",
-    "f_OmegaMetroidEscapeActivated",
-
-    "f_SAXTrueFormDefeated",
-    "f_XenometroidBirthCutsceneComplete",
-    "f_SerrisEncountered",
-    "f_GoldenArachnusRetreated",
-
-    "f_GlassTubeDestroyed",
-    "f_DockingBayCollapsed",
-    "f_NightmareCoreRevealed",
-    "f_BarrierCoreRevealed",
-
-    "f_SAX_HallwayOfDeathEntered",
-    "f_SAX_CatacombsEntranceTriggered",
-    "f_SAX_SanctumExplosionActivated",
-    "f_SAX_SanctumEncounterCompleted",
-    "f_SAX_WTGChaseStarted",
-    "f_SAX_WTGChaseEnded",
-    "f_SAX_UnderpressureEncounterCompleted",
-    "f_SAX_AirlockEncountered",
-
-    "f_SAX_DockingBayCollapseTriggered",
-    "f_SAX_KaridXRoomOpened",
-    "f_SAX_WTGDoorDestroyed",
-
-    "f_AuxPower_SRX_Online",
-    "f_AuxPower_TRO_Online",
-    "f_AuxPower_PYR_Online",
-    "f_AuxPower_AQA_Online",
-    "f_AuxPower_ARC_Online",
-    "f_AuxPower_NOC_Online",
-
-
-    "f_DoorsUnlocked_MDK_SecurityRoom",
-    "f_DoorsUnlocked_MDK_AQA_Elevator",
-
-    "f_DoorsUnlocked_SRX_NavigationRoom",
-
-    "f_DoorsUnlocked_TRO_SecurityRoom",
-
-    "f_DoorsUnlocked_PYR_GarbageChuteRunway",
-
-    "f_DoorsUnlocked_ARC_SecurityRoom",
-
-    "f_DoorsUnlocked_AQA_SecurityRoomNorth",
-    "f_DoorsUnlocked_AQA_SecurityRoomSouth",
-    "f_DoorsUnlocked_AQA_SecurityRoomEast",
-
-    "f_DoorsUnlocked_NOC_EntranceLobbyNorth",
-    "f_DoorsUnlocked_NOC_AuxiliaryRoom",
-    "f_DoorsUnlocked_NOC_EntranceLobbySouth",
-
-    "f_DoorsUnlocked_YakuzaArena",
-    "f_DoorsUnlocked_ArachnusArena",
-    "f_DoorsUnlocked_GoldenArachnusArena_Left",
-    "f_DoorsUnlocked_GoldenArachnusArena_TopRight",
-    "f_DoorsUnlocked_SpikespawnArena",
-    "f_DoorsUnlocked_ZazabiArena",
-    "f_DoorsUnlocked_NettoriArena",
-    "f_DoorsUnlocked_SerrisArena",
-    "f_DoorsUnlocked_PhantomireArena",
-    "f_DoorsUnlocked_NeoCrocomireArena",
-    "f_DoorsUnlocked_MetaDraygonArena",
-    "f_DoorsUnlocked_NightmareArena",
-
-    "f_DoorsUnlocked_SiloScaffolding",
-    "f_DoorsUnlocked_DockingBayAccess",
-    "f_DoorsUnlocked_YamebaCorridor",
-    "f_DoorsUnlocked_TwinJunctionsEast",
-    "f_DoorsUnlocked_FoolsDeadEnd",
-    "f_DoorsUnlocked_TurboTunnel",
-    "f_DoorsUnlocked_ReoCourtyard",
-    "f_DoorsUnlocked_ElevatorToNeoRidley",
-    "f_DoorsUnlocked_HoppingBarricade",
-    "f_DoorsUnlocked_SciserShaft",
-    "f_DoorsUnlocked_DrownedJunction",
-    "f_DoorsUnlocked_EastTurboTubeAccess",
-    "f_DoorsUnlocked_WestTurboTubeAccess",
-    "f_DoorsUnlocked_IceXShaft",
-    "f_DoorsUnlocked_ZozoroCrossing",
-    "f_DoorsUnlocked_LowerCranePit",
-    "f_DoorsUnlocked_CatacombsRunway",
-    "f_DoorsUnlocked_Warehouse",
-    "f_DoorsUnlocked_BarrierCoreChozoRoom",
-    "f_DoorsUnlocked_NocturnalCrossroads",
-
-    "f_CoreX_YakuzaAbsorbed",
-    "f_CoreX_SpikespawnAbsorbed",
-    "f_CoreX_ArachnusAbsorbed",
-    "f_CoreX_GoldenArachnusAbsorbed",
-    "f_CoreX_NettoriAbsorbed",
-    "f_CoreX_ZazabiAbsorbed",
-    "f_CoreX_NeoRidleyAbsorbed",
-    "f_CoreX_PhantomireAbsorbed",
-    "f_CoreX_MetaDraygonAbsorbed",
-    "f_CoreX_SerrisAbsorbed",
-    "f_CoreX_XBOXAbsorbed",
-    "f_CoreX_NightmareAbsorbed",
-    "f_CoreX_BarrierAbsorbed",
-    "f_CoreX_GoldGadoraAbsorbed",
-
-    "f_Gadora_SiloEntryDefeated",
-    "f_Gadora_TwinJunctionsEastDefeated",
-    "f_Gadora_EastSpikeTowerDefeated",
-    "f_Gadora_NettoriAccessDefeated",
-    "f_Gadora_BubbleHeightsDefeated",
-    "f_Gadora_NeoRidleyAccessDefeated",
-    "f_Gadora_SciserShaftDefeated",
-    "f_Gadora_MetaDraygonAccessDefeated",
-    "f_Gadora_BlueTowerDefeated",
-    "f_Gadora_WarehouseDefeated",
-    "f_Gadora_NightmareAccessDefeated",
-    "f_Gadora_DMXElevatorDefeated",
-
-    "f_Geron_Red_TwinJunctionsWestDefeated",
-    "f_Geron_Green_CentralNexusDefeated",
-    "f_Geron_Green_ConcourseTowerDefeated",
-    "f_Geron_Orange_DockingBayAccessDefeated",
-    "f_Geron_Blue_FoolsDeadEndDefeated",
-    "f_Geron_Orange_TurboTunnelDefeated",
-    "f_Geron_Red_GoldenArachnusArenaDefeated",
-    "f_Geron_Red_DoubleHelixLeftDefeated",
-    "f_Geron_Red_DoubleHelixRightDefeated",
-    "f_Geron_Red_PYRTROElevatorDefeated",
-    "f_Geron_Orange_DesertedRunwayDefeated",
-    "f_Geron_Green_GeronsTreasureDefeated",
-    "f_Geron_Green_BubbleStorageDefeated",
-    "f_Geron_Green_NeoCrocomireMaintenanceDefeated",
-    "f_Geron_Green_BrokenBridgeDefeated",
-    "f_Geron_Orange_ARCNOCDefeated",
-    "f_Geron_Blue_ARCEtecoonAccessDefeated",
-    "f_Geron_Red_ARCDataRoomAccessDefeated",
-    "f_Geron_Red_FrozenTowerDefeated",
-    "f_Geron_Red_FreezerHallwayDefeated",
-    "f_Geron_Red_FreezerShaftUpperDefeated",
-    "f_Geron_Red_FreezerShaftLowerDefeated",
-
-    "f_KagoX_ThornvaultDefeated",
-    "f_KagoX_OvergrownVineyardLeftDefeated",
-    "f_KagoX_OvergrownVineyardRightDefeated",
-    "f_KagoX_AquariumHubWestNorthDefeated",
-    "f_KagoX_AquariumHubWestSouthDefeated",
-    "f_KagoX_GlassTubeDefeated",
-
-    "f_ZebetiteWall1Destroyed",
-    "f_ZebetiteWall2Destroyed",
-    "f_ZebetiteWall3Destroyed",
-    "f_ZebetiteWall4Destroyed",
-    "f_ZebetiteWall5Destroyed",
-
-    "f_TalkedToAdam_MDK",
-    "f_TalkedToAdam_MDK_Final",
-    "f_TalkedToAdam_SRX",
-    "f_TalkedToAdam_TRO",
-    "f_TalkedToAdam_PYR",
-    "f_TalkedToAdam_PYR_Alt",
-    "f_TalkedToAdam_PYR_Green",
-    "f_TalkedToAdam_AQA",
-    "f_TalkedToAdam_NOC"
-  ]
-
-
+  "gameFlags": {
+    "system": [
+      {
+        "name": "f_RevivalRoom_SpawnFlag1",
+        "address": "7ED802",
+        "bit": 0,
+        "description": "[Revival Room] Unknown; Set when Samus spawns in"
+      },
+      {
+        "name": "f_RevivalRoom_SpawnFlag2",
+        "address": "7ED804",
+        "bit": 0,
+        "description": "[Revival Room] Unknown; Set when Samus spawns in"
+      },
+      {
+        "name": "f_Saving_Flag1",
+        "address": "7ED806",
+        "bit": 0,
+        "description": "Saving-related"
+      },
+      {
+        "name": "f_Saving_Flag2",
+        "address": "7ED806",
+        "bit": 1,
+        "description": "Saving-related"
+      },
+      {
+        "name": "f_Saving_Flag3",
+        "address": "7ED806",
+        "bit": 2,
+        "description": "Saving-related"
+      },
+      {
+        "name": "f_RevivalRoom_SpawnFlag3",
+        "address": "7ED808",
+        "bit": 0,
+        "description": "[Revival Room] Unknown; Set when Samus spawns in (Also present in v1.2)"
+      },
+      {
+        "name": "f_Saving_Flag4",
+        "address": "7ED80A",
+        "bit": 0,
+        "description": "Saving-related"
+      },
+      {
+        "name": "f_Saving_Flag5",
+        "address": "7ED80A",
+        "bit": 1,
+        "description": "Saving-related"
+      },
+      {
+        "name": "f_Saving_Flag6",
+        "address": "7ED80A",
+        "bit": 2,
+        "description": "Saving-related"
+      },
+      {
+        "name": "f_Saving_Flag7",
+        "address": "7ED80C",
+        "bit": 0,
+        "description": "Saving-related"
+      },
+      {
+        "name": "f_Saving_Flag8",
+        "address": "7ED80C",
+        "bit": 1,
+        "description": "Saving-related"
+      },
+      {
+        "name": "f_Saving_Flag9",
+        "address": "7ED80C",
+        "bit": 2,
+        "description": "Saving-related"
+      },
+      {
+        "name": "f_RevivalRoom_SpawnFlag4",
+        "address": "7ED81A",
+        "bit": 0,
+        "description": "[Revival Room] Unknown; Set when Samus spawns in"
+      },
+      {
+        "name": "f_RevivalRoom_SpawnFlag5",
+        "address": "7ED81A",
+        "bit": 2,
+        "description": "[Revival Room] Unknown; Set when Samus spawns in"
+      },
+      {
+        "name": "f_RevivalRoom_SpawnFlag6",
+        "address": "7ED81A",
+        "bit": 4,
+        "description": "[Revival Room] Unknown; Set when Samus spawns in"
+      },
+      {
+        "name": "f_GameOverReload",
+        "address": "7ED830",
+        "bit": 6,
+        "description": "Related to re-loading after the Game Over cutscene"
+      }
+    ],
+    "story": [
+      {
+        "name": "f_Endgame_ShipPickup",
+        "address": "7ED80E",
+        "bit": 0,
+        "description": "Unknown; Triggered when Samus is picked up by the ship in the endgame"
+      },
+      {
+        "name": "f_MDK_AlarmReturnFromDMX",
+        "address": "7ED820",
+        "bit": 7,
+        "description": "MDK Alarm / Return from DMX"
+      },
+      {
+        "name": "f_AllAuxiliaryStations_Active",
+        "address": "7ED821",
+        "bit": 1,
+        "description": "All Auxiliary Stations active + Omega"
+      },
+      {
+        "name": "f_OmegaMetroidArena_EscapeActivated",
+        "address": "7ED822",
+        "bit": 0,
+        "description": "[Omega Metroid Arena] Escape Sequence Activated / Escaped from Sector 0"
+      },
+      {
+        "name": "f_DockingBayAccess_KaridXFalldown",
+        "address": "7ED823",
+        "bit": 0,
+        "description": "Changes the room state of Docking Bay Access to fall down to Karid-X; Resets on game completion"
+      },
+      {
+        "name": "f_NOCMimicLodge_IceXAppears",
+        "address": "7ED823",
+        "bit": 3,
+        "description": "[NOC Mimic Lodge] Entered for the first time / Ice-X Appears"
+      },
+      {
+        "name": "f_GlassTube_Destroyed",
+        "address": "7ED823",
+        "bit": 4,
+        "description": "[Glass Tube] Glass Tube Destroyed"
+      },
+      {
+        "name": "f_DeceptiveStation_TerminalDestroyed",
+        "address": "7ED825",
+        "bit": 1,
+        "description": "[Deceptive Station] Terminal Destroyed"
+      },
+      {
+        "name": "f_NOCAuxiliaryRoom_PowerOnline",
+        "address": "7ED82E",
+        "bit": 2,
+        "description": "[NOC Auxiliary Room] Power Online (Probably to activate enemies)"
+      },
+      {
+        "name": "f_KaridXArena_SAXTrueFormDestroyed",
+        "address": "7ED82F",
+        "bit": 0,
+        "description": "[Karid-X Arena] SA-X True Form Destroyed; Resets on game completion"
+      },
+      {
+        "name": "f_XenometroidBirthplace_InitialCutsceneFinished",
+        "address": "7ED82F",
+        "bit": 1,
+        "description": "[Xenometroid Birthplace] Initial Metroid Cutscene Finished; Resets on game completion"
+      },
+      {
+        "name": "f_GoldGadoraXArena_CoreXAbsorbed",
+        "address": "7ED82F",
+        "bit": 2,
+        "description": "[Gold Gadora-X Arena] Core-X Absorbed; Resets on game completion"
+      },
+      {
+        "name": "f_EndingDialogue_Begins",
+        "address": "7ED830",
+        "bit": 4,
+        "description": "Triggered when ending dialogue begins"
+      },
+      {
+        "name": "f_BrainFreezer_ZebetiteWall5Destroyed",
+        "address": "7ED8BB",
+        "bit": 3,
+        "description": "[Brain Freezer] Zebetite Wall 5 Destroyed"
+      },
+      {
+        "name": "f_BrainFreezer_ZebetiteWall4Destroyed",
+        "address": "7ED8BB",
+        "bit": 4,
+        "description": "[Brain Freezer] Zebetite Wall 4 Destroyed"
+      },
+      {
+        "name": "f_BrainFreezer_ZebetiteWall3Destroyed",
+        "address": "7ED8BB",
+        "bit": 5,
+        "description": "[Brain Freezer] Zebetite Wall 3 Destroyed"
+      },
+      {
+        "name": "f_BrainFreezer_ZebetiteWall2Destroyed",
+        "address": "7ED8BB",
+        "bit": 6,
+        "description": "[Brain Freezer] Zebetite Wall 2 Destroyed"
+      },
+      {
+        "name": "f_BrainFreezer_ZebetiteWall1Destroyed",
+        "address": "7ED8BB",
+        "bit": 7,
+        "description": "[Brain Freezer] Zebetite Wall 1 Destroyed"
+      }
+    ],
+    "auxPower": [
+      {
+        "name": "f_SRXAuxiliaryRoom_Engaged",
+        "address": "7ED820",
+        "bit": 1,
+        "description": "[SRX Auxiliary Room] Aux Power Engaged"
+      },
+      {
+        "name": "f_TROAuxiliaryRoom_Engaged",
+        "address": "7ED820",
+        "bit": 2,
+        "description": "[TRO Auxiliary Room] Aux Power Engaged"
+      },
+      {
+        "name": "f_PYRAuxiliaryRoom_Engaged",
+        "address": "7ED820",
+        "bit": 3,
+        "description": "[PYR Auxiliary Room] Aux Power Engaged"
+      },
+      {
+        "name": "f_AQAAuxiliaryRoom_Engaged",
+        "address": "7ED820",
+        "bit": 4,
+        "description": "[AQA Auxiliary Room] Aux Power Engaged"
+      },
+      {
+        "name": "f_ARCAuxiliaryRoom_Engaged",
+        "address": "7ED820",
+        "bit": 5,
+        "description": "[ARC Auxiliary Room] Aux Power Engaged"
+      },
+      {
+        "name": "f_NOCAuxiliaryRoom_Engaged",
+        "address": "7ED820",
+        "bit": 6,
+        "description": "[NOC Auxiliary Room] Aux Power Engaged"
+      },
+      {
+        "name": "f_SRX_PowerCellAcquired",
+        "address": "7ED830",
+        "bit": 0,
+        "description": "SRX Auxiliary Power Cell Acquired"
+      },
+      {
+        "name": "f_TRO_PowerCellAcquired",
+        "address": "7ED830",
+        "bit": 1,
+        "description": "TRO Auxiliary Power Cell Acquired"
+      },
+      {
+        "name": "f_PYR_PowerCellAcquired",
+        "address": "7ED830",
+        "bit": 2,
+        "description": "PYR Auxiliary Power Cell Acquired"
+      },
+      {
+        "name": "f_AQA_PowerCellAcquired",
+        "address": "7ED830",
+        "bit": 3,
+        "description": "AQA Auxiliary Power Cell Acquired"
+      },
+      {
+        "name": "f_ARC_PowerCellAcquired",
+        "address": "7ED830",
+        "bit": 4,
+        "description": "ARC Auxiliary Power Cell Acquired"
+      },
+      {
+        "name": "f_NOC_PowerCellAcquired",
+        "address": "7ED830",
+        "bit": 5,
+        "description": "NOC Auxiliary Power Cell Acquired"
+      }
+    ],
+    "etecoons": [
+      {
+        "name": "f_SRXEtecoonRoom_Freed",
+        "address": "7ED822",
+        "bit": 1,
+        "description": "[SRX Etecoon Room] Etecoon Freed"
+      },
+      {
+        "name": "f_TROEtecoonRoom_Freed",
+        "address": "7ED822",
+        "bit": 2,
+        "description": "[TRO Etecoon Room] Etecoon Freed"
+      },
+      {
+        "name": "f_PYREtecoonRoom_Freed",
+        "address": "7ED822",
+        "bit": 3,
+        "description": "[PYR Etecoon Room] Etecoon Freed"
+      },
+      {
+        "name": "f_AQAEtecoonRoom_Freed",
+        "address": "7ED822",
+        "bit": 4,
+        "description": "[AQA Etecoon Room] Etecoon Freed"
+      },
+      {
+        "name": "f_ARCEtecoonRoom_Freed",
+        "address": "7ED822",
+        "bit": 5,
+        "description": "[ARC Etecoon Room] Etecoon Freed"
+      },
+      {
+        "name": "f_NOCEtecoonRoom_Freed",
+        "address": "7ED822",
+        "bit": 6,
+        "description": "[NOC Etecoon Room] Etecoon Freed"
+      },
+      {
+        "name": "f_HabitationDeckHolding_Freed",
+        "address": "7ED822",
+        "bit": 7,
+        "description": "[Habitation Deck Holding] Etecoon Freed"
+      }
+    ],
+    "sax": [
+      {
+        "name": "f_HallwayOfDeath_Entered",
+        "address": "7ED823",
+        "bit": 1,
+        "description": "[SA-X Hallway of Death] Upon entering; Resets on game completion"
+      },
+      {
+        "name": "f_BigRed_UpperPYRSAXEscaped",
+        "address": "7ED824",
+        "bit": 0,
+        "description": "[Big Red] Entered for the first time / Upper PYR SA-X Escaped"
+      },
+      {
+        "name": "f_Catacombs_SAXEntrance",
+        "address": "7ED824",
+        "bit": 1,
+        "description": "[Catacombs] Catacombs SA-X Entrance"
+      },
+      {
+        "name": "f_SanctumAccess_ExplosionActivated",
+        "address": "7ED824",
+        "bit": 2,
+        "description": "[Sanctum Access] Sanctum SA-X Explosion Activated"
+      },
+      {
+        "name": "f_Sanctum_EncounterFinished",
+        "address": "7ED824",
+        "bit": 3,
+        "description": "[Sanctum] Sanctum SA-X Encounter Finished"
+      },
+      {
+        "name": "f_TurboTunnel_WTGSAXChaseOver",
+        "address": "7ED824",
+        "bit": 4,
+        "description": "[Turbo Tunnel] WTG SA-X Chase Over"
+      },
+      {
+        "name": "f_WeaponsTestingGrounds_WTGSAXChaseBegins",
+        "address": "7ED824",
+        "bit": 6,
+        "description": "[Weapons Testing Grounds] WTG SA-X Chase Begins"
+      },
+      {
+        "name": "f_TacticalEvasionCourse_WTGSAXDoorDestroyed",
+        "address": "7ED824",
+        "bit": 7,
+        "description": "[Tactical Evasion Course] WTG SA-X Door Destroyed"
+      },
+      {
+        "name": "f_Underpressure_EncounterFinished",
+        "address": "7ED825",
+        "bit": 0,
+        "description": "[Underpressure] Underpressure SA-X Encounter Finished"
+      },
+      {
+        "name": "f_AQALXTube_AirlockEncountered",
+        "address": "7ED825",
+        "bit": 2,
+        "description": "[AQA-L-X Tube] Airlock SA-X Encountered"
+      }
+    ],
+    "navigation": [
+      {
+        "name": "f_MDKNavigationRoom_AdamSaved",
+        "address": "7ED821",
+        "bit": 0,
+        "description": "[MDK Navigation Room] Adam Saved Flag"
+      },
+      {
+        "name": "f_MDKNavigationRoom_TalkingToAdam",
+        "address": "7ED831",
+        "bit": 4,
+        "description": "[MDK Navigation Room] Talking to Adam"
+      },
+      {
+        "name": "f_MDKNavigationRoom_FinalTalkWithAdam",
+        "address": "7ED831",
+        "bit": 6,
+        "description": "[MDK Navigation Room] Final talk with Adam"
+      },
+      {
+        "name": "f_SRXNavigationRoom_TalkingToAdam",
+        "address": "7ED831",
+        "bit": 7,
+        "description": "[SRX Navigation Room] Talking to Adam"
+      },
+      {
+        "name": "f_TRONavigationRoom_TalkingToAdam",
+        "address": "7ED832",
+        "bit": 0,
+        "description": "[TRO Navigation Room] Talking to Adam"
+      },
+      {
+        "name": "f_PYRNavigationRoom_TalkingToAdam1",
+        "address": "7ED832",
+        "bit": 1,
+        "description": "[PYR Navigation Room] Talking to Adam"
+      },
+      {
+        "name": "f_PYRNavigationRoom_TalkingToAdam2",
+        "address": "7ED832",
+        "bit": 2,
+        "description": "[PYR Navigation Room] Talking to Adam (2)"
+      },
+      {
+        "name": "f_PYRGreenNavigationRoom_TalkingToAdam",
+        "address": "7ED832",
+        "bit": 3,
+        "description": "[PYR Green Navigation Room] Talking to \"Adam\" (Unlocks the door too)"
+      },
+      {
+        "name": "f_AQANavigationRoom_TalkingToAdam",
+        "address": "7ED832",
+        "bit": 4,
+        "description": "[AQA Navigation Room] Talking to Adam (First conversation)"
+      },
+      {
+        "name": "f_NOCNavigationRoom_TalkingToAdam",
+        "address": "7ED832",
+        "bit": 5,
+        "description": "[NOC Navigation Room] Talking to Adam"
+      }
+    ],
+    "boss": [
+      {
+        "name": "f_NightmareArena_CoreXRevealed",
+        "address": "7ED821",
+        "bit": 2,
+        "description": "[Nightmare Arena] Core-X Revealed (Nightmare's body destroyed)"
+      },
+      {
+        "name": "f_BarrierCoreXChozoRoom_CoreXRevealed",
+        "address": "7ED823",
+        "bit": 2,
+        "description": "[Barrier Core-X Chozo Room] Core-X Revealed"
+      },
+      {
+        "name": "f_AssemblyLine_SerrisEncountered",
+        "address": "7ED823",
+        "bit": 5,
+        "description": "[Assembly Line] Serris Encountered"
+      },
+      {
+        "name": "f_BoosterBarrier_SerrisEncountered",
+        "address": "7ED823",
+        "bit": 6,
+        "description": "[Booster Barrier] Serris Encountered"
+      },
+      {
+        "name": "f_AQASecurityRoomNorthAccess_SerrisEncountered",
+        "address": "7ED823",
+        "bit": 7,
+        "description": "[AQA Security Room North Access] Serris Encountered"
+      },
+      {
+        "name": "f_GoldenArachnusXArena_LavaSinks",
+        "address": "7ED824",
+        "bit": 5,
+        "description": "[Golden Arachnus-X Arena] Left Spikespawn Arena (Lava sinks)"
+      },
+      {
+        "name": "f_YakuzaArena_CoreXAbsorbed",
+        "address": "7ED828",
+        "bit": 0,
+        "description": "[Yakuza Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_SpikespawnArena_CoreXAbsorbed",
+        "address": "7ED829",
+        "bit": 0,
+        "description": "[Spikespawn Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_GoldenArachnusXArena_GAXRetreats",
+        "address": "7ED829",
+        "bit": 1,
+        "description": "[Golden Arachnus-X Arena] GA-X Retreats"
+      },
+      {
+        "name": "f_ArachnusXArena_CoreXAbsorbed",
+        "address": "7ED829",
+        "bit": 2,
+        "description": "[Arachnus-X Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_NettoriArena_CoreXAbsorbed",
+        "address": "7ED82A",
+        "bit": 0,
+        "description": "[Nettori Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_ZazabiArena_CoreXAbsorbed",
+        "address": "7ED82A",
+        "bit": 1,
+        "description": "[Zazabi Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_NeoRidleyArena_CoreXAbsorbed",
+        "address": "7ED82B",
+        "bit": 0,
+        "description": "[Neo-Ridley Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_PhantomireArena_CoreXAbsorbed",
+        "address": "7ED82B",
+        "bit": 1,
+        "description": "Phantomire Core-X Absorbed"
+      },
+      {
+        "name": "f_NeoCrocomire_Defeated",
+        "address": "7ED82B",
+        "bit": 2,
+        "description": "Neo-Crocomire Defeated"
+      },
+      {
+        "name": "f_MetaDraygonXArena_CoreXAbsorbed",
+        "address": "7ED82C",
+        "bit": 0,
+        "description": "[Meta Draygon-X Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_SerrisArena_CoreXAbsorbed",
+        "address": "7ED82C",
+        "bit": 1,
+        "description": "[Serris Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_XBOXArena_CoreXAbsorbed",
+        "address": "7ED82D",
+        "bit": 0,
+        "description": "[X-B.O.X. Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_ARCNavigationRoom_CoreXAbsorbed",
+        "address": "7ED82D",
+        "bit": 1,
+        "description": "[ARC Navigation Room] Core-X Absorbed"
+      },
+      {
+        "name": "f_NightmareArena_CoreXAbsorbed",
+        "address": "7ED82E",
+        "bit": 0,
+        "description": "[Nightmare Arena] Core-X Absorbed"
+      },
+      {
+        "name": "f_BarrierCoreXArena_CoreXAbsorbed",
+        "address": "7ED82E",
+        "bit": 1,
+        "description": "[Barrier Core-X Arena] Core-X Absorbed"
+      }
+    ],
+    "enemy": [
+      {
+        "name": "f_TwinJunctionsWest_RedGeronDestroyed",
+        "address": "7ED8B0",
+        "bit": 1,
+        "description": "[Twin Junctions West] Red Geron Destroyed"
+      },
+      {
+        "name": "f_CentralNexus_GreenGeronDestroyed",
+        "address": "7ED8B0",
+        "bit": 3,
+        "description": "[Central Nexus / Concourse] Green Geron Destroyed"
+      },
+      {
+        "name": "f_ConcourseTower_GreenGeronDestroyed",
+        "address": "7ED8B0",
+        "bit": 5,
+        "description": "[Concourse Tower] Green Geron Destroyed"
+      },
+      {
+        "name": "f_SiloEntry_FrozenEnemyObstacleCleared",
+        "address": "7ED8B0",
+        "bit": 6,
+        "description": "[Silo Entry] Frozen Enemy Obstacle Cleared"
+      },
+      {
+        "name": "f_SiloEntry_GadoraDefeated",
+        "address": "7ED8B0",
+        "bit": 7,
+        "description": "[Silo Entry] Gadora Defeated"
+      },
+      {
+        "name": "f_DockingBayAccess_OrangeGeronDestroyed",
+        "address": "7ED8B1",
+        "bit": 2,
+        "description": "[Docking Bay Access] Orange Geron Destroyed"
+      },
+      {
+        "name": "f_TwinJunctionsEast_GadoraDefeated",
+        "address": "7ED8B2",
+        "bit": 6,
+        "description": "[Twin Junctions East] Gadora Defeated"
+      },
+      {
+        "name": "f_TwinJunctionsEast_RedGeronDestroyed",
+        "address": "7ED8B2",
+        "bit": 7,
+        "description": "[Twin Junctions East] Red Geron Destroyed"
+      },
+      {
+        "name": "f_FoolsDeadEnd_BlueGeronDestroyed",
+        "address": "7ED8B3",
+        "bit": 0,
+        "description": "[Fool's Dead End] Blue Geron Destroyed"
+      },
+      {
+        "name": "f_TurboTunnel_OrangeGeronDestroyed",
+        "address": "7ED8B3",
+        "bit": 1,
+        "description": "[Turbo Tunnel] Orange Geron Destroyed"
+      },
+      {
+        "name": "f_EastSpikeTower_GadoraDefeated",
+        "address": "7ED8B3",
+        "bit": 2,
+        "description": "[East Spike Tower] Gadora Defeated"
+      },
+      {
+        "name": "f_ReoCourtyard_FrozenEnemyObstacleCleared",
+        "address": "7ED8B4",
+        "bit": 1,
+        "description": "[Reo Courtyard] Frozen Enemy Obstacle Cleared"
+      },
+      {
+        "name": "f_ZazabiArenaAccess_GadoraDefeated",
+        "address": "7ED8B4",
+        "bit": 3,
+        "description": "[Zazabi Arena Access] Gadora Defeated"
+      },
+      {
+        "name": "f_DoubleHelix_RedGeronLeft_Destroyed",
+        "address": "7ED8B4",
+        "bit": 5,
+        "description": "[Double Helix] Red Geron (Left) Destroyed"
+      },
+      {
+        "name": "f_DoubleHelix_RedGeronRight_Destroyed",
+        "address": "7ED8B4",
+        "bit": 6,
+        "description": "[Double Helix] Red Geron (Right) Destroyed"
+      },
+      {
+        "name": "f_NettoriArenaAccess_GadoraDefeated",
+        "address": "7ED8B5",
+        "bit": 0,
+        "description": "[Nettori Arena Access] Gadora Defeated"
+      },
+      {
+        "name": "f_Thornvault_KagoXDestroyed",
+        "address": "7ED8B5",
+        "bit": 1,
+        "description": "[Thornvault] Kago-X Destroyed (Seems to be just the one on the right)"
+      },
+      {
+        "name": "f_OvergrownVineyard_KagoXLeft_Destroyed",
+        "address": "7ED8B5",
+        "bit": 2,
+        "description": "[Overgrown Vineyard] Kago-X (Left) Destroyed"
+      },
+      {
+        "name": "f_OvergrownVineyard_KagoXRight_Destroyed",
+        "address": "7ED8B5",
+        "bit": 3,
+        "description": "[Overgrown Vineyard] Kago-X (Right) Destroyed"
+      },
+      {
+        "name": "f_TRODataRoomAccess_FrozenEnemyObstacleCleared",
+        "address": "7ED8B5",
+        "bit": 6,
+        "description": "[TRO Data Room Access] Frozen Enemy Obstacle Cleared"
+      },
+      {
+        "name": "f_PYRTROElevator_RedGeronDestroyed",
+        "address": "7ED8B6",
+        "bit": 0,
+        "description": "[PYR-TRO Elevator / PYR Entrance Lobby] Red Geron Destroyed"
+      },
+      {
+        "name": "f_DesertedRunway_OrangeGeronDestroyed",
+        "address": "7ED8B6",
+        "bit": 2,
+        "description": "[Deserted Runway] Orange Geron Destroyed"
+      },
+      {
+        "name": "f_GeronsTreasure_GreenGeronDestroyed",
+        "address": "7ED8B6",
+        "bit": 3,
+        "description": "[Geron's Treasure] Green Geron Destroyed"
+      },
+      {
+        "name": "f_BubbleHeights_GadoraDefeated",
+        "address": "7ED8B6",
+        "bit": 4,
+        "description": "[Bubble Heights] Gadora Defeated"
+      },
+      {
+        "name": "f_BubbleStorage_GreenGeronDestroyed",
+        "address": "7ED8B6",
+        "bit": 5,
+        "description": "[Bubble Storage] Green Geron Destroyed"
+      },
+      {
+        "name": "f_NeoCrocomireMaintenanceRoom_GreenGeronDestroyed",
+        "address": "7ED8B6",
+        "bit": 7,
+        "description": "[Neo-Crocomire Maintenance Room] Green Geron Destroyed"
+      },
+      {
+        "name": "f_NeoRidleyGauntletAccess_GadoraDefeated",
+        "address": "7ED8B7",
+        "bit": 5,
+        "description": "[Neo-Ridley Gauntlet Access] Gadora Defeated"
+      },
+      {
+        "name": "f_SciserShaft_GadoraDefeated",
+        "address": "7ED8B8",
+        "bit": 0,
+        "description": "[Sciser Shaft] Gadora Defeated"
+      },
+      {
+        "name": "f_BrokenBridge_GreenGeronDestroyed",
+        "address": "7ED8B8",
+        "bit": 1,
+        "description": "[Broken Bridge] Green Geron Destroyed (Is Blue in v1.0)"
+      },
+      {
+        "name": "f_AquariumHubWest_KagoXNorth_Destroyed",
+        "address": "7ED8B8",
+        "bit": 4,
+        "description": "[Aquarium Hub West] Kago-X (North) Destroyed"
+      },
+      {
+        "name": "f_AquariumHubWest_KagoXSouth_Destroyed",
+        "address": "7ED8B8",
+        "bit": 5,
+        "description": "[Aquarium Hub West] Kago-X (South) Destroyed"
+      },
+      {
+        "name": "f_GlassTube_KagoXDestroyed",
+        "address": "7ED8B8",
+        "bit": 7,
+        "description": "[Glass Tube] Kago-X Destroyed"
+      },
+      {
+        "name": "f_MetaDraygonXAccess_GadoraDefeated",
+        "address": "7ED8B9",
+        "bit": 0,
+        "description": "[Meta Draygon-X Access] Gadora Defeated"
+      },
+      {
+        "name": "f_ARCNOCAccess_OrangeGeronDestroyed",
+        "address": "7ED8BA",
+        "bit": 2,
+        "description": "[ARC-NOC Access] Orange Geron Destroyed"
+      },
+      {
+        "name": "f_ARCEtecoonRoomAccess_BlueGeronDestroyed",
+        "address": "7ED8BA",
+        "bit": 3,
+        "description": "[ARC Etecoon Room Access] Blue Geron Destroyed"
+      },
+      {
+        "name": "f_BlueTower_GadoraDefeated",
+        "address": "7ED8BA",
+        "bit": 4,
+        "description": "[Blue Tower] Gadora Defeated"
+      },
+      {
+        "name": "f_ARCDataRoomAccess_RedGeronDestroyed",
+        "address": "7ED8BA",
+        "bit": 5,
+        "description": "[ARC Data Room Access] Red Geron Destroyed"
+      },
+      {
+        "name": "f_FrozenTower_RedGeronDestroyed",
+        "address": "7ED8BA",
+        "bit": 7,
+        "description": "[Frozen Tower] Red Geron Destroyed"
+      },
+      {
+        "name": "f_FreezerHallway_RedGeronDestroyed",
+        "address": "7ED8BB",
+        "bit": 0,
+        "description": "[Freezer Hallway] Red Geron Destroyed (Seems to be both of them?)"
+      },
+      {
+        "name": "f_FreezerShaftWest_RedGeronUpper_Destroyed",
+        "address": "7ED8BB",
+        "bit": 1,
+        "description": "[Freezer Shaft West] Red Geron (Upper) Destroyed"
+      },
+      {
+        "name": "f_FreezerShaftWest_RedGeronLower_Destroyed",
+        "address": "7ED8BB",
+        "bit": 2,
+        "description": "[Freezer Shaft West] Red Geron (Lower) Destroyed"
+      },
+      {
+        "name": "f_CatacombsRunway_RedGeronDestroyed",
+        "address": "7ED8BD",
+        "bit": 1,
+        "description": "[Catacombs Runway] Red Geron Destroyed"
+      },
+      {
+        "name": "f_Warehouse_GadoraDefeated",
+        "address": "7ED8BD",
+        "bit": 3,
+        "description": "[Warehouse] Gadora Defeated"
+      },
+      {
+        "name": "f_NightmareArenaAccess_GadoraDefeated",
+        "address": "7ED8BD",
+        "bit": 6,
+        "description": "[Nightmare Arena Access] Gadora Defeated"
+      }
+    ],
+    "item": [
+      {
+        "name": "f_SRXDataRoom_DataDownloaded",
+        "address": "7ED821",
+        "bit": 3,
+        "description": "[SRX Data Room] Data Downloaded"
+      },
+      {
+        "name": "f_TRODataRoom_DataDownloaded",
+        "address": "7ED821",
+        "bit": 4,
+        "description": "[TRO Data Room] Data Downloaded"
+      },
+      {
+        "name": "f_PYRDataRoom_DataDownloaded",
+        "address": "7ED821",
+        "bit": 5,
+        "description": "[PYR Data Room] Data Downloaded"
+      },
+      {
+        "name": "f_ARCDataRoom_DataDownloaded",
+        "address": "7ED821",
+        "bit": 6,
+        "description": "[ARC Data Room] Data Downloaded"
+      },
+      {
+        "name": "f_AQADataRoom_DataDownloaded",
+        "address": "7ED821",
+        "bit": 7,
+        "description": "[AQA Data Room] Data Downloaded"
+      },
+      {
+        "name": "f_DockingBay_ReserveXCollected",
+        "address": "7ED828",
+        "bit": 7,
+        "description": "[Docking Bay] Reserve-X Collected"
+      },
+      {
+        "name": "f_JustDontDieBend_ReserveXCollected",
+        "address": "7ED829",
+        "bit": 7,
+        "description": "[Just Don't Die Bend] Reserve-X Collected"
+      },
+      {
+        "name": "f_TROReserveXRoom_ReserveXCollected",
+        "address": "7ED82A",
+        "bit": 7,
+        "description": "[TRO Reserve X Room] Reserve-X Collected"
+      },
+      {
+        "name": "f_BoilerRoom_ReserveXCollected",
+        "address": "7ED82B",
+        "bit": 7,
+        "description": "[Boiler Room] Reserve-X Collected"
+      },
+      {
+        "name": "f_AQAReserveXRoom_ReserveXCollected",
+        "address": "7ED82C",
+        "bit": 7,
+        "description": "[AQA Reserve X Room] Reserve-X Collected"
+      },
+      {
+        "name": "f_ARCReserveXRoom_ReserveXCollected",
+        "address": "7ED82D",
+        "bit": 7,
+        "description": "[ARC Reserve X Room] Reserve-X Collected"
+      },
+      {
+        "name": "f_NOCReserveXRoom_ReserveXCollected",
+        "address": "7ED82E",
+        "bit": 7,
+        "description": "[NOC Reserve X Room] Reserve-X Collected"
+      },
+      {
+        "name": "f_MDKAQAElevatorCache_PowerBombTank_Collected",
+        "address": "7ED870",
+        "bit": 1,
+        "description": "[MDK-AQA Elevator Cache] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_CentralNexus_MissileTank_Collected",
+        "address": "7ED870",
+        "bit": 2,
+        "description": "[Central Nexus / Concourse] Missile Tank Collected"
+      },
+      {
+        "name": "f_HabitationDeck_EnergyTankLeft_Collected",
+        "address": "7ED870",
+        "bit": 3,
+        "description": "[Habitation Deck] Energy Tank (Left) Collected"
+      },
+      {
+        "name": "f_HabitationDeck_EnergyTankRight_Collected",
+        "address": "7ED870",
+        "bit": 4,
+        "description": "[Habitation Deck] Energy Tank (Right) Collected"
+      },
+      {
+        "name": "f_WreckedStorage_PowerBombTank_Collected",
+        "address": "7ED870",
+        "bit": 5,
+        "description": "[Wrecked Storage] Hidden Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_GenesisSpeedway_MissileTank_Collected",
+        "address": "7ED870",
+        "bit": 6,
+        "description": "[Genesis Speedway] Missile Tank Collected"
+      },
+      {
+        "name": "f_OperationsVentilation_MissileTankUpper_Collected",
+        "address": "7ED870",
+        "bit": 7,
+        "description": "[Operations Ventilation] Missile Tank (Upper) Collected"
+      },
+      {
+        "name": "f_OperationsVentilation_MissileTankLower_Collected",
+        "address": "7ED871",
+        "bit": 0,
+        "description": "[Operations Ventilation] Missile Tank (Lower) Collected"
+      },
+      {
+        "name": "f_CrewQuarters_PowerBombTank_Collected",
+        "address": "7ED871",
+        "bit": 1,
+        "description": "[Crew Quarters] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_DockingBaySupplyRoom_MissileTank_Collected",
+        "address": "7ED871",
+        "bit": 2,
+        "description": "[Docking Bay Supply Room] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_CentralReactorCore_MissileTank_Collected",
+        "address": "7ED871",
+        "bit": 3,
+        "description": "[Central Reactor Core] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_SiloScaffolding_PowerBombTank_Collected",
+        "address": "7ED871",
+        "bit": 4,
+        "description": "[Silo Scaffolding] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_MotoTowerway_MissileTank_Collected",
+        "address": "7ED872",
+        "bit": 0,
+        "description": "[Moto Towerway] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_SRXEntranceLobby_MissileTank_Collected",
+        "address": "7ED872",
+        "bit": 1,
+        "description": "[SRX Entrance Lobby] Missile Tank Collected"
+      },
+      {
+        "name": "f_HornoadHole_EnergyTank_Collected",
+        "address": "7ED872",
+        "bit": 2,
+        "description": "[Hornoad Hole] Energy Tank Collected"
+      },
+      {
+        "name": "f_FoolsDeadEnd_MissileTank_Collected",
+        "address": "7ED872",
+        "bit": 3,
+        "description": "[Fool's Dead End] Missile Tank Collected"
+      },
+      {
+        "name": "f_LavaHorseshoe_PowerBombTank_Collected",
+        "address": "7ED872",
+        "bit": 4,
+        "description": "[Lava Horseshoe] Hidden Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_LavaLake_MissileTank_Collected",
+        "address": "7ED872",
+        "bit": 5,
+        "description": "[Lava Lake] Missile Tank Collected"
+      },
+      {
+        "name": "f_SRXNOCElevatorAccess_PowerBombTank_Collected",
+        "address": "7ED872",
+        "bit": 6,
+        "description": "[SRX-NOC Elevator Access] Hidden Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_SearpentsCoil_EnergyTank_Collected",
+        "address": "7ED872",
+        "bit": 7,
+        "description": "[Searpent's Coil] Energy Tank Collected"
+      },
+      {
+        "name": "f_VacuumVerge_MissileTank_Collected",
+        "address": "7ED873",
+        "bit": 0,
+        "description": "[Vacuum Verge] Missile Tank Collected"
+      },
+      {
+        "name": "f_TROEntranceLobbyStorage_MissileTank_Collected",
+        "address": "7ED874",
+        "bit": 0,
+        "description": "[TRO Entrance Lobby Storage] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_CrumbleCrossing_PowerBombTank_Collected",
+        "address": "7ED874",
+        "bit": 1,
+        "description": "[Crumble Crossing] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_PuyoPalace_MissileTank_Collected",
+        "address": "7ED874",
+        "bit": 2,
+        "description": "[Puyo Palace] Missile Tank Collected"
+      },
+      {
+        "name": "f_ReoCourtyard_MissileTank_Collected",
+        "address": "7ED874",
+        "bit": 3,
+        "description": "[Reo Courtyard] Missile Tank Collected"
+      },
+      {
+        "name": "f_TROPYRAccess_EnergyTank_Collected",
+        "address": "7ED874",
+        "bit": 4,
+        "description": "[TRO-PYR Access] Energy Tank Collected"
+      },
+      {
+        "name": "f_CrumbleCity_MissileTank_Collected",
+        "address": "7ED874",
+        "bit": 5,
+        "description": "[Crumble City] Missile Tank Collected"
+      },
+      {
+        "name": "f_CrumbleCity_PowerBombTank_Collected",
+        "address": "7ED874",
+        "bit": 6,
+        "description": "[Crumble City] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_CultivationStation_MissileTank_Collected",
+        "address": "7ED874",
+        "bit": 7,
+        "description": "[Cultivation Station] Missile Tank Collected"
+      },
+      {
+        "name": "f_OwtchOffice_PowerBombTank_Collected",
+        "address": "7ED875",
+        "bit": 0,
+        "description": "[Owtch Office] Hidden Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_ZazabiArenaAccess_MissileTank_Collected",
+        "address": "7ED875",
+        "bit": 1,
+        "description": "[Zazabi Arena Access] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_ZazabiSpeedway_PowerBombTank_Collected",
+        "address": "7ED875",
+        "bit": 2,
+        "description": "[Zazabi Speedway] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_OvergrownCache_EnergyTank_Collected",
+        "address": "7ED875",
+        "bit": 3,
+        "description": "[Overgrown Cache] Hidden Energy Tank Collected"
+      },
+      {
+        "name": "f_OasisStorage_MissileTank_Collected",
+        "address": "7ED875",
+        "bit": 4,
+        "description": "[Oasis Storage] Missile Tank Collected"
+      },
+      {
+        "name": "f_Thornvault_MissileTank_Collected",
+        "address": "7ED875",
+        "bit": 5,
+        "description": "[Thornvault] Missile Tank Collected"
+      },
+      {
+        "name": "f_Needlepoint_PowerBombTank_Collected",
+        "address": "7ED875",
+        "bit": 6,
+        "description": "[Needlepoint] Hidden Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_GarbageChute_PowerBombTank_Collected",
+        "address": "7ED876",
+        "bit": 0,
+        "description": "[Garbage Chute] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_GarbageChute_MissileTank_Collected",
+        "address": "7ED876",
+        "bit": 1,
+        "description": "[Garbage Chute] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_SovaProcessingAccess_PowerBombTank_Collected",
+        "address": "7ED876",
+        "bit": 2,
+        "description": "[Sova Processing Access] Hidden Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_SovaProcessing_MissileTank_Collected",
+        "address": "7ED876",
+        "bit": 3,
+        "description": "[Sova Processing] Missile Tank Collected"
+      },
+      {
+        "name": "f_BobsAbode_MissileTank_Collected",
+        "address": "7ED876",
+        "bit": 4,
+        "description": "[Bob's Abode] Missile Tank (Bob the Missile) Collected"
+      },
+      {
+        "name": "f_OverthinkingChamber_PowerBombTank_Collected",
+        "address": "7ED876",
+        "bit": 5,
+        "description": "[Overthinking Chamber] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_BigRedMaintenanceStorage_MissileTankUpper_Collected",
+        "address": "7ED876",
+        "bit": 6,
+        "description": "[Big Red Maintenance Storage] Missile Tank (Upper) Collected"
+      },
+      {
+        "name": "f_BigRedMaintenanceStorage_MissileTankLower_Collected",
+        "address": "7ED876",
+        "bit": 7,
+        "description": "[Big Red Maintenance Storage] Missile Tank (Lower) Collected"
+      },
+      {
+        "name": "f_GeronsTreasure_MissileTank_Collected",
+        "address": "7ED877",
+        "bit": 0,
+        "description": "[Geron's Treasure] Missile Tank Collected"
+      },
+      {
+        "name": "f_PYRMDKAccess_MissileTank_Collected",
+        "address": "7ED877",
+        "bit": 1,
+        "description": "[PYR-MDK Access] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_HotPotato_EnergyTank_Collected",
+        "address": "7ED877",
+        "bit": 2,
+        "description": "[Hot Potato] Energy Tank Collected"
+      },
+      {
+        "name": "f_BubbleStorage_MissileTank_Collected",
+        "address": "7ED877",
+        "bit": 3,
+        "description": "[Bubble Storage] Missile Tank Collected"
+      },
+      {
+        "name": "f_ElevatorToNeoRidley_EnergyTank_Collected",
+        "address": "7ED877",
+        "bit": 4,
+        "description": "[Elevator to Neo-Ridley] Energy Tank Collected"
+      },
+      {
+        "name": "f_PYRSecurityRoomAccess_PowerBombTank_Collected",
+        "address": "7ED877",
+        "bit": 5,
+        "description": "[PYR Security Room Access] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_ReservoirEast_PowerBombTank_Collected",
+        "address": "7ED878",
+        "bit": 0,
+        "description": "[Reservoir East] Hidden Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_ReservoirVault_MissileTank_Collected",
+        "address": "7ED878",
+        "bit": 1,
+        "description": "[Reservoir Vault] Missile Tank Collected"
+      },
+      {
+        "name": "f_Hydrospark_MissileTank_Collected",
+        "address": "7ED878",
+        "bit": 2,
+        "description": "[Hydrospark] Missile Tank Collected"
+      },
+      {
+        "name": "f_AQAMimicColony_MissileTank_Collected",
+        "address": "7ED878",
+        "bit": 3,
+        "description": "[AQA Mimic Colony] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_OwtchCorridor_MissileTank_Collected",
+        "address": "7ED878",
+        "bit": 4,
+        "description": "[Owtch Corridor] Missile Tank Collected"
+      },
+      {
+        "name": "f_BrokenBridge_EnergyTank_Collected",
+        "address": "7ED878",
+        "bit": 5,
+        "description": "[Broken Bridge] Energy Tank Collected"
+      },
+      {
+        "name": "f_BuoyantBridge_MissileTank_Collected",
+        "address": "7ED878",
+        "bit": 6,
+        "description": "[Buoyant Bridge] Missile Tank Collected"
+      },
+      {
+        "name": "f_DrownedJunction_MissileTank_Collected",
+        "address": "7ED878",
+        "bit": 7,
+        "description": "[Drowned Junction] Missile Tank Collected"
+      },
+      {
+        "name": "f_CheddarBay_PowerBombTank_Collected",
+        "address": "7ED879",
+        "bit": 0,
+        "description": "[Cheddar Bay] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_CheddarBay_PowerBombTankBottomRight_Collected",
+        "address": "7ED879",
+        "bit": 1,
+        "description": "[Cheddar Bay] Power Bomb Tank (Bottom-right) Collected"
+      },
+      {
+        "name": "f_GamepadRoom_MissileTank_Collected",
+        "address": "7ED879",
+        "bit": 2,
+        "description": "[Gamepad Room] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_YardFiringRange_PowerBombTank_Collected",
+        "address": "7ED879",
+        "bit": 3,
+        "description": "[Yard Firing Range] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_SerrisSpeedway_MissileTank_Collected",
+        "address": "7ED879",
+        "bit": 4,
+        "description": "[Serris Speedway] Missile Tank Collected"
+      },
+      {
+        "name": "f_SunkenTreasury_EnergyTank_Collected",
+        "address": "7ED879",
+        "bit": 5,
+        "description": "[Sunken Treasury] Energy Tank Collected"
+      },
+      {
+        "name": "f_WeaponsTestingGrounds_PowerBombTank_Collected",
+        "address": "7ED87A",
+        "bit": 0,
+        "description": "[Weapons Testing Grounds] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_GerubusGully_PowerBombTank_Collected",
+        "address": "7ED87A",
+        "bit": 1,
+        "description": "[Gerubus Gully] Hidden Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_ARCPYRAccess_MissileTank_Collected",
+        "address": "7ED87A",
+        "bit": 2,
+        "description": "[ARC-PYR Access] Missile Tank Collected"
+      },
+      {
+        "name": "f_ARCNOCAccess_PowerBombTank_Collected",
+        "address": "7ED87A",
+        "bit": 3,
+        "description": "[ARC-NOC Access] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_ZeelaSpeedwayCache_EnergyTank_Collected",
+        "address": "7ED87A",
+        "bit": 4,
+        "description": "[Zeela Speedway Cache] Energy Tank Collected"
+      },
+      {
+        "name": "f_FrostbiteHall_EnergyTank_Collected",
+        "address": "7ED87A",
+        "bit": 5,
+        "description": "[Frostbite Hall] Energy Tank Collected"
+      },
+      {
+        "name": "f_FrostbiteHall_MissileTank_Collected",
+        "address": "7ED87A",
+        "bit": 6,
+        "description": "[Frostbite Hall] Missile Tank Collected"
+      },
+      {
+        "name": "f_FrozenTower_MissileTankTop_Collected",
+        "address": "7ED87A",
+        "bit": 7,
+        "description": "[Frozen Tower] Missile Tank (Top) Collected"
+      },
+      {
+        "name": "f_FrozenTower_MissileTankBottomRight_Collected",
+        "address": "7ED87B",
+        "bit": 0,
+        "description": "[Frozen Tower] Hidden Missile Tank (Bottom-Right) Collected"
+      },
+      {
+        "name": "f_Cryopipe_MissileTank_Collected",
+        "address": "7ED87B",
+        "bit": 1,
+        "description": "[Cryopipe] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_ArcticGauntlet_MissileTank_Collected",
+        "address": "7ED87B",
+        "bit": 2,
+        "description": "[Arctic Gauntlet] Missile Tank Collected"
+      },
+      {
+        "name": "f_FreezerShaftWest_PowerBombTank_Collected",
+        "address": "7ED87B",
+        "bit": 3,
+        "description": "[Freezer Shaft West] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_MochtroidTowerCloset_MissileTank_Collected",
+        "address": "7ED87C",
+        "bit": 0,
+        "description": "[Mochtroid Tower Closet] Hidden Missile Tank Collected"
+      },
+      {
+        "name": "f_StabilizerShaft_PowerBombTank_Collected",
+        "address": "7ED87C",
+        "bit": 1,
+        "description": "[Stabilizer Shaft] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_RipperTower_PowerBombTank_Collected",
+        "address": "7ED87C",
+        "bit": 2,
+        "description": "[Ripper Tower] Power Bomb Tank Collected"
+      },
+      {
+        "name": "f_RipperTower_MissileTank_Collected",
+        "address": "7ED87C",
+        "bit": 3,
+        "description": "[Ripper Tower] Missile Tank Collected"
+      },
+      {
+        "name": "f_PillarHighway_EnergyTank_Collected",
+        "address": "7ED87C",
+        "bit": 4,
+        "description": "[Pillar Highway] Energy Tank Collected"
+      },
+      {
+        "name": "f_NOCEntranceLobbySouth_MissileTank_Collected",
+        "address": "7ED87C",
+        "bit": 5,
+        "description": "[NOC Entrance Lobby South] Missile Tank Collected"
+      },
+      {
+        "name": "f_NOCMimicLodge_EnergyTank_Collected",
+        "address": "7ED87C",
+        "bit": 6,
+        "description": "[NOC Mimic Lodge] Energy Tank Collected"
+      },
+      {
+        "name": "f_IceXShaft_MissileTank_Collected",
+        "address": "7ED87C",
+        "bit": 7,
+        "description": "[Ice-X Shaft] Missile Tank Collected"
+      },
+      {
+        "name": "f_Shiverclimb_MissileTank_Collected",
+        "address": "7ED87D",
+        "bit": 1,
+        "description": "[Shiverclimb] Missile Tank Collected"
+      },
+      {
+        "name": "f_NocturnalCrossroads_MissileTank_Collected",
+        "address": "7ED87D",
+        "bit": 2,
+        "description": "[Nocturnal Crossroads] Missile Tank Collected"
+      }
+    ],
+    "door": [
+      {
+        "name": "f_MDKSecurityRoom_DoorsUnlocked",
+        "address": "7ED8B0",
+        "bit": 4,
+        "description": "[MDK Security Room] Doors Unlocked"
+      },
+      {
+        "name": "f_SiloScaffolding_DoorsUnlocked",
+        "address": "7ED8B1",
+        "bit": 0,
+        "description": "[Silo Scaffolding] Doors Unlocked"
+      },
+      {
+        "name": "f_YakuzaArena_DoorsUnlocked",
+        "address": "7ED8B1",
+        "bit": 1,
+        "description": "[Yakuza Arena] Doors Unlocked"
+      },
+      {
+        "name": "f_SRXNavigationRoom_DoorsUnlocked",
+        "address": "7ED8B2",
+        "bit": 0,
+        "description": "[SRX Navigation Room] Doors Unlocked"
+      },
+      {
+        "name": "f_ArachnusXArena_DoorsUnlocked",
+        "address": "7ED8B2",
+        "bit": 4,
+        "description": "[Arachnus-X Arena] Doors Unlocked"
+      },
+      {
+        "name": "f_YamebaCorridor_DoorsUnlocked",
+        "address": "7ED8B2",
+        "bit": 5,
+        "description": "[Yameba Corridor] Doors Unlocked"
+      },
+      {
+        "name": "f_GoldenArachnusXArena_DoorTopRightUnlocked",
+        "address": "7ED8B3",
+        "bit": 3,
+        "description": "[Golden Arachnus-X Arena] Door (Top-right) Unlocked"
+      },
+      {
+        "name": "f_GoldenArachnusXArena_DoorLeftUnlocked",
+        "address": "7ED8B3",
+        "bit": 4,
+        "description": "[Golden Arachnus-X Arena] Door (Left) Unlocked"
+      },
+      {
+        "name": "f_SpikespawnArena_DoorsUnlocked",
+        "address": "7ED8B3",
+        "bit": 5,
+        "description": "[Spikespawn Arena] Doors Unlocked"
+      },
+      {
+        "name": "f_TROSecurityRoom_DoorsUnlocked",
+        "address": "7ED8B4",
+        "bit": 0,
+        "description": "[TRO Security Room] Doors Unlocked"
+      },
+      {
+        "name": "f_ZazabiArena_DoorsUnlocked",
+        "address": "7ED8B4",
+        "bit": 4,
+        "description": "[Zazabi Arena] Doors Unlocked"
+      },
+      {
+        "name": "f_NettoriArena_DoorsUnlocked",
+        "address": "7ED8B4",
+        "bit": 7,
+        "description": "[Nettori Arena] Doors Unlocked"
+      },
+      {
+        "name": "f_GarbageChute_DoorsUnlocked",
+        "address": "7ED8B6",
+        "bit": 1,
+        "description": "[Garbage Chute Runway] Doors Unlocked"
+      },
+      {
+        "name": "f_NeoCrocomireArena_DoorsUnlocked",
+        "address": "7ED8B6",
+        "bit": 6,
+        "description": "[Neo-Crocomire Arena] Doors Unlocked"
+      },
+      {
+        "name": "f_PhantomireArena_DoorsUnlocked",
+        "address": "7ED8B7",
+        "bit": 0,
+        "description": "[Phantomire Arena] Doors Unlocked"
+      },
+      {
+        "name": "f_ElevatorToNeoRidley_DoorsUnlocked",
+        "address": "7ED8B7",
+        "bit": 3,
+        "description": "[Elevator to Neo-Ridley] Doors Unlocked"
+      },
+      {
+        "name": "f_HoppingBarricade_DoorsUnlocked",
+        "address": "7ED8B7",
+        "bit": 4,
+        "description": "[Hopping Barricade] Doors Unlocked"
+      },
+      {
+        "name": "f_SerrisArena_DoorsUnlocked",
+        "address": "7ED8B8",
+        "bit": 2,
+        "description": "[Serris Arena] Doors Unlocked"
+      },
+      {
+        "name": "f_AQASecurityRoomNorth_DoorsUnlocked",
+        "address": "7ED8B8",
+        "bit": 3,
+        "description": "[AQA Security Room North] Doors Unlocked"
+      },
+      {
+        "name": "f_AQASecurityRoomSouth_DoorsUnlocked",
+        "address": "7ED8B8",
+        "bit": 6,
+        "description": "[AQA Security Room South] Doors Unlocked"
+      },
+      {
+        "name": "f_MetaDraygonXArena_DoorsUnlocked",
+        "address": "7ED8B9",
+        "bit": 1,
+        "description": "[Meta Draygon-X Arena] Doors Unlocked"
+      },
+      {
+        "name": "f_AQASecurityRoomEast_DoorsUnlocked",
+        "address": "7ED8B9",
+        "bit": 2,
+        "description": "[AQA Security Room East] Doors Unlocked"
+      },
+      {
+        "name": "f_DrownedJunction_DoorsUnlocked",
+        "address": "7ED8B9",
+        "bit": 3,
+        "description": "[Drowned Junction] Doors Unlocked"
+      },
+      {
+        "name": "f_ARCSecurityRoom_DoorsUnlocked",
+        "address": "7ED8BA",
+        "bit": 6,
+        "description": "[ARC Security Room] Doors Unlocked"
+      },
+      {
+        "name": "f_NOCEntranceLobbyNorth_DoorsUnlocked",
+        "address": "7ED8BC",
+        "bit": 0,
+        "description": "[NOC Entrance Lobby North] Doors Unlocked"
+      },
+      {
+        "name": "f_NOCAuxiliaryRoom_DoorsUnlocked",
+        "address": "7ED8BC",
+        "bit": 1,
+        "description": "[NOC Auxiliary Room] Doors Unlocked"
+      },
+      {
+        "name": "f_EastTurboTubeAccess_DoorsUnlocked",
+        "address": "7ED8BC",
+        "bit": 2,
+        "description": "[East Turbo Tube Access] Doors Unlocked"
+      },
+      {
+        "name": "f_WestTurboTubeAccess_DoorsUnlocked",
+        "address": "7ED8BC",
+        "bit": 4,
+        "description": "[West Turbo Tube Access] Doors Unlocked"
+      },
+      {
+        "name": "f_IceXShaft_DoorsUnlocked",
+        "address": "7ED8BC",
+        "bit": 5,
+        "description": "[Ice-X Shaft] Doors Unlocked"
+      },
+      {
+        "name": "f_ZozoroCrossing_DoorsUnlocked",
+        "address": "7ED8BC",
+        "bit": 6,
+        "description": "[Zozoro Crossing] Doors Unlocked"
+      },
+      {
+        "name": "f_LowerCranePit_DoorsUnlocked",
+        "address": "7ED8BC",
+        "bit": 7,
+        "description": "[Lower Crane Pit] Doors Unlocked"
+      },
+      {
+        "name": "f_CatacombsRunway_DoorsUnlocked",
+        "address": "7ED8BD",
+        "bit": 0,
+        "description": "[Catacombs Runway] Doors Unlocked"
+      },
+      {
+        "name": "f_Warehouse_DoorsUnlocked",
+        "address": "7ED8BD",
+        "bit": 2,
+        "description": "[Warehouse] Doors Unlocked"
+      },
+      {
+        "name": "f_BarrierCoreXChozoRoom_DoorsUnlocked",
+        "address": "7ED8BD",
+        "bit": 4,
+        "description": "[Barrier Core-X Chozo Room] Doors Unlocked"
+      },
+      {
+        "name": "f_NocturnalCrossroads_DoorsUnlocked",
+        "address": "7ED8BD",
+        "bit": 5,
+        "description": "[Nocturnal Crossroads] Doors Unlocked"
+      },
+      {
+        "name": "f_NightmareArena_DoorsUnlocked",
+        "address": "7ED8BD",
+        "bit": 7,
+        "description": "[Nightmare Arena] Doors Unlocked"
+      }
+    ],
+    "dmx": [
+      {
+        "name": "f_Chase_State1",
+        "address": "7ED810",
+        "bit": 0,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State2",
+        "address": "7ED810",
+        "bit": 1,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State3",
+        "address": "7ED810",
+        "bit": 2,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State4",
+        "address": "7ED810",
+        "bit": 3,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State5",
+        "address": "7ED810",
+        "bit": 4,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State6",
+        "address": "7ED810",
+        "bit": 5,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State7",
+        "address": "7ED810",
+        "bit": 7,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State8",
+        "address": "7ED811",
+        "bit": 0,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State9",
+        "address": "7ED811",
+        "bit": 1,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State10",
+        "address": "7ED811",
+        "bit": 3,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State11",
+        "address": "7ED811",
+        "bit": 4,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State12",
+        "address": "7ED811",
+        "bit": 5,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State13",
+        "address": "7ED811",
+        "bit": 6,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State14",
+        "address": "7ED811",
+        "bit": 7,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State15",
+        "address": "7ED812",
+        "bit": 0,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State16",
+        "address": "7ED812",
+        "bit": 1,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State17",
+        "address": "7ED812",
+        "bit": 2,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State18",
+        "address": "7ED812",
+        "bit": 3,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State19",
+        "address": "7ED812",
+        "bit": 4,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State20",
+        "address": "7ED812",
+        "bit": 5,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State21",
+        "address": "7ED812",
+        "bit": 7,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State22",
+        "address": "7ED813",
+        "bit": 0,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State23",
+        "address": "7ED813",
+        "bit": 1,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State24",
+        "address": "7ED813",
+        "bit": 3,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State25",
+        "address": "7ED813",
+        "bit": 4,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State26",
+        "address": "7ED813",
+        "bit": 5,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State27",
+        "address": "7ED813",
+        "bit": 6,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State28",
+        "address": "7ED813",
+        "bit": 7,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State29",
+        "address": "7ED814",
+        "bit": 0,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State30",
+        "address": "7ED814",
+        "bit": 1,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State31",
+        "address": "7ED814",
+        "bit": 2,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State32",
+        "address": "7ED815",
+        "bit": 4,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State33",
+        "address": "7ED816",
+        "bit": 0,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State34",
+        "address": "7ED816",
+        "bit": 1,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State35",
+        "address": "7ED816",
+        "bit": 2,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_Chase_State36",
+        "address": "7ED817",
+        "bit": 4,
+        "description": "Unknown, might be related to DMX Chase Room States"
+      },
+      {
+        "name": "f_MissileCheck_RedGeronDestroyed",
+        "address": "7ED8BE",
+        "bit": 0,
+        "description": "[DMX Missile Check] Red Geron Destroyed; Resets on game completion"
+      },
+      {
+        "name": "f_ElevatorTop_GadoraDefeated",
+        "address": "7ED8BE",
+        "bit": 1,
+        "description": "[DMX Elevator Top] Gadora Defeated; Resets on game completion"
+      }
+    ],
+    "other": []
+  }
 }
