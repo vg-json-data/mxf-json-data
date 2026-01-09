@@ -4,8 +4,8 @@
   "name": "Sunken Tower",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "AQA Room 7B400.jpg",
   "roomAddress": "0x7B400",
+  "roomImageFile": "AQA Room 7B400.jpg",
   "roomEnvironments": [
     {
       "heated": false,
@@ -234,8 +234,6 @@
       "id": "7"
     }
   ],
-  "roomImageFile": "AQA Room 7B400.jpg",
-  "roomAddress": "0x7B400",
   "nextStratId": 1,
   "nextNotableId": 1
 }
