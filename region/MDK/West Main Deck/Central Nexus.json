@@ -189,7 +189,7 @@
       "requires": [],
       "exitCondition": {
         "leaveWithRunway": {
-          "length": 5,
+          "length": 7,
           "openEnd": 1
         }
       }
