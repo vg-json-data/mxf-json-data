@@ -11,13 +11,13 @@
     }
   ],
   "mapTileMask": [
-    [
-      0
-    ]
+    [1],
+    [1],
+    [1]
   ],
   "nodes": [
     {
-      "id": 573,
+      "id": 1,
       "name": "North-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -27,10 +27,15 @@
         {
           "physics": "air"
         }
+      ],
+      "mapTileMask": [
+        [2],
+        [1],
+        [1]
       ]
     },
     {
-      "id": 574,
+      "id": 2,
       "name": "North-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -40,11 +45,16 @@
         {
           "physics": "air"
         }
+      ],
+      "mapTileMask": [
+        [2],
+        [1],
+        [1]
       ]
     },
     {
-      "id": 575,
-      "name": "East-Upper Door",
+      "id": 3,
+      "name": "East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "nodeAddress": "0x0",
@@ -53,10 +63,15 @@
         {
           "physics": "air"
         }
+      ],
+      "mapTileMask": [
+        [1],
+        [2],
+        [1]
       ]
     },
     {
-      "id": 576,
+      "id": 4,
       "name": "South-West Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -66,10 +81,15 @@
         {
           "physics": "air"
         }
+      ],
+      "mapTileMask": [
+        [1],
+        [1],
+        [2]
       ]
     },
     {
-      "id": 577,
+      "id": 5,
       "name": "South-East Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -79,32 +99,40 @@
         {
           "physics": "air"
         }
+      ],
+      "mapTileMask": [
+        [1],
+        [1],
+        [2]
       ]
-    },
-    {
-      "id": 0,
-      "name": "Upper Part of the Room",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "x": 64,
-      "y": 96,
-      "w": 96,
-      "h": 360,
-      "color": "#0000ff"
-    },
-    {
-      "id": 1,
-      "name": "Lower Part of the Room",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "x": 64,
-      "y": 560,
-      "w": 72,
-      "h": 96,
-      "color": "#0000ff"
     }
   ],
-  "links": [],
+  "enemies": [
+    {
+      "id": "e1",
+      "groupName": "Central Nexus Top Zombie Researchers",
+      "enemyName": "Zombie Researchers",
+      "quantity": 2,
+      "betweenNodes": [2, 3],
+      "spawn": [{"resourceCapacity": [{"type": "PowerBomb", "count": 1}]}]
+    },
+    {
+      "id": "e2",
+      "groupName": "Central Nexus Top Zombie Slime",
+      "enemyName": "Zombie Slime",
+      "quantity": 1,
+      "homeNodes": [3],
+      "spawn": [{"resourceCapacity": [{"type": "PowerBomb", "count": 1}]}]
+    },
+    {
+      "id": "e3",
+      "groupName": "Central Nexus Bottom Zombie Researcher",
+      "enemyName": "Zombie Researcher",
+      "quantity": 1,
+      "homeNodes": [4],
+      "spawn": [{"resourceCapacity": [{"type": "PowerBomb", "count": 1}]}]
+    }
+  ],
   "obstacles": [
     {
       "name": "Green Geron",
@@ -114,23 +142,120 @@
   ],
   "strats": [
     {
-      "name": "Reach Upper Part of the Room from the Lower Part of the Room with Supers",
-      "link": [
-        1,
-        0
-      ],
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 3],
+      "name": "Kill Green Geron",
       "requires": [
-        {
-          "ammo": {
-            "type": "Super",
-            "count": 3
-          }
-        }
+        "h_killGreenGeron"
       ],
-      "clearsObstacles": [
-        "A"
+      "clearsObstacles": ["A"],
+      "setsFlags": ["f_CentralNexus_GreenGeronDestroyed"],
+      "devNote": "FIXME: This could be killed with a cross-room strat with SpeedBooster."
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"obstaclesCleared": ["A"]},
+          "f_CentralNexus_GreenGeronDestroyed"
+        ]}
+      ]
+    },
+    {
+      "link": [4, 3],
+      "name": "Base",
+      "requires": [
+        {"or": [
+          {"obstaclesCleared": ["A"]},
+          "f_CentralNexus_GreenGeronDestroyed"
+        ]}
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Kill Green Geron",
+      "requires": [
+        "h_killGreenGeron"
       ],
-      "id": 1
+      "clearsObstacles": ["A"],
+      "setsFlags": ["f_CentralNexus_GreenGeronDestroyed"]
+    },
+    {
+      "link": [4, 4],
+      "name": "Shinespark Kill Green Geron",
+      "requires": [
+        {"or": [
+          {"canShineCharge": {"usedTiles": 12, "openEnd": 0}},
+          {"and": [
+            {"or": [
+              {"doorUnlockedAtNode": 4},
+              {"doorUnlockedAtNode": 5}
+            ]},
+            {"canShineCharge": {"usedTiles": 13, "openEnd": 0}}
+          ]},
+          {"and": [
+            {"doorUnlockedAtNode": 4},
+            {"doorUnlockedAtNode": 5},
+            {"canShineCharge": {"usedTiles": 14, "openEnd": 0}}
+          ]}
+        ]},
+        "canShinechargeMovement",
+        {"or": [
+          {"and": [
+            {"enemyDamage": {"enemy": "Green Geron", "type": "contact", "hits": 1}},
+            {"shinespark": {"frames": 8, "excessFrames": 6}}
+          ]},
+          {"and": [
+            "canTrickyJump",
+            {"shinespark": {"frames": 8, "excessFrames": 6}}
+          ]},
+          {"and": [
+            "canShinechargeMovementTricky",
+            {"shinespark": {"frames": 1, "excessFrames": 1}}
+          ]}
+        ]}
+      ],
+      "unlocksDoors": [
+        {"nodeId": 4, "types": ["ammo"], "requires": []},
+        {"nodeId": 5, "types": ["ammo"], "requires": []}
+      ],
+      "clearsObstacles": ["A"],
+      "setsFlags": ["f_CentralNexus_GreenGeronDestroyed"],
+      "note": [
+        "Shinecharge right to left then climb up to the Green Geron, then spark diagonally spark from the corner into it.",
+        "With low Energy, it is possible to jump vertically and spark just before hitting it to do so without any damage."
+      ],
+      "devNote": "FIXME: This could be killed with a cross-room strat with SpeedBooster."
+    },
+    {
+      "link": [4, 5],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [5, 4],
+      "name": "Base",
+      "requires": []
     }
   ],
   "roomImageFile": "MDK Room Central Nexus.png",
