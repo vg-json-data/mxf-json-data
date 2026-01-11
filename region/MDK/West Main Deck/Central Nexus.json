@@ -4,8 +4,6 @@
   "name": "Central Nexus",
   "area": "MDK",
   "subarea": "West Main Deck",
-  "roomImageFile": "MDK Room Central Nexus.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -82,12 +80,61 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 0,
+      "name": "Upper Part of the Room",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "x": 64,
+      "y": 96,
+      "w": 96,
+      "h": 360,
+      "color": "#0000ff"
+    },
+    {
+      "id": 1,
+      "name": "Lower Part of the Room",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "x": 64,
+      "y": 560,
+      "w": 72,
+      "h": 96,
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
   "links": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Green Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Reach Upper Part of the Room from the Lower Part of the Room with Supers",
+      "link": [
+        1,
+        0
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "Super",
+            "count": 3
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "id": 1
+    }
+  ],
+  "roomImageFile": "MDK Room Central Nexus.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }
