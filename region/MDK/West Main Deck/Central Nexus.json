@@ -142,6 +142,17 @@
   ],
   "strats": [
     {
+      "link": [1, 1],
+      "name": "Leave With Runway",
+      "requires": [],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 4,
+          "openEnd": 1
+        }
+      }
+    },
+    {
       "link": [1, 2],
       "name": "Base",
       "requires": []
@@ -152,6 +163,17 @@
       "requires": []
     },
     {
+      "link": [2, 2],
+      "name": "Leave With Runway",
+      "requires": [],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 5,
+          "openEnd": 1
+        }
+      }
+    },
+    {
       "link": [2, 3],
       "name": "Base",
       "requires": []
@@ -160,6 +182,17 @@
       "link": [3, 2],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [3, 3],
+      "name": "Leave With Runway",
+      "requires": [],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 5,
+          "openEnd": 1
+        }
+      }
     },
     {
       "link": [3, 3],
@@ -189,6 +222,33 @@
           {"obstaclesCleared": ["A"]},
           "f_CentralNexus_GreenGeronDestroyed"
         ]}
+      ]
+    },
+    {
+      "link": [4, 4],
+      "name": "Leave With Runway",
+      "requires": [],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 13,
+          "openEnd": 0
+        }
+      }
+    },
+    {
+      "link": [4, 4],
+      "name": "Leave With Runway, Open Both Doors",
+      "requires": [
+        {"doorUnlockedAtNode": 5}
+      ],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 14,
+          "openEnd": 0
+        }
+      },
+      "unlocksDoors": [
+        {"nodeId": 5, "types": ["ammo"], "requires": []}
       ]
     },
     {
@@ -256,6 +316,33 @@
       "link": [5, 4],
       "name": "Base",
       "requires": []
+    },
+    {
+      "link": [5, 5],
+      "name": "Leave With Runway",
+      "requires": [],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 13,
+          "openEnd": 0
+        }
+      }
+    },
+    {
+      "link": [5, 5],
+      "name": "Leave With Runway, Open Both Doors",
+      "requires": [
+        {"doorUnlockedAtNode": 4}
+      ],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 14,
+          "openEnd": 0
+        }
+      },
+      "unlocksDoors": [
+        {"nodeId": 4, "types": ["ammo"], "requires": []}
+      ]
     }
   ],
   "roomImageFile": "MDK Room Central Nexus.png",
