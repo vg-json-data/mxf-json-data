@@ -201,8 +201,39 @@
         "h_killGreenGeron"
       ],
       "clearsObstacles": ["A"],
+      "setsFlags": ["f_CentralNexus_GreenGeronDestroyed"]
+    },
+    {
+      "link": [3, 3],
+      "name": "Come in Shinecharging, Kill Green Geron",
+      "entranceCondition": {
+        "comeInShinecharging": {
+          "length": 7,
+          "openEnd": 1
+        }
+      },
+      "requires": [
+        "canShinechargeMovement",
+        {"shinespark": {"frames": 6, "excessFrames": 4}}
+      ],
+      "clearsObstacles": ["A"],
       "setsFlags": ["f_CentralNexus_GreenGeronDestroyed"],
-      "devNote": "FIXME: This could be killed with a cross-room strat with SpeedBooster."
+      "devNote": "FIXME: This could be killed with a come in shinecharged."
+    },
+    {
+      "link": [3, 3],
+      "name": "Turn Around Blue Speed, Kill Green Geron",
+      "requires": [
+        {"getBlueSpeed": {"usedTiles": 12, "openEnd": 0}},
+        "SpeedBooster Lv.2"
+      ],
+      "clearsObstacles": ["A"],
+      "setsFlags": ["f_CentralNexus_GreenGeronDestroyed"],
+      "note": "Start near the Green Geron, short charge to the left, turn around and run through the Geron with blue speed.",
+      "devNote": [
+        "This is a 9 tile short charge with no open ends and a required jump turn around, it is approximated as a single 12 tile runway.",
+        "FIXME: This needs a better way to represent turn around short charge with Lv.2 Speed."
+      ]
     },
     {
       "link": [3, 4],
