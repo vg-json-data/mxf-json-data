@@ -111,7 +111,7 @@
       }
     },
     {
-      "name": "Grappling Beam",
+      "name": "Grapple",
       "wram": "0x7E09A8",
       "data": {
         "itemType": "equipment",

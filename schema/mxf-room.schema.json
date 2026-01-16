@@ -1526,7 +1526,6 @@
     "subarea",
     "mapTileMask",
     "nodes",
-    "links",
     "strats"
   ],
   "allOf": [
@@ -2221,59 +2220,6 @@
           },
           "devNote": {
             "$ref" : "mxf-note.schema.json#/definitions/devNote"
-          }
-        }
-      }
-    },
-    "links": {
-      "type": "array",
-      "title": "Links; pathways within the Room",
-      "items": {
-        "type": "object",
-        "title": "Link",
-        "required": [
-          "from",
-          "to"
-        ],
-        "additionalProperties": false,
-        "properties": {
-          "from": {
-            "type": "integer",
-            "title": "This Link originates at this Node ID within the Room",
-            "default": 0,
-            "examples": [
-              1
-            ]
-          },
-          "to": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "title": "This Link terminates at this Node ID within the Room",
-            "items": {
-              "type": "object",
-              "title": "The Items Schema",
-              "required": [
-                "id"
-              ],
-              "additionalProperties": false,
-              "properties": {
-                "id": {
-                  "type": "integer",
-                  "title": "Target Node ID within the Room",
-                  "examples": [
-                    2
-                  ]
-                },
-                "note": {
-                  "$ref" : "mxf-note.schema.json#/definitions/note"
-                },
-                "devNote": {
-                  "$ref" : "mxf-note.schema.json#/definitions/devNote"
-                }
-              }
-            }
           }
         }
       }
