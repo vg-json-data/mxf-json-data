@@ -77,8 +77,8 @@
       ]
     },
     {
-      "connectionType": "VerticalDoor",
-      "description": "Vertical Door connection between [Elevator Passage to Neo-Ridley - Bottom Door] and [Neo-Ridley Arena - Top Door]",
+      "connectionType": "Elevator",
+      "description": "Elevator connection between [Elevator Passage to Neo-Ridley - Bottom Door] and [Neo-Ridley Arena - Top Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
