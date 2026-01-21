@@ -1079,6 +1079,20 @@
           ]
         },
         {
+          "name": "h_killRedGeron",
+          "requires": [
+            {"or": [
+              "ScrewAttack",
+              "h_usePowerBomb",
+              {"ammo": {"type": "Missile", "count": 3}},
+              {"ammo": {"type": "Super", "count": 1}},
+              {"ammo": {"type": "Ice Missile", "count": 1}},
+              {"ammo": {"type": "Diffusion", "count": 1}}
+            ]}
+          ],
+          "note": "Includes standard ways to kill Red Geron, excludes room specific strats like SpeedBooster."
+        },
+        {
           "name": "h_killGreenGeron",
           "requires": [
             {"or": [

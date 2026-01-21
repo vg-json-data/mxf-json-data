@@ -4,8 +4,6 @@
   "name": "ARC-NOC Tube",
   "area": "ARC",
   "subarea": "Upper ARC",
-  "roomImageFile": "Misc Room Reusable 1.jpg",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,7 +63,6 @@
       ]
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -84,7 +81,8 @@
       "requires": []
     }
   ],
-  "notables": [],
+  "roomImageFile": "Misc Room Reusable 1.jpg",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

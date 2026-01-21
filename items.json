@@ -36,7 +36,7 @@
   ],
   "upgradeItems": [
     {
-      "name": "Morph Ball",
+      "name": "Morph",
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
@@ -2343,6 +2343,19 @@
         "description": "[DMX Elevator Top] Gadora Defeated; Resets on game completion"
       }
     ],
-    "other": []
+    "other": [
+      {
+        "name": "f_HardMode",
+        "address": "000000",
+        "bit": 0,
+        "description": "Placeholder flag to indicate Hard mode is enabled."
+      },
+      {
+        "name": "f_OmegaMode",
+        "address": "000000",
+        "bit": 0,
+        "description": "Placeholder flag to indicate Omega mode is enabled."
+      }
+    ]
   }
 }

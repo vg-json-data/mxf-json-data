@@ -66,7 +66,24 @@
     }
   ],
   "enemies": [],
-  "strats": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
   "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1

@@ -321,63 +321,104 @@
       "id": "A"
     }
   ],
-"strats": [
+  "strats": [
     {
-      "link": [1, 2],
       "name": "Base",
+      "link": [
+        1,
+        2
+      ],
       "requires": []
     },
     {
-      "link": [2, 1],
       "name": "Base",
+      "link": [
+        2,
+        1
+      ],
       "requires": []
     },
     {
-      "link": [2, 3],
       "name": "Base",
+      "link": [
+        2,
+        3
+      ],
       "requires": []
     },
     {
-      "link": [3, 2],
       "name": "Base",
+      "link": [
+        3,
+        2
+      ],
       "requires": []
     },
     {
-      "link": [3, 3],
       "name": "Kill Green Geron",
+      "link": [
+        3,
+        3
+      ],
       "requires": [
         "h_killGreenGeron"
       ],
-      "clearsObstacles": ["A"],
-      "setsFlags": ["f_CentralNexus_GreenGeronDestroyed"]
-    },
-    {
-      "link": [3, 4],
-      "name": "Base",
-      "requires": [
-        {"or": [
-          {"obstaclesCleared": ["A"]},
-          "f_CentralNexus_GreenGeronDestroyed"
-        ]}
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_CentralNexus_GreenGeronDestroyed"
       ]
     },
     {
-      "link": [4, 4],
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            "f_CentralNexus_GreenGeronDestroyed"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Kill Green Geron",
+      "link": [
+        4,
+        4
+      ],
       "requires": [
         "h_killGreenGeron"
       ],
-      "clearsObstacles": ["A"],
-      "setsFlags": ["f_CentralNexus_GreenGeronDestroyed"]
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_CentralNexus_GreenGeronDestroyed"
+      ]
     },
     {
-      "link": [4, 5],
       "name": "Base",
+      "link": [
+        4,
+        5
+      ],
       "requires": []
     },
     {
-      "link": [5, 4],
       "name": "Base",
+      "link": [
+        5,
+        4
+      ],
       "requires": []
     }
   ],

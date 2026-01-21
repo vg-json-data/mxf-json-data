@@ -4,8 +4,6 @@
   "name": "Not Magnet Stairs",
   "area": "L-X",
   "subarea": "General",
-  "roomImageFile": "L-X Room 78A00.jpg",
-  "roomAddress": "0x78A00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,56 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "not": "f_OmegaMetroidArena_EscapeActivated"
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "not": "f_HardMode"
+                },
+                {
+                  "not": "f_OmegaMode"
+                }
+              ]
+            },
+            {
+              "not": "f_OmegaMetroidArena_EscapeActivated"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "L-X Room 78A00.jpg",
+  "roomAddress": "0x78A00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

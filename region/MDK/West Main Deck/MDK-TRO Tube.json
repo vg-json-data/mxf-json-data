@@ -70,7 +70,7 @@
         1,
         2
       ],
-      "id": 1
+      "requires": []
     },
     {
       "name": "Base",
@@ -78,7 +78,7 @@
         2,
         1
       ],
-      "id": 2
+      "requires": []
     }
   ],
   "roomImageFile": "Misc Room Reusable 2.jpg",

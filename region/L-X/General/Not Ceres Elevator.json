@@ -4,8 +4,6 @@
   "name": "Not Ceres Elevator",
   "area": "L-X",
   "subarea": "General",
-  "roomImageFile": "L-X Room 78800.jpg",
-  "roomAddress": "0x78800",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,33 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "f_OmegaMetroidArena_EscapeActivated",
+            "f_HardMode"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "L-X Room 78800.jpg",
+  "roomAddress": "0x78800",
   "nextStratId": 1,
   "nextNotableId": 1
 }
