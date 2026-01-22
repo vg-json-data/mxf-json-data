@@ -4,6 +4,8 @@
   "name": "DMX Hallway",
   "area": "DMX",
   "subarea": "Opening Segment",
+  "roomImageFile": "DMX Room 79B00.jpg",
+  "roomAddress": "0x79B00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,6 +65,7 @@
       ]
     }
   ],
+  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -73,8 +76,7 @@
       "requires": []
     }
   ],
-  "roomImageFile": "DMX Room 79B00.jpg",
-  "roomAddress": "0x79B00",
+  "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1
 }

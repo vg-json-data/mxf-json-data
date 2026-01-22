@@ -86,6 +86,23 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 4,
+      "name": "Navigation Station",
+      "nodeType": "utility",
+      "nodeSubType": "navigation",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 112,
+          "y": 160,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#3a3ac2",
+      "nodeAddress": "0x0"
     }
   ],
   "enemies": [],

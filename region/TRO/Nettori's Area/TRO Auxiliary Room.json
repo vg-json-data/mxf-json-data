@@ -3,7 +3,7 @@
   "id": 360,
   "name": "TRO Auxiliary Room",
   "area": "TRO",
-  "subarea": "Nettori\u0027s Area",
+  "subarea": "Nettori's Area",
   "roomImageFile": "Misc Room Aux 2.jpg",
   "roomAddress": "0x0",
   "roomEnvironments": [
@@ -40,6 +40,23 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "Auxiliary Station",
+      "nodeType": "utility",
+      "nodeSubType": "auxiliary",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 80,
+          "y": 160,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#3a3ac2",
+      "nodeAddress": "0x0"
     }
   ],
   "enemies": [],

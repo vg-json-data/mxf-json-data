@@ -40,6 +40,23 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "Deceptive Station",
+      "nodeType": "utility",
+      "nodeSubType": "deceptive",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 144,
+          "y": 160,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#3a3ac2",
+      "nodeAddress": "0x0"
     }
   ],
   "enemies": [],

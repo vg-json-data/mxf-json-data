@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
   "id": 133,
-  "name": "Not Ceres Ridley's Arena",
+  "name": "Not Ceres Ridley\u0027s Arena",
   "area": "L-X",
   "subarea": "General",
   "roomImageFile": "L-X Room 78D00.jpg",

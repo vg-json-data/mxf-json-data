@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
   "id": 85,
-  "name": "Crow's Nest",
+  "name": "Crow\u0027s Nest",
   "area": "ARC",
   "subarea": "Upper ARC",
   "roomImageFile": "ARC Room 79000.jpg",
@@ -67,7 +67,7 @@
     {
       "id": 3,
       "idMinorItemPlm": "0x53",
-      "name": "Crow's Nest - Power Bomb Tank",
+      "name": "Crow\u0027s Nest - Power Bomb Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [

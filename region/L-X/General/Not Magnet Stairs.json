@@ -4,6 +4,8 @@
   "name": "Not Magnet Stairs",
   "area": "L-X",
   "subarea": "General",
+  "roomImageFile": "L-X Room 78A00.jpg",
+  "roomAddress": "0x78A00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -86,6 +88,7 @@
       ]
     }
   ],
+  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -134,8 +137,7 @@
       ]
     }
   ],
-  "roomImageFile": "L-X Room 78A00.jpg",
-  "roomAddress": "0x78A00",
+  "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1
 }

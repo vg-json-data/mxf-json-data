@@ -4,6 +4,8 @@
   "name": "MDK-TRO Tube",
   "area": "MDK",
   "subarea": "West Main Deck",
+  "roomImageFile": "Misc Room Reusable 2.jpg",
+  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,6 +65,7 @@
       ]
     }
   ],
+  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -81,8 +84,7 @@
       "requires": []
     }
   ],
-  "roomImageFile": "Misc Room Reusable 2.jpg",
-  "roomAddress": "0x0",
+  "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1
 }

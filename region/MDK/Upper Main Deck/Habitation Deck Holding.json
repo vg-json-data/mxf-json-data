@@ -62,7 +62,34 @@
     }
   ],
   "enemies": [],
-  "strats": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "Missile",
+            "count": 1
+          }
+        }
+      ],
+      "collectsItems": [
+        2
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
   "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1

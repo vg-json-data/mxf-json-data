@@ -27,7 +27,7 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 64,
+          "y": 96,
           "w": 48,
           "h": 64
         }
@@ -50,7 +50,7 @@
         {
           "shape": "rect",
           "x": 208,
-          "y": 64,
+          "y": 96,
           "w": 48,
           "h": 64
         }
@@ -63,6 +63,23 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Save Station",
+      "nodeType": "utility",
+      "nodeSubType": "save",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 112,
+          "y": 160,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#3a3ac2",
+      "nodeAddress": "0x0"
     }
   ],
   "enemies": [],

@@ -50,7 +50,7 @@
         {
           "shape": "rect",
           "x": 104,
-          "y": 0,
+          "y": 312,
           "w": 48,
           "h": 64
         }
@@ -181,7 +181,86 @@
     }
   ],
   "enemies": [],
-  "strats": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        7
+      ],
+      "requires": [
+        "canWalljump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        "canWalljump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        "canWalljump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        1
+      ],
+      "requires": []
+    }
+  ],
   "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1

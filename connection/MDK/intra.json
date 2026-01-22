@@ -236,7 +236,7 @@
           "subarea": "Upper Main Deck",
           "roomid": 164,
           "roomName": "Etecoon Hangar Bay",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Bottom-Left Door",
           "position": "left"
         },
@@ -261,7 +261,7 @@
           "subarea": "Upper Main Deck",
           "roomid": 164,
           "roomName": "Etecoon Hangar Bay",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         },

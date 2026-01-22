@@ -87,7 +87,34 @@
     }
   ],
   "enemies": [],
-  "strats": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Reach E-Tank with Morph Bombs",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        "h_useMorphBombs"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
   "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1

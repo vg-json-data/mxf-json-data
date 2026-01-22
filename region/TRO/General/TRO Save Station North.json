@@ -40,6 +40,23 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "Save Station",
+      "nodeType": "utility",
+      "nodeSubType": "save",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 144,
+          "y": 160,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#3a3ac2",
+      "nodeAddress": "0x0"
     }
   ],
   "enemies": [],

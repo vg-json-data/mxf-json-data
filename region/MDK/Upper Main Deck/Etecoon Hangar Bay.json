@@ -19,7 +19,7 @@
   ],
   "nodes": [
     {
-      "id": 4,
+      "id": 5,
       "name": "Top Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -66,6 +66,29 @@
     },
     {
       "id": 2,
+      "name": "Left-Lower Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
       "name": "Bottom-Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -88,7 +111,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -112,7 +135,24 @@
     }
   ],
   "enemies": [],
-  "strats": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    }
+  ],
   "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1

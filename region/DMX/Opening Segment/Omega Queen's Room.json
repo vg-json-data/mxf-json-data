@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
   "id": 127,
-  "name": "Omega Queen's Room",
+  "name": "Omega Queen\u0027s Room",
   "area": "DMX",
   "subarea": "Opening Segment",
   "roomImageFile": "DMX Room 78900.jpg",

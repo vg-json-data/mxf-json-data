@@ -2047,12 +2047,16 @@
               "type": "string",
               "enum": [
                 "save",
+                "data",
+                "navigation",
+                "auxiliary",
+                "security",
+                "deceptive",
                 "missile",
                 "super",
                 "powerbomb",
                 "energy",
-                "reserve",
-                "map"
+                "reserve"
               ]
             }
           },

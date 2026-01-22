@@ -50,7 +50,7 @@
         {
           "shape": "rect",
           "x": 88,
-          "y": 160,
+          "y": 136,
           "w": 16,
           "h": 16
         }
@@ -59,6 +59,23 @@
       "nodeItem": "Major",
       "nodeAddress": "0x0",
       "note": ""
+    },
+    {
+      "id": 3,
+      "name": "Data Station",
+      "nodeType": "utility",
+      "nodeSubType": "data",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 80,
+          "y": 160,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#3a3ac2",
+      "nodeAddress": "0x0"
     }
   ],
   "enemies": [],

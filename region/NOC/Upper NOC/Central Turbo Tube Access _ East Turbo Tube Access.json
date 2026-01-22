@@ -4,6 +4,8 @@
   "name": "Central Turbo Tube Access / East Turbo Tube Access",
   "area": "NOC",
   "subarea": "Upper NOC",
+  "roomImageFile": "NOC Room 79400.jpg",
+  "roomAddress": "0x79400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -132,6 +134,7 @@
       ]
     }
   ],
+  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -174,8 +177,7 @@
       "requires": []
     }
   ],
-  "roomImageFile": "NOC Room 79400.jpg",
-  "roomAddress": "0x79400",
+  "notables": [],
   "nextStratId": 1,
   "nextNotableId": 1
 }
