@@ -1128,6 +1128,52 @@
             ]}
           ],
           "note": "Includes standard ways to kill Orange Geron, excludes room specific strats like SpeedBooster."
+        },
+        {
+          "name": "h_useSaveStation",
+          "requires": [
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "f_EasyMode",
+                        "f_SuperMode"
+                      ]
+                    },
+                    {
+                      "refill": [
+                        "Energy"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "f_NormalMode",
+                    {
+                      "partialRefill": {
+                        "type": "Energy",
+                        "limit": 399
+                      }
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "f_HardMode",
+                    {
+                      "partialRefill": {
+                        "type": "Energy",
+                        "limit": 99
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }

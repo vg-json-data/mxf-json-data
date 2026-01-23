@@ -2345,6 +2345,24 @@
     ],
     "other": [
       {
+        "name": "f_SuperMode",
+        "address": "000000",
+        "bit": 0,
+        "description": "Placeholder flag to indicate Super mode is enabled."
+      },
+      {
+        "name": "f_EasyMode",
+        "address": "000000",
+        "bit": 0,
+        "description": "Placeholder flag to indicate Easy mode is enabled."
+      },
+      {
+        "name": "f_NormalMode",
+        "address": "000000",
+        "bit": 0,
+        "description": "Placeholder flag to indicate Normal mode is enabled."
+      },
+      {
         "name": "f_HardMode",
         "address": "000000",
         "bit": 0,
