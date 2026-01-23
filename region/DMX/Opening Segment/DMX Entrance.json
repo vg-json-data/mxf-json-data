@@ -4,8 +4,6 @@
   "name": "DMX Entrance",
   "area": "DMX",
   "subarea": "Opening Segment",
-  "roomImageFile": "DMX Room 78000.jpg",
-  "roomAddress": "0x78000",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,7 +86,6 @@
       ]
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -101,13 +98,30 @@
     {
       "name": "Base",
       "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
         3,
         2
       ],
       "requires": []
     }
   ],
-  "notables": [],
+  "roomImageFile": "DMX Room 78000.jpg",
+  "roomAddress": "0x78000",
   "nextStratId": 1,
   "nextNotableId": 1
 }

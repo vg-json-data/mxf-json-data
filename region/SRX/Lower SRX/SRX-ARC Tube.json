@@ -4,8 +4,6 @@
   "name": "SRX-ARC Tube",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "Misc Room Reusable 2.jpg",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,7 +63,6 @@
       ]
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -82,9 +79,19 @@
         1
       ],
       "requires": []
+    },
+    {
+      "name": "Leave With Spark (Right Door)",
+      "devNote": "Build up a shinespark and release it into the Right Door.",
+      "link": [
+        2,
+        2
+      ],
+      "requires": []
     }
   ],
-  "notables": [],
+  "roomImageFile": "Misc Room Reusable 2.jpg",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

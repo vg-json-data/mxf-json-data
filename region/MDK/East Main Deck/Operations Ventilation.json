@@ -4,8 +4,6 @@
   "name": "Operations Ventilation",
   "area": "MDK",
   "subarea": "East Main Deck",
-  "roomImageFile": "MDK Room 16.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -197,11 +195,273 @@
       "nodeAddress": "0x7D42C",
       "mapTileX": 32,
       "mapTileY": 16
+    },
+    {
+      "id": 9,
+      "name": "Above Upper Missile Tank",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 104,
+          "y": 776,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 10,
+      "name": "Below Upper Missile Tank",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 56,
+          "y": 1104,
+          "w": 72,
+          "h": 64
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 11,
+      "name": "Near Lower Missile Tank",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 104,
+          "y": 1528,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        9
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        9
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        11
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        10
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        11
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        2
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    },
+    {
+      "name": "Reach [Top-Right Door] from [Above Upper Missile Tank] via Long IBJ",
+      "link": [
+        9,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "canCrumbleJump",
+            "canJumpIntoIBJ"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        7
+      ],
+      "collectsItems": [
+        7
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        10
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        10,
+        9
+      ],
+      "requires": [
+        {
+          "and": [
+            "Space Jump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach [Above Upper Missile Tank] from [Below Upper Missile Tank] via Long IBJ",
+      "link": [
+        10,
+        9
+      ],
+      "requires": [
+        "canLongIBJ"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        10,
+        11
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        11,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        11,
+        8
+      ],
+      "collectsItems": [
+        8
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        11,
+        10
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    },
+    {
+      "name": "Reach [Below Upper Missile Tank] from [Near Lower Missile Tank] via Wall Jumps",
+      "link": [
+        11,
+        10
+      ],
+      "requires": [
+        "canConsecutiveWalljump"
+      ]
+    },
+    {
+      "name": "Reach [Below Upper Missile Tank] from [Near Lower Missile Tank] via Long IBJ",
+      "link": [
+        11,
+        10
+      ],
+      "requires": [
+        "canLongIBJ"
+      ]
+    }
+  ],
+  "roomImageFile": "MDK Room 16.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "Lava Lake",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7A000.jpg",
-  "roomAddress": "0x7A000",
   "roomEnvironments": [
     {
       "heated": false,
@@ -18,6 +16,27 @@
     ]
   ],
   "nodes": [
+    {
+      "id": 5,
+      "idMinorItemPlm": "0x15",
+      "name": "Lava Lake - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 304,
+          "y": 112,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7D6E2",
+      "mapTileX": 24,
+      "mapTileY": 16
+    },
     {
       "id": 4,
       "name": "Top Door",
@@ -109,32 +128,214 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 5,
-      "idMinorItemPlm": "0x15",
-      "name": "Lava Lake - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 304,
-          "y": 112,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7D6E2",
-      "mapTileX": 24,
-      "mapTileY": 16
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Left Halzyn",
+      "enemyName": "Halzyn",
+      "quantity": 1,
+      "betweenNodes": [
+        5,
+        4
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "devNote": "Either kill the Halzyn on the way, or take damage from it",
+      "link": [
+        1,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            {
+              "enemyDamage": {
+                "enemy": "23",
+                "type": "Basic",
+                "hits": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Top Door from Left Door with Precise Wall Jump",
+      "link": [
+        1,
+        4
+      ],
+      "requires": [
+        "canPreciseWalljump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "collectsItems": [
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Reach Left Door from Right Door via Lava Dive",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "canSuitlessLavaDive",
+            {
+              "lavaFrames": 930
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "Space Jump",
+            "h_lavaProof"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Left Door from Bottom-Right Tunnel via Lava Dive",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "canSuitlessLavaDive",
+            {
+              "lavaFrames": 935
+            },
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_lavaProof",
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Top Door from Bottom-Right Tunnel via Lava Dive",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "canPreciseWalljump",
+            {
+              "lavaFrames": 1500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    },
+    {
+      "name": "Reach Bottom-Right Tunnel from Top Door via Lava Dive",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "lavaFrames": 550
+            },
+            "canSuitlessLavaDive",
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            {
+              "enemyDamage": {
+                "enemy": "23",
+                "type": "Basic",
+                "hits": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 7A000.jpg",
+  "roomAddress": "0x7A000",
   "nextStratId": 1,
   "nextNotableId": 1
 }

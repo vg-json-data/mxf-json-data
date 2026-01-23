@@ -231,7 +231,7 @@
       }
     },
     {
-      "name": "Gravity Suit",
+      "name": "Gravity",
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",

@@ -4,8 +4,6 @@
   "name": "Turbo Tunnel",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 79F00.jpg",
-  "roomAddress": "0x79F00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,11 +61,174 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "After Grapple Bridge",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 584,
+          "y": 96,
+          "w": 48,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Orange Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Kill Orange Geron via Come In With Spark from Left Door",
+      "link": [
+        1,
+        2
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_TurboTunnel_OrangeGeronDestroyed"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "Grapple",
+            "Space Jump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cross the Lava with Lava Frames",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "lavaFrames": 300
+            },
+            {
+              "or": [
+                "Super Jump",
+                "canWalljump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Orange Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_killOrangeGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_TurboTunnel_OrangeGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Kill Orange Geron via Shinecharged from Right Door",
+      "link": [
+        2,
+        2
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_TurboTunnel_OrangeGeronDestroyed"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        "f_TurboTunnel_OrangeGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Cross the Lava with Lava Frames",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "lavaFrames": 300
+            },
+            {
+              "or": [
+                "Super Jump",
+                "canWalljump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        "f_TurboTunnel_OrangeGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Kill Orange Geron",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        "h_killOrangeGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_TurboTunnel_OrangeGeronDestroyed"
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 79F00.jpg",
+  "roomAddress": "0x79F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

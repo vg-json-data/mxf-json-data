@@ -4,8 +4,6 @@
   "name": "SRX Entrance Lobby",
   "area": "SRX",
   "subarea": "Upper SRX",
-  "roomImageFile": "SRX Room 79400.jpg",
-  "roomAddress": "0x79400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -155,9 +153,131 @@
       "mapTileY": 11
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Top Screw Attack Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "h_bombThings"
+      ],
+      "collectsItems": [
+        6
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "Screw Attack"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "collectsItems": [
+        6
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        "Space Jump"
+      ],
+      "collectsItems": [
+        6
+      ]
+    },
+    {
+      "name": "IBJ from Right Door to Top-Left Door",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        "canIBJ"
+      ],
+      "collectsItems": [
+        6
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 79400.jpg",
+  "roomAddress": "0x79400",
   "nextStratId": 1,
   "nextNotableId": 1
 }

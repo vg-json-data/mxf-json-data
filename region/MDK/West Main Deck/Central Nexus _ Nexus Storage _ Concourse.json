@@ -17,27 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 8,
-      "idMinorItemPlm": "0x02",
-      "name": "Nexus Storage - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 432,
-          "y": 672,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7D35E",
-      "mapTileX": 27,
-      "mapTileY": 16
-    },
-    {
       "id": 1,
       "name": "Central Nexus - Top-Left Door",
       "nodeType": "door",
@@ -312,18 +291,49 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 8,
+      "idMinorItemPlm": "0x02",
+      "name": "Nexus Storage - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 432,
+          "y": 672,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7D35E",
+      "mapTileX": 27,
+      "mapTileY": 16
     }
   ],
   "obstacles": [
     {
-      "name": "Green Geron",
+      "name": "Central Nexus - Green Geron",
       "obstacleType": "inanimate",
       "id": "A"
+    },
+    {
+      "name": "Nexus Storage - Crumble Block",
+      "obstacleType": "inanimate",
+      "id": "B"
+    },
+    {
+      "name": "Nexus Storage - Screw Attack Blocks",
+      "obstacleType": "inanimate",
+      "id": "C"
     }
   ],
   "strats": [
     {
-      "name": "Base",
+      "name": "Central Nexus - Base",
       "link": [
         1,
         2
@@ -331,7 +341,7 @@
       "requires": []
     },
     {
-      "name": "Base",
+      "name": "Central Nexus - Base",
       "link": [
         2,
         1
@@ -339,7 +349,7 @@
       "requires": []
     },
     {
-      "name": "Base",
+      "name": "Central Nexus - Base",
       "link": [
         2,
         3
@@ -347,7 +357,7 @@
       "requires": []
     },
     {
-      "name": "Base",
+      "name": "Central Nexus - Base",
       "link": [
         3,
         2
@@ -355,7 +365,7 @@
       "requires": []
     },
     {
-      "name": "Kill Green Geron",
+      "name": "Central Nexus - Kill Green Geron",
       "link": [
         3,
         3
@@ -371,7 +381,7 @@
       ]
     },
     {
-      "name": "Base",
+      "name": "Central Nexus - Base",
       "link": [
         3,
         4
@@ -390,7 +400,21 @@
       ]
     },
     {
-      "name": "Kill Green Geron",
+      "name": "Central Nexus - Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Central Nexus - Kill Green Geron",
       "link": [
         4,
         4
@@ -406,7 +430,7 @@
       ]
     },
     {
-      "name": "Base",
+      "name": "Central Nexus - Base",
       "link": [
         4,
         5
@@ -414,10 +438,156 @@
       "requires": []
     },
     {
-      "name": "Base",
+      "name": "Central Nexus - Base",
       "link": [
         5,
         4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Nexus Storage - Reach Right Tunnel from Left Door with Crystal Flash Clip",
+      "link": [
+        6,
+        7
+      ],
+      "requires": [
+        "canBombIntoCrystalFlashClip"
+      ],
+      "resetsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Nexus Storage - Base",
+      "link": [
+        6,
+        7
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "Screw Attack",
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ],
+      "collectsItems": [
+        8
+      ]
+    },
+    {
+      "name": "Nexus Storage - Base",
+      "link": [
+        7,
+        6
+      ],
+      "requires": [
+        "h_bombThings"
+      ],
+      "resetsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Nexus Storage - Base",
+      "link": [
+        7,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "Screw Attack"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ],
+      "collectsItems": [
+        8
+      ]
+    },
+    {
+      "name": "Concourse - Base",
+      "link": [
+        9,
+        10
+      ],
+      "requires": []
+    },
+    {
+      "name": "Concourse - Base",
+      "link": [
+        10,
+        9
+      ],
+      "requires": []
+    },
+    {
+      "name": "Concourse - Base",
+      "link": [
+        10,
+        11
+      ],
+      "requires": []
+    },
+    {
+      "name": "Concourse - Base",
+      "link": [
+        10,
+        13
+      ],
+      "requires": [
+        {
+          "resourceCapacity": [
+            {
+              "type": "PowerBomb",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Concourse - Base",
+      "link": [
+        11,
+        10
+      ],
+      "requires": []
+    },
+    {
+      "name": "Concourse - Base",
+      "link": [
+        11,
+        12
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Concourse - Base",
+      "link": [
+        12,
+        11
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Concourse - Base",
+      "link": [
+        13,
+        11
       ],
       "requires": []
     }

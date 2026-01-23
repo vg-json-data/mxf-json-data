@@ -262,7 +262,7 @@ or multiple lines:
     {
       "or": [
         "Varia Suit",
-        "Gravity Suit",
+        "Gravity",
         {
           "resourceCapacity": [
             {
@@ -455,7 +455,7 @@ For hazard navigation:
   "requires": [
     {
       "or": [
-        "Gravity Suit",
+        "Gravity",
         {
           "and": [
             "Varia Suit",

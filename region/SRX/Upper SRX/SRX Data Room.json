@@ -4,8 +4,6 @@
   "name": "SRX Data Room",
   "area": "SRX",
   "subarea": "Upper SRX",
-  "roomImageFile": "Misc Room Reusable 6.jpg",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -78,9 +76,44 @@
       "nodeAddress": "0x0"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "not": "f_SRXDataRoom_DataDownloaded"
+        }
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_SRXDataRoom_DataDownloaded"
+      ]
+    }
+  ],
+  "roomImageFile": "Misc Room Reusable 6.jpg",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

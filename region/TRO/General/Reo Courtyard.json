@@ -4,8 +4,6 @@
   "name": "Reo Courtyard",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 78B00.jpg",
-  "roomAddress": "0x78B00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -109,7 +107,6 @@
       "mapTileY": 13
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -145,6 +142,26 @@
                     }
                   ]
                 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                "Charge Beam",
+                "f_ReoCourtyard_FrozenEnemyObstacleCleared"
               ]
             }
           ]
@@ -229,7 +246,8 @@
       ]
     }
   ],
-  "notables": [],
+  "roomImageFile": "TRO Room 78B00.jpg",
+  "roomAddress": "0x78B00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

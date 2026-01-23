@@ -4,8 +4,6 @@
   "name": "SRX Data Room Access",
   "area": "SRX",
   "subarea": "Upper SRX",
-  "roomImageFile": "SRX Room 79B00.jpg",
-  "roomAddress": "0x79B00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,56 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "SRX Room 79B00.jpg",
+  "roomAddress": "0x79B00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "Lava Horseshoe / Lava Tornado",
   "area": "SRX",
   "subarea": "Upper SRX",
-  "roomImageFile": "SRX Room 79D00.jpg",
-  "roomAddress": "0x79D00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -40,27 +38,6 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 2,
-      "idMinorItemPlm": "0x14",
-      "name": "Lava Horseshoe - Hidden Power Bomb Tank",
-      "nodeType": "item",
-      "nodeSubType": "hidden",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 64,
-          "y": 48,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "PowerBomb",
-      "nodeAddress": "0x7D6BE",
-      "mapTileX": 23,
-      "mapTileY": 14
     },
     {
       "id": 3,
@@ -130,11 +107,165 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 2,
+      "idMinorItemPlm": "0x14",
+      "name": "Lava Horseshoe - Hidden Power Bomb Tank",
+      "nodeType": "item",
+      "nodeSubType": "hidden",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 64,
+          "y": 48,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7D6BE",
+      "mapTileX": 23,
+      "mapTileY": 14
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Lava Horseshoe - Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_lavaProof",
+            "Space Jump"
+          ]
+        }
+      ],
+      "collectsItems": [
+        2
+      ]
+    },
+    {
+      "name": "Lava Horseshoe - Reach Power Bomb Tank with Wall Jumps",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "h_lavaProof",
+                {
+                  "and": [
+                    "canSuitlessLavaDive",
+                    {
+                      "lavaFrames": 400
+                    }
+                  ]
+                }
+              ]
+            },
+            "canConsecutiveWalljump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lava Horseshoe - Return from Power Bomb Tank without Super Jump or Space Jump",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "h_lavaProof",
+                {
+                  "and": [
+                    "canSuitlessLavaDive",
+                    {
+                      "lavaFrames": 400
+                    }
+                  ]
+                }
+              ]
+            },
+            "canConsecutiveWalljump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lava Horseshoe - Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_lavaProof",
+            {
+              "or": [
+                "Space Jump",
+                "Super Jump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lava Tornado - Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Lava Tornado - Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Lava Tornado - Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Lava Tornado - Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "Space Jump",
+            "Super Jump",
+            "canCarefulJump"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 79D00.jpg",
+  "roomAddress": "0x79D00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

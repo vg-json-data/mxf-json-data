@@ -4,8 +4,6 @@
   "name": "Twin-Wing Crossing",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7A100.jpg",
-  "roomAddress": "0x7A100",
   "roomEnvironments": [
     {
       "heated": false,
@@ -109,11 +107,147 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 5,
+      "name": "Underneath Bridge",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 224,
+          "y": 176,
+          "w": 72,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "Space Jump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Underneath Bridge from Bottom-Left Tunnel via IBJ",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "canLongIBJ",
+            "canTrickyWalljump",
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Ice Missile",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_lavaProof",
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Bottom-Left Tunnel from Underneath Bridge via Lava Dive",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "canSuitlessLavaDive",
+            {
+              "lavaFrames": 300
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 7A100.jpg",
+  "roomAddress": "0x7A100",
   "nextStratId": 1,
   "nextNotableId": 1
 }

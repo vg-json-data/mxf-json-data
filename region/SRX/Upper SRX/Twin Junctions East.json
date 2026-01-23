@@ -4,8 +4,6 @@
   "name": "Twin Junctions East",
   "area": "SRX",
   "subarea": "Upper SRX",
-  "roomImageFile": "SRX Room 79700.jpg",
-  "roomAddress": "0x79700",
   "roomEnvironments": [
     {
       "heated": false,
@@ -45,7 +43,9 @@
       "id": 2,
       "name": "Top-Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -56,8 +56,6 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -84,6 +82,52 @@
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Gray Door Lock",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Enable SRX Aux",
+              "requires": [
+                "f_SRXAuxiliaryRoom_Engaged"
+              ]
+            }
+          ],
+          "lock": [
+            {
+              "not": "f_SRXAuxiliaryRoom_Engaged"
+            }
+          ]
         }
       ]
     },
@@ -131,12 +175,178 @@
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Gray Door Lock",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Enable SRX Aux",
+              "requires": [
+                "f_SRXAuxiliaryRoom_Engaged"
+              ]
+            }
+          ],
+          "lock": [
+            {
+              "not": "f_SRXAuxiliaryRoom_Engaged"
+            }
+          ]
+        }
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Red Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Kill Red Geron",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_killRedGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_TwinJunctionsEast_RedGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Red Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_killRedGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_TwinJunctionsEast_RedGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        "Morph"
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 79700.jpg",
+  "roomAddress": "0x79700",
   "nextStratId": 1,
   "nextNotableId": 1
 }

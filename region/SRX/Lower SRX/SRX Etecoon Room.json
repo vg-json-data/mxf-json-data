@@ -4,8 +4,6 @@
   "name": "SRX Etecoon Room",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7AB00.jpg",
-  "roomAddress": "0x7AB00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -18,6 +16,25 @@
     ]
   ],
   "nodes": [
+    {
+      "id": 2,
+      "name": "SRX Etecoon Room - SRX Etecoon",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 88,
+          "y": 96,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#8d0cad",
+      "nodeItem": "Major",
+      "nodeAddress": "0x0",
+      "note": ""
+    },
     {
       "id": 1,
       "name": "Right Door",
@@ -40,30 +57,38 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 2,
-      "name": "SRX Etecoon Room - SRX Etecoon",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 88,
-          "y": 96,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#8d0cad",
-      "nodeItem": "Major",
-      "nodeAddress": "0x0",
-      "note": ""
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "Missile",
+            "count": 1
+          }
+        }
+      ],
+      "collectsItems": [
+        2
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "SRX Room 7AB00.jpg",
+  "roomAddress": "0x7AB00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "Habitation Deck",
   "area": "MDK",
   "subarea": "Upper Main Deck",
-  "roomImageFile": "MDK Room 27.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -18,6 +16,48 @@
     ]
   ],
   "nodes": [
+    {
+      "id": 4,
+      "idMinorItemPlm": "0x03",
+      "name": "Habitation Deck [Bottom-Left] - Energy Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 64,
+          "y": 464,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "ETank",
+      "nodeAddress": "0x7D3F0",
+      "mapTileX": 29,
+      "mapTileY": 11
+    },
+    {
+      "id": 5,
+      "idMinorItemPlm": "0x04",
+      "name": "Habitation Deck [Bottom-Right] - Energy Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 688,
+          "y": 464,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "ETank",
+      "nodeAddress": "0x7D3F6",
+      "mapTileX": 31,
+      "mapTileY": 11
+    },
     {
       "id": 1,
       "name": "Top-Left Door",
@@ -86,51 +126,8 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 4,
-      "idMinorItemPlm": "0x03",
-      "name": "Habitation Deck [Bottom-Left] - Energy Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 64,
-          "y": 464,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "ETank",
-      "nodeAddress": "0x7D3F0",
-      "mapTileX": 29,
-      "mapTileY": 11
-    },
-    {
-      "id": 5,
-      "idMinorItemPlm": "0x04",
-      "name": "Habitation Deck [Bottom-Right] - Energy Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 688,
-          "y": 464,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "ETank",
-      "nodeAddress": "0x7D3F6",
-      "mapTileX": 31,
-      "mapTileY": 11
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -174,7 +171,17 @@
         3,
         1
       ],
-      "requires": []
+      "requires": [
+        {
+          "and": [
+            {
+              "shinespark": {
+                "frames": 41
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Base",
@@ -185,7 +192,8 @@
       "requires": []
     }
   ],
-  "notables": [],
+  "roomImageFile": "MDK Room 27.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

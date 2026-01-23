@@ -1,11 +1,9 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
   "id": 302,
-  "name": "Fool\u0027s Dead End",
+  "name": "Fool's Dead End",
   "area": "SRX",
   "subarea": "Upper SRX",
-  "roomImageFile": "SRX Room 79A00.jpg",
-  "roomAddress": "0x79A00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -90,7 +88,7 @@
     {
       "id": 4,
       "idMinorItemPlm": "0x13",
-      "name": "Fool\u0027s Dead End - Missile Tank",
+      "name": "Fool's Dead End - Missile Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
@@ -107,11 +105,184 @@
       "nodeAddress": "0x7D686",
       "mapTileX": 31,
       "mapTileY": 14
+    },
+    {
+      "id": 5,
+      "name": "Left of Blue Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 336,
+          "y": 384,
+          "w": 24,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Blue Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "Spike Breaker"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "collectsItems": [
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Spike Breaker",
+            {
+              "or": [
+                "Space Jump",
+                {
+                  "and": [
+                    "Super Jump",
+                    "canCrouchJump"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Top-Left Door from Bottom-Left Door via Wall Jump",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Spike Breaker",
+            "canWalljump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Kill Blue Geron",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        "h_killBlueGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_FoolsDeadEnd_BlueGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Blue Geron",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        "h_killBlueGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_FoolsDeadEnd_BlueGeronDestroyed"
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 79A00.jpg",
+  "roomAddress": "0x79A00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

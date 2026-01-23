@@ -4,8 +4,6 @@
   "name": "West Spike Tower",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7A300.jpg",
-  "roomAddress": "0x7A300",
   "roomEnvironments": [
     {
       "heated": false,
@@ -157,9 +155,147 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Yameba",
+      "enemyName": "Yameba (Small)",
+      "quantity": 5,
+      "homeNodes": [
+        1,
+        2,
+        4
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Super Jump",
+            "Space Jump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Reach Top-Right Door from Right Door via Wall Jumps",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "canWalljump",
+            {
+              "or": [
+                {
+                  "resourceAvailable": [
+                    {
+                      "type": "Energy",
+                      "count": 20
+                    }
+                  ]
+                },
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e1"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    },
+    {
+      "name": "Reach Right-Lower Door from Bottom Door via Spikebreaker and Consecutive, Tricky Wall Jumps",
+      "link": [
+        6,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "canTrickyWalljump"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 7A300.jpg",
+  "roomAddress": "0x7A300",
   "nextStratId": 1,
   "nextNotableId": 1
 }

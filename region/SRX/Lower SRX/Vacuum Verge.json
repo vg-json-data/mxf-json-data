@@ -4,8 +4,6 @@
   "name": "Vacuum Verge",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7A700.jpg",
-  "roomAddress": "0x7A700",
   "roomEnvironments": [
     {
       "heated": false,
@@ -18,6 +16,27 @@
     ]
   ],
   "nodes": [
+    {
+      "id": 3,
+      "idMinorItemPlm": "0x18",
+      "name": "Vacuum Verge - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 120,
+          "y": 96,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7D726",
+      "mapTileX": 29,
+      "mapTileY": 22
+    },
     {
       "id": 1,
       "name": "Left-Top Door",
@@ -63,32 +82,52 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 3,
-      "idMinorItemPlm": "0x18",
-      "name": "Vacuum Verge - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 120,
-          "y": 96,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7D726",
-      "mapTileX": 29,
-      "mapTileY": 22
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 7A700.jpg",
+  "roomAddress": "0x7A700",
   "nextStratId": 1,
   "nextNotableId": 1
 }

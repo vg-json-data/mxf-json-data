@@ -4,8 +4,6 @@
   "name": "TRO Entrance Lobby",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 78700.jpg",
-  "roomAddress": "0x78700",
   "roomEnvironments": [
     {
       "heated": false,
@@ -111,7 +109,6 @@
       ]
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -162,7 +159,8 @@
       "requires": []
     }
   ],
-  "notables": [],
+  "roomImageFile": "TRO Room 78700.jpg",
+  "roomAddress": "0x78700",
   "nextStratId": 1,
   "nextNotableId": 1
 }

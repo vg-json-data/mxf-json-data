@@ -4,8 +4,6 @@
   "name": "Cruciform Hall",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7A400.jpg",
-  "roomAddress": "0x7A400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -157,9 +155,287 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Reach Bottom Door from Left-Lower Door via Lava Dive (No Spikebreaker)",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "lavaFrames": 1661
+            },
+            "canSuitlessLavaDive",
+            "canPreciseWalljump",
+            {
+              "spikeHits": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Bottom Door from Left-Lower Door via Lava Dive (With Spikebreaker)",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "canSuitlessLavaDive",
+            {
+              "lavaFrames": 850
+            },
+            "canPreciseWalljump",
+            "Spike Breaker"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Spike Breaker",
+            "h_lavaProof",
+            {
+              "or": [
+                "Super Jump",
+                "Space Jump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Spike Breaker",
+            "h_lavaProof",
+            {
+              "or": [
+                "Super Jump",
+                "Space Jump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Left-Lower Door from Bottom Door via Lava Dive (With Spikebreaker)",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "canSuitlessLavaDive",
+            {
+              "lavaFrames": 850
+            },
+            "canPreciseWalljump",
+            "Spike Breaker"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Left-Lower Door from Bottom Door via Lava Dive (No Spikebreaker)",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "spikeHits": 16
+            },
+            {
+              "lavaFrames": 1600
+            },
+            "canPreciseWalljump",
+            "canSuitlessLavaDive"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wall Jump to reach Right Door from Bottom Door",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "canWalljump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "Spike Breaker",
+            "Morph",
+            "h_lavaProof"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Bottom-Right Tunnel from Bottom Door via Lava Dive",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "Spike Breaker",
+            "Morph",
+            {
+              "lavaFrames": 400
+            },
+            "canSuitlessLavaDive"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Bottom Door from Bottom-Right Tunnel via Lava Dive",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "heatFrames": 777
+            },
+            "canSuitlessLavaDive",
+            "Morph",
+            "Spike Breaker"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "Spike Breaker",
+            {
+              "or": [
+                "Super Jump",
+                "Space Jump"
+              ]
+            },
+            "h_lavaProof"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Bottom Door from Bottom-Right Tunnel via Precise Wall Jumps and Gravity Suit",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "Spike Breaker",
+            {
+              "or": [
+                "Super Jump",
+                "Space Jump"
+              ]
+            },
+            "h_lavaProof",
+            "canPreciseWalljump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Left Door from Top Door via Shinecharged",
+      "link": [
+        6,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "canStopOnADime",
+            "Speed Booster Level 2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Left Door from Top Door via Shinecharged",
+      "link": [
+        6,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "canStopOnADime",
+            "Speed Booster Level 2"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 7A400.jpg",
+  "roomAddress": "0x7A400",
   "nextStratId": 1,
   "nextNotableId": 1
 }

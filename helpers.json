@@ -1106,6 +1106,19 @@
           "note": "Includes standard ways to kill Green Geron, excludes room specific strats like SpeedBooster."
         },
         {
+          "name": "h_killBlueGeron",
+          "requires": [
+            {"or": [
+              "ScrewAttack",
+              {"and": [
+                "Grapple",
+                {"electricityFrames": 32}
+              ]}
+            ]}
+          ],
+          "note": "Includes standard ways to kill Green Geron, excludes room specific strats like SpeedBooster."
+        },
+        {
           "name": "h_killOrangeGeron",
           "requires": [
             {"or": [

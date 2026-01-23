@@ -4,8 +4,6 @@
   "name": "MDK Security Room",
   "area": "MDK",
   "subarea": "Upper Main Deck",
-  "roomImageFile": "MDK Room 25.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -72,10 +70,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 208,
-          "y": 96,
-          "w": 48,
-          "h": 64
+          "x": 192,
+          "y": 192,
+          "w": 64,
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -105,9 +103,77 @@
       "nodeAddress": "0x0"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        "f_MDKSecurityRoom_DoorsUnlocked"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        "f_MDKSecurityRoom_DoorsUnlocked"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        4
+      ],
+      "setsFlags": [
+        "f_MDKSecurityRoom_DoorsUnlocked"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "MDK Room 25.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "Operations Ventilation Maintenance Room",
   "area": "MDK",
   "subarea": "East Main Deck",
-  "roomImageFile": "MDK Room 17.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,30 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "Screw Attack"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "Screw Attack"
+      ]
+    }
+  ],
+  "roomImageFile": "MDK Room 17.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

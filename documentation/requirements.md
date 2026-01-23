@@ -119,7 +119,7 @@ Negate a requirement:
 ```json
 "requires": [
   {
-    "not": "Gravity Suit"
+    "not": "Gravity"
   }
 ]
 ```
@@ -130,7 +130,7 @@ This means: `Must NOT have Gravity Suit`
 ```json
 "requires": [
   {
-    "not": "Gravity Suit"
+    "not": "Gravity"
   },
   "canWaterMovement"
 ]

@@ -4,8 +4,6 @@
   "name": "East Spike Tower",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7A800.jpg",
-  "roomAddress": "0x7A800",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,61 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Reach Top-Left Door from Bottom Door with Spikebreaker and Consecutive, Tricky Wall Jumps",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "canTrickyWalljump",
+            "Spike Breaker"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        "Space Jump"
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 7A800.jpg",
+  "roomAddress": "0x7A800",
   "nextStratId": 1,
   "nextNotableId": 1
 }

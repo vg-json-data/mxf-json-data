@@ -4,8 +4,6 @@
   "name": "Etecoon Hangar Bay",
   "area": "MDK",
   "subarea": "Upper Main Deck",
-  "roomImageFile": "MDK Room 26.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -73,9 +71,9 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 96,
-          "w": 48,
-          "h": 64
+          "y": 192,
+          "w": 112,
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -134,12 +132,74 @@
       ]
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
       "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            "Super Jump",
+            "Space Jump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reach Top Door via Wall Jump",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        "canWalljump"
+      ]
+    },
+    {
+      "name": "Leave Top Door With Spark",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
         2,
+        1
+      ],
+      "requires": [
+        "f_MDKSecurityRoom_DoorsUnlocked"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
         3
       ],
       "requires": []
@@ -147,13 +207,16 @@
     {
       "name": "Base",
       "link": [
-        3,
-        2
+        5,
+        1
       ],
-      "requires": []
+      "requires": [
+        "f_MDKSecurityRoom_DoorsUnlocked"
+      ]
     }
   ],
-  "notables": [],
+  "roomImageFile": "MDK Room 26.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

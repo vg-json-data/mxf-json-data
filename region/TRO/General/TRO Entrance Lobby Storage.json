@@ -4,8 +4,6 @@
   "name": "TRO Entrance Lobby Storage",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 78800.jpg",
-  "roomAddress": "0x78800",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,9 +61,51 @@
       "mapTileY": 12
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "devNote": "Bomb the single tile on the floor to reveal a rising platform.",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "h_bombThings",
+            "Space Jump",
+            "Super Jump"
+          ]
+        }
+      ],
+      "collectsItems": [
+        2
+      ]
+    },
+    {
+      "name": "Reach Missile Tank with Gravity and Owtch Damage Boost",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "canNeutralDamageBoost"
+      ],
+      "collectsItems": [
+        2
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "TRO Room 78800.jpg",
+  "roomAddress": "0x78800",
   "nextStratId": 1,
   "nextNotableId": 1
 }
