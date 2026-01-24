@@ -243,11 +243,49 @@
     },
     {
       "id": 9,
-      "name": "Fune / Naminhe",
+      "name": "Fune / Naminhe (Green)",
       "attacks": [
         {
           "name": "contact",
-          "baseDamage": 0
+          "baseDamage": 32
+        },
+        {
+          "name": "projectile",
+          "baseDamage": 32
+        }
+      ],
+      "hp": 200,
+      "amountOfDrops": 0,
+      "drops": {
+        "noDrop": 0,
+        "yellowX": 0,
+        "greenX": 0,
+        "redX": 0
+      },
+      "dims": {
+        "w": 28,
+        "h": 28
+      },
+      "freezable": false,
+      "grapplable": false,
+      "damageMultipliers": [],
+      "vuln": [],
+      "areas": [
+        "PYR"
+      ],
+      "note": "Horizontal increases/decreases by 4px every frame when contracting/expanding; holds at 116 (sometimes 118) for 26 frames"
+    },
+    {
+      "id": 62,
+      "name": "Fune / Naminhe (Purple)",
+      "attacks": [
+        {
+          "name": "contact",
+          "baseDamage": 32
+        },
+        {
+          "name": "projectile",
+          "baseDamage": 32
         }
       ],
       "hp": 544,

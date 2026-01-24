@@ -4,8 +4,6 @@
   "name": "Nightmare Arena Access",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7B000.jpg",
-  "roomAddress": "0x7B000",
   "roomEnvironments": [
     {
       "heated": false,
@@ -45,7 +43,9 @@
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -56,11 +56,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NightmareArena_CoreXAbsorbed"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -68,7 +107,9 @@
       "id": 2,
       "name": "Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "eye",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -79,18 +120,175 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
       ]
+    },
+    {
+      "id": 4,
+      "name": "Center above water",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 320,
+          "y": 168,
+          "w": 56,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
+      "name": "Underwater",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 72,
+          "y": 328,
+          "w": 264,
+          "h": 64
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Super Jump",
+                "canCrouchJump"
+              ]
+            },
+            "Space Jump",
+            "canIBJ"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Gravity",
+            {
+              "or": [
+                "Space Jump",
+                "Speed Booster Level 2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        "Speed Booster Level 2"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "NOC Room 7B000.jpg",
+  "roomAddress": "0x7B000",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -3,9 +3,7 @@
   "id": 255,
   "name": "Checkpoint Crossing",
   "area": "PYR",
-  "subarea": "Neo-Crocomire\u0027s Lair",
-  "roomImageFile": "PYR Room 79900.jpg",
-  "roomAddress": "0x79900",
+  "subarea": "Neo-Crocomire's Lair",
   "roomEnvironments": [
     {
       "heated": false,
@@ -105,11 +103,349 @@
       "nodeItem": "Major",
       "nodeAddress": "0x0",
       "note": ""
+    },
+    {
+      "id": 5,
+      "name": "Right of Aux Power Cell",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 312,
+          "y": 248,
+          "w": 80,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Checkpoint Gate",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "enemies": [
+    {
+      "groupName": "Bottom Green Fune",
+      "enemyName": "Fune / Naminhe (Green)",
+      "quantity": 3,
+      "betweenNodes": [
+        1,
+        5
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Top Green Fune",
+      "enemyName": "Fune / Naminhe (Green)",
+      "quantity": 2,
+      "betweenNodes": [
+        3,
+        5
+      ],
+      "id": "e2"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "or": [
+                "Wave Beam",
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                }
+              ]
+            },
+            "Morph",
+            {
+              "enemyDamage": {
+                "enemy": "9",
+                "type": "contact",
+                "hits": 1
+              }
+            },
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Morph",
+                "canTrickyDodgeEnemies"
+              ]
+            },
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "9",
+                    "type": "contact",
+                    "hits": 5
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "9",
+                    "type": "projectile",
+                    "hits": 5
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "9",
+                    "type": "contact",
+                    "hits": 2
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "9",
+                    "type": "projectile",
+                    "hits": 2
+                  }
+                }
+              ]
+            },
+            {
+              "and": [
+                "Morph",
+                "canTrickyDodgeEnemies"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e2"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e1"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            "Screw Attack",
+            "Morph",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e2"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_JumpAssist",
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Morph",
+                "canTrickyDodgeEnemies"
+              ]
+            },
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "9",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "9",
+                    "type": "projectile",
+                    "hits": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e2"
+                  ]
+                ]
+              }
+            },
+            {
+              "and": [
+                "h_JumpAssist",
+                {
+                  "enemyDamage": {
+                    "enemy": "9",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                "Screw Attack",
+                "h_bombThings"
+              ]
+            },
+            "Wave Beam"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 79900.jpg",
+  "roomAddress": "0x79900",
   "nextStratId": 1,
   "nextNotableId": 1
 }

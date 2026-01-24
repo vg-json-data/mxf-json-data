@@ -54,7 +54,7 @@
     {
       "connectionType": "VerticalDoor",
       "description": "Vertical Door connection between [NOC Data Room - Bottom Door] and [Nightmare Arena Access - Top Door]",
-      "direction": "Forward",
+      "direction": "Bidirectional",
       "nodes": [
         {
           "area": "NOC",

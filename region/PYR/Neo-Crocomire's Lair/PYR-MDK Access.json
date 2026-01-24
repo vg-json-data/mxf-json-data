@@ -3,12 +3,10 @@
   "id": 265,
   "name": "PYR-MDK Access",
   "area": "PYR",
-  "subarea": "Neo-Crocomire\u0027s Lair",
-  "roomImageFile": "PYR Room 79A00.jpg",
-  "roomAddress": "0x79A00",
+  "subarea": "Neo-Crocomire's Lair",
   "roomEnvironments": [
     {
-      "heated": false,
+      "heated": true,
       "cold": false
     }
   ],
@@ -86,9 +84,8 @@
       "mapTileY": 16
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "roomImageFile": "PYR Room 79A00.jpg",
+  "roomAddress": "0x79A00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

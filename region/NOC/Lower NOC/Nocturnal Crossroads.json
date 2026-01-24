@@ -4,8 +4,6 @@
   "name": "Nocturnal Crossroads",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7AE00.jpg",
-  "roomAddress": "0x7AE00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -149,11 +147,275 @@
       "nodeItem": "Major",
       "nodeAddress": "0x0",
       "note": "Jump through the wall at the bottom-right of the room"
+    },
+    {
+      "id": 7,
+      "name": "Above Grapple Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 320,
+          "y": 288,
+          "w": 72,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Screw Attack Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
+    },
+    {
+      "name": "Crumble Blocks",
+      "obstacleType": "inanimate",
+      "id": "C"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "Screw Attack"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "Screw Attack"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "resetsObstacles": [
+        "C"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "canCarefulJump",
+            "canWalljump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        6
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_NocturnalCrossroads_MissileTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        7
+      ],
+      "requires": [
+        {
+          "or": [
+            "Space Jump",
+            {
+              "and": [
+                "Grapple",
+                "canWalljump"
+              ]
+            },
+            "canIBJ"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "canCarefulJump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            "canCarefulJump",
+            "canWalljump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "canCarefulJump",
+            "canWalljump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                "canIBJ",
+                "canConsecutiveWalljump",
+                "Space Jump",
+                {
+                  "and": [
+                    "Super Jump",
+                    "canWalljump"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        7
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 7AE00.jpg",
+  "roomAddress": "0x7AE00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

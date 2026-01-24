@@ -4,8 +4,6 @@
   "name": "NOC Data Room",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 78500.jpg",
-  "roomAddress": "0x78500",
   "roomEnvironments": [
     {
       "heated": false,
@@ -50,7 +48,7 @@
         {
           "shape": "rect",
           "x": 72,
-          "y": 192,
+          "y": 448,
           "w": 48,
           "h": 64
         }
@@ -65,9 +63,95 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "canCarefulJump",
+            {
+              "or": [
+                "canConsecutiveWalljump",
+                "Space Jump"
+              ]
+            },
+            {
+              "ammo": {
+                "type": "PowerBomb",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 78500.jpg",
+  "roomAddress": "0x78500",
   "nextStratId": 1,
   "nextNotableId": 1
 }

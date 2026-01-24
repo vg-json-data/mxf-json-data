@@ -4,8 +4,6 @@
   "name": "MDK-PYR Tube",
   "area": "MDK",
   "subarea": "Upper Main Deck",
-  "roomImageFile": "Misc Room Reusable 2.jpg",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "Misc Room Reusable 2.jpg",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

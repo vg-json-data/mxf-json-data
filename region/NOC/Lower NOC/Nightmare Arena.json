@@ -4,8 +4,6 @@
   "name": "Nightmare Arena",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7B100.jpg",
-  "roomAddress": "0x7B100",
   "roomEnvironments": [
     {
       "heated": false,
@@ -61,9 +59,47 @@
       "note": ""
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_JumpAssist",
+            "f_NightmareArena_CoreXAbsorbed"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_NightmareArena_CoreXAbsorbed"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "NOC Room 7B100.jpg",
+  "roomAddress": "0x7B100",
   "nextStratId": 1,
   "nextNotableId": 1
 }

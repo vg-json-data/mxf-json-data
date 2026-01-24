@@ -4,8 +4,6 @@
   "name": "Garbage Chute Runway",
   "area": "PYR",
   "subarea": "Upper PYR",
-  "roomImageFile": "PYR Room 78B00.jpg",
-  "roomAddress": "0x78B00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,93 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_JumpAssist",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_JumpAssist",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 78B00.jpg",
+  "roomAddress": "0x78B00",
   "nextStratId": 1,
   "nextNotableId": 1
 }
