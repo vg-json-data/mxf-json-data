@@ -4,8 +4,6 @@
   "name": "West Turbo Tube Access",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 79900.jpg",
-  "roomAddress": "0x79900",
   "roomEnvironments": [
     {
       "heated": false,
@@ -45,7 +43,9 @@
       "id": 2,
       "name": "Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -56,11 +56,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -68,7 +107,9 @@
       "id": 3,
       "name": "Bottom Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "down",
       "geometry": [
         {
           "shape": "rect",
@@ -79,18 +120,82 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "down",
       "doorEnvironments": [
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "NOC Room 79900.jpg",
+  "roomAddress": "0x79900",
   "nextStratId": 1,
   "nextNotableId": 1
 }

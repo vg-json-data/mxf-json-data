@@ -4,8 +4,6 @@
   "name": "Central Turbo Tube Access / East Turbo Tube Access",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 79400.jpg",
-  "roomAddress": "0x79400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -45,7 +43,9 @@
       "id": 2,
       "name": "Central Turbo Tube Access - Bottom Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "down",
       "geometry": [
         {
           "shape": "rect",
@@ -56,11 +56,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "down",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "coloredDoor",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -134,7 +173,6 @@
       ]
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -161,6 +199,14 @@
       "requires": []
     },
     {
+      "name": "Leave with Shinecharged",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    },
+    {
       "name": "Base",
       "link": [
         4,
@@ -177,7 +223,8 @@
       "requires": []
     }
   ],
-  "notables": [],
+  "roomImageFile": "NOC Room 79400.jpg",
+  "roomAddress": "0x79400",
   "nextStratId": 1,
   "nextNotableId": 1
 }

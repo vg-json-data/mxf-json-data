@@ -4,8 +4,6 @@
   "name": "NOC Mimic Lodge",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7A200.jpg",
-  "roomAddress": "0x7A200",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,9 +61,50 @@
       "mapTileY": 17
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "h_bombThings"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_NOCMimicLodge_EnergyTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 7A200.jpg",
+  "roomAddress": "0x7A200",
   "nextStratId": 1,
   "nextNotableId": 1
 }

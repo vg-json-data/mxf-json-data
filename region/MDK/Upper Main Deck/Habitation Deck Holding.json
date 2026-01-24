@@ -4,8 +4,6 @@
   "name": "Habitation Deck Holding",
   "area": "MDK",
   "subarea": "Upper Main Deck",
-  "roomImageFile": "MDK Room 24.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -61,12 +59,27 @@
       "note": ""
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
       "link": [
         1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
         2
       ],
       "requires": [
@@ -79,18 +92,14 @@
       ],
       "collectsItems": [
         2
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        2,
-        1
       ],
-      "requires": []
+      "setsFlags": [
+        "f_HabitationDeckHolding_Freed"
+      ]
     }
   ],
-  "notables": [],
+  "roomImageFile": "MDK Room 24.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

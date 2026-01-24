@@ -44,6 +44,8 @@
       "name": "Central Nexus - Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -54,11 +56,53 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Door Destroyed by having Power Bombs",
+          "lockType": "permanent",
+          "unlockStrats": [],
+          "lock": [
+            {
+              "resourceCapacity": [
+                {
+                  "type": "PowerBomb",
+                  "count": 1
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -446,16 +490,17 @@
       "requires": []
     },
     {
-      "name": "Nexus Storage - Reach Right Tunnel from Left Door with Crystal Flash Clip",
+      "name": "Collect Item with Crystal Flash",
+      "devNote": "Crystal Flash directly under the item, hold forward to collect the item.",
       "link": [
         6,
-        7
+        6
       ],
       "requires": [
-        "canBombIntoCrystalFlashClip"
+        "canCrystalFlash"
       ],
-      "resetsObstacles": [
-        "B"
+      "collectsItems": [
+        8
       ]
     },
     {
@@ -478,6 +523,19 @@
       ],
       "collectsItems": [
         8
+      ]
+    },
+    {
+      "name": "Nexus Storage - Reach Right Tunnel from Left Door with Crystal Flash Clip",
+      "link": [
+        6,
+        8
+      ],
+      "requires": [
+        "canCrystalFlashClip"
+      ],
+      "resetsObstacles": [
+        "B"
       ]
     },
     {
@@ -515,6 +573,14 @@
       ]
     },
     {
+      "name": "Base",
+      "link": [
+        8,
+        7
+      ],
+      "requires": []
+    },
+    {
       "name": "Concourse - Base",
       "link": [
         9,
@@ -544,16 +610,7 @@
         10,
         13
       ],
-      "requires": [
-        {
-          "resourceCapacity": [
-            {
-              "type": "PowerBomb",
-              "count": 1
-            }
-          ]
-        }
-      ]
+      "requires": []
     },
     {
       "name": "Concourse - Base",

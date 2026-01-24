@@ -82,6 +82,14 @@
   ],
   "strats": [
     {
+      "name": "Leave with Shinecharged",
+      "link": [
+        1,
+        1
+      ],
+      "requires": []
+    },
+    {
       "name": "Base",
       "link": [
         1,

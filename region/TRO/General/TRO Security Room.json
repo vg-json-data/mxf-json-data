@@ -4,8 +4,6 @@
   "name": "TRO Security Room",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 7AC00.jpg",
-  "roomAddress": "0x7AC00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -22,7 +20,9 @@
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -33,11 +33,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_TROSecurityRoom_DoorsUnlocked"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -82,9 +121,53 @@
       "nodeAddress": "0x0"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        3
+      ],
+      "setsFlags": [
+        "f_TROSecurityRoom_DoorsUnlocked"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "TRO Room 7AC00.jpg",
+  "roomAddress": "0x7AC00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

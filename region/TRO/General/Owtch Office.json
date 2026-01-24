@@ -4,8 +4,6 @@
   "name": "Owtch Office",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 79200.jpg",
-  "roomAddress": "0x79200",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,9 +61,56 @@
       "mapTileY": 20
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 4
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_OwtchOffice_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "Morph"
+      ]
+    }
+  ],
+  "roomImageFile": "TRO Room 79200.jpg",
+  "roomAddress": "0x79200",
   "nextStratId": 1,
   "nextNotableId": 1
 }

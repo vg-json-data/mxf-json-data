@@ -295,13 +295,74 @@
       ]
     },
     {
-      "name": "Wall Jump to reach Right Door from Bottom Door",
+      "name": "Base",
       "link": [
         4,
         3
       ],
       "requires": [
-        "canWalljump"
+        {
+          "and": [
+            {
+              "or": [
+                "Screw Attack",
+                {
+                  "and": [
+                    "Charge",
+                    "Plasma Beam",
+                    {
+                      "or": [
+                        "Wave Beam",
+                        "Wide Beam"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                },
+                {
+                  "and": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "Zebesian",
+                            "Zebesian"
+                          ]
+                        ]
+                      }
+                    },
+                    "canDodgeWhileShooting"
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "enemyDamage": {
+                        "enemy": "Zebesian",
+                        "type": "contact",
+                        "hits": 1
+                      }
+                    },
+                    "canDodgeWhileShooting"
+                  ]
+                },
+                "canTrickyJump",
+                {
+                  "enemyDamage": {
+                    "enemy": "Zebesian",
+                    "type": "laser",
+                    "hits": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {

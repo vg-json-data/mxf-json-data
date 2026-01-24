@@ -81,12 +81,17 @@
       "requires": []
     },
     {
-      "name": "Leave With Spark (Right Door)",
-      "devNote": "Build up a shinespark and release it into the Right Door.",
+      "name": "Leave with Runway",
       "link": [
         2,
         2
       ],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 30,
+          "openEnd": 0
+        }
+      },
       "requires": []
     }
   ],

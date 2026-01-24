@@ -4,8 +4,6 @@
   "name": "NOC Entrance Lobby North",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 78C00.jpg",
-  "roomAddress": "0x78C00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -45,7 +43,9 @@
       "id": 2,
       "name": "Top-Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -56,11 +56,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -68,7 +107,9 @@
       "id": 3,
       "name": "Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -79,11 +120,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -114,7 +194,9 @@
       "id": 5,
       "name": "Bottom Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "down",
       "geometry": [
         {
           "shape": "rect",
@@ -125,18 +207,233 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "down",
       "doorEnvironments": [
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Soldier-X",
+      "enemyName": "Soldier-X",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        3
+      ],
+      "id": "e1",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "Screw Attack",
+            {
+              "and": [
+                "Wave Beam",
+                "Wide Beam"
+              ]
+            },
+            {
+              "and": [
+                "Wave Beam",
+                "Plasma Beam"
+              ]
+            },
+            {
+              "and": [
+                "Wide Beam",
+                "Plasma Beam"
+              ]
+            },
+            "canTrickyDodgeEnemies"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        "canTrickyJump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "Screw Attack",
+            {
+              "and": [
+                "Wave Beam",
+                "Wide Beam"
+              ]
+            },
+            {
+              "and": [
+                "Wave Beam",
+                "Plasma Beam"
+              ]
+            },
+            {
+              "and": [
+                "Wide Beam",
+                "Plasma Beam"
+              ]
+            },
+            "canTrickyDodgeEnemies"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        "h_JumpAssist"
+      ]
+    },
+    {
+      "name": "Base",
+      "devNote": "Shoot the wall directly to the right of the door, then shoot the ceiling at the far-right.",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canDodgeWhileShooting",
+                "canTrickyJump"
+              ]
+            },
+            {
+              "and": [
+                "Screw Attack",
+                {
+                  "and": [
+                    "Charge",
+                    "Plasma Beam",
+                    {
+                      "or": [
+                        "Wave Beam",
+                        "Wide Beam"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "devNote": "Shoot the floor.",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        "h_JumpAssist"
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 78C00.jpg",
+  "roomAddress": "0x78C00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

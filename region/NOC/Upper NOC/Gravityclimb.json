@@ -4,8 +4,6 @@
   "name": "Gravityclimb",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 79100.jpg",
-  "roomAddress": "0x79100",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,141 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Bull",
+      "enemyName": "Bull",
+      "quantity": 4,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "canTrickyDodgeEnemies"
+      ]
+    },
+    {
+      "name": "Base (Low Grav)",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_navigateLowGrav",
+            {
+              "or": [
+                {
+                  "and": [
+                    "Super Jump",
+                    "Grapple",
+                    {
+                      "or": [
+                        "canTrickyDodgeEnemies",
+                        {
+                          "and": [
+                            "canTrickyDodgeEnemies",
+                            {
+                              "enemyKill": {
+                                "enemies": [
+                                  [
+                                    "e1"
+                                  ]
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        "Screw Attack"
+                      ]
+                    }
+                  ]
+                },
+                "canIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Gravity",
+            {
+              "or": [
+                "Screw Attack",
+                {
+                  "and": [
+                    "canDodgeWhileShooting",
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                "Grapple",
+                "Space Jump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "NOC Room 79100.jpg",
+  "roomAddress": "0x79100",
   "nextStratId": 1,
   "nextNotableId": 1
 }

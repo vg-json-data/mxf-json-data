@@ -485,6 +485,16 @@
           ]
         },
         {
+          "name": "h_navigateLowGrav",
+          "requires": [
+            {"or":[
+              "Gravity",
+              "canSuitlessMaridia",
+              "NightmareArena_CoreXAbsorbed"
+            ]}
+          ]
+        },
+        {
           "name": "h_useMorphBombs",
           "requires": [
             "Morph",
@@ -1174,6 +1184,20 @@
               ]
             }
           ]
+        },
+        {
+          "name": "h_JumpAssist",
+          "requires": [
+            {
+              "or": [
+                "Space Jump",
+                "Super Jump",
+                "canLongIBJ",
+                "canWalljump"
+              ]
+            }
+          ],
+          "note": "Handles jumps high enough for Super Jump to achieve."
         }
       ]
     }

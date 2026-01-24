@@ -4,8 +4,6 @@
   "name": "ARC Etecoon Room",
   "area": "ARC",
   "subarea": "AQA Access",
-  "roomImageFile": "ARC Room 79500.jpg",
-  "roomAddress": "0x79500",
   "roomEnvironments": [
     {
       "heated": false,
@@ -61,9 +59,47 @@
       "note": ""
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "Missile",
+            "count": 1
+          }
+        }
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_ARCEtecoonRoom_Freed"
+      ]
+    }
+  ],
+  "roomImageFile": "ARC Room 79500.jpg",
+  "roomAddress": "0x79500",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "TRO Security Room Access / Oasis Storage",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 79F00.jpg",
-  "roomAddress": "0x79F00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -109,9 +107,137 @@
       "mapTileY": 18
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Screw Attack",
+                {
+                  "ammo": {
+                    "type": "PowerBomb",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "or": [
+                "Space Jump",
+                "canWalljump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "Morph",
+            {
+              "enemyDamage": {
+                "enemy": "61",
+                "type": "contact",
+                "hits": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Super Jump",
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_OasisStorage_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Underwater IBJ to Missile Tank",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        "canIBJ"
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_OasisStorage_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "canIBJ",
+            {
+              "and": [
+                "Morph",
+                "Gravity",
+                {
+                  "or": [
+                    "canInsaneMidAirMorph",
+                    {
+                      "and": [
+                        "canTrivialMidAirMorph",
+                        "canCrouchJump"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "TRO Room 79F00.jpg",
+  "roomAddress": "0x79F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

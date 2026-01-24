@@ -29,7 +29,7 @@ This information is used by the logic system to:
       "dims": {"w": 16, "h": 24},
       "freezable": false,
       "grapplable": false,
-      "invul": [],
+      "vuln": [],
       "damageMultipliers": [...],
       "areas": ["MDK", "SRX"]
     }
@@ -243,7 +243,7 @@ Can Grapple Beam latch onto this enemy?
 Weapons that CANNOT damage this enemy:
 
 ```json
-"invul": [
+"vuln": [
   "Power Bomb",
   "Bomb"
 ]
@@ -251,7 +251,7 @@ Weapons that CANNOT damage this enemy:
 
 **Empty if vulnerable to everything**:
 ```json
-"invul": []
+"vuln": []
 ```
 
 **Common Invulnerabilities**:
@@ -269,7 +269,7 @@ Special damage modifiers for specific weapons:
     "value": 2.0
   },
   {
-    "weapon": "Charge Beam",
+    "weapon": "Charge",
     "value": 0.5
   }
 ]
@@ -351,7 +351,7 @@ Where this enemy naturally appears:
   },
   "freezable": false,
   "grapplable": false,
-  "invul": [],
+  "vuln": [],
   "damageMultipliers": [
     {
       "weapon": "Missile",
@@ -407,7 +407,7 @@ Where this enemy naturally appears:
   },
   "freezable": false,
   "grapplable": false,
-  "invul": [
+  "vuln": [
     "Bomb",
     "PowerBombBlast"
   ],
@@ -417,7 +417,7 @@ Where this enemy naturally appears:
       "value": 3.0
     },
     {
-      "weapon": "Charge Beam",
+      "weapon": "Charge",
       "value": 1.5
     }
   ],
@@ -669,10 +669,10 @@ Check existing enemies:
   },
   "freezable": false,
   "grapplable": false,
-  "invul": [],
+  "vuln": [],
   "damageMultipliers": [
     {
-      "weapon": "Charge Beam",
+      "weapon": "Charge",
       "value": 1.5
     }
   ],

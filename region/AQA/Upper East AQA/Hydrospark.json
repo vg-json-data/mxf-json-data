@@ -4,8 +4,6 @@
   "name": "Hydrospark",
   "area": "AQA",
   "subarea": "Upper East AQA",
-  "roomImageFile": "AQA Room 79300.jpg",
-  "roomAddress": "0x79300",
   "roomEnvironments": [
     {
       "heated": false,
@@ -84,11 +82,55 @@
       "nodeAddress": "0x7DCCE",
       "mapTileX": 31,
       "mapTileY": 13
+    },
+    {
+      "id": 4,
+      "name": "Lower Half of the Room",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 296,
+          "y": 368,
+          "w": 40,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Speed Blocks in Morph Tunnel",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Speed Blocks in Middle Vertical Shaft",
+      "obstacleType": "inanimate",
+      "id": "B"
+    },
+    {
+      "name": "Bomb Blocks Below Left Platform in Right Half of Room",
+      "obstacleType": "inanimate",
+      "id": "C"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Speedball",
+      "requires": [
+        {
+          "and": [
+            "canSpeedball"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 79300.jpg",
+  "roomAddress": "0x79300",
   "nextStratId": 1,
   "nextNotableId": 1
 }

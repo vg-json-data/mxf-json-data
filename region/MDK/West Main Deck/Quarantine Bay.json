@@ -4,8 +4,6 @@
   "name": "Quarantine Bay",
   "area": "MDK",
   "subarea": "West Main Deck",
-  "roomImageFile": "MDK Room 29.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -23,6 +21,8 @@
       "name": "Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -33,11 +33,53 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Door Destroyed By Having Power Bomb",
+          "lockType": "permanent",
+          "unlockStrats": [],
+          "lock": [
+            {
+              "resourceCapacity": [
+                {
+                  "type": "PowerBomb",
+                  "count": 1
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -65,9 +107,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "MDK Room 29.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

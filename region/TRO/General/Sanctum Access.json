@@ -4,8 +4,6 @@
   "name": "Sanctum Access",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 79300.jpg",
-  "roomAddress": "0x79300",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,28 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "TRO Room 79300.jpg",
+  "roomAddress": "0x79300",
   "nextStratId": 1,
   "nextNotableId": 1
 }

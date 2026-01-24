@@ -4,8 +4,6 @@
   "name": "Ripper Tower / Vault",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 79600.jpg",
-  "roomAddress": "0x79600",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,27 +63,6 @@
       ]
     },
     {
-      "id": 3,
-      "idMinorItemPlm": "0x62",
-      "name": "Ripper Tower - Power Bomb Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 16,
-          "y": 328,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "PowerBomb",
-      "nodeAddress": "0x7E1AA",
-      "mapTileX": 33,
-      "mapTileY": 9
-    },
-    {
       "id": 4,
       "name": "Vault - Left Tunnel",
       "nodeType": "door",
@@ -132,9 +109,9 @@
       ]
     },
     {
-      "id": 6,
-      "idMinorItemPlm": "0x63",
-      "name": "Vault - Missile Tank",
+      "id": 3,
+      "idMinorItemPlm": "0x62",
+      "name": "Ripper Tower - Power Bomb Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
@@ -147,15 +124,174 @@
         }
       ],
       "color": "#37c90e",
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7E1AA",
+      "mapTileX": 33,
+      "mapTileY": 9
+    },
+    {
+      "id": 6,
+      "idMinorItemPlm": "0x63",
+      "name": "Vault - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 448,
+          "y": 416,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
       "nodeItem": "Missile",
       "nodeAddress": "0x7E1B0",
       "mapTileX": 34,
       "mapTileY": 10
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Super Missile Block (Left of Missile Tank)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Super Missile Block (Below Missile Tank)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "ammo": {
+                        "type": "Super",
+                        "count": 2
+                      }
+                    },
+                    "f_NightmareArena_CoreXAbsorbed"
+                  ]
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            "Morph",
+            "h_navigateLowGrav",
+            {
+              "or": [
+                "canConsecutiveWalljump",
+                "Space Jump"
+              ]
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        3
+      ],
+      "setsFlags": [
+        "f_RipperTower_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Space Jump",
+                "Grapple",
+                "canIBJ"
+              ]
+            },
+            {
+              "or": [
+                "Grapple",
+                "h_navigateLowGrav"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        "canTrivialMidAirMorph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "canTrivialMidAirMorph",
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                },
+                {
+                  "and": [
+                    {
+                      "ammo": {
+                        "type": "Super",
+                        "count": 1
+                      }
+                    },
+                    "f_NightmareArena_CoreXAbsorbed"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_RipperTower_MissileTank_Collected"
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 79600.jpg",
+  "roomAddress": "0x79600",
   "nextStratId": 1,
   "nextNotableId": 1
 }

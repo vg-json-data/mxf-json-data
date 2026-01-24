@@ -74,7 +74,7 @@
           "dims",
           "freezable",
           "grapplable",
-          "invul",
+          "vuln",
           "damageMultipliers"
         ],
         "additionalProperties": false,
@@ -223,7 +223,7 @@
             "description": "Can Samus latch on to this enemy using Grapple beam?",
             "default": false
           },
-          "invul": {
+          "vuln": {
             "type": [ "array" ],
             "title": "Invulnerability",
             "description": "A list containing weapons and weapon categories that can't damage this enemy",

@@ -4,8 +4,6 @@
   "name": "NOC Maintenance Wing Access",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 79F00.jpg",
-  "roomAddress": "0x79F00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "NOC Room 79F00.jpg",
+  "roomAddress": "0x79F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

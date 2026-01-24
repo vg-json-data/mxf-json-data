@@ -350,7 +350,7 @@ Locks prevent access until unlocked:
         {
           "enemyKill": {
             "enemies": [["Ridley"]],
-            "explicitWeapons": ["Charge Beam", "Missile", "Super"]
+            "explicitWeapons": ["Charge", "Missile", "Super"]
           }
         },
         {

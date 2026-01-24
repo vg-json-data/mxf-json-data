@@ -4,8 +4,6 @@
   "name": "Mochtroid Tower",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 78E00.jpg",
-  "roomAddress": "0x78E00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -132,11 +130,506 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 6,
+      "name": "Grapple Climb Junction",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 48,
+          "y": 880,
+          "w": 40,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Upper Mochtroid-X",
+      "enemyName": "Mochtroid-X",
+      "quantity": 2,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Lower Mochtroid-X",
+      "enemyName": "Mochtroid-X",
+      "quantity": 3,
+      "betweenNodes": [
+        4,
+        6
+      ],
+      "id": "e2"
+    },
+    {
+      "groupName": "Middle Mochtroid-X",
+      "enemyName": "Mochtroid-X",
+      "quantity": 2,
+      "betweenNodes": [
+        2,
+        6
+      ],
+      "id": "e3"
+    },
+    {
+      "groupName": "Lowest Mochtroid-X",
+      "enemyName": "Mochtroid-X",
+      "quantity": 1,
+      "betweenNodes": [
+        4,
+        5
+      ],
+      "id": "e4"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base (Suitless)",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "canSuitlessMaridia",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "h_navigateLowGrav"
+      ]
+    },
+    {
+      "name": "Base (Suitless)",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "canSuitlessMaridia",
+            "canLongIBJ",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Gravity"
+              ]
+            },
+            {
+              "or": [
+                "canLongIBJ",
+                "canConsecutiveWalljump",
+                "Space Jump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        "h_navigateLowGrav"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              [
+                "e4"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Gravity"
+              ]
+            },
+            {
+              "or": [
+                "canIBJ",
+                "Space Jump",
+                {
+                  "and": [
+                    {
+                      "ammo": {
+                        "type": "Ice Missile",
+                        "count": 1
+                      }
+                    },
+                    {
+                      "or": [
+                        "canPreciseWalljump",
+                        "canUseFrozenEnemies"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spark up to Right-Lower Door",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 23
+          }
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              [
+                "e4"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Base (Suitless)",
+      "link": [
+        5,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "canSuitlessMaridia",
+            {
+              "or": [
+                "canTrickyGrappleJump",
+                {
+                  "ammo": {
+                    "type": "Ice Missile",
+                    "count": 3
+                  }
+                },
+                {
+                  "and": [
+                    "canIBJ",
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e2"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "canIBJ",
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e3"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e3"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Ice Missile",
+                    "count": 3
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "canPreciseWalljump",
+                "Space Jump",
+                "canIBJ",
+                "Space Jump"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e2"
+                          ]
+                        ]
+                      }
+                    },
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e3"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                "Space Jump",
+                "Grapple",
+                "canIBJ"
+              ]
+            },
+            "h_navigateLowGrav"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base (Suitless)",
+      "link": [
+        6,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "canSuitlessMaridia",
+            {
+              "or": [
+                "canTrickyGrappleJump",
+                {
+                  "ammo": {
+                    "type": "Ice Missile",
+                    "count": 3
+                  }
+                },
+                {
+                  "and": [
+                    "canIBJ",
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e2"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "canIBJ",
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e3"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e3"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Ice Missile",
+                    "count": 3
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "canPreciseWalljump",
+                "Space Jump",
+                "canIBJ",
+                "Space Jump"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e2"
+                          ]
+                        ]
+                      }
+                    },
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e3"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                "Space Jump",
+                "Grapple",
+                "canIBJ"
+              ]
+            },
+            "h_navigateLowGrav"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 78E00.jpg",
+  "roomAddress": "0x78E00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

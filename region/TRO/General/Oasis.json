@@ -4,8 +4,6 @@
   "name": "Oasis",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 79E00.jpg",
-  "roomAddress": "0x79E00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -109,11 +107,143 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 5,
+      "name": "Bottom of Oasis",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 152,
+          "y": 400,
+          "w": 72,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "Super Jump",
+            "Space Jump",
+            {
+              "and": [
+                "canIBJ",
+                "Gravity"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canTrivialMidAirMorph",
+                "Space Jump"
+              ]
+            },
+            {
+              "and": [
+                "Gravity",
+                {
+                  "or": [
+                    "canIBJ",
+                    "Screw Attack"
+                  ]
+                }
+              ]
+            },
+            "Screw Attack"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canTrivialMidAirMorph",
+                "Space Jump"
+              ]
+            },
+            {
+              "and": [
+                "Gravity",
+                {
+                  "or": [
+                    "canIBJ",
+                    "Screw Attack"
+                  ]
+                }
+              ]
+            },
+            "Screw Attack"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "TRO Room 79E00.jpg",
+  "roomAddress": "0x79E00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

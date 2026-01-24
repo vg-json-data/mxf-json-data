@@ -114,7 +114,7 @@ Requirements to USE this weapon:
 **Can be complex**:
 ```json
 "useRequires": [
-  "Charge Beam",
+  "Charge",
   {
     "or": [
       "Ice Beam",
@@ -275,11 +275,11 @@ Weapon categories for grouping:
 ```json
 {
   "id": 20,
-  "name": "Charge Beam",
+  "name": "Charge",
   "damage": 40,
   "cooldownFrames": 60,
   "useRequires": [
-    "Charge Beam"
+    "Charge"
   ],
   "shotRequires": [],
   "situational": false,
@@ -674,9 +674,9 @@ Special beam attacks:
 
 ```json
 {
-  "name": "Charge Beam",
+  "name": "Charge",
   "damage": 40,
-  "useRequires": ["Charge Beam"],
+  "useRequires": ["Charge"],
   "shotRequires": [],
   "categories": ["Beam", "ChargedBeam"]
 }
@@ -719,7 +719,7 @@ Special beam attacks:
 ```json
 // WRONG - charged beam not in ChargedBeam category
 {
-  "name": "Charge Beam",
+  "name": "Charge",
   "categories": ["Beam"]  // ← Missing ChargedBeam!
 }
 ```

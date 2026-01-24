@@ -25,7 +25,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "AQA"
       ],
@@ -55,7 +55,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "DMX"
       ],
@@ -85,7 +85,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "NOC"
       ],
@@ -115,7 +115,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "ARC"
       ],
@@ -145,7 +145,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -175,7 +175,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "NOC"
       ],
@@ -205,7 +205,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -235,7 +235,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "TRO"
       ],
@@ -265,7 +265,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -295,7 +295,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "SRX",
         "TRO",
@@ -330,7 +330,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "MDK"
       ],
@@ -360,7 +360,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "AQA"
       ],
@@ -390,7 +390,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "TRO"
       ],
@@ -420,7 +420,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "SRX",
         "PYR"
@@ -451,7 +451,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "ARC"
       ],
@@ -481,7 +481,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -511,7 +511,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -541,7 +541,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "NOC",
         "PYR"
@@ -572,7 +572,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -602,7 +602,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -632,7 +632,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -662,7 +662,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -692,7 +692,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "SRX"
       ],
@@ -722,7 +722,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "SRX"
       ],
@@ -752,7 +752,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "ARC",
         "NOC"
@@ -783,7 +783,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "SRX"
       ],
@@ -813,7 +813,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "AQA"
       ],
@@ -843,7 +843,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "TRO"
       ],
@@ -873,7 +873,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "TRO"
       ],
@@ -903,7 +903,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "NOC"
       ],
@@ -933,7 +933,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "NOC"
       ],
@@ -963,7 +963,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "DMX"
       ],
@@ -993,7 +993,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -1023,7 +1023,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "NOC"
       ],
@@ -1053,7 +1053,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "SRX"
       ],
@@ -1083,7 +1083,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "AQA",
         "NOC"
@@ -1114,7 +1114,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -1144,7 +1144,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "TRO"
       ],
@@ -1174,7 +1174,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "TRO"
       ],
@@ -1204,7 +1204,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "NOC",
         "ARC"
@@ -1235,7 +1235,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "TRO",
         "ARC"
@@ -1266,7 +1266,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "TRO"
       ],
@@ -1296,7 +1296,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "AQA"
       ],
@@ -1326,7 +1326,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -1356,7 +1356,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "AQA",
         "TRO"
@@ -1387,7 +1387,9 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [
+        ""
+      ],
       "areas": [
         "AQA"
       ],
@@ -1399,7 +1401,11 @@
       "attacks": [
         {
           "name": "contact",
-          "baseDamage": 0
+          "baseDamage": 28
+        },
+        {
+          "name": "bullet",
+          "baseDamage": 20
         }
       ],
       "hp": 176,
@@ -1417,7 +1423,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "SRX",
         "NOC"
@@ -1448,7 +1454,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -1478,7 +1484,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "ARC",
         "SRX"
@@ -1509,12 +1515,42 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR",
         "AQA"
       ],
       "note": "Dies to PBs and pushed into water tiles"
+    },
+    {
+      "id": 61,
+      "name": "Yapping Maw-X",
+      "attacks": [
+        {
+          "name": "contact",
+          "baseDamage": 17
+        }
+      ],
+      "hp": 256,
+      "amountOfDrops": 0,
+      "drops": {
+        "noDrop": 0,
+        "yellowX": 0,
+        "greenX": 0,
+        "redX": 0
+      },
+      "dims": {
+        "w": 52,
+        "h": 52
+      },
+      "freezable": false,
+      "grapplable": false,
+      "damageMultipliers": [],
+      "vuln": [],
+      "areas": [
+        "TRO"
+      ],
+      "note": ""
     },
     {
       "id": 51,
@@ -1540,7 +1576,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -1570,7 +1606,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "MDK",
         "PYR"
@@ -1601,7 +1637,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "MDK",
         "PYR"
@@ -1632,7 +1668,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "AQA"
       ],
@@ -1644,7 +1680,11 @@
       "attacks": [
         {
           "name": "contact",
-          "baseDamage": 0
+          "baseDamage": 36
+        },
+        {
+          "name": "laser",
+          "baseDamage": 96
         }
       ],
       "hp": 904,
@@ -1662,7 +1702,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -1692,7 +1732,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "ARC"
       ],
@@ -1722,7 +1762,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "PYR"
       ],
@@ -1752,7 +1792,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "ARC"
       ],
@@ -1782,7 +1822,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "SRX",
         "NOC",
@@ -1814,7 +1854,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "TRO"
       ],
@@ -1844,7 +1884,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "areas": [
         "MDK"
       ],

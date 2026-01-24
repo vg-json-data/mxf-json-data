@@ -4,8 +4,6 @@
   "name": "Cultivation Station",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 78F00.jpg",
-  "roomAddress": "0x78F00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -155,9 +153,194 @@
       "mapTileY": 17
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Green Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Leave With Shinecharged",
+      "link": [
+        1,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Kill Green Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_CultivationStation_GreenGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                },
+                {
+                  "or": [
+                    "canIBJ",
+                    {
+                      "and": [
+                        "canMidAirMorph",
+                        "canCrouchJump"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "h_JumpAssist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "Morph",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Green Geron",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_CultivationStation_GreenGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        6
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_CultivationStation_MissileTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "h_bombThings",
+            "canPreciseWalljump",
+            {
+              "or": [
+                "Space Jump",
+                "Super Jump",
+                "canIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "TRO Room 78F00.jpg",
+  "roomAddress": "0x78F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

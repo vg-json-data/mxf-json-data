@@ -4,8 +4,6 @@
   "name": "Mochtroid Tower Closet",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 78F00.jpg",
-  "roomAddress": "0x78F00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,9 +61,32 @@
       "mapTileY": 5
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_MochtroidTowerCloset_MissileTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "NOC Room 78F00.jpg",
+  "roomAddress": "0x78F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

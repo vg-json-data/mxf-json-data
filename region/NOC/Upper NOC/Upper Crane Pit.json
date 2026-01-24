@@ -4,8 +4,6 @@
   "name": "Upper Crane Pit",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 79300.jpg",
-  "roomAddress": "0x79300",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,41 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Leave With Runway",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Gravity",
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 79300.jpg",
+  "roomAddress": "0x79300",
   "nextStratId": 1,
   "nextNotableId": 1
 }

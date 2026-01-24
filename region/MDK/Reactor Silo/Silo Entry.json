@@ -129,7 +129,7 @@
         1
       ],
       "requires": [
-        "Charge Beam"
+        "Charge"
       ],
       "clearsObstacles": [
         "A"
@@ -183,7 +183,7 @@
         2
       ],
       "requires": [
-        "Charge Beam"
+        "Charge"
       ],
       "clearsObstacles": [
         "A"

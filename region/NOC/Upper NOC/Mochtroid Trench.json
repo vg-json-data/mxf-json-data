@@ -4,8 +4,6 @@
   "name": "Mochtroid Trench",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 79800.jpg",
-  "roomAddress": "0x79800",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,154 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Mochtroid-X (Left Half)",
+      "enemyName": "Mochtroid-X",
+      "quantity": 3,
+      "homeNodes": [
+        1,
+        3
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Mochtroid-X (Right Half)",
+      "enemyName": "Mochtroid-X",
+      "quantity": 3,
+      "betweenNodes": [
+        2,
+        3
+      ],
+      "id": "e2"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "canTrickyDodgeEnemies",
+                    {
+                      "resourceCapacity": [
+                        {
+                          "type": "Energy",
+                          "count": 250
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e1"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Space Jump",
+                {
+                  "spikeHits": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "canTrickyDodgeEnemies",
+                    {
+                      "resourceCapacity": [
+                        {
+                          "type": "Energy",
+                          "count": 250
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e1"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Space Jump",
+                {
+                  "spikeHits": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 79800.jpg",
+  "roomAddress": "0x79800",
   "nextStratId": 1,
   "nextNotableId": 1
 }

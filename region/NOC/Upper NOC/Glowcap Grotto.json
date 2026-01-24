@@ -4,8 +4,6 @@
   "name": "Glowcap Grotto",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 78D00.jpg",
-  "roomAddress": "0x78D00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -86,11 +84,383 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 4,
+      "name": "Grapple Bridge",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 352,
+          "y": 80,
+          "w": 64,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Trench Mochtroid-X",
+      "enemyName": "Mochtroid-X",
+      "quantity": 6,
+      "betweenNodes": [
+        3,
+        4
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_navigateLowGrav",
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "Gravity",
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "canSuitlessBeamlessKillMochtroidX",
+                        {
+                          "and": [
+                            "canDodgeWhileShooting",
+                            "canTrickyDodgeEnemies"
+                          ]
+                        }
+                      ]
+                    },
+                    "canTrickyJump"
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "h_hasBeamUpgrade"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "Gravity",
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "canSuitlessBeamlessKillMochtroidX",
+                        {
+                          "and": [
+                            "canDodgeWhileShooting",
+                            "canTrickyDodgeEnemies"
+                          ]
+                        }
+                      ]
+                    },
+                    "canTrickyJump",
+                    "canSuitlessMaridia"
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "h_hasBeamUpgrade"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "Gravity",
+            {
+              "and": [
+                {
+                  "ammo": {
+                    "type": "Ice Missile",
+                    "count": 1
+                  }
+                },
+                "h_navigateLowGrav"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "canTrivialMidAirMorph",
+                    "h_navigateLowGrav"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Mochtroids and get to Grapple Bridge (Suitless)",
+      "devNote": "Reach Grapple Bridge from Left Tunnel",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            "h_navigateLowGrav",
+            "canSuitlessBeamlessKillMochtroidX",
+            {
+              "or": [
+                "Grapple",
+                {
+                  "and": [
+                    "Gravity"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                "Grapple",
+                "canIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Mochtroids and get to Grapple Bridge (With Suit)",
+      "devNote": "Reach Grapple Bridge from Left Tunnel",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_navigateLowGrav",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            {
+              "or": [
+                "Grapple",
+                {
+                  "and": [
+                    "Gravity"
+                  ]
+                }
+              ]
+            },
+            "canSuitlessMaridia",
+            "canSuitlessBeamlessKillMochtroidX",
+            {
+              "or": [
+                "Grapple",
+                "canIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "Gravity",
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "canSuitlessBeamlessKillMochtroidX",
+                        {
+                          "and": [
+                            "canDodgeWhileShooting",
+                            "canTrickyDodgeEnemies"
+                          ]
+                        }
+                      ]
+                    },
+                    "canTrickyJump"
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "h_hasBeamUpgrade"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "Gravity",
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "canSuitlessBeamlessKillMochtroidX",
+                        {
+                          "and": [
+                            "canDodgeWhileShooting",
+                            "canTrickyDodgeEnemies"
+                          ]
+                        }
+                      ]
+                    },
+                    "canTrickyJump"
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "h_hasBeamUpgrade"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "Gravity",
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "canSuitlessBeamlessKillMochtroidX",
+                        {
+                          "and": [
+                            "canDodgeWhileShooting",
+                            "canTrickyDodgeEnemies"
+                          ]
+                        }
+                      ]
+                    },
+                    "canTrickyJump"
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "h_hasBeamUpgrade"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 78D00.jpg",
+  "roomAddress": "0x78D00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

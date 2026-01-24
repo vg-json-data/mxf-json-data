@@ -4,8 +4,6 @@
   "name": "Moldy Bridge",
   "area": "TRO",
   "subarea": "General",
-  "roomImageFile": "TRO Room 79000.jpg",
-  "roomAddress": "0x79000",
   "roomEnvironments": [
     {
       "heated": false,
@@ -111,9 +109,64 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        "Wave Beam"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "TRO Room 79000.jpg",
+  "roomAddress": "0x79000",
   "nextStratId": 1,
   "nextNotableId": 1
 }

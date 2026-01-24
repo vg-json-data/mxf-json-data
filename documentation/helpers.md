@@ -234,7 +234,7 @@ or multiple lines:
   "requires": [
     {
       "or": [
-        "Charge Beam",
+        "Charge",
         "Missiles",
         "Super Missiles"
       ]

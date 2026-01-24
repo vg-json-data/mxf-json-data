@@ -4,8 +4,6 @@
   "name": "Ice-X Shaft",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7A300.jpg",
-  "roomAddress": "0x7A300",
   "roomEnvironments": [
     {
       "heated": false,
@@ -22,7 +20,9 @@
       "id": 1,
       "name": "Top-Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -33,11 +33,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -45,7 +84,9 @@
       "id": 4,
       "name": "Top Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "geometry": [
         {
           "shape": "rect",
@@ -56,11 +97,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -155,9 +235,143 @@
       "mapTileY": 13
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        6
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_IceXShaft_MissileTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "h_bombThings",
+                "Screw Attack"
+              ]
+            },
+            "h_JumpAssist",
+            "canWallJumpInstantMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        "canDodgeWhileShooting"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "canDodgeWhileShooting"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        6
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_IceXShaft_MissileTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "canDodgeWhileShooting",
+            {
+              "or": [
+                "h_JumpAssist",
+                "canCrouchJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        1
+      ],
+      "requires": [
+        "canCrumbleJump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": [
+        "canDodgeWhileShooting"
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 7A300.jpg",
+  "roomAddress": "0x7A300",
   "nextStratId": 1,
   "nextNotableId": 1
 }

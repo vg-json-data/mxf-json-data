@@ -452,7 +452,7 @@ Similar fields to `canShineCharge`.
   {
     "enemyKill": {
       "enemies": [["Mother Brain"]],
-      "explicitWeapons": ["Charge Beam"]
+      "explicitWeapons": ["Charge"]
     }
   }
 ]
@@ -588,12 +588,12 @@ Means: "Must enter from node 1 or 2"
     "or": [
       // Quick kill with good gear
       [
-        "Charge Beam",
+        "Charge",
         "Varia Suit",
         {
           "enemyKill": {
             "enemies": [["Ridley"]],
-            "explicitWeapons": ["Charge Beam", "Missile", "Super"]
+            "explicitWeapons": ["Charge", "Missile", "Super"]
           }
         },
         {

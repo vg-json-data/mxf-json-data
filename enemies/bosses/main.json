@@ -25,7 +25,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "SRX"
@@ -56,7 +56,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Morph Ball"
       ],
@@ -89,7 +89,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Varia Suit"
       ],
@@ -122,7 +122,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "MissileLv2"
       ],
@@ -155,7 +155,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -186,7 +186,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "SRX"
@@ -217,7 +217,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "SRX"
@@ -248,7 +248,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -279,7 +279,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -310,7 +310,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -341,7 +341,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "AQA"
@@ -372,7 +372,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "SpeedBoosterLv2"
       ],
@@ -405,7 +405,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "PYR"
@@ -436,7 +436,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [
+      "vuln": [
         "PowerBeam"
       ],
       "dropsUpgrade": [],
@@ -469,7 +469,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Screw Attack"
       ],
@@ -502,7 +502,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "TRO"
@@ -533,7 +533,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "NOC"
@@ -564,7 +564,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Gravity"
       ],
@@ -597,7 +597,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "LX-0"
@@ -628,7 +628,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "PYR"
@@ -659,7 +659,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Grapple"
       ],
@@ -692,7 +692,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Plasma Beam"
       ],
@@ -725,7 +725,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -756,7 +756,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "ARC"
@@ -787,7 +787,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "AQA"
@@ -818,7 +818,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "SpeedBoosterLv1"
       ],
@@ -851,7 +851,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Spike Breaker"
       ],
@@ -884,7 +884,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "SRX"
@@ -915,7 +915,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "TRO"
@@ -946,7 +946,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Wave Beam"
       ],
@@ -979,7 +979,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Wide Beam"
       ],
@@ -1012,7 +1012,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "MDK"
@@ -1043,7 +1043,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Space Jump"
       ],
@@ -1076,7 +1076,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [
         "Super Jump"
       ],
@@ -1109,7 +1109,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "TRO"
@@ -1140,7 +1140,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "vuln": [],
       "dropsUpgrade": [],
       "areas": [
         "TRO"

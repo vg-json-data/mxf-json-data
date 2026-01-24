@@ -4,8 +4,6 @@
   "name": "Elevator to Habitation Deck",
   "area": "MDK",
   "subarea": "West Main Deck",
-  "roomImageFile": "MDK Room 22.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,7 +86,6 @@
       ]
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -123,7 +120,8 @@
       "requires": []
     }
   ],
-  "notables": [],
+  "roomImageFile": "MDK Room 22.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

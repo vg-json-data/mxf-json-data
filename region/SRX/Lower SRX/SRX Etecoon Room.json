@@ -17,25 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 2,
-      "name": "SRX Etecoon Room - SRX Etecoon",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 88,
-          "y": 96,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#8d0cad",
-      "nodeItem": "Major",
-      "nodeAddress": "0x0",
-      "note": ""
-    },
-    {
       "id": 1,
       "name": "Right Door",
       "nodeType": "door",
@@ -57,6 +38,25 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "SRX Etecoon Room - SRX Etecoon",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 88,
+          "y": 96,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#8d0cad",
+      "nodeItem": "Major",
+      "nodeAddress": "0x0",
+      "note": ""
     }
   ],
   "strats": [
@@ -64,6 +64,22 @@
       "name": "Base",
       "link": [
         1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
         2
       ],
       "requires": [
@@ -76,15 +92,10 @@
       ],
       "collectsItems": [
         2
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        2,
-        1
       ],
-      "requires": []
+      "setsFlags": [
+        "f_SRXEtecoonRoom_Freed"
+      ]
     }
   ],
   "roomImageFile": "SRX Room 7AB00.jpg",
