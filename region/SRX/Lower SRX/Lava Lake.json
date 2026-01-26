@@ -164,7 +164,7 @@
             },
             {
               "enemyDamage": {
-                "enemy": "23",
+                "enemy": "Halzyn",
                 "type": "Basic",
                 "hits": 1
               }
@@ -324,7 +324,7 @@
             },
             {
               "enemyDamage": {
-                "enemy": "23",
+                "enemy": "Halzyn",
                 "type": "Basic",
                 "hits": 1
               }

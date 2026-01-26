@@ -96,7 +96,7 @@
       }
     },
     {
-      "name": "Missile Level 2",
+      "name": "Super Missile",
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
@@ -156,7 +156,7 @@
       }
     },
     {
-      "name": "Varia Suit",
+      "name": "Varia",
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
@@ -171,7 +171,7 @@
       }
     },
     {
-      "name": "Missile Level 3",
+      "name": "Ice Missile",
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
@@ -276,7 +276,7 @@
       }
     },
     {
-      "name": "Missile Level 4",
+      "name": "Diffusion Missile",
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",

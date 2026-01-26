@@ -142,7 +142,7 @@
                 "Space Jump"
               ]
             },
-            "Missile Level 2"
+            "Super Missile"
           ]
         }
       ],
@@ -159,7 +159,7 @@
       "requires": [
         {
           "and": [
-            "Missile Level 2",
+            "Super Missile",
             "canPreciseWalljump"
           ]
         }
@@ -198,7 +198,7 @@
         2
       ],
       "requires": [
-        "Missile Level 2"
+        "Super Missile"
       ]
     }
   ],

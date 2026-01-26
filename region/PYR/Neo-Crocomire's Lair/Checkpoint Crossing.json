@@ -173,7 +173,7 @@
             "Morph",
             {
               "enemyDamage": {
-                "enemy": "9",
+                "enemy": "Fune / Naminhe (Green)",
                 "type": "contact",
                 "hits": 1
               }
@@ -215,14 +215,14 @@
               "or": [
                 {
                   "enemyDamage": {
-                    "enemy": "9",
+                    "enemy": "Fune / Naminhe (Green)",
                     "type": "contact",
                     "hits": 5
                   }
                 },
                 {
                   "enemyDamage": {
-                    "enemy": "9",
+                    "enemy": "Fune / Naminhe (Green)",
                     "type": "projectile",
                     "hits": 5
                   }
@@ -257,14 +257,14 @@
               "or": [
                 {
                   "enemyDamage": {
-                    "enemy": "9",
+                    "enemy": "Fune / Naminhe (Green)",
                     "type": "contact",
                     "hits": 2
                   }
                 },
                 {
                   "enemyDamage": {
-                    "enemy": "9",
+                    "enemy": "Fune / Naminhe (Green)",
                     "type": "projectile",
                     "hits": 2
                   }
@@ -370,14 +370,14 @@
               "or": [
                 {
                   "enemyDamage": {
-                    "enemy": "9",
+                    "enemy": "Fune / Naminhe (Green)",
                     "type": "contact",
                     "hits": 1
                   }
                 },
                 {
                   "enemyDamage": {
-                    "enemy": "9",
+                    "enemy": "Fune / Naminhe (Green)",
                     "type": "projectile",
                     "hits": 1
                   }
@@ -411,7 +411,7 @@
                 "h_JumpAssist",
                 {
                   "enemyDamage": {
-                    "enemy": "9",
+                    "enemy": "Fune / Naminhe (Green)",
                     "type": "contact",
                     "hits": 1
                   }

@@ -4,8 +4,6 @@
   "name": "Catacombs",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7A900.jpg",
-  "roomAddress": "0x7A900",
   "roomEnvironments": [
     {
       "heated": false,
@@ -111,9 +109,61 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "SA-X",
+      "enemyName": "SA-X",
+      "quantity": 1,
+      "homeNodes": [
+        1
+      ],
+      "stopSpawn": [
+        {
+          "resourceCapacity": [
+            {
+              "type": "PowerBomb",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "Morph"
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 7A900.jpg",
+  "roomAddress": "0x7A900",
   "nextStratId": 1,
   "nextNotableId": 1
 }

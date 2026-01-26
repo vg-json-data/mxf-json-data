@@ -158,7 +158,7 @@
             "Morph",
             {
               "enemyDamage": {
-                "enemy": "61",
+                "enemy": "Yapping Maw-X",
                 "type": "contact",
                 "hits": 1
               }

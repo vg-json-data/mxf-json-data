@@ -282,7 +282,24 @@
               ]
             },
             "h_JumpAssist",
-            "canWallJumpInstantMorph"
+            "canWallJumpInstantMorph",
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Ice-X",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "and": [
+                    "canDodgeWhileShooting",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
@@ -294,7 +311,23 @@
         5
       ],
       "requires": [
-        "canDodgeWhileShooting"
+        {
+          "or": [
+            {
+              "enemyDamage": {
+                "enemy": "Ice-X",
+                "type": "contact",
+                "hits": 1
+              }
+            },
+            {
+              "and": [
+                "canDodgeWhileShooting",
+                "canTrickyDodgeEnemies"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -338,7 +371,23 @@
       "requires": [
         {
           "and": [
-            "canDodgeWhileShooting",
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Ice-X",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "and": [
+                    "canDodgeWhileShooting",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            },
             {
               "or": [
                 "h_JumpAssist",
@@ -366,7 +415,23 @@
         3
       ],
       "requires": [
-        "canDodgeWhileShooting"
+        {
+          "or": [
+            {
+              "enemyDamage": {
+                "enemy": "Ice-X",
+                "type": "contact",
+                "hits": 1
+              }
+            },
+            {
+              "and": [
+                "canDodgeWhileShooting",
+                "canTrickyDodgeEnemies"
+              ]
+            }
+          ]
+        }
       ]
     }
   ],

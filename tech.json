@@ -133,70 +133,6 @@
           ]
         },
         {
-          "id": 186,
-          "name": "canSuitlessWaterRoom",
-          "techRequires": [],
-          "otherRequires": [],
-          "note": [
-            "Navigating low-gravity rooms (AQA underwater, NOC low-G rooms) without Gravity.",
-            "This is not required for falling down a submerged room or for simple underwater platforming, such as where missing a jump does not leave Samus stuck somewhere."
-          ],
-          "devNote": "",
-          "extensionTechs": [
-            {
-              "id": 187,
-              "name": "canSunkenTileWideWallClimb",
-              "techRequires": [
-                "canSuitlessWaterRoom",
-                "canConsecutiveAlternatingWallJump"
-              ],
-              "otherRequires": [],
-              "note": [
-                "Using two walls spaced 1 tile apart to climb upward underwater.",
-                "Samus will not be able to move away from the wall while wall jumping and so will be able to continuously gain height with fast jump presses."
-              ],
-              "devNote": "",
-              "extensionTechs": []
-            },
-            {
-              "id": 188,
-              "name": "canCrossRoomJumpIntoWater",
-              "techRequires": [
-                "canSuitlessWaterRoom"
-              ],
-              "otherRequires": [],
-              "note": "Using the momentum from jumping through a doorway from normal to water physics.",
-              "devNote": "",
-              "extensionTechs": []
-            },
-            {
-              "id": 189,
-              "name": "canSpaceJumpWaterBounce",
-              "techRequires": [
-                "canSuitlessWaterRoom"
-              ],
-              "otherRequires": [
-                "SpaceJump"
-              ],
-              "note": "Using Space Jump to bounce along the water line. It can be used to escape the water with a wall jump, or to get onto low platforms just above the water level.",
-              "devNote": "",
-              "extensionTechs": [
-                {
-                  "id": 190,
-                  "name": "canSpaceJumpWaterEscape",
-                  "techRequires": [
-                    "canSpaceJumpWaterBounce"
-                  ],
-                  "otherRequires": [],
-                  "note": "Using HiJump to escape the waterline during a Space Jump Water Bounce.",
-                  "devNote": "Escaping tidal water without HiJump could be added as a more advanced tech.",
-                  "extensionTechs": []
-                }
-              ]
-            }
-          ]
-        },
-        {
           "id": 12,
           "name": "canDisableEquipment",
           "techRequires": [],
@@ -1666,7 +1602,7 @@
               ],
               "otherRequires": [],
               "note": [
-                "The ability to perform IBJ while submerged underwater without any suits. While this is possible in X-Mode, it is also possible in vanilla, which cannot IBJ in most normal circumstances.",
+                "The ability to perform IBJ while submerged underwater without any suits. While this is possible in X-Mode, it is also possible in vanilla, which cannot IBJ in most normal circumstances."
               ],
               "devNote": "Samus is not expected to bypass canLongIBJ with a jump into an IBJ from a midair spring ball jump.",
               "extensionTechs": []
@@ -3088,5 +3024,5 @@
       ]
     }
   ],
-  "nextTechId": 191
+  "nextTechId": 186
 }

@@ -4,8 +4,6 @@
   "name": "Zozoro Wine Cellar / Shiverclimb",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7A400.jpg",
-  "roomAddress": "0x7A400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -40,27 +38,6 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 2,
-      "idMinorItemPlm": "0x69",
-      "name": "Zozoro Wine Cellar - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 32,
-          "y": 304,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7E1DA",
-      "mapTileX": 32,
-      "mapTileY": 16
     },
     {
       "id": 3,
@@ -130,11 +107,293 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 2,
+      "idMinorItemPlm": "0x69",
+      "name": "Zozoro Wine Cellar - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 32,
+          "y": 304,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7E1DA",
+      "mapTileX": 32,
+      "mapTileY": 16
+    },
+    {
+      "id": 6,
+      "name": "Under Grapple Climb",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 424,
+          "y": 376,
+          "w": 40,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Super Jump",
+                {
+                  "and": [
+                    "h_bombThings",
+                    {
+                      "and": [
+                        "canInsaneMidAirMorph",
+                        "canCrumbleJump"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 4
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "Wave Beam",
+            {
+              "or": [
+                "canTrickyDodgeEnemies",
+                {
+                  "enemyDamage": {
+                    "enemy": "Ice-X",
+                    "type": "contact",
+                    "hits": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Ice-X",
+                    "type": "contact",
+                    "hits": 2
+                  }
+                },
+                {
+                  "and": [
+                    "canDodgeWhileShooting",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "enemyDamage": {
+                "enemy": "Ice-X",
+                "type": "contact",
+                "hits": 1
+              }
+            },
+            {
+              "and": [
+                "canDodgeWhileShooting",
+                "canTrickyDodgeEnemies"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Ice-X",
+                    "type": "contact",
+                    "hits": 2
+                  }
+                },
+                {
+                  "and": [
+                    "canDodgeWhileShooting",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                "canConsecutiveSingleWallJump",
+                "Grapple",
+                "Space Jump",
+                {
+                  "and": [
+                    {
+                      "enemyDamage": {
+                        "enemy": "Ice-X",
+                        "type": "contact",
+                        "hits": 2
+                      }
+                    },
+                    "canIBJ"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Ice-X",
+                    "type": "contact",
+                    "hits": 2
+                  }
+                },
+                {
+                  "and": [
+                    "canDodgeWhileShooting",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "enemyDamage": {
+                "enemy": "Ice-X",
+                "type": "contact",
+                "hits": 1
+              }
+            },
+            {
+              "and": [
+                "canDodgeWhileShooting",
+                "canTrickyDodgeEnemies"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 7A400.jpg",
+  "roomAddress": "0x7A400",
   "nextStratId": 1,
   "nextNotableId": 1
 }
