@@ -2379,6 +2379,12 @@
         "address": "000000",
         "bit": 0,
         "description": "Placeholder flag to indicate Omega mode is enabled."
+      },
+      {
+        "name": "f_XMode",
+        "address": "000000",
+        "bit": 0,
+        "description": "Placeholder flag to indicate X-Mode is enabled. (Not to be confused with X-Ray glitching in Super Metroid: it's a special game mode in X-Fusion)"
       }
     ]
   }
