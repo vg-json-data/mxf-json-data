@@ -270,6 +270,22 @@
       ]
     },
     {
+      "name": "Reach Door with Shinespark",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "canShineCharge": {
+            "usedTiles": 16,
+            "openEnd": 0,
+            "gentleUpTiles": 8
+          }
+        }
+      ]
+    },
+    {
       "name": "Base",
       "link": [
         5,
@@ -278,6 +294,25 @@
       "requires": [
         "Speed Booster Level 2"
       ]
+    },
+    {
+      "name": "Leave With Spark",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "canShineCharge": {
+            "usedTiles": 16,
+            "openEnd": 0,
+            "gentleUpTiles": 8
+          }
+        }
+      ],
+      "exitCondition": {
+        "leaveWithSpark": {}
+      }
     },
     {
       "name": "Base",

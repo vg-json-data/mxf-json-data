@@ -18,7 +18,7 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Right Tunnel",
+      "name": "Lava Horseshoe - Right Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
       "geometry": [
@@ -41,7 +41,7 @@
     },
     {
       "id": 3,
-      "name": "Top-Left Door",
+      "name": "Lava Tornado - Top-Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -64,7 +64,7 @@
     },
     {
       "id": 4,
-      "name": "Top-Right Door",
+      "name": "Lava Tornado - Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -87,7 +87,7 @@
     },
     {
       "id": 5,
-      "name": "Bottom Door",
+      "name": "Lava Tornado - Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -111,7 +111,7 @@
     {
       "id": 2,
       "idMinorItemPlm": "0x14",
-      "name": "Hidden Power Bomb Tank",
+      "name": "Lava Horseshoe - Hidden Power Bomb Tank",
       "nodeType": "item",
       "nodeSubType": "hidden",
       "geometry": [

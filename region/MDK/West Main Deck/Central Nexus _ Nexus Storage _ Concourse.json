@@ -18,7 +18,7 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Top-Left Door",
+      "name": "Central Nexus - Top-Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -41,7 +41,7 @@
     },
     {
       "id": 2,
-      "name": "Top-Right Door",
+      "name": "Central Nexus - Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "nodeAddress": "0x0",
@@ -108,7 +108,7 @@
     },
     {
       "id": 3,
-      "name": "Right Door",
+      "name": "Central Nexus - Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -131,7 +131,7 @@
     },
     {
       "id": 4,
-      "name": "Bottom-Left Door",
+      "name": "Central Nexus - Bottom-Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -154,7 +154,7 @@
     },
     {
       "id": 5,
-      "name": "Bottom-Right Door",
+      "name": "Central Nexus - Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -177,7 +177,7 @@
     },
     {
       "id": 6,
-      "name": "Left Door",
+      "name": "Nexus Storage - Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -200,7 +200,7 @@
     },
     {
       "id": 7,
-      "name": "Right Tunnel",
+      "name": "Nexus Storage - Right Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
       "geometry": [
@@ -223,7 +223,7 @@
     },
     {
       "id": 9,
-      "name": "Top-Right Door",
+      "name": "Concourse - Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -246,7 +246,7 @@
     },
     {
       "id": 10,
-      "name": "Left Door",
+      "name": "Concourse - Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -269,7 +269,7 @@
     },
     {
       "id": 11,
-      "name": "Right Door",
+      "name": "Concourse - Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -292,7 +292,7 @@
     },
     {
       "id": 12,
-      "name": "Bottom-Left Tunnel",
+      "name": "Concourse - Bottom-Left Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
       "geometry": [
@@ -315,7 +315,7 @@
     },
     {
       "id": 13,
-      "name": "Bottom-Right Door",
+      "name": "Concourse - Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
       "geometry": [
@@ -339,7 +339,7 @@
     {
       "id": 8,
       "idMinorItemPlm": "0x02",
-      "name": "Missile Tank",
+      "name": "Central Nexus - Missile Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
