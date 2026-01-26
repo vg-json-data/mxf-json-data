@@ -4,8 +4,6 @@
   "name": "Yameba Corridor",
   "area": "SRX",
   "subarea": "Upper SRX",
-  "roomImageFile": "SRX Room 79500.jpg",
-  "roomAddress": "0x79500",
   "roomEnvironments": [
     {
       "heated": false,
@@ -23,6 +21,8 @@
       "name": "Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -33,11 +33,55 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door (Yameba Ambush)",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": []
+            }
+          ],
+          "lock": [
+            {
+              "and": [
+                "f_SRXAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -63,11 +107,122 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Middle of the Room",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 104,
+          "y": 104,
+          "w": 40,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Yameba",
+      "enemyName": "Yameba (Large)",
+      "quantity": 1,
+      "homeNodes": [
+        1,
+        2
+      ],
+      "spawn": [
+        "f_SRXAuxiliaryRoom_Engaged"
+      ],
+      "stopSpawn": [
+        "f_YamebaCorridor_DoorsUnlocked"
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Yameba",
+      "enemyName": "Yameba (Small)",
+      "quantity": 4,
+      "homeNodes": [
+        1,
+        2
+      ],
+      "spawn": [
+        "f_SRXAuxiliaryRoom_Engaged"
+      ],
+      "stopSpawn": [
+        "f_YamebaCorridor_DoorsUnlocked"
+      ],
+      "id": "e2"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Unlock Doors",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "f_SRXAuxiliaryRoom_Engaged",
+            {
+              "doorUnlockedAtNode": 1
+            }
+          ]
+        }
+      ],
+      "unlocksDoors": [
+        "[object Object]",
+        "[object Object]"
+      ],
+      "setsFlags": [
+        "f_YamebaCorridor_DoorsUnlocked"
+      ]
+    },
+    {
+      "name": "Base",
+      "requires": []
+    }
+  ],
+  "roomImageFile": "SRX Room 79500.jpg",
+  "roomAddress": "0x79500",
   "nextStratId": 1,
   "nextNotableId": 1
 }

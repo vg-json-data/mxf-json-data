@@ -43,7 +43,7 @@
       "id": 2,
       "name": "Top-Right Door",
       "nodeType": "door",
-      "nodeSubType": "gray",
+      "nodeSubType": "eye",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
       "geometry": [
@@ -60,13 +60,42 @@
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
       ]
     },
     {
       "id": 3,
       "name": "Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -77,8 +106,6 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -121,11 +148,6 @@
               "requires": [
                 "f_SRXAuxiliaryRoom_Engaged"
               ]
-            }
-          ],
-          "lock": [
-            {
-              "not": "f_SRXAuxiliaryRoom_Engaged"
             }
           ]
         }
@@ -158,7 +180,9 @@
       "id": 5,
       "name": "Bottom-Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -169,8 +193,6 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -213,11 +235,6 @@
               "requires": [
                 "f_SRXAuxiliaryRoom_Engaged"
               ]
-            }
-          ],
-          "lock": [
-            {
-              "not": "f_SRXAuxiliaryRoom_Engaged"
             }
           ]
         }

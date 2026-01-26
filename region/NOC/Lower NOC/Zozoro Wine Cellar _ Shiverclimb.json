@@ -158,18 +158,15 @@
           "and": [
             {
               "or": [
-                "Super Jump",
+                "h_useSpringBall",
                 {
                   "and": [
-                    "h_bombThings",
-                    {
-                      "and": [
-                        "canInsaneMidAirMorph",
-                        "canCrumbleJump"
-                      ]
-                    }
+                    "can3HighWallMidAirMorph",
+                    "canWalljump",
+                    "canTrickyWalljump"
                   ]
-                }
+                },
+                "canCeilingBombJump"
               ]
             },
             {
@@ -177,7 +174,7 @@
                 {
                   "ammo": {
                     "type": "Diffusion",
-                    "count": 2
+                    "count": 1
                   }
                 },
                 {

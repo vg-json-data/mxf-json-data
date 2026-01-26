@@ -114,6 +114,28 @@
       ]
     },
     {
+      "name": "Come In With Spark, Kill Orange Geron",
+      "link": [
+        1,
+        2
+      ],
+      "entranceCondition": {
+        "comeInWithSpark": {
+          "position": "top"
+        }
+      },
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 48
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
       "name": "Base",
       "link": [
         1,
@@ -149,6 +171,31 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "Come In With Spark, Kill Orange Geron",
+      "link": [
+        2,
+        1
+      ],
+      "entranceCondition": {
+        "comeInWithSpark": {
+          "position": "top"
+        }
+      },
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 48
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_TurboTunnel_OrangeGeronDestroyed"
       ]
     },
     {

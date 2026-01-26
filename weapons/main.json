@@ -201,11 +201,11 @@
     },
     {
       "id": 13,
-      "name": "MissileLv1",
+      "name": "Missile",
       "damage": 100,
       "cooldownFrames": 15,
       "useRequires": [
-        "MissileLv1"
+        "Missile"
       ],
       "shotRequires": [],
       "situational": false,
@@ -218,11 +218,11 @@
     },
     {
       "id": 14,
-      "name": "MissileLv2",
+      "name": "Super Missile",
       "damage": 200,
       "cooldownFrames": 15,
       "useRequires": [
-        "MissileLv2"
+        "Super Missile"
       ],
       "shotRequires": [],
       "situational": false,
@@ -235,11 +235,11 @@
     },
     {
       "id": 15,
-      "name": "MissileLv2\u002BMissileLv3",
+      "name": "Super Missile\u002BIce Missile",
       "damage": 300,
       "cooldownFrames": 15,
       "useRequires": [
-        "MissileLv2\u002BMissileLv3"
+        "Super Missile\u002BIce Missile"
       ],
       "shotRequires": [],
       "situational": false,
@@ -252,11 +252,11 @@
     },
     {
       "id": 16,
-      "name": "MissileLv2\u002BMissileLv4",
+      "name": "Super Missile\u002BDiffusion Missile",
       "damage": 200,
       "cooldownFrames": 15,
       "useRequires": [
-        "MissileLv2\u002BMissileLv4"
+        "Super Missile\u002BDiffusion Missile"
       ],
       "shotRequires": [],
       "situational": false,
@@ -269,11 +269,11 @@
     },
     {
       "id": 17,
-      "name": "MissileLv3",
+      "name": "Ice Missile",
       "damage": 300,
       "cooldownFrames": 15,
       "useRequires": [
-        "MissileLv3"
+        "Ice Missile"
       ],
       "shotRequires": [],
       "situational": false,
@@ -286,11 +286,11 @@
     },
     {
       "id": 18,
-      "name": "MissileLv3\u002BMissileLv4",
+      "name": "Ice Missile\u002BDiffusion Missile",
       "damage": 100,
       "cooldownFrames": 15,
       "useRequires": [
-        "MissileLv3\u002BMissileLv4"
+        "Ice Missile\u002BDiffusion Missile"
       ],
       "shotRequires": [],
       "situational": false,
@@ -303,11 +303,11 @@
     },
     {
       "id": 19,
-      "name": "MissileLv4",
+      "name": "Diffusion Missile",
       "damage": 100,
       "cooldownFrames": 15,
       "useRequires": [
-        "MissileLv4"
+        "Diffusion Missile"
       ],
       "shotRequires": [],
       "situational": false,

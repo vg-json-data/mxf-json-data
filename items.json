@@ -415,17 +415,17 @@
   ],
   "progressiveUpgrades": [
     {
-      "name": "MissileLv2",
+      "name": "Super Missile",
       "pcAddress": "0x028190",
       "value": "0x0040"
     },
     {
-      "name": "MissileLv3",
+      "name": "Ice Missile",
       "pcAddress": "0x028192",
       "value": "0x0090"
     },
     {
-      "name": "MissileLv4",
+      "name": "Diffusion Missile",
       "pcAddress": "0x028194",
       "value": "0x0100"
     },

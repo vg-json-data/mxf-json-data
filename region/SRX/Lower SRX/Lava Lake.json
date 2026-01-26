@@ -17,27 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 5,
-      "idMinorItemPlm": "0x15",
-      "name": "Lava Lake - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 304,
-          "y": 112,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7D6E2",
-      "mapTileX": 24,
-      "mapTileY": 16
-    },
-    {
       "id": 4,
       "name": "Top Door",
       "nodeType": "door",
@@ -128,6 +107,27 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 5,
+      "idMinorItemPlm": "0x15",
+      "name": "Lava Lake - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 304,
+          "y": 112,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7D6E2",
+      "mapTileX": 24,
+      "mapTileY": 16
     }
   ],
   "enemies": [
@@ -136,8 +136,8 @@
       "enemyName": "Halzyn",
       "quantity": 1,
       "betweenNodes": [
-        5,
-        4
+        4,
+        5
       ],
       "id": "e1"
     }
@@ -206,6 +206,71 @@
             "canSuitlessLavaDive",
             {
               "lavaFrames": 930
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Leave With Spark",
+      "link": [
+        2,
+        1
+      ],
+      "startsWithShineCharge": true,
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 85
+          }
+        }
+      ],
+      "exitCondition": {
+        "leaveWithSpark": {}
+      }
+    },
+    {
+      "name": "Come In Shinecharged, Reach Top Door",
+      "link": [
+        2,
+        4
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "and": [
+            {
+              "shinespark": {
+                "frames": 35
+              }
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "lavaFrames": 6
+                    },
+                    {
+                      "or": [
+                        "h_JumpAssist",
+                        "canTrickyWalljump"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canPreciseWalljump",
+                    "canRespin"
+                  ]
+                }
+              ]
             }
           ]
         }
