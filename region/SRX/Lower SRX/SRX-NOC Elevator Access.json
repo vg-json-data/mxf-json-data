@@ -4,8 +4,6 @@
   "name": "SRX-NOC Elevator Access",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7AC00.jpg",
-  "roomAddress": "0x7AC00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -86,9 +84,167 @@
       "mapTileY": 16
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Spikes Blocking Item",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Break Spike Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "Spike Breaker"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Leave With Runway",
+      "link": [
+        1,
+        1
+      ],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 16,
+          "openEnd": 1,
+          "gentleDownTiles": 4,
+          "steepUpTiles": 1
+        }
+      },
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "spikeHits": 1
+            },
+            "h_shinechargeMaxRunway",
+            "Space Jump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        "Spike Breaker"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "spikeHits": 1
+            },
+            "h_shinechargeMaxRunway",
+            "Space Jump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Break Spike Blocks",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "Spike Breaker"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        "Spike Breaker"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ],
+      "collectsItems": [
+        3
+      ],
+      "setsFlags": [
+        "f_SRXNOCElevatorAccess_PowerBombTank_Collected"
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 7AC00.jpg",
+  "roomAddress": "0x7AC00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

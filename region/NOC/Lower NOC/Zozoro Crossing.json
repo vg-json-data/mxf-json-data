@@ -4,8 +4,6 @@
   "name": "Zozoro Crossing",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7A600.jpg",
-  "roomAddress": "0x7A600",
   "roomEnvironments": [
     {
       "heated": false,
@@ -71,9 +69,13 @@
         {
           "name": "Locked Door",
           "lockType": "gameFlag",
-          "unlockStrats": [],
-          "lock": [
-            "f_NOCAuxiliaryRoom_Engaged"
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
           ]
         }
       ]
@@ -148,9 +150,177 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Crumble Block (Morph Tunnel)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Screw Attack Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Screw Attack Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "Screw Attack"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Screw Attack Blocks",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "Screw Attack"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "Space Jump",
+            "canIBJ",
+            {
+              "and": [
+                "canPreciseWalljump",
+                "canConsecutiveAlternatingWallJump"
+              ]
+            },
+            {
+              "canShineCharge": {
+                "usedTiles": 17,
+                "openEnd": 0,
+                "gentleDownTiles": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "canCrouchJump",
+            "h_JumpAssist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crystal Flash Clip",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        "canCrystalFlashClip"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "Morph"
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 7A600.jpg",
+  "roomAddress": "0x7A600",
   "nextStratId": 1,
   "nextNotableId": 1
 }

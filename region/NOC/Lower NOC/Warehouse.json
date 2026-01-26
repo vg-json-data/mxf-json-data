@@ -4,8 +4,6 @@
   "name": "Warehouse",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7AB00.jpg",
-  "roomAddress": "0x7AB00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -45,7 +43,9 @@
       "id": 2,
       "name": "Top-Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -56,11 +56,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_NOCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -111,9 +150,93 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "h_JumpAssist",
+            {
+              "and": [
+                "canCrouchJump",
+                "canBombJumpWaterEscape"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "h_JumpAssist",
+                "canIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "h_JumpAssist",
+            {
+              "and": [
+                "canCrouchJump",
+                "canBombJumpWaterEscape"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 7AB00.jpg",
+  "roomAddress": "0x7AB00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

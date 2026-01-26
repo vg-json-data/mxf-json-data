@@ -190,6 +190,12 @@
             }
           ]
         }
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_ZozoroWineCellar_MissileTank_Collected"
       ]
     },
     {

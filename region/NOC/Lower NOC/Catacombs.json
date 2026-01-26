@@ -127,6 +127,7 @@
           ]
         }
       ],
+      "note": "It's impossible to encounter the SA-X in this room, unless you're already being chased in the previous room: Even if you came through the Top-Left door in a clean game state, the door would be destroyed already, and the SA-X will not spawn.",
       "id": "e1"
     }
   ],

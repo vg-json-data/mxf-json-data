@@ -155,7 +155,61 @@
       ]
     }
   ],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks (Horizontal)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Speed Booster Blocks (Vertical)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
   "strats": [
+    {
+      "name": "Break Speedbooster Blocks via CanShineCharge",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "canShineCharge": {
+            "usedTiles": 18,
+            "openEnd": 0,
+            "gentleUpTiles": 4,
+            "steepDownTiles": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Break Speedbooster Blocks via Come In Shinecharged",
+      "link": [
+        1,
+        1
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
     {
       "name": "Reach Bottom Door from Left-Lower Door via Lava Dive (No Spikebreaker)",
       "link": [
@@ -216,6 +270,51 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Break Speedbooster Blocks via CanShineCharge",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "canShineCharge": {
+            "usedTiles": 17,
+            "openEnd": 0,
+            "steepDownTiles": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Come In Shinecharging",
+      "link": [
+        3,
+        3
+      ],
+      "entranceCondition": {
+        "comeInShinecharging": {
+          "length": 21,
+          "openEnd": 0,
+          "steepDownTiles": 2
+        }
+      },
+      "requires": []
     },
     {
       "name": "Base",
@@ -326,16 +425,6 @@
                 },
                 {
                   "and": [
-                    {
-                      "enemyKill": {
-                        "enemies": [
-                          [
-                            "Zebesian",
-                            "Zebesian"
-                          ]
-                        ]
-                      }
-                    },
                     "canDodgeWhileShooting"
                   ]
                 },
@@ -396,6 +485,35 @@
               "lavaFrames": 400
             },
             "canSuitlessLavaDive"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "shinespark": {
+                    "frames": 37
+                  }
+                },
+                "canLongIBJ",
+                "Space Jump"
+              ]
+            }
           ]
         }
       ]
@@ -472,9 +590,9 @@
       ],
       "requires": [
         {
-          "and": [
-            "canStopOnADime",
-            "Speed Booster Level 2"
+          "obstaclesCleared": [
+            "A",
+            "B"
           ]
         }
       ]
@@ -487,11 +605,50 @@
       ],
       "requires": [
         {
-          "and": [
-            "canStopOnADime",
-            "Speed Booster Level 2"
+          "obstaclesCleared": [
+            "A",
+            "B"
           ]
         }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        4
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, break Speed Booster Blocks (Vertical)",
+      "link": [
+        6,
+        6
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canStationarySpinJump",
+                "canShinechargeMovement"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
       ]
     }
   ],

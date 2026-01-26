@@ -151,6 +151,19 @@
       "requires": []
     },
     {
+      "name": "Leave Shinecharged",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
+    },
+    {
       "name": "Base",
       "link": [
         4,

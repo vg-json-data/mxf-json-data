@@ -1391,7 +1391,7 @@
         "description": "[MDK-AQA Elevator Cache] Power Bomb Tank Collected"
       },
       {
-        "name": "f_CubbyStorage_MissileTank_Collected",
+        "name": "f_NexusStorage_MissileTank_Collected",
         "address": "7ED870",
         "bit": 2,
         "description": "[Nexus Storage] Missile Tank Collected"
@@ -1889,7 +1889,7 @@
         "description": "[Ice-X Shaft] Missile Tank Collected"
       },
       {
-        "name": "f_Shiverclimb_MissileTank_Collected",
+        "name": "f_ZozoroWineCellar_MissileTank_Collected",
         "address": "7ED87D",
         "bit": 1,
         "description": "[Shiverclimb] Missile Tank Collected"

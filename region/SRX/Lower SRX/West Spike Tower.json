@@ -193,6 +193,31 @@
       ]
     },
     {
+      "name": "Come In Shinecharged",
+      "link": [
+        2,
+        2
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": []
+    },
+    {
+      "name": "Come In Shinecharged, Leave Shinecharged",
+      "link": [
+        2,
+        4
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "exitCondition": {
+        "leaveShinecharged": {}
+      },
+      "requires": []
+    },
+    {
       "name": "Base",
       "link": [
         2,
@@ -254,11 +279,36 @@
       ]
     },
     {
+      "name": "Come In Shinecharged, Leave Shinecharged",
+      "link": [
+        4,
+        2
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "exitCondition": {
+        "leaveShinecharged": {}
+      },
+      "requires": []
+    },
+    {
       "name": "Base",
       "link": [
         4,
         2
       ],
+      "requires": []
+    },
+    {
+      "name": "Come In Shinecharged",
+      "link": [
+        4,
+        4
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
       "requires": []
     },
     {

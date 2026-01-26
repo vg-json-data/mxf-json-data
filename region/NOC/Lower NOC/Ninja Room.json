@@ -4,8 +4,6 @@
   "name": "Ninja Room",
   "area": "NOC",
   "subarea": "Lower NOC",
-  "roomImageFile": "NOC Room 7AA00.jpg",
-  "roomAddress": "0x7AA00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,100 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_JumpAssist",
+            {
+              "or": [
+                "canPreciseWalljump",
+                "Super Jump",
+                "Space Jump",
+                "Grapple",
+                {
+                  "and": [
+                    "canIBJ",
+                    {
+                      "resourceCapacity": [
+                        {
+                          "type": "PowerBomb",
+                          "count": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                "Space Jump",
+                {
+                  "and": [
+                    "Super Jump",
+                    "canWalljump"
+                  ]
+                },
+                {
+                  "and": [
+                    "canIBJ",
+                    {
+                      "enemyDamage": {
+                        "enemy": "Ice-X",
+                        "type": "contact",
+                        "hits": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 7AA00.jpg",
+  "roomAddress": "0x7AA00",
   "nextStratId": 1,
   "nextNotableId": 1
 }
