@@ -820,7 +820,7 @@
       "damageMultipliers": [],
       "vuln": [],
       "dropsUpgrade": [
-        "SpeedBoosterLv1"
+        "SpeedBooster"
       ],
       "areas": [
         "AQA"

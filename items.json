@@ -430,7 +430,7 @@
       "value": "0x0100"
     },
     {
-      "name": "SpeedBoosterLv1",
+      "name": "SpeedBooster",
       "pcAddress": "0x028196",
       "value": "0x0060"
     },
