@@ -4,8 +4,6 @@
   "name": "Omega Metroid Arena",
   "area": "L-X",
   "subarea": "General",
-  "roomImageFile": "L-X Room 78E00.jpg",
-  "roomAddress": "0x78E00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,21 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "setsFlags": [
+        "f_OmegaMetroidArena_EscapeActivated"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "L-X Room 78E00.jpg",
+  "roomAddress": "0x78E00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

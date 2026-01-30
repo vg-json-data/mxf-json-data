@@ -627,6 +627,25 @@
       ]
     },
     {
+      "name": "Come In With Temporary Blue, Break Vertical Speed Booster Blocks",
+      "link": [
+        6,
+        4
+      ],
+      "entranceCondition": {
+        "comeInWithTemporaryBlue": {}
+      },
+      "requires": [
+        "canTemporaryBlue"
+      ],
+      "exitCondition": {
+        "leaveNormally": {}
+      },
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
       "name": "Come In Shinecharged, break Speed Booster Blocks (Vertical)",
       "link": [
         6,

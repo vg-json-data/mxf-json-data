@@ -4,8 +4,6 @@
   "name": "Sector 0 Omega Exit / Omega Metroid Escape",
   "area": "L-X",
   "subarea": "General",
-  "roomImageFile": "L-X Room 78F00.jpg",
-  "roomAddress": "0x78F00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -111,9 +109,42 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "L-X Room 78F00.jpg",
+  "roomAddress": "0x78F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

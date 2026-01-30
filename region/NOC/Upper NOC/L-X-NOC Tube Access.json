@@ -4,8 +4,6 @@
   "name": "L-X-NOC Tube Access",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 79700.jpg",
-  "roomAddress": "0x79700",
   "roomEnvironments": [
     {
       "heated": false,
@@ -92,9 +90,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "NOC Room 79700.jpg",
+  "roomAddress": "0x79700",
   "nextStratId": 1,
   "nextNotableId": 1
 }

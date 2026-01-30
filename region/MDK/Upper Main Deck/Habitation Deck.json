@@ -17,48 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 4,
-      "idMinorItemPlm": "0x03",
-      "name": "Habitation Deck [Bottom-Left] - Energy Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 64,
-          "y": 464,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "ETank",
-      "nodeAddress": "0x7D3F0",
-      "mapTileX": 29,
-      "mapTileY": 11
-    },
-    {
-      "id": 5,
-      "idMinorItemPlm": "0x04",
-      "name": "Habitation Deck [Bottom-Right] - Energy Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 688,
-          "y": 464,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "ETank",
-      "nodeAddress": "0x7D3F6",
-      "mapTileX": 31,
-      "mapTileY": 11
-    },
-    {
       "id": 1,
       "name": "Top-Left Door",
       "nodeType": "door",
@@ -126,6 +84,60 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 4,
+      "idMinorItemPlm": "0x03",
+      "name": "Habitation Deck [Bottom-Left] - Energy Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 64,
+          "y": 464,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "ETank",
+      "nodeAddress": "0x7D3F0",
+      "mapTileX": 29,
+      "mapTileY": 11
+    },
+    {
+      "id": 5,
+      "idMinorItemPlm": "0x04",
+      "name": "Habitation Deck [Bottom-Right] - Energy Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 688,
+          "y": 464,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "ETank",
+      "nodeAddress": "0x7D3F6",
+      "mapTileX": 31,
+      "mapTileY": 11
+    }
+  ],
+  "obstacles": [
+    {
+      "name": "Bottom-Left Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Bottom-Right Crumble Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
     }
   ],
   "strats": [
@@ -138,23 +150,53 @@
       "requires": []
     },
     {
+      "name": "Come in Shinecharged, Drop to Bottom Door",
+      "link": [
+        1,
+        3
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "and": [
+            "canTrickyDodgeEnemies",
+            "canTemporaryBlue"
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveNormally": {}
+      }
+    },
+    {
       "name": "Base",
       "link": [
         1,
         4
       ],
       "requires": [
-        "h_getBlueSpeedMaxRunway"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        1,
-        5
+        {
+          "and": [
+            "h_shinechargeMaxRunway",
+            {
+              "or": [
+                "SpeedBoosterLv2",
+                "canTemporaryBlue"
+              ]
+            }
+          ]
+        }
       ],
-      "requires": [
-        "h_getBlueSpeedMaxRunway"
+      "clearsObstacles": [
+        "A"
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_HabitationDeck_EnergyTankLeft_Collected"
       ]
     },
     {
@@ -166,21 +208,56 @@
       "requires": []
     },
     {
+      "name": "Come In With Spark",
+      "link": [
+        3,
+        2
+      ],
+      "entranceCondition": {
+        "comeInWithSpark": {}
+      },
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 28
+          }
+        }
+      ]
+    },
+    {
       "name": "Base",
       "link": [
         3,
-        1
+        5
+      ],
+      "requires": [
+        "Wave"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
       ],
       "requires": [
         {
-          "and": [
+          "or": [
             {
-              "shinespark": {
-                "frames": 41
-              }
-            }
+              "and": [
+                "SuperJump",
+                "canWalljump"
+              ]
+            },
+            "canConsecutiveAlternatingWallJump"
           ]
         }
+      ],
+      "collectsItems": [
+        5
+      ],
+      "setsFlags": [
+        "f_HabitationDeck_EnergyTankRight_Collected"
       ]
     },
     {

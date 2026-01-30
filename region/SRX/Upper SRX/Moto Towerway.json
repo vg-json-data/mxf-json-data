@@ -4,8 +4,6 @@
   "name": "Moto Towerway",
   "area": "SRX",
   "subarea": "Upper SRX",
-  "roomImageFile": "SRX Room 79300.jpg",
-  "roomAddress": "0x79300",
   "roomEnvironments": [
     {
       "heated": false,
@@ -86,9 +84,75 @@
       "mapTileY": 11
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            "canLongIBJ",
+            {
+              "and": [
+                "SuperJump",
+                "canWalljump"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "and": [
+                    "canPreciseWalljump",
+                    "canConsecutiveAlternatingWallJump"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        "Morph"
+      ],
+      "collectsItems": [
+        3
+      ],
+      "setsFlags": [
+        "f_MotoTowerway_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 79300.jpg",
+  "roomAddress": "0x79300",
   "nextStratId": 1,
   "nextNotableId": 1
 }

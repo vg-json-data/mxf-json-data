@@ -334,11 +334,22 @@
       ],
       "requires": [
         {
-          "or": [
-            "canCarefulJump",
-            "canWalljump"
+          "and": [
+            "f_HardMode",
+            {
+              "or": [
+                "canCarefulJump",
+                "canWalljump"
+              ]
+            }
           ]
         }
+      ],
+      "collectsItems": [
+        5
+      ],
+      "setsFlags": [
+        "f_NOC_PowerCellAcquired"
       ]
     },
     {

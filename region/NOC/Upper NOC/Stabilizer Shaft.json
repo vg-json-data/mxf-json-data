@@ -4,8 +4,6 @@
   "name": "Stabilizer Shaft",
   "area": "NOC",
   "subarea": "Upper NOC",
-  "roomImageFile": "NOC Room 79200.jpg",
-  "roomAddress": "0x79200",
   "roomEnvironments": [
     {
       "heated": false,
@@ -138,11 +136,155 @@
       "nodeAddress": "0x7E178",
       "mapTileX": 38,
       "mapTileY": 9
+    },
+    {
+      "id": 4,
+      "name": "Above Crumble Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 408,
+          "y": 384,
+          "w": 56,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks (Top)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Speed Booster Blocks (Middle)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Come in Shinecharged, Spark to Power Bomb Tank",
+      "link": [
+        1,
+        3
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 10
+          }
+        }
+      ],
+      "exitCondition": {
+        "leaveNormally": {}
+      },
+      "clearsObstacles": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "name": "Come in Shinecharged, Reach Above Crumble Blocks",
+      "link": [
+        1,
+        4
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "exitCondition": {
+        "leaveNormally": {}
+      },
+      "clearsObstacles": [
+        "A"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                "h_JumpAssist"
+              ]
+            },
+            "canSuitlessUnderwaterIBJ"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "canConsecutiveAlternatingWallJump",
+                            "canIBJ"
+                          ]
+                        },
+                        "SpaceJump"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canCrumbleJump",
+                    "canSuitlessUnderwaterIBJ"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    }
+  ],
+  "roomImageFile": "NOC Room 79200.jpg",
+  "roomAddress": "0x79200",
   "nextStratId": 1,
   "nextNotableId": 1
 }

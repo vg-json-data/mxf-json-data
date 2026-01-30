@@ -4,8 +4,6 @@
   "name": "Sector 0 Normal Exit Tube",
   "area": "L-X",
   "subarea": "General",
-  "roomImageFile": "NOC Room 78700.jpg",
-  "roomAddress": "0x78700",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "NOC Room 78700.jpg",
+  "roomAddress": "0x78700",
   "nextStratId": 1,
   "nextNotableId": 1
 }

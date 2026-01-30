@@ -218,6 +218,20 @@
       "requires": []
     },
     {
+      "name": "Leave Shinecharged",
+      "link": [
+        3,
+        3
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "exitCondition": {
+        "leaveShinecharged": {}
+      },
+      "requires": []
+    },
+    {
       "name": "Base",
       "link": [
         3,
@@ -226,11 +240,14 @@
       "requires": []
     },
     {
-      "name": "Leave with Shinecharged",
+      "name": "Come In Shinecharged",
       "link": [
         4,
-        3
+        4
       ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
       "requires": []
     },
     {

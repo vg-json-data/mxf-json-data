@@ -4,8 +4,6 @@
   "name": "Not 58 Escape Room",
   "area": "L-X",
   "subarea": "General",
-  "roomImageFile": "L-X Room 78C00.jpg",
-  "roomAddress": "0x78C00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "L-X Room 78C00.jpg",
+  "roomAddress": "0x78C00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

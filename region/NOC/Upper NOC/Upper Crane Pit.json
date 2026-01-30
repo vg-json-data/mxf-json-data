@@ -135,19 +135,17 @@
       "requires": []
     },
     {
-      "name": "Leave With Runway",
+      "name": "Leave Shinecharged",
       "link": [
         2,
         2
       ],
       "requires": [
-        {
-          "and": [
-            "Gravity",
-            "h_shinechargeMaxRunway"
-          ]
-        }
-      ]
+        "h_shinechargeMaxRunway"
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
     }
   ],
   "roomImageFile": "NOC Room 79300.jpg",

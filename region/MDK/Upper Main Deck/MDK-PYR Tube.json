@@ -79,6 +79,19 @@
         1
       ],
       "requires": []
+    },
+    {
+      "name": "Leave Shinecharged",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
     }
   ],
   "roomImageFile": "Misc Room Reusable 2.jpg",

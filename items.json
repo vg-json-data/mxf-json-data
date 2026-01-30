@@ -1245,6 +1245,12 @@
         "description": "[Meta Draygon-X Access] Gadora Defeated"
       },
       {
+        "name": "f_WeaponsTestingGrounds_DoorsUnlocked",
+        "address": "7ED8BA",
+        "bit": 1,
+        "description": "[Weapons Testing Grounds] Doors Unlocked"
+      },
+      {
         "name": "f_CrowsNest_OrangeGeronDestroyed",
         "address": "7ED8BA",
         "bit": 2,
@@ -1811,16 +1817,16 @@
         "description": "[Frostbite Hall] Missile Tank Collected"
       },
       {
-        "name": "f_FrozenTower_MissileTankTop_Collected",
+        "name": "f_FrozenTower_MissileTank_Collected",
         "address": "7ED87A",
         "bit": 7,
-        "description": "[Frozen Tower] Missile Tank (Top) Collected"
+        "description": "[Frozen Tower] Missile Tank Collected"
       },
       {
-        "name": "f_FrozenTower_MissileTankBottomRight_Collected",
+        "name": "f_TransmutationTrial_MissileTank_Collected",
         "address": "7ED87B",
         "bit": 0,
-        "description": "[Frozen Tower] Hidden Missile Tank (Bottom-Right) Collected"
+        "description": "[Transmutation Trial] Hidden Missile Tank Collected"
       },
       {
         "name": "f_Cryopipe_MissileTank_Collected",

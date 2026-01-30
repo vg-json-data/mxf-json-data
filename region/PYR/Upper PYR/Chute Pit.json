@@ -4,8 +4,6 @@
   "name": "Chute Pit",
   "area": "PYR",
   "subarea": "Upper PYR",
-  "roomImageFile": "PYR Room 7B100.jpg",
-  "roomAddress": "0x7B100",
   "roomEnvironments": [
     {
       "heated": false,
@@ -26,9 +24,9 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 16,
+          "x": 32,
           "y": 0,
-          "w": 48,
+          "w": 16,
           "h": 64
         }
       ],
@@ -50,9 +48,9 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 400,
-          "w": 48,
-          "h": 64
+          "y": 432,
+          "w": 120,
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -65,9 +63,148 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Zebesian",
+      "enemyName": "Zebesian",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "SpikeBreaker",
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1"
+                          ]
+                        ]
+                      }
+                    },
+                    {
+                      "lavaFrames": 1
+                    },
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "enemyDamage": {
+                        "enemy": "Zebesian",
+                        "type": "contact",
+                        "hits": 1
+                      }
+                    },
+                    {
+                      "lavaFrames": 1
+                    },
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "canSuitlessLavaDive",
+                    "canWalljump"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "SpikeBreaker",
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1"
+                          ]
+                        ]
+                      }
+                    },
+                    {
+                      "lavaFrames": 1
+                    },
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "enemyDamage": {
+                        "enemy": "Zebesian",
+                        "type": "contact",
+                        "hits": 1
+                      }
+                    },
+                    {
+                      "lavaFrames": 1
+                    },
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "lavaFrames": 1
+            },
+            {
+              "heatFrames": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 7B100.jpg",
+  "roomAddress": "0x7B100",
   "nextStratId": 1,
   "nextNotableId": 1
 }

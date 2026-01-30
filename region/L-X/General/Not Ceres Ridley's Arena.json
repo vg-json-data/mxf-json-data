@@ -1,11 +1,9 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
   "id": 133,
-  "name": "Not Ceres Ridley\u0027s Arena",
+  "name": "Not Ceres Ridley's Arena",
   "area": "L-X",
   "subarea": "General",
-  "roomImageFile": "L-X Room 78D00.jpg",
-  "roomAddress": "0x78D00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -111,9 +109,74 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "ScrewAttack",
+            "canTrivialMidAirMorph",
+            "h_JumpAssist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "ScrewAttack",
+            "canTrivialMidAirMorph",
+            "h_JumpAssist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "L-X Room 78D00.jpg",
+  "roomAddress": "0x78D00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

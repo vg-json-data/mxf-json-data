@@ -70,20 +70,6 @@
   ],
   "strats": [
     {
-      "name": "Come In Shinecharged",
-      "link": [
-        1,
-        1
-      ],
-      "entranceCondition": {
-        "comeInShinecharged": {}
-      },
-      "clearsObstacles": [
-        "A"
-      ],
-      "requires": []
-    },
-    {
       "name": "Base",
       "link": [
         1,

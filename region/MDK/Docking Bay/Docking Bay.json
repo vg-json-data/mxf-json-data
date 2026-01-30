@@ -59,6 +59,18 @@
       "note": ""
     }
   ],
+  "enemies": [
+    {
+      "groupName": "Fake Ship",
+      "enemyName": "Fake Ship",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    }
+  ],
   "strats": [
     {
       "name": "Base",
@@ -82,13 +94,23 @@
         2,
         2
       ],
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              [
+                "e1"
+              ]
+            ]
+          }
+        }
+      ],
       "collectsItems": [
         2
       ],
       "setsFlags": [
         "f_DockingBay_ReserveXCollected"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "MDK Room 8.png",

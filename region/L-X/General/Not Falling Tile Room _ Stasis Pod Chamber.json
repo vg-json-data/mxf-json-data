@@ -4,8 +4,6 @@
   "name": "Not Falling Tile Room / Stasis Pod Chamber",
   "area": "L-X",
   "subarea": "General",
-  "roomImageFile": "L-X Room 78900.jpg",
-  "roomAddress": "0x78900",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,7 +86,6 @@
       ]
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -105,9 +102,25 @@
         1
       ],
       "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_JumpAssist",
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ]
     }
   ],
-  "notables": [],
+  "roomImageFile": "L-X Room 78900.jpg",
+  "roomAddress": "0x78900",
   "nextStratId": 1,
   "nextNotableId": 1
 }

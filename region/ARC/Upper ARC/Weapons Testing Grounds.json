@@ -20,7 +20,9 @@
       "id": 1,
       "name": "Top-Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -31,11 +33,53 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_WeaponsTestingGrounds_DoorsUnlocked"
+              ]
+            }
+          ],
+          "lock": [
+            "f_WeaponsTestingGrounds_PowerBombTank_Collected"
+          ]
         }
       ]
     },
@@ -146,12 +190,35 @@
       "nodeAddress": "0x7DF12",
       "mapTileX": 30,
       "mapTileY": 8
+    },
+    {
+      "id": 5,
+      "name": "Right of Power Bomb Wall",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 528,
+          "y": 104,
+          "w": 64,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
+    }
+  ],
+  "obstacles": [
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
     }
   ],
   "enemies": [
     {
       "groupName": "SA-X",
-      "enemyName": "Puyo",
+      "enemyName": "SA-X",
       "quantity": 1,
       "betweenNodes": [
         1,
@@ -169,14 +236,70 @@
               ]
             },
             "DiffusionMissile",
-            "Wave"
+            "Wave",
+            {
+              "not": "f_TurboTunnel_WTGSAXChaseOver"
+            }
           ]
         }
       ],
       "id": "e1"
+    },
+    {
+      "groupName": "Gerubus",
+      "enemyName": "Gerubus",
+      "quantity": 3,
+      "betweenNodes": [
+        1,
+        5
+      ],
+      "spawn": [
+        "f_TurboTunnel_WTGSAXChaseOver"
+      ],
+      "id": "e2"
     }
   ],
   "strats": [
+    {
+      "name": "Destroy Power Bomb Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
     {
       "name": "Leave With Runway",
       "link": [
@@ -191,6 +314,175 @@
         }
       },
       "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            "canIBJ",
+            {
+              "and": [
+                "SuperJump",
+                "canConsecutiveAlternatingWallJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Right of Power Bomb Wall",
+      "link": [
+        2,
+        5
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 26
+          }
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        4
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_WeaponsTestingGrounds_PowerBombTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        "f_TurboTunnel_WTGSAXChaseOver"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Break Power Bomb Blocks",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Unlock WTG Doors",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "f_TurboTunnel_WTGSAXChaseOver",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e2"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "setsFlags": [
+        "f_WeaponsTestingGrounds_DoorsUnlocked"
+      ]
     }
   ],
   "roomImageFile": "ARC Room 78B00.jpg",

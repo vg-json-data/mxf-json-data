@@ -106,6 +106,33 @@
       "requires": []
     },
     {
+      "name": "Come In Shinecharging",
+      "link": [
+        1,
+        1
+      ],
+      "entranceCondition": {
+        "comeInShinecharging": {
+          "length": 30,
+          "openEnd": 0
+        }
+      },
+      "requires": []
+    },
+    {
+      "name": "Leave With Shinecharged",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
+    },
+    {
       "name": "Base",
       "link": [
         1,

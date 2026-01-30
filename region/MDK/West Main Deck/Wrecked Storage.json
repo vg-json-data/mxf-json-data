@@ -4,8 +4,6 @@
   "name": "Wrecked Storage",
   "area": "MDK",
   "subarea": "West Main Deck",
-  "roomImageFile": "MDK Room 30.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -86,9 +84,55 @@
       "mapTileY": 17
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "collectsItems": [
+        3
+      ],
+      "setsFlags": [
+        "f_WreckedStorage_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "MDK Room 30.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

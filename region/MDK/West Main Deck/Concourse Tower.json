@@ -4,8 +4,6 @@
   "name": "Concourse Tower",
   "area": "MDK",
   "subarea": "West Main Deck",
-  "roomImageFile": "MDK Room 28.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -134,9 +132,140 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Green Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Green Geron",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_ConcourseTower_GreenGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Green Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_ConcourseTower_GreenGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            {
+              "and": [
+                "canConsecutiveAlternatingWallJump",
+                "SuperJump"
+              ]
+            },
+            "canIBJ"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "h_JumpAssist"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "MDK Room 28.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

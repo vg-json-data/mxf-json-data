@@ -80,14 +80,10 @@
         2,
         2
       ],
-      "requires": [
-        {
-          "not": "f_DeceptiveStation_TerminalDestroyed"
-        }
-      ],
       "setsFlags": [
         "f_DeceptiveStation_TerminalDestroyed"
-      ]
+      ],
+      "requires": []
     }
   ],
   "roomImageFile": "PYR Room 7A700.jpg",

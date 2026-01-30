@@ -4,8 +4,6 @@
   "name": "Sector 0 Escape",
   "area": "L-X",
   "subarea": "General",
-  "roomImageFile": "L-X Room 79000.jpg",
-  "roomAddress": "0x79000",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,44 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "h_JumpAssist"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "L-X Room 79000.jpg",
+  "roomAddress": "0x79000",
   "nextStratId": 1,
   "nextNotableId": 1
 }

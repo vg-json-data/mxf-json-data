@@ -170,22 +170,13 @@
   "enemies": [
     {
       "groupName": "Bull",
-      "enemyName": "Bull",
+      "enemyName": "Dessgeega",
       "quantity": 4,
       "betweenNodes": [
         1,
         2
       ],
-      "id": "e1",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e1"
     }
   ],
   "strats": [
@@ -284,6 +275,17 @@
       ]
     },
     {
+      "name": "Come in Shinecharged",
+      "link": [
+        2,
+        2
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": []
+    },
+    {
       "name": "Base",
       "link": [
         2,
@@ -297,6 +299,20 @@
         3,
         2
       ],
+      "requires": []
+    },
+    {
+      "name": "Leave Shinecharged",
+      "link": [
+        3,
+        3
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "exitCondition": {
+        "leaveShinecharged": {}
+      },
       "requires": []
     }
   ],
