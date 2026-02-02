@@ -6,7 +6,7 @@
   "subarea": "Upper PYR",
   "roomEnvironments": [
     {
-      "heated": false,
+      "heated": true,
       "cold": false
     }
   ],

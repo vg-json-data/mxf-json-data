@@ -1,11 +1,9 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
   "id": 275,
-  "name": "Geron\u0027s Treasure",
+  "name": "Geron's Treasure",
   "area": "PYR",
   "subarea": "Upper PYR",
-  "roomImageFile": "PYR Room 79700.jpg",
-  "roomAddress": "0x79700",
   "roomEnvironments": [
     {
       "heated": false,
@@ -44,7 +42,7 @@
     {
       "id": 2,
       "idMinorItemPlm": "0x38",
-      "name": "Geron\u0027s Treasure - Missile Tank",
+      "name": "Geron's Treasure - Missile Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
@@ -63,9 +61,83 @@
       "mapTileY": 13
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Green Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Kill Green Geron",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_GeronsTreasure_GreenGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_GeronsTreasure_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Green Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_GeronsTreasure_GreenGeronDestroyed"
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 79700.jpg",
+  "roomAddress": "0x79700",
   "nextStratId": 1,
   "nextNotableId": 1
 }

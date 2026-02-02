@@ -3,9 +3,7 @@
   "id": 253,
   "name": "Bubble Heights",
   "area": "PYR",
-  "subarea": "Neo-Crocomire\u0027s Lair",
-  "roomImageFile": "PYR Room 79C00.jpg",
-  "roomAddress": "0x79C00",
+  "subarea": "Neo-Crocomire's Lair",
   "roomEnvironments": [
     {
       "heated": false,
@@ -111,9 +109,65 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "canCrouchJump",
+            "h_JumpAssist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "PYR Room 79C00.jpg",
+  "roomAddress": "0x79C00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

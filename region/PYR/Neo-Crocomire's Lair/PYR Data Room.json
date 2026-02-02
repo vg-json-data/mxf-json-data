@@ -4,8 +4,6 @@
   "name": "PYR Data Room",
   "area": "PYR",
   "subarea": "Neo-Crocomire's Lair",
-  "roomImageFile": "Misc Room Reusable 6.jpg",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -78,9 +76,40 @@
       "nodeAddress": "0x0"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        3
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_PYRDataRoom_DataDownloaded"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "Misc Room Reusable 6.jpg",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

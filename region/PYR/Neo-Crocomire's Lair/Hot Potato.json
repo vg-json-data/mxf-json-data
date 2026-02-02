@@ -3,9 +3,7 @@
   "id": 256,
   "name": "Hot Potato",
   "area": "PYR",
-  "subarea": "Neo-Crocomire\u0027s Lair",
-  "roomImageFile": "PYR Room 79B00.jpg",
-  "roomAddress": "0x79B00",
+  "subarea": "Neo-Crocomire's Lair",
   "roomEnvironments": [
     {
       "heated": false,
@@ -87,9 +85,103 @@
       "mapTileY": 16
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "collectsItems": [
+        3
+      ],
+      "setsFlags": [
+        "f_HotPotato_EnergyTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            {
+              "and": [
+                {
+                  "or": [
+                    "h_JumpAssist",
+                    "canCrouchJump"
+                  ]
+                },
+                "Morph",
+                {
+                  "or": [
+                    {
+                      "not": "f_XBOXArena_CoreXAbsorbed"
+                    },
+                    "SpaceJump",
+                    {
+                      "lavaFrames": 120
+                    },
+                    "canLongCeilingBombJump",
+                    "Grapple"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "canCrumbleJump",
+            {
+              "and": [
+                {
+                  "or": [
+                    "h_JumpAssist",
+                    "canCrouchJump"
+                  ]
+                },
+                "Morph"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            "canLongCeilingBombJump",
+            "Grapple"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 79B00.jpg",
+  "roomAddress": "0x79B00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

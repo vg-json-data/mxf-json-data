@@ -4,8 +4,6 @@
   "name": "PYR Security Room Access",
   "area": "PYR",
   "subarea": "Lower PYR",
-  "roomImageFile": "PYR Room 7B700.jpg",
-  "roomAddress": "0x7B700",
   "roomEnvironments": [
     {
       "heated": false,
@@ -84,11 +82,672 @@
       "nodeAddress": "0x7DC68",
       "mapTileX": 37,
       "mapTileY": 18
+    },
+    {
+      "id": 4,
+      "name": "Under Morph Passage",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 600,
+          "y": 336,
+          "w": 80,
+          "h": 104
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
+      "name": "At Morph Passage",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 592,
+          "y": 248,
+          "w": 96,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Super Missile Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "SpaceJump"
+              ]
+            },
+            {
+              "and": [
+                "ScrewAttack",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "SpaceJump",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "lavaFrames": 1
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "f_NeoRidleyArena_CoreXAbsorbed",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "h_bombThings",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "SpaceJump",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "lavaFrames": 1
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "f_NeoRidleyArena_CoreXAbsorbed",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Power Bomb Tank",
+      "link": [
+        2,
+        3
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "and": [
+            "canShinechargeMovementComplex",
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "shinespark": {
+                "frames": 24
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "ScrewAttack",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "SpaceJump",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "lavaFrames": 1
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "f_NeoRidleyArena_CoreXAbsorbed",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "h_bombThings",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "SpaceJump",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "lavaFrames": 1
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "f_NeoRidleyArena_CoreXAbsorbed",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "heatFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "ScrewAttack",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "SpaceJump",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "lavaFrames": 1
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "f_NeoRidleyArena_CoreXAbsorbed",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "h_bombThings",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "SpaceJump",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "lavaFrames": 1
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "f_NeoRidleyArena_CoreXAbsorbed",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Wave"
+              ]
+            },
+            {
+              "and": [
+                "ScrewAttack",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "SpaceJump",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "lavaFrames": 1
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "f_NeoRidleyArena_CoreXAbsorbed",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "h_bombThings",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "SpaceJump",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "lavaFrames": 1
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "f_NeoRidleyArena_CoreXAbsorbed",
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "SpeedBoosterLv2",
+                "ScrewAttack"
+              ]
+            },
+            "h_shinechargeMaxRunway",
+            {
+              "heatFrames": 1
+            },
+            "f_NeoRidleyArena_CoreXAbsorbed",
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        4,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "SpaceJump",
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "lavaFrames": 1
+                    },
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "and": [
+                    "SpaceJump",
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "SuperJump",
+                    "canWalljump",
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canIBJ",
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "heatFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "heatFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "heatFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "heatFrames": 1
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 7B700.jpg",
+  "roomAddress": "0x7B700",
   "nextStratId": 1,
   "nextNotableId": 1
 }

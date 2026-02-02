@@ -4,8 +4,6 @@
   "name": "AQA-PYR Tube",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "Misc Room Reusable 2.jpg",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,7 +63,6 @@
       ]
     }
   ],
-  "enemies": [],
   "strats": [
     {
       "name": "Base",
@@ -82,9 +79,23 @@
         1
       ],
       "requires": []
+    },
+    {
+      "name": "Leave Shinecharged",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
     }
   ],
-  "notables": [],
+  "roomImageFile": "Misc Room Reusable 2.jpg",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

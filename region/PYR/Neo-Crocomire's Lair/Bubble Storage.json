@@ -3,9 +3,7 @@
   "id": 254,
   "name": "Bubble Storage",
   "area": "PYR",
-  "subarea": "Neo-Crocomire\u0027s Lair",
-  "roomImageFile": "PYR Room 79D00.jpg",
-  "roomAddress": "0x79D00",
+  "subarea": "Neo-Crocomire's Lair",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,9 +61,137 @@
       "mapTileY": 16
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Green Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "enemies": [
+    {
+      "groupName": "Sidehoppers",
+      "enemyName": "Reo",
+      "quantity": 3,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_BubbleStorage_GreenGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Sidehopper",
+                    "type": "contact",
+                    "hits": 2
+                  }
+                },
+                "ScrewAttack",
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e1"
+                      ]
+                    ]
+                  }
+                },
+                "canTrickyDodgeEnemies"
+              ]
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_BubbleStorage_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Sidehopper",
+                    "type": "contact",
+                    "hits": 2
+                  }
+                },
+                "ScrewAttack",
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e1"
+                      ]
+                    ]
+                  }
+                },
+                "canTrickyDodgeEnemies"
+              ]
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_BubbleStorage_MissileTank_Collected"
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 79D00.jpg",
+  "roomAddress": "0x79D00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

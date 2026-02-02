@@ -4,8 +4,6 @@
   "name": "Neo-Ridley Arena",
   "area": "PYR",
   "subarea": "Lower PYR",
-  "roomImageFile": "PYR Room 7B600.jpg",
-  "roomAddress": "0x7B600",
   "roomEnvironments": [
     {
       "heated": false,
@@ -49,8 +47,8 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 80,
-          "y": 80,
+          "x": 120,
+          "y": 784,
           "w": 16,
           "h": 16
         }
@@ -61,9 +59,25 @@
       "note": ""
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_NeoRidleyArena_CoreXAbsorbed",
+        "f_ElevatorToNeoRidley_DoorsUnlocked"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "PYR Room 7B600.jpg",
+  "roomAddress": "0x7B600",
   "nextStratId": 1,
   "nextNotableId": 1
 }

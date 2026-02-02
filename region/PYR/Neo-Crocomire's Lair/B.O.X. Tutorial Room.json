@@ -3,9 +3,7 @@
   "id": 252,
   "name": "B.O.X. Tutorial Room",
   "area": "PYR",
-  "subarea": "Neo-Crocomire\u0027s Lair",
-  "roomImageFile": "PYR Room 79800.jpg",
-  "roomAddress": "0x79800",
+  "subarea": "Neo-Crocomire's Lair",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,156 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Super Missile Block",
+      "obstacleType": "abstract",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Super Missile Block",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 1
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "Grapple",
+            "SpaceJump",
+            {
+              "not": "f_XBOXArena_CoreXAbsorbed"
+            },
+            "canLongCeilingBombJump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                "SpaceJump",
+                {
+                  "and": [
+                    "SuperJump",
+                    "canWalljump"
+                  ]
+                },
+                "canIBJ",
+                "canConsecutiveAlternatingWallJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "Grapple",
+            "SpaceJump",
+            {
+              "not": "f_XBOXArena_CoreXAbsorbed"
+            },
+            "canLongCeilingBombJump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Block",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 1
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 79800.jpg",
+  "roomAddress": "0x79800",
   "nextStratId": 1,
   "nextNotableId": 1
 }

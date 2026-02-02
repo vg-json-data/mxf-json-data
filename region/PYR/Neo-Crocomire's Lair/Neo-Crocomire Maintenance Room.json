@@ -3,9 +3,7 @@
   "id": 258,
   "name": "Neo-Crocomire Maintenance Room",
   "area": "PYR",
-  "subarea": "Neo-Crocomire\u0027s Lair",
-  "roomImageFile": "PYR Room 79F00.jpg",
-  "roomAddress": "0x79F00",
+  "subarea": "Neo-Crocomire's Lair",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,43 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            {
+              "and": [
+                "SuperJump",
+                "canWalljump"
+              ]
+            },
+            {
+              "and": [
+                "canIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 79F00.jpg",
+  "roomAddress": "0x79F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

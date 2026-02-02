@@ -276,84 +276,6 @@
       "note": "Horizontal increases/decreases by 4px every frame when contracting/expanding; holds at 116 (sometimes 118) for 26 frames"
     },
     {
-      "id": 62,
-      "name": "Fune / Naminhe (Purple)",
-      "attacks": [
-        {
-          "name": "contact",
-          "baseDamage": 32
-        },
-        {
-          "name": "projectile",
-          "baseDamage": 32
-        }
-      ],
-      "hp": 544,
-      "amountOfDrops": 0,
-      "drops": {
-        "noDrop": 0,
-        "yellowX": 0,
-        "greenX": 0,
-        "redX": 0
-      },
-      "dims": {
-        "w": 28,
-        "h": 28
-      },
-      "freezable": false,
-      "grapplable": false,
-      "damageMultipliers": [],
-      "vuln": [],
-      "areas": [
-        "PYR"
-      ],
-      "note": "Horizontal increases/decreases by 4px every frame when contracting/expanding; holds at 116 (sometimes 118) for 26 frames"
-    },
-    {
-      "id": 63,
-      "name": "Fake Ship",
-      "attacks": [
-        {
-          "name": "contact",
-          "baseDamage": 32
-        },
-        {
-          "name": "projectile",
-          "baseDamage": 32
-        }
-      ],
-      "hp": 1638,
-      "amountOfDrops": 0,
-      "drops": {
-        "noDrop": 0,
-        "yellowX": 0,
-        "greenX": 0,
-        "redX": 0
-      },
-      "dims": {
-        "w": 32,
-        "h": 32
-      },
-      "freezable": false,
-      "grapplable": false,
-      "damageMultipliers": [],
-      "vuln": [
-        "Grapple",
-        "UnchargedBeam",
-        "Bombs",
-        "PowerBombBlast",
-        "ScrewAttack",
-        "Shinespark",
-        "BlueSuit",
-        "SpeedEchoes",
-        "PseudoScrew"
-      ],
-      "areas": [
-        "MDK"
-      ],
-      "note": "Horizontal increases/decreases by 4px every frame when contracting/expanding; holds at 116 (sometimes 118) for 26 frames"
-    },
-    {
       "id": 10,
       "name": "Gadora",
       "attacks": [
@@ -1969,6 +1891,118 @@
       "vuln": [],
       "areas": [
         "MDK"
+      ],
+      "note": ""
+    },
+    {
+      "id": 62,
+      "name": "Fune / Naminhe (Purple)",
+      "attacks": [
+        {
+          "name": "contact",
+          "baseDamage": 32
+        },
+        {
+          "name": "projectile",
+          "baseDamage": 32
+        }
+      ],
+      "hp": 544,
+      "amountOfDrops": 0,
+      "drops": {
+        "noDrop": 0,
+        "yellowX": 0,
+        "greenX": 0,
+        "redX": 0
+      },
+      "dims": {
+        "w": 28,
+        "h": 28
+      },
+      "freezable": false,
+      "grapplable": false,
+      "damageMultipliers": [],
+      "vuln": [],
+      "areas": [
+        "PYR"
+      ],
+      "note": "Horizontal increases/decreases by 4px every frame when contracting/expanding; holds at 116 (sometimes 118) for 26 frames"
+    },
+    {
+      "id": 63,
+      "name": "Fake Ship",
+      "attacks": [
+        {
+          "name": "contact",
+          "baseDamage": 32
+        },
+        {
+          "name": "projectile",
+          "baseDamage": 32
+        }
+      ],
+      "hp": 1638,
+      "amountOfDrops": 0,
+      "drops": {
+        "noDrop": 0,
+        "yellowX": 0,
+        "greenX": 0,
+        "redX": 0
+      },
+      "dims": {
+        "w": 32,
+        "h": 32
+      },
+      "freezable": false,
+      "grapplable": false,
+      "damageMultipliers": [],
+      "vuln": [
+        "Grapple",
+        "UnchargedBeam",
+        "Bombs",
+        "PowerBombBlast",
+        "ScrewAttack",
+        "Shinespark",
+        "BlueSuit",
+        "SpeedEchoes",
+        "PseudoScrew"
+      ],
+      "areas": [
+        "MDK"
+      ],
+      "note": "Horizontal increases/decreases by 4px every frame when contracting/expanding; holds at 116 (sometimes 118) for 26 frames"
+    },
+    {
+      "id": 64,
+      "name": "Zebesian (Red)",
+      "attacks": [
+        {
+          "name": "contact",
+          "baseDamage": 144
+        },
+        {
+          "name": "laser",
+          "baseDamage": 384
+        }
+      ],
+      "hp": 904,
+      "amountOfDrops": 0,
+      "drops": {
+        "noDrop": 0,
+        "yellowX": 0,
+        "greenX": 0,
+        "redX": 0
+      },
+      "dims": {
+        "w": 32,
+        "h": 52
+      },
+      "freezable": false,
+      "grapplable": false,
+      "damageMultipliers": [],
+      "vuln": [],
+      "areas": [
+        "PYR"
       ],
       "note": ""
     }

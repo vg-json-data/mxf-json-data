@@ -4,11 +4,9 @@
   "name": "Yameba Gauntlet",
   "area": "PYR",
   "subarea": "Lower PYR",
-  "roomImageFile": "PYR Room 7A900.jpg",
-  "roomAddress": "0x7A900",
   "roomEnvironments": [
     {
-      "heated": false,
+      "heated": true,
       "cold": false
     }
   ],
@@ -22,7 +20,9 @@
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -33,11 +33,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_ElevatorToNeoRidley_DoorsUnlocked"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -65,9 +104,138 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Yameba",
+      "enemyName": "Yameba (Large)",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Small Yameba",
+      "enemyName": "Yameba (Small)",
+      "quantity": 5,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e2"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "SpaceJump",
+                {
+                  "heatFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                "canCarefulJump",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        {
+                          "and": [
+                            "canDodgeWhileShooting",
+                            "canTrickyDodgeEnemies"
+                          ]
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1",
+                            "e2"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "SpaceJump",
+                {
+                  "heatFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                "canCarefulJump",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        {
+                          "and": [
+                            "canDodgeWhileShooting",
+                            "canTrickyDodgeEnemies"
+                          ]
+                        },
+                        {
+                          "heatFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1",
+                            "e2"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 7A900.jpg",
+  "roomAddress": "0x7A900",
   "nextStratId": 1,
   "nextNotableId": 1
 }

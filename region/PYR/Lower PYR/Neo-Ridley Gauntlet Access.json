@@ -4,11 +4,9 @@
   "name": "Neo-Ridley Gauntlet Access",
   "area": "PYR",
   "subarea": "Lower PYR",
-  "roomImageFile": "PYR Room 7B000.jpg",
-  "roomAddress": "0x7B000",
   "roomEnvironments": [
     {
-      "heated": false,
+      "heated": true,
       "cold": false
     }
   ],
@@ -111,9 +109,99 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "heatFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "heatFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "heatFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "heatFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "heatFrames": 1
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "SuperJump",
+                    "canWalljump"
+                  ]
+                },
+                "canConsecutiveAlternatingWallJump",
+                "SpaceJump",
+                "canIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "heatFrames": 1
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 7B000.jpg",
+  "roomAddress": "0x7B000",
   "nextStratId": 1,
   "nextNotableId": 1
 }

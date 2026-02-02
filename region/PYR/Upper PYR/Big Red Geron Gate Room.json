@@ -4,8 +4,6 @@
   "name": "Big Red Geron Gate Room",
   "area": "PYR",
   "subarea": "Upper PYR",
-  "roomImageFile": "PYR Room 79600.jpg",
-  "roomAddress": "0x79600",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,123 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Geruta (Left)",
+      "enemyName": "Geruta",
+      "quantity": 4,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Geruta (Right)",
+      "enemyName": "Geruta",
+      "quantity": 2,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e2"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Wave",
+            {
+              "or": [
+                "Grapple",
+                {
+                  "and": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1"
+                          ]
+                        ]
+                      }
+                    },
+                    "canLongIBJ"
+                  ]
+                },
+                "SpaceJump",
+                "canConsecutiveSingleWallJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "canCrouchJump",
+                "h_JumpAssist"
+              ]
+            },
+            {
+              "or": [
+                "canTrickyDodgeEnemies",
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e2"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "or": [
+                    {
+                      "enemyDamage": {
+                        "enemy": "Geruta",
+                        "type": "contact",
+                        "hits": 2
+                      }
+                    },
+                    {
+                      "and": [
+                        {
+                          "enemyDamage": {
+                            "enemy": "Geruta",
+                            "type": "contact",
+                            "hits": 1
+                          }
+                        },
+                        "canWalljump"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 79600.jpg",
+  "roomAddress": "0x79600",
   "nextStratId": 1,
   "nextNotableId": 1
 }

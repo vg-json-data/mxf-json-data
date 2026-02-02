@@ -4,8 +4,6 @@
   "name": "Boiler Room",
   "area": "PYR",
   "subarea": "Lower PYR",
-  "roomImageFile": "PYR Room 7A600.jpg",
-  "roomAddress": "0x7A600",
   "roomEnvironments": [
     {
       "heated": false,
@@ -61,9 +59,40 @@
       "note": ""
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_BoilerRoom_ReserveXCollected"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "PYR Room 7A600.jpg",
+  "roomAddress": "0x7A600",
   "nextStratId": 1,
   "nextNotableId": 1
 }

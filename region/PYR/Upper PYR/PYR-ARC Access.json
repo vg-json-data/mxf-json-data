@@ -4,8 +4,6 @@
   "name": "PYR-ARC Access",
   "area": "PYR",
   "subarea": "Upper PYR",
-  "roomImageFile": "PYR Room 79500.jpg",
-  "roomAddress": "0x79500",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,95 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Wave Gates",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "enemies": [
+    {
+      "groupName": "Sidehoppers",
+      "enemyName": "Sidehopper",
+      "quantity": 3,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canDodgeWhileShooting",
+                "canTrickyDodgeEnemies"
+              ]
+            },
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            {
+              "enemyDamage": {
+                "enemy": "Zeebo-X",
+                "type": "contact",
+                "hits": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "note": "All enemies are easily-dodgeable, especially since Wave is required for this room",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Open Wave Gate",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "Wave"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 79500.jpg",
+  "roomAddress": "0x79500",
   "nextStratId": 1,
   "nextNotableId": 1
 }

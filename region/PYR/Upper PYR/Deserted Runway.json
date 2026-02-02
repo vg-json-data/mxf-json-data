@@ -4,8 +4,6 @@
   "name": "Deserted Runway",
   "area": "PYR",
   "subarea": "Upper PYR",
-  "roomImageFile": "PYR Room 79100.jpg",
-  "roomAddress": "0x79100",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,136 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Orange Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Kill Orange Geron",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_killOrangeGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_DesertedRunway_OrangeGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canDodgeWhileShooting",
+                "canTrickyDodgeEnemies"
+              ]
+            },
+            {
+              "enemyDamage": {
+                "enemy": "Sidehopper",
+                "type": "contact",
+                "hits": 2
+              }
+            },
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canDodgeWhileShooting",
+                "canTrickyDodgeEnemies"
+              ]
+            },
+            {
+              "enemyDamage": {
+                "enemy": "Sidehopper",
+                "type": "contact",
+                "hits": 2
+              }
+            },
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Orange Geron",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "h_killOrangeGeron",
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_DesertedRunway_OrangeGeronDestroyed"
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 79100.jpg",
+  "roomAddress": "0x79100",
   "nextStratId": 1,
   "nextNotableId": 1
 }

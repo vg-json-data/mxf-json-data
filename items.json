@@ -1999,6 +1999,12 @@
         "description": "[Phantomire Arena] Doors Unlocked"
       },
       {
+        "name": "f_PYRSecurityRoom_DoorsUnlocked",
+        "address": "7ED8B7",
+        "bit": 1,
+        "description": "[PYR Security Room] Doors Unlocked"
+      },
+      {
         "name": "f_ElevatorToNeoRidley_DoorsUnlocked",
         "address": "7ED8B7",
         "bit": 3,
@@ -2045,6 +2051,12 @@
         "address": "7ED8B9",
         "bit": 3,
         "description": "[Drowned Junction] Doors Unlocked"
+      },
+      {
+        "name": "f_AQAPYRAccess_OrangeGeronDestroyed",
+        "address": "7ED8B9",
+        "bit": 4,
+        "description": "[AQA-PYR Access] Orange Geron Destroyed"
       },
       {
         "name": "f_ARCSecurityRoom_DoorsUnlocked",

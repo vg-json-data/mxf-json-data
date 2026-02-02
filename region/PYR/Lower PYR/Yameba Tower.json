@@ -4,11 +4,9 @@
   "name": "Yameba Tower",
   "area": "PYR",
   "subarea": "Lower PYR",
-  "roomImageFile": "PYR Room 7A500.jpg",
-  "roomAddress": "0x7A500",
   "roomEnvironments": [
     {
-      "heated": false,
+      "heated": true,
       "cold": false
     }
   ],
@@ -88,9 +86,76 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "heatFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "heatFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "metroidFrames": 1
+                },
+                {
+                  "heatFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "metroidFrames": 1
+            },
+            {
+              "heatFrames": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 7A500.jpg",
+  "roomAddress": "0x7A500",
   "nextStratId": 1,
   "nextNotableId": 1
 }

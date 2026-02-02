@@ -63,14 +63,73 @@
       ]
     }
   ],
+  "obstacles": [
+    {
+      "name": "Super Missile Blocks",
+      "obstacleType": "inanimate",
+      "note": "In v1.3, the destroyed version of this room now has Super Missile Blocks instead of Screw Attack Blocks",
+      "id": "A"
+    }
+  ],
   "strats": [
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
     {
       "name": "Base",
       "link": [
         1,
         2
       ],
-      "requires": []
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Morph",
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                }
+              ]
+            },
+            {
+              "resourceAtMost": [
+                {
+                  "type": "PowerBomb",
+                  "count": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Base",
@@ -78,7 +137,58 @@
         2,
         1
       ],
-      "requires": []
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Morph",
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                }
+              ]
+            },
+            {
+              "resourceAtMost": [
+                {
+                  "type": "PowerBomb",
+                  "count": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
     }
   ],
   "roomImageFile": "MDK Room 14.png",

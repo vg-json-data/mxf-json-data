@@ -4,8 +4,6 @@
   "name": "Sova Processing Access",
   "area": "PYR",
   "subarea": "Upper PYR",
-  "roomImageFile": "PYR Room 78E00.jpg",
-  "roomAddress": "0x78E00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -96,10 +94,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 320,
-          "y": 624,
-          "w": 48,
-          "h": 24
+          "x": 464,
+          "y": 640,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -107,11 +105,182 @@
       "nodeAddress": "0x7DA36",
       "mapTileX": 23,
       "mapTileY": 17
+    },
+    {
+      "id": 5,
+      "name": "At Crumble Wall",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 88,
+          "w": 32,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "abstract",
+      "id": "A"
+    },
+    {
+      "name": "Crumble Wall",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Leave Shinecharged",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            "h_shinechargeMaxRunway",
+            "SpeedBoosterLv2"
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Crumble Wall",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        "Morph"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Destroy Speed Booster Blocks",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_SovaProcessingAccess_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            "h_JumpAssist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": [
+        "canTrivialMidAirMorph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "PYR Room 78E00.jpg",
+  "roomAddress": "0x78E00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

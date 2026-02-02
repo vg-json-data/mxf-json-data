@@ -4,8 +4,6 @@
   "name": "MDK-AQA Elevator Cache",
   "area": "MDK",
   "subarea": "West Main Deck",
-  "roomImageFile": "MDK Room 9.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,9 +61,65 @@
       "mapTileY": 18
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Come In Shinecharged, Break Speed Booster Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "clearsObstacles": [
+        "A"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_MDKAQAElevatorCache_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "MDK Room 9.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

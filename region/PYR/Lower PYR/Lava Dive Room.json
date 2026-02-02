@@ -4,8 +4,6 @@
   "name": "Lava Dive Room",
   "area": "PYR",
   "subarea": "Lower PYR",
-  "roomImageFile": "PYR Room 7A300.jpg",
-  "roomAddress": "0x7A300",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,11 +61,364 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Top of Red Region",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 192,
+          "y": 432,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Wave",
+            "Morph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "Morph",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "heatFrames": 1
+                            },
+                            {
+                              "lavaFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "canSuitlessLavaDive",
+                            {
+                              "heatFrames": 1
+                            },
+                            {
+                              "lavaFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "ScrewAttack",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "heatFrames": 1
+                            },
+                            {
+                              "lavaFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "canSuitlessLavaDive",
+                            {
+                              "heatFrames": 1
+                            },
+                            {
+                              "lavaFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "ScrewAttack",
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "SpaceJump",
+                            {
+                              "heatFrames": 1
+                            },
+                            {
+                              "lavaFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "canConsecutiveAlternatingWallJump",
+                            {
+                              "heatFrames": 1
+                            },
+                            {
+                              "lavaFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessLavaDive",
+                    "canUnderwaterWalljump",
+                    {
+                      "heatFrames": 1
+                    },
+                    {
+                      "lavaFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Top of Red Region",
+      "link": [
+        2,
+        3
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "heatFrames": 1
+                    },
+                    {
+                      "lavaFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessLavaDive",
+                    {
+                      "heatFrames": 1
+                    },
+                    {
+                      "lavaFrames": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "shinespark": {
+                "frames": 21
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "SpaceJump"
+                  ]
+                },
+                {
+                  "and": [
+                    "canConsecutiveAlternatingWallJump"
+                  ]
+                },
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "SpaceJump",
+                            {
+                              "heatFrames": 1
+                            },
+                            {
+                              "lavaFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "canConsecutiveAlternatingWallJump",
+                            {
+                              "heatFrames": 1
+                            },
+                            {
+                              "lavaFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessLavaDive",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "canUnderwaterWalljump",
+                            {
+                              "heatFrames": 1
+                            },
+                            {
+                              "lavaFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "SpaceJump",
+                        {
+                          "heatFrames": 1
+                        },
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canConsecutiveAlternatingWallJump",
+                        {
+                          "heatFrames": 1
+                        },
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canLongIBJ",
+                        {
+                          "heatFrames": 1
+                        },
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "canSuitlessLavaDive",
+                "canUnderwaterWalljump",
+                {
+                  "heatFrames": 1
+                },
+                {
+                  "lavaFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 7A300.jpg",
+  "roomAddress": "0x7A300",
   "nextStratId": 1,
   "nextNotableId": 1
 }

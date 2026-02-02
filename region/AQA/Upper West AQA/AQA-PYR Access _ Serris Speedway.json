@@ -4,8 +4,6 @@
   "name": "AQA-PYR Access / Serris Speedway",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 7B200.jpg",
-  "roomAddress": "0x7B200",
   "roomEnvironments": [
     {
       "heated": false,
@@ -130,11 +128,134 @@
       "nodeAddress": "0x7DE32",
       "mapTileX": 20,
       "mapTileY": 9
+    },
+    {
+      "id": 6,
+      "name": "Right of Orange Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 184,
+          "y": 96,
+          "w": 56,
+          "h": 64
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Orange Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        6
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Destroy Orange Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_killOrangeGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        6
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "SpaceJump",
+                "SuperJump",
+                {
+                  "and": [
+                    "SpikeBreaker",
+                    "canWalljump"
+                  ]
+                },
+                "canIBJ",
+                {
+                  "and": [
+                    {
+                      "spikeHits": 1
+                    },
+                    "canTrickyWalljump"
+                  ]
+                }
+              ]
+            },
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Orange Geron",
+      "link": [
+        6,
+        6
+      ],
+      "requires": [
+        "h_killOrangeGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 7B200.jpg",
+  "roomAddress": "0x7B200",
   "nextStratId": 1,
   "nextNotableId": 1
 }

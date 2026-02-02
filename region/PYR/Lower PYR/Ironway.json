@@ -4,11 +4,9 @@
   "name": "Ironway",
   "area": "PYR",
   "subarea": "Lower PYR",
-  "roomImageFile": "PYR Room 7AE00.jpg",
-  "roomAddress": "0x7AE00",
   "roomEnvironments": [
     {
-      "heated": false,
+      "heated": true,
       "cold": false
     }
   ],
@@ -111,9 +109,190 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks (Left)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "enemies": [
+    {
+      "groupName": "Red Zebesians",
+      "enemyName": "Zebesian (Red)",
+      "quantity": 3,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            "h_shinechargeMaxRunway",
+            {
+              "heatFrames": 1
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canTrickyDodgeEnemies",
+                {
+                  "heatFrames": 104
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Zebesian (Red)",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "heatFrames": 230
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            "Morph",
+            {
+              "heatFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canTrickyDodgeEnemies",
+                {
+                  "heatFrames": 104
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Zebesian (Red)",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "heatFrames": 230
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_bombThings",
+            "Morph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "Bombs",
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "ammo": {
+                        "type": "PowerBomb",
+                        "count": 1
+                      }
+                    },
+                    {
+                      "heatFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "PYR Room 7AE00.jpg",
+  "roomAddress": "0x7AE00",
   "nextStratId": 1,
   "nextNotableId": 1
 }
