@@ -557,7 +557,7 @@
                         "canLateralMidAirMorph"
                       ],
                       "otherRequires": [
-                        "SpringBall"
+                        "SuperJump"
                       ],
                       "note": "Using a lateral mid-air morph to bounce off a surface with Spring Ball while retaining previous momentum.",
                       "devNote": "",
@@ -1085,7 +1085,7 @@
             "canMidAirMorph"
           ],
           "otherRequires": [
-            "SpringBall"
+            "SuperJump"
           ],
           "note": [
             "It is possible to use Spring Ball while mid-air, if Samus is still climbing upwards. This gives an additional jump, allowing her to go higher.",
@@ -1171,7 +1171,7 @@
           ],
           "otherRequires": [
             "Morph",
-            "SpringBall"
+            "SuperJump"
           ],
           "note": [
             "The ability to gain extra distance merely by turning Springball on or off.",
@@ -1616,7 +1616,7 @@
               "otherRequires": [
                 {
                   "or": [
-                    "SpringBall",
+                    "SuperJump",
                     "canMidAirMorph"
                   ]
                 }
@@ -1722,7 +1722,7 @@
           "techRequires": [],
           "otherRequires": [
             "Morph",
-            "SpringBall",
+            "SuperJump",
             {
               "or": [
                 "Bombs",
@@ -2868,7 +2868,7 @@
               "otherRequires": [
                 {
                   "or": [
-                    "SpringBall",
+                    "SuperJump",
                     "canMidAirMorph"
                   ]
                 }

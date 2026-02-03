@@ -31,7 +31,7 @@
       "categories": [
         "All"
       ],
-      "additionalComments": "Startup: [16x16] for 2 frames \u2192 [32x16] until it dies."
+      "additionalComments": "Startup: [16x16] for 2 frames → [32x16] until it dies."
     },
     {
       "id": 3,
@@ -63,7 +63,7 @@
       "categories": [
         "All"
       ],
-      "additionalComments": "Startup: [16x16] for 10 frames \u2192 [16x32] until it dies."
+      "additionalComments": "Startup: [16x16] for 10 frames → [16x32] until it dies."
     },
     {
       "id": 5,
@@ -79,7 +79,7 @@
       "categories": [
         "All"
       ],
-      "additionalComments": "Startup: [16x24] for 6 frames \u2192 [16x32] until it dies."
+      "additionalComments": "Startup: [16x24] for 6 frames → [16x32] until it dies."
     },
     {
       "id": 6,
@@ -95,7 +95,7 @@
       "categories": [
         "All"
       ],
-      "additionalComments": "Startup: [16x16] for 2 frames \u2192 [24x24] until it dies."
+      "additionalComments": "Startup: [16x16] for 2 frames → [24x24] until it dies."
     },
     {
       "id": 7,
@@ -152,11 +152,11 @@
     },
     {
       "id": 10,
-      "name": "Loop: cycles between heights 40 \u2192 36 \u2192 32 \u2192 24 \u2192 16 \u2192 24 \u2192 32 with corresponding frame durations.",
+      "name": "Loop: cycles between heights 40 → 36 → 32 → 24 → 16 → 24 → 32 with corresponding frame durations.",
       "damage": 0,
       "cooldownFrames": 15,
       "useRequires": [
-        "Loop: cycles between heights 40 \u2192 36 \u2192 32 \u2192 24 \u2192 16 \u2192 24 \u2192 32 with corresponding frame durations."
+        "Loop: cycles between heights 40 → 36 → 32 → 24 → 16 → 24 → 32 with corresponding frame durations."
       ],
       "shotRequires": [],
       "situational": false,
@@ -180,7 +180,7 @@
         "All",
         "Missile"
       ],
-      "additionalComments": "Startup: [8x8] while travelling \u2192 [16x16] on impact \u2192 [24x24] at peak impact."
+      "additionalComments": "Startup: [8x8] while travelling → [16x16] on impact → [24x24] at peak impact."
     },
     {
       "id": 12,
@@ -197,7 +197,7 @@
         "All",
         "Missile"
       ],
-      "additionalComments": "Loop: cycles hitbox ([16x16] 3 frames \u2192 [24x24] 3 frames \u2192 [32x32] 14 frames)."
+      "additionalComments": "Loop: cycles hitbox ([16x16] 3 frames → [24x24] 3 frames → [32x32] 14 frames)."
     },
     {
       "id": 13,
@@ -207,14 +207,21 @@
       "useRequires": [
         "Missile"
       ],
-      "shotRequires": [],
+      "shotRequires": [
+        {
+          "ammo": {
+            "type": "Missile",
+            "count": 1
+          }
+        }
+      ],
       "situational": false,
       "hitsGroup": false,
       "categories": [
         "All",
         "Missile"
       ],
-      "additionalComments": "Startup: [8x8] while travelling \u2192 [16x16] on impact."
+      "note": "Base missile - requires having missile capacity"
     },
     {
       "id": 14,
@@ -224,22 +231,28 @@
       "useRequires": [
         "SuperMissile"
       ],
-      "shotRequires": [],
+      "shotRequires": [
+        {
+          "ammo": {
+            "type": "Missile",
+            "count": 1
+          }
+        }
+      ],
       "situational": false,
       "hitsGroup": false,
       "categories": [
         "All",
         "Missile"
-      ],
-      "additionalComments": "Startup: [8x8] while travelling \u2192 [16x16] on impact \u2192 [24x24] at peak impact."
+      ]
     },
     {
       "id": 15,
-      "name": "Super Missile\u002BIce Missile",
+      "name": "Super Missile+Ice Missile",
       "damage": 300,
       "cooldownFrames": 15,
       "useRequires": [
-        "Super Missile\u002BIce Missile"
+        "Super Missile+Ice Missile"
       ],
       "shotRequires": [],
       "situational": false,
@@ -248,15 +261,15 @@
         "All",
         "Missile"
       ],
-      "additionalComments": "Startup: [8x8] while travelling \u2192 [16x16] on impact \u2192 [24x24] at peak impact."
+      "additionalComments": "Startup: [8x8] while travelling → [16x16] on impact → [24x24] at peak impact."
     },
     {
       "id": 16,
-      "name": "Super Missile\u002BDiffusion Missile",
+      "name": "Super Missile+Diffusion Missile",
       "damage": 200,
       "cooldownFrames": 15,
       "useRequires": [
-        "Super Missile\u002BDiffusion Missile"
+        "Super Missile+Diffusion Missile"
       ],
       "shotRequires": [],
       "situational": false,
@@ -265,7 +278,7 @@
         "All",
         "Missile"
       ],
-      "additionalComments": "Startup: [8x8] while travelling \u2192 [16x16] on impact \u2192 [24x24] at peak impact."
+      "additionalComments": "Startup: [8x8] while travelling → [16x16] on impact → [24x24] at peak impact."
     },
     {
       "id": 17,
@@ -275,22 +288,28 @@
       "useRequires": [
         "IceMissile"
       ],
-      "shotRequires": [],
+      "shotRequires": [
+        {
+          "ammo": {
+            "type": "Missile",
+            "count": 1
+          }
+        }
+      ],
       "situational": false,
       "hitsGroup": false,
       "categories": [
         "All",
         "Missile"
-      ],
-      "additionalComments": "Startup: [8x8] while travelling \u2192 [16x16] on impact."
+      ]
     },
     {
       "id": 18,
-      "name": "Ice Missile\u002BDiffusion Missile",
+      "name": "Ice Missile+Diffusion Missile",
       "damage": 100,
       "cooldownFrames": 15,
       "useRequires": [
-        "Ice Missile\u002BDiffusion Missile"
+        "Ice Missile+Diffusion Missile"
       ],
       "shotRequires": [],
       "situational": false,
@@ -299,7 +318,7 @@
         "All",
         "Missile"
       ],
-      "additionalComments": "Startup: [8x8] while travelling \u2192 [16x16] on impact."
+      "additionalComments": "Startup: [8x8] while travelling → [16x16] on impact."
     },
     {
       "id": 19,
@@ -309,14 +328,20 @@
       "useRequires": [
         "DiffusionMissile"
       ],
-      "shotRequires": [],
+      "shotRequires": [
+        {
+          "ammo": {
+            "type": "Missile",
+            "count": 1
+          }
+        }
+      ],
       "situational": false,
       "hitsGroup": false,
       "categories": [
         "All",
         "Missile"
-      ],
-      "additionalComments": "Startup: [8x8] while travelling \u2192 [16x16] on impact."
+      ]
     },
     {
       "id": 20,
@@ -357,34 +382,46 @@
         "UnchargedBeamNoPlasma",
         "UnchargedWideBeam"
       ],
-      "additionalComments": "Startup: [16x16] for 10 frames \u2192 [16x32] until it dies."
+      "additionalComments": "Startup: [16x16] for 10 frames → [16x32] until it dies."
     },
-
     {
       "id": 27,
       "name": "Bombs",
       "damage": 30,
       "cooldownFrames": 16,
-      "useRequires": ["Morph", "Bombs"],
+      "useRequires": [
+        "Morph",
+        "Bombs"
+      ],
       "situational": false,
       "hitsGroup": false,
-      "categories": ["All"]
+      "categories": [
+        "All"
+      ]
     },
     {
       "id": 28,
       "name": "PowerBomb",
       "damage": 400,
       "cooldownFrames": 160,
-      "useRequires": ["Morph", "PowerBomb"],
+      "useRequires": [
+        "Morph",
+        "PowerBomb"
+      ],
       "shotRequires": [
-        {"ammo": {
-          "type": "PowerBomb",
-          "count": 1
-        }}
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
       ],
       "situational": false,
       "hitsGroup": true,
-      "categories": ["All", "PowerBombBlast"],
+      "categories": [
+        "All",
+        "PowerBombBlast"
+      ],
       "note": "The regular Power Bomb weapon assumes the enemy is near the center of the blast and gets hit twice per Power Bomb, hence the 400 damage"
     },
     {
@@ -392,16 +429,24 @@
       "name": "PowerBombPeriphery",
       "damage": 200,
       "cooldownFrames": 160,
-      "useRequires": ["Morph", "PowerBomb"],
+      "useRequires": [
+        "Morph",
+        "PowerBomb"
+      ],
       "shotRequires": [
-        {"ammo": {
-          "type": "PowerBomb",
-          "count": 1
-        }}
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
       ],
       "situational": true,
       "hitsGroup": true,
-      "categories": ["All", "PowerBombBlast"],
+      "categories": [
+        "All",
+        "PowerBombBlast"
+      ],
       "note": [
         "This weapon assumes the enemy is far from the center of the blast and gets hit only once per Power Bomb, hence the 200 damage.",
         "This weapon is situational because it's assumed PBs will hit twice under normal circumstances."
@@ -412,10 +457,14 @@
       "name": "ScrewAttack",
       "damage": 2000,
       "cooldownFrames": 1,
-      "useRequires": ["ScrewAttack"],
+      "useRequires": [
+        "ScrewAttack"
+      ],
       "situational": false,
       "hitsGroup": false,
-      "categories": ["All"],
+      "categories": [
+        "All"
+      ],
       "note": "Damage is per frame"
     },
     {
@@ -423,8 +472,14 @@
       "name": "PseudoScrew",
       "damage": 200,
       "cooldownFrames": 60,
-      "useRequires": ["canPseudoScrew", "Charge", "PowerBeam"],
-      "categories": ["All"],
+      "useRequires": [
+        "canPseudoScrew",
+        "Charge",
+        "PowerBeam"
+      ],
+      "categories": [
+        "All"
+      ],
       "situational": true,
       "hitsGroup": false,
       "note": "This is situational because it also causes contact damage for every time it is used without killing the enemy"
@@ -434,8 +489,12 @@
       "name": "Shinespark",
       "damage": 300,
       "cooldownFrames": 1,
-      "useRequires": ["SpeedBooster"],
-      "categories": ["All"],
+      "useRequires": [
+        "SpeedBooster"
+      ],
+      "categories": [
+        "All"
+      ],
       "situational": true,
       "hitsGroup": false,
       "note": "Damage is per frame. This is situational because charging Speed Booster is situational"
@@ -445,8 +504,12 @@
       "name": "BlueSuit",
       "damage": 500,
       "cooldownFrames": 1,
-      "useRequires": ["SpeedBooster"],
-      "categories": ["All"],
+      "useRequires": [
+        "SpeedBooster"
+      ],
+      "categories": [
+        "All"
+      ],
       "situational": true,
       "hitsGroup": false,
       "note": "Damage is per frame. This is situational because charging Speed Booster is situational"
@@ -456,8 +519,12 @@
       "name": "SpeedEchoes",
       "damage": 4096,
       "cooldownFrames": 1,
-      "useRequires": ["SpeedBooster"],
-      "categories": ["All"],
+      "useRequires": [
+        "SpeedBooster"
+      ],
+      "categories": [
+        "All"
+      ],
       "situational": true,
       "hitsGroup": false,
       "note": "Damage is per frame. This is situational because charging Speed Booster is situational"
@@ -467,8 +534,13 @@
       "name": "Grapple",
       "damage": 200,
       "cooldownFrames": 15,
-      "useRequires": [ "canUseGrapple", "Grapple" ],
-      "categories": ["All"],
+      "useRequires": [
+        "canUseGrapple",
+        "Grapple"
+      ],
+      "categories": [
+        "All"
+      ],
       "situational": false,
       "hitsGroup": false,
       "note": "The damage of 200 is a pure guess. It's the most HP an enemy vulnerable to it has (Scizer)."
