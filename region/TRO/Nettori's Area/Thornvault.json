@@ -254,6 +254,35 @@
       ]
     },
     {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "SpikeBreaker",
+            {
+              "resourceConsumed": [
+                {
+                  "type": "RegularEnergy",
+                  "count": 60
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_Thornvault_MissileTank_Collected"
+      ]
+    },
+    {
       "name": "Destroy Kago-X",
       "link": [
         5,
