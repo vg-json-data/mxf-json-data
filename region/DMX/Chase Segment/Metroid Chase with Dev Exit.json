@@ -4,8 +4,6 @@
   "name": "Metroid Chase with Dev Exit",
   "area": "DMX",
   "subarea": "Chase Segment",
-  "roomImageFile": "DMX Room 78D00.jpg",
-  "roomAddress": "0x78D00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "DMX Room 78D00.jpg",
+  "roomAddress": "0x78D00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

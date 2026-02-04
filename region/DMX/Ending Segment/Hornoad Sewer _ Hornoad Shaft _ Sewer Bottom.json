@@ -4,8 +4,6 @@
   "name": "Hornoad Sewer / Hornoad Shaft / Sewer Bottom",
   "area": "DMX",
   "subarea": "Ending Segment",
-  "roomImageFile": "DMX Room 79600.jpg",
-  "roomAddress": "0x79600",
   "roomEnvironments": [
     {
       "heated": false,
@@ -157,9 +155,58 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        5
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "DMX Room 79600.jpg",
+  "roomAddress": "0x79600",
   "nextStratId": 1,
   "nextNotableId": 1
 }

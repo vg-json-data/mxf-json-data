@@ -4,8 +4,6 @@
   "name": "DMX Missile Check / DMX Stairs Climb",
   "area": "DMX",
   "subarea": "Chase Segment",
-  "roomImageFile": "DMX Room 79400.jpg",
-  "roomAddress": "0x79400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -111,9 +109,87 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Red Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Kill Red Geron",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_killRedGeron"
+      ],
+      "setsFlags": [
+        "f_MissileCheck_RedGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Red Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_killRedGeron"
+      ],
+      "setsFlags": [
+        "f_MissileCheck_RedGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "DMX Room 79400.jpg",
+  "roomAddress": "0x79400",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "Gold Gadora-X Arena",
   "area": "DMX",
   "subarea": "Ending Segment",
-  "roomImageFile": "DMX Room 79800.jpg",
-  "roomAddress": "0x79800",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "DMX Room 79800.jpg",
+  "roomAddress": "0x79800",
   "nextStratId": 1,
   "nextNotableId": 1
 }

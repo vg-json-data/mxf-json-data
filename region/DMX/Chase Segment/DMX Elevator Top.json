@@ -4,8 +4,6 @@
   "name": "DMX Elevator Top",
   "area": "DMX",
   "subarea": "Chase Segment",
-  "roomImageFile": "DMX Room 79300.jpg",
-  "roomAddress": "0x79300",
   "roomEnvironments": [
     {
       "heated": false,
@@ -22,7 +20,9 @@
       "id": 1,
       "name": "Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "eye",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -33,12 +33,37 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
       ]
     },
     {
@@ -65,9 +90,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "DMX Room 79300.jpg",
+  "roomAddress": "0x79300",
   "nextStratId": 1,
   "nextNotableId": 1
 }
