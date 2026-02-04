@@ -233,7 +233,17 @@
                 "canIBJ"
               ]
             },
-            "Wave"
+            {
+              "or": [
+                "Wave",
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            }
           ]
         }
       ],

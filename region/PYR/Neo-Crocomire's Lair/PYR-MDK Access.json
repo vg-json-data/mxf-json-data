@@ -86,8 +86,9 @@
   ],
   "obstacles": [
     {
-      "name": "Screw Attack Blocks",
+      "name": "Super Missile Blocks",
       "obstacleType": "inanimate",
+      "note": "These were changed from Screw Attack blocks after v1.3 beta 2.",
       "id": "A"
     }
   ],
@@ -125,7 +126,22 @@
       "requires": [
         {
           "and": [
-            "ScrewAttack",
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
             {
               "heatFrames": 1
             }
@@ -188,7 +204,22 @@
       "requires": [
         {
           "and": [
-            "ScrewAttack",
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
             {
               "heatFrames": 1
             }
@@ -217,7 +248,22 @@
       "requires": [
         {
           "and": [
-            "ScrewAttack",
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
             {
               "heatFrames": 1
             }
@@ -252,7 +298,22 @@
       "requires": [
         {
           "and": [
-            "ScrewAttack",
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
             {
               "heatFrames": 1
             }

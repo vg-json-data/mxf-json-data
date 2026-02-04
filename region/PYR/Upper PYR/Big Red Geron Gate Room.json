@@ -95,7 +95,17 @@
       "requires": [
         {
           "and": [
-            "Wave",
+            {
+              "or": [
+                "Wave",
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
             {
               "or": [
                 "Grapple",

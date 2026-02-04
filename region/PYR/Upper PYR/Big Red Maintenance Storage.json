@@ -158,7 +158,7 @@
     },
     {
       "id": 6,
-      "name": "Left of Wave Gate",
+      "name": "Left of One-Way Gate",
       "nodeType": "junction",
       "nodeSubType": "visible",
       "geometry": [
@@ -180,7 +180,7 @@
       "id": "A"
     },
     {
-      "name": "Wave Gate",
+      "name": "One-Way Gate",
       "obstacleType": "inanimate",
       "id": "B"
     }
@@ -322,7 +322,17 @@
         4
       ],
       "requires": [
-        "Wave"
+        {
+          "or": [
+            "Wave",
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
       ],
       "clearsObstacles": [
         "B"
