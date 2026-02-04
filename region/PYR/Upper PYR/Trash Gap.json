@@ -106,7 +106,7 @@
               "and": [
                 "SpaceJump",
                 {
-                  "heatFrames": 500
+                  "heatFrames": 254
                 }
               ]
             },
