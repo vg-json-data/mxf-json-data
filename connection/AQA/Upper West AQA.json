@@ -578,7 +578,7 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Drain Pipe - Bottom-Left Door] and [Resevoir West - Top-Right Door]",
+      "description": "Horizontal Door connection between [Drain Pipe - Bottom-Left Door] and [Reservoir West - Top-Right Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
@@ -594,7 +594,7 @@
           "area": "AQA",
           "subarea": "Upper West AQA",
           "roomid": 58,
-          "roomName": "Resevoir West",
+          "roomName": "Reservoir West",
           "nodeid": 2,
           "nodeName": "Top-Right Door",
           "position": "right"
@@ -603,7 +603,7 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Floodbot Quarters - Right Door] and [Resevoir West - Top-Left Door]",
+      "description": "Horizontal Door connection between [Floodbot Quarters - Right Door] and [Reservoir West - Top-Left Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
@@ -619,7 +619,7 @@
           "area": "AQA",
           "subarea": "Upper West AQA",
           "roomid": 58,
-          "roomName": "Resevoir West",
+          "roomName": "Reservoir West",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
           "position": "left"

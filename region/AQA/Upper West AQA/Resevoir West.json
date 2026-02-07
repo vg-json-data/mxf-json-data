@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
   "id": 58,
-  "name": "Resevoir West",
+  "name": "Reservoir West",
   "area": "AQA",
   "subarea": "Upper West AQA",
   "roomEnvironments": [
@@ -154,7 +154,101 @@
         4
       ],
       "requires": [
-        "h_destroyBombWalls"
+        {
+          "and": [
+            "h_destroyBombWalls",
+            {
+              "or": [
+                {
+                  "or": [
+                    {
+                      "aqaWaterLevel": 2
+                    },
+                    "f_AQAAuxiliaryRoom_Engaged"
+                  ]
+                },
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "ScrewAttack",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "Bombs",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "ammo": {
+                                "type": "PowerBomb",
+                                "count": 1
+                              }
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "disableEquipment": "Gravity"
+                    },
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "ScrewAttack",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "Bombs",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "ammo": {
+                                "type": "PowerBomb",
+                                "count": 1
+                              }
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       ],
       "clearsObstacles": [
         "A"
@@ -167,7 +261,33 @@
         5
       ],
       "requires": [
-        "Morph"
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "disableEquipment": "Gravity"
+                    },
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -182,13 +302,61 @@
             "canTrivialMidAirMorph",
             {
               "or": [
-                "Grapple",
+                {
+                  "and": [
+                    "Grapple",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "disableEquipment": "Gravity"
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        "f_AQAAuxiliaryRoom_Engaged",
+                        {
+                          "aqaWaterLevel": 2
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   "and": [
                     "SpaceJump",
                     {
                       "or": [
-                        "Gravity",
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "disableEquipment": "Gravity"
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        "f_AQAAuxiliaryRoom_Engaged",
                         {
                           "aqaWaterLevel": 2
                         }
@@ -208,7 +376,38 @@
         2,
         5
       ],
-      "requires": []
+      "requires": [
+        {
+          "or": [
+            "f_AQAAuxiliaryRoom_Engaged",
+            {
+              "aqaWaterLevel": 2
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "disableEquipment": "Gravity"
+                    },
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Destroy Power Bomb Blocks",
@@ -218,10 +417,25 @@
       ],
       "requires": [
         {
-          "ammo": {
-            "type": "PowerBomb",
-            "count": 1
-          }
+          "and": [
+            {
+              "ammo": {
+                "type": "PowerBomb",
+                "count": 1
+              }
+            },
+            {
+              "or": [
+                "f_AQAAuxiliaryRoom_Engaged",
+                {
+                  "aqaWaterLevel": 2
+                },
+                {
+                  "electricityFrames": 1
+                }
+              ]
+            }
+          ]
         }
       ],
       "clearsObstacles": [
@@ -236,8 +450,38 @@
       ],
       "requires": [
         {
-          "obstaclesCleared": [
-            "B"
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "or": [
+                "f_AQAAuxiliaryRoom_Engaged",
+                {
+                  "aqaWaterLevel": 2
+                },
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "disableEquipment": "Gravity"
+                    },
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
@@ -249,7 +493,101 @@
         1
       ],
       "requires": [
-        "h_destroyBombWalls"
+        {
+          "and": [
+            "h_destroyBombWalls",
+            {
+              "or": [
+                {
+                  "or": [
+                    "f_AQAAuxiliaryRoom_Engaged",
+                    {
+                      "aqaWaterLevel": 2
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "ScrewAttack",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "Bombs",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "ammo": {
+                                "type": "PowerBomb",
+                                "count": 1
+                              }
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "disableEquipment": "Gravity"
+                    },
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "ScrewAttack",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "Bombs",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "ammo": {
+                                "type": "PowerBomb",
+                                "count": 1
+                              }
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       ],
       "clearsObstacles": [
         "A"
@@ -261,7 +599,34 @@
         4,
         5
       ],
-      "requires": []
+      "requires": [
+        {
+          "or": [
+            "f_AQAAuxiliaryRoom_Engaged",
+            {
+              "aqaWaterLevel": 2
+            },
+            {
+              "and": [
+                "Gravity",
+                {
+                  "electricityFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "disableEquipment": "Gravity"
+                },
+                {
+                  "electricityFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Base",
@@ -272,14 +637,41 @@
       "requires": [
         {
           "or": [
+            "f_AQAAuxiliaryRoom_Engaged",
             {
               "aqaWaterLevel": 2
             },
             {
-              "or": [
-                "canCrouchJump",
-                "SuperJump",
-                "SpaceJump"
+              "and": [
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "Gravity",
+                        {
+                          "electricityFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "disableEquipment": "Gravity"
+                        },
+                        {
+                          "electricityFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "or": [
+                    "canCrouchJump",
+                    "SuperJump",
+                    "SpaceJump"
+                  ]
+                }
               ]
             }
           ]
@@ -292,7 +684,38 @@
         5,
         6
       ],
-      "requires": []
+      "requires": [
+        {
+          "or": [
+            "f_AQAAuxiliaryRoom_Engaged",
+            {
+              "aqaWaterLevel": 2
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "disableEquipment": "Gravity"
+                    },
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Base",
@@ -302,8 +725,38 @@
       ],
       "requires": [
         {
-          "obstaclesCleared": [
-            "B"
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "or": [
+                "f_AQAAuxiliaryRoom_Engaged",
+                {
+                  "aqaWaterLevel": 2
+                },
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "disableEquipment": "Gravity"
+                    },
+                    {
+                      "electricityFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
@@ -314,7 +767,9 @@
         6,
         5
       ],
-      "requires": []
+      "requires": [
+        "f_AQAAuxiliaryRoom_Engaged"
+      ]
     },
     {
       "name": "Destroy Power Bomb Blocks",
@@ -324,10 +779,25 @@
       ],
       "requires": [
         {
-          "ammo": {
-            "type": "PowerBomb",
-            "count": 1
-          }
+          "and": [
+            {
+              "ammo": {
+                "type": "PowerBomb",
+                "count": 1
+              }
+            },
+            {
+              "or": [
+                "f_AQAAuxiliaryRoom_Engaged",
+                {
+                  "aqaWaterLevel": 2
+                },
+                {
+                  "electricityFrames": 1
+                }
+              ]
+            }
+          ]
         }
       ],
       "clearsObstacles": [

@@ -165,8 +165,9 @@
       ],
       "requires": [
         {
-          "and": [
-            "f_BoosterBarrier_SerrisEncountered"
+          "or": [
+            "f_BoosterBarrier_SerrisEncountered",
+            "f_SerrisArena_CoreXAbsorbed"
           ]
         }
       ],
@@ -242,6 +243,21 @@
             "canSuitlessUnderwaterIBJ",
             "SuperJump",
             "Gravity"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "f_AQASecurityRoomNorthAccess_SerrisEncountered",
+            "f_SerrisArena_CoreXAbsorbed"
           ]
         }
       ]
