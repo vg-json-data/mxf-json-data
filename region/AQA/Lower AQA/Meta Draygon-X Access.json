@@ -4,8 +4,6 @@
   "name": "Meta Draygon-X Access",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "AQA Room 7B300.jpg",
-  "roomAddress": "0x7B300",
   "roomEnvironments": [
     {
       "heated": false,
@@ -68,7 +66,9 @@
       "id": 3,
       "name": "Bottom Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "eye",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -79,18 +79,148 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Mini Draygon",
+      "enemyName": "Zoro",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                {
+                  "or": [
+                    "canDodgeWhileShooting",
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                {
+                  "or": [
+                    "canDodgeWhileShooting",
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "AQA Room 7B300.jpg",
+  "roomAddress": "0x7B300",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "Cheddar Bay",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "AQA Room 7A800.jpg",
-  "roomAddress": "0x7A800",
   "roomEnvironments": [
     {
       "heated": false,
@@ -95,10 +93,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 1232,
-          "y": 320,
-          "w": 48,
-          "h": 64
+          "x": 1248,
+          "y": 336,
+          "w": 32,
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -137,7 +135,9 @@
       "id": 5,
       "name": "Bottom-Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -148,11 +148,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_AQASecurityRoomNorth_DoorsUnlocked"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -164,10 +203,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 1120,
-          "y": 720,
-          "w": 48,
-          "h": 64
+          "x": 1136,
+          "y": 736,
+          "w": 16,
+          "h": 32
         }
       ],
       "color": "#ffffff",
@@ -188,10 +227,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 40,
-          "y": 48,
-          "w": 56,
-          "h": 56
+          "x": 32,
+          "y": 64,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -209,10 +248,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 1064,
-          "y": 680,
-          "w": 32,
-          "h": 40
+          "x": 1072,
+          "y": 704,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -220,11 +259,548 @@
       "nodeAddress": "0x7DDD6",
       "mapTileX": 30,
       "mapTileY": 15
+    },
+    {
+      "id": 10,
+      "name": "Right of Middle Speedway",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 1016,
+          "y": 320,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 11,
+      "name": "Above Right-Bottom Tunnel",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 1216,
+          "y": 704,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Middle Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Top Runway Super Missile Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
+    },
+    {
+      "name": "Top Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "C"
+    },
+    {
+      "name": "Super Missile Block (Above Right Tunnel)",
+      "obstacleType": "inanimate",
+      "id": "D"
+    }
+  ],
+  "enemies": [
+    {
+      "groupName": "Runway Yard-X (Right)",
+      "enemyName": "Yard-X",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        4
+      ],
+      "id": "e1",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "canShineCharge": {
+                        "usedTiles": 9,
+                        "openEnd": 0,
+                        "gentleUpTiles": 3,
+                        "gentleDownTiles": 2,
+                        "startingDownTiles": 2
+                      }
+                    },
+                    "canShinechargeMovement"
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "ammo": {
+                        "type": "Super",
+                        "count": 1
+                      }
+                    },
+                    {
+                      "canShineCharge": {
+                        "usedTiles": 15,
+                        "openEnd": 0,
+                        "gentleUpTiles": 4,
+                        "gentleDownTiles": 2,
+                        "startingDownTiles": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "or": [
+                        {
+                          "ammo": {
+                            "type": "Super",
+                            "count": 2
+                          }
+                        },
+                        {
+                          "ammo": {
+                            "type": "Diffusion",
+                            "count": 1
+                          }
+                        }
+                      ]
+                    },
+                    "h_shinechargeMaxRunway"
+                  ]
+                }
+              ]
+            },
+            "Morph",
+            "Gravity"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Right Tunnel",
+      "note": "Perform consecutive horizontal shinecharges on the slopes; The last spark is a bit tricky: Just make sure you're not crouching, or you'll clip the ceiling and break your shinespark too early. Breaking the Super Missile blocks isn't necessary, but it will make the trick a bit easier to perform.",
+      "link": [
+        1,
+        4
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "and": [
+            {
+              "and": [
+                "canHorizontalShinespark",
+                "canShinechargeMovementComplex",
+                "canShinechargeMovementTricky"
+              ]
+            },
+            "Gravity"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Right Tunnel (Suitless)",
+      "note": "Perform consecutive horizontal shinecharges on the slopes; The last spark is a bit tricky: Just make sure you're not crouching, or you'll clip the ceiling and break your shinespark too early. Breaking the Super Missile blocks isn't necessary, but it will make the trick a bit easier to perform.",
+      "link": [
+        1,
+        4
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "and": [
+            {
+              "and": [
+                "canHorizontalShinespark",
+                "canShinechargeMovementComplex",
+                "canShinechargeMovementTricky",
+                "canSuitlessWaterRoom"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        8
+      ],
+      "requires": [
+        {
+          "and": [
+            "Gravity",
+            "h_JumpAssist",
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ],
+      "collectsItems": [
+        8
+      ],
+      "setsFlags": [
+        "f_CheddarBay_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Right of Middle Speedway",
+      "link": [
+        2,
+        10
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "and": [
+            {
+              "shinespark": {
+                "frames": 54
+              }
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "shineChargeFrames": 30
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "disableEquipment": "Gravity"
+                    },
+                    {
+                      "shineChargeFrames": 80
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        11
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_bombThings",
+            {
+              "or": [
+                "SuperJump",
+                "canTrivialMidAirMorph"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    "h_JumpAssist"
+                  ]
+                },
+                "canSuitlessUnderwaterIBJ"
+              ]
+            },
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Right of Middle Speedway",
+      "link": [
+        5,
+        10
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 35
+          }
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        10
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                {
+                  "or": [
+                    "SpaceJump",
+                    "canLongIBJ"
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    "canLongIBJ",
+                    "canSuitlessUnderwaterIBJ"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        5
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        11
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                "SuperJump",
+                "canSuitlessUnderwaterIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        10,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Middle Speed Booster Blocks",
+      "link": [
+        10,
+        10
+      ],
+      "requires": [
+        {
+          "and": [
+            "Gravity",
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        11,
+        7
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "obstaclesCleared": [
+                "D"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        11,
+        9
+      ],
+      "requires": [
+        "h_bombThings"
+      ],
+      "collectsItems": [
+        9
+      ],
+      "setsFlags": [
+        "f_CheddarBay_PowerBombTankBottomRight_Collected"
+      ]
+    },
+    {
+      "name": "Crystal Flash Standup, Break Super Missile Blocks (Above Right Tunnel)",
+      "link": [
+        11,
+        11
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 1
+              }
+            },
+            "canCrystalFlash"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "D"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Above Right Tunnel)",
+      "link": [
+        11,
+        11
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "Diffusion",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 7A800.jpg",
+  "roomAddress": "0x7A800",
   "nextStratId": 1,
   "nextNotableId": 1
 }

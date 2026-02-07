@@ -86,7 +86,76 @@
       ]
     }
   ],
+  "obstacles": [
+    {
+      "name": "Super Missile Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
   "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "Diffusion",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks via Crystal Flash Standup",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            "canCrystalFlash"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
     {
       "name": "Reach Bottom-Left Door from Top-Right Door with Shinecharge",
       "link": [
@@ -104,10 +173,9 @@
           "and": [
             "Morph",
             {
-              "ammo": {
-                "type": "Diffusion",
-                "count": 2
-              }
+              "obstaclesCleared": [
+                "A"
+              ]
             },
             {
               "shinespark": {
@@ -120,9 +188,108 @@
                 "SpeedBoosterLv2"
               ]
             },
-            "canShinechargeMovement"
+            "canShinechargeMovement",
+            {
+              "shineChargeFrames": 100
+            }
           ]
         }
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Reach Bottom-Left Door from Top-Right Door via Short Charge",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "SpeedBoosterLv2",
+            {
+              "and": [
+                "canShinechargeMovement",
+                "canShinechargeMovementComplex",
+                "canShinechargeMovementTricky"
+              ]
+            },
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "shinespark": {
+                "frames": 2
+              }
+            },
+            {
+              "shineChargeFrames": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Morph",
+                {
+                  "obstaclesCleared": [
+                    "B"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "canTrivialMidAirMorph",
+                    "canIBJ"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                },
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            "Gravity",
+            "h_JumpAssist"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
       ]
     }
   ],

@@ -4,8 +4,6 @@
   "name": "Cheddar Bay Speedway",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "AQA Room 7A700.jpg",
-  "roomAddress": "0x7A700",
   "roomEnvironments": [
     {
       "heated": false,
@@ -23,6 +21,8 @@
       "name": "Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -33,12 +33,37 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
       ]
     },
     {
@@ -65,9 +90,148 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Speed Booster Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Gravity",
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Leave With Temporary Blue",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Gravity",
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      }
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Morph",
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    "h_shinechargeMaxRunway"
+                  ]
+                },
+                "canTrickyDodgeEnemies",
+                {
+                  "and": [
+                    "Gravity",
+                    "ScrewAttack"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Morph",
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                "canTrickyDodgeEnemies",
+                {
+                  "and": [
+                    "Gravity",
+                    "ScrewAttack"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Leave Shinecharged",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Gravity",
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      },
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 7A700.jpg",
+  "roomAddress": "0x7A700",
   "nextStratId": 1,
   "nextNotableId": 1
 }
