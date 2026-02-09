@@ -253,9 +253,9 @@
       ],
       "requires": [
         {
-          "and": [
+          "or": [
             {
-              "or": [
+              "and": [
                 {
                   "ammo": {
                     "type": "Super",
@@ -263,15 +263,22 @@
                   }
                 },
                 {
-                  "ammo": {
-                    "type": "Diffusion",
-                    "count": 1
-                  }
+                  "heatFrames": 363
                 }
               ]
             },
             {
-              "heatFrames": 320
+              "and": [
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                },
+                {
+                  "heatFrames": 320
+                }
+              ]
             }
           ]
         }
@@ -445,9 +452,6 @@
         4,
         9
       ],
-      "entranceCondition": {
-        "comesThroughToilet": "yes"
-      },
       "requires": [
         {
           "heatFrames": 60

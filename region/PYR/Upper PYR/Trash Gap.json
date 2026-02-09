@@ -77,7 +77,7 @@
               "and": [
                 "SpaceJump",
                 {
-                  "heatFrames": 500
+                  "heatFrames": 255
                 }
               ]
             },
@@ -85,7 +85,7 @@
               "and": [
                 "Grapple",
                 {
-                  "heatFrames": 700
+                  "heatFrames": 302
                 }
               ]
             }
@@ -114,7 +114,7 @@
               "and": [
                 "Grapple",
                 {
-                  "heatFrames": 700
+                  "heatFrames": 351
                 }
               ]
             }
