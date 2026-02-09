@@ -387,6 +387,19 @@
               "shinespark": {
                 "frames": 25
               }
+            },
+            {
+              "and": [
+                {
+                  "spikeHits": 2
+                },
+                {
+                  "and": [
+                    "canInsaneWalljump",
+                    "canConsecutiveAlternatingWallJump"
+                  ]
+                }
+              ]
             }
           ]
         }

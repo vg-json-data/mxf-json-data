@@ -4,8 +4,6 @@
   "name": "Unavoidable SA-X Room",
   "area": "DMX",
   "subarea": "Chase Segment",
-  "roomImageFile": "DMX Room 78E00.jpg",
-  "roomAddress": "0x78E00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,18 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "DMX Room 78E00.jpg",
+  "roomAddress": "0x78E00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

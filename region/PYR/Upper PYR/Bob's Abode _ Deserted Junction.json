@@ -228,6 +228,16 @@
       "name": "Base",
       "link": [
         3,
+        1
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
         2
       ],
       "requires": [

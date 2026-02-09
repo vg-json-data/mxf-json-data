@@ -4,8 +4,6 @@
   "name": "AQA Data Room",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "Misc Room Reusable 6.jpg",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -49,8 +47,8 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 144,
-          "y": 120,
+          "x": 152,
+          "y": 128,
           "w": 16,
           "h": 16
         }
@@ -78,9 +76,40 @@
       "nodeAddress": "0x0"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        3
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_AQADataRoom_DataDownloaded"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "Misc Room Reusable 6.jpg",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

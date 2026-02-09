@@ -4,8 +4,6 @@
   "name": "Broken Bridge",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 7A200.jpg",
-  "roomAddress": "0x7A200",
   "roomEnvironments": [
     {
       "heated": false,
@@ -50,9 +48,9 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 416,
-          "w": 48,
-          "h": 64
+          "y": 448,
+          "w": 32,
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -96,10 +94,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 168,
-          "y": 376,
-          "w": 24,
-          "h": 40
+          "x": 160,
+          "y": 400,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -107,11 +105,170 @@
       "nodeAddress": "0x7DD3E",
       "mapTileX": 20,
       "mapTileY": 11
+    },
+    {
+      "id": 5,
+      "name": "Left of Green Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 56,
+          "y": 112,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Green Geron",
+      "obstacleType": "inanimate",
+      "note": "This used to be a Blue Geron in v1.0.",
+      "id": "A"
+    },
+    {
+      "name": "Crumble Block",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Kill Green Geron",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "setsFlags": [
+        "f_BrokenBridge_GreenGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_bombThings",
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Grapple",
+                "canUseGrapple"
+              ]
+            },
+            "SpaceJump",
+            "canWalljump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_BrokenBridge_EnergyTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Green Geron",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "setsFlags": [
+        "f_BrokenBridge_GreenGeronDestroyed"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 7A200.jpg",
+  "roomAddress": "0x7A200",
   "nextStratId": 1,
   "nextNotableId": 1
 }

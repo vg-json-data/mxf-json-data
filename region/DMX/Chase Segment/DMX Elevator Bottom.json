@@ -4,8 +4,6 @@
   "name": "DMX Elevator Bottom",
   "area": "DMX",
   "subarea": "Chase Segment",
-  "roomImageFile": "DMX Room 79100.jpg",
-  "roomAddress": "0x79100",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "DMX Room 79100.jpg",
+  "roomAddress": "0x79100",
   "nextStratId": 1,
   "nextNotableId": 1
 }

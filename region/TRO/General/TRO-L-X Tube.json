@@ -111,13 +111,23 @@
       "requires": [
         {
           "and": [
+            "SpaceJump",
             {
-              "ammo": {
-                "type": "Super",
-                "count": 1
-              }
-            },
-            "SpaceJump"
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            }
           ]
         }
       ],
@@ -144,10 +154,20 @@
           "and": [
             "SpaceJump",
             {
-              "ammo": {
-                "type": "Super",
-                "count": 1
-              }
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
             }
           ]
         }

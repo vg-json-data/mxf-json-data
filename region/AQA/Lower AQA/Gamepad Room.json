@@ -4,8 +4,6 @@
   "name": "Gamepad Room",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "AQA Room 7AC00.jpg",
-  "roomAddress": "0x7AC00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -63,9 +61,36 @@
       "mapTileY": 16
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_GamepadRoom_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "Morph"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 7AC00.jpg",
+  "roomAddress": "0x7AC00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,12 +4,10 @@
   "name": "ARC Data Room Access",
   "area": "ARC",
   "subarea": "Lower ARC",
-  "roomImageFile": "ARC Room 79B00.jpg",
-  "roomAddress": "0x79B00",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -63,11 +61,220 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Left of Red Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 352,
+          "y": 80,
+          "w": 16,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Red Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Leave with Runway",
+      "link": [
+        1,
+        1
+      ],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 4,
+          "openEnd": 1,
+          "cold": true
+        }
+      },
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            "Morph",
+            {
+              "or": [
+                "Gravity",
+                {
+                  "and": [
+                    "canRespin",
+                    "SpaceJump"
+                  ]
+                },
+                "canWalljump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Red Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "f_ARCAuxiliaryRoom_Engaged",
+            "h_killRedGeron"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_ARCDataRoomAccess_RedGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "canBombHorizontally",
+                        "canCeilingBombJump"
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canIBJ",
+                        {
+                          "or": [
+                            "Gravity",
+                            "canBombJumpWaterEscape"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canWalljump",
+                    "canMidAirMorph"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Red Geron",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "f_ARCAuxiliaryRoom_Engaged",
+            "h_killRedGeron"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_ARCDataRoomAccess_RedGeronDestroyed"
+      ]
+    }
+  ],
+  "roomImageFile": "ARC Room 79B00.jpg",
+  "roomAddress": "0x79B00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

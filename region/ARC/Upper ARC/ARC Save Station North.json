@@ -59,6 +59,25 @@
   ],
   "strats": [
     {
+      "name": "Leave Shinecharged",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "canShineCharge": {
+            "usedTiles": 14,
+            "openEnd": 1,
+            "steepUpTiles": 2
+          }
+        }
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
+    },
+    {
       "name": "Base",
       "link": [
         1,

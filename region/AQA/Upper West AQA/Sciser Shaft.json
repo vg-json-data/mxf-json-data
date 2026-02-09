@@ -4,8 +4,6 @@
   "name": "Sciser Shaft",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 79E00.jpg",
-  "roomAddress": "0x79E00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -22,7 +20,9 @@
       "id": 1,
       "name": "Top-Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "eye",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -33,12 +33,37 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
       ]
     },
     {
@@ -134,9 +159,104 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Crumble Blocks (Upper)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Crumble Blocks (Lower)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Crystal Flash Clip",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        "canCrystalFlashClip"
+      ],
+      "resetsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        "Morph"
+      ],
+      "resetsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        "h_JumpAssist"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ],
+      "resetsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        "h_JumpAssist"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "h_JumpAssist",
+            "canCrouchJump"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 79E00.jpg",
+  "roomAddress": "0x79E00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

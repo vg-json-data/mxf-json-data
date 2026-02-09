@@ -48,9 +48,9 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 312,
-          "w": 48,
-          "h": 64
+          "y": 336,
+          "w": 32,
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -111,12 +111,36 @@
   ],
   "obstacles": [
     {
-      "name": "Speed Booster Blocks",
+      "name": "Speed Booster Blocks (All But Top)",
       "obstacleType": "inanimate",
       "id": "A"
+    },
+    {
+      "name": "Crumble Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
+    },
+    {
+      "name": "Speed Booster Blocks (Top)",
+      "obstacleType": "inanimate",
+      "id": "C"
     }
   ],
   "strats": [
+    {
+      "name": "Come In With Temporary Blue, Break Top Speed Booster Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "entranceCondition": {
+        "comeInWithTemporaryBlue": {}
+      },
+      "clearsObstacles": [
+        "C"
+      ],
+      "requires": []
+    },
     {
       "name": "Base",
       "link": [
@@ -136,9 +160,66 @@
             {
               "or": [
                 "h_JumpAssist",
+                "canCrouchJump"
+              ]
+            },
+            "h_destroyBombWalls"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Come In Shinecharging, Leave With Temporary Blue",
+      "link": [
+        1,
+        4
+      ],
+      "entranceCondition": {
+        "comeInShinecharging": {
+          "length": 4,
+          "openEnd": 1
+        }
+      },
+      "requires": [
+        "canTemporaryBlue"
+      ],
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      },
+      "clearsObstacles": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            },
+            {
+              "and": [
                 {
                   "obstaclesCleared": [
-                    "A"
+                    "B"
+                  ]
+                },
+                {
+                  "or": [
+                    "SpaceJump",
+                    "canConsecutiveAlternatingWallJump",
+                    "canIBJ"
                   ]
                 }
               ]
@@ -154,7 +235,17 @@
         3
       ],
       "requires": [
-        "Morph"
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                "canCarefulJump",
+                "h_JumpAssist"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -174,7 +265,8 @@
         }
       ],
       "clearsObstacles": [
-        "A"
+        "A",
+        "C"
       ]
     }
   ],

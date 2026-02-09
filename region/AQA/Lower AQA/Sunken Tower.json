@@ -4,8 +4,6 @@
   "name": "Sunken Tower",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "AQA Room 7B400.jpg",
-  "roomAddress": "0x7B400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -134,9 +132,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "AQA Room 7B400.jpg",
+  "roomAddress": "0x7B400",
   "nextStratId": 1,
   "nextNotableId": 1
 }

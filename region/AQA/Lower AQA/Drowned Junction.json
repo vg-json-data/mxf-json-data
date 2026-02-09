@@ -4,8 +4,6 @@
   "name": "Drowned Junction",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "AQA Room 7A600.jpg",
-  "roomAddress": "0x7A600",
   "roomEnvironments": [
     {
       "heated": false,
@@ -45,7 +43,9 @@
       "id": 2,
       "name": "Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -56,11 +56,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_MetaDraygonXArena_DoorsUnlocked"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -96,10 +135,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 56,
-          "y": 616,
-          "w": 40,
-          "h": 48
+          "x": 64,
+          "y": 640,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -109,9 +148,197 @@
       "mapTileY": 15
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Super Missile Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 1
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canSuitlessUnderwaterIBJ",
+                "canSuitlessWaterRoom"
+              ]
+            },
+            {
+              "and": [
+                "Gravity",
+                "h_JumpAssist",
+                "Morph"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 1
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Come In With Temporary Blue, Reach Missile Tank",
+      "link": [
+        3,
+        4
+      ],
+      "entranceCondition": {
+        "comeInWithTemporaryBlue": {}
+      },
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 1
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A",
+        "B"
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_DrownedJunction_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Gravity",
+            "h_JumpAssist",
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 7A600.jpg",
+  "roomAddress": "0x7A600",
   "nextStratId": 1,
   "nextNotableId": 1
 }

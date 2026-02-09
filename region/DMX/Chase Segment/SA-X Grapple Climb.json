@@ -4,8 +4,6 @@
   "name": "SA-X Grapple Climb",
   "area": "DMX",
   "subarea": "Chase Segment",
-  "roomImageFile": "DMX Room 78F00.jpg",
-  "roomAddress": "0x78F00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,25 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "canUseGrapple",
+            "canConsecutiveAlternatingWallJump"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "DMX Room 78F00.jpg",
+  "roomAddress": "0x78F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "AQA Central Hub",
   "area": "AQA",
   "subarea": "Upper East AQA",
-  "roomImageFile": "AQA Room 79100.jpg",
-  "roomAddress": "0x79100",
   "roomEnvironments": [
     {
       "heated": false,
@@ -157,9 +155,252 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "aqaWaterLevel": 0
+            },
+            "Grapple",
+            "SpaceJump",
+            "canCeilingBombJump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "aqaWaterLevel": 0
+            },
+            "Grapple",
+            "SpaceJump",
+            "canCeilingBombJump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 0
+                },
+                {
+                  "or": [
+                    "Gravity",
+                    {
+                      "and": [
+                        "canCrouchJump",
+                        "canSuitlessUnderwaterIBJ"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "h_JumpAssist",
+            "canCrouchJump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "aqaWaterLevel": 1
+            },
+            {
+              "and": [
+                "canSuitlessUnderwaterIBJ",
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "SuperJump",
+                            "canPreciseWalljump"
+                          ]
+                        },
+                        "canIBJ"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 2
+                },
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "canIBJ",
+                        "canCeilingBombJump"
+                      ]
+                    },
+                    {
+                      "and": [
+                        "SuperJump",
+                        "canPreciseWalljump"
+                      ]
+                    },
+                    "SpaceJump"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Come In With Temporary Blue, Spark to Left-Lower Door",
+      "link": [
+        4,
+        3
+      ],
+      "entranceCondition": {
+        "comeInWithTemporaryBlue": {}
+      },
+      "requires": [
+        {
+          "and": [
+            {
+              "and": [
+                "canHorizontalShinespark",
+                "canMidairShinespark",
+                "canShinechargeMovement"
+              ]
+            },
+            {
+              "shinespark": {
+                "frames": 102,
+                "excessFrames": 27
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "aqaWaterLevel": 2
+                },
+                "Gravity"
+              ]
+            },
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      }
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        5
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "AQA Room 79100.jpg",
+  "roomAddress": "0x79100",
   "nextStratId": 1,
   "nextNotableId": 1
 }

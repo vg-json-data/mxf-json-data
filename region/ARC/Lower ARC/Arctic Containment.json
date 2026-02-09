@@ -4,12 +4,10 @@
   "name": "Arctic Containment",
   "area": "ARC",
   "subarea": "Lower ARC",
-  "roomImageFile": "ARC Room 79800.jpg",
-  "roomAddress": "0x79800",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -155,11 +153,405 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 7,
+      "name": "Above Bottom-Right Door",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 400,
+          "y": 744,
+          "w": 48,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 8,
+      "name": "Left Ledge",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 32,
+          "y": 648,
+          "w": 48,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 9,
+      "name": "Right Ledge",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 288,
+          "y": 472,
+          "w": 32,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            "h_bombThings"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            "h_bombThings"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            "h_bombThings"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        8
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            "h_JumpAssist",
+            "canTrivialMidAirMorph",
+            "h_bombThings"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        7
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            "h_bombThings"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            "h_bombThings"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        7
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "SuperJump",
+                "SpaceJump"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "SuperJump",
+                "canWalljump"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "SpaceJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "canWalljump",
+                "SuperJump"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "canWalljump",
+                "SuperJump"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "canIBJ"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "SpaceJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        6
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        8
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "SpaceJump"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                {
+                  "or": [
+                    "canInsaneWalljump",
+                    "Grapple"
+                  ]
+                },
+                "canConsecutiveSingleWallJump",
+                "SuperJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        7
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        9
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "canWalljump",
+                {
+                  "coldFrames": 1
+                },
+                "SuperJump"
+              ]
+            },
+            {
+              "and": [
+                "SuperJump",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Grapple",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                "SpaceJump",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "ARC Room 79800.jpg",
+  "roomAddress": "0x79800",
   "nextStratId": 1,
   "nextNotableId": 1
 }

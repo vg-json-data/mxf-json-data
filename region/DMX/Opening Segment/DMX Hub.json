@@ -170,6 +170,50 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            {
+              "and": [
+                "SuperJump",
+                "canWalljump"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "roomImageFile": "DMX Room 78200x.jpg",

@@ -4,8 +4,6 @@
   "name": "DMX Elevator Middle",
   "area": "DMX",
   "subarea": "Chase Segment",
-  "roomImageFile": "DMX Elevator Middle.png",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -29,7 +27,7 @@
           "x": 104,
           "y": 0,
           "w": 48,
-          "h": 64
+          "h": 24
         }
       ],
       "color": "#ffffff",
@@ -50,9 +48,9 @@
         {
           "shape": "rect",
           "x": 104,
-          "y": 192,
+          "y": 176,
           "w": 48,
-          "h": 64
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -65,9 +63,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "DMX Elevator Middle.png",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

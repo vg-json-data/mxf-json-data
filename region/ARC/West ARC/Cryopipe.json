@@ -4,12 +4,10 @@
   "name": "Cryopipe",
   "area": "ARC",
   "subarea": "West ARC",
-  "roomImageFile": "ARC Room 7A000.jpg",
-  "roomAddress": "0x7A000",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -84,11 +82,307 @@
       "nodeAddress": "0x7E070",
       "mapTileX": 21,
       "mapTileY": 22
+    },
+    {
+      "id": 4,
+      "name": "Top of the Room",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 224,
+          "y": 56,
+          "w": 64,
+          "h": 24
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
+      "name": "Above Grapple Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 384,
+          "y": 224,
+          "w": 40,
+          "h": 24
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "and": [
+                    "canConsecutiveAlternatingWallJump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canLongIBJ",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "SpaceJump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "Morph",
+                "f_ARCAuxiliaryRoom_Engaged",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "coldFrames": 1
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Grapple",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "SpaceJump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "and": [
+                        "canIBJ",
+                        "canBombJumpWaterEscape"
+                      ]
+                    },
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "h_bombThings",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                "Morph",
+                "SuperJump",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "h_bombThings",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                "Morph",
+                "SuperJump",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "and": [
+                    "canConsecutiveAlternatingWallJump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canLongIBJ",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "SpaceJump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "Morph",
+                "f_ARCAuxiliaryRoom_Engaged",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "ARC Room 7A000.jpg",
+  "roomAddress": "0x7A000",
   "nextStratId": 1,
   "nextNotableId": 1
 }

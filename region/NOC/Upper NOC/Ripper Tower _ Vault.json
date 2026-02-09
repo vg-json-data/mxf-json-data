@@ -21,6 +21,8 @@
       "name": "Ripper Tower - Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -31,12 +33,37 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
-          "physics": "air"
+          "physics": "lowGrav"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
       ]
     },
     {
@@ -144,6 +171,8 @@
       "name": "Vault - Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -154,12 +183,37 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
         }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
       ]
     },
     {
@@ -215,9 +269,24 @@
       "name": "Super Missile Block (Below Missile Tank)",
       "obstacleType": "inanimate",
       "id": "B"
+    },
+    {
+      "name": "Super Missile Blocks & Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "C"
     }
   ],
   "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "canTrivialMidAirMorph"
+      ]
+    },
     {
       "name": "Base",
       "link": [
@@ -274,18 +343,24 @@
       ],
       "requires": [
         {
-          "and": [
+          "or": [
             {
-              "or": [
-                "SpaceJump",
-                "Grapple",
-                "canIBJ"
+              "and": [
+                "h_lowGravRemoved",
+                {
+                  "or": [
+                    "canConsecutiveAlternatingWallJump",
+                    "canIBJ",
+                    "SpaceJump"
+                  ]
+                }
               ]
             },
+            "Grapple",
             {
-              "or": [
-                "Grapple",
-                "h_navigateLowGrav"
+              "and": [
+                "h_navigateLowGrav",
+                "canSuitlessUnderwaterIBJ"
               ]
             }
           ]
@@ -300,6 +375,58 @@
       ],
       "requires": [
         "canTrivialMidAirMorph"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks & Bomb Blocks",
+      "link": [
+        4,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "or": [
+                "h_bombThings",
+                "ScrewAttack"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "C"
+          ]
+        }
       ]
     },
     {
@@ -341,6 +468,90 @@
       ],
       "setsFlags": [
         "f_RipperTower_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "h_lowGravRemoved",
+                    {
+                      "or": [
+                        "SpaceJump",
+                        "SuperJump",
+                        "canWalljump",
+                        "canIBJ"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "h_navigateLowGrav",
+                    {
+                      "or": [
+                        "SuperJump",
+                        "canSuitlessUnderwaterIBJ"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks & Bomb Blocks",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "or": [
+                "h_bombThings",
+                "ScrewAttack"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
       ]
     }
   ],

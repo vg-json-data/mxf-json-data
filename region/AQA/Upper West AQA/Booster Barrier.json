@@ -4,8 +4,6 @@
   "name": "Booster Barrier",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 79F00.jpg",
-  "roomAddress": "0x79F00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -27,7 +25,7 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 64,
+          "y": 96,
           "w": 48,
           "h": 64
         }
@@ -49,8 +47,8 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 208,
-          "y": 64,
+          "x": 720,
+          "y": 96,
           "w": 48,
           "h": 64
         }
@@ -65,9 +63,48 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "Morph",
+            "f_BoosterBarrier_SerrisEncountered",
+            "f_SerrisArena_CoreXAbsorbed"
+          ]
+        }
+      ],
+      "setsFlags": [
+        "f_BoosterBarrier_SerrisEncountered"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "Morph",
+            "f_BoosterBarrier_SerrisEncountered",
+            "f_SerrisArena_CoreXAbsorbed"
+          ]
+        }
+      ],
+      "setsFlags": [
+        "f_BoosterBarrier_SerrisEncountered"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 79F00.jpg",
+  "roomAddress": "0x79F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "Owtch Atrium / Construction Site Checkpoint",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 79700.jpg",
-  "roomAddress": "0x79700",
   "roomEnvironments": [
     {
       "heated": false,
@@ -111,9 +109,71 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "One-Way Gate",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "h_destroyBombWalls"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "h_destroyBombWalls"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "Wave",
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 79700.jpg",
+  "roomAddress": "0x79700",
   "nextStratId": 1,
   "nextNotableId": 1
 }

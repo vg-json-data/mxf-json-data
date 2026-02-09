@@ -4,12 +4,10 @@
   "name": "Freezer Shaft East",
   "area": "ARC",
   "subarea": "West ARC",
-  "roomImageFile": "ARC Room 7A300.jpg",
-  "roomAddress": "0x7A300",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -68,7 +66,9 @@
       "id": 3,
       "name": "Left-Lower Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -79,11 +79,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_ARCAuxiliaryRoom_Engaged"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -92,6 +131,8 @@
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -102,11 +143,46 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Door Gets Destroyed",
+          "lockType": "gameFlag",
+          "unlockStrats": [],
+          "lock": [
+            "f_ARCAuxiliaryRoom_Engaged"
+          ]
         }
       ]
     },
@@ -155,11 +231,379 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 7,
+      "name": "Above Super Missile Block",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 80,
+          "y": 1160,
+          "w": 48,
+          "h": 24
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Super Missile Block (Bottom-Left)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "SpaceJump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canIBJ",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSpringBallJumpMidAir",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canTrickyWalljump",
+                    {
+                      "spikeHits": 1
+                    },
+                    "SuperJump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Top-Right Door",
+      "link": [
+        2,
+        1
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "shinespark": {
+                "frames": 50
+              }
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            "canIBJ",
+            "canSpringBallJumpMidAir",
+            {
+              "and": [
+                "canTrickyWalljump",
+                {
+                  "spikeHits": 1
+                },
+                "SuperJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        7
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Block",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 1
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        7
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        7
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        6
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Block",
+      "link": [
+        7,
+        7
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 1
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "ARC Room 7A300.jpg",
+  "roomAddress": "0x7A300",
   "nextStratId": 1,
   "nextNotableId": 1
 }

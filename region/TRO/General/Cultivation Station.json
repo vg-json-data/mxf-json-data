@@ -162,12 +162,17 @@
   ],
   "strats": [
     {
-      "name": "Leave Shinecharged",
+      "name": "Leave With Temporary Blue",
       "link": [
         1,
         1
       ],
-      "requires": []
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ],
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      }
     },
     {
       "name": "Base",

@@ -67,7 +67,7 @@
     {
       "name": "Super Missile Blocks",
       "obstacleType": "inanimate",
-      "note": "In v1.3, the destroyed version of this room now has Super Missile Blocks instead of Screw Attack Blocks",
+      "note": "In v1.3 beta 2, the destroyed version of this room now has Super Missile Blocks instead of Screw Attack Blocks",
       "id": "A"
     }
   ],
@@ -118,14 +118,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "resourceAtMost": [
-                {
-                  "type": "PowerBomb",
-                  "count": 0
-                }
-              ]
             }
           ]
         }
@@ -147,14 +139,6 @@
                   "obstaclesCleared": [
                     "A"
                   ]
-                }
-              ]
-            },
-            {
-              "resourceAtMost": [
-                {
-                  "type": "PowerBomb",
-                  "count": 0
                 }
               ]
             }

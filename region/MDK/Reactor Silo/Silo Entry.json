@@ -202,6 +202,17 @@
         "B"
       ],
       "requires": []
+    },
+    {
+      "name": "Base",
+      "note": "Crumble Block was changed to a shot block in v1.3 beta 2",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "canConsecutiveAlternatingWallJump"
+      ]
     }
   ],
   "roomImageFile": "MDK Room 2.png",

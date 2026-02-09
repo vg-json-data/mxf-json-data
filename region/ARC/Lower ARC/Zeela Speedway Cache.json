@@ -7,7 +7,7 @@
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -61,9 +61,32 @@
       "mapTileY": 17
     }
   ],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
   "strats": [
     {
-      "name": "Come in Shinecharging",
+      "name": "Leave With Runway",
+      "link": [
+        1,
+        1
+      ],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 9,
+          "openEnd": 0,
+          "steepUpTiles": 2,
+          "cold": true
+        }
+      },
+      "requires": []
+    },
+    {
+      "name": "Come in Shinecharging, Reach E-Tank",
       "link": [
         1,
         1
@@ -75,10 +98,26 @@
           "steepDownTiles": 2
         }
       },
-      "requires": []
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            {
+              "shinespark": {
+                "frames": 15
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
     },
     {
-      "name": "Come in Shinecharged",
+      "name": "Come in Shinecharged, Break Speed Booster Blocks",
       "link": [
         1,
         1
@@ -86,32 +125,30 @@
       "entranceCondition": {
         "comeInShinecharged": {}
       },
-      "requires": []
-    },
-    {
-      "name": "Leave With Runway",
-      "link": [
-        1,
-        1
-      ],
-      "exitCondition": {
-        "leaveWithRunway": {
-          "length": 9,
-          "openEnd": null,
-          "steepUpTiles": 2
+      "requires": [
+        {
+          "and": [
+            {
+              "coldFrames": 1
+            },
+            {
+              "shinespark": {
+                "frames": 15
+              }
+            }
+          ]
         }
-      },
-      "requires": []
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
     },
     {
-      "name": "Reach Missile Tank Shinecharged",
+      "name": "Reach E-Tank from Right Door",
       "link": [
         1,
         2
       ],
-      "entranceCondition": {
-        "comeInShinecharged": {}
-      },
       "requires": [
         {
           "and": [
@@ -121,8 +158,22 @@
                   "and": [
                     {
                       "or": [
-                        "SuperJump",
-                        "SpaceJump"
+                        {
+                          "and": [
+                            {
+                              "coldFrames": 1
+                            },
+                            "SuperJump"
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "coldFrames": 1
+                            },
+                            "SpaceJump"
+                          ]
+                        }
                       ]
                     },
                     "canTrivialMidAirMorph"
@@ -130,13 +181,21 @@
                 },
                 {
                   "and": [
+                    {
+                      "coldFrames": 1
+                    },
                     "canMidAirMorph",
                     "h_JumpAssist"
                   ]
                 }
               ]
             },
-            "canIBJ"
+            "canIBJ",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            }
           ]
         }
       ],
@@ -145,6 +204,23 @@
       ],
       "setsFlags": [
         "f_ZeelaSpeedwayCache_EnergyTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
       ]
     }
   ],

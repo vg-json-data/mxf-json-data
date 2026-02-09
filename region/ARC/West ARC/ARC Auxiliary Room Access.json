@@ -4,12 +4,10 @@
   "name": "ARC Auxiliary Room Access",
   "area": "ARC",
   "subarea": "West ARC",
-  "roomImageFile": "ARC Room 7A700.jpg",
-  "roomAddress": "0x7A700",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -109,11 +107,162 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 5,
+      "name": "Top of Shortcut Shaft",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 112,
+          "y": 152,
+          "w": 32,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "canConsecutiveAlternatingWallJump"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "canIBJ"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "SpaceJump"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "canCrouchJump",
+                "canWalljump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "ARC Room 7A700.jpg",
+  "roomAddress": "0x7A700",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -24,10 +24,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 440,
-          "y": 40,
-          "w": 48,
-          "h": 64
+          "x": 496,
+          "y": 64,
+          "w": 32,
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -71,9 +71,9 @@
         {
           "shape": "rect",
           "x": 768,
-          "y": 40,
+          "y": 64,
           "w": 48,
-          "h": 64
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -118,9 +118,9 @@
         {
           "shape": "rect",
           "x": 816,
-          "y": 152,
-          "w": 32,
-          "h": 40
+          "y": 176,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -151,6 +151,11 @@
       "name": "Orange Geron",
       "obstacleType": "inanimate",
       "id": "A"
+    },
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
     }
   ],
   "strats": [
@@ -194,6 +199,64 @@
     {
       "name": "Base",
       "link": [
+        3,
+        4
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "h_JumpAssist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ],
+      "clearsObstacles": [
+        "B"
+      ],
+      "collectsItems": [
+        5
+      ],
+      "setsFlags": [
+        "f_SerrisSpeedway_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
         6,
         1
       ],
@@ -221,7 +284,7 @@
                 }
               ]
             },
-            "Morph"
+            "h_bombThings"
           ]
         }
       ]

@@ -109,11 +109,19 @@
   ],
   "strats": [
     {
-      "name": "Leave Shinecharged",
+      "name": "Leave With Runway",
       "link": [
         1,
         1
       ],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 14,
+          "openEnd": 0,
+          "steepUpTiles": 2,
+          "steepDownTiles": 2
+        }
+      },
       "requires": []
     },
     {

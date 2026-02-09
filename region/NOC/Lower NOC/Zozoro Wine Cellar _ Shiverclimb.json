@@ -145,6 +145,29 @@
         }
       ],
       "color": "#0000ff"
+    },
+    {
+      "id": 7,
+      "name": "Right of Wave Gate",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 360,
+          "y": 112,
+          "w": 24,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    }
+  ],
+  "obstacles": [
+    {
+      "name": "One-Way Gate",
+      "obstacleType": "inanimate",
+      "id": "A"
     }
   ],
   "strats": [
@@ -237,27 +260,38 @@
       ]
     },
     {
-      "name": "Base",
+      "name": "Open One-Way Gate",
       "link": [
         3,
-        6
+        3
       ],
       "requires": [
         {
-          "and": [
+          "or": [
             "Wave",
             {
-              "or": [
-                "canTrickyDodgeEnemies",
-                {
-                  "enemyDamage": {
-                    "enemy": "Ice-X",
-                    "type": "contact",
-                    "hits": 2
-                  }
-                }
-              ]
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
             }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        7
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
           ]
         }
       ]
@@ -323,55 +357,6 @@
       "name": "Base",
       "link": [
         6,
-        3
-      ],
-      "requires": [
-        {
-          "and": [
-            {
-              "or": [
-                {
-                  "enemyDamage": {
-                    "enemy": "Ice-X",
-                    "type": "contact",
-                    "hits": 2
-                  }
-                },
-                {
-                  "and": [
-                    "canDodgeWhileShooting",
-                    "canTrickyDodgeEnemies"
-                  ]
-                }
-              ]
-            },
-            {
-              "or": [
-                "canConsecutiveSingleWallJump",
-                "Grapple",
-                "SpaceJump",
-                {
-                  "and": [
-                    {
-                      "enemyDamage": {
-                        "enemy": "Ice-X",
-                        "type": "contact",
-                        "hits": 2
-                      }
-                    },
-                    "canIBJ"
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        6,
         4
       ],
       "requires": [
@@ -423,6 +408,113 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        7
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "enemyDamage": {
+                    "enemy": "Ice-X",
+                    "type": "contact",
+                    "hits": 2
+                  }
+                },
+                {
+                  "and": [
+                    "canDodgeWhileShooting",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                "canConsecutiveSingleWallJump",
+                "Grapple",
+                "SpaceJump",
+                {
+                  "and": [
+                    {
+                      "enemyDamage": {
+                        "enemy": "Ice-X",
+                        "type": "contact",
+                        "hits": 2
+                      }
+                    },
+                    "canIBJ"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        6
+      ],
+      "requires": [
+        {
+          "or": [
+            "canTrickyDodgeEnemies",
+            {
+              "enemyDamage": {
+                "enemy": "Ice-X",
+                "type": "contact",
+                "hits": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Open One-Way Gate",
+      "link": [
+        7,
+        7
+      ],
+      "requires": [
+        {
+          "or": [
+            "Wave",
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
       ]
     }
   ],

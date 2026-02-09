@@ -146,13 +146,13 @@
   ],
   "strats": [
     {
-      "name": "Come in Shinecharged",
+      "name": "Come In With Temporary Blue",
       "link": [
         1,
         1
       ],
       "entranceCondition": {
-        "comeInShinecharged": {}
+        "comeInWithTemporaryBlue": {}
       },
       "requires": []
     },

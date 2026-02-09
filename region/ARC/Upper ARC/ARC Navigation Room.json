@@ -4,8 +4,6 @@
   "name": "ARC Navigation Room",
   "area": "ARC",
   "subarea": "Upper ARC",
-  "roomImageFile": "Misc Room Reusable 3.jpg",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
@@ -84,9 +82,56 @@
       "note": ""
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        3
+      ],
+      "collectsItems": [
+        3
+      ],
+      "setsFlags": [
+        "f_ARCNavigationRoom_CoreXAbsorbed"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "Misc Room Reusable 3.jpg",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }

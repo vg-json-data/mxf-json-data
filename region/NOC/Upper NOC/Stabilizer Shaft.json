@@ -164,6 +164,11 @@
       "name": "Speed Booster Blocks (Middle)",
       "obstacleType": "inanimate",
       "id": "B"
+    },
+    {
+      "name": "Crumble Blocks",
+      "obstacleType": "inanimate",
+      "id": "C"
     }
   ],
   "strats": [
@@ -174,18 +179,23 @@
         3
       ],
       "entranceCondition": {
-        "comeInShinecharged": {}
+        "comeInShinecharging": {
+          "length": 5,
+          "openEnd": 0
+        }
       },
       "requires": [
         {
-          "shinespark": {
-            "frames": 10
-          }
+          "and": [
+            {
+              "shinespark": {
+                "frames": 10
+              }
+            },
+            "h_lowGravRemoved"
+          ]
         }
       ],
-      "exitCondition": {
-        "leaveNormally": {}
-      },
       "clearsObstacles": [
         "A",
         "B"
@@ -198,15 +208,35 @@
         4
       ],
       "entranceCondition": {
-        "comeInShinecharged": {}
+        "comeInShinecharging": {
+          "length": 5,
+          "openEnd": 0
+        }
       },
-      "exitCondition": {
-        "leaveNormally": {}
-      },
+      "requires": [
+        "h_lowGravRemoved"
+      ],
       "clearsObstacles": [
         "A"
+      ]
+    },
+    {
+      "name": "Reach Above Crumble Blocks via Crystal Flash Clip",
+      "link": [
+        2,
+        4
       ],
-      "requires": []
+      "requires": [
+        {
+          "and": [
+            "h_bombThings",
+            "canCrystalFlashClip"
+          ]
+        }
+      ],
+      "resetsObstacles": [
+        "C"
+      ]
     },
     {
       "name": "Base",
@@ -280,6 +310,9 @@
       ],
       "requires": [
         "h_bombThings"
+      ],
+      "resetsObstacles": [
+        "C"
       ]
     }
   ],

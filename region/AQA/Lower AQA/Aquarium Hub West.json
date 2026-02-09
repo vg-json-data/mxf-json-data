@@ -4,8 +4,6 @@
   "name": "Aquarium Hub West",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "AQA Room 7AD00.jpg",
-  "roomAddress": "0x7AD00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -132,11 +130,615 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 6,
+      "name": "Below Crumble Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 184,
+          "y": 496,
+          "w": 40,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Super Missile Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Kago-X (Bottom)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "enemies": [
+    {
+      "groupName": "Skultera-X (Bottom)",
+      "enemyName": "Skultera-X",
+      "quantity": 1,
+      "betweenNodes": [
+        5,
+        6
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Yard-X (Bottom)",
+      "enemyName": "Yard-X",
+      "quantity": 1,
+      "betweenNodes": [
+        5,
+        6
+      ],
+      "id": "e2"
+    },
+    {
+      "groupName": "Yard-X (Top)",
+      "enemyName": "Yard-X",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        6
+      ],
+      "id": "e3"
+    },
+    {
+      "groupName": "Skultera-X (Top)",
+      "enemyName": "Skultera",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        6
+      ],
+      "id": "e4"
+    },
+    {
+      "groupName": "Yard-X (Right)",
+      "enemyName": "Yard-X",
+      "quantity": 1,
+      "betweenNodes": [
+        2,
+        3
+      ],
+      "id": "e5"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e3"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Yard-X",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e4"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Skultera",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                "canTrickyDodgeEnemies"
+              ]
+            },
+            "Morph",
+            {
+              "or": [
+                "h_bombThings",
+                "SuperJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            "Morph",
+            {
+              "or": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e5"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Yard-X",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e5"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Yard-X",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                "canBeVeryPatient"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "or": [
+                                "h_JumpAssist",
+                                "canIBJ"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "SuperJump",
+                            "canSuitlessWaterRoom"
+                          ]
+                        }
+                      ]
+                    },
+                    "canTrivialMidAirMorph"
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "disableEquipment": "Gravity"
+                    },
+                    {
+                      "and": [
+                        "canSuitlessWaterRoom",
+                        "canSuitlessUnderwaterIBJ"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 5
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Destroy Kago-X",
+      "link": [
+        4,
+        4
+      ],
+      "clearsObstacles": [
+        "B"
+      ],
+      "setsFlags": [
+        "f_AquariumHubWest_KagoXSouth_Destroyed"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Kago-X",
+      "link": [
+        5,
+        5
+      ],
+      "clearsObstacles": [
+        "B"
+      ],
+      "setsFlags": [
+        "f_AquariumHubWest_KagoXSouth_Destroyed"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                "Morph",
+                {
+                  "or": [
+                    "h_bombThings",
+                    "SuperJump"
+                  ]
+                },
+                {
+                  "or": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e2"
+                          ]
+                        ]
+                      }
+                    },
+                    {
+                      "enemyDamage": {
+                        "enemy": "Yard-X",
+                        "type": "contact",
+                        "hits": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "canSuitlessWaterRoom",
+                {
+                  "or": [
+                    "SuperJump",
+                    "canSuitlessUnderwaterIBJ"
+                  ]
+                },
+                {
+                  "or": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1"
+                          ]
+                        ]
+                      }
+                    },
+                    "canTrickyDodgeEnemies",
+                    {
+                      "enemyDamage": {
+                        "enemy": "Skultera-X",
+                        "type": "contact",
+                        "hits": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "or": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e2"
+                          ]
+                        ]
+                      }
+                    },
+                    "canTrickyDodgeEnemies",
+                    {
+                      "enemyDamage": {
+                        "enemy": "Yard-X",
+                        "type": "contact",
+                        "hits": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                {
+                  "or": [
+                    "canIBJ",
+                    "SuperJump",
+                    {
+                      "and": [
+                        "h_bombThings",
+                        "canMidAirMorph"
+                      ]
+                    },
+                    {
+                      "and": [
+                        "h_JumpAssist",
+                        "ScrewAttack"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "or": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e3"
+                          ]
+                        ]
+                      }
+                    },
+                    {
+                      "enemyDamage": {
+                        "enemy": "Yard-X",
+                        "type": "contact",
+                        "hits": 1
+                      }
+                    },
+                    "canBePatient"
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "canSuitlessWaterRoom",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "h_bombThings",
+                        "canMidAirMorph"
+                      ]
+                    },
+                    "canSuitlessUnderwaterIBJ"
+                  ]
+                },
+                "SuperJump",
+                {
+                  "or": [
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e3"
+                          ]
+                        ]
+                      }
+                    },
+                    {
+                      "enemyDamage": {
+                        "enemy": "Yard-X",
+                        "type": "contact",
+                        "hits": 1
+                      }
+                    },
+                    {
+                      "and": [
+                        {
+                          "and": [
+                            "canBePatient",
+                            "canTrickyDodgeEnemies"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        5
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "AQA Room 7AD00.jpg",
+  "roomAddress": "0x7AD00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

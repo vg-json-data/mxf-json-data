@@ -4,12 +4,10 @@
   "name": "Frostbite Hall / Frostbite Nook",
   "area": "ARC",
   "subarea": "Lower ARC",
-  "roomImageFile": "ARC Room 79900.jpg",
-  "roomAddress": "0x79900",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -26,9 +24,9 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 104,
+          "x": 112,
           "y": 272,
-          "w": 48,
+          "w": 32,
           "h": 64
         }
       ],
@@ -88,27 +86,6 @@
       ]
     },
     {
-      "id": 4,
-      "idMinorItemPlm": "0x56",
-      "name": "Frostbite Hall - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 56,
-          "y": 720,
-          "w": 24,
-          "h": 32
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7E010",
-      "mapTileX": 28,
-      "mapTileY": 19
-    },
-    {
       "id": 5,
       "name": "Frostbite Nook - Left Door",
       "nodeType": "door",
@@ -117,7 +94,7 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 104,
+          "y": 96,
           "w": 48,
           "h": 64
         }
@@ -139,9 +116,9 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 104,
+          "x": 112,
           "y": 192,
-          "w": 48,
+          "w": 32,
           "h": 64
         }
       ],
@@ -155,6 +132,27 @@
       ]
     },
     {
+      "id": 4,
+      "idMinorItemPlm": "0x56",
+      "name": "Frostbite Hall - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 64,
+          "y": 720,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7E010",
+      "mapTileX": 28,
+      "mapTileY": 19
+    },
+    {
       "id": 7,
       "idMinorItemPlm": "0x55",
       "name": "Frostbite Nook - Energy Tank",
@@ -163,10 +161,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 184,
+          "x": 208,
           "y": 160,
-          "w": 40,
-          "h": 24
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -174,11 +172,325 @@
       "nodeAddress": "0x7E016",
       "mapTileX": 28,
       "mapTileY": 17
+    },
+    {
+      "id": 8,
+      "name": "Left of Spike Pit",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 112,
+          "y": 400,
+          "w": 16,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Spike Pit",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        8
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "SpikeBreaker",
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            "h_shinechargeMaxRunway",
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_FrostbiteHall_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        8
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "SpikeBreaker",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                "SpaceJump",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                "canLongCeilingBombJump",
+                {
+                  "or": [
+                    "Varia",
+                    "f_ARCAuxiliaryRoom_Engaged"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        8
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        8
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "SuperJump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "SpaceJump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "SpaceJump",
+                    "SuperJump",
+                    "canWalljump",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canIBJ",
+                    {
+                      "coldFrames": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        7
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "canTrickyWalljump",
+                "canMidAirMorph"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                {
+                  "ammo": {
+                    "type": "PowerBomb",
+                    "count": 1
+                  }
+                },
+                "canTrivialMidAirMorph"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        6
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        1
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "SpikeBreaker",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                "SpaceJump",
+                {
+                  "coldFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "coldFrames": 1
+                },
+                "canLongCeilingBombJump",
+                {
+                  "or": [
+                    "Varia",
+                    "f_ARCAuxiliaryRoom_Engaged"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "ARC Room 79900.jpg",
+  "roomAddress": "0x79900",
   "nextStratId": 1,
   "nextNotableId": 1
 }

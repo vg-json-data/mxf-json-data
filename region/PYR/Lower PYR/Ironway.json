@@ -251,6 +251,33 @@
       ]
     },
     {
+      "name": "Leave Shinecharged",
+      "link": [
+        2,
+        2
+      ],
+      "entranceCondition": {
+        "comeInShinecharging": {
+          "length": 0,
+          "openEnd": 0
+        }
+      },
+      "requires": [
+        {
+          "and": [
+            "h_shinechargeMaxRunway",
+            {
+              "shineChargeFrames": 1
+            },
+            "canShinechargeMovement"
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
+    },
+    {
       "name": "Base",
       "link": [
         3,

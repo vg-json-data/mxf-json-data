@@ -64,6 +64,20 @@
           0,
           0
         ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_MetaDraygonXArena_DoorsUnlocked"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -121,9 +135,9 @@
         {
           "shape": "rect",
           "x": 176,
-          "y": 272,
-          "w": 32,
-          "h": 32
+          "y": 288,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#8d0cad",

@@ -4,12 +4,10 @@
   "name": "Freezer Shaft West",
   "area": "ARC",
   "subarea": "West ARC",
-  "roomImageFile": "ARC Room 7A600.jpg",
-  "roomAddress": "0x7A600",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -107,11 +105,323 @@
       "nodeAddress": "0x7E0C4",
       "mapTileX": 15,
       "mapTileY": 23
+    },
+    {
+      "id": 5,
+      "name": "Right of Power Bomb Tank",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 384,
+          "y": 896,
+          "w": 24,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 6,
+      "name": "Top of the Shaft",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 304,
+          "y": 104,
+          "w": 40,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Screw Attack Blocks",
+      "obstacleType": "inanimate",
+      "id": "B"
+    },
+    {
+      "name": "Red Gerons (Both)",
+      "obstacleType": "inanimate",
+      "id": "C"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Screw Attack Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "ScrewAttack"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        6
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_FreezerShaftWest_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Destroy Power Bomb Blocks",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Destroy Red Gerons",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_JumpAssist",
+            "h_killRedGeron",
+            "h_killRedGeron"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ],
+      "setsFlags": [
+        "f_FreezerShaftWest_RedGeronLower_Destroyed",
+        "f_FreezerShaftWest_RedGeronUpper_Destroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            },
+            "h_JumpAssist",
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        2
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "note": "No need to go through the Red Gerons: Just drop through the crumble blocks.",
+      "link": [
+        6,
+        5
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Destroy Red Gerons",
+      "link": [
+        6,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_killRedGeron",
+            "h_killRedGeron"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ],
+      "setsFlags": [
+        "f_FreezerShaftWest_RedGeronLower_Destroyed",
+        "f_FreezerShaftWest_RedGeronUpper_Destroyed"
+      ]
+    },
+    {
+      "name": "Destroy Screw Attack Blocks",
+      "link": [
+        6,
+        6
+      ],
+      "requires": [
+        "ScrewAttack"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    }
+  ],
+  "roomImageFile": "ARC Room 7A600.jpg",
+  "roomAddress": "0x7A600",
   "nextStratId": 1,
   "nextNotableId": 1
 }

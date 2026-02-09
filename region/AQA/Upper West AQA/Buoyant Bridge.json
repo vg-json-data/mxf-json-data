@@ -4,8 +4,6 @@
   "name": "Buoyant Bridge",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 7A400.jpg",
-  "roomAddress": "0x7A400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -73,10 +71,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 40,
-          "y": 120,
-          "w": 32,
-          "h": 32
+          "x": 48,
+          "y": 112,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -86,9 +84,225 @@
       "mapTileY": 10
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Super Missile Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 2
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 0
+                },
+                "Morph"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                },
+                {
+                  "or": [
+                    "can4HighMidAirMorph",
+                    {
+                      "and": [
+                        "Morph",
+                        "SuperJump"
+                      ]
+                    },
+                    "canIBJ"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "collectsItems": [
+        3
+      ],
+      "setsFlags": [
+        "f_BuoyantBridge_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Come In Shinecharging, Spark to Missile Tank",
+      "link": [
+        2,
+        3
+      ],
+      "entranceCondition": {
+        "comeInShinecharging": {
+          "length": 2,
+          "openEnd": 1
+        }
+      },
+      "requires": [
+        {
+          "and": [
+            "canShinechargeMovementComplex",
+            {
+              "shinespark": {
+                "frames": 34
+              }
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        3
+      ],
+      "setsFlags": [
+        "f_BuoyantBridge_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 0
+                },
+                "Morph"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                },
+                {
+                  "or": [
+                    "canTrivialMidAirMorph",
+                    {
+                      "and": [
+                        "Morph",
+                        "SuperJump"
+                      ]
+                    },
+                    "canIBJ"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 2
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 7A400.jpg",
+  "roomAddress": "0x7A400",
   "nextStratId": 1,
   "nextNotableId": 1
 }

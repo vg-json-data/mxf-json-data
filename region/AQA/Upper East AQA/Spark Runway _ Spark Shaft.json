@@ -4,8 +4,6 @@
   "name": "Spark Runway / Spark Shaft",
   "area": "AQA",
   "subarea": "Upper East AQA",
-  "roomImageFile": "AQA Room 79400.jpg",
-  "roomAddress": "0x79400",
   "roomEnvironments": [
     {
       "heated": false,
@@ -134,9 +132,200 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Sciser (Bottom)",
+      "enemyName": "Sciser",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "canCarefulJump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "canCarefulJump"
+      ]
+    },
+    {
+      "name": "Leave Shinecharged",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            "h_shinechargeMaxRunway"
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 0
+                },
+                {
+                  "electricityFrames": 1
+                }
+              ]
+            },
+            {
+              "aqaWaterLevel": 1
+            },
+            {
+              "aqaWaterLevel": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 0
+                },
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "Gravity",
+                        {
+                          "or": [
+                            {
+                              "and": [
+                                "canLongIBJ",
+                                {
+                                  "electricityFrames": 1
+                                }
+                              ]
+                            },
+                            {
+                              "and": [
+                                "SpaceJump",
+                                {
+                                  "electricityFrames": 1
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "canSuitlessUnderwaterIBJ"
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "or": [
+                    {
+                      "aqaWaterLevel": 1
+                    },
+                    {
+                      "aqaWaterLevel": 2
+                    }
+                  ]
+                },
+                {
+                  "or": [
+                    "canLongIBJ",
+                    "SpaceJump"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Top-Right Door",
+      "link": [
+        5,
+        4
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 24
+          }
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 79400.jpg",
+  "roomAddress": "0x79400",
   "nextStratId": 1,
   "nextNotableId": 1
 }

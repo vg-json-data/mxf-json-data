@@ -4,8 +4,6 @@
   "name": "Reservoir East",
   "area": "AQA",
   "subarea": "Upper East AQA",
-  "roomImageFile": "AQA Room 78E00.jpg",
-  "roomAddress": "0x78E00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -119,9 +117,9 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 640,
+          "y": 656,
           "w": 48,
-          "h": 64
+          "h": 32
         }
       ],
       "color": "#ffffff",
@@ -142,10 +140,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 416,
-          "y": 656,
-          "w": 40,
-          "h": 56
+          "x": 384,
+          "y": 672,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -155,9 +153,612 @@
       "mapTileY": 12
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Speed Booster Blocks (Left)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    },
+    {
+      "name": "Speed Booster Blocks (Right)",
+      "obstacleType": "inanimate",
+      "id": "C"
+    }
+  ],
+  "enemies": [
+    {
+      "groupName": "Ceiling Sciser",
+      "enemyName": "Sciser",
+      "quantity": 1,
+      "betweenNodes": [
+        2,
+        5
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Right Wall Sciser",
+      "enemyName": "Sciser",
+      "quantity": 1,
+      "betweenNodes": [
+        2,
+        3
+      ],
+      "id": "e2"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            "canCarefulJump",
+            {
+              "electricityFrames": 20
+            },
+            {
+              "aqaWaterLevel": 1
+            },
+            {
+              "aqaWaterLevel": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "h_shinechargeMaxRunway",
+                {
+                  "obstaclesCleared": [
+                    "B"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "disableEquipment": "Gravity"
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "aqaWaterLevel": 0
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "aqaWaterLevel": 1
+                    },
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "disableEquipment": "Gravity"
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "aqaWaterLevel": 2
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Grapple",
+                {
+                  "or": [
+                    "canTrickyDodgeEnemies",
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "e1"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "SpaceJump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "ammo": {
+                "type": "PowerBomb",
+                "count": 2
+              }
+            },
+            "Morph",
+            {
+              "or": [
+                {
+                  "electricityFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A",
+        "B"
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_ReservoirEast_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "canCrouchJump",
+            "h_JumpAssist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_usePowerBomb",
+            "h_usePowerBomb",
+            {
+              "or": [
+                {
+                  "aqaWaterLevel": 2
+                },
+                {
+                  "and": [
+                    {
+                      "aqaWaterLevel": 1
+                    },
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "disableEquipment": "Gravity"
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            {
+                              "disableEquipment": "Gravity"
+                            },
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_ReservoirEast_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Come In With Temporary Blue, Spark to Top-Left Door",
+      "link": [
+        4,
+        1
+      ],
+      "entranceCondition": {
+        "comeInWithTemporaryBlue": {}
+      },
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "aqaWaterLevel": 2
+                },
+                {
+                  "and": [
+                    {
+                      "aqaWaterLevel": 1
+                    },
+                    {
+                      "shinespark": {
+                        "frames": 0
+                      }
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "aqaWaterLevel": 0
+                    },
+                    {
+                      "shinespark": {
+                        "frames": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "shinespark": {
+                "frames": 0
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "entranceCondition": {
+        "comeInWithTemporaryBlue": {}
+      },
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        {
+                          "aqaWaterLevel": 1
+                        },
+                        {
+                          "electricityFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          "aqaWaterLevel": 0
+                        },
+                        {
+                          "electricityFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "aqaWaterLevel": 2
+            },
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 1
+                },
+                {
+                  "electricityFrames": 1
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 0
+                },
+                {
+                  "electricityFrames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 0
+                },
+                {
+                  "or": [
+                    "canCarefulJump",
+                    {
+                      "electricityFrames": 20
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "aqaWaterLevel": 1
+            },
+            {
+              "aqaWaterLevel": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            "Grapple",
+            "SpaceJump"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "aqaWaterLevel": 0
+                    },
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "canSuitlessUnderwaterIBJ",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "aqaWaterLevel": 1
+                    },
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "Gravity",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "canSuitlessUnderwaterIBJ",
+                            {
+                              "electricityFrames": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "aqaWaterLevel": 2
+                    },
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "canTrivialMidAirMorph",
+                            "canIBJ"
+                          ]
+                        },
+                        "SuperJump"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 78E00.jpg",
+  "roomAddress": "0x78E00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

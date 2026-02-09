@@ -219,7 +219,7 @@
           },
           "aqaWaterLevel": {
             "type": "integer",
-            "minimum": 1,
+            "minimum": 0,
             "title": "AQA Water Level",
             "description": "Fulfilled if the Water Level in Sector 4 (AQA) matches this requirement. [0 - FULL, 1 - PARTIAL, 2 - EMPTY]"
           },

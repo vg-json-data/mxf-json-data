@@ -4,8 +4,6 @@
   "name": "Golden Arachnus-X Arena",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7A900.jpg",
-  "roomAddress": "0x7A900",
   "roomEnvironments": [
     {
       "heated": false,
@@ -22,7 +20,9 @@
       "id": 1,
       "name": "Top-Right Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -33,11 +33,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_SpikespawnArena_DoorsUnlocked"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -65,9 +104,74 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "canCarefulJump",
+                {
+                  "spikeHits": 1
+                },
+                "SpikeBreaker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "SpaceJump",
+                "canIBJ",
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "SpikeBreaker",
+                        {
+                          "spikeHits": 2
+                        }
+                      ]
+                    },
+                    "SuperJump"
+                  ]
+                },
+                {
+                  "and": [
+                    "h_shinechargeMaxRunway",
+                    {
+                      "shinespark": {
+                        "frames": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "SRX Room 7A900.jpg",
+  "roomAddress": "0x7A900",
   "nextStratId": 1,
   "nextNotableId": 1
 }

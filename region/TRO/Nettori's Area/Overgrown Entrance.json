@@ -112,13 +112,7 @@
       "requires": [
         {
           "and": [
-            "f_NettoriArena_CoreXAbsorbed",
-            {
-              "or": [
-                "h_JumpAssist",
-                "canCrouchJump"
-              ]
-            }
+            "f_NettoriArena_CoreXAbsorbed"
           ]
         }
       ]
@@ -136,11 +130,31 @@
     {
       "name": "Base",
       "link": [
+        3,
+        4
+      ],
+      "requires": [
+        "h_JumpAssist"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
         4,
         1
       ],
       "requires": [
-        "h_JumpAssist"
+        {
+          "and": [
+            "f_NettoriArena_CoreXAbsorbed",
+            {
+              "or": [
+                "h_JumpAssist",
+                "canCrouchJump"
+              ]
+            }
+          ]
+        }
       ]
     },
     {

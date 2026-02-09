@@ -96,6 +96,19 @@
       "requires": []
     },
     {
+      "name": "Leave With Temporary Blue",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ],
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      }
+    },
+    {
       "name": "Base",
       "link": [
         2,

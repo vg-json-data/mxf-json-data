@@ -90,7 +90,7 @@
       ]
     },
     {
-      "name": "Leave Shinecharged",
+      "name": "Leave With Temporary Blue",
       "link": [
         2,
         2
@@ -99,7 +99,7 @@
         "h_shinechargeMaxRunway"
       ],
       "exitCondition": {
-        "leaveShinecharged": {}
+        "leaveWithTemporaryBlue": {}
       }
     }
   ],

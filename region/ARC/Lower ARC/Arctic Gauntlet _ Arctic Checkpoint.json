@@ -4,12 +4,10 @@
   "name": "Arctic Gauntlet / Arctic Checkpoint",
   "area": "ARC",
   "subarea": "Lower ARC",
-  "roomImageFile": "ARC Room 7A100.jpg",
-  "roomAddress": "0x7A100",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -69,6 +67,8 @@
       "name": "Arctic Gauntlet - Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -79,11 +79,46 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Door Gets Destroyed",
+          "lockType": "gameFlag",
+          "unlockStrats": [],
+          "lock": [
+            "f_ARCAuxiliaryRoom_Engaged"
+          ]
         }
       ]
     },
@@ -109,27 +144,6 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 5,
-      "idMinorItemPlm": "0x5A",
-      "name": "Arctic Gauntlet - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 312,
-          "y": 104,
-          "w": 24,
-          "h": 24
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7E078",
-      "mapTileX": 22,
-      "mapTileY": 18
     },
     {
       "id": 6,
@@ -176,11 +190,227 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 5,
+      "idMinorItemPlm": "0x5A",
+      "name": "Arctic Gauntlet - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 312,
+          "y": 104,
+          "w": 24,
+          "h": 24
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7E078",
+      "mapTileX": 22,
+      "mapTileY": 18
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Super Missile Blocks (Left of Missile Tank)",
+      "obstacleType": "abstract",
+      "id": "A"
+    },
+    {
+      "name": "Crumble Block (Right of Missile Tank)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "canTrivialMidAirMorph",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        5
+      ],
+      "setsFlags": [
+        "f_ArcticGauntlet_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "f_ARCAuxiliaryRoom_Engaged"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ],
+      "resetsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        7
+      ],
+      "requires": [
+        "Wave"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        6
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "ARC Room 7A100.jpg",
+  "roomAddress": "0x7A100",
   "nextStratId": 1,
   "nextNotableId": 1
 }

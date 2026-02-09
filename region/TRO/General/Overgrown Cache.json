@@ -48,10 +48,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 1416,
-          "y": 88,
-          "w": 80,
-          "h": 72
+          "x": 1472,
+          "y": 80,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -59,6 +59,41 @@
       "nodeAddress": "0x7D88C",
       "mapTileX": 37,
       "mapTileY": 19
+    }
+  ],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "enemies": [
+    {
+      "groupName": "Desgeega",
+      "enemyName": "Dessgeega",
+      "quantity": 3,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "spawn": [
+        "f_NettoriArena_CoreXAbsorbed"
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Skultera",
+      "enemyName": "Skultera",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "spawn": [
+        "f_NettoriArena_CoreXAbsorbed"
+      ],
+      "id": "e2"
     }
   ],
   "strats": [
@@ -96,6 +131,9 @@
           ]
         }
       ],
+      "clearsObstacles": [
+        "A"
+      ],
       "collectsItems": [
         2
       ],
@@ -120,6 +158,9 @@
             }
           ]
         }
+      ],
+      "clearsObstacles": [
+        "A"
       ]
     },
     {
@@ -128,7 +169,92 @@
         2,
         1
       ],
-      "requires": []
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                "Gravity",
+                {
+                  "and": [
+                    {
+                      "or": [
+                        "canInsaneJump",
+                        "ScrewAttack"
+                      ]
+                    },
+                    "canTrickyDodgeEnemies"
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "shinespark": {
+                        "frames": 110
+                      }
+                    },
+                    "canHorizontalShinespark",
+                    "canCarefulJump"
+                  ]
+                },
+                {
+                  "and": [
+                    "f_NettoriArena_CoreXAbsorbed",
+                    {
+                      "or": [
+                        {
+                          "enemyKill": {
+                            "enemies": [
+                              [
+                                "e1"
+                              ]
+                            ],
+                            "excludedWeapons": [
+                              "PowerBeam"
+                            ]
+                          }
+                        },
+                        {
+                          "enemyDamage": {
+                            "enemy": "Dessgeega",
+                            "type": "contact",
+                            "hits": 2
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "or": [
+                        {
+                          "enemyKill": {
+                            "enemies": [
+                              [
+                                "e2"
+                              ]
+                            ]
+                          }
+                        },
+                        {
+                          "enemyDamage": {
+                            "enemy": "Skultera",
+                            "type": "contact",
+                            "hits": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "roomImageFile": "TRO Room 79C00.jpg",

@@ -4,8 +4,6 @@
   "name": "Reservoir Speedway",
   "area": "AQA",
   "subarea": "Upper East AQA",
-  "roomImageFile": "AQA Room 79200.jpg",
-  "roomAddress": "0x79200",
   "roomEnvironments": [
     {
       "heated": false,
@@ -27,9 +25,9 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 120,
+          "y": 144,
           "w": 48,
-          "h": 64
+          "h": 32
         }
       ],
       "color": "#ffffff",
@@ -49,10 +47,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 1488,
-          "y": 128,
-          "w": 48,
-          "h": 64
+          "x": 1496,
+          "y": 144,
+          "w": 40,
+          "h": 32
         }
       ],
       "color": "#ffffff",
@@ -72,10 +70,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 760,
-          "y": 352,
+          "x": 768,
+          "y": 368,
           "w": 48,
-          "h": 64
+          "h": 32
         }
       ],
       "color": "#ffffff",
@@ -88,9 +86,188 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "One-Way Gate",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Leave With Temporary Blue",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_shinechargeMaxRunway",
+            {
+              "or": [
+                {
+                  "aqaWaterLevel": 2
+                },
+                "Gravity"
+              ]
+            }
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      }
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Come In With Temporary Blue, Leave With Temporary Blue",
+      "link": [
+        1,
+        2
+      ],
+      "entranceCondition": {
+        "comeInWithTemporaryBlue": {}
+      },
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      },
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Leave With Temporary Blue",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_shinechargeMaxRunway",
+            {
+              "or": [
+                {
+                  "aqaWaterLevel": 2
+                },
+                "Gravity"
+              ]
+            }
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      }
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_destroyBombWalls",
+            {
+              "or": [
+                "Wave",
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                "h_destroyBombWalls"
+              ]
+            },
+            {
+              "and": [
+                "canSuitlessWaterRoom",
+                {
+                  "or": [
+                    "SuperJump",
+                    {
+                      "and": [
+                        {
+                          "or": [
+                            "canCrouchJump",
+                            "canWalljump"
+                          ]
+                        },
+                        "canMidAirMorph",
+                        "h_bombThings"
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canIBJ",
+                        "canBombAboveIBJ"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Leave With Runway",
+      "link": [
+        3,
+        3
+      ],
+      "requires": [
+        "Gravity"
+      ],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 17,
+          "openEnd": 0
+        }
+      }
+    }
+  ],
+  "roomImageFile": "AQA Room 79200.jpg",
+  "roomAddress": "0x79200",
   "nextStratId": 1,
   "nextNotableId": 1
 }

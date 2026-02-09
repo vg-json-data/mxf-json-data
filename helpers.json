@@ -490,7 +490,16 @@
             {"or":[
               "Gravity",
               "canSuitlessWaterRoom",
-              "NightmareArena_CoreXAbsorbed"
+              "f_NightmareArena_CoreXAbsorbed"
+            ]}
+          ]
+        },
+        {
+          "name": "h_lowGravRemoved",
+          "requires": [
+            {"or":[
+              "Gravity",
+              "f_NightmareArena_CoreXAbsorbed"
             ]}
           ]
         },

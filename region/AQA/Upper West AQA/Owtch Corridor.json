@@ -4,8 +4,6 @@
   "name": "Owtch Corridor",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 79D00.jpg",
-  "roomAddress": "0x79D00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -73,10 +71,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 584,
-          "y": 168,
-          "w": 24,
-          "h": 24
+          "x": 624,
+          "y": 144,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -84,11 +82,145 @@
       "nodeAddress": "0x7DD16",
       "mapTileX": 23,
       "mapTileY": 11
+    },
+    {
+      "id": 4,
+      "name": "Above Morph Passage",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 192,
+          "y": 112,
+          "w": 16,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Super Missile Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_bombThings",
+            {
+              "or": [
+                "can4HighMidAirMorph",
+                "SuperJump"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        3
+      ],
+      "collectsItems": [
+        3
+      ],
+      "setsFlags": [
+        "f_OwtchCorridor_MissileTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        4,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 4
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 79D00.jpg",
+  "roomAddress": "0x79D00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

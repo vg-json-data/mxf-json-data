@@ -4,12 +4,10 @@
   "name": "Freezer Hallway",
   "area": "ARC",
   "subarea": "West ARC",
-  "roomImageFile": "ARC Room 7A400.jpg",
-  "roomAddress": "0x7A400",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -65,9 +63,123 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Red Gerons (Both)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Kill Red Gerons",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "f_ARCAuxiliaryRoom_Engaged",
+            "h_killRedGeron",
+            "h_killRedGeron"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_FreezerHallway_RedGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Red Gerons",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "f_ARCAuxiliaryRoom_Engaged",
+            "h_killRedGeron",
+            "h_killRedGeron"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_FreezerHallway_RedGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Leave Shinecharged",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_shinechargeMaxRunway",
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
+    }
+  ],
+  "roomImageFile": "ARC Room 7A400.jpg",
+  "roomAddress": "0x7A400",
   "nextStratId": 1,
   "nextNotableId": 1
 }

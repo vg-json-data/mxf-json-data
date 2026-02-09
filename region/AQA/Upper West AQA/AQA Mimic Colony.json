@@ -4,8 +4,6 @@
   "name": "AQA Mimic Colony",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 79A00.jpg",
-  "roomAddress": "0x79A00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -50,10 +48,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 216,
+          "x": 224,
           "y": 48,
-          "w": 32,
-          "h": 24
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -63,9 +61,94 @@
       "mapTileY": 9
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "enemies": [
+    {
+      "groupName": "Fake Missile Tanks",
+      "enemyName": "Fake E-Tank",
+      "quantity": 5,
+      "betweenNodes": [
+        1,
+        2
+      ],
+      "id": "e1"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            {
+              "enemyDamage": {
+                "enemy": "Fake E-Tank",
+                "type": "contact",
+                "hits": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "e1"
+                  ]
+                ]
+              }
+            },
+            {
+              "enemyDamage": {
+                "enemy": "Fake E-Tank",
+                "type": "contact",
+                "hits": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_AQAMimicColony_MissileTank_Collected"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "AQA Room 79A00.jpg",
+  "roomAddress": "0x79A00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

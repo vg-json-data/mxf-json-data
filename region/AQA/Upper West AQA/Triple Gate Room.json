@@ -4,8 +4,6 @@
   "name": "Triple Gate Room",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 79600.jpg",
-  "roomAddress": "0x79600",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,75 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_bombThings",
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "canMidAirMorph",
+            "h_bombThings"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        "canTrivialMidAirMorph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "aqaWaterLevel": 1
+                },
+                {
+                  "aqaWaterLevel": 2
+                },
+                "Gravity"
+              ]
+            },
+            "Morph"
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 79600.jpg",
+  "roomAddress": "0x79600",
   "nextStratId": 1,
   "nextNotableId": 1
 }

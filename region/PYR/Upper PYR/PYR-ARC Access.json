@@ -65,7 +65,7 @@
   ],
   "obstacles": [
     {
-      "name": "Wave Gates",
+      "name": "One-Way Gates",
       "obstacleType": "inanimate",
       "id": "A"
     }
@@ -137,13 +137,23 @@
       ]
     },
     {
-      "name": "Open Wave Gate",
+      "name": "Open One-Way Gate",
       "link": [
         2,
         2
       ],
       "requires": [
-        "Wave"
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            },
+            "Wave"
+          ]
+        }
       ],
       "clearsObstacles": [
         "A"

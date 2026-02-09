@@ -4,8 +4,6 @@
   "name": "Aquarium Hub East",
   "area": "AQA",
   "subarea": "Lower AQA",
-  "roomImageFile": "AQA Room 7AB00.jpg",
-  "roomAddress": "0x7AB00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -155,11 +153,1374 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 7,
+      "name": "Center of the Room",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 368,
+          "y": 336,
+          "w": 384,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 8,
+      "name": "Bottom of Morph Junction",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 272,
+          "y": 544,
+          "w": 16,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Super Missile Blocks (Below Top Door, Vertical)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Super Missile Blocks (Below Top Door, Horizontal)",
+      "obstacleType": "abstract",
+      "id": "B"
+    },
+    {
+      "name": "Super Missile Blocks (Left-Lower Door, Horizontal)",
+      "obstacleType": "inanimate",
+      "id": "C"
+    },
+    {
+      "name": "Super Missile Blocks (Left-Lower Door, Vertical)",
+      "obstacleType": "inanimate",
+      "id": "D"
+    },
+    {
+      "name": "Super Missile Blocks (Center of the Room, Horizontal)",
+      "obstacleType": "inanimate",
+      "id": "E"
+    },
+    {
+      "name": "Super Missile Blocks (Center of the Room, Vertical)",
+      "obstacleType": "inanimate",
+      "id": "F"
+    },
+    {
+      "name": "Super Missile Blocks (Bottom Door))",
+      "obstacleType": "inanimate",
+      "id": "G"
+    }
+  ],
+  "enemies": [
+    {
+      "groupName": "Aqua Zebesian (Bottom)",
+      "enemyName": "Aqua Zebesian",
+      "quantity": 1,
+      "betweenNodes": [
+        4,
+        6
+      ],
+      "id": "e1"
+    },
+    {
+      "groupName": "Aqua Zebesian (Top)",
+      "enemyName": "Aqua Zebesian",
+      "quantity": 1,
+      "betweenNodes": [
+        5,
+        7
+      ],
+      "id": "e2"
+    },
+    {
+      "groupName": "Aqua Zebesian (Right)",
+      "enemyName": "Aqua Zebesian",
+      "quantity": 1,
+      "betweenNodes": [
+        3,
+        7
+      ],
+      "id": "e3"
+    },
+    {
+      "groupName": "Sciser",
+      "enemyName": "Sciser",
+      "quantity": 1,
+      "betweenNodes": [
+        3,
+        7
+      ],
+      "id": "e4"
+    },
+    {
+      "groupName": "Aqua Zebesian (Top-Left)",
+      "enemyName": "Aqua Zebesian",
+      "quantity": 1,
+      "betweenNodes": [
+        1,
+        5
+      ],
+      "id": "e5"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Super Missile Blocks (Horizontal)",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Vertical)",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 4
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "D"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "or": [
+                "canTrivialMidAirMorph",
+                {
+                  "and": [
+                    "Gravity",
+                    "canIBJ"
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    "canSuitlessUnderwaterIBJ"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e5"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "laser",
+                    "hits": 1
+                  }
+                },
+                {
+                  "and": [
+                    "Morph",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    "h_JumpAssist"
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "canSpringBallJumpMidAir",
+                            "canSuitlessUnderwaterIBJ"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "D"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        "SpaceJump",
+                        {
+                          "and": [
+                            "SuperJump",
+                            {
+                              "and": [
+                                "canPreciseWalljump",
+                                "canConsecutiveAlternatingWallJump"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "and": [
+                            "canTrickySpringBallJump",
+                            "canDoubleSpringBallJumpMidAir",
+                            "canLongIBJ"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    "canSuitlessUnderwaterIBJ"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Horizontal)",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Vertical)",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 4
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "D"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        8
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            },
+            "Morph",
+            {
+              "or": [
+                "canTrivialMidAirMorph",
+                {
+                  "and": [
+                    "Gravity",
+                    "h_bombThings"
+                  ]
+                },
+                "canSuitlessUnderwaterIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        7
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity"
+              ]
+            },
+            {
+              "and": [
+                "canSuitlessWaterRoom",
+                {
+                  "or": [
+                    "SuperJump",
+                    {
+                      "and": [
+                        "canCrouchJump",
+                        "canTrickyDodgeEnemies",
+                        {
+                          "or": [
+                            {
+                              "enemyDamage": {
+                                "enemy": "Aqua Zebesian",
+                                "type": "contact",
+                                "hits": 1
+                              }
+                            },
+                            {
+                              "enemyDamage": {
+                                "enemy": "Aqua Zebesian",
+                                "type": "laser",
+                                "hits": 1
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "or": [
+                            {
+                              "and": [
+                                {
+                                  "enemyKill": {
+                                    "enemies": [
+                                      [
+                                        "e3"
+                                      ]
+                                    ]
+                                  }
+                                },
+                                {
+                                  "enemyKill": {
+                                    "enemies": [
+                                      [
+                                        "e4"
+                                      ]
+                                    ]
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "or": [
+                                "canTrickyDodgeEnemies",
+                                {
+                                  "enemyDamage": {
+                                    "enemy": "Aqua Zebesian",
+                                    "type": "contact",
+                                    "hits": 1
+                                  }
+                                },
+                                {
+                                  "enemyDamage": {
+                                    "enemy": "Aqua Zebesian",
+                                    "type": "laser",
+                                    "hits": 1
+                                  }
+                                },
+                                {
+                                  "enemyDamage": {
+                                    "enemy": "Sciser",
+                                    "type": "contact",
+                                    "hits": 1
+                                  }
+                                },
+                                {
+                                  "enemyDamage": {
+                                    "enemy": "Sciser",
+                                    "type": "bullet",
+                                    "hits": 1
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Gravity",
+                "canSuitlessWaterRoom"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Morph",
+                    "canTrickyDodgeEnemies"
+                  ]
+                },
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e1"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "laser",
+                    "hits": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "or": [
+                "canTrivialMidAirMorph",
+                {
+                  "and": [
+                    "Gravity",
+                    "canIBJ"
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    "canSuitlessUnderwaterIBJ"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e5"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "laser",
+                    "hits": 1
+                  }
+                },
+                {
+                  "and": [
+                    "Morph",
+                    "canTrickyDodgeEnemies"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Horizontal)",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Vertical)",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 4
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        7
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Gravity",
+                "canSuitlessWaterRoom"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Morph",
+                    "canTrickyDodgeEnemies"
+                  ]
+                },
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e2"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "laser",
+                    "hits": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "Gravity",
+                "canSuitlessWaterRoom"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Morph",
+                    "canTrickyDodgeEnemies"
+                  ]
+                },
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "e1"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "contact",
+                    "hits": 1
+                  }
+                },
+                {
+                  "enemyDamage": {
+                    "enemy": "Aqua Zebesian",
+                    "type": "laser",
+                    "hits": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        6,
+        6
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "G"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        8
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "G"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "canTrivialMidAirMorph"
+                          ]
+                        },
+                        "canIBJ"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    {
+                      "or": [
+                        "canSuitlessUnderwaterIBJ",
+                        {
+                          "and": [
+                            "SuperJump",
+                            "canTrivialMidAirMorph"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                {
+                  "or": [
+                    "SpaceJump",
+                    "canIBJ",
+                    "canConsecutiveSingleWallJump",
+                    {
+                      "and": [
+                        "SuperJump",
+                        "canConsecutiveAlternatingWallJump"
+                      ]
+                    },
+                    "canGravityJump",
+                    "canSpringBallJumpMidAir"
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "canSuitlessWaterRoom",
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "canDoubleSpringBallJumpMidAir",
+                        "canSuitlessUnderwaterIBJ"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        "SpaceJump",
+                        "canIBJ",
+                        {
+                          "or": [
+                            {
+                              "and": [
+                                "SuperJump",
+                                "canWalljump"
+                              ]
+                            },
+                            "canConsecutiveAlternatingWallJump"
+                          ]
+                        },
+                        "canGravityJump"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            {
+                              "and": [
+                                "canInsaneWalljump",
+                                "canConsecutiveAlternatingWallJump"
+                              ]
+                            }
+                          ]
+                        },
+                        "canSuitlessUnderwaterIBJ",
+                        "canSpringBallJumpMidAir"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Horizontal)",
+      "link": [
+        7,
+        7
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "E"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Vertical)",
+      "link": [
+        7,
+        7
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 4
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "F"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        8
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "E"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    "h_bombThings"
+                  ]
+                },
+                "canTrivialMidAirMorph"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            },
+            "Morph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    "h_JumpAssist",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "canTrivialMidAirMorph",
+                            "canIBJ"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "SuperJump",
+                            "canTrivialMidAirMorph"
+                          ]
+                        },
+                        "canSuitlessUnderwaterIBJ"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "G"
+              ]
+            },
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        7
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "E"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        "canIBJ",
+                        {
+                          "and": [
+                            "canTrivialMidAirMorph",
+                            {
+                              "or": [
+                                "SpaceJump",
+                                "canConsecutiveAlternatingWallJump"
+                              ]
+                            }
+                          ]
+                        },
+                        "canGravityJump",
+                        "canSpringBallJumpMidAir"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    {
+                      "or": [
+                        {
+                          "and": [
+                            "canSpringBallJumpMidAir",
+                            "canSuitlessUnderwaterIBJ"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Left-Lower Door, Horizontal)",
+      "link": [
+        8,
+        8
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "SuperJump",
+                "canSuitlessUnderwaterIBJ",
+                "Gravity"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Center of the Room, Horizontal)",
+      "link": [
+        8,
+        8
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "or": [
+                        "SpaceJump",
+                        {
+                          "and": [
+                            {
+                              "and": [
+                                "canInsaneWalljump",
+                                "canConsecutiveAlternatingWallJump"
+                              ]
+                            }
+                          ]
+                        },
+                        "canIBJ"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessWaterRoom",
+                    "canSuitlessUnderwaterIBJ"
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "E"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks (Bottom Door)",
+      "link": [
+        8,
+        8
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "G"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 7AB00.jpg",
+  "roomAddress": "0x7AB00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "Chilling Passage",
   "area": "ARC",
   "subarea": "West ARC",
-  "roomImageFile": "ARC Room 7A200.jpg",
-  "roomAddress": "0x7A200",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,30 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    }
+  ],
+  "roomImageFile": "ARC Room 7A200.jpg",
+  "roomAddress": "0x7A200",
   "nextStratId": 1,
   "nextNotableId": 1
 }

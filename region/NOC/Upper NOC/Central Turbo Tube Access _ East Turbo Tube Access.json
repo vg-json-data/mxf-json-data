@@ -218,9 +218,18 @@
       "requires": []
     },
     {
-      "name": "Leave Shinecharged",
+      "name": "Base",
       "link": [
         3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Leave Shinecharged",
+      "devNote": "FIXME: Need a way to represent coming in partially shinecharged at Node 4",
+      "link": [
+        4,
         3
       ],
       "entranceCondition": {
@@ -232,21 +241,20 @@
       "requires": []
     },
     {
-      "name": "Base",
-      "link": [
-        3,
-        4
-      ],
-      "requires": []
-    },
-    {
-      "name": "Come In Shinecharged",
+      "name": "Come In Shinecharging, Leave Shinecharged",
       "link": [
         4,
-        4
+        3
       ],
       "entranceCondition": {
-        "comeInShinecharged": {}
+        "comeInShinecharging": {
+          "length": 4,
+          "openEnd": 1,
+          "gentleDownTiles": 2
+        }
+      },
+      "exitCondition": {
+        "leaveShinecharged": {}
       },
       "requires": []
     },

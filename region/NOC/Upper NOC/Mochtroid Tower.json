@@ -238,16 +238,7 @@
         1,
         2
       ],
-      "id": "e1",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e1"
     },
     {
       "groupName": "Lower Mochtroid-X",
@@ -257,16 +248,7 @@
         4,
         6
       ],
-      "id": "e2",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e2"
     },
     {
       "groupName": "Middle Mochtroid-X",
@@ -276,16 +258,7 @@
         2,
         6
       ],
-      "id": "e3",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e3"
     },
     {
       "groupName": "Lowest Mochtroid-X",
@@ -295,16 +268,7 @@
         4,
         5
       ],
-      "id": "e4",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e4"
     }
   ],
   "strats": [
@@ -352,6 +316,7 @@
           "and": [
             "canSuitlessWaterRoom",
             "canLongIBJ",
+            "canSuitlessUnderwaterIBJ",
             {
               "enemyKill": {
                 "enemies": [
@@ -439,12 +404,6 @@
                 {
                   "and": [
                     {
-                      "ammo": {
-                        "type": "IceMissile",
-                        "count": 1
-                      }
-                    },
-                    {
                       "or": [
                         "canPreciseWalljump",
                         "canUseFrozenEnemies"
@@ -460,15 +419,26 @@
     },
     {
       "name": "Spark up to Right-Lower Door",
+      "devNote": "FIXME: Shinecharge Frames needs to be properly timed",
       "link": [
         5,
         3
       ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
       "requires": [
         {
-          "shinespark": {
-            "frames": 23
-          }
+          "and": [
+            {
+              "shinespark": {
+                "frames": 23
+              }
+            },
+            {
+              "shineChargeFrames": 50
+            }
+          ]
         }
       ]
     },
@@ -503,12 +473,6 @@
             {
               "or": [
                 "canTrickyGrappleJump",
-                {
-                  "ammo": {
-                    "type": "IceMissile",
-                    "count": 3
-                  }
-                },
                 {
                   "and": [
                     "canIBJ",
@@ -548,12 +512,6 @@
                         "e3"
                       ]
                     ]
-                  }
-                },
-                {
-                  "ammo": {
-                    "type": "IceMissile",
-                    "count": 3
                   }
                 }
               ]
@@ -631,12 +589,6 @@
               "or": [
                 "canTrickyGrappleJump",
                 {
-                  "ammo": {
-                    "type": "IceMissile",
-                    "count": 3
-                  }
-                },
-                {
                   "and": [
                     "canIBJ",
                     {
@@ -675,12 +627,6 @@
                         "e3"
                       ]
                     ]
-                  }
-                },
-                {
-                  "ammo": {
-                    "type": "IceMissile",
-                    "count": 3
                   }
                 }
               ]

@@ -89,7 +89,17 @@
       "requires": [
         {
           "and": [
-            "Wave",
+            {
+              "or": [
+                "Wave",
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            },
             "Morph",
             {
               "or": [
@@ -265,6 +275,9 @@
               "shinespark": {
                 "frames": 21
               }
+            },
+            {
+              "shineChargeFrames": 0
             }
           ]
         }

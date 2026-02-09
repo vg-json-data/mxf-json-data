@@ -4,8 +4,6 @@
   "name": "Construction Site Access",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 79800.jpg",
-  "roomAddress": "0x79800",
   "roomEnvironments": [
     {
       "heated": false,
@@ -86,11 +84,108 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 4,
+      "name": "Serris Broken Entrance",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 24,
+          "y": 328,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "aqaWaterLevel": 0
+                },
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "canPreciseWalljump",
+                        "canSuitlessUnderwaterIBJ"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "SuperJump",
+            "canSuitlessUnderwaterIBJ"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Come In Shinecharged, Spark to Top-Left Door",
+      "link": [
+        4,
+        1
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "requires": [
+        {
+          "and": [
+            {
+              "shineChargeFrames": 38
+            },
+            {
+              "shinespark": {
+                "frames": 32
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 79800.jpg",
+  "roomAddress": "0x79800",
   "nextStratId": 1,
   "nextNotableId": 1
 }

@@ -4,8 +4,6 @@
   "name": "Metroid Swarm Chase",
   "area": "DMX",
   "subarea": "Chase Segment",
-  "roomImageFile": "DMX Room 78A00.jpg",
-  "roomAddress": "0x78A00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,18 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "DMX Room 78A00.jpg",
+  "roomAddress": "0x78A00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

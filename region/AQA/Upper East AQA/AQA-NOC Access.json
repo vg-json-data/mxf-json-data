@@ -4,8 +4,6 @@
   "name": "AQA-NOC Access",
   "area": "AQA",
   "subarea": "Upper East AQA",
-  "roomImageFile": "AQA Room 79000.jpg",
-  "roomAddress": "0x79000",
   "roomEnvironments": [
     {
       "heated": false,
@@ -88,9 +86,166 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks (Wall)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Speed Booster Blocks (Ceiling)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    },
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "C"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Power Bomb Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "PowerBomb",
+                "count": 1
+              }
+            },
+            {
+              "and": [
+                "h_shinechargeMaxRunway",
+                {
+                  "aqaWaterLevel": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Power Bomb Blocks",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "PowerBomb",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    },
+    {
+      "name": "Come in Shinecharged, break Speedbooster blocks",
+      "link": [
+        2,
+        2
+      ],
+      "entranceCondition": {
+        "comeInShinecharged": {}
+      },
+      "clearsObstacles": [
+        "A"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Come In With Temporary Blue, Break Speed Booster Blocks",
+      "link": [
+        3,
+        3
+      ],
+      "entranceCondition": {
+        "comeInWithTemporaryBlue": {}
+      },
+      "requires": [
+        "canChainTemporaryBlue"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 79000.jpg",
+  "roomAddress": "0x79000",
   "nextStratId": 1,
   "nextNotableId": 1
 }

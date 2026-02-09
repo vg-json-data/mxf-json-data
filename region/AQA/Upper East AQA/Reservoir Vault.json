@@ -4,8 +4,6 @@
   "name": "Reservoir Vault",
   "area": "AQA",
   "subarea": "Upper East AQA",
-  "roomImageFile": "AQA Room 78F00.jpg",
-  "roomAddress": "0x78F00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -96,10 +94,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 136,
-          "y": 160,
-          "w": 48,
-          "h": 64
+          "x": 144,
+          "y": 192,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -107,11 +105,327 @@
       "nodeAddress": "0x7DCB6",
       "mapTileX": 38,
       "mapTileY": 8
+    },
+    {
+      "id": 5,
+      "name": "Above Speed Booster Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 640,
+          "y": 240,
+          "w": 48,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "Super Missile Blocks (Top)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    },
+    {
+      "name": "Super Missile Blocks (Middle)",
+      "obstacleType": "inanimate",
+      "id": "C"
+    },
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "D"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Destroy Power Bomb Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "D"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                "h_JumpAssist",
+                "canCrouchJump"
+              ]
+            },
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "canTrivialMidAirMorph",
+                    "canIBJ"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "D"
+              ]
+            },
+            {
+              "or": [
+                "h_JumpAssist",
+                "canCrouchJump"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "D"
+      ],
+      "collectsItems": [
+        4
+      ],
+      "setsFlags": [
+        "f_ReservoirVault_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Come In With Spark, Reach Above Speed Booster Blocks",
+      "link": [
+        3,
+        5
+      ],
+      "entranceCondition": {
+        "comeInWithSpark": {}
+      },
+      "requires": [
+        {
+          "shinespark": {
+            "frames": 15
+          }
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "D"
+              ]
+            },
+            "h_JumpAssist"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Destroy Power Bomb Blocks",
+      "link": [
+        4,
+        4
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "PowerBomb",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "D"
+      ]
+    },
+    {
+      "name": "Destroy Middle Super Missile Blocks",
+      "link": [
+        4,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            },
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            },
+            "Morph",
+            {
+              "or": [
+                "h_JumpAssist",
+                "canCrouchJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Middle Super Missile Blocks",
+      "link": [
+        5,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    }
+  ],
+  "roomImageFile": "AQA Room 78F00.jpg",
+  "roomAddress": "0x78F00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

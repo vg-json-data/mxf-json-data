@@ -4,8 +4,6 @@
   "name": "Floodbot Quarters",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 7A100.jpg",
-  "roomAddress": "0x7A100",
   "roomEnvironments": [
     {
       "heated": false,
@@ -65,9 +63,26 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "AQA Room 7A100.jpg",
+  "roomAddress": "0x7A100",
   "nextStratId": 1,
   "nextNotableId": 1
 }

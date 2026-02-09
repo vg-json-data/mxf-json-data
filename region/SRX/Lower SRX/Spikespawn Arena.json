@@ -4,8 +4,6 @@
   "name": "Spikespawn Arena",
   "area": "SRX",
   "subarea": "Lower SRX",
-  "roomImageFile": "SRX Room 7AA00.jpg",
-  "roomAddress": "0x7AA00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -22,7 +20,9 @@
       "id": 1,
       "name": "Bottom Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -33,11 +33,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_SpikespawnArena_DoorsUnlocked"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -61,9 +100,41 @@
       "note": ""
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
+      ],
+      "collectsItems": [
+        2
+      ],
+      "setsFlags": [
+        "f_SpikespawnArena_CoreXAbsorbed",
+        "f_SpikespawnArena_DoorsUnlocked"
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "SRX Room 7AA00.jpg",
+  "roomAddress": "0x7AA00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

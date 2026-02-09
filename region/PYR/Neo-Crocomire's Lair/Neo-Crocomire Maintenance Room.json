@@ -63,14 +63,43 @@
       ]
     }
   ],
+  "obstacles": [
+    {
+      "name": "Green Geron",
+      "obstacleType": "inanimate",
+      "id": "A"
+    }
+  ],
   "strats": [
+    {
+      "name": "Kill Green Geron",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_NeoCrocomireMaintenanceRoom_GreenGeronDestroyed"
+      ]
+    },
     {
       "name": "Base",
       "link": [
         1,
         2
       ],
-      "requires": []
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
     },
     {
       "name": "Base",
@@ -80,21 +109,46 @@
       ],
       "requires": [
         {
-          "or": [
-            "SpaceJump",
+          "and": [
             {
-              "and": [
-                "SuperJump",
-                "canWalljump"
+              "obstaclesCleared": [
+                "A"
               ]
             },
             {
-              "and": [
-                "canIBJ"
+              "or": [
+                "SpaceJump",
+                {
+                  "and": [
+                    "SuperJump",
+                    "canWalljump"
+                  ]
+                },
+                {
+                  "and": [
+                    "canIBJ"
+                  ]
+                }
               ]
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "Kill Green Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_NeoCrocomireMaintenanceRoom_GreenGeronDestroyed"
       ]
     }
   ],

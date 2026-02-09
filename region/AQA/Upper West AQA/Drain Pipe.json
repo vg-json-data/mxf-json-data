@@ -4,8 +4,6 @@
   "name": "Drain Pipe",
   "area": "AQA",
   "subarea": "Upper West AQA",
-  "roomImageFile": "AQA Room 7BC00.jpg",
-  "roomAddress": "0x7BC00",
   "roomEnvironments": [
     {
       "heated": false,
@@ -111,9 +109,138 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "obstacles": [
+    {
+      "name": "One-Way Gate (Upper)",
+      "obstacleType": "inanimate",
+      "id": "A"
+    },
+    {
+      "name": "One-Way Gate (Lower)",
+      "obstacleType": "inanimate",
+      "id": "B"
+    }
+  ],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "clearsObstacles": [
+        "B"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Leave With Shinecharged",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "aqaWaterLevel": 1
+                },
+                {
+                  "aqaWaterLevel": 2
+                }
+              ]
+            },
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "canShineCharge": {
+                "usedTiles": 18,
+                "openEnd": 1,
+                "steepUpTiles": 1
+              }
+            }
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "aqaWaterLevel": 0
+            },
+            "Morph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "aqaWaterLevel": 0
+            },
+            "canTrivialMidAirMorph",
+            {
+              "or": [
+                "can4HighMidAirMorph",
+                "SuperJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
+    }
+  ],
+  "roomImageFile": "AQA Room 7BC00.jpg",
+  "roomAddress": "0x7BC00",
   "nextStratId": 1,
   "nextNotableId": 1
 }

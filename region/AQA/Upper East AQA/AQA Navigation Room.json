@@ -82,11 +82,41 @@
   ],
   "strats": [
     {
+      "name": "Leave With Temporary Blue",
+      "link": [
+        1,
+        1
+      ],
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      },
+      "requires": []
+    },
+    {
       "name": "Base",
       "link": [
         1,
         3
       ],
+      "requires": []
+    },
+    {
+      "name": "Come In Shinecharging, Leave With Temporary Blue",
+      "link": [
+        2,
+        1
+      ],
+      "entranceCondition": {
+        "comeInShinecharging": {
+          "length": 12,
+          "openEnd": 0,
+          "steepUpTiles": 2,
+          "steepDownTiles": 2
+        }
+      },
+      "exitCondition": {
+        "leaveWithTemporaryBlue": {}
+      },
       "requires": []
     },
     {

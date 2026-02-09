@@ -4,12 +4,10 @@
   "name": "ARC-TRO Access",
   "area": "ARC",
   "subarea": "West ARC",
-  "roomImageFile": "ARC-TRO Access.jpg",
-  "roomAddress": "0x0",
   "roomEnvironments": [
     {
       "heated": false,
-      "cold": false
+      "cold": true
     }
   ],
   "mapTileMask": [
@@ -65,9 +63,44 @@
       ]
     }
   ],
-  "enemies": [],
-  "strats": [],
-  "notables": [],
+  "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_usePowerBomb",
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_usePowerBomb",
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roomImageFile": "ARC-TRO Access.jpg",
+  "roomAddress": "0x0",
   "nextStratId": 1,
   "nextNotableId": 1
 }
