@@ -145,7 +145,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e1"
+                            "Zoro"
                           ]
                         ]
                       }
@@ -187,7 +187,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e1"
+                            "Zoro"
                           ]
                         ]
                       }
@@ -221,6 +221,8 @@
   ],
   "roomImageFile": "AQA Room 7B300.jpg",
   "roomAddress": "0x7B300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

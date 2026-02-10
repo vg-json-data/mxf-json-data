@@ -807,6 +807,8 @@
   ],
   "roomImageFile": "AQA Room 7A000.jpg",
   "roomAddress": "0x7A000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 14,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

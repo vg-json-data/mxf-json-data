@@ -182,6 +182,9 @@
   ],
   "roomImageFile": "PYR Room 79B00.jpg",
   "roomAddress": "0x79B00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

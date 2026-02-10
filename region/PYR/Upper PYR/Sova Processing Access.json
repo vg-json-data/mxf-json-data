@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 282,
+  "id": 283,
   "name": "Sova Processing Access",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -18,16 +18,16 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Top-Left Door",
+      "name": "Left-Top Tunnel",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "passage",
       "geometry": [
         {
           "shape": "rect",
           "x": 0,
-          "y": 96,
+          "y": 32,
           "w": 48,
-          "h": 64
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -41,16 +41,16 @@
     },
     {
       "id": 2,
-      "name": "Left-Top Tunnel",
+      "name": "Top-Left Door",
       "nodeType": "door",
-      "nodeSubType": "passage",
+      "nodeSubType": "blue",
       "geometry": [
         {
           "shape": "rect",
           "x": 0,
-          "y": 32,
+          "y": 96,
           "w": 48,
-          "h": 16
+          "h": 64
         }
       ],
       "color": "#ffffff",
@@ -87,6 +87,22 @@
     },
     {
       "id": 4,
+      "name": "At Crumble Wall",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 88,
+          "w": 32,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "idMinorItemPlm": "0x32",
       "name": "Sova Processing Access - Hidden Power Bomb Tank",
       "nodeType": "item",
@@ -105,22 +121,6 @@
       "nodeAddress": "0x7DA36",
       "mapTileX": 23,
       "mapTileY": 17
-    },
-    {
-      "id": 5,
-      "name": "At Crumble Wall",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 208,
-          "y": 88,
-          "w": 32,
-          "h": 56
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -139,8 +139,8 @@
     {
       "name": "Leave Shinecharged",
       "link": [
-        1,
-        1
+        2,
+        2
       ],
       "requires": [
         {
@@ -162,8 +162,8 @@
     {
       "name": "Base",
       "link": [
-        1,
-        5
+        2,
+        4
       ],
       "requires": [
         {
@@ -176,8 +176,8 @@
     {
       "name": "Destroy Crumble Wall",
       "link": [
-        2,
-        5
+        1,
+        4
       ],
       "requires": [
         "Morph"
@@ -203,7 +203,7 @@
       "name": "Base",
       "link": [
         3,
-        4
+        5
       ],
       "requires": [
         {
@@ -213,7 +213,7 @@
         }
       ],
       "collectsItems": [
-        4
+        5
       ],
       "setsFlags": [
         "f_SovaProcessingAccess_PowerBombTank_Collected"
@@ -223,7 +223,7 @@
       "name": "Base",
       "link": [
         3,
-        5
+        4
       ],
       "requires": [
         {
@@ -236,7 +236,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         3
       ],
       "requires": [
@@ -255,16 +255,16 @@
     {
       "name": "Base",
       "link": [
-        5,
-        1
+        4,
+        2
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        5,
-        2
+        4,
+        1
       ],
       "requires": [
         "canTrivialMidAirMorph"
@@ -273,7 +273,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         3
       ],
       "requires": []
@@ -281,6 +281,8 @@
   ],
   "roomImageFile": "PYR Room 78E00.jpg",
   "roomAddress": "0x78E00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 11,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

@@ -45,7 +45,7 @@
           "subarea": "Lower PYR",
           "roomid": 242,
           "roomName": "Neo-Ridley Gauntlet Access",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Top-Right Door",
           "position": "right"
         }
@@ -118,7 +118,7 @@
         {
           "area": "PYR",
           "subarea": "Lower PYR",
-          "roomid": 243,
+          "roomid": 244,
           "roomName": "PYR Auxiliary Room Access",
           "nodeid": 2,
           "nodeName": "Left Door",
@@ -336,7 +336,7 @@
           "subarea": "Lower PYR",
           "roomid": 242,
           "roomName": "Neo-Ridley Gauntlet Access",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Top-Left Door",
           "position": "left"
         },
@@ -384,7 +384,7 @@
         {
           "area": "PYR",
           "subarea": "Lower PYR",
-          "roomid": 243,
+          "roomid": 244,
           "roomName": "PYR Auxiliary Room Access",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -409,7 +409,7 @@
         {
           "area": "PYR",
           "subarea": "Lower PYR",
-          "roomid": 243,
+          "roomid": 244,
           "roomName": "PYR Auxiliary Room Access",
           "nodeid": 3,
           "nodeName": "Bottom-Right Door",
@@ -418,7 +418,7 @@
         {
           "area": "PYR",
           "subarea": "Lower PYR",
-          "roomid": 244,
+          "roomid": 243,
           "roomName": "PYR Auxiliary Room",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -443,7 +443,7 @@
         {
           "area": "PYR",
           "subarea": "Lower PYR",
-          "roomid": 248,
+          "roomid": 249,
           "roomName": "PYR Security Room Access",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -459,7 +459,7 @@
         {
           "area": "PYR",
           "subarea": "Lower PYR",
-          "roomid": 248,
+          "roomid": 249,
           "roomName": "PYR Security Room Access",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -468,7 +468,7 @@
         {
           "area": "PYR",
           "subarea": "Lower PYR",
-          "roomid": 249,
+          "roomid": 248,
           "roomName": "PYR Security Room",
           "nodeid": 1,
           "nodeName": "Left Door",

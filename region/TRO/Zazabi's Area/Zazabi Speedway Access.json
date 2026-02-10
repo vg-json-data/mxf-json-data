@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 364,
+  "id": 366,
   "name": "Zazabi Speedway Access",
   "area": "TRO",
   "subarea": "Zazabi's Area",
@@ -90,7 +90,9 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Kago",
+                    "Kago",
+                    "Kago"
                   ]
                 ]
               }
@@ -120,7 +122,9 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Kago",
+                    "Kago",
+                    "Kago"
                   ]
                 ]
               }
@@ -139,6 +143,8 @@
   ],
   "roomImageFile": "TRO Room 79A00.jpg",
   "roomAddress": "0x79A00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

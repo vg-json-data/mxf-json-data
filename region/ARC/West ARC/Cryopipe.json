@@ -64,6 +64,38 @@
     },
     {
       "id": 3,
+      "name": "Top of the Room",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 224,
+          "y": 56,
+          "w": 64,
+          "h": 24
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 4,
+      "name": "Above Grapple Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 384,
+          "y": 224,
+          "w": 40,
+          "h": 24
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "idMinorItemPlm": "0x59",
       "name": "Cryopipe - Hidden Missile Tank",
       "nodeType": "item",
@@ -82,38 +114,6 @@
       "nodeAddress": "0x7E070",
       "mapTileX": 21,
       "mapTileY": 22
-    },
-    {
-      "id": 4,
-      "name": "Top of the Room",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 224,
-          "y": 56,
-          "w": 64,
-          "h": 24
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
-      "id": 5,
-      "name": "Above Grapple Blocks",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 384,
-          "y": 224,
-          "w": 40,
-          "h": 24
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "strats": [
@@ -121,7 +121,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        3
       ],
       "requires": [
         {
@@ -171,7 +171,7 @@
       "name": "Base",
       "link": [
         1,
-        5
+        4
       ],
       "requires": [
         {
@@ -221,7 +221,7 @@
       "name": "Base",
       "link": [
         2,
-        5
+        4
       ],
       "requires": [
         {
@@ -232,7 +232,7 @@
     {
       "name": "Base",
       "link": [
-        3,
+        5,
         1
       ],
       "requires": [
@@ -244,8 +244,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        4
+        5,
+        3
       ],
       "requires": [
         {
@@ -261,7 +261,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         2
       ],
       "requires": [
@@ -291,8 +291,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
+        3,
+        5
       ],
       "requires": [
         {
@@ -321,7 +321,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         2
       ],
       "requires": [
@@ -333,8 +333,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        4,
+        3
       ],
       "requires": [
         {
@@ -383,6 +383,9 @@
   ],
   "roomImageFile": "ARC Room 7A000.jpg",
   "roomAddress": "0x7A000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 10,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

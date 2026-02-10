@@ -103,7 +103,7 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Dusty Arachnus - Left Door] and [Omega Queen\u0027s Room - Top-Right Door]",
+      "description": "Horizontal Door connection between [Dusty Arachnus - Left Door] and [Omega Queen's Room - Top-Right Door]",
       "direction": "Forward",
       "nodes": [
         {
@@ -119,7 +119,7 @@
           "area": "DMX",
           "subarea": "Opening Segment",
           "roomid": 127,
-          "roomName": "Omega Queen\u0027s Room",
+          "roomName": "Omega Queen's Room",
           "nodeid": 1,
           "nodeName": "Top-Right Door",
           "position": "right"
@@ -153,26 +153,26 @@
     },
     {
       "connectionType": "HorizontalTunnel",
-      "description": "Horizontal Tunnel connection between [Metroid Nest - Bottom-Left Tunnel] and [Omega Queen\u0027s Room - Right Tunnel]",
+      "description": "Horizontal Tunnel connection between [Metroid Nest - Bottom-Left Tunnel] and [Omega Queen's Room - Right Tunnel]",
       "direction": "Forward",
       "nodes": [
         {
           "area": "DMX",
           "subarea": "Opening Segment",
-          "roomid": 127,
-          "roomName": "Omega Queen\u0027s Room",
-          "nodeid": 2,
-          "nodeName": "Right Tunnel",
-          "position": "right"
+          "roomid": 124,
+          "roomName": "Metroid Nest",
+          "nodeid": 3,
+          "nodeName": "Bottom-Left Tunnel",
+          "position": "left"
         },
         {
           "area": "DMX",
           "subarea": "Opening Segment",
-          "roomid": 124,
-          "roomName": "Metroid Nest",
+          "roomid": 127,
+          "roomName": "Omega Queen's Room",
           "nodeid": 2,
-          "nodeName": "Bottom-Left Tunnel",
-          "position": "left"
+          "nodeName": "Right Tunnel",
+          "position": "right"
         }
       ]
     },
@@ -195,7 +195,7 @@
           "subarea": "Opening Segment",
           "roomid": 124,
           "roomName": "Metroid Nest",
-          "nodeid": 3,
+          "nodeid": 2,
           "nodeName": "Bottom-Right Tunnel",
           "position": "right"
         }
@@ -278,14 +278,14 @@
     },
     {
       "connectionType": "VerticalDoor",
-      "description": "Vertical Door connection between [Omega Queen\u0027s Room - Bottom Door] and [Xenometroid Birthplace - Top Door]",
+      "description": "Vertical Door connection between [Omega Queen's Room - Bottom Door] and [Xenometroid Birthplace - Top Door]",
       "direction": "Forward",
       "nodes": [
         {
           "area": "DMX",
           "subarea": "Opening Segment",
           "roomid": 127,
-          "roomName": "Omega Queen\u0027s Room",
+          "roomName": "Omega Queen's Room",
           "nodeid": 3,
           "nodeName": "Bottom Door",
           "position": "bottom"

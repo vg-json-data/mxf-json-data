@@ -1,9 +1,9 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 102,
-  "name": "Underpressure",
-  "area": "ARC",
-  "subarea": "West ARC",
+  "id": 298,
+  "name": "Twin-Wing Bridge",
+  "area": "SRX",
+  "subarea": "Lower SRX",
   "roomEnvironments": [
     {
       "heated": false,
@@ -47,7 +47,7 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 976,
+          "x": 464,
           "y": 96,
           "w": 48,
           "h": 64
@@ -65,15 +65,25 @@
   ],
   "strats": [
     {
+      "name": "Leave Shinecharged",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        "h_shinechargeMaxRunway"
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
+    },
+    {
       "name": "Base",
-      "note": "The Super Missile Blocks can be skipped entirely by morphing through the wall underwater; Only the SA-X can destroy the first pillar of blocks.",
       "link": [
         1,
         2
       ],
-      "requires": [
-        "h_bombThings"
-      ]
+      "requires": []
     },
     {
       "name": "Base",
@@ -81,16 +91,24 @@
         2,
         1
       ],
+      "requires": []
+    },
+    {
+      "name": "Leave Shinecharged",
+      "link": [
+        2,
+        2
+      ],
       "requires": [
-        "h_bombThings"
-      ]
+        "h_shinechargeMaxRunway"
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      }
     }
   ],
-  "roomImageFile": "ARC Room 79F00.jpg",
-  "roomAddress": "0x79F00",
-  "nextStratId": 3,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "roomImageFile": "SRX Room 7A100x.png",
+  "roomAddress": "0x7A100",
+  "nextStratId": 1,
+  "nextNotableId": 1
 }

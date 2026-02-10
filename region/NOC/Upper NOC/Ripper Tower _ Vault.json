@@ -117,7 +117,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Vault - Left Tunnel",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -167,7 +167,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Vault - Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -217,7 +217,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 5,
       "idMinorItemPlm": "0x62",
       "name": "Ripper Tower - Power Bomb Tank",
       "nodeType": "item",
@@ -291,7 +291,7 @@
       "name": "Base",
       "link": [
         1,
-        3
+        5
       ],
       "requires": [
         {
@@ -329,7 +329,7 @@
         }
       ],
       "collectsItems": [
-        3
+        5
       ],
       "setsFlags": [
         "f_RipperTower_PowerBombTank_Collected"
@@ -370,7 +370,7 @@
     {
       "name": "Base",
       "link": [
-        3,
+        5,
         2
       ],
       "requires": [
@@ -380,8 +380,8 @@
     {
       "name": "Destroy Super Missile Blocks & Bomb Blocks",
       "link": [
-        4,
-        4
+        3,
+        3
       ],
       "requires": [
         {
@@ -418,8 +418,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        3,
+        4
       ],
       "requires": [
         {
@@ -432,7 +432,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         6
       ],
       "requires": [
@@ -473,8 +473,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        4,
+        3
       ],
       "requires": [
         {
@@ -519,8 +519,8 @@
     {
       "name": "Destroy Super Missile Blocks & Bomb Blocks",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "requires": [
         {
@@ -557,6 +557,8 @@
   ],
   "roomImageFile": "NOC Room 79600.jpg",
   "roomAddress": "0x79600",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 10,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

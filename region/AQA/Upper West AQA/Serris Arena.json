@@ -226,6 +226,9 @@
   ],
   "roomImageFile": "AQA Room 7A500.jpg",
   "roomAddress": "0x7A500",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

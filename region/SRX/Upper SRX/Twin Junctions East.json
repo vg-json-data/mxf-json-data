@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 316,
+  "id": 317,
   "name": "Twin Junctions East",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -364,6 +364,8 @@
   ],
   "roomImageFile": "SRX Room 79700.jpg",
   "roomAddress": "0x79700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 11,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

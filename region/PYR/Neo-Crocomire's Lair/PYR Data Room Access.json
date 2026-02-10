@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 260,
+  "id": 261,
   "name": "PYR Data Room Access",
   "area": "PYR",
   "subarea": "Neo-Crocomire's Lair",
@@ -208,6 +208,9 @@
   ],
   "roomImageFile": "PYR Room 7A100.jpg",
   "roomAddress": "0x7A100",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

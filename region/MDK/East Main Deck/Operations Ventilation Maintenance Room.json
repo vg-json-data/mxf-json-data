@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 154,
+  "id": 155,
   "name": "Operations Ventilation Maintenance Room",
   "area": "MDK",
   "subarea": "East Main Deck",
@@ -87,6 +87,9 @@
   ],
   "roomImageFile": "MDK Room 17.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

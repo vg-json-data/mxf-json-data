@@ -86,29 +86,6 @@
       ]
     },
     {
-      "id": 5,
-      "name": "Bottom Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 352,
-          "y": 976,
-          "w": 64,
-          "h": 48
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "down",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 4,
       "name": "Bottom-Right Door",
       "nodeType": "door",
@@ -125,6 +102,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Bottom Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 352,
+          "y": 976,
+          "w": 64,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "down",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -228,7 +228,7 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e3"
+                        "Yard-X"
                       ]
                     ]
                   }
@@ -248,7 +248,7 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e4"
+                        "Skultera"
                       ]
                     ]
                   }
@@ -333,7 +333,7 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e5"
+                        "Yard-X"
                       ]
                     ]
                   }
@@ -380,7 +380,7 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e5"
+                        "Yard-X"
                       ]
                     ]
                   }
@@ -551,7 +551,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e2"
+                            "Yard-X"
                           ]
                         ]
                       }
@@ -582,7 +582,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e1"
+                            "Skultera-X"
                           ]
                         ]
                       }
@@ -603,7 +603,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e2"
+                            "Yard-X"
                           ]
                         ]
                       }
@@ -660,7 +660,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e3"
+                            "Yard-X"
                           ]
                         ]
                       }
@@ -698,7 +698,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e3"
+                            "Yard-X"
                           ]
                         ]
                       }
@@ -739,6 +739,7 @@
   ],
   "roomImageFile": "AQA Room 7AD00.jpg",
   "roomAddress": "0x7AD00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 14,
+  "nextNotableId": 1,
+  "notables": []
 }

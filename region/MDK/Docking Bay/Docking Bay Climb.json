@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 144,
+  "id": 145,
   "name": "Docking Bay Climb",
   "area": "MDK",
   "subarea": "Docking Bay",
@@ -87,29 +87,6 @@
     },
     {
       "id": 4,
-      "name": "Bottom-Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 624,
-          "w": 48,
-          "h": 48
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 5,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -125,6 +102,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Bottom-Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 624,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -176,15 +176,15 @@
       "name": "Base",
       "link": [
         3,
-        5
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        4,
-        4
+        5,
+        5
       ],
       "requires": [
         {
@@ -201,15 +201,15 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        5,
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         3
       ],
       "requires": []
@@ -217,8 +217,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        4,
+        5
       ],
       "requires": [
         {
@@ -235,6 +235,8 @@
   ],
   "roomImageFile": "MDK Room 20.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 10,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

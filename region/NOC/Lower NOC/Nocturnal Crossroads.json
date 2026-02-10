@@ -109,6 +109,22 @@
       ]
     },
     {
+      "id": 5,
+      "name": "Above Grapple Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 320,
+          "y": 288,
+          "w": 72,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
       "id": 6,
       "idMinorItemPlm": "0x6A",
       "name": "Nocturnal Crossroads - Missile Tank",
@@ -130,7 +146,7 @@
       "mapTileY": 13
     },
     {
-      "id": 5,
+      "id": 7,
       "name": "Nocturnal Crossroads - NOC Aux Power Cell",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -147,22 +163,6 @@
       "nodeItem": "Aux Power Cell",
       "nodeAddress": "0x0",
       "note": "Jump through the wall at the bottom-right of the room"
-    },
-    {
-      "id": 7,
-      "name": "Above Grapple Blocks",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 320,
-          "y": 288,
-          "w": 72,
-          "h": 32
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -299,7 +299,7 @@
       "name": "Base",
       "link": [
         3,
-        7
+        5
       ],
       "requires": [
         {
@@ -330,7 +330,7 @@
       "name": "Base",
       "link": [
         4,
-        5
+        7
       ],
       "requires": [
         {
@@ -346,7 +346,7 @@
         }
       ],
       "collectsItems": [
-        5
+        7
       ],
       "setsFlags": [
         "f_NOC_PowerCellAcquired"
@@ -355,7 +355,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        7,
         4
       ],
       "requires": [
@@ -378,7 +378,7 @@
     {
       "name": "Base",
       "link": [
-        7,
+        5,
         1
       ],
       "requires": [
@@ -409,8 +409,8 @@
     {
       "name": "Base",
       "link": [
-        7,
-        7
+        5,
+        5
       ],
       "requires": [
         {
@@ -427,6 +427,8 @@
   ],
   "roomImageFile": "NOC Room 7AE00.jpg",
   "roomAddress": "0x7AE00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 16,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

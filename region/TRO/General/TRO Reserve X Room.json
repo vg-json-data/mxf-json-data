@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 339,
+  "id": 340,
   "name": "TRO Reserve X Room",
   "area": "TRO",
   "subarea": "General",
@@ -97,6 +97,9 @@
   ],
   "roomImageFile": "TRO Room 79100.jpg",
   "roomAddress": "0x79100",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

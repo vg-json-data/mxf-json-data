@@ -125,7 +125,9 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Reo",
+                        "Reo",
+                        "Reo"
                       ]
                     ]
                   }
@@ -171,7 +173,9 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Reo",
+                        "Reo",
+                        "Reo"
                       ]
                     ]
                   }
@@ -192,6 +196,7 @@
   ],
   "roomImageFile": "PYR Room 79D00.jpg",
   "roomAddress": "0x79D00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "notables": []
 }

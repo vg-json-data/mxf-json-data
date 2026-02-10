@@ -215,24 +215,19 @@
     },
     {
       "id": 6,
-      "idMinorItemPlm": "0x0C",
-      "name": "Silo Scaffolding - Power Bomb Tank",
-      "nodeType": "item",
+      "name": "Top-Left Runway",
+      "nodeType": "junction",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 904,
-          "y": 192,
-          "w": 16,
-          "h": 16
+          "x": 288,
+          "y": 80,
+          "w": 480,
+          "h": 80
         }
       ],
-      "color": "#37c90e",
-      "nodeItem": "PowerBomb",
-      "nodeAddress": "0x7D492",
-      "mapTileX": 36,
-      "mapTileY": 19
+      "color": "#0000ff"
     },
     {
       "id": 7,
@@ -252,19 +247,24 @@
     },
     {
       "id": 8,
-      "name": "Top-Left Runway",
-      "nodeType": "junction",
+      "idMinorItemPlm": "0x0C",
+      "name": "Silo Scaffolding - Power Bomb Tank",
+      "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 288,
-          "y": 80,
-          "w": 480,
-          "h": 80
+          "x": 904,
+          "y": 192,
+          "w": 16,
+          "h": 16
         }
       ],
-      "color": "#0000ff"
+      "color": "#37c90e",
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7D492",
+      "mapTileX": 36,
+      "mapTileY": 19
     }
   ],
   "obstacles": [
@@ -318,8 +318,8 @@
       "enemyName": "Zebesian",
       "quantity": 1,
       "homeNodes": [
-        6,
-        8
+        8,
+        6
       ],
       "id": "e3",
       "geometry": [
@@ -376,7 +376,7 @@
       "name": "Come in Shinecharged, Spark to the Top-Left Runway",
       "link": [
         2,
-        8
+        6
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -429,7 +429,7 @@
       "name": "Base",
       "link": [
         2,
-        8
+        6
       ],
       "requires": [
         {
@@ -539,7 +539,7 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e2"
+                        "Zebesian"
                       ]
                     ]
                   }
@@ -573,7 +573,7 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e2"
+                        "Zebesian"
                       ]
                     ]
                   }
@@ -587,7 +587,7 @@
     {
       "name": "Base",
       "link": [
-        6,
+        8,
         2
       ],
       "requires": []
@@ -605,7 +605,8 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Zebesian",
+                    "Zebesian"
                   ]
                 ]
               }
@@ -654,8 +655,8 @@
     {
       "name": "Base",
       "link": [
-        8,
-        6
+        6,
+        8
       ],
       "requires": [
         {
@@ -686,7 +687,7 @@
         }
       ],
       "collectsItems": [
-        6
+        8
       ],
       "setsFlags": [
         "f_SiloScaffolding_PowerBombTank_Collected"
@@ -695,8 +696,8 @@
     {
       "name": "Destroy Speed Booster Blocks",
       "link": [
-        8,
-        8
+        6,
+        6
       ],
       "requires": [
         {
@@ -706,7 +707,7 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e3"
+                    "Zebesian"
                   ]
                 ]
               }
@@ -731,6 +732,7 @@
   ],
   "roomImageFile": "MDK Room 5.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 14,
+  "nextNotableId": 1,
+  "notables": []
 }

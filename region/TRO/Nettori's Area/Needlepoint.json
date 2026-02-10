@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 350,
+  "id": 351,
   "name": "Needlepoint",
   "area": "TRO",
   "subarea": "Nettori's Area",
@@ -131,6 +131,9 @@
   ],
   "roomImageFile": "TRO Room 7AA00.jpg",
   "roomAddress": "0x7AA00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

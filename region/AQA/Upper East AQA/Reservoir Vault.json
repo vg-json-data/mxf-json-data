@@ -87,6 +87,22 @@
     },
     {
       "id": 4,
+      "name": "Above Speed Booster Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 640,
+          "y": 240,
+          "w": 48,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "idMinorItemPlm": "0x41",
       "name": "Reservoir Vault - Missile Tank",
       "nodeType": "item",
@@ -105,22 +121,6 @@
       "nodeAddress": "0x7DCB6",
       "mapTileX": 38,
       "mapTileY": 8
-    },
-    {
-      "id": 5,
-      "name": "Above Speed Booster Blocks",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 640,
-          "y": 240,
-          "w": 48,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -202,7 +202,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        5
       ],
       "requires": [
         {
@@ -225,7 +225,7 @@
         "D"
       ],
       "collectsItems": [
-        4
+        5
       ],
       "setsFlags": [
         "f_ReservoirVault_MissileTank_Collected"
@@ -251,7 +251,7 @@
       "name": "Come In With Spark, Reach Above Speed Booster Blocks",
       "link": [
         3,
-        5
+        4
       ],
       "entranceCondition": {
         "comeInWithSpark": {}
@@ -267,7 +267,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         1
       ],
       "requires": [
@@ -286,7 +286,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         2
       ],
       "requires": []
@@ -294,8 +294,8 @@
     {
       "name": "Destroy Power Bomb Blocks",
       "link": [
-        4,
-        4
+        5,
+        5
       ],
       "requires": [
         {
@@ -312,8 +312,8 @@
     {
       "name": "Destroy Middle Super Missile Blocks",
       "link": [
-        4,
-        4
+        5,
+        5
       ],
       "requires": [
         {
@@ -340,8 +340,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        5,
+        4
       ],
       "requires": [
         {
@@ -359,7 +359,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         3
       ],
       "requires": [
@@ -373,8 +373,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        4,
+        5
       ],
       "requires": [
         {
@@ -398,8 +398,8 @@
     {
       "name": "Destroy Middle Super Missile Blocks",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "requires": [
         {
@@ -426,6 +426,8 @@
   ],
   "roomImageFile": "AQA Room 78F00.jpg",
   "roomAddress": "0x78F00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 15,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

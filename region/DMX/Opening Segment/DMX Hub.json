@@ -218,6 +218,9 @@
   ],
   "roomImageFile": "DMX Room 78200x.jpg",
   "roomAddress": "0x78200",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

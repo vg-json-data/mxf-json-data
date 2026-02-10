@@ -20,29 +20,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 112,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -63,6 +40,29 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 112,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
     }
   ],
   "enemies": [],
@@ -70,21 +70,22 @@
     {
       "name": "Base",
       "link": [
-        1,
-        2
+        2,
+        1
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        2,
-        1
+        1,
+        2
       ],
       "requires": []
     }
   ],
   "notables": [],
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": []
 }

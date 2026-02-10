@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 317,
+  "id": 318,
   "name": "Twin Junctions West / Data Room Checkpoint",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -64,29 +64,6 @@
     },
     {
       "id": 3,
-      "name": "Twin Junctions West - Bottom-Left Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 432,
-          "w": 48,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 4,
       "name": "Twin Junctions West - Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -109,7 +86,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Data Room Checkpoint - Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -132,7 +109,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Data Room Checkpoint - Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -148,6 +125,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Twin Junctions West - Bottom-Left Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 432,
+          "w": 48,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -196,7 +196,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        3
       ],
       "requires": [
         {
@@ -218,8 +218,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        4
+        6,
+        3
       ],
       "requires": [
         "Morph"
@@ -228,7 +228,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         1
       ],
       "requires": [
@@ -243,8 +243,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
+        3,
+        6
       ],
       "requires": [
         "Morph"
@@ -253,8 +253,8 @@
     {
       "name": "Twin Junctions West - Kill Red Geron",
       "link": [
-        4,
-        4
+        3,
+        3
       ],
       "requires": [
         "h_killRedGeron"
@@ -269,8 +269,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        6
+        4,
+        5
       ],
       "clearsObstacles": [
         "A"
@@ -280,8 +280,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        5
+        5,
+        4
       ],
       "requires": [
         {
@@ -294,6 +294,8 @@
   ],
   "roomImageFile": "SRX Room 79C00.jpg",
   "roomAddress": "0x79C00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 11,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

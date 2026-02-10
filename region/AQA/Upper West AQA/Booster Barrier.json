@@ -105,6 +105,9 @@
   ],
   "roomImageFile": "AQA Room 79F00.jpg",
   "roomAddress": "0x79F00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

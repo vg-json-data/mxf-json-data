@@ -64,6 +64,22 @@
     },
     {
       "id": 3,
+      "name": "Lower Half of the Room",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 296,
+          "y": 368,
+          "w": 40,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 4,
       "idMinorItemPlm": "0x42",
       "name": "Hydrospark - Missile Tank",
       "nodeType": "item",
@@ -82,22 +98,6 @@
       "nodeAddress": "0x7DCCE",
       "mapTileX": 31,
       "mapTileY": 13
-    },
-    {
-      "id": 4,
-      "name": "Lower Half of the Room",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 296,
-          "y": 368,
-          "w": 40,
-          "h": 56
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -131,6 +131,8 @@
   ],
   "roomImageFile": "AQA Room 79300.jpg",
   "roomAddress": "0x79300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 2,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

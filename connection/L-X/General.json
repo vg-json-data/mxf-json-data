@@ -20,7 +20,7 @@
           "subarea": "General",
           "roomid": 130,
           "roomName": "L-X-TRO Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         }
@@ -53,7 +53,7 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Not 58 Escape Room - Right Door] and [Not Ceres Ridley\u0027s Arena - Left Door]",
+      "description": "Horizontal Door connection between [Not 58 Escape Room - Right Door] and [Not Ceres Ridley's Arena - Left Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
@@ -69,7 +69,7 @@
           "area": "L-X",
           "subarea": "General",
           "roomid": 133,
-          "roomName": "Not Ceres Ridley\u0027s Arena",
+          "roomName": "Not Ceres Ridley's Arena",
           "nodeid": 3,
           "nodeName": "Left Door",
           "position": "left"
@@ -145,7 +145,7 @@
           "subarea": "General",
           "roomid": 135,
           "roomName": "Not Falling Tile Room / Stasis Pod Chamber",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Not Falling Tile Room - Left Door",
           "position": "left"
         }
@@ -153,14 +153,14 @@
     },
     {
       "connectionType": "HorizontalTunnel",
-      "description": "Horizontal Tunnel connection between [Not Ceres Ridley\u0027s Arena - Top-Left Tunnel] and [Stasis Pod Chamber - Top-Right Tunnel]",
+      "description": "Horizontal Tunnel connection between [Not Ceres Ridley's Arena - Top-Left Tunnel] and [Stasis Pod Chamber - Top-Right Tunnel]",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "L-X",
           "subarea": "General",
           "roomid": 133,
-          "roomName": "Not Ceres Ridley\u0027s Arena",
+          "roomName": "Not Ceres Ridley's Arena",
           "nodeid": 1,
           "nodeName": "Top-Left Tunnel",
           "position": "left"
@@ -170,7 +170,7 @@
           "subarea": "General",
           "roomid": 135,
           "roomName": "Not Falling Tile Room / Stasis Pod Chamber",
-          "nodeid": 3,
+          "nodeid": 1,
           "nodeName": "Stasis Pod Chamber - Top-Right Tunnel",
           "position": "right"
         }
@@ -178,14 +178,14 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Not Ceres Ridley\u0027s Arena - Top-Right Door] and [Sector 0 Normal Exit Tube - Left Door]",
+      "description": "Horizontal Door connection between [Not Ceres Ridley's Arena - Top-Right Door] and [Sector 0 Normal Exit Tube - Left Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "L-X",
           "subarea": "General",
           "roomid": 133,
-          "roomName": "Not Ceres Ridley\u0027s Arena",
+          "roomName": "Not Ceres Ridley's Arena",
           "nodeid": 2,
           "nodeName": "Top-Right Door",
           "position": "right"
@@ -203,14 +203,14 @@
     },
     {
       "connectionType": "VerticalDoor",
-      "description": "Vertical Door connection between [Not Ceres Ridley\u0027s Arena - Right-Bottom Door] and [Omega Metroid Arena - Right-Top Door]",
+      "description": "Vertical Door connection between [Not Ceres Ridley's Arena - Right-Bottom Door] and [Omega Metroid Arena - Right-Top Door]",
       "direction": "Forward",
       "nodes": [
         {
           "area": "L-X",
           "subarea": "General",
           "roomid": 133,
-          "roomName": "Not Ceres Ridley\u0027s Arena",
+          "roomName": "Not Ceres Ridley's Arena",
           "nodeid": 4,
           "nodeName": "Right-Bottom Door",
           "position": "bottom"
@@ -245,7 +245,7 @@
           "subarea": "General",
           "roomid": 136,
           "roomName": "Not Magnet Stairs",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         }
@@ -261,7 +261,7 @@
           "subarea": "General",
           "roomid": 135,
           "roomName": "Not Falling Tile Room / Stasis Pod Chamber",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Not Falling Tile Room - Right Door",
           "position": "right"
         },
@@ -270,7 +270,7 @@
           "subarea": "General",
           "roomid": 136,
           "roomName": "Not Magnet Stairs",
-          "nodeid": 3,
+          "nodeid": 1,
           "nodeName": "Top Door",
           "position": "left"
         }
@@ -286,7 +286,7 @@
           "subarea": "General",
           "roomid": 136,
           "roomName": "Not Magnet Stairs",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Bottom-Left Door",
           "position": "left"
         },

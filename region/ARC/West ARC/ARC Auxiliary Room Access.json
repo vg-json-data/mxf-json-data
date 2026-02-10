@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 90,
+  "id": 91,
   "name": "ARC Auxiliary Room Access",
   "area": "ARC",
   "subarea": "West ARC",
@@ -16,29 +16,6 @@
     ]
   ],
   "nodes": [
-    {
-      "id": 4,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 104,
-          "y": 0,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
     {
       "id": 1,
       "name": "Left Door",
@@ -102,6 +79,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 104,
+          "y": 0,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -263,6 +263,9 @@
   ],
   "roomImageFile": "ARC Room 7A700.jpg",
   "roomAddress": "0x7A700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 10,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 319,
+  "id": 320,
   "name": "Cloister",
   "area": "TRO",
   "subarea": "General",
@@ -112,29 +112,6 @@
     },
     {
       "id": 5,
-      "name": "Bottom-Left Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 672,
-          "w": 48,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 6,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -150,6 +127,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bottom-Left Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 672,
+          "w": 48,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -231,7 +231,7 @@
       "name": "Base",
       "link": [
         3,
-        6
+        5
       ],
       "requires": []
     },
@@ -246,8 +246,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        6
+        6,
+        5
       ],
       "requires": [
         {
@@ -261,8 +261,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        5
+        5,
+        6
       ],
       "requires": [
         "Morph"
@@ -270,7 +270,7 @@
     }
   ],
   "notables": [],
-  "nextStratId": 1,
+  "nextStratId": 10,
   "nextNotableId": 1,
   "obstacles": [
     {

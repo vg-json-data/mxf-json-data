@@ -18,7 +18,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 220,
+          "roomid": 221,
           "roomName": "NOC Auxiliary Room Access",
           "nodeid": 1,
           "nodeName": "Top-Right Door",
@@ -86,14 +86,14 @@
           "subarea": "Upper NOC",
           "roomid": 212,
           "roomName": "Central Turbo Tube Access / East Turbo Tube Access",
-          "nodeid": 3,
+          "nodeid": 2,
           "nodeName": "East Turbo Tube Access - Left Door",
           "position": "left"
         },
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 218,
+          "roomid": 217,
           "roomName": "Mochtroid Tower",
           "nodeid": 5,
           "nodeName": "Bottom-Right Door",
@@ -111,14 +111,14 @@
           "subarea": "Upper NOC",
           "roomid": 212,
           "roomName": "Central Turbo Tube Access / East Turbo Tube Access",
-          "nodeid": 4,
+          "nodeid": 3,
           "nodeName": "East Turbo Tube Access - Right Door",
           "position": "right"
         },
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 225,
+          "roomid": 226,
           "roomName": "NOC Save Station North East",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -145,7 +145,7 @@
           "subarea": "Upper NOC",
           "roomid": 223,
           "roomName": "NOC Entrance Lobby North",
-          "nodeid": 4,
+          "nodeid": 3,
           "nodeName": "Right Tunnel",
           "position": "right"
         }
@@ -168,7 +168,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 218,
+          "roomid": 217,
           "roomName": "Mochtroid Tower",
           "nodeid": 2,
           "nodeName": "Left Door",
@@ -259,7 +259,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 215,
+          "roomid": 216,
           "roomName": "L-X-NOC Tube Access",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -270,7 +270,7 @@
           "subarea": "Upper NOC",
           "roomid": 229,
           "roomName": "Ripper Tower / Vault",
-          "nodeid": 5,
+          "nodeid": 4,
           "nodeName": "Vault - Bottom-Right Door",
           "position": "right"
         }
@@ -284,7 +284,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 215,
+          "roomid": 216,
           "roomName": "L-X-NOC Tube Access",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -293,7 +293,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 216,
+          "roomid": 215,
           "roomName": "L-X-NOC Tube",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -309,7 +309,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 217,
+          "roomid": 218,
           "roomName": "Mochtroid Tower Closet",
           "nodeid": 1,
           "nodeName": "Right Door",
@@ -318,7 +318,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 218,
+          "roomid": 217,
           "roomName": "Mochtroid Tower",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -334,7 +334,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 218,
+          "roomid": 217,
           "roomName": "Mochtroid Tower",
           "nodeid": 3,
           "nodeName": "Right-Lower Door",
@@ -359,7 +359,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 218,
+          "roomid": 217,
           "roomName": "Mochtroid Tower",
           "nodeid": 4,
           "nodeName": "Bottom-Left Door",
@@ -434,7 +434,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 220,
+          "roomid": 221,
           "roomName": "NOC Auxiliary Room Access",
           "nodeid": 2,
           "nodeName": "Right-Lower Door",
@@ -443,7 +443,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 221,
+          "roomid": 220,
           "roomName": "NOC Auxiliary Room",
           "nodeid": 2,
           "nodeName": "Left-Lower Tunnel",
@@ -459,7 +459,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 220,
+          "roomid": 221,
           "roomName": "NOC Auxiliary Room Access",
           "nodeid": 3,
           "nodeName": "Bottom-Right Tunnel",
@@ -468,7 +468,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 221,
+          "roomid": 220,
           "roomName": "NOC Auxiliary Room",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -493,7 +493,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 226,
+          "roomid": 225,
           "roomName": "NOC Save Station North",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -511,7 +511,7 @@
           "subarea": "Upper NOC",
           "roomid": 223,
           "roomName": "NOC Entrance Lobby North",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Left Door",
           "position": "left"
         },
@@ -568,7 +568,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 226,
+          "roomid": 225,
           "roomName": "NOC Save Station North",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -584,7 +584,7 @@
         {
           "area": "NOC",
           "subarea": "Upper NOC",
-          "roomid": 225,
+          "roomid": 226,
           "roomName": "NOC Save Station North East",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -645,7 +645,7 @@
           "subarea": "Upper NOC",
           "roomid": 229,
           "roomName": "Ripper Tower / Vault",
-          "nodeid": 4,
+          "nodeid": 3,
           "nodeName": "Vault - Left Tunnel",
           "position": "left"
         }

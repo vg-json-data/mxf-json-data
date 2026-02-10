@@ -18,6 +18,29 @@
   "nodes": [
     {
       "id": 1,
+      "name": "Stasis Pod Chamber - Top-Right Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 1760,
+          "y": 48,
+          "w": 32,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
       "name": "Not Falling Tile Room - Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -40,7 +63,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Not Falling Tile Room - Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -61,45 +84,14 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 3,
-      "name": "Stasis Pod Chamber - Top-Right Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 1760,
-          "y": 48,
-          "w": 32,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
     }
   ],
   "strats": [
     {
       "name": "Base",
       "link": [
-        1,
-        2
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
         2,
-        1
+        3
       ],
       "requires": []
     },
@@ -107,7 +99,15 @@
       "name": "Base",
       "link": [
         3,
-        3
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        1
       ],
       "requires": [
         {
@@ -121,6 +121,9 @@
   ],
   "roomImageFile": "L-X Room 78900.jpg",
   "roomAddress": "0x78900",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

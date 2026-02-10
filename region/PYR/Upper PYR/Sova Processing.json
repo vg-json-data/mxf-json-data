@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 283,
+  "id": 282,
   "name": "Sova Processing",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -87,24 +87,19 @@
     },
     {
       "id": 4,
-      "idMinorItemPlm": "0x33",
-      "name": "Sova Processing - Missile Tank",
-      "nodeType": "item",
+      "name": "Right of Bomb Blocks",
+      "nodeType": "junction",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 272,
-          "y": 304,
-          "w": 16,
-          "h": 16
+          "x": 904,
+          "y": 632,
+          "w": 48,
+          "h": 40
         }
       ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7DA44",
-      "mapTileX": 27,
-      "mapTileY": 15
+      "color": "#0000ff"
     },
     {
       "id": 5,
@@ -124,19 +119,24 @@
     },
     {
       "id": 6,
-      "name": "Right of Bomb Blocks",
-      "nodeType": "junction",
+      "idMinorItemPlm": "0x33",
+      "name": "Sova Processing - Missile Tank",
+      "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 904,
-          "y": 632,
-          "w": 48,
-          "h": 40
+          "x": 272,
+          "y": 304,
+          "w": 16,
+          "h": 16
         }
       ],
-      "color": "#0000ff"
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7DA44",
+      "mapTileX": 27,
+      "mapTileY": 15
     }
   ],
   "strats": [
@@ -173,7 +173,7 @@
       "name": "Base",
       "link": [
         2,
-        4
+        6
       ],
       "requires": [
         {
@@ -247,7 +247,7 @@
       "name": "Base",
       "link": [
         3,
-        6
+        4
       ],
       "requires": [
         {
@@ -287,7 +287,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        6,
         2
       ],
       "requires": [
@@ -299,7 +299,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        6,
         5
       ],
       "requires": [
@@ -334,7 +334,7 @@
       "name": "Base",
       "link": [
         5,
-        6
+        4
       ],
       "requires": [
         {
@@ -396,7 +396,7 @@
     {
       "name": "Base",
       "link": [
-        6,
+        4,
         3
       ],
       "requires": [
@@ -509,7 +509,7 @@
     {
       "name": "Base",
       "link": [
-        6,
+        4,
         5
       ],
       "requires": [
@@ -572,6 +572,9 @@
   ],
   "roomImageFile": "PYR Room 78F00.jpg",
   "roomAddress": "0x78F00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 11,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

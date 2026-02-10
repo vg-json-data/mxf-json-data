@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 217,
+  "id": 218,
   "name": "Mochtroid Tower Closet",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -114,6 +114,9 @@
   ],
   "roomImageFile": "NOC Room 78F00.jpg",
   "roomAddress": "0x78F00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

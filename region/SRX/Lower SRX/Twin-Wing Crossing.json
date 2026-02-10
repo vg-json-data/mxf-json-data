@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 298,
+  "id": 299,
   "name": "Twin-Wing Crossing",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -41,52 +41,6 @@
     },
     {
       "id": 2,
-      "name": "Left-Lower Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Right-Lower Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 464,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 4,
       "name": "Bottom-Left Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -109,7 +63,30 @@
       ]
     },
     {
-      "id": 5,
+      "id": 3,
+      "name": "Bottom-Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 464,
+          "y": 528,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
       "name": "Underneath Bridge",
       "nodeType": "junction",
       "nodeSubType": "visible",
@@ -123,6 +100,22 @@
         }
       ],
       "color": "#0000ff"
+    },
+    {
+      "id": 5,
+      "name": "Left of Super Missile Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 336,
+          "y": 552,
+          "w": 24,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "strats": [
@@ -130,57 +123,15 @@
       "name": "Base",
       "link": [
         1,
-        5
+        4
       ],
       "requires": []
-    },
-    {
-      "name": "Leave Shinecharged",
-      "link": [
-        2,
-        2
-      ],
-      "requires": [
-        "h_shinechargeMaxRunway"
-      ],
-      "exitCondition": {
-        "leaveShinecharged": {}
-      }
     },
     {
       "name": "Base",
       "link": [
         2,
-        3
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        2
-      ],
-      "requires": []
-    },
-    {
-      "name": "Leave Shinecharged",
-      "link": [
-        3,
-        3
-      ],
-      "requires": [
-        "h_shinechargeMaxRunway"
-      ],
-      "exitCondition": {
-        "leaveShinecharged": {}
-      }
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
-        5
+        4
       ],
       "requires": [
         {
@@ -194,8 +145,8 @@
     {
       "name": "Reach Underneath Bridge from Bottom-Left Tunnel via IBJ",
       "link": [
-        4,
-        5
+        2,
+        4
       ],
       "requires": [
         {
@@ -210,7 +161,128 @@
     {
       "name": "Base",
       "link": [
-        5,
+        2,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "lavaFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        5
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "Gravity",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canSuitlessLavaDive",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "Morph",
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "Gravity",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canSuitlessLavaDive",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                },
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "Gravity",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canSuitlessLavaDive",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
         1
       ],
       "requires": [
@@ -219,12 +291,6 @@
             {
               "ammo": {
                 "type": "Super",
-                "count": 2
-              }
-            },
-            {
-              "ammo": {
-                "type": "IceMissile",
                 "count": 2
               }
             },
@@ -239,25 +305,10 @@
       ]
     },
     {
-      "name": "Base",
-      "link": [
-        5,
-        4
-      ],
-      "requires": [
-        {
-          "and": [
-            "h_lavaProof",
-            "Morph"
-          ]
-        }
-      ]
-    },
-    {
       "name": "Reach Bottom-Left Tunnel from Underneath Bridge via Lava Dive",
       "link": [
-        5,
-        4
+        4,
+        2
       ],
       "requires": [
         {
@@ -270,10 +321,141 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        "h_lavaProof"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "lavaFrames": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 2
+                  }
+                },
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "Gravity",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canSuitlessLavaDive",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                "Morph",
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "Gravity",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canSuitlessLavaDive",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                },
+                {
+                  "or": [
+                    {
+                      "and": [
+                        "Gravity",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        "canSuitlessLavaDive",
+                        {
+                          "lavaFrames": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "roomImageFile": "SRX Room 7A100.jpg",
   "roomAddress": "0x7A100",
-  "nextStratId": 1,
+  "nextStratId": 11,
   "nextNotableId": 1
 }

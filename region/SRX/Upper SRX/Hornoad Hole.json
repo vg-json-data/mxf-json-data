@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 303,
+  "id": 304,
   "name": "Hornoad Hole",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -130,6 +130,9 @@
   ],
   "roomImageFile": "SRX Room 79600.jpg",
   "roomAddress": "0x79600",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

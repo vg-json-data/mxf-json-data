@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 322,
+  "id": 323,
   "name": "Crumble Crossing",
   "area": "TRO",
   "subarea": "General",
@@ -186,6 +186,9 @@
   ],
   "roomImageFile": "TRO Room 7AD00.jpg",
   "roomAddress": "0x7AD00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

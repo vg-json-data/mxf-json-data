@@ -8,7 +8,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 252,
           "roomName": "B.O.X. Tutorial Room",
           "nodeid": 1,
@@ -17,7 +17,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 264,
           "roomName": "PYR-AQA Tube",
           "nodeid": 1,
@@ -33,7 +33,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 252,
           "roomName": "B.O.X. Tutorial Room",
           "nodeid": 2,
@@ -42,7 +42,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 262,
           "roomName": "PYR Navigation Room",
           "nodeid": 2,
@@ -58,7 +58,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 252,
           "roomName": "B.O.X. Tutorial Room",
           "nodeid": 3,
@@ -67,10 +67,10 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 255,
           "roomName": "Checkpoint Crossing",
-          "nodeid": 3,
+          "nodeid": 1,
           "nodeName": "Top Door",
           "position": "left"
         }
@@ -83,7 +83,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 253,
           "roomName": "Bubble Heights",
           "nodeid": 1,
@@ -92,7 +92,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 254,
           "roomName": "Bubble Storage",
           "nodeid": 1,
@@ -108,7 +108,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 253,
           "roomName": "Bubble Heights",
           "nodeid": 2,
@@ -117,7 +117,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 256,
           "roomName": "Hot Potato",
           "nodeid": 1,
@@ -133,7 +133,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 253,
           "roomName": "Bubble Heights",
           "nodeid": 3,
@@ -142,7 +142,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 263,
           "roomName": "PYR Save Station East",
           "nodeid": 1,
@@ -158,7 +158,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 253,
           "roomName": "Bubble Heights",
           "nodeid": 4,
@@ -167,7 +167,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 257,
           "roomName": "Neo-Crocomire Arena",
           "nodeid": 1,
@@ -183,16 +183,16 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 255,
           "roomName": "Checkpoint Crossing",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Bottom-Left Door",
           "position": "left"
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 256,
           "roomName": "Hot Potato",
           "nodeid": 2,
@@ -208,16 +208,16 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 255,
           "roomName": "Checkpoint Crossing",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 265,
           "roomName": "PYR-MDK Access",
           "nodeid": 1,
@@ -233,7 +233,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 257,
           "roomName": "Neo-Crocomire Arena",
           "nodeid": 2,
@@ -242,7 +242,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 258,
           "roomName": "Neo-Crocomire Maintenance Room",
           "nodeid": 1,
@@ -258,7 +258,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 257,
           "roomName": "Neo-Crocomire Arena",
           "nodeid": 3,
@@ -267,7 +267,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 259,
           "roomName": "Phantomire Arena",
           "nodeid": 3,
@@ -283,7 +283,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 258,
           "roomName": "Neo-Crocomire Maintenance Room",
           "nodeid": 2,
@@ -292,7 +292,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 259,
           "roomName": "Phantomire Arena",
           "nodeid": 1,
@@ -308,7 +308,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 259,
           "roomName": "Phantomire Arena",
           "nodeid": 2,
@@ -317,8 +317,8 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
-          "roomid": 260,
+          "subarea": "Neo-Crocomire's Lair",
+          "roomid": 261,
           "roomName": "PYR Data Room Access",
           "nodeid": 3,
           "nodeName": "Bottom-Right Door",
@@ -333,8 +333,8 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
-          "roomid": 260,
+          "subarea": "Neo-Crocomire's Lair",
+          "roomid": 261,
           "roomName": "PYR Data Room Access",
           "nodeid": 2,
           "nodeName": "Top-Right Door",
@@ -342,8 +342,8 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
-          "roomid": 261,
+          "subarea": "Neo-Crocomire's Lair",
+          "roomid": 260,
           "roomName": "PYR Data Room",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -358,7 +358,7 @@
       "nodes": [
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 265,
           "roomName": "PYR-MDK Access",
           "nodeid": 2,
@@ -367,7 +367,7 @@
         },
         {
           "area": "PYR",
-          "subarea": "Neo-Crocomire\u0027s Lair",
+          "subarea": "Neo-Crocomire's Lair",
           "roomid": 266,
           "roomName": "PYR-MDK Tube",
           "nodeid": 1,

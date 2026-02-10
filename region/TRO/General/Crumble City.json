@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 321,
+  "id": 322,
   "name": "Crumble City",
   "area": "TRO",
   "subarea": "General",
@@ -16,29 +16,6 @@
     ]
   ],
   "nodes": [
-    {
-      "id": 2,
-      "name": "Right-Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 1104,
-          "y": 0,
-          "w": 96,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
     {
       "id": 1,
       "name": "Left-Lower Door",
@@ -63,7 +40,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Right-Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -86,25 +63,43 @@
       ]
     },
     {
+      "id": 3,
+      "name": "Right-Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 1104,
+          "y": 0,
+          "w": 96,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
       "id": 4,
-      "idMinorItemPlm": "0x26",
-      "name": "Crumble City [Middle] - Power Bomb Tank",
-      "nodeType": "item",
+      "name": "Bottom of the Room",
+      "nodeType": "junction",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 400,
-          "y": 288,
-          "w": 16,
-          "h": 16
+          "x": 1016,
+          "y": 328,
+          "w": 72,
+          "h": 40
         }
       ],
-      "color": "#37c90e",
-      "nodeItem": "PowerBomb",
-      "nodeAddress": "0x7D7EA",
-      "mapTileX": 25,
-      "mapTileY": 16
+      "color": "#0000ff"
     },
     {
       "id": 5,
@@ -129,19 +124,24 @@
     },
     {
       "id": 6,
-      "name": "Bottom of the Room",
-      "nodeType": "junction",
+      "idMinorItemPlm": "0x26",
+      "name": "Crumble City [Middle] - Power Bomb Tank",
+      "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 1016,
-          "y": 328,
-          "w": 72,
-          "h": 40
+          "x": 400,
+          "y": 288,
+          "w": 16,
+          "h": 16
         }
       ],
-      "color": "#0000ff"
+      "color": "#37c90e",
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7D7EA",
+      "mapTileX": 25,
+      "mapTileY": 16
     }
   ],
   "strats": [
@@ -159,16 +159,16 @@
     {
       "name": "Base",
       "link": [
-        2,
-        3
+        3,
+        2
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        2,
-        4
+        3,
+        6
       ],
       "requires": [
         {
@@ -191,7 +191,7 @@
     {
       "name": "Base",
       "link": [
-        2,
+        3,
         5
       ],
       "requires": [
@@ -221,8 +221,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        6
+        6,
+        4
       ],
       "requires": []
     },
@@ -230,14 +230,14 @@
       "name": "Base",
       "link": [
         5,
-        6
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        6,
+        4,
         1
       ],
       "requires": [
@@ -247,8 +247,8 @@
     {
       "name": "Spark up the room",
       "link": [
-        6,
-        2
+        4,
+        3
       ],
       "requires": [
         {
@@ -266,8 +266,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        2
+        4,
+        3
       ],
       "requires": [
         {
@@ -288,8 +288,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        3
+        4,
+        2
       ],
       "requires": []
     },
@@ -300,6 +300,9 @@
   ],
   "roomImageFile": "TRO Room 78E00.jpg",
   "roomAddress": "0x78E00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 12,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

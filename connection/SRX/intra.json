@@ -3,7 +3,7 @@
   "connections": [
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Cruciform Hall - Top Door] and [Fool\u0027s Dead End - Bottom-Right Door]",
+      "description": "Horizontal Door connection between [Cruciform Hall - Top Door] and [Fool's Dead End - Bottom-Right Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
@@ -11,15 +11,15 @@
           "subarea": "Lower SRX",
           "roomid": 285,
           "roomName": "Cruciform Hall",
-          "nodeid": 6,
+          "nodeid": 1,
           "nodeName": "Top Door",
           "position": "left"
         },
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 302,
-          "roomName": "Fool\u0027s Dead End",
+          "roomid": 303,
+          "roomName": "Fool's Dead End",
           "nodeid": 3,
           "nodeName": "Bottom-Right Door",
           "position": "right"
@@ -43,9 +43,9 @@
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 306,
+          "roomid": 307,
           "roomName": "Lava Horseshoe / Lava Tornado",
-          "nodeid": 5,
+          "nodeid": 4,
           "nodeName": "Lava Tornado - Bottom Door",
           "position": "bottom"
         }
@@ -53,13 +53,13 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [West Spike Tower - Top-Right Door] and [Fool\u0027s Dead End - Bottom-Left Door]",
+      "description": "Horizontal Door connection between [West Spike Tower - Top-Right Door] and [Fool's Dead End - Bottom-Left Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "SRX",
           "subarea": "Lower SRX",
-          "roomid": 300,
+          "roomid": 301,
           "roomName": "West Spike Tower",
           "nodeid": 1,
           "nodeName": "Top-Right Door",
@@ -68,8 +68,8 @@
         {
           "area": "SRX",
           "subarea": "Upper SRX",
-          "roomid": 302,
-          "roomName": "Fool\u0027s Dead End",
+          "roomid": 303,
+          "roomName": "Fool's Dead End",
           "nodeid": 2,
           "nodeName": "Bottom-Left Door",
           "position": "left"

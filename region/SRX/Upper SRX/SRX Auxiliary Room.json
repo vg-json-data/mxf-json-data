@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 308,
+  "id": 309,
   "name": "SRX Auxiliary Room",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -80,6 +80,23 @@
     },
     {
       "id": 2,
+      "name": "Auxiliary Station",
+      "nodeType": "utility",
+      "nodeSubType": "auxiliary",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 144,
+          "y": 160,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#3a3ac2",
+      "nodeAddress": "0x0"
+    },
+    {
+      "id": 3,
       "name": "SRX Auxiliary Room - SRX Aux Power Cell",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -96,23 +113,6 @@
       "nodeItem": "Aux Power Cell",
       "nodeAddress": "0x0",
       "note": ""
-    },
-    {
-      "id": 3,
-      "name": "Auxiliary Station",
-      "nodeType": "utility",
-      "nodeSubType": "auxiliary",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 144,
-          "y": 160,
-          "w": 32,
-          "h": 32
-        }
-      ],
-      "color": "#3a3ac2",
-      "nodeAddress": "0x0"
     }
   ],
   "strats": [
@@ -120,18 +120,18 @@
       "name": "Base",
       "link": [
         1,
-        3
+        2
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        2,
-        2
+        3,
+        3
       ],
       "collectsItems": [
-        2
+        3
       ],
       "setsFlags": [
         "f_SRX_PowerCellAcquired"
@@ -141,22 +141,6 @@
     {
       "name": "Base",
       "link": [
-        2,
-        3
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        1
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
         3,
         2
       ],
@@ -165,8 +149,24 @@
     {
       "name": "Base",
       "link": [
-        3,
+        2,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
         3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        2
       ],
       "requires": [
         {
@@ -190,6 +190,9 @@
   ],
   "roomImageFile": "Misc Room Aux 1.jpg",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

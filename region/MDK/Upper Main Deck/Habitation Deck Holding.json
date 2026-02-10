@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 165,
+  "id": 166,
   "name": "Habitation Deck Holding",
   "area": "MDK",
   "subarea": "Upper Main Deck",
@@ -100,6 +100,9 @@
   ],
   "roomImageFile": "MDK Room 24.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

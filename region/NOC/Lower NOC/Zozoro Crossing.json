@@ -321,6 +321,8 @@
   ],
   "roomImageFile": "NOC Room 7A600.jpg",
   "roomAddress": "0x7A600",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 12,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

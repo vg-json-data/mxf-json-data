@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 325,
+  "id": 326,
   "name": "Moldy Bridge",
   "area": "TRO",
   "subarea": "General",
@@ -64,29 +64,6 @@
     },
     {
       "id": 3,
-      "name": "Bottom-Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 400,
-          "w": 48,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 4,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -102,6 +79,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bottom-Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 400,
+          "w": 48,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -130,7 +130,7 @@
       "name": "Base",
       "link": [
         2,
-        3
+        4
       ],
       "requires": [
         "h_bombThings"
@@ -140,7 +140,7 @@
       "name": "Base",
       "link": [
         2,
-        4
+        3
       ],
       "requires": [
         {
@@ -159,7 +159,7 @@
     {
       "name": "Base",
       "link": [
-        3,
+        4,
         2
       ],
       "requires": [
@@ -169,7 +169,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         2
       ],
       "requires": []
@@ -177,6 +177,9 @@
   ],
   "roomImageFile": "TRO Room 79000.jpg",
   "roomAddress": "0x79000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

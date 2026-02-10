@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 4,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 616,
-          "y": 0,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
@@ -109,6 +86,29 @@
       ]
     },
     {
+      "id": 4,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 616,
+          "y": 0,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
       "id": 5,
       "idMinorItemPlm": "0x15",
       "name": "Lava Lake - Missile Tank",
@@ -157,7 +157,7 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Halzyn"
                   ]
                 ]
               }
@@ -382,7 +382,7 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Halzyn"
                   ]
                 ]
               }
@@ -401,6 +401,8 @@
   ],
   "roomImageFile": "SRX Room 7A000.jpg",
   "roomAddress": "0x7A000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 14,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

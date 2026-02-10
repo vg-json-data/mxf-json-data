@@ -297,6 +297,8 @@
   ],
   "roomImageFile": "SRX Room 79F00.jpg",
   "roomAddress": "0x79F00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 12,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

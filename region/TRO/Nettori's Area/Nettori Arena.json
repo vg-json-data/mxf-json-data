@@ -17,7 +17,7 @@
   ],
   "nodes": [
     {
-      "id": 3,
+      "id": 1,
       "name": "Top Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Bottom-Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -87,6 +87,22 @@
     },
     {
       "id": 4,
+      "name": "Nettori Arena 1",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 288,
+          "y": 352,
+          "w": 168,
+          "h": 88
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "name": "Nettori Arena - Plasma Beam",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -103,42 +119,18 @@
       "nodeItem": "Plasma",
       "nodeAddress": "0x0",
       "note": ""
-    },
-    {
-      "id": 5,
-      "name": "Nettori Arena 1",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 288,
-          "y": 352,
-          "w": 168,
-          "h": 88
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "strats": [
     {
       "name": "Base",
       "link": [
-        1,
-        5
+        2,
+        4
       ],
       "requires": [
         "f_NettoriArena_CoreXAbsorbed"
       ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        2,
-        4
-      ],
-      "requires": []
     },
     {
       "name": "Base",
@@ -151,19 +143,27 @@
     {
       "name": "Base",
       "link": [
-        4,
-        2
+        1,
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        4,
-        4
+        5,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        5
       ],
       "collectsItems": [
-        4
+        5
       ],
       "setsFlags": [
         "f_NettoriArena_CoreXAbsorbed",
@@ -174,16 +174,16 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        5,
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        5,
-        1
+        4,
+        2
       ],
       "requires": [
         "f_NettoriArena_CoreXAbsorbed"
@@ -192,14 +192,17 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        4,
+        5
       ],
       "requires": []
     }
   ],
   "roomImageFile": "TRO Room 7A300.jpg",
   "roomAddress": "0x7A300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 9,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

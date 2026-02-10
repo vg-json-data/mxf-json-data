@@ -18,29 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Top-Right Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 208,
-          "y": 112,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "name": "Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,6 +33,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Top-Right Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 112,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -113,7 +113,7 @@
     {
       "name": "Base",
       "link": [
-        1,
+        2,
         4
       ],
       "requires": []
@@ -121,7 +121,7 @@
     {
       "name": "Base",
       "link": [
-        2,
+        1,
         4
       ],
       "requires": []
@@ -140,7 +140,7 @@
       "name": "Base",
       "link": [
         4,
-        1
+        2
       ],
       "requires": [
         {
@@ -170,13 +170,16 @@
       "name": "Base",
       "link": [
         4,
-        2
+        1
       ],
       "requires": []
     }
   ],
   "roomImageFile": "ARC Room 79300.jpg",
   "roomAddress": "0x79300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

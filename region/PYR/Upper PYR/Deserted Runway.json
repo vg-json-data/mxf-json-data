@@ -216,6 +216,8 @@
   ],
   "roomImageFile": "PYR Room 79100.jpg",
   "roomAddress": "0x79100",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

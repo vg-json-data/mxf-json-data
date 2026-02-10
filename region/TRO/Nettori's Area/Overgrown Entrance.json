@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 354,
+  "id": 355,
   "name": "Overgrown Entrance",
   "area": "TRO",
   "subarea": "Nettori's Area",
@@ -184,6 +184,9 @@
   ],
   "roomImageFile": "TRO Room 7A000x.jpg",
   "roomAddress": "0x7A000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

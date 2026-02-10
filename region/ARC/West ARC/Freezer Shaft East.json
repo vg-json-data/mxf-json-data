@@ -64,6 +64,66 @@
     },
     {
       "id": 3,
+      "name": "Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 608,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Door Gets Destroyed",
+          "lockType": "gameFlag",
+          "unlockStrats": [],
+          "lock": [
+            "f_ARCAuxiliaryRoom_Engaged"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
       "name": "Left-Lower Door",
       "nodeType": "door",
       "nodeSubType": "gray",
@@ -127,90 +187,7 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 208,
-          "y": 608,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ],
-      "useImplicitDoorUnlocks": true,
-      "mapTileMask": [
-        [
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0
-        ]
-      ],
-      "locks": [
-        {
-          "name": "Door Gets Destroyed",
-          "lockType": "gameFlag",
-          "unlockStrats": [],
-          "lock": [
-            "f_ARCAuxiliaryRoom_Engaged"
-          ]
-        }
-      ]
-    },
-    {
       "id": 5,
-      "name": "Bottom-Left Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 1216,
-          "w": 48,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 6,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -226,6 +203,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bottom-Left Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 1216,
+          "w": 48,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -374,7 +374,7 @@
       "name": "Base",
       "link": [
         2,
-        4
+        3
       ],
       "requires": [
         {
@@ -385,8 +385,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        4
+        4,
+        3
       ],
       "requires": [
         {
@@ -410,8 +410,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        5
+        4,
+        6
       ],
       "requires": [
         "Morph"
@@ -420,15 +420,15 @@
     {
       "name": "Base",
       "link": [
+        4,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
         3,
-        6
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
         2
       ],
       "requires": []
@@ -436,7 +436,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         2
       ],
       "requires": [
@@ -448,8 +448,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
+        3,
+        4
       ],
       "requires": [
         {
@@ -460,7 +460,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         7
       ],
       "requires": [
@@ -472,8 +472,8 @@
     {
       "name": "Destroy Super Missile Block",
       "link": [
-        5,
-        5
+        6,
+        6
       ],
       "requires": [
         {
@@ -500,7 +500,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        6,
         7
       ],
       "requires": [
@@ -522,15 +522,15 @@
     {
       "name": "Base",
       "link": [
-        6,
-        3
+        5,
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        6,
+        5,
         7
       ],
       "requires": [
@@ -543,7 +543,7 @@
       "name": "Base",
       "link": [
         7,
-        5
+        6
       ],
       "requires": [
         {
@@ -565,7 +565,7 @@
       "name": "Base",
       "link": [
         7,
-        6
+        5
       ],
       "requires": [
         {
@@ -604,6 +604,8 @@
   ],
   "roomImageFile": "ARC Room 7A300.jpg",
   "roomAddress": "0x7A300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 19,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

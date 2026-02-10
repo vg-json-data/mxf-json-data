@@ -180,6 +180,8 @@
   ],
   "roomImageFile": "ARC Room 7A400.jpg",
   "roomAddress": "0x7A400",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

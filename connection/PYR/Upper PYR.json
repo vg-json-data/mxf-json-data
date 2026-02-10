@@ -9,7 +9,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 267,
+          "roomid": 268,
           "roomName": "Big Red Geron Gate Room",
           "nodeid": 1,
           "nodeName": "Bottom-Left Door",
@@ -18,9 +18,9 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 269,
+          "roomid": 267,
           "roomName": "Big Red",
-          "nodeid": 5,
+          "nodeid": 4,
           "nodeName": "Right-Lower Door",
           "position": "right"
         }
@@ -28,13 +28,13 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Big Red Geron Gate Room - Bottom-Right Door] and [Geron\u0027s Treasure - Left Door]",
+      "description": "Horizontal Door connection between [Big Red Geron Gate Room - Bottom-Right Door] and [Geron's Treasure - Left Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 267,
+          "roomid": 268,
           "roomName": "Big Red Geron Gate Room",
           "nodeid": 2,
           "nodeName": "Bottom-Right Door",
@@ -44,7 +44,7 @@
           "area": "PYR",
           "subarea": "Upper PYR",
           "roomid": 275,
-          "roomName": "Geron\u0027s Treasure",
+          "roomName": "Geron's Treasure",
           "nodeid": 1,
           "nodeName": "Left Door",
           "position": "left"
@@ -59,18 +59,18 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 268,
+          "roomid": 269,
           "roomName": "Big Red Maintenance Storage",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Top-Right Tunnel",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 269,
+          "roomid": 267,
           "roomName": "Big Red",
-          "nodeid": 4,
+          "nodeid": 5,
           "nodeName": "Left-Lower Tunnel",
           "position": "left"
         }
@@ -84,9 +84,9 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 268,
+          "roomid": 269,
           "roomName": "Big Red Maintenance Storage",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Left Door",
           "position": "left"
         },
@@ -109,7 +109,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 268,
+          "roomid": 269,
           "roomName": "Big Red Maintenance Storage",
           "nodeid": 3,
           "nodeName": "Bottom-Right Door",
@@ -118,7 +118,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 269,
+          "roomid": 267,
           "roomName": "Big Red",
           "nodeid": 6,
           "nodeName": "Bottom-Left Door",
@@ -134,7 +134,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 269,
+          "roomid": 267,
           "roomName": "Big Red",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -159,7 +159,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 269,
+          "roomid": 267,
           "roomName": "Big Red",
           "nodeid": 2,
           "nodeName": "Top-Right Door",
@@ -184,7 +184,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 269,
+          "roomid": 267,
           "roomName": "Big Red",
           "nodeid": 3,
           "nodeName": "Left Door",
@@ -203,16 +203,16 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Bob\u0027s Abode - Left Door] and [PYR-TRO Elevator / PYR Entrance Lobby - Right-Lower Door]",
+      "description": "Horizontal Door connection between [Bob's Abode - Left Door] and [PYR-TRO Elevator / PYR Entrance Lobby - Right-Lower Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "PYR",
           "subarea": "Upper PYR",
           "roomid": 270,
-          "roomName": "Bob\u0027s Abode / Deserted Junction",
+          "roomName": "Bob's Abode / Deserted Junction",
           "nodeid": 1,
-          "nodeName": "Bob\u0027s Abode - Left Door",
+          "nodeName": "Bob's Abode - Left Door",
           "position": "left"
         },
         {
@@ -228,24 +228,24 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Bob\u0027s Abode - Right Door] and [Deserted Junction - Left Door]",
+      "description": "Horizontal Door connection between [Bob's Abode - Right Door] and [Deserted Junction - Left Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "PYR",
           "subarea": "Upper PYR",
           "roomid": 270,
-          "roomName": "Bob\u0027s Abode / Deserted Junction",
+          "roomName": "Bob's Abode / Deserted Junction",
           "nodeid": 2,
-          "nodeName": "Bob\u0027s Abode - Right Door",
+          "nodeName": "Bob's Abode - Right Door",
           "position": "right"
         },
         {
           "area": "PYR",
           "subarea": "Upper PYR",
           "roomid": 270,
-          "roomName": "Bob\u0027s Abode / Deserted Junction",
-          "nodeid": 4,
+          "roomName": "Bob's Abode / Deserted Junction",
+          "nodeid": 3,
           "nodeName": "Deserted Junction - Left Door",
           "position": "left"
         }
@@ -260,8 +260,8 @@
           "area": "PYR",
           "subarea": "Upper PYR",
           "roomid": 270,
-          "roomName": "Bob\u0027s Abode / Deserted Junction",
-          "nodeid": 6,
+          "roomName": "Bob's Abode / Deserted Junction",
+          "nodeid": 5,
           "nodeName": "Deserted Junction - Top Door",
           "position": "top"
         },
@@ -285,8 +285,8 @@
           "area": "PYR",
           "subarea": "Upper PYR",
           "roomid": 270,
-          "roomName": "Bob\u0027s Abode / Deserted Junction",
-          "nodeid": 5,
+          "roomName": "Bob's Abode / Deserted Junction",
+          "nodeid": 4,
           "nodeName": "Deserted Junction - Right Door",
           "position": "right"
         },
@@ -318,7 +318,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 274,
+          "roomid": 273,
           "roomName": "Garbage Chute",
           "nodeid": 5,
           "nodeName": "Left-Bottom Door",
@@ -359,7 +359,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 273,
+          "roomid": 274,
           "roomName": "Garbage Chute Runway",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -368,7 +368,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 274,
+          "roomid": 273,
           "roomName": "Garbage Chute",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -384,7 +384,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 273,
+          "roomid": 274,
           "roomName": "Garbage Chute Runway",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -395,7 +395,7 @@
           "subarea": "Upper PYR",
           "roomid": 281,
           "roomName": "PYR-TRO Elevator / PYR Entrance Lobby",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Left-Lower Door",
           "position": "left"
         }
@@ -409,7 +409,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 274,
+          "roomid": 273,
           "roomName": "Garbage Chute",
           "nodeid": 1,
           "nodeName": "Top-Right Door",
@@ -434,7 +434,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 274,
+          "roomid": 273,
           "roomName": "Garbage Chute",
           "nodeid": 3,
           "nodeName": "Right-Lower Tunnel",
@@ -443,9 +443,9 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 282,
+          "roomid": 283,
           "roomName": "Sova Processing Access",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Top-Left Door",
           "position": "left"
         }
@@ -459,7 +459,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 274,
+          "roomid": 273,
           "roomName": "Garbage Chute",
           "nodeid": 4,
           "nodeName": "Bottom-Right Door",
@@ -468,9 +468,9 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 282,
+          "roomid": 283,
           "roomName": "Sova Processing Access",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Left-Top Tunnel",
           "position": "left"
         }
@@ -495,7 +495,7 @@
           "subarea": "Upper PYR",
           "roomid": 281,
           "roomName": "PYR-TRO Elevator / PYR Entrance Lobby",
-          "nodeid": 4,
+          "nodeid": 3,
           "nodeName": "Right Door",
           "position": "right"
         }
@@ -568,7 +568,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 283,
+          "roomid": 282,
           "roomName": "Sova Processing",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -584,7 +584,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 282,
+          "roomid": 283,
           "roomName": "Sova Processing Access",
           "nodeid": 3,
           "nodeName": "Right Door",
@@ -593,7 +593,7 @@
         {
           "area": "PYR",
           "subarea": "Upper PYR",
-          "roomid": 283,
+          "roomid": 282,
           "roomName": "Sova Processing",
           "nodeid": 2,
           "nodeName": "Left Door",

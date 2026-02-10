@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 3,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 584,
-          "y": 0,
-          "w": 88,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
@@ -79,6 +56,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 584,
+          "y": 0,
+          "w": 88,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -246,6 +246,8 @@
   ],
   "roomImageFile": "AQA Room 79000.jpg",
   "roomAddress": "0x79000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 9,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

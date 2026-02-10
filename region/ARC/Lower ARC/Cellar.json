@@ -313,6 +313,9 @@
   ],
   "roomImageFile": "ARC Room 79D00.jpg",
   "roomAddress": "0x79D00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 10,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 176,
+  "id": 177,
   "name": "MDK-AQA Elevator Cache",
   "area": "MDK",
   "subarea": "West Main Deck",
@@ -120,6 +120,8 @@
   ],
   "roomImageFile": "MDK Room 9.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

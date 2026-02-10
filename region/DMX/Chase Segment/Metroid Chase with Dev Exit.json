@@ -40,29 +40,6 @@
       ]
     },
     {
-      "id": 3,
-      "name": "Right-Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 584,
-          "y": 0,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 2,
       "name": "Bottom-Left Door",
       "nodeType": "door",
@@ -79,6 +56,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Right-Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 584,
+          "y": 0,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -106,6 +106,9 @@
   ],
   "roomImageFile": "DMX Room 78D00.jpg",
   "roomAddress": "0x78D00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

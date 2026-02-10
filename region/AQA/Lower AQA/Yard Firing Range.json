@@ -90,5 +90,6 @@
   "strats": [],
   "notables": [],
   "nextStratId": 1,
-  "nextNotableId": 1
+  "nextNotableId": 1,
+  "obstacles": []
 }

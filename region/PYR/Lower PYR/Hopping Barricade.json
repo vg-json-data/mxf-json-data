@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 3,
-      "name": "Top Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 416,
-          "y": 0,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
@@ -168,6 +145,29 @@
       ]
     },
     {
+      "id": 3,
+      "name": "Top Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 416,
+          "y": 0,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
       "id": 4,
       "name": "Below Top Tunnel",
       "nodeType": "junction",
@@ -236,10 +236,16 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Mini B.O.X.",
+                    "Mini B.O.X.",
+                    "Mini B.O.X.",
+                    "Mini B.O.X."
                   ],
                   [
-                    "e2"
+                    "Mini B.O.X.",
+                    "Mini B.O.X.",
+                    "Mini B.O.X.",
+                    "Mini B.O.X."
                   ]
                 ]
               }
@@ -372,6 +378,8 @@
   ],
   "roomImageFile": "PYR Room 7AA00.jpg",
   "roomAddress": "0x7AA00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 9,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

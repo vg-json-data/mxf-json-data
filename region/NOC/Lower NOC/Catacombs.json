@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 186,
+  "id": 185,
   "name": "Catacombs",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -64,29 +64,6 @@
     },
     {
       "id": 3,
-      "name": "Bottom-Left Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 400,
-          "w": 48,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 4,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -102,6 +79,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bottom-Left Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 400,
+          "w": 48,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -136,20 +136,10 @@
       "name": "Base",
       "link": [
         2,
-        4
+        3
       ],
       "requires": [
         "h_bombThings"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        4
-      ],
-      "requires": [
-        "Morph"
       ]
     },
     {
@@ -161,10 +151,22 @@
       "requires": [
         "Morph"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        "Morph"
+      ]
     }
   ],
   "roomImageFile": "NOC Room 7A900.jpg",
   "roomAddress": "0x7A900",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

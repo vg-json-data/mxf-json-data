@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 190,
+  "id": 191,
   "name": "Nightmare Arena Access",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -16,29 +16,6 @@
     ]
   ],
   "nodes": [
-    {
-      "id": 3,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 80,
-          "y": 32,
-          "w": 32,
-          "h": 32
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
     {
       "id": 1,
       "name": "Left Door",
@@ -151,6 +128,29 @@
           0,
           0
         ]
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 80,
+          "y": 32,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
       ]
     },
     {
@@ -325,6 +325,9 @@
   ],
   "roomImageFile": "NOC Room 7B000.jpg",
   "roomAddress": "0x7B000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 12,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

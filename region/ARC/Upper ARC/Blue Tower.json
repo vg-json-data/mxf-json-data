@@ -179,22 +179,6 @@
     },
     {
       "id": 8,
-      "name": "Right of Power Bomb Blocks",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 136,
-          "y": 1168,
-          "w": 40,
-          "h": 48
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
-      "id": 9,
       "name": "Below Top Rippers",
       "nodeType": "junction",
       "nodeSubType": "visible",
@@ -204,6 +188,22 @@
           "x": 192,
           "y": 560,
           "w": 32,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 9,
+      "name": "Right of Power Bomb Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 136,
+          "y": 1168,
+          "w": 40,
           "h": 48
         }
       ],
@@ -291,7 +291,7 @@
       "name": "Base",
       "link": [
         1,
-        9
+        8
       ],
       "requires": [
         "canTrickyDodgeEnemies"
@@ -309,7 +309,7 @@
       "name": "Base",
       "link": [
         3,
-        8
+        9
       ],
       "requires": []
     },
@@ -317,7 +317,7 @@
       "name": "Base",
       "link": [
         3,
-        9
+        8
       ],
       "requires": [
         {
@@ -380,7 +380,7 @@
       "name": "Destroy Power Bomb Blocks",
       "link": [
         4,
-        8
+        9
       ],
       "requires": [
         {
@@ -431,7 +431,7 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Ice-X"
                       ]
                     ]
                   }
@@ -455,7 +455,7 @@
       "name": "Base",
       "link": [
         5,
-        8
+        9
       ],
       "requires": [
         {
@@ -497,7 +497,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e1"
+                            "Ice-X"
                           ]
                         ]
                       }
@@ -540,7 +540,7 @@
     {
       "name": "Base",
       "link": [
-        8,
+        9,
         3
       ],
       "requires": [
@@ -550,7 +550,7 @@
     {
       "name": "Base",
       "link": [
-        8,
+        9,
         4
       ],
       "requires": [
@@ -564,7 +564,7 @@
     {
       "name": "Base",
       "link": [
-        8,
+        9,
         5
       ],
       "requires": [
@@ -579,7 +579,7 @@
     {
       "name": "Base",
       "link": [
-        9,
+        8,
         1
       ],
       "requires": [
@@ -609,7 +609,7 @@
     {
       "name": "Base",
       "link": [
-        9,
+        8,
         3
       ],
       "requires": [
@@ -619,6 +619,7 @@
   ],
   "roomImageFile": "ARC Room 78D00.jpg",
   "roomAddress": "0x78D00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 22,
+  "nextNotableId": 1,
+  "notables": []
 }

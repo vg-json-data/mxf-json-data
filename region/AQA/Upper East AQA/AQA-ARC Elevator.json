@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 31,
+  "id": 30,
   "name": "AQA-ARC Elevator",
   "area": "AQA",
   "subarea": "Upper East AQA",
@@ -16,29 +16,6 @@
     ]
   ],
   "nodes": [
-    {
-      "id": 3,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 360,
-          "y": 392,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
     {
       "id": 1,
       "name": "Left Door",
@@ -79,6 +56,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 360,
+          "y": 392,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -135,6 +135,9 @@
   ],
   "roomImageFile": "AQA Room 78A00.jpg",
   "roomAddress": "0x78A00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

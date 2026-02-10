@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 249,
+  "id": 248,
   "name": "PYR Security Room",
   "area": "PYR",
   "subarea": "Lower PYR",
@@ -188,6 +188,9 @@
   ],
   "roomImageFile": "PYR Room 7A200.jpg",
   "roomAddress": "0x7A200",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

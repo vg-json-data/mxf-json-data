@@ -142,7 +142,9 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Zebesian (Red)",
+                    "Zebesian (Red)",
+                    "Zebesian (Red)"
                   ]
                 ]
               }
@@ -320,6 +322,7 @@
   ],
   "roomImageFile": "PYR Room 7AE00.jpg",
   "roomAddress": "0x7AE00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "notables": []
 }

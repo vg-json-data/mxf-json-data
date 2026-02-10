@@ -43,7 +43,7 @@
         {
           "area": "AQA",
           "subarea": "Upper West AQA",
-          "roomid": 52,
+          "roomid": 51,
           "roomName": "Construction Site",
           "nodeid": 1,
           "nodeName": "Top-Right Door",
@@ -70,7 +70,7 @@
           "subarea": "Upper West AQA",
           "roomid": 59,
           "roomName": "Sciser Shaft",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Right-Lower Door",
           "position": "right"
         }
@@ -93,7 +93,7 @@
         {
           "area": "AQA",
           "subarea": "Upper West AQA",
-          "roomid": 52,
+          "roomid": 51,
           "roomName": "Construction Site",
           "nodeid": 2,
           "nodeName": "Bottom-Left Door",
@@ -178,7 +178,7 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [AQA Security Room North Access - Left Door] and [Drain Pipe - Bottom-Right Door]",
+      "description": "Horizontal Door connection between [AQA Security Room North Access - Top-Right Door] and [Construction Site Access - Bottom-Left Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
@@ -187,6 +187,31 @@
           "roomid": 45,
           "roomName": "AQA Security Room North Access",
           "nodeid": 2,
+          "nodeName": "Top-Right Door",
+          "position": "right"
+        },
+        {
+          "area": "AQA",
+          "subarea": "Upper West AQA",
+          "roomid": 52,
+          "roomName": "Construction Site Access",
+          "nodeid": 3,
+          "nodeName": "Bottom-Left Door",
+          "position": "left"
+        }
+      ]
+    },
+    {
+      "connectionType": "HorizontalDoor",
+      "description": "Horizontal Door connection between [AQA Security Room North Access - Left Door] and [Drain Pipe - Bottom-Right Door]",
+      "direction": "Bidirectional",
+      "nodes": [
+        {
+          "area": "AQA",
+          "subarea": "Upper West AQA",
+          "roomid": 45,
+          "roomName": "AQA Security Room North Access",
+          "nodeid": 3,
           "nodeName": "Left Door",
           "position": "left"
         },
@@ -211,7 +236,7 @@
           "subarea": "Upper West AQA",
           "roomid": 45,
           "roomName": "AQA Security Room North Access",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Right Door",
           "position": "right"
         },
@@ -220,7 +245,7 @@
           "subarea": "Upper West AQA",
           "roomid": 56,
           "roomName": "Owtch Atrium / Construction Site Checkpoint",
-          "nodeid": 1,
+          "nodeid": 3,
           "nodeName": "Owtch Atrium - Left Door",
           "position": "left"
         }
@@ -261,7 +286,7 @@
           "subarea": "Upper West AQA",
           "roomid": 46,
           "roomName": "AQA-PYR Access / Serris Speedway",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "AQA-PYR Access - Left Door",
           "position": "left"
         },
@@ -270,7 +295,7 @@
           "subarea": "Upper West AQA",
           "roomid": 47,
           "roomName": "AQA-PYR Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         }
@@ -286,7 +311,7 @@
           "subarea": "Upper West AQA",
           "roomid": 46,
           "roomName": "AQA-PYR Access / Serris Speedway",
-          "nodeid": 3,
+          "nodeid": 2,
           "nodeName": "Serris Speedway - Top-Left Tunnel",
           "position": "left"
         },
@@ -370,7 +395,7 @@
           "subarea": "Upper West AQA",
           "roomid": 59,
           "roomName": "Sciser Shaft",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Left-Lower Door",
           "position": "left"
         }
@@ -386,7 +411,7 @@
           "subarea": "Upper West AQA",
           "roomid": 49,
           "roomName": "Broken Bridge",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Bottom-Left Tunnel",
           "position": "left"
         },
@@ -411,7 +436,7 @@
           "subarea": "Upper West AQA",
           "roomid": 49,
           "roomName": "Broken Bridge",
-          "nodeid": 3,
+          "nodeid": 2,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         },
@@ -459,7 +484,7 @@
         {
           "area": "AQA",
           "subarea": "Upper West AQA",
-          "roomid": 51,
+          "roomid": 52,
           "roomName": "Construction Site Access",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -468,7 +493,7 @@
         {
           "area": "AQA",
           "subarea": "Upper West AQA",
-          "roomid": 52,
+          "roomid": 51,
           "roomName": "Construction Site",
           "nodeid": 3,
           "nodeName": "Bottom-Right Door",
@@ -484,7 +509,7 @@
         {
           "area": "AQA",
           "subarea": "Upper West AQA",
-          "roomid": 51,
+          "roomid": 52,
           "roomName": "Construction Site Access",
           "nodeid": 2,
           "nodeName": "Top-Right Door",
@@ -509,9 +534,9 @@
         {
           "area": "AQA",
           "subarea": "Upper West AQA",
-          "roomid": 51,
+          "roomid": 52,
           "roomName": "Construction Site Access",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         },
@@ -520,7 +545,7 @@
           "subarea": "Upper West AQA",
           "roomid": 56,
           "roomName": "Owtch Atrium / Construction Site Checkpoint",
-          "nodeid": 3,
+          "nodeid": 1,
           "nodeName": "Construction Site Checkpoint - Left Door",
           "position": "left"
         }
@@ -570,7 +595,7 @@
           "subarea": "Upper West AQA",
           "roomid": 59,
           "roomName": "Sciser Shaft",
-          "nodeid": 5,
+          "nodeid": 6,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         }
@@ -645,8 +670,33 @@
           "subarea": "Upper West AQA",
           "roomid": 59,
           "roomName": "Sciser Shaft",
-          "nodeid": 4,
+          "nodeid": 5,
           "nodeName": "Bottom-Left Door",
+          "position": "left"
+        }
+      ]
+    },
+    {
+      "connectionType": "HorizontalTunnel",
+      "description": "Horizontal Tunnel connection between [Owtch Corridor - Bottom-Right Tunnel] and [Sciser Shaft - Left-Bottom Tunnel]",
+      "direction": "Bidirectional",
+      "nodes": [
+        {
+          "area": "AQA",
+          "subarea": "Upper West AQA",
+          "roomid": 57,
+          "roomName": "Owtch Corridor",
+          "nodeid": 3,
+          "nodeName": "Bottom-Right Tunnel",
+          "position": "right"
+        },
+        {
+          "area": "AQA",
+          "subarea": "Upper West AQA",
+          "roomid": 59,
+          "roomName": "Sciser Shaft",
+          "nodeid": 2,
+          "nodeName": "Left-Bottom Tunnel",
           "position": "left"
         }
       ]

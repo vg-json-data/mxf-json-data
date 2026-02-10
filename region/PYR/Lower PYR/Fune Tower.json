@@ -155,6 +155,9 @@
   ],
   "roomImageFile": "PYR Room 7A400.jpg",
   "roomAddress": "0x7A400",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

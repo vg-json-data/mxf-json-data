@@ -41,6 +41,79 @@
     },
     {
       "id": 2,
+      "name": "East Turbo Tube Access - Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 768,
+          "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "doorEnvironments": [
+        {
+          "physics": "lowGrav"
+        }
+      ],
+      "useImplicitDoorUnlocks": true,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": 3,
+      "name": "East Turbo Tube Access - Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 976,
+          "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
       "name": "Central Turbo Tube Access - Bottom Door",
       "nodeType": "door",
       "nodeSubType": "gray",
@@ -104,79 +177,6 @@
       ]
     },
     {
-      "id": 3,
-      "name": "East Turbo Tube Access - Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 768,
-          "y": 96,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "doorEnvironments": [
-        {
-          "physics": "lowGrav"
-        }
-      ],
-      "useImplicitDoorUnlocks": true,
-      "mapTileMask": [
-        [
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "id": 4,
-      "name": "East Turbo Tube Access - Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 976,
-          "y": 96,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 5,
       "name": "East Turbo Tube Access - Bottom Door",
       "nodeType": "door",
@@ -205,14 +205,14 @@
       "name": "Base",
       "link": [
         1,
-        2
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        2,
+        4,
         1
       ],
       "requires": []
@@ -220,8 +220,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        4
+        2,
+        3
       ],
       "requires": []
     },
@@ -229,8 +229,8 @@
       "name": "Leave Shinecharged",
       "devNote": "FIXME: Need a way to represent coming in partially shinecharged at Node 4",
       "link": [
-        4,
-        3
+        3,
+        2
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -243,8 +243,8 @@
     {
       "name": "Come In Shinecharging, Leave Shinecharged",
       "link": [
-        4,
-        3
+        3,
+        2
       ],
       "entranceCondition": {
         "comeInShinecharging": {
@@ -261,7 +261,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         5
       ],
       "requires": []
@@ -270,13 +270,16 @@
       "name": "Base",
       "link": [
         5,
-        3
+        2
       ],
       "requires": []
     }
   ],
   "roomImageFile": "NOC Room 79400.jpg",
   "roomAddress": "0x79400",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 8,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 346,
+  "id": 347,
   "name": "TRO-MDK Tube",
   "area": "TRO",
   "subarea": "General",
@@ -85,6 +85,7 @@
     }
   ],
   "notables": [],
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": []
 }

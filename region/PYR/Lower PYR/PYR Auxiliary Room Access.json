@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 243,
+  "id": 244,
   "name": "PYR Auxiliary Room Access",
   "area": "PYR",
   "subarea": "Lower PYR",
@@ -128,22 +128,6 @@
     },
     {
       "id": 4,
-      "name": "Bottom of the Shaft",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 280,
-          "y": 872,
-          "w": 32,
-          "h": 48
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
-      "id": 5,
       "name": "Right of the Left Door",
       "nodeType": "junction",
       "nodeSubType": "visible",
@@ -157,6 +141,22 @@
         }
       ],
       "color": "#0000ff"
+    },
+    {
+      "id": 5,
+      "name": "Bottom of the Shaft",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 280,
+          "y": 872,
+          "w": 32,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "enemies": [
@@ -165,8 +165,8 @@
       "enemyName": "Zebesian (Red)",
       "quantity": 4,
       "betweenNodes": [
-        4,
-        5
+        5,
+        4
       ],
       "id": "e1"
     }
@@ -176,7 +176,7 @@
       "name": "Base",
       "link": [
         1,
-        5
+        4
       ],
       "requires": [
         {
@@ -188,7 +188,7 @@
       "name": "Base",
       "link": [
         2,
-        5
+        4
       ],
       "requires": [
         {
@@ -200,7 +200,7 @@
       "name": "Base",
       "link": [
         3,
-        4
+        5
       ],
       "requires": [
         {
@@ -216,7 +216,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         3
       ],
       "requires": [
@@ -233,8 +233,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        5,
+        4
       ],
       "requires": [
         {
@@ -256,7 +256,10 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e1"
+                            "Zebesian (Red)",
+                            "Zebesian (Red)",
+                            "Zebesian (Red)",
+                            "Zebesian (Red)"
                           ]
                         ]
                       }
@@ -275,7 +278,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         1
       ],
       "requires": [
@@ -292,7 +295,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         2
       ],
       "requires": [
@@ -304,8 +307,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        4,
+        5
       ],
       "requires": [
         {
@@ -324,7 +327,10 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Zebesian (Red)",
+                        "Zebesian (Red)",
+                        "Zebesian (Red)",
+                        "Zebesian (Red)"
                       ]
                     ]
                   }
@@ -341,6 +347,8 @@
   ],
   "roomImageFile": "PYR Room 7AD00.jpg",
   "roomAddress": "0x7AD00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 9,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

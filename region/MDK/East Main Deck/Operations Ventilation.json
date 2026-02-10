@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 155,
+  "id": 154,
   "name": "Operations Ventilation",
   "area": "MDK",
   "subarea": "East Main Deck",
@@ -156,6 +156,54 @@
     },
     {
       "id": 7,
+      "name": "Above Upper Missile Tank",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 104,
+          "y": 776,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 8,
+      "name": "Below Upper Missile Tank",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 56,
+          "y": 1104,
+          "w": 72,
+          "h": 64
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 9,
+      "name": "Near Lower Missile Tank",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 104,
+          "y": 1528,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 10,
       "idMinorItemPlm": "0x07",
       "name": "Operations Ventilation [Upper] - Missile Tank",
       "nodeType": "item",
@@ -176,7 +224,7 @@
       "mapTileY": 13
     },
     {
-      "id": 8,
+      "id": 11,
       "idMinorItemPlm": "0x08",
       "name": "Operations Ventilation [Lower] - Missile Tank",
       "nodeType": "item",
@@ -195,54 +243,6 @@
       "nodeAddress": "0x7D42C",
       "mapTileX": 32,
       "mapTileY": 16
-    },
-    {
-      "id": 9,
-      "name": "Above Upper Missile Tank",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 104,
-          "y": 776,
-          "w": 40,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
-      "id": 10,
-      "name": "Below Upper Missile Tank",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 56,
-          "y": 1104,
-          "w": 72,
-          "h": 64
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
-      "id": 11,
-      "name": "Near Lower Missile Tank",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 104,
-          "y": 1528,
-          "w": 40,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "strats": [
@@ -266,7 +266,7 @@
       "name": "Base",
       "link": [
         2,
-        9
+        7
       ],
       "requires": []
     },
@@ -274,7 +274,7 @@
       "name": "Base",
       "link": [
         3,
-        9
+        7
       ],
       "requires": []
     },
@@ -290,7 +290,7 @@
       "name": "Base",
       "link": [
         4,
-        11
+        9
       ],
       "requires": []
     },
@@ -313,23 +313,23 @@
     {
       "name": "Base",
       "link": [
+        10,
+        8
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        11,
+        9
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
         7,
-        10
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        8,
-        11
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        9,
         2
       ],
       "requires": [
@@ -339,7 +339,7 @@
     {
       "name": "Reach [Top-Right Door] from [Above Upper Missile Tank] via Long IBJ",
       "link": [
-        9,
+        7,
         2
       ],
       "requires": [
@@ -354,7 +354,7 @@
     {
       "name": "Base",
       "link": [
-        9,
+        7,
         3
       ],
       "requires": []
@@ -362,18 +362,10 @@
     {
       "name": "Base",
       "link": [
-        9,
-        7
+        7,
+        10
       ],
       "collectsItems": [
-        7
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        9,
         10
       ],
       "requires": []
@@ -381,8 +373,16 @@
     {
       "name": "Base",
       "link": [
-        10,
-        9
+        7,
+        8
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        7
       ],
       "requires": [
         {
@@ -395,8 +395,8 @@
     {
       "name": "Reach [Above Upper Missile Tank] from [Below Upper Missile Tank] via Long IBJ",
       "link": [
-        10,
-        9
+        8,
+        7
       ],
       "requires": [
         "canLongIBJ"
@@ -405,15 +405,15 @@
     {
       "name": "Base",
       "link": [
-        10,
-        11
+        8,
+        9
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        11,
+        9,
         4
       ],
       "requires": []
@@ -421,19 +421,19 @@
     {
       "name": "Base",
       "link": [
-        11,
-        8
+        9,
+        11
       ],
       "collectsItems": [
-        8
+        11
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        11,
-        10
+        9,
+        8
       ],
       "requires": [
         "SpaceJump"
@@ -442,8 +442,8 @@
     {
       "name": "Reach [Below Upper Missile Tank] from [Near Lower Missile Tank] via Wall Jumps",
       "link": [
-        11,
-        10
+        9,
+        8
       ],
       "requires": [
         "canConsecutiveAlternatingWallJump"
@@ -452,8 +452,8 @@
     {
       "name": "Reach [Below Upper Missile Tank] from [Near Lower Missile Tank] via Long IBJ",
       "link": [
-        11,
-        10
+        9,
+        8
       ],
       "requires": [
         "canLongIBJ"
@@ -462,6 +462,9 @@
   ],
   "roomImageFile": "MDK Room 16.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 24,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

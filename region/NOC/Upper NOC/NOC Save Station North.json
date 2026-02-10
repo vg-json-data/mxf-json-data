@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 226,
+  "id": 225,
   "name": "NOC Save Station North",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -126,6 +126,9 @@
   ],
   "roomImageFile": "Misc Room Reusable 3.jpg",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

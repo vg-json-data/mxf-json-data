@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 3,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 528,
-          "y": 0,
-          "w": 224,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Right-Lower Door",
       "nodeType": "door",
@@ -171,6 +148,29 @@
       ]
     },
     {
+      "id": 3,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 528,
+          "y": 0,
+          "w": 224,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
       "id": 4,
       "name": "Phantomire Arena - Grapple Beam",
       "nodeType": "item",
@@ -251,6 +251,9 @@
   ],
   "roomImageFile": "PYR Room 7A000.jpg",
   "roomAddress": "0x7A000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -87,7 +87,11 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Fake E-Tank",
+                    "Fake E-Tank",
+                    "Fake E-Tank",
+                    "Fake E-Tank",
+                    "Fake E-Tank"
                   ]
                 ]
               }
@@ -116,7 +120,11 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Fake E-Tank",
+                    "Fake E-Tank",
+                    "Fake E-Tank",
+                    "Fake E-Tank",
+                    "Fake E-Tank"
                   ]
                 ]
               }
@@ -149,6 +157,8 @@
   ],
   "roomImageFile": "AQA Room 79A00.jpg",
   "roomAddress": "0x79A00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 300,
+  "id": 301,
   "name": "West Spike Tower",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -64,29 +64,6 @@
     },
     {
       "id": 3,
-      "name": "Left-Lower Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 1120,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 4,
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -109,7 +86,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Right-Lower Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -125,6 +102,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Left-Lower Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 592,
+          "w": 24,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -153,6 +153,29 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 7,
+      "name": "Bottom-Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 1120,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "down",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
     }
   ],
   "enemies": [
@@ -163,7 +186,7 @@
       "homeNodes": [
         1,
         2,
-        4
+        3
       ],
       "id": "e1",
       "geometry": [
@@ -182,7 +205,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        3
       ],
       "requires": []
     },
@@ -216,7 +239,7 @@
       "name": "Come In Shinecharged, Leave Shinecharged",
       "link": [
         2,
-        4
+        3
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -230,32 +253,14 @@
       "name": "Base",
       "link": [
         2,
-        4
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        5
-      ],
-      "requires": [
-        "SpaceJump"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        6
+        3
       ],
       "requires": []
     },
     {
       "name": "Reach Top-Right Door from Right Door via Wall Jumps",
       "link": [
-        4,
+        3,
         1
       ],
       "requires": [
@@ -276,7 +281,11 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)"
                       ]
                     ]
                   }
@@ -290,7 +299,7 @@
     {
       "name": "Come In Shinecharged, Leave Shinecharged",
       "link": [
-        4,
+        3,
         2
       ],
       "entranceCondition": {
@@ -304,7 +313,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         2
       ],
       "requires": []
@@ -312,8 +321,8 @@
     {
       "name": "Come In Shinecharged",
       "link": [
-        4,
-        4
+        3,
+        3
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -323,26 +332,57 @@
     {
       "name": "Base",
       "link": [
-        5,
-        3
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "SpikeBreaker",
+            "canTrivialMidAirMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        7
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        6,
-        3
+        5,
+        4
       ],
       "requires": [
-        "SpaceJump"
+        {
+          "and": [
+            "Morph",
+            "SpikeBreaker"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        7
+      ],
+      "requires": [
+        "h_bombThings"
       ]
     },
     {
       "name": "Reach Right-Lower Door from Bottom Door via Spikebreaker and Consecutive, Tricky Wall Jumps",
       "link": [
         6,
-        5
+        4
       ],
       "requires": [
         {
@@ -351,10 +391,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        7
+      ],
+      "requires": [
+        "SpaceJump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        4
+      ],
+      "requires": [
+        "SpaceJump"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        7,
+        6
+      ],
+      "requires": []
     }
   ],
   "roomImageFile": "SRX Room 7A300.jpg",
   "roomAddress": "0x7A300",
-  "nextStratId": 1,
+  "nextStratId": 15,
   "nextNotableId": 1
 }

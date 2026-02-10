@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 304,
+  "id": 305,
   "name": "Just Don't Die Bend",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -145,6 +145,9 @@
   ],
   "roomImageFile": "SRX Room 79900.jpg",
   "roomAddress": "0x79900",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 51,
+  "id": 52,
   "name": "Construction Site Access",
   "area": "AQA",
   "subarea": "Upper West AQA",
@@ -64,6 +64,29 @@
     },
     {
       "id": 3,
+      "name": "Bottom-Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 24,
+          "y": 328,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -84,22 +107,6 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 4,
-      "name": "Serris Broken Entrance",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 24,
-          "y": 328,
-          "w": 40,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "strats": [
@@ -123,14 +130,14 @@
       "name": "Base",
       "link": [
         2,
-        3
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        3,
+        4,
         2
       ],
       "requires": [
@@ -162,7 +169,7 @@
     {
       "name": "Come In Shinecharged, Spark to Top-Left Door",
       "link": [
-        4,
+        3,
         1
       ],
       "entranceCondition": {
@@ -186,6 +193,9 @@
   ],
   "roomImageFile": "AQA Room 79800.jpg",
   "roomAddress": "0x79800",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

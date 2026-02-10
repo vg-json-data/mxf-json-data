@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 320,
+  "id": 321,
   "name": "Crum-Ball Tower",
   "area": "TRO",
   "subarea": "General",
@@ -18,29 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Top-Left Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 128,
-          "w": 48,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "name": "Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,6 +33,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Top-Left Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 128,
+          "w": 48,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -113,8 +113,8 @@
     {
       "name": "Leave Shinecharged",
       "link": [
-        1,
-        1
+        2,
+        2
       ],
       "requires": [
         {
@@ -137,7 +137,7 @@
     {
       "name": "Base",
       "link": [
-        1,
+        2,
         4
       ],
       "requires": [
@@ -152,8 +152,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        1
+        1,
+        2
       ],
       "requires": [
         "Morph"
@@ -171,7 +171,7 @@
       "name": "Base",
       "link": [
         4,
-        1
+        2
       ],
       "requires": [
         {
@@ -207,6 +207,9 @@
   ],
   "roomImageFile": "TRO Room 79D00.jpg",
   "roomAddress": "0x79D00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 8,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

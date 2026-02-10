@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 323,
+  "id": 324,
   "name": "Cultivation Station",
   "area": "TRO",
   "subarea": "General",
@@ -16,29 +16,6 @@
     ]
   ],
   "nodes": [
-    {
-      "id": 5,
-      "name": "Left-Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 104,
-          "y": 0,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
     {
       "id": 1,
       "name": "Top-Right Door",
@@ -64,29 +41,6 @@
     },
     {
       "id": 2,
-      "name": "Left-Lower Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 240,
-          "y": 608,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 3,
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -102,6 +56,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Left-Lower Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 240,
+          "y": 608,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -132,6 +109,29 @@
       ]
     },
     {
+      "id": 5,
+      "name": "Left-Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 96,
+          "y": 0,
+          "w": 64,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
       "id": 6,
       "idMinorItemPlm": "0x27",
       "name": "Cultivation Station - Missile Tank",
@@ -140,10 +140,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 80,
-          "y": 416,
-          "w": 112,
-          "h": 56
+          "x": 96,
+          "y": 464,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -185,8 +185,8 @@
     {
       "name": "Kill Green Geron",
       "link": [
-        2,
-        2
+        3,
+        3
       ],
       "requires": [
         "h_killGreenGeron"
@@ -201,8 +201,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        3
+        3,
+        2
       ],
       "requires": [
         {
@@ -235,7 +235,7 @@
     {
       "name": "Base",
       "link": [
-        2,
+        3,
         4
       ],
       "requires": []
@@ -243,8 +243,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        2
+        2,
+        3
       ],
       "requires": [
         {
@@ -262,8 +262,8 @@
     {
       "name": "Kill Green Geron",
       "link": [
-        3,
-        3
+        2,
+        2
       ],
       "requires": [
         "h_killGreenGeron"
@@ -278,7 +278,7 @@
     {
       "name": "Base",
       "link": [
-        3,
+        2,
         5
       ],
       "requires": []
@@ -286,7 +286,7 @@
     {
       "name": "Base",
       "link": [
-        3,
+        2,
         6
       ],
       "collectsItems": [
@@ -301,7 +301,7 @@
       "name": "Base",
       "link": [
         4,
-        2
+        3
       ],
       "requires": []
     },
@@ -317,7 +317,7 @@
       "name": "Base",
       "link": [
         5,
-        3
+        2
       ],
       "requires": []
     },
@@ -325,7 +325,7 @@
       "name": "Base",
       "link": [
         6,
-        3
+        2
       ],
       "requires": [
         {
@@ -346,6 +346,8 @@
   ],
   "roomImageFile": "TRO Room 78F00.jpg",
   "roomAddress": "0x78F00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 14,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

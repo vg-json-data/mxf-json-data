@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 2,
-      "name": "Left-Top Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 56,
-          "y": 32,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Right Door",
       "nodeType": "door",
@@ -56,6 +33,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Left-Top Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 56,
+          "y": 32,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -95,7 +95,9 @@
           "enemyKill": {
             "enemies": [
               [
-                "e1"
+                "Metroid",
+                "Metroid",
+                "Metroid"
               ]
             ]
           }
@@ -105,6 +107,8 @@
   ],
   "roomImageFile": "DMX Room 78400.jpg",
   "roomAddress": "0x78400",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

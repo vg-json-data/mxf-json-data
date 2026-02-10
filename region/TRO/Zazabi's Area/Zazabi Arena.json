@@ -210,6 +210,22 @@
     },
     {
       "id": 4,
+      "name": "Above Zazabi",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 288,
+          "y": 104,
+          "w": 16,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "name": "Zazabi Arena - Super Jump",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -226,25 +242,17 @@
       "nodeItem": "SuperJump",
       "nodeAddress": "0x0",
       "note": ""
-    },
-    {
-      "id": 5,
-      "name": "Above Zazabi",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 288,
-          "y": 104,
-          "w": 16,
-          "h": 56
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": []
+    },
     {
       "name": "Base",
       "link": [
@@ -256,16 +264,8 @@
     {
       "name": "Base",
       "link": [
-        1,
-        5
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
         2,
-        5
+        4
       ],
       "requires": [
         {
@@ -305,14 +305,14 @@
       "name": "Base",
       "link": [
         3,
-        4
+        5
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         1
       ],
       "requires": [
@@ -338,7 +338,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         3
       ],
       "requires": []
@@ -346,11 +346,11 @@
     {
       "name": "Base",
       "link": [
-        4,
-        4
+        5,
+        5
       ],
       "collectsItems": [
-        4
+        5
       ],
       "setsFlags": [
         "f_ZazabiArena_CoreXAbsorbed",
@@ -361,8 +361,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        5,
+        4
       ],
       "requires": [
         {
@@ -387,7 +387,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         1
       ],
       "requires": [
@@ -407,7 +407,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         2
       ],
       "requires": [
@@ -437,14 +437,17 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        4,
+        5
       ],
       "requires": []
     }
   ],
   "roomImageFile": "TRO Room 79900.jpg",
   "roomAddress": "0x79900",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 12,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

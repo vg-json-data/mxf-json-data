@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 166,
+  "id": 165,
   "name": "Habitation Deck",
   "area": "MDK",
   "subarea": "Upper Main Deck",
@@ -18,29 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Top-Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 96,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "name": "Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,6 +33,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Top-Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -144,15 +144,15 @@
     {
       "name": "Base",
       "link": [
-        1,
-        2
+        2,
+        1
       ],
       "requires": []
     },
     {
       "name": "Come in Shinecharged, Drop to Bottom Door",
       "link": [
-        1,
+        2,
         3
       ],
       "entranceCondition": {
@@ -173,7 +173,7 @@
     {
       "name": "Base",
       "link": [
-        1,
+        2,
         4
       ],
       "requires": [
@@ -202,8 +202,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        1
+        1,
+        2
       ],
       "requires": []
     },
@@ -211,7 +211,7 @@
       "name": "Come In With Spark",
       "link": [
         3,
-        2
+        1
       ],
       "entranceCondition": {
         "comeInWithSpark": {}
@@ -271,6 +271,8 @@
   ],
   "roomImageFile": "MDK Room 27.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 9,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

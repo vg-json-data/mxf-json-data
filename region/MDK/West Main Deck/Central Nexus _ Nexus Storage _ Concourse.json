@@ -18,6 +18,29 @@
   "nodes": [
     {
       "id": 1,
+      "name": "Concourse - Top-Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 720,
+          "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
       "name": "Central Nexus - Top-Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -40,7 +63,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Central Nexus - Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -107,7 +130,53 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
+      "name": "Concourse - Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 512,
+          "y": 352,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Concourse - Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 720,
+          "y": 352,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 6,
       "name": "Central Nexus - Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -130,53 +199,7 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Central Nexus - Bottom-Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 864,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Central Nexus - Bottom-Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 208,
-          "y": 864,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 6,
+      "id": 7,
       "name": "Nexus Storage - Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -199,7 +222,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Nexus Storage - Right Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -223,75 +246,6 @@
     },
     {
       "id": 9,
-      "name": "Concourse - Top-Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 720,
-          "y": 96,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Concourse - Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 512,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Concourse - Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 720,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 12,
       "name": "Concourse - Bottom-Left Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -314,7 +268,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 10,
       "name": "Concourse - Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -337,7 +291,53 @@
       ]
     },
     {
-      "id": 8,
+      "id": 11,
+      "name": "Central Nexus - Bottom-Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 864,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Central Nexus - Bottom-Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 864,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 13,
       "idMinorItemPlm": "0x02",
       "name": "Nexus Storage - Missile Tank",
       "nodeType": "item",
@@ -379,22 +379,6 @@
     {
       "name": "Base",
       "link": [
-        1,
-        2
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        2,
-        1
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
         2,
         3
       ],
@@ -405,14 +389,30 @@
       "link": [
         3,
         2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
       ],
       "requires": []
     },
     {
       "name": "Kill Green Geron",
       "link": [
-        3,
-        3
+        6,
+        6
       ],
       "requires": [
         "h_killGreenGeron"
@@ -427,8 +427,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        4
+        6,
+        11
       ],
       "requires": [
         {
@@ -446,8 +446,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
+        11,
+        6
       ],
       "requires": [
         {
@@ -460,8 +460,8 @@
     {
       "name": "Kill Green Geron",
       "link": [
-        4,
-        4
+        11,
+        11
       ],
       "requires": [
         "h_killGreenGeron"
@@ -476,16 +476,16 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        11,
+        12
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        12,
+        11
       ],
       "requires": []
     },
@@ -493,21 +493,21 @@
       "name": "Collect Item with Crystal Flash",
       "devNote": "Crystal Flash directly under the item, hold forward to collect the item.",
       "link": [
-        6,
-        6
+        7,
+        7
       ],
       "requires": [
         "canCrystalFlash"
       ],
       "collectsItems": [
-        8
+        13
       ]
     },
     {
       "name": "Base",
       "link": [
-        6,
-        7
+        7,
+        8
       ],
       "requires": [
         {
@@ -522,14 +522,14 @@
         "C"
       ],
       "collectsItems": [
-        8
+        13
       ]
     },
     {
       "name": "Reach Right Tunnel from Left Door with Crystal Flash Clip",
       "link": [
-        6,
-        8
+        7,
+        13
       ],
       "requires": [
         "canCrystalFlashClip"
@@ -541,8 +541,8 @@
     {
       "name": "Base",
       "link": [
-        7,
-        6
+        8,
+        7
       ],
       "requires": [
         "h_bombThings"
@@ -554,8 +554,8 @@
     {
       "name": "Base",
       "link": [
-        7,
-        6
+        8,
+        7
       ],
       "requires": [
         {
@@ -569,88 +569,90 @@
         "C"
       ],
       "collectsItems": [
-        8
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        8,
-        7
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        9,
-        10
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        10,
-        9
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        10,
-        11
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        10,
         13
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        11,
-        10
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        11,
-        12
-      ],
-      "requires": [
-        "Morph"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        12,
-        11
-      ],
-      "requires": [
-        "Morph"
       ]
     },
     {
       "name": "Base",
       "link": [
         13,
-        11
+        8
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        10
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        9
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        5
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        10,
+        5
       ],
       "requires": []
     }
   ],
   "roomImageFile": "MDK_Room_13.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 25,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

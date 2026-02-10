@@ -40,29 +40,6 @@
       ]
     },
     {
-      "id": 5,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 360,
-          "y": 0,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 2,
       "name": "Top-Right Door",
       "nodeType": "door",
@@ -125,6 +102,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 360,
+          "y": 0,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -334,7 +334,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e1"
+                            "Sciser"
                           ]
                         ]
                       }
@@ -759,6 +759,7 @@
   ],
   "roomImageFile": "AQA Room 78E00.jpg",
   "roomAddress": "0x78E00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 13,
+  "nextNotableId": 1,
+  "notables": []
 }

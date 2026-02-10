@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 196,
+  "id": 195,
   "name": "NOC Maintenance Wing",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -142,6 +142,9 @@
   ],
   "roomImageFile": "NOC Room 7A000.jpg",
   "roomAddress": "0x7A000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

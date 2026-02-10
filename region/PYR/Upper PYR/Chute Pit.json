@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 2,
-      "name": "Left-Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 32,
-          "y": 0,
-          "w": 16,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Bottom-Left Tunnel",
       "nodeType": "door",
@@ -56,6 +33,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Left-Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 32,
+          "y": 0,
+          "w": 16,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -95,7 +95,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e1"
+                            "Zebesian"
                           ]
                         ]
                       }
@@ -160,7 +160,7 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e1"
+                            "Zebesian"
                           ]
                         ]
                       }
@@ -205,6 +205,8 @@
   ],
   "roomImageFile": "PYR Room 7B100.jpg",
   "roomAddress": "0x7B100",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

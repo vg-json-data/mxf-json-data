@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 3,
-      "name": "Left-Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 96,
-          "y": 0,
-          "w": 64,
-          "h": 48
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Top-Right Door",
       "nodeType": "door",
@@ -63,30 +40,7 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Right-Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 864,
-          "y": 0,
-          "w": 64,
-          "h": 48
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 5,
+      "id": 2,
       "name": "Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -109,7 +63,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -125,6 +79,52 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Left-Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 96,
+          "y": 0,
+          "w": 64,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Right-Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 864,
+          "y": 0,
+          "w": 64,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -170,7 +170,7 @@
       "name": "Base",
       "link": [
         1,
-        2
+        3
       ],
       "requires": []
     },
@@ -178,7 +178,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        5
       ],
       "requires": [
         {
@@ -192,7 +192,7 @@
     {
       "name": "Base",
       "link": [
-        2,
+        3,
         1
       ],
       "requires": [
@@ -227,15 +227,15 @@
     {
       "name": "Base",
       "link": [
-        2,
-        5
+        3,
+        2
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        3,
+        4,
         6
       ],
       "requires": [
@@ -271,7 +271,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         1
       ],
       "requires": []
@@ -279,16 +279,16 @@
     {
       "name": "Base",
       "link": [
-        5,
-        2
+        2,
+        3
       ],
       "requires": []
     },
     {
       "name": "Come in Shinecharged, Spark to Right-Top Door",
       "link": [
-        5,
-        4
+        2,
+        5
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -304,7 +304,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        2,
         6
       ],
       "requires": [
@@ -329,7 +329,7 @@
       "name": "Base",
       "link": [
         6,
-        3
+        4
       ],
       "requires": [
         {
@@ -368,7 +368,7 @@
       "name": "Base",
       "link": [
         6,
-        5
+        2
       ],
       "requires": [
         "ScrewAttack"
@@ -380,6 +380,8 @@
   ],
   "roomImageFile": "NOC Room 79E00.jpg",
   "roomAddress": "0x79E00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 12,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

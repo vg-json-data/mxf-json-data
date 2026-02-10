@@ -173,6 +173,9 @@
   ],
   "roomImageFile": "NOC Room 79000.jpg",
   "roomAddress": "0x79000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

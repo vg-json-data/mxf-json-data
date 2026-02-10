@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 30,
+  "id": 31,
   "name": "AQA-ARC Elevator Access",
   "area": "AQA",
   "subarea": "Upper East AQA",
@@ -272,6 +272,8 @@
   ],
   "roomImageFile": "AQA Room 78B00.jpg",
   "roomAddress": "0x78B00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

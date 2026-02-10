@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 295,
+  "id": 296,
   "name": "SRX-NOC Elevator Access",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -245,6 +245,8 @@
   ],
   "roomImageFile": "SRX Room 7AC00.jpg",
   "roomAddress": "0x7AC00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 11,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

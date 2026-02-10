@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 2,
-      "name": "Right-Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 1472,
-          "y": 0,
-          "w": 32,
-          "h": 48
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
@@ -56,6 +33,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Right-Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 1472,
+          "y": 0,
+          "w": 32,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -78,6 +78,9 @@
   ],
   "roomImageFile": "L-X Room 78E00.jpg",
   "roomAddress": "0x78E00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 2,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

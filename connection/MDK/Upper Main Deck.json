@@ -18,7 +18,7 @@
         {
           "area": "MDK",
           "subarea": "Upper Main Deck",
-          "roomid": 165,
+          "roomid": 166,
           "roomName": "Habitation Deck Holding",
           "nodeid": 1,
           "nodeName": "Right Door",
@@ -68,7 +68,7 @@
         {
           "area": "MDK",
           "subarea": "Upper Main Deck",
-          "roomid": 166,
+          "roomid": 165,
           "roomName": "Habitation Deck",
           "nodeid": 3,
           "nodeName": "Bottom Door",
@@ -77,8 +77,8 @@
       ]
     },
     {
-      "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Etecoon Hangar Bay - Left Door] and [MDK Security Room - Right Door]",
+      "connectionType": "HorizontalTunnel",
+      "description": "Horizontal Tunnel connection between [Etecoon Hangar Bay - Left Door] and [MDK Security Room - Right Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
@@ -104,7 +104,7 @@
     {
       "connectionType": "HorizontalTunnel",
       "description": "Horizontal Tunnel connection between [Etecoon Hangar Bay - Left-Lower Tunnel] and [MDK Security Room - Right-Lower Tunnel]",
-      "direction": "Bidirectional",
+      "direction": "Forward",
       "nodes": [
         {
           "area": "MDK",
@@ -134,9 +134,9 @@
         {
           "area": "MDK",
           "subarea": "Upper Main Deck",
-          "roomid": 166,
+          "roomid": 165,
           "roomName": "Habitation Deck",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Top-Left Door",
           "position": "left"
         },
@@ -145,7 +145,7 @@
           "subarea": "Upper Main Deck",
           "roomid": 168,
           "roomName": "MDK-PYR Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         }

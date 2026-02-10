@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 345,
+  "id": 346,
   "name": "TRO-L-X Tube",
   "area": "TRO",
   "subarea": "General",
@@ -18,29 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 96,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,6 +33,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -97,15 +97,15 @@
     {
       "name": "Base",
       "link": [
-        1,
-        2
+        2,
+        1
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        1,
+        2,
         3
       ],
       "requires": [
@@ -138,8 +138,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        1
+        1,
+        2
       ],
       "requires": []
     },
@@ -147,7 +147,7 @@
       "name": "Base",
       "link": [
         3,
-        1
+        2
       ],
       "requires": [
         {
@@ -179,6 +179,8 @@
   ],
   "roomImageFile": "NOC Room 78700.jpg",
   "roomAddress": "0x78700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

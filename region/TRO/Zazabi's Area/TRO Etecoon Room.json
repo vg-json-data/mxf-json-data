@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 361,
+  "id": 362,
   "name": "TRO Etecoon Room",
   "area": "TRO",
   "subarea": "Zazabi's Area",
@@ -100,6 +100,9 @@
   ],
   "roomImageFile": "TRO Room 79700.jpg",
   "roomAddress": "0x79700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

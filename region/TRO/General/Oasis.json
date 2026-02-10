@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 326,
+  "id": 327,
   "name": "Oasis",
   "area": "TRO",
   "subarea": "General",
@@ -25,9 +25,9 @@
         {
           "shape": "rect",
           "x": 0,
-          "y": 40,
-          "w": 48,
-          "h": 64
+          "y": 48,
+          "w": 32,
+          "h": 48
         }
       ],
       "color": "#ffffff",
@@ -63,29 +63,6 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Right-Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 400,
-          "y": 0,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 3,
       "name": "Bottom-Left Door",
       "nodeType": "door",
@@ -102,6 +79,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Right-Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 416,
+          "y": 0,
+          "w": 16,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -244,6 +244,9 @@
   ],
   "roomImageFile": "TRO Room 79E00.jpg",
   "roomAddress": "0x79E00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 8,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

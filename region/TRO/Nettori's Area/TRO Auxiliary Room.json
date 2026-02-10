@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 360,
+  "id": 361,
   "name": "TRO Auxiliary Room",
   "area": "TRO",
   "subarea": "Nettori's Area",
@@ -102,6 +102,9 @@
   ],
   "roomImageFile": "Misc Room Aux 2.jpg",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

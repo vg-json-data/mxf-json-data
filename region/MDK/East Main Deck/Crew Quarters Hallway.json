@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 147,
+  "id": 148,
   "name": "Crew Quarters Hallway",
   "area": "MDK",
   "subarea": "East Main Deck",
@@ -162,7 +162,11 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)"
                       ]
                     ]
                   }
@@ -171,7 +175,8 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e2"
+                        "Yameba (Medium)",
+                        "Yameba (Medium)"
                       ]
                     ]
                   }
@@ -214,7 +219,11 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)"
                       ]
                     ]
                   }
@@ -223,7 +232,8 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e2"
+                        "Yameba (Medium)",
+                        "Yameba (Medium)"
                       ]
                     ]
                   }
@@ -267,7 +277,11 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)"
                       ]
                     ]
                   }
@@ -276,7 +290,8 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e2"
+                        "Yameba (Medium)",
+                        "Yameba (Medium)"
                       ]
                     ]
                   }
@@ -320,7 +335,11 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)",
+                        "Yameba (Small)"
                       ]
                     ]
                   }
@@ -329,7 +348,8 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e2"
+                        "Yameba (Medium)",
+                        "Yameba (Medium)"
                       ]
                     ]
                   }
@@ -343,6 +363,8 @@
   ],
   "roomImageFile": "MDK Room 19.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

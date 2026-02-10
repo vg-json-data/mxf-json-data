@@ -18,52 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Spark Runway - Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Spark Runway - Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 464,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 3,
       "name": "Spark Shaft - Top-Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -86,7 +40,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 2,
       "name": "Spark Shaft - Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -95,6 +49,52 @@
           "shape": "rect",
           "x": 720,
           "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Spark Runway - Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 352,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Spark Runway - Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 464,
+          "y": 352,
           "w": 48,
           "h": 64
         }
@@ -138,8 +138,8 @@
       "enemyName": "Sciser",
       "quantity": 1,
       "betweenNodes": [
-        1,
-        2
+        3,
+        4
       ],
       "id": "e1"
     }
@@ -148,8 +148,8 @@
     {
       "name": "Base",
       "link": [
-        1,
-        2
+        3,
+        4
       ],
       "requires": [
         "canCarefulJump"
@@ -158,8 +158,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        1
+        4,
+        3
       ],
       "requires": [
         "canCarefulJump"
@@ -168,8 +168,8 @@
     {
       "name": "Leave Shinecharged",
       "link": [
-        2,
-        2
+        4,
+        4
       ],
       "requires": [
         {
@@ -178,7 +178,7 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Sciser"
                   ]
                 ]
               }
@@ -194,15 +194,15 @@
     {
       "name": "Base",
       "link": [
-        3,
-        4
+        1,
+        2
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        3,
+        1,
         5
       ],
       "requires": [
@@ -231,8 +231,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
+        2,
+        1
       ],
       "requires": []
     },
@@ -240,7 +240,7 @@
       "name": "Base",
       "link": [
         5,
-        3
+        1
       ],
       "requires": [
         {
@@ -310,7 +310,7 @@
       "name": "Come In Shinecharged, Spark to Top-Right Door",
       "link": [
         5,
-        4
+        2
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -326,6 +326,8 @@
   ],
   "roomImageFile": "AQA Room 79400.jpg",
   "roomAddress": "0x79400",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 9,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

@@ -183,6 +183,8 @@
   ],
   "roomImageFile": "MDK Room 31.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 8,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

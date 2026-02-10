@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 221,
+  "id": 220,
   "name": "NOC Auxiliary Room",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -186,6 +186,9 @@
   ],
   "roomImageFile": "Misc Room Aux 1.jpg",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

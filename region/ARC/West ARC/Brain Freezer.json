@@ -81,29 +81,6 @@
       ]
     },
     {
-      "id": 3,
-      "name": "Left-Bottom Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 104,
-          "y": 192,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "down",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 2,
       "name": "Bottom-Right Tunnel",
       "nodeType": "door",
@@ -120,6 +97,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Left-Bottom Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 104,
+          "y": 192,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "down",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -241,7 +241,11 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e1"
+                            "Zebetite",
+                            "Zebetite",
+                            "Zebetite",
+                            "Zebetite",
+                            "Zebetite"
                           ]
                         ]
                       }
@@ -273,6 +277,8 @@
   ],
   "roomImageFile": "ARC Room 7A500.jpg",
   "roomAddress": "0x7A500",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

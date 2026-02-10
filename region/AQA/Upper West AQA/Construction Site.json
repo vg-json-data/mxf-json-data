@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 52,
+  "id": 51,
   "name": "Construction Site",
   "area": "AQA",
   "subarea": "Upper West AQA",
@@ -131,6 +131,9 @@
   ],
   "roomImageFile": "AQA Room 79900.jpg",
   "roomAddress": "0x79900",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

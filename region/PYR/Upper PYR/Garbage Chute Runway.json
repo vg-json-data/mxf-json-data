@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 273,
+  "id": 274,
   "name": "Garbage Chute Runway",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -150,6 +150,8 @@
   ],
   "roomImageFile": "PYR Room 78B00.jpg",
   "roomAddress": "0x78B00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

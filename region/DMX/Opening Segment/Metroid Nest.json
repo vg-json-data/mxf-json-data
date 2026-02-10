@@ -41,29 +41,6 @@
     },
     {
       "id": 2,
-      "name": "Bottom-Left Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 256,
-          "y": 336,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 3,
       "name": "Bottom-Right Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -79,6 +56,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bottom-Left Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 352,
+          "w": 48,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -128,7 +128,12 @@
         4
       ],
       "requires": [
-        "Morph"
+        {
+          "and": [
+            "Morph",
+            "SpikeBreaker"
+          ]
+        }
       ]
     },
     {
@@ -158,12 +163,23 @@
         3
       ],
       "requires": [
-        "Morph"
+        {
+          "and": [
+            "Morph",
+            "SpikeBreaker",
+            {
+              "or": [
+                "SuperJump",
+                "h_bombThings"
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
   "roomImageFile": "DMX Room 78700.jpg",
   "roomAddress": "0x78700",
-  "nextStratId": 1,
+  "nextStratId": 7,
   "nextNotableId": 1
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 191,
+  "id": 190,
   "name": "Nightmare Arena",
   "area": "NOC",
   "subarea": "Lower NOC",
@@ -100,6 +100,9 @@
   ],
   "roomImageFile": "NOC Room 7B100.jpg",
   "roomAddress": "0x7B100",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 143,
+  "id": 144,
   "name": "Docking Bay Access",
   "area": "MDK",
   "subarea": "Docking Bay",
@@ -134,6 +134,8 @@
   ],
   "roomImageFile": "MDK Room 7.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

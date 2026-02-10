@@ -9,7 +9,7 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 14,
+          "roomid": 13,
           "roomName": "Cheddar Bay",
           "nodeid": 1,
           "nodeName": "Top Door",
@@ -20,7 +20,7 @@
           "subarea": "Upper West AQA",
           "roomid": 45,
           "roomName": "AQA Security Room North Access",
-          "nodeid": 4,
+          "nodeid": 5,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         }
@@ -34,9 +34,9 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 14,
+          "roomid": 13,
           "roomName": "Cheddar Bay",
-          "nodeid": 4,
+          "nodeid": 2,
           "nodeName": "Right Tunnel",
           "position": "right"
         },
@@ -120,7 +120,7 @@
           "subarea": "Upper West AQA",
           "roomid": 56,
           "roomName": "Owtch Atrium / Construction Site Checkpoint",
-          "nodeid": 4,
+          "nodeid": 2,
           "nodeName": "Construction Site Checkpoint - Right Door",
           "position": "right"
         }
@@ -145,7 +145,7 @@
           "subarea": "Upper West AQA",
           "roomid": 56,
           "roomName": "Owtch Atrium / Construction Site Checkpoint",
-          "nodeid": 2,
+          "nodeid": 4,
           "nodeName": "Owtch Atrium - Right Door",
           "position": "right"
         }

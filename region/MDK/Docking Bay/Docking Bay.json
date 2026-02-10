@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 146,
+  "id": 143,
   "name": "Docking Bay",
   "area": "MDK",
   "subarea": "Docking Bay",
@@ -99,7 +99,7 @@
           "enemyKill": {
             "enemies": [
               [
-                "e1"
+                "Fake Ship"
               ]
             ]
           }
@@ -115,6 +115,8 @@
   ],
   "roomImageFile": "MDK Room 8.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

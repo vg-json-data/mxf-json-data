@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 13,
+  "id": 14,
   "name": "Cheddar Bay Speedway",
   "area": "AQA",
   "subarea": "Lower AQA",
@@ -232,6 +232,8 @@
   ],
   "roomImageFile": "AQA Room 7A700.jpg",
   "roomAddress": "0x7A700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

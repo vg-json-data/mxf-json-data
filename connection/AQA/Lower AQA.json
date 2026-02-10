@@ -9,7 +9,7 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 1,
+          "roomid": 2,
           "roomName": "AQA Auxiliary Room Access",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -34,7 +34,7 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 1,
+          "roomid": 2,
           "roomName": "AQA Auxiliary Room Access",
           "nodeid": 2,
           "nodeName": "Top-Right Door",
@@ -59,7 +59,7 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 1,
+          "roomid": 2,
           "roomName": "AQA Auxiliary Room Access",
           "nodeid": 3,
           "nodeName": "Bottom-Left Door",
@@ -68,7 +68,7 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 2,
+          "roomid": 1,
           "roomName": "AQA Auxiliary Room",
           "nodeid": 1,
           "nodeName": "Right Door",
@@ -170,7 +170,7 @@
           "subarea": "Lower AQA",
           "roomid": 17,
           "roomName": "Glass Tube",
-          "nodeid": 5,
+          "nodeid": 4,
           "nodeName": "Bottom Door",
           "position": "right"
         }
@@ -234,7 +234,7 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 14,
+          "roomid": 13,
           "roomName": "Cheddar Bay",
           "nodeid": 7,
           "nodeName": "Right-Bottom Tunnel",
@@ -268,7 +268,7 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 14,
+          "roomid": 13,
           "roomName": "Cheddar Bay",
           "nodeid": 5,
           "nodeName": "Bottom-Right Door",
@@ -295,7 +295,7 @@
           "subarea": "Lower AQA",
           "roomid": 21,
           "roomName": "Sunken Ruins",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Left Door",
           "position": "left"
         }
@@ -336,7 +336,7 @@
           "subarea": "Lower AQA",
           "roomid": 9,
           "roomName": "AQA-L-X Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         },
@@ -386,14 +386,14 @@
           "subarea": "Lower AQA",
           "roomid": 11,
           "roomName": "Aquarium Hub East",
-          "nodeid": 5,
+          "nodeid": 6,
           "nodeName": "Top Door",
           "position": "top"
         },
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 14,
+          "roomid": 13,
           "roomName": "Cheddar Bay",
           "nodeid": 6,
           "nodeName": "Bottom Door",
@@ -461,7 +461,7 @@
           "subarea": "Lower AQA",
           "roomid": 11,
           "roomName": "Aquarium Hub East",
-          "nodeid": 6,
+          "nodeid": 5,
           "nodeName": "Bottom Door",
           "position": "right"
         },
@@ -493,9 +493,9 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 14,
+          "roomid": 13,
           "roomName": "Cheddar Bay",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Left-Lower Door",
           "position": "left"
         }
@@ -545,7 +545,7 @@
           "subarea": "Lower AQA",
           "roomid": 17,
           "roomName": "Glass Tube",
-          "nodeid": 4,
+          "nodeid": 5,
           "nodeName": "Top Door",
           "position": "top"
         }
@@ -559,7 +559,7 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 13,
+          "roomid": 14,
           "roomName": "Cheddar Bay Speedway",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -584,7 +584,7 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 13,
+          "roomid": 14,
           "roomName": "Cheddar Bay Speedway",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -593,9 +593,9 @@
         {
           "area": "AQA",
           "subarea": "Lower AQA",
-          "roomid": 14,
+          "roomid": 13,
           "roomName": "Cheddar Bay",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Left Door",
           "position": "left"
         }
@@ -670,7 +670,7 @@
           "subarea": "Lower AQA",
           "roomid": 21,
           "roomName": "Sunken Ruins",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Right Door",
           "position": "right"
         }
@@ -773,6 +773,31 @@
           "nodeid": 5,
           "nodeName": "Bottom-Left Door",
           "position": "left"
+        }
+      ]
+    },
+    {
+      "connectionType": "VerticalDoor",
+      "description": "Vertical Door connection between [Sunken Treasury - Left-Bottom Door] and [Sunken Ruins - Right-Top Door]",
+      "direction": "Forward",
+      "nodes": [
+        {
+          "area": "AQA",
+          "subarea": "Lower AQA",
+          "roomid": 23,
+          "roomName": "Sunken Treasury",
+          "nodeid": 2,
+          "nodeName": "Left-Bottom Door",
+          "position": "bottom"
+        },
+        {
+          "area": "AQA",
+          "subarea": "Lower AQA",
+          "roomid": 21,
+          "roomName": "Sunken Ruins",
+          "nodeid": 3,
+          "nodeName": "Right-Top Door",
+          "position": "top"
         }
       ]
     },

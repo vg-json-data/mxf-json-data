@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 299,
+  "id": 300,
   "name": "Vacuum Verge",
   "area": "SRX",
   "subarea": "Lower SRX",
@@ -16,27 +16,6 @@
     ]
   ],
   "nodes": [
-    {
-      "id": 3,
-      "idMinorItemPlm": "0x18",
-      "name": "Vacuum Verge - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 120,
-          "y": 96,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7D726",
-      "mapTileX": 29,
-      "mapTileY": 22
-    },
     {
       "id": 1,
       "name": "Left-Top Door",
@@ -82,6 +61,27 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 3,
+      "idMinorItemPlm": "0x18",
+      "name": "Vacuum Verge - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 120,
+          "y": 96,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7D726",
+      "mapTileX": 29,
+      "mapTileY": 22
     }
   ],
   "strats": [
@@ -128,6 +128,9 @@
   ],
   "roomImageFile": "SRX Room 7A700.jpg",
   "roomAddress": "0x7A700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

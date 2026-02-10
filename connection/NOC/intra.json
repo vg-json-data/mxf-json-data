@@ -53,9 +53,18 @@
     },
     {
       "connectionType": "VerticalDoor",
-      "description": "Vertical Door connection between [NOC Data Room - Bottom Door] and [Nightmare Arena Access - Top Door]",
+      "description": "Vertical Door connection between [Nightmare Arena Access - Top Door] and [NOC Data Room - Bottom Door]",
       "direction": "Bidirectional",
       "nodes": [
+        {
+          "area": "NOC",
+          "subarea": "Lower NOC",
+          "roomid": 191,
+          "roomName": "Nightmare Arena Access",
+          "nodeid": 3,
+          "nodeName": "Top Door",
+          "position": "top"
+        },
         {
           "area": "NOC",
           "subarea": "Upper NOC",
@@ -64,15 +73,6 @@
           "nodeid": 2,
           "nodeName": "Bottom Door",
           "position": "bottom"
-        },
-        {
-          "area": "NOC",
-          "subarea": "Lower NOC",
-          "roomid": 190,
-          "roomName": "Nightmare Arena Access",
-          "nodeid": 3,
-          "nodeName": "Top Door",
-          "position": "top"
         }
       ]
     },
@@ -86,7 +86,7 @@
           "subarea": "Lower NOC",
           "roomid": 193,
           "roomName": "NOC Entrance Lobby South",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Left-Top Door",
           "position": "top"
         },
@@ -120,7 +120,7 @@
           "subarea": "Upper NOC",
           "roomid": 212,
           "roomName": "Central Turbo Tube Access / East Turbo Tube Access",
-          "nodeid": 2,
+          "nodeid": 4,
           "nodeName": "Central Turbo Tube Access - Bottom Door",
           "position": "bottom"
         }

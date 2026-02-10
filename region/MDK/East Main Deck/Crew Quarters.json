@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 149,
+  "id": 147,
   "name": "Crew Quarters",
   "area": "MDK",
   "subarea": "East Main Deck",
@@ -41,29 +41,6 @@
     },
     {
       "id": 2,
-      "name": "Left-Lower Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 608,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 3,
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -79,6 +56,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Left-Lower Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 608,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -110,29 +110,6 @@
     },
     {
       "id": 5,
-      "name": "Bottom-Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 896,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 6,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -148,6 +125,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bottom-Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 896,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -188,14 +188,6 @@
     {
       "name": "Base",
       "link": [
-        2,
-        4
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
         3,
         4
       ],
@@ -204,8 +196,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        2
+        2,
+        4
       ],
       "requires": []
     },
@@ -221,25 +213,15 @@
       "name": "Base",
       "link": [
         4,
-        6
+        2
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        5,
-        6
-      ],
-      "requires": [
-        "h_bombThings"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        6,
-        4
+        4,
+        5
       ],
       "requires": []
     },
@@ -248,6 +230,24 @@
       "link": [
         6,
         5
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
       ],
       "requires": [
         "h_bombThings"
@@ -278,6 +278,9 @@
   ],
   "roomImageFile": "MDK Room 18.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 12,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

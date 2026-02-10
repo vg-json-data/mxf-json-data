@@ -11,7 +11,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Central Nexus - Top-Left Door",
           "position": "left"
         },
@@ -36,7 +36,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Central Nexus - Top-Right Door",
           "position": "right"
         },
@@ -61,7 +61,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 3,
+          "nodeid": 6,
           "nodeName": "Central Nexus - Right Door",
           "position": "right"
         },
@@ -70,7 +70,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 6,
+          "nodeid": 7,
           "nodeName": "Nexus Storage - Left Door",
           "position": "left"
         }
@@ -86,7 +86,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 4,
+          "nodeid": 11,
           "nodeName": "Central Nexus - Bottom-Left Door",
           "position": "left"
         },
@@ -111,7 +111,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 5,
+          "nodeid": 12,
           "nodeName": "Central Nexus - Bottom-Right Door",
           "position": "right"
         },
@@ -136,7 +136,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 7,
+          "nodeid": 8,
           "nodeName": "Nexus Storage - Right Tunnel",
           "position": "right"
         },
@@ -145,7 +145,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 12,
+          "nodeid": 9,
           "nodeName": "Concourse - Bottom-Left Tunnel",
           "position": "left"
         }
@@ -161,7 +161,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 10,
+          "nodeid": 4,
           "nodeName": "Concourse - Left Door",
           "position": "left"
         },
@@ -186,7 +186,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 11,
+          "nodeid": 5,
           "nodeName": "Concourse - Right Door",
           "position": "right"
         },
@@ -211,7 +211,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 13,
+          "nodeid": 10,
           "nodeName": "Concourse - Bottom-Right Door",
           "position": "right"
         },
@@ -318,7 +318,7 @@
         {
           "area": "MDK",
           "subarea": "West Main Deck",
-          "roomid": 177,
+          "roomid": 176,
           "roomName": "MDK-AQA Elevator",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -359,7 +359,7 @@
         {
           "area": "MDK",
           "subarea": "West Main Deck",
-          "roomid": 176,
+          "roomid": 177,
           "roomName": "MDK-AQA Elevator Cache",
           "nodeid": 1,
           "nodeName": "Right Door",
@@ -368,7 +368,7 @@
         {
           "area": "MDK",
           "subarea": "West Main Deck",
-          "roomid": 177,
+          "roomid": 176,
           "roomName": "MDK-AQA Elevator",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -395,7 +395,7 @@
           "subarea": "West Main Deck",
           "roomid": 179,
           "roomName": "MDK-TRO Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         }

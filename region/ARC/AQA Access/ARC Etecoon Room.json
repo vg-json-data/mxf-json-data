@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 63,
+  "id": 62,
   "name": "ARC Etecoon Room",
   "area": "ARC",
   "subarea": "AQA Access",
@@ -100,6 +100,9 @@
   ],
   "roomImageFile": "ARC Room 79500.jpg",
   "roomAddress": "0x79500",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

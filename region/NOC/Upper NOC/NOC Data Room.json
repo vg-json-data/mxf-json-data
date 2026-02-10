@@ -61,6 +61,23 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Data Station",
+      "nodeType": "utility",
+      "nodeSubType": "data",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 80,
+          "y": 160,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#3a3ac2",
+      "nodeAddress": "0x0"
     }
   ],
   "obstacles": [
@@ -152,6 +169,8 @@
   ],
   "roomImageFile": "NOC Room 78500.jpg",
   "roomAddress": "0x78500",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

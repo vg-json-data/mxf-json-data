@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 248,
+  "id": 249,
   "name": "PYR Security Room Access",
   "area": "PYR",
   "subarea": "Lower PYR",
@@ -64,24 +64,19 @@
     },
     {
       "id": 3,
-      "idMinorItemPlm": "0x3D",
-      "name": "PYR Security Room Access - Power Bomb Tank",
-      "nodeType": "item",
+      "name": "At Morph Passage",
+      "nodeType": "junction",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 632,
-          "y": 144,
-          "w": 16,
-          "h": 16
+          "x": 592,
+          "y": 248,
+          "w": 96,
+          "h": 56
         }
       ],
-      "color": "#37c90e",
-      "nodeItem": "PowerBomb",
-      "nodeAddress": "0x7DC68",
-      "mapTileX": 37,
-      "mapTileY": 18
+      "color": "#0000ff"
     },
     {
       "id": 4,
@@ -101,19 +96,24 @@
     },
     {
       "id": 5,
-      "name": "At Morph Passage",
-      "nodeType": "junction",
+      "idMinorItemPlm": "0x3D",
+      "name": "PYR Security Room Access - Power Bomb Tank",
+      "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 592,
-          "y": 248,
-          "w": 96,
-          "h": 56
+          "x": 632,
+          "y": 144,
+          "w": 16,
+          "h": 16
         }
       ],
-      "color": "#0000ff"
+      "color": "#37c90e",
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7DC68",
+      "mapTileX": 37,
+      "mapTileY": 18
     }
   ],
   "obstacles": [
@@ -221,7 +221,7 @@
       "name": "Come In Shinecharged, Spark to Power Bomb Tank",
       "link": [
         2,
-        3
+        5
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -333,8 +333,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        5
+        5,
+        3
       ],
       "requires": [
         {
@@ -526,7 +526,7 @@
       "name": "Base",
       "link": [
         4,
-        3
+        5
       ],
       "requires": [
         {
@@ -612,7 +612,7 @@
       "name": "Base",
       "link": [
         4,
-        5
+        3
       ],
       "requires": [
         {
@@ -658,7 +658,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        3,
         1
       ],
       "requires": [
@@ -675,7 +675,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        3,
         2
       ],
       "requires": [
@@ -692,7 +692,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        3,
         4
       ],
       "requires": [
@@ -713,8 +713,8 @@
     {
       "name": "Destroy Super Missile Blocks",
       "link": [
-        5,
-        5
+        3,
+        3
       ],
       "requires": [
         {
@@ -748,6 +748,8 @@
   ],
   "roomImageFile": "PYR Room 7B700.jpg",
   "roomAddress": "0x7B700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 14,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

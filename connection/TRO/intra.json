@@ -9,7 +9,7 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 319,
+          "roomid": 320,
           "roomName": "Cloister",
           "nodeid": 4,
           "nodeName": "Right Door",
@@ -17,8 +17,8 @@
         },
         {
           "area": "TRO",
-          "subarea": "Nettori\u0027s Area",
-          "roomid": 356,
+          "subarea": "Nettori's Area",
+          "roomid": 357,
           "roomName": "Overgrown Speedway",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -34,16 +34,16 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 319,
+          "roomid": 320,
           "roomName": "Cloister",
-          "nodeid": 6,
+          "nodeid": 5,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         },
         {
           "area": "TRO",
-          "subarea": "Nettori\u0027s Area",
-          "roomid": 355,
+          "subarea": "Nettori's Area",
+          "roomid": 356,
           "roomName": "Overgrown Pipeway",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -59,18 +59,18 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 320,
+          "roomid": 321,
           "roomName": "Crum-Ball Tower",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Top-Right Door",
           "position": "right"
         },
         {
           "area": "TRO",
-          "subarea": "Nettori\u0027s Area",
-          "roomid": 349,
+          "subarea": "Nettori's Area",
+          "roomid": 350,
           "roomName": "Double Helix",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Top Door",
           "position": "left"
         }
@@ -84,16 +84,16 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 324,
+          "roomid": 325,
           "roomName": "Fusion Cathedral",
-          "nodeid": 8,
+          "nodeid": 9,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         },
         {
           "area": "TRO",
-          "subarea": "Zazabi\u0027s Area",
-          "roomid": 362,
+          "subarea": "Zazabi's Area",
+          "roomid": 364,
           "roomName": "Zazabi Arena Access",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -109,16 +109,16 @@
         {
           "area": "TRO",
           "subarea": "General",
-          "roomid": 324,
+          "roomid": 325,
           "roomName": "Fusion Cathedral",
-          "nodeid": 9,
+          "nodeid": 7,
           "nodeName": "Right-Bottom Door",
           "position": "right"
         },
         {
           "area": "TRO",
-          "subarea": "Zazabi\u0027s Area",
-          "roomid": 361,
+          "subarea": "Zazabi's Area",
+          "roomid": 362,
           "roomName": "TRO Etecoon Room",
           "nodeid": 1,
           "nodeName": "Left Door",

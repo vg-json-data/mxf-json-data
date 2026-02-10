@@ -41,29 +41,6 @@
     },
     {
       "id": 2,
-      "name": "Bottom-Left Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 448,
-          "w": 32,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 3,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -86,7 +63,46 @@
       ]
     },
     {
+      "id": 3,
+      "name": "Bottom-Left Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 448,
+          "w": 32,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
       "id": 4,
+      "name": "Left of Green Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 56,
+          "y": 112,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "idMinorItemPlm": "0x45",
       "name": "Broken Bridge - Energy Tank",
       "nodeType": "item",
@@ -105,22 +121,6 @@
       "nodeAddress": "0x7DD3E",
       "mapTileX": 20,
       "mapTileY": 11
-    },
-    {
-      "id": 5,
-      "name": "Left of Green Geron",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 56,
-          "y": 112,
-          "w": 40,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -154,7 +154,7 @@
       "name": "Base",
       "link": [
         1,
-        2
+        3
       ],
       "requires": [
         "Morph"
@@ -167,7 +167,7 @@
       "name": "Base",
       "link": [
         1,
-        5
+        4
       ],
       "requires": [
         {
@@ -180,7 +180,7 @@
     {
       "name": "Base",
       "link": [
-        2,
+        3,
         1
       ],
       "requires": [
@@ -199,8 +199,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        5
+        3,
+        4
       ],
       "requires": [
         {
@@ -220,11 +220,11 @@
     {
       "name": "Base",
       "link": [
-        3,
-        4
+        2,
+        5
       ],
       "collectsItems": [
-        4
+        5
       ],
       "setsFlags": [
         "f_BrokenBridge_EnergyTank_Collected"
@@ -234,15 +234,15 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
+        5,
+        2
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         1
       ],
       "requires": [
@@ -256,8 +256,8 @@
     {
       "name": "Kill Green Geron",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "requires": [
         "h_killGreenGeron"
@@ -269,6 +269,8 @@
   ],
   "roomImageFile": "AQA Room 7A200.jpg",
   "roomAddress": "0x7A200",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 10,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

@@ -17,7 +17,7 @@
   ],
   "nodes": [
     {
-      "id": 6,
+      "id": 1,
       "name": "Top Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -49,29 +49,6 @@
           "shape": "rect",
           "x": 0,
           "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Left-Lower Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 608,
           "w": 48,
           "h": 64
         }
@@ -110,6 +87,29 @@
     },
     {
       "id": 4,
+      "name": "Left-Lower Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 608,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
       "name": "Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Bottom-Right Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -171,8 +171,8 @@
     {
       "name": "Break Speedbooster Blocks via CanShineCharge",
       "link": [
-        1,
-        1
+        2,
+        2
       ],
       "requires": [
         {
@@ -188,8 +188,8 @@
     {
       "name": "Break Speedbooster Blocks via Come In Shinecharged",
       "link": [
-        1,
-        1
+        2,
+        2
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -199,7 +199,7 @@
     {
       "name": "Base",
       "link": [
-        1,
+        2,
         3
       ],
       "requires": [
@@ -213,8 +213,8 @@
     {
       "name": "Reach Bottom Door from Left-Lower Door via Lava Dive (No Spikebreaker)",
       "link": [
-        2,
-        4
+        4,
+        5
       ],
       "requires": [
         {
@@ -234,8 +234,8 @@
     {
       "name": "Reach Bottom Door from Left-Lower Door via Lava Dive (With Spikebreaker)",
       "link": [
-        2,
-        4
+        4,
+        5
       ],
       "requires": [
         {
@@ -253,8 +253,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        4
+        4,
+        5
       ],
       "requires": [
         {
@@ -275,7 +275,7 @@
       "name": "Base",
       "link": [
         3,
-        1
+        2
       ],
       "requires": [
         {
@@ -320,7 +320,7 @@
       "name": "Base",
       "link": [
         3,
-        4
+        5
       ],
       "requires": []
     },
@@ -328,15 +328,15 @@
       "name": "Base",
       "link": [
         3,
-        4
+        5
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        4,
-        2
+        5,
+        4
       ],
       "requires": [
         {
@@ -356,8 +356,8 @@
     {
       "name": "Reach Left-Lower Door from Bottom Door via Lava Dive (With Spikebreaker)",
       "link": [
-        4,
-        2
+        5,
+        4
       ],
       "requires": [
         {
@@ -375,8 +375,8 @@
     {
       "name": "Reach Left-Lower Door from Bottom Door via Lava Dive (No Spikebreaker)",
       "link": [
-        4,
-        2
+        5,
+        4
       ],
       "requires": [
         {
@@ -396,7 +396,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         3
       ],
       "requires": [
@@ -457,8 +457,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        5,
+        6
       ],
       "requires": [
         {
@@ -473,8 +473,8 @@
     {
       "name": "Reach Bottom-Right Tunnel from Bottom Door via Lava Dive",
       "link": [
-        4,
-        5
+        5,
+        6
       ],
       "requires": [
         {
@@ -492,8 +492,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        6
+        5,
+        1
       ],
       "requires": [
         {
@@ -521,8 +521,8 @@
     {
       "name": "Reach Bottom Door from Bottom-Right Tunnel via Lava Dive",
       "link": [
-        5,
-        4
+        6,
+        5
       ],
       "requires": [
         {
@@ -540,8 +540,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        6,
+        5
       ],
       "requires": [
         {
@@ -562,8 +562,8 @@
     {
       "name": "Reach Bottom Door from Bottom-Right Tunnel via Precise Wall Jumps and Gravity Suit",
       "link": [
-        5,
-        4
+        6,
+        5
       ],
       "requires": [
         {
@@ -585,8 +585,8 @@
     {
       "name": "Reach Left Door from Top Door via Shinecharged",
       "link": [
-        6,
-        1
+        1,
+        2
       ],
       "requires": [
         {
@@ -600,7 +600,7 @@
     {
       "name": "Reach Left Door from Top Door via Shinecharged",
       "link": [
-        6,
+        1,
         3
       ],
       "requires": [
@@ -615,8 +615,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        4
+        1,
+        5
       ],
       "requires": [
         {
@@ -629,8 +629,8 @@
     {
       "name": "Come In With Temporary Blue, Break Vertical Speed Booster Blocks",
       "link": [
-        6,
-        4
+        1,
+        5
       ],
       "entranceCondition": {
         "comeInWithTemporaryBlue": {}
@@ -648,8 +648,8 @@
     {
       "name": "Come In Shinecharged, break Speed Booster Blocks (Vertical)",
       "link": [
-        6,
-        6
+        1,
+        1
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -673,6 +673,8 @@
   ],
   "roomImageFile": "SRX Room 7A400.jpg",
   "roomAddress": "0x7A400",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 27,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

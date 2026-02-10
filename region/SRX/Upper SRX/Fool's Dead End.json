@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 302,
+  "id": 303,
   "name": "Fool's Dead End",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -87,6 +87,22 @@
     },
     {
       "id": 4,
+      "name": "Left of Blue Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 336,
+          "y": 384,
+          "w": 24,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "idMinorItemPlm": "0x13",
       "name": "Fool's Dead End - Missile Tank",
       "nodeType": "item",
@@ -105,22 +121,6 @@
       "nodeAddress": "0x7D686",
       "mapTileX": 31,
       "mapTileY": 14
-    },
-    {
-      "id": 5,
-      "name": "Left of Blue Geron",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 336,
-          "y": 384,
-          "w": 24,
-          "h": 48
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -145,10 +145,10 @@
       "name": "Base",
       "link": [
         1,
-        4
+        5
       ],
       "collectsItems": [
-        4
+        5
       ],
       "requires": []
     },
@@ -196,7 +196,7 @@
       "name": "Base",
       "link": [
         2,
-        5
+        4
       ],
       "requires": [
         "Morph"
@@ -222,7 +222,7 @@
       "name": "Base",
       "link": [
         3,
-        5
+        4
       ],
       "requires": [
         {
@@ -235,7 +235,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         1
       ],
       "requires": []
@@ -243,7 +243,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         2
       ],
       "requires": [
@@ -253,7 +253,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         3
       ],
       "requires": [
@@ -267,8 +267,8 @@
     {
       "name": "Kill Blue Geron",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "requires": [
         "h_killBlueGeron"
@@ -283,6 +283,8 @@
   ],
   "roomImageFile": "SRX Room 79A00.jpg",
   "roomAddress": "0x79A00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 12,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

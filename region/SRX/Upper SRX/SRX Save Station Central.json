@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 313,
+  "id": 314,
   "name": "SRX Save Station Central",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -87,6 +87,9 @@
   ],
   "roomImageFile": "Misc Room Reusable 5.jpg",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

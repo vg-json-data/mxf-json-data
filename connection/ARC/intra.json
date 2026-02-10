@@ -86,7 +86,7 @@
           "subarea": "Lower ARC",
           "roomid": 71,
           "roomName": "Arctic Gauntlet / Arctic Checkpoint",
-          "nodeid": 4,
+          "nodeid": 5,
           "nodeName": "Arctic Gauntlet - Bottom Door",
           "position": "left"
         },
@@ -134,9 +134,9 @@
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 76,
+          "roomid": 75,
           "roomName": "Zeela Speedway / Arctic Ripper Junction",
-          "nodeid": 3,
+          "nodeid": 1,
           "nodeName": "Arctic Ripper Junction - Top-Right Door",
           "position": "right"
         },

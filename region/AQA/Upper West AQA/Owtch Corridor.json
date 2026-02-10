@@ -64,24 +64,26 @@
     },
     {
       "id": 3,
-      "idMinorItemPlm": "0x44",
-      "name": "Owtch Corridor - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
+      "name": "Bottom-Right Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
       "geometry": [
         {
           "shape": "rect",
-          "x": 624,
-          "y": 144,
-          "w": 16,
+          "x": 704,
+          "y": 176,
+          "w": 40,
           "h": 16
         }
       ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7DD16",
-      "mapTileX": 23,
-      "mapTileY": 11
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
     },
     {
       "id": 4,
@@ -101,19 +103,24 @@
     },
     {
       "id": 5,
-      "name": "Missing Connection",
-      "nodeType": "junction",
+      "idMinorItemPlm": "0x44",
+      "name": "Owtch Corridor - Missile Tank",
+      "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 704,
-          "y": 176,
-          "w": 40,
+          "x": 624,
+          "y": 144,
+          "w": 16,
           "h": 16
         }
       ],
-      "color": "#0000ff"
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7DD16",
+      "mapTileX": 23,
+      "mapTileY": 11
     }
   ],
   "obstacles": [
@@ -128,7 +135,7 @@
       "name": "Base",
       "link": [
         1,
-        5
+        3
       ],
       "requires": [
         "Morph"
@@ -138,14 +145,14 @@
       "name": "Base",
       "link": [
         2,
-        3
+        5
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        3,
+        5,
         2
       ],
       "requires": []
@@ -153,11 +160,11 @@
     {
       "name": "Base",
       "link": [
-        3,
-        3
+        5,
+        5
       ],
       "collectsItems": [
-        3
+        5
       ],
       "setsFlags": [
         "f_OwtchCorridor_MissileTank_Collected"
@@ -214,7 +221,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        3,
         4
       ],
       "requires": [
@@ -237,6 +244,8 @@
   ],
   "roomImageFile": "AQA Room 79D00.jpg",
   "roomAddress": "0x79D00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 8,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

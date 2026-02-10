@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 3,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 336,
-          "y": 0,
-          "w": 80,
-          "h": 48
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
@@ -79,6 +56,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 336,
+          "y": 0,
+          "w": 80,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -213,7 +213,7 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Metroid"
                   ]
                 ]
               }
@@ -222,7 +222,8 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e2"
+                    "Choot",
+                    "Choot"
                   ]
                 ]
               }
@@ -237,6 +238,8 @@
   ],
   "roomImageFile": "DMX Room 78300.jpg",
   "roomAddress": "0x78300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 8,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

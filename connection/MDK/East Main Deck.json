@@ -9,7 +9,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 147,
+          "roomid": 148,
           "roomName": "Crew Quarters Hallway",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -18,7 +18,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 149,
+          "roomid": 147,
           "roomName": "Crew Quarters",
           "nodeid": 1,
           "nodeName": "Top-Right Door",
@@ -34,7 +34,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 147,
+          "roomid": 148,
           "roomName": "Crew Quarters Hallway",
           "nodeid": 2,
           "nodeName": "Left-Lower Door",
@@ -43,9 +43,9 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 149,
+          "roomid": 147,
           "roomName": "Crew Quarters",
-          "nodeid": 3,
+          "nodeid": 2,
           "nodeName": "Right Door",
           "position": "right"
         }
@@ -59,7 +59,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 147,
+          "roomid": 148,
           "roomName": "Crew Quarters Hallway",
           "nodeid": 3,
           "nodeName": "Right-Lower Door",
@@ -84,7 +84,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 148,
+          "roomid": 149,
           "roomName": "Crew Quarters NOC Access",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -93,7 +93,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 155,
+          "roomid": 154,
           "roomName": "Operations Ventilation",
           "nodeid": 2,
           "nodeName": "Top-Right Door",
@@ -109,7 +109,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 148,
+          "roomid": 149,
           "roomName": "Crew Quarters NOC Access",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -134,16 +134,16 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 149,
+          "roomid": 147,
           "roomName": "Crew Quarters",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Left-Lower Door",
           "position": "left"
         },
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 154,
+          "roomid": 155,
           "roomName": "Operations Ventilation Maintenance Room",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -159,7 +159,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 149,
+          "roomid": 147,
           "roomName": "Crew Quarters",
           "nodeid": 4,
           "nodeName": "Right-Lower Door",
@@ -184,16 +184,16 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 149,
+          "roomid": 147,
           "roomName": "Crew Quarters",
-          "nodeid": 5,
+          "nodeid": 6,
           "nodeName": "Bottom-Left Door",
           "position": "left"
         },
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 155,
+          "roomid": 154,
           "roomName": "Operations Ventilation",
           "nodeid": 4,
           "nodeName": "Right-Lower Door",
@@ -218,7 +218,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 155,
+          "roomid": 154,
           "roomName": "Operations Ventilation",
           "nodeid": 5,
           "nodeName": "Bottom-Left Door",

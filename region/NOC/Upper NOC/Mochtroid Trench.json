@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 3,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 608,
-          "y": 0,
-          "w": 64,
-          "h": 40
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
@@ -79,6 +56,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 608,
+          "y": 0,
+          "w": 64,
+          "h": 40
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -138,7 +138,9 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Mochtroid-X",
+                        "Mochtroid-X",
+                        "Mochtroid-X"
                       ]
                     ]
                   }
@@ -199,7 +201,9 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Mochtroid-X",
+                        "Mochtroid-X",
+                        "Mochtroid-X"
                       ]
                     ]
                   }
@@ -234,6 +238,8 @@
   ],
   "roomImageFile": "NOC Room 79800.jpg",
   "roomAddress": "0x79800",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

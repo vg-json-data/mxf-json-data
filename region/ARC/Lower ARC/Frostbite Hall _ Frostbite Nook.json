@@ -17,76 +17,7 @@
   ],
   "nodes": [
     {
-      "id": 3,
-      "name": "Frostbite Hall - Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 112,
-          "y": 272,
-          "w": 32,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
-      "name": "Frostbite Hall - Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Frostbite Hall - Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 976,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 5,
       "name": "Frostbite Nook - Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -109,7 +40,76 @@
       ]
     },
     {
-      "id": 6,
+      "id": 2,
+      "name": "Frostbite Hall - Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 352,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Frostbite Hall - Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 976,
+          "y": 352,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Frostbite Hall - Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 112,
+          "y": 272,
+          "w": 32,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
       "name": "Frostbite Nook - Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -132,25 +132,20 @@
       ]
     },
     {
-      "id": 4,
-      "idMinorItemPlm": "0x56",
-      "name": "Frostbite Hall - Missile Tank",
-      "nodeType": "item",
+      "id": 6,
+      "name": "Left of Spike Pit",
+      "nodeType": "junction",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 64,
-          "y": 720,
+          "x": 112,
+          "y": 400,
           "w": 16,
-          "h": 16
+          "h": 32
         }
       ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7E010",
-      "mapTileX": 28,
-      "mapTileY": 19
+      "color": "#0000ff"
     },
     {
       "id": 7,
@@ -175,19 +170,24 @@
     },
     {
       "id": 8,
-      "name": "Left of Spike Pit",
-      "nodeType": "junction",
+      "idMinorItemPlm": "0x56",
+      "name": "Frostbite Hall - Missile Tank",
+      "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 112,
-          "y": 400,
+          "x": 64,
+          "y": 720,
           "w": 16,
-          "h": 32
+          "h": 16
         }
       ],
-      "color": "#0000ff"
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7E010",
+      "mapTileX": 28,
+      "mapTileY": 19
     }
   ],
   "obstacles": [
@@ -201,8 +201,8 @@
     {
       "name": "Base",
       "link": [
-        1,
-        8
+        2,
+        6
       ],
       "requires": [
         {
@@ -213,8 +213,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        4
+        3,
+        8
       ],
       "requires": [
         {
@@ -247,7 +247,7 @@
         "A"
       ],
       "collectsItems": [
-        4
+        8
       ],
       "setsFlags": [
         "f_FrostbiteHall_MissileTank_Collected"
@@ -256,8 +256,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        8
+        3,
+        6
       ],
       "requires": [
         {
@@ -296,20 +296,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        1
-      ],
-      "requires": [
-        {
-          "coldFrames": 1
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        8
+        4,
+        2
       ],
       "requires": [
         {
@@ -321,7 +309,19 @@
       "name": "Base",
       "link": [
         4,
-        8
+        6
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        6
       ],
       "requires": [
         {
@@ -376,8 +376,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        6
+        1,
+        5
       ],
       "requires": [
         {
@@ -388,7 +388,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        1,
         7
       ],
       "requires": [
@@ -425,7 +425,7 @@
       "name": "Base",
       "link": [
         7,
-        6
+        5
       ],
       "requires": [
         {
@@ -436,20 +436,20 @@
     {
       "name": "Base",
       "link": [
-        8,
-        1
-      ],
-      "requires": [
-        {
-          "coldFrames": 1
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        8,
+        6,
         2
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
       ],
       "requires": [
         {
@@ -491,6 +491,8 @@
   ],
   "roomImageFile": "ARC Room 79900.jpg",
   "roomAddress": "0x79900",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 12,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

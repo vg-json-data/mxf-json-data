@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 307,
+  "id": 308,
   "name": "Moto Towerway",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -195,6 +195,9 @@
   ],
   "roomImageFile": "SRX Room 79300.jpg",
   "roomAddress": "0x79300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

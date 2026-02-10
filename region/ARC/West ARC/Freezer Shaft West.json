@@ -87,24 +87,19 @@
     },
     {
       "id": 4,
-      "idMinorItemPlm": "0x5B",
-      "name": "Freezer Shaft West - Power Bomb Tank",
-      "nodeType": "item",
+      "name": "Top of the Shaft",
+      "nodeType": "junction",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 288,
-          "y": 896,
-          "w": 32,
-          "h": 32
+          "x": 304,
+          "y": 104,
+          "w": 40,
+          "h": 56
         }
       ],
-      "color": "#37c90e",
-      "nodeItem": "PowerBomb",
-      "nodeAddress": "0x7E0C4",
-      "mapTileX": 15,
-      "mapTileY": 23
+      "color": "#0000ff"
     },
     {
       "id": 5,
@@ -124,19 +119,24 @@
     },
     {
       "id": 6,
-      "name": "Top of the Shaft",
-      "nodeType": "junction",
+      "idMinorItemPlm": "0x5B",
+      "name": "Freezer Shaft West - Power Bomb Tank",
+      "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 304,
-          "y": 104,
-          "w": 40,
-          "h": 56
+          "x": 288,
+          "y": 896,
+          "w": 32,
+          "h": 32
         }
       ],
-      "color": "#0000ff"
+      "color": "#37c90e",
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7E0C4",
+      "mapTileX": 15,
+      "mapTileY": 23
     }
   ],
   "obstacles": [
@@ -174,7 +174,7 @@
       "name": "Base",
       "link": [
         1,
-        6
+        4
       ],
       "requires": [
         {
@@ -195,7 +195,7 @@
       "name": "Base",
       "link": [
         2,
-        6
+        4
       ],
       "requires": [
         {
@@ -218,7 +218,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        6,
         5
       ],
       "requires": [
@@ -252,7 +252,7 @@
       "name": "Base",
       "link": [
         5,
-        4
+        6
       ],
       "requires": [
         {
@@ -269,7 +269,7 @@
         }
       ],
       "collectsItems": [
-        4
+        6
       ],
       "setsFlags": [
         "f_FreezerShaftWest_PowerBombTank_Collected"
@@ -320,7 +320,7 @@
       "name": "Base",
       "link": [
         5,
-        6
+        4
       ],
       "requires": [
         {
@@ -341,7 +341,7 @@
     {
       "name": "Base",
       "link": [
-        6,
+        4,
         1
       ],
       "requires": [
@@ -362,7 +362,7 @@
     {
       "name": "Base",
       "link": [
-        6,
+        4,
         2
       ],
       "requires": [
@@ -375,7 +375,7 @@
       "name": "Base",
       "note": "No need to go through the Red Gerons: Just drop through the crumble blocks.",
       "link": [
-        6,
+        4,
         5
       ],
       "requires": [
@@ -387,8 +387,8 @@
     {
       "name": "Destroy Red Gerons",
       "link": [
-        6,
-        6
+        4,
+        4
       ],
       "requires": [
         {
@@ -409,8 +409,8 @@
     {
       "name": "Destroy Screw Attack Blocks",
       "link": [
-        6,
-        6
+        4,
+        4
       ],
       "requires": [
         "ScrewAttack"
@@ -422,6 +422,8 @@
   ],
   "roomImageFile": "ARC Room 7A600.jpg",
   "roomAddress": "0x7A600",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 16,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

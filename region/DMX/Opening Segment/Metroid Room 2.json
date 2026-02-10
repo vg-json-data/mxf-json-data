@@ -97,7 +97,9 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Metroid",
+                    "Metroid",
+                    "Metroid"
                   ]
                 ]
               }
@@ -126,6 +128,8 @@
   ],
   "roomImageFile": "DMX Room 78500.jpg",
   "roomAddress": "0x78500",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

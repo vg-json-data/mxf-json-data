@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 2,
+  "id": 1,
   "name": "AQA Auxiliary Room",
   "area": "AQA",
   "subarea": "Lower AQA",
@@ -102,6 +102,9 @@
   ],
   "roomImageFile": "Misc Room Aux 2.jpg",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 351,
+  "id": 353,
   "name": "Nettori Arena Access",
   "area": "TRO",
   "subarea": "Nettori's Area",
@@ -16,29 +16,6 @@
     ]
   ],
   "nodes": [
-    {
-      "id": 3,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 128,
-          "y": 0,
-          "w": 32,
-          "h": 48
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
     {
       "id": 1,
       "name": "Left Door",
@@ -148,6 +125,29 @@
           0
         ]
       ]
+    },
+    {
+      "id": 3,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 128,
+          "y": 0,
+          "w": 32,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
     }
   ],
   "strats": [
@@ -162,6 +162,9 @@
   ],
   "roomImageFile": "TRO Room 7A400.jpg",
   "roomAddress": "0x7A400",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 2,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

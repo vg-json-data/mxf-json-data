@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 331,
+  "id": 332,
   "name": "Reo Courtyard",
   "area": "TRO",
   "subarea": "General",
@@ -94,10 +94,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 328,
-          "y": 120,
-          "w": 56,
-          "h": 32
+          "x": 400,
+          "y": 176,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -312,6 +312,8 @@
   ],
   "roomImageFile": "TRO Room 78B00.jpg",
   "roomAddress": "0x78B00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 11,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

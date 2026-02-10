@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 62,
+  "id": 63,
   "name": "ARC Etecoon Room Access",
   "area": "ARC",
   "subarea": "AQA Access",
@@ -18,29 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Top-Left Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 120,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "name": "Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -56,6 +33,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Top-Left Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 120,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -129,8 +129,8 @@
     {
       "name": "Base",
       "link": [
-        1,
-        1
+        2,
+        2
       ],
       "requires": [
         "Morph"
@@ -139,7 +139,7 @@
     {
       "name": "Base",
       "link": [
-        1,
+        2,
         3
       ],
       "requires": [
@@ -149,7 +149,7 @@
     {
       "name": "Base",
       "link": [
-        1,
+        2,
         5
       ],
       "requires": []
@@ -157,8 +157,8 @@
     {
       "name": "Destroy Blue Geron",
       "link": [
-        2,
-        2
+        1,
+        1
       ],
       "requires": [
         "h_killBlueGeron"
@@ -173,7 +173,7 @@
     {
       "name": "Base",
       "link": [
-        2,
+        1,
         4
       ],
       "requires": [
@@ -188,7 +188,7 @@
       "name": "Base",
       "link": [
         3,
-        1
+        2
       ],
       "requires": [
         {
@@ -228,7 +228,7 @@
       "name": "Base",
       "link": [
         4,
-        2
+        1
       ],
       "requires": [
         {
@@ -304,6 +304,8 @@
   ],
   "roomImageFile": "ARC Room 79400.jpg",
   "roomAddress": "0x79400",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 13,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

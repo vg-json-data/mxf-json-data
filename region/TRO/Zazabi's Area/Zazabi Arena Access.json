@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 362,
+  "id": 364,
   "name": "Zazabi Arena Access",
   "area": "TRO",
   "subarea": "Zazabi's Area",
@@ -248,6 +248,9 @@
   ],
   "roomImageFile": "TRO Room 79800.jpg",
   "roomAddress": "0x79800",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -3,18 +3,9 @@
   "connections": [
     {
       "connectionType": "VerticalDoor",
-      "description": "Vertical Door connection between [ARC Auxiliary Room Access - Top Door] and [Brain Freezer - Left-Bottom Door]",
-      "direction": "Bidirectional",
+      "description": "Vertical Door connection between [Brain Freezer - Left-Bottom Door] and [ARC Auxiliary Room Access - Top Door]",
+      "direction": "Forward",
       "nodes": [
-        {
-          "area": "ARC",
-          "subarea": "West ARC",
-          "roomid": 90,
-          "roomName": "ARC Auxiliary Room Access",
-          "nodeid": 4,
-          "nodeName": "Top Door",
-          "position": "top"
-        },
         {
           "area": "ARC",
           "subarea": "West ARC",
@@ -23,6 +14,15 @@
           "nodeid": 3,
           "nodeName": "Left-Bottom Door",
           "position": "bottom"
+        },
+        {
+          "area": "ARC",
+          "subarea": "West ARC",
+          "roomid": 91,
+          "roomName": "ARC Auxiliary Room Access",
+          "nodeid": 4,
+          "nodeName": "Top Door",
+          "position": "top"
         }
       ]
     },
@@ -34,7 +34,7 @@
         {
           "area": "ARC",
           "subarea": "West ARC",
-          "roomid": 90,
+          "roomid": 91,
           "roomName": "ARC Auxiliary Room Access",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -59,7 +59,7 @@
         {
           "area": "ARC",
           "subarea": "West ARC",
-          "roomid": 90,
+          "roomid": 91,
           "roomName": "ARC Auxiliary Room Access",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -68,7 +68,7 @@
         {
           "area": "ARC",
           "subarea": "West ARC",
-          "roomid": 91,
+          "roomid": 90,
           "roomName": "ARC Auxiliary Room",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -84,7 +84,7 @@
         {
           "area": "ARC",
           "subarea": "West ARC",
-          "roomid": 90,
+          "roomid": 91,
           "roomName": "ARC Auxiliary Room Access",
           "nodeid": 3,
           "nodeName": "Bottom-Right Door",
@@ -186,7 +186,7 @@
           "subarea": "West ARC",
           "roomid": 94,
           "roomName": "ARC-MDK Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         },
@@ -220,7 +220,7 @@
           "subarea": "West ARC",
           "roomid": 100,
           "roomName": "Freezer Shaft East",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Left-Lower Door",
           "position": "left"
         }
@@ -245,7 +245,7 @@
           "subarea": "West ARC",
           "roomid": 100,
           "roomName": "Freezer Shaft East",
-          "nodeid": 5,
+          "nodeid": 6,
           "nodeName": "Bottom-Left Tunnel",
           "position": "left"
         }
@@ -270,7 +270,7 @@
           "subarea": "West ARC",
           "roomid": 100,
           "roomName": "Freezer Shaft East",
-          "nodeid": 4,
+          "nodeid": 3,
           "nodeName": "Right Door",
           "position": "right"
         }
@@ -295,7 +295,7 @@
           "subarea": "West ARC",
           "roomid": 100,
           "roomName": "Freezer Shaft East",
-          "nodeid": 6,
+          "nodeid": 5,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         }

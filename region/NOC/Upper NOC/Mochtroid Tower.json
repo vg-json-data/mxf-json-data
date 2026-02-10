@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 218,
+  "id": 217,
   "name": "Mochtroid Tower",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -286,7 +286,8 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Mochtroid-X",
+                    "Mochtroid-X"
                   ]
                 ]
               }
@@ -321,7 +322,8 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e1"
+                    "Mochtroid-X",
+                    "Mochtroid-X"
                   ]
                 ]
               }
@@ -376,7 +378,7 @@
           "enemyKill": {
             "enemies": [
               [
-                "e4"
+                "Mochtroid-X"
               ]
             ]
           }
@@ -453,7 +455,7 @@
           "enemyKill": {
             "enemies": [
               [
-                "e4"
+                "Mochtroid-X"
               ]
             ]
           }
@@ -480,7 +482,9 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e2"
+                            "Mochtroid-X",
+                            "Mochtroid-X",
+                            "Mochtroid-X"
                           ]
                         ]
                       }
@@ -498,7 +502,8 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e3"
+                            "Mochtroid-X",
+                            "Mochtroid-X"
                           ]
                         ]
                       }
@@ -509,7 +514,8 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e3"
+                        "Mochtroid-X",
+                        "Mochtroid-X"
                       ]
                     ]
                   }
@@ -545,7 +551,9 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e2"
+                            "Mochtroid-X",
+                            "Mochtroid-X",
+                            "Mochtroid-X"
                           ]
                         ]
                       }
@@ -554,7 +562,8 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e3"
+                            "Mochtroid-X",
+                            "Mochtroid-X"
                           ]
                         ]
                       }
@@ -595,7 +604,9 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e2"
+                            "Mochtroid-X",
+                            "Mochtroid-X",
+                            "Mochtroid-X"
                           ]
                         ]
                       }
@@ -613,7 +624,8 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e3"
+                            "Mochtroid-X",
+                            "Mochtroid-X"
                           ]
                         ]
                       }
@@ -624,7 +636,8 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e3"
+                        "Mochtroid-X",
+                        "Mochtroid-X"
                       ]
                     ]
                   }
@@ -660,7 +673,9 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e2"
+                            "Mochtroid-X",
+                            "Mochtroid-X",
+                            "Mochtroid-X"
                           ]
                         ]
                       }
@@ -669,7 +684,8 @@
                       "enemyKill": {
                         "enemies": [
                           [
-                            "e3"
+                            "Mochtroid-X",
+                            "Mochtroid-X"
                           ]
                         ]
                       }
@@ -693,6 +709,8 @@
   ],
   "roomImageFile": "NOC Room 78E00.jpg",
   "roomAddress": "0x78E00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 14,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

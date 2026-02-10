@@ -78,7 +78,7 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [ARC-NOC Tube - Left Door] and [Crow\u0027s Nest - Right-Lower Door]",
+      "description": "Horizontal Door connection between [ARC-NOC Tube - Left Door] and [Crow's Nest - Right-Lower Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
@@ -94,7 +94,7 @@
           "area": "ARC",
           "subarea": "Upper ARC",
           "roomid": 85,
-          "roomName": "Crow\u0027s Nest",
+          "roomName": "Crow's Nest",
           "nodeid": 1,
           "nodeName": "Right-Lower Door",
           "position": "right"
@@ -145,7 +145,7 @@
           "subarea": "Upper ARC",
           "roomid": 86,
           "roomName": "Speedblock Spiral / Gerubus Gully",
-          "nodeid": 4,
+          "nodeid": 3,
           "nodeName": "Gerubus Gully - Left Door",
           "position": "left"
         }
@@ -170,7 +170,7 @@
           "subarea": "Upper ARC",
           "roomid": 82,
           "roomName": "ARC-PYR Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         }
@@ -195,7 +195,7 @@
           "subarea": "Upper ARC",
           "roomid": 88,
           "roomName": "Weapons Testing Grounds",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         }
@@ -270,7 +270,7 @@
           "subarea": "Upper ARC",
           "roomid": 86,
           "roomName": "Speedblock Spiral / Gerubus Gully",
-          "nodeid": 5,
+          "nodeid": 4,
           "nodeName": "Gerubus Gully - Right Door",
           "position": "right"
         }
@@ -278,7 +278,7 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Blue Tower - Right-Lower Door] and [Crow\u0027s Nest - Bottom-Left Door]",
+      "description": "Horizontal Door connection between [Blue Tower - Right-Lower Door] and [Crow's Nest - Bottom-Left Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
@@ -294,7 +294,7 @@
           "area": "ARC",
           "subarea": "Upper ARC",
           "roomid": 85,
-          "roomName": "Crow\u0027s Nest",
+          "roomName": "Crow's Nest",
           "nodeid": 2,
           "nodeName": "Bottom-Left Door",
           "position": "left"
@@ -345,7 +345,7 @@
           "subarea": "Upper ARC",
           "roomid": 88,
           "roomName": "Weapons Testing Grounds",
-          "nodeid": 3,
+          "nodeid": 2,
           "nodeName": "Bottom Door",
           "position": "left"
         }

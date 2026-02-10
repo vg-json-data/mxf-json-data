@@ -41,6 +41,29 @@
     },
     {
       "id": 2,
+      "name": "Left-Bottom Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 32,
+          "y": 224,
+          "w": 64,
+          "h": 32
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "down",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
       "idMinorItemPlm": "0x4D",
       "name": "Sunken Treasury - Energy Tank",
       "nodeType": "item",
@@ -59,22 +82,6 @@
       "nodeAddress": "0x7DE96",
       "mapTileX": 33,
       "mapTileY": 15
-    },
-    {
-      "id": 3,
-      "name": "Missing Connection",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 32,
-          "y": 200,
-          "w": 72,
-          "h": 56
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -137,7 +144,7 @@
       "name": "Base",
       "link": [
         1,
-        2
+        3
       ],
       "requires": [
         {
@@ -148,7 +155,7 @@
         }
       ],
       "collectsItems": [
-        2
+        3
       ],
       "setsFlags": [
         "f_SunkenTreasury_EnergyTank_Collected"
@@ -157,7 +164,7 @@
     {
       "name": "Base",
       "link": [
-        2,
+        3,
         1
       ],
       "requires": [
@@ -172,16 +179,16 @@
     {
       "name": "Base",
       "link": [
-        2,
-        3
+        3,
+        2
       ],
       "requires": []
     },
     {
       "name": "Leave Shinecharged",
       "link": [
-        3,
-        3
+        2,
+        2
       ],
       "requires": [
         {
@@ -207,6 +214,8 @@
   ],
   "roomImageFile": "AQA Room 7BB00.jpg",
   "roomAddress": "0x7BB00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

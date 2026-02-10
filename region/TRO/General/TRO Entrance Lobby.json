@@ -161,6 +161,9 @@
   ],
   "roomImageFile": "TRO Room 78700.jpg",
   "roomAddress": "0x78700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

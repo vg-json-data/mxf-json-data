@@ -41,6 +41,29 @@
     },
     {
       "id": 2,
+      "name": "Top-Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 64,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
       "name": "Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -63,7 +86,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -86,7 +109,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -107,45 +130,14 @@
           "physics": "air"
         }
       ]
-    },
-    {
-      "id": 5,
-      "name": "Serris Broken Wall",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 208,
-          "y": 72,
-          "w": 48,
-          "h": 48
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "strats": [
     {
-      "name": "Base",
-      "link": [
-        1,
-        3
-      ],
-      "requires": [
-        {
-          "or": [
-            "f_AQASecurityRoomNorthAccess_SerrisEncountered",
-            "f_SerrisArena_CoreXAbsorbed"
-          ]
-        }
-      ]
-    },
-    {
       "name": "Come In Shinecharged, Leave Shinecharged",
       "link": [
         1,
-        5
+        2
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -161,7 +153,7 @@
       "name": "Third Serris Encounter",
       "link": [
         1,
-        5
+        2
       ],
       "requires": [
         {
@@ -178,15 +170,45 @@
     {
       "name": "Base",
       "link": [
+        1,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "f_AQASecurityRoomNorthAccess_SerrisEncountered",
+            "f_SerrisArena_CoreXAbsorbed"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
         2,
-        3
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            "f_AQASecurityRoomNorthAccess_SerrisEncountered",
+            "f_SerrisArena_CoreXAbsorbed"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        3,
+        4,
         1
       ],
       "requires": [
@@ -217,16 +239,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        2
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        4
+        4,
+        3
       ],
       "requires": []
     },
@@ -234,7 +248,15 @@
       "name": "Base",
       "link": [
         4,
-        3
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
       ],
       "requires": [
         {
@@ -246,25 +268,10 @@
           ]
         }
       ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        5,
-        1
-      ],
-      "requires": [
-        {
-          "or": [
-            "f_AQASecurityRoomNorthAccess_SerrisEncountered",
-            "f_SerrisArena_CoreXAbsorbed"
-          ]
-        }
-      ]
     }
   ],
   "roomImageFile": "AQA Room 79C00.jpg",
   "roomAddress": "0x79C00",
-  "nextStratId": 1,
+  "nextStratId": 10,
   "nextNotableId": 1
 }

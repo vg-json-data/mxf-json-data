@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 268,
+  "id": 269,
   "name": "Big Red Maintenance Storage",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -18,29 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Top-Right Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 480,
-          "y": 136,
-          "w": 32,
-          "h": 32
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "name": "Left Door",
       "nodeType": "door",
       "nodeSubType": "gray",
@@ -90,6 +67,29 @@
       ]
     },
     {
+      "id": 2,
+      "name": "Top-Right Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 480,
+          "y": 136,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
       "id": 3,
       "name": "Bottom-Right Door",
       "nodeType": "door",
@@ -114,6 +114,22 @@
     },
     {
       "id": 4,
+      "name": "Left of One-Way Gate",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 184,
+          "y": 136,
+          "w": 64,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "idMinorItemPlm": "0x36",
       "name": "Big Red Maintenance Storage [Top] - Missile Tank",
       "nodeType": "item",
@@ -135,7 +151,7 @@
       "mapTileY": 13
     },
     {
-      "id": 5,
+      "id": 6,
       "idMinorItemPlm": "0x37",
       "name": "Big Red Maintenance Storage [Bottom] - Missile Tank",
       "nodeType": "item",
@@ -155,22 +171,6 @@
       "nodeAltAddress": "0x7DAA8",
       "mapTileX": 34,
       "mapTileY": 14
-    },
-    {
-      "id": 6,
-      "name": "Left of One-Way Gate",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 184,
-          "y": 136,
-          "w": 64,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -189,8 +189,8 @@
     {
       "name": "Base",
       "link": [
-        1,
-        4
+        2,
+        5
       ],
       "requires": [
         "Morph"
@@ -200,18 +200,18 @@
       "name": "Base",
       "link": [
         3,
-        5
+        6
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        4,
-        4
+        5,
+        5
       ],
       "collectsItems": [
-        4
+        5
       ],
       "setsFlags": [
         "f_BigRedMaintenanceStorage_MissileTankUpper_Collected"
@@ -221,15 +221,15 @@
     {
       "name": "Base",
       "link": [
-        4,
-        6
+        5,
+        4
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        5,
+        6,
         3
       ],
       "requires": []
@@ -237,8 +237,8 @@
     {
       "name": "Destroy Bomb Blocks",
       "link": [
-        5,
-        5
+        6,
+        6
       ],
       "requires": [
         {
@@ -267,11 +267,11 @@
     {
       "name": "Base",
       "link": [
-        5,
-        5
+        6,
+        6
       ],
       "collectsItems": [
-        5
+        6
       ],
       "setsFlags": [
         "f_BigRedMaintenanceStorage_MissileTankLower_Collected"
@@ -281,8 +281,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        6
+        6,
+        4
       ],
       "requires": [
         {
@@ -318,8 +318,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        4
+        4,
+        5
       ],
       "requires": [
         {
@@ -341,8 +341,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        5
+        4,
+        6
       ],
       "requires": [
         "h_bombThings"
@@ -355,6 +355,8 @@
   ],
   "roomImageFile": "PYR Room 79300.jpg",
   "roomAddress": "0x79300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 11,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

@@ -132,7 +132,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "Transmutation Trial - Left Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -155,7 +155,39 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
+      "name": "Right of Red Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 72,
+          "y": 608,
+          "w": 32,
+          "h": 64
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 8,
+      "name": "Transmutation Trial Ledge",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 288,
+          "y": 936,
+          "w": 32,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 9,
       "idMinorItemPlm": "0x57",
       "name": "Frozen Tower - Missile Tank",
       "nodeType": "item",
@@ -176,7 +208,7 @@
       "mapTileY": 17
     },
     {
-      "id": 8,
+      "id": 10,
       "idMinorItemPlm": "0x58",
       "name": "Transmutation Trial - Hidden Missile Tank",
       "nodeType": "item",
@@ -195,38 +227,6 @@
       "nodeAddress": "0x7E030",
       "mapTileX": 33,
       "mapTileY": 20
-    },
-    {
-      "id": 9,
-      "name": "Transmutation Trial Ledge",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 288,
-          "y": 936,
-          "w": 32,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
-      "id": 10,
-      "name": "Right of Red Geron",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 72,
-          "y": 608,
-          "w": 32,
-          "h": 64
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -262,7 +262,7 @@
       "name": "Base",
       "link": [
         1,
-        6
+        9
       ],
       "requires": [
         {
@@ -275,7 +275,7 @@
         }
       ],
       "collectsItems": [
-        6
+        9
       ],
       "setsFlags": [
         "f_FrozenTower_MissileTank_Collected"
@@ -318,7 +318,7 @@
       "name": "Base",
       "link": [
         3,
-        10
+        7
       ],
       "requires": [
         {
@@ -377,7 +377,7 @@
       "name": "Base",
       "link": [
         4,
-        10
+        7
       ],
       "requires": [
         {
@@ -414,7 +414,8 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Kzan-X",
+                        "Kzan-X"
                       ]
                     ]
                   }
@@ -441,7 +442,7 @@
     {
       "name": "Base",
       "link": [
-        6,
+        9,
         1
       ],
       "requires": [
@@ -453,8 +454,8 @@
     {
       "name": "Base",
       "link": [
-        7,
-        9
+        6,
+        8
       ],
       "requires": [
         {
@@ -501,8 +502,8 @@
     {
       "name": "Base",
       "link": [
-        8,
-        7
+        10,
+        6
       ],
       "requires": [
         {
@@ -518,8 +519,8 @@
     {
       "name": "Base",
       "link": [
-        9,
-        7
+        8,
+        6
       ],
       "requires": [
         "Morph"
@@ -528,8 +529,8 @@
     {
       "name": "Base",
       "link": [
-        9,
-        8
+        8,
+        10
       ],
       "requires": [
         {
@@ -542,7 +543,7 @@
         }
       ],
       "collectsItems": [
-        8
+        10
       ],
       "setsFlags": [
         "f_TransmutationTrial_MissileTank_Collected"
@@ -551,7 +552,7 @@
     {
       "name": "Base",
       "link": [
-        10,
+        7,
         2
       ],
       "requires": [
@@ -574,7 +575,7 @@
     {
       "name": "Base",
       "link": [
-        10,
+        7,
         3
       ],
       "requires": [
@@ -595,7 +596,7 @@
     {
       "name": "Base",
       "link": [
-        10,
+        7,
         4
       ],
       "requires": [
@@ -607,8 +608,8 @@
     {
       "name": "Kill Red Geron",
       "link": [
-        10,
-        10
+        7,
+        7
       ],
       "requires": [
         "h_killRedGeron"
@@ -623,6 +624,7 @@
   ],
   "roomImageFile": "ARC Room 79A00.jpg",
   "roomAddress": "0x79A00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 17,
+  "nextNotableId": 1,
+  "notables": []
 }

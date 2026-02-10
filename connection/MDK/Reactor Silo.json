@@ -45,7 +45,7 @@
           "subarea": "Reactor Silo",
           "roomid": 161,
           "roomName": "Silo Tunnel",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Tunnel",
           "position": "right"
         }

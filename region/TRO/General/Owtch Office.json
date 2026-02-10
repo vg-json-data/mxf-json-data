@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 329,
+  "id": 330,
   "name": "Owtch Office",
   "area": "TRO",
   "subarea": "General",
@@ -111,6 +111,9 @@
   ],
   "roomImageFile": "TRO Room 79200.jpg",
   "roomAddress": "0x79200",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 269,
+  "id": 267,
   "name": "Big Red",
   "area": "PYR",
   "subarea": "Upper PYR",
@@ -87,29 +87,6 @@
     },
     {
       "id": 4,
-      "name": "Left-Lower Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 880,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 5,
       "name": "Right-Lower Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -125,6 +102,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Left-Lower Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 880,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -179,6 +179,22 @@
     },
     {
       "id": 8,
+      "name": "Above Left-Lower Tunnel",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 80,
+          "y": 480,
+          "w": 40,
+          "h": 24
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 9,
       "name": "Central Ledge",
       "nodeType": "junction",
       "nodeSubType": "visible",
@@ -189,22 +205,6 @@
           "y": 528,
           "w": 48,
           "h": 88
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
-      "id": 9,
-      "name": "Below Super Missile Blocks",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 360,
-          "y": 1016,
-          "w": 64,
-          "h": 48
         }
       ],
       "color": "#0000ff"
@@ -227,16 +227,16 @@
     },
     {
       "id": 11,
-      "name": "Above Left-Lower Tunnel",
+      "name": "Below Super Missile Blocks",
       "nodeType": "junction",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 80,
-          "y": 480,
-          "w": 40,
-          "h": 24
+          "x": 360,
+          "y": 1016,
+          "w": 64,
+          "h": 48
         }
       ],
       "color": "#0000ff"
@@ -255,7 +255,7 @@
       "enemyName": "Sidehopper",
       "quantity": 2,
       "betweenNodes": [
-        8,
+        9,
         10
       ],
       "id": "e1"
@@ -290,7 +290,7 @@
       "name": "Base",
       "link": [
         1,
-        5
+        4
       ],
       "requires": []
     },
@@ -314,7 +314,7 @@
       "name": "Base",
       "link": [
         2,
-        5
+        4
       ],
       "requires": []
     },
@@ -331,7 +331,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         6
       ],
       "requires": []
@@ -339,16 +339,16 @@
     {
       "name": "Base",
       "link": [
-        4,
-        9
+        5,
+        11
       ],
       "requires": []
     },
     {
       "name": "Destroy Super Missile Blocks",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "requires": [
         {
@@ -375,15 +375,15 @@
     {
       "name": "Base",
       "link": [
-        5,
-        9
+        4,
+        11
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         10
       ],
       "requires": [
@@ -415,7 +415,7 @@
       "name": "Base",
       "link": [
         7,
-        9
+        11
       ],
       "requires": [
         "h_JumpAssist"
@@ -424,7 +424,7 @@
     {
       "name": "Base",
       "link": [
-        8,
+        9,
         1
       ],
       "requires": [
@@ -440,7 +440,7 @@
     {
       "name": "Base",
       "link": [
-        8,
+        9,
         2
       ],
       "requires": [
@@ -465,8 +465,8 @@
     {
       "name": "Base",
       "link": [
-        9,
-        5
+        11,
+        4
       ],
       "requires": [
         {
@@ -489,7 +489,7 @@
     {
       "name": "Base",
       "link": [
-        9,
+        11,
         7
       ],
       "requires": []
@@ -497,8 +497,8 @@
     {
       "name": "Destroy Super Missile Blocks",
       "link": [
-        9,
-        9
+        11,
+        11
       ],
       "requires": [
         {
@@ -526,7 +526,7 @@
       "name": "Base",
       "link": [
         10,
-        8
+        9
       ],
       "requires": [
         "h_JumpAssist"
@@ -536,7 +536,7 @@
       "name": "Base",
       "link": [
         10,
-        11
+        8
       ],
       "requires": [
         {
@@ -559,7 +559,8 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Sidehopper",
+                        "Sidehopper"
                       ]
                     ]
                   }
@@ -574,8 +575,8 @@
     {
       "name": "Base",
       "link": [
-        11,
-        4
+        8,
+        5
       ],
       "requires": [
         {
@@ -594,7 +595,7 @@
     {
       "name": "Base",
       "link": [
-        11,
+        8,
         6
       ],
       "requires": [
@@ -609,7 +610,7 @@
     {
       "name": "Base",
       "link": [
-        11,
+        8,
         10
       ],
       "requires": []
@@ -617,6 +618,7 @@
   ],
   "roomImageFile": "PYR Room 79400.jpg",
   "roomAddress": "0x79400",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 25,
+  "nextNotableId": 1,
+  "notables": []
 }

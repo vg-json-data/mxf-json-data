@@ -17,29 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 4,
-      "name": "Top Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 104,
-          "y": 0,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "up",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Top-Right Door",
       "nodeType": "door",
@@ -109,7 +86,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -132,23 +109,43 @@
       ]
     },
     {
+      "id": 5,
+      "name": "Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 104,
+          "y": 0,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "up",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
       "id": 6,
-      "name": "Glass Tube - AQA Aux Power Cell",
-      "nodeType": "item",
+      "name": "Under Top-Right Door",
+      "nodeType": "junction",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 96,
-          "y": 320,
-          "w": 16,
-          "h": 16
+          "x": 160,
+          "y": 192,
+          "w": 32,
+          "h": 32
         }
       ],
-      "color": "#8d0cad",
-      "nodeItem": "Aux Power Cell",
-      "nodeAddress": "0x0",
-      "note": ""
+      "color": "#0000ff"
     },
     {
       "id": 7,
@@ -168,19 +165,22 @@
     },
     {
       "id": 8,
-      "name": "Under Top-Right Door",
-      "nodeType": "junction",
+      "name": "Glass Tube - AQA Aux Power Cell",
+      "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
         {
           "shape": "rect",
-          "x": 160,
-          "y": 192,
-          "w": 32,
-          "h": 32
+          "x": 96,
+          "y": 320,
+          "w": 16,
+          "h": 16
         }
       ],
-      "color": "#0000ff"
+      "color": "#8d0cad",
+      "nodeItem": "Aux Power Cell",
+      "nodeAddress": "0x0",
+      "note": ""
     }
   ],
   "obstacles": [
@@ -200,7 +200,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        5
       ],
       "requires": [
         {
@@ -227,7 +227,7 @@
       "name": "Base",
       "link": [
         1,
-        8
+        6
       ],
       "requires": []
     },
@@ -278,7 +278,7 @@
       "name": "Base",
       "link": [
         2,
-        5
+        4
       ],
       "requires": [
         {
@@ -301,7 +301,7 @@
       "name": "Base",
       "link": [
         2,
-        8
+        6
       ],
       "requires": [
         {
@@ -345,7 +345,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         1
       ],
       "requires": []
@@ -353,8 +353,8 @@
     {
       "name": "Destroy Kago-X",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "clearsObstacles": [
         "B"
@@ -367,7 +367,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         7
       ],
       "requires": [
@@ -407,8 +407,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        8
+        8,
+        6
       ],
       "requires": []
     },
@@ -450,7 +450,7 @@
     {
       "name": "Base",
       "link": [
-        8,
+        6,
         1
       ],
       "requires": []
@@ -458,7 +458,7 @@
     {
       "name": "Base",
       "link": [
-        8,
+        6,
         2
       ],
       "requires": []
@@ -466,11 +466,11 @@
     {
       "name": "Base",
       "link": [
-        8,
-        6
+        6,
+        8
       ],
       "collectsItems": [
-        6
+        8
       ],
       "setsFlags": [
         "f_AQA_PowerCellAcquired"
@@ -480,6 +480,8 @@
   ],
   "roomImageFile": "AQA Room 7B000.jpg",
   "roomAddress": "0x7B000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 18,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

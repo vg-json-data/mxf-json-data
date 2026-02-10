@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 318,
+  "id": 319,
   "name": "Yameba Corridor",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -279,6 +279,8 @@
   ],
   "roomImageFile": "SRX Room 79500.jpg",
   "roomAddress": "0x79500",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "notables": []
 }

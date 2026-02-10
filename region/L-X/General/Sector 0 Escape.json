@@ -124,6 +124,9 @@
   ],
   "roomImageFile": "L-X Room 79000.jpg",
   "roomAddress": "0x79000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

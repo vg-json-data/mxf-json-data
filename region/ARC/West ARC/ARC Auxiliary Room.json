@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 91,
+  "id": 90,
   "name": "ARC Auxiliary Room",
   "area": "ARC",
   "subarea": "West ARC",
@@ -102,6 +102,9 @@
   ],
   "roomImageFile": "Misc Room Aux 1.jpg",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

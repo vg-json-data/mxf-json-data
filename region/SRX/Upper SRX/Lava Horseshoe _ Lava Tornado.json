@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 306,
+  "id": 307,
   "name": "Lava Horseshoe / Lava Tornado",
   "area": "SRX",
   "subarea": "Upper SRX",
@@ -18,29 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Lava Horseshoe - Right Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 208,
-          "y": 176,
-          "w": 48,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 3,
       "name": "Lava Tornado - Top-Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -63,7 +40,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 2,
       "name": "Lava Tornado - Top-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -86,7 +63,30 @@
       ]
     },
     {
-      "id": 5,
+      "id": 3,
+      "name": "Lava Horseshoe - Right Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 176,
+          "w": 48,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
       "name": "Lava Tornado - Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 5,
       "idMinorItemPlm": "0x14",
       "name": "Lava Horseshoe - Hidden Power Bomb Tank",
       "nodeType": "item",
@@ -134,8 +134,8 @@
     {
       "name": "Base",
       "link": [
-        1,
-        2
+        3,
+        5
       ],
       "requires": [
         {
@@ -146,14 +146,14 @@
         }
       ],
       "collectsItems": [
-        2
+        5
       ]
     },
     {
       "name": "Reach Power Bomb Tank with Wall Jumps",
       "link": [
-        1,
-        2
+        3,
+        5
       ],
       "requires": [
         {
@@ -179,8 +179,8 @@
     {
       "name": "Return from Power Bomb Tank without Super Jump or Space Jump",
       "link": [
-        2,
-        1
+        5,
+        3
       ],
       "requires": [
         {
@@ -206,8 +206,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        1
+        5,
+        3
       ],
       "requires": [
         {
@@ -226,7 +226,15 @@
     {
       "name": "Base",
       "link": [
-        3,
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
         4
       ],
       "requires": []
@@ -234,8 +242,8 @@
     {
       "name": "Base",
       "link": [
-        3,
-        5
+        2,
+        1
       ],
       "requires": []
     },
@@ -243,15 +251,7 @@
       "name": "Base",
       "link": [
         4,
-        3
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        5,
-        3
+        1
       ],
       "requires": [
         {
@@ -266,6 +266,9 @@
   ],
   "roomImageFile": "SRX Room 79D00.jpg",
   "roomAddress": "0x79D00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 9,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

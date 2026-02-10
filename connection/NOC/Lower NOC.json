@@ -11,7 +11,7 @@
           "subarea": "Lower NOC",
           "roomid": 183,
           "roomName": "Barrier Core-X Arena",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Left Door",
           "position": "left"
         },
@@ -36,7 +36,7 @@
           "subarea": "Lower NOC",
           "roomid": 183,
           "roomName": "Barrier Core-X Arena",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         },
@@ -84,7 +84,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 185,
+          "roomid": 186,
           "roomName": "Catacombs Runway",
           "nodeid": 1,
           "nodeName": "Top-Right Door",
@@ -109,16 +109,16 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 185,
+          "roomid": 186,
           "roomName": "Catacombs Runway",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Bottom-Left Tunnel",
           "position": "left"
         },
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 186,
+          "roomid": 185,
           "roomName": "Catacombs",
           "nodeid": 2,
           "nodeName": "Right Tunnel",
@@ -134,9 +134,9 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 185,
+          "roomid": 186,
           "roomName": "Catacombs Runway",
-          "nodeid": 3,
+          "nodeid": 2,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         },
@@ -145,7 +145,7 @@
           "subarea": "Lower NOC",
           "roomid": 207,
           "roomName": "Zozoro Wine Cellar / Shiverclimb",
-          "nodeid": 3,
+          "nodeid": 1,
           "nodeName": "Shiverclimb - Top Door",
           "position": "left"
         }
@@ -159,7 +159,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 186,
+          "roomid": 185,
           "roomName": "Catacombs",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -184,9 +184,9 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 186,
+          "roomid": 185,
           "roomName": "Catacombs",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Bottom-Left Tunnel",
           "position": "left"
         },
@@ -209,9 +209,9 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 186,
+          "roomid": 185,
           "roomName": "Catacombs",
-          "nodeid": 4,
+          "nodeid": 3,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         },
@@ -295,7 +295,7 @@
           "subarea": "Lower NOC",
           "roomid": 207,
           "roomName": "Zozoro Wine Cellar / Shiverclimb",
-          "nodeid": 5,
+          "nodeid": 2,
           "nodeName": "Shiverclimb - Bottom-Right Door",
           "position": "right"
         }
@@ -320,7 +320,7 @@
           "subarea": "Lower NOC",
           "roomid": 193,
           "roomName": "NOC Entrance Lobby South",
-          "nodeid": 4,
+          "nodeid": 5,
           "nodeName": "Right-Top Door",
           "position": "top"
         }
@@ -418,7 +418,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 190,
+          "roomid": 191,
           "roomName": "Nightmare Arena Access",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -434,7 +434,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 190,
+          "roomid": 191,
           "roomName": "Nightmare Arena Access",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -443,7 +443,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 191,
+          "roomid": 190,
           "roomName": "Nightmare Arena",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -493,7 +493,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 195,
+          "roomid": 196,
           "roomName": "NOC Maintenance Wing Access",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -511,7 +511,7 @@
           "subarea": "Lower NOC",
           "roomid": 193,
           "roomName": "NOC Entrance Lobby South",
-          "nodeid": 5,
+          "nodeid": 2,
           "nodeName": "Bottom Door",
           "position": "left"
         },
@@ -520,7 +520,7 @@
           "subarea": "Lower NOC",
           "roomid": 201,
           "roomName": "NOC-AQA Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         }
@@ -536,7 +536,7 @@
           "subarea": "Lower NOC",
           "roomid": 193,
           "roomName": "NOC Entrance Lobby South",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         },
@@ -568,7 +568,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 196,
+          "roomid": 195,
           "roomName": "NOC Maintenance Wing",
           "nodeid": 3,
           "nodeName": "Bottom-Left Tunnel",
@@ -584,7 +584,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 195,
+          "roomid": 196,
           "roomName": "NOC Maintenance Wing Access",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -593,7 +593,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 196,
+          "roomid": 195,
           "roomName": "NOC Maintenance Wing",
           "nodeid": 2,
           "nodeName": "Left Door",
@@ -609,7 +609,7 @@
         {
           "area": "NOC",
           "subarea": "Lower NOC",
-          "roomid": 196,
+          "roomid": 195,
           "roomName": "NOC Maintenance Wing",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -661,7 +661,7 @@
           "subarea": "Lower NOC",
           "roomid": 202,
           "roomName": "NOC-ARC Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         },
@@ -686,7 +686,7 @@
           "subarea": "Lower NOC",
           "roomid": 203,
           "roomName": "NOC-MDK Tube",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Right Door",
           "position": "right"
         },
@@ -711,7 +711,7 @@
           "subarea": "Lower NOC",
           "roomid": 207,
           "roomName": "Zozoro Wine Cellar / Shiverclimb",
-          "nodeid": 1,
+          "nodeid": 3,
           "nodeName": "Zozoro Wine Cellar - Right Tunnel",
           "position": "right"
         },

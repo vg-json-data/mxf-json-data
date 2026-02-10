@@ -41,16 +41,16 @@
     },
     {
       "id": 2,
-      "name": "AQA-PYR Access - Left Door",
+      "name": "Serris Speedway - Top-Left Tunnel",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "passage",
       "geometry": [
         {
           "shape": "rect",
-          "x": 0,
-          "y": 96,
+          "x": 768,
+          "y": 64,
           "w": 48,
-          "h": 64
+          "h": 16
         }
       ],
       "color": "#ffffff",
@@ -64,16 +64,16 @@
     },
     {
       "id": 3,
-      "name": "Serris Speedway - Top-Left Tunnel",
+      "name": "AQA-PYR Access - Left Door",
       "nodeType": "door",
-      "nodeSubType": "passage",
+      "nodeSubType": "blue",
       "geometry": [
         {
           "shape": "rect",
-          "x": 768,
-          "y": 64,
+          "x": 0,
+          "y": 96,
           "w": 48,
-          "h": 16
+          "h": 64
         }
       ],
       "color": "#ffffff",
@@ -110,6 +110,22 @@
     },
     {
       "id": 5,
+      "name": "Right of Orange Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 184,
+          "y": 96,
+          "w": 56,
+          "h": 64
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 6,
       "idMinorItemPlm": "0x4C",
       "name": "Serris Speedway - Missile Tank",
       "nodeType": "item",
@@ -128,22 +144,6 @@
       "nodeAddress": "0x7DE32",
       "mapTileX": 20,
       "mapTileY": 9
-    },
-    {
-      "id": 6,
-      "name": "Right of Orange Geron",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 184,
-          "y": 96,
-          "w": 56,
-          "h": 64
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -163,7 +163,7 @@
       "name": "Base",
       "link": [
         1,
-        6
+        5
       ],
       "requires": [
         "Morph"
@@ -172,8 +172,8 @@
     {
       "name": "Destroy Orange Geron",
       "link": [
-        2,
-        2
+        3,
+        3
       ],
       "requires": [
         "h_killOrangeGeron"
@@ -185,8 +185,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        6
+        3,
+        5
       ],
       "requires": [
         {
@@ -199,7 +199,7 @@
     {
       "name": "Base",
       "link": [
-        3,
+        2,
         4
       ],
       "requires": [
@@ -210,7 +210,7 @@
       "name": "Base",
       "link": [
         4,
-        3
+        2
       ],
       "requires": [
         {
@@ -225,7 +225,7 @@
       "name": "Base",
       "link": [
         4,
-        5
+        6
       ],
       "requires": [
         "h_shinechargeMaxRunway"
@@ -234,7 +234,7 @@
         "B"
       ],
       "collectsItems": [
-        5
+        6
       ],
       "setsFlags": [
         "f_SerrisSpeedway_MissileTank_Collected"
@@ -243,7 +243,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        6,
         4
       ],
       "requires": [
@@ -257,7 +257,7 @@
     {
       "name": "Base",
       "link": [
-        6,
+        5,
         1
       ],
       "requires": [
@@ -292,8 +292,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        2
+        5,
+        3
       ],
       "requires": [
         {
@@ -306,8 +306,8 @@
     {
       "name": "Destroy Orange Geron",
       "link": [
-        6,
-        6
+        5,
+        5
       ],
       "requires": [
         "h_killOrangeGeron"
@@ -319,6 +319,8 @@
   ],
   "roomImageFile": "AQA Room 7B200.jpg",
   "roomAddress": "0x7B200",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 11,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

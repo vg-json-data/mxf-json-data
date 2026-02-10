@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 343,
+  "id": 345,
   "name": "TRO Security Room Access / Oasis Storage",
   "area": "TRO",
   "subarea": "General",
@@ -18,6 +18,29 @@
   "nodes": [
     {
       "id": 1,
+      "name": "TRO Security Room Access - Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 480,
+          "y": 48,
+          "w": 32,
+          "h": 48
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
       "name": "TRO Security Room Access - Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -33,29 +56,6 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "TRO Security Room Access - Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 464,
-          "y": 32,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -94,10 +94,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 296,
-          "y": 376,
-          "w": 40,
-          "h": 40
+          "x": 304,
+          "y": 400,
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -111,16 +111,16 @@
     {
       "name": "Base",
       "link": [
-        1,
-        2
+        2,
+        1
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        1,
-        2
+        2,
+        1
       ],
       "requires": [
         {
@@ -149,8 +149,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        1
+        1,
+        2
       ],
       "requires": [
         {
@@ -238,6 +238,9 @@
   ],
   "roomImageFile": "TRO Room 79F00.jpg",
   "roomAddress": "0x79F00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 7,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

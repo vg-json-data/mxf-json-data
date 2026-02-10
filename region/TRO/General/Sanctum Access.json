@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 332,
+  "id": 334,
   "name": "Sanctum Access",
   "area": "TRO",
   "subarea": "General",
@@ -85,6 +85,9 @@
   ],
   "roomImageFile": "TRO Room 79300.jpg",
   "roomAddress": "0x79300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -9,7 +9,7 @@
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 66,
+          "roomid": 67,
           "roomName": "ARC Data Room Access",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -34,7 +34,7 @@
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 66,
+          "roomid": 67,
           "roomName": "ARC Data Room Access",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -43,7 +43,7 @@
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 67,
+          "roomid": 66,
           "roomName": "ARC Data Room",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -59,7 +59,7 @@
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 67,
+          "roomid": 66,
           "roomName": "ARC Data Room",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -136,14 +136,14 @@
           "subarea": "Lower ARC",
           "roomid": 70,
           "roomName": "Arctic Containment",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Top-Left Door",
           "position": "left"
         },
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 76,
+          "roomid": 75,
           "roomName": "Zeela Speedway / Arctic Ripper Junction",
           "nodeid": 5,
           "nodeName": "Arctic Ripper Junction - Bottom-Right Door",
@@ -161,7 +161,7 @@
           "subarea": "Lower ARC",
           "roomid": 70,
           "roomName": "Arctic Containment",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Top-Right Door",
           "position": "right"
         },
@@ -170,7 +170,7 @@
           "subarea": "Lower ARC",
           "roomid": 73,
           "roomName": "Frostbite Hall / Frostbite Nook",
-          "nodeid": 5,
+          "nodeid": 1,
           "nodeName": "Frostbite Nook - Left Door",
           "position": "left"
         }
@@ -195,7 +195,7 @@
           "subarea": "Lower ARC",
           "roomid": 71,
           "roomName": "Arctic Gauntlet / Arctic Checkpoint",
-          "nodeid": 7,
+          "nodeid": 4,
           "nodeName": "Arctic Checkpoint - Right Door",
           "position": "right"
         }
@@ -220,7 +220,7 @@
           "subarea": "Lower ARC",
           "roomid": 73,
           "roomName": "Frostbite Hall / Frostbite Nook",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Frostbite Hall - Left Door",
           "position": "left"
         }
@@ -245,7 +245,7 @@
           "subarea": "Lower ARC",
           "roomid": 71,
           "roomName": "Arctic Gauntlet / Arctic Checkpoint",
-          "nodeid": 3,
+          "nodeid": 6,
           "nodeName": "Arctic Gauntlet - Bottom-Right Door",
           "position": "right"
         }
@@ -295,7 +295,7 @@
           "subarea": "Lower ARC",
           "roomid": 71,
           "roomName": "Arctic Gauntlet / Arctic Checkpoint",
-          "nodeid": 6,
+          "nodeid": 3,
           "nodeName": "Arctic Checkpoint - Left Door",
           "position": "left"
         }
@@ -311,7 +311,7 @@
           "subarea": "Lower ARC",
           "roomid": 73,
           "roomName": "Frostbite Hall / Frostbite Nook",
-          "nodeid": 3,
+          "nodeid": 4,
           "nodeName": "Frostbite Hall - Top Door",
           "position": "top"
         },
@@ -320,7 +320,7 @@
           "subarea": "Lower ARC",
           "roomid": 73,
           "roomName": "Frostbite Hall / Frostbite Nook",
-          "nodeid": 6,
+          "nodeid": 5,
           "nodeName": "Frostbite Nook - Bottom Door",
           "position": "bottom"
         }
@@ -336,7 +336,7 @@
           "subarea": "Lower ARC",
           "roomid": 73,
           "roomName": "Frostbite Hall / Frostbite Nook",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Frostbite Hall - Right Door",
           "position": "right"
         },
@@ -370,7 +370,7 @@
           "subarea": "Lower ARC",
           "roomid": 74,
           "roomName": "Frozen Tower / Transmutation Trial",
-          "nodeid": 7,
+          "nodeid": 6,
           "nodeName": "Transmutation Trial - Left Tunnel",
           "position": "left"
         }
@@ -384,7 +384,7 @@
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 75,
+          "roomid": 76,
           "roomName": "Zeela Speedway Cache",
           "nodeid": 1,
           "nodeName": "Right Door",
@@ -393,9 +393,9 @@
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 76,
+          "roomid": 75,
           "roomName": "Zeela Speedway / Arctic Ripper Junction",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Zeela Speedway - Left Door",
           "position": "left"
         }
@@ -409,16 +409,16 @@
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 76,
+          "roomid": 75,
           "roomName": "Zeela Speedway / Arctic Ripper Junction",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Zeela Speedway - Right Door",
           "position": "right"
         },
         {
           "area": "ARC",
           "subarea": "Lower ARC",
-          "roomid": 76,
+          "roomid": 75,
           "roomName": "Zeela Speedway / Arctic Ripper Junction",
           "nodeid": 4,
           "nodeName": "Arctic Ripper Junction - Bottom-Left Door",

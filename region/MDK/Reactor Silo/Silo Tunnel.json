@@ -18,29 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Left Tunnel",
-      "nodeType": "door",
-      "nodeSubType": "passage",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 112,
-          "w": 56,
-          "h": 16
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "name": "Right Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -61,14 +38,37 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "Left Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 112,
+          "w": 56,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
     }
   ],
   "strats": [
     {
       "name": "Base",
       "link": [
-        1,
-        2
+        2,
+        1
       ],
       "requires": [
         {
@@ -82,8 +82,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        1
+        1,
+        2
       ],
       "requires": [
         "h_bombThings"
@@ -92,6 +92,9 @@
   ],
   "roomImageFile": "MDK Room 4.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

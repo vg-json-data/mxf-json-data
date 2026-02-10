@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 359,
+  "id": 360,
   "name": "Thornvault",
   "area": "TRO",
   "subarea": "Nettori's Area",
@@ -87,28 +87,6 @@
     },
     {
       "id": 4,
-      "idMinorItemPlm": "0x2D",
-      "name": "Thornvault - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 656,
-          "y": 112,
-          "w": 64,
-          "h": 64
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7D92E",
-      "nodeAltAddress": "0x7D94E",
-      "mapTileX": 37,
-      "mapTileY": 13
-    },
-    {
-      "id": 5,
       "name": "Above Flower Pit",
       "nodeType": "junction",
       "nodeSubType": "visible",
@@ -122,6 +100,28 @@
         }
       ],
       "color": "#0000ff"
+    },
+    {
+      "id": 5,
+      "idMinorItemPlm": "0x2D",
+      "name": "Thornvault - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 720,
+          "y": 128,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7D92E",
+      "nodeAltAddress": "0x7D94E",
+      "mapTileX": 37,
+      "mapTileY": 13
     }
   ],
   "obstacles": [
@@ -141,7 +141,7 @@
       "name": "Come In With Spark",
       "link": [
         1,
-        4
+        5
       ],
       "entranceCondition": {
         "comeInWithSpark": {}
@@ -150,7 +150,7 @@
         "B"
       ],
       "collectsItems": [
-        4
+        5
       ],
       "setsFlags": [
         "f_Thornvault_MissileTank_Collected"
@@ -161,7 +161,7 @@
       "name": "Base",
       "link": [
         1,
-        5
+        4
       ],
       "requires": [
         {
@@ -206,7 +206,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         3
       ],
       "requires": [
@@ -221,8 +221,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        5,
+        4
       ],
       "requires": [
         {
@@ -235,7 +235,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         1
       ],
       "requires": [
@@ -257,7 +257,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         3
       ],
       "requires": [
@@ -271,8 +271,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        4,
+        5
       ],
       "requires": [
         {
@@ -291,7 +291,7 @@
         }
       ],
       "collectsItems": [
-        4
+        5
       ],
       "setsFlags": [
         "f_Thornvault_MissileTank_Collected"
@@ -300,8 +300,8 @@
     {
       "name": "Destroy Kago-X",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "clearsObstacles": [
         "A"
@@ -314,6 +314,8 @@
   ],
   "roomImageFile": "TRO Room 7A500.jpg",
   "roomAddress": "0x7A500",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 11,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

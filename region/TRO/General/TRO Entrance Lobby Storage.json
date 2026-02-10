@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 336,
+  "id": 338,
   "name": "TRO Entrance Lobby Storage",
   "area": "TRO",
   "subarea": "General",
@@ -48,10 +48,10 @@
       "geometry": [
         {
           "shape": "rect",
-          "x": 88,
+          "x": 96,
           "y": 48,
-          "w": 24,
-          "h": 32
+          "w": 16,
+          "h": 16
         }
       ],
       "color": "#37c90e",
@@ -106,6 +106,9 @@
   ],
   "roomImageFile": "TRO Room 78800.jpg",
   "roomAddress": "0x78800",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 4,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

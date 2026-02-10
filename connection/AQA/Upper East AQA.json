@@ -95,7 +95,7 @@
           "subarea": "Upper East AQA",
           "roomid": 40,
           "roomName": "Spark Runway / Spark Shaft",
-          "nodeid": 1,
+          "nodeid": 3,
           "nodeName": "Spark Runway - Left Door",
           "position": "left"
         }
@@ -118,7 +118,7 @@
         {
           "area": "AQA",
           "subarea": "Upper East AQA",
-          "roomid": 30,
+          "roomid": 31,
           "roomName": "AQA-ARC Elevator Access",
           "nodeid": 2,
           "nodeName": "Left Tunnel",
@@ -159,7 +159,7 @@
         {
           "area": "AQA",
           "subarea": "Upper East AQA",
-          "roomid": 30,
+          "roomid": 31,
           "roomName": "AQA-ARC Elevator Access",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -168,7 +168,7 @@
         {
           "area": "AQA",
           "subarea": "Upper East AQA",
-          "roomid": 31,
+          "roomid": 30,
           "roomName": "AQA-ARC Elevator",
           "nodeid": 2,
           "nodeName": "Right Door",
@@ -184,7 +184,7 @@
         {
           "area": "AQA",
           "subarea": "Upper East AQA",
-          "roomid": 30,
+          "roomid": 31,
           "roomName": "AQA-ARC Elevator Access",
           "nodeid": 3,
           "nodeName": "Bottom-Left Door",
@@ -209,7 +209,7 @@
         {
           "area": "AQA",
           "subarea": "Upper East AQA",
-          "roomid": 30,
+          "roomid": 31,
           "roomName": "AQA-ARC Elevator Access",
           "nodeid": 4,
           "nodeName": "Bottom Door",
@@ -234,7 +234,7 @@
         {
           "area": "AQA",
           "subarea": "Upper East AQA",
-          "roomid": 31,
+          "roomid": 30,
           "roomName": "AQA-ARC Elevator",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -320,7 +320,7 @@
           "subarea": "Upper East AQA",
           "roomid": 40,
           "roomName": "Spark Runway / Spark Shaft",
-          "nodeid": 3,
+          "nodeid": 1,
           "nodeName": "Spark Shaft - Top-Left Door",
           "position": "left"
         }
@@ -395,7 +395,7 @@
           "subarea": "Upper East AQA",
           "roomid": 40,
           "roomName": "Spark Runway / Spark Shaft",
-          "nodeid": 4,
+          "nodeid": 2,
           "nodeName": "Spark Shaft - Top-Right Door",
           "position": "right"
         }
@@ -461,7 +461,7 @@
           "subarea": "Upper East AQA",
           "roomid": 40,
           "roomName": "Spark Runway / Spark Shaft",
-          "nodeid": 2,
+          "nodeid": 4,
           "nodeName": "Spark Runway - Right Door",
           "position": "right"
         },

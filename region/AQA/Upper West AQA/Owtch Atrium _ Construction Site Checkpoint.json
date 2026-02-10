@@ -18,52 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Owtch Atrium - Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Owtch Atrium - Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 208,
-          "y": 352,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 3,
       "name": "Construction Site Checkpoint - Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -86,7 +40,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 2,
       "name": "Construction Site Checkpoint - Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -95,6 +49,52 @@
           "shape": "rect",
           "x": 720,
           "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Owtch Atrium - Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 352,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Owtch Atrium - Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 352,
           "w": 48,
           "h": 64
         }
@@ -120,28 +120,28 @@
     {
       "name": "Base",
       "link": [
-        1,
-        2
-      ],
-      "requires": [
-        "h_destroyBombWalls"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        2,
-        1
-      ],
-      "requires": [
-        "h_destroyBombWalls"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
         3,
         4
+      ],
+      "requires": [
+        "h_destroyBombWalls"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": [
+        "h_destroyBombWalls"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
       ],
       "clearsObstacles": [
         "A"
@@ -151,8 +151,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
+        2,
+        1
       ],
       "requires": [
         {
@@ -174,6 +174,8 @@
   ],
   "roomImageFile": "AQA Room 79700.jpg",
   "roomAddress": "0x79700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 5,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

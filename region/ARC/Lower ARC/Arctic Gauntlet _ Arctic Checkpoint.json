@@ -63,7 +63,53 @@
       ]
     },
     {
+      "id": 3,
+      "name": "Arctic Checkpoint - Left Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 1024,
+          "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
       "id": 4,
+      "name": "Arctic Checkpoint - Right Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 1232,
+          "y": 96,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 5,
       "name": "Arctic Gauntlet - Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -123,7 +169,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 6,
       "name": "Arctic Gauntlet - Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -146,53 +192,7 @@
       ]
     },
     {
-      "id": 6,
-      "name": "Arctic Checkpoint - Left Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 1024,
-          "y": 96,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
       "id": 7,
-      "name": "Arctic Checkpoint - Right Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 1232,
-          "y": 96,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 5,
       "idMinorItemPlm": "0x5A",
       "name": "Arctic Gauntlet - Missile Tank",
       "nodeType": "item",
@@ -258,7 +258,7 @@
       "name": "Base",
       "link": [
         1,
-        5
+        7
       ],
       "requires": [
         {
@@ -276,7 +276,7 @@
         }
       ],
       "collectsItems": [
-        5
+        7
       ],
       "setsFlags": [
         "f_ArcticGauntlet_MissileTank_Collected"
@@ -286,7 +286,7 @@
       "name": "Base",
       "link": [
         2,
-        4
+        5
       ],
       "requires": [
         {
@@ -317,8 +317,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
+        5,
+        6
       ],
       "requires": [
         "f_ARCAuxiliaryRoom_Engaged"
@@ -327,7 +327,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        7,
         1
       ],
       "requires": [
@@ -346,7 +346,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        7,
         2
       ],
       "requires": [
@@ -361,8 +361,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        7,
+        5
       ],
       "requires": [
         {
@@ -393,8 +393,8 @@
     {
       "name": "Base",
       "link": [
-        6,
-        7
+        3,
+        4
       ],
       "requires": [
         "Wave"
@@ -403,14 +403,16 @@
     {
       "name": "Base",
       "link": [
-        7,
-        6
+        4,
+        3
       ],
       "requires": []
     }
   ],
   "roomImageFile": "ARC Room 7A100.jpg",
   "roomAddress": "0x7A100",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 10,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

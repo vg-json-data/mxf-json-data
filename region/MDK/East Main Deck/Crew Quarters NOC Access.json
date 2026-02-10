@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 148,
+  "id": 149,
   "name": "Crew Quarters NOC Access",
   "area": "MDK",
   "subarea": "East Main Deck",
@@ -83,6 +83,9 @@
   ],
   "roomImageFile": "MDK Room 15.png",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

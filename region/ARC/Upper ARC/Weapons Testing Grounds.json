@@ -84,7 +84,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Bottom Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Bottom-Right Door",
       "nodeType": "door",
       "nodeSubType": "gray",
@@ -172,6 +172,22 @@
     },
     {
       "id": 4,
+      "name": "Right of Power Bomb Wall",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 528,
+          "y": 104,
+          "w": 64,
+          "h": 48
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "idMinorItemPlm": "0x50",
       "name": "Weapons Testing Grounds - Power Bomb Tank",
       "nodeType": "item",
@@ -191,22 +207,6 @@
       "nodeAltAddress": "0x7DF44",
       "mapTileX": 30,
       "mapTileY": 8
-    },
-    {
-      "id": 5,
-      "name": "Right of Power Bomb Wall",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 528,
-          "y": 104,
-          "w": 64,
-          "h": 48
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -223,7 +223,7 @@
       "quantity": 1,
       "betweenNodes": [
         1,
-        4
+        5
       ],
       "stopSpawn": [
         {
@@ -252,7 +252,7 @@
       "quantity": 3,
       "betweenNodes": [
         1,
-        5
+        4
       ],
       "spawn": [
         "f_TurboTunnel_WTGSAXChaseOver"
@@ -283,7 +283,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        5
       ],
       "requires": []
     },
@@ -291,7 +291,7 @@
       "name": "Base",
       "link": [
         1,
-        5
+        4
       ],
       "requires": [
         {
@@ -304,8 +304,8 @@
     {
       "name": "Leave With Runway",
       "link": [
-        2,
-        2
+        3,
+        3
       ],
       "exitCondition": {
         "leaveWithRunway": {
@@ -319,16 +319,16 @@
     {
       "name": "Base",
       "link": [
-        2,
-        3
+        3,
+        2
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        2,
-        5
+        3,
+        4
       ],
       "requires": [
         {
@@ -348,8 +348,8 @@
     {
       "name": "Come In Shinecharged, Spark to Right of Power Bomb Wall",
       "link": [
-        2,
-        5
+        3,
+        4
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -365,15 +365,15 @@
     {
       "name": "Base",
       "link": [
-        3,
-        2
+        2,
+        3
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        4,
+        5,
         1
       ],
       "requires": []
@@ -381,11 +381,11 @@
     {
       "name": "Base",
       "link": [
-        4,
-        4
+        5,
+        5
       ],
       "collectsItems": [
-        4
+        5
       ],
       "setsFlags": [
         "f_WeaponsTestingGrounds_PowerBombTank_Collected"
@@ -395,8 +395,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        5,
+        4
       ],
       "requires": [
         {
@@ -409,7 +409,7 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         1
       ],
       "requires": [
@@ -423,16 +423,16 @@
     {
       "name": "Base",
       "link": [
-        5,
-        2
+        4,
+        3
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "requires": [
         "f_TurboTunnel_WTGSAXChaseOver"
@@ -444,8 +444,8 @@
     {
       "name": "Break Power Bomb Blocks",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "requires": [
         {
@@ -462,8 +462,8 @@
     {
       "name": "Unlock WTG Doors",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "requires": [
         {
@@ -473,7 +473,9 @@
               "enemyKill": {
                 "enemies": [
                   [
-                    "e2"
+                    "Gerubus",
+                    "Gerubus",
+                    "Gerubus"
                   ]
                 ]
               }
@@ -488,6 +490,7 @@
   ],
   "roomImageFile": "ARC Room 78B00.jpg",
   "roomAddress": "0x78B00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 17,
+  "nextNotableId": 1,
+  "notables": []
 }

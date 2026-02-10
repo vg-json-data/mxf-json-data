@@ -9,7 +9,7 @@
         {
           "area": "MDK",
           "subarea": "Docking Bay",
-          "roomid": 144,
+          "roomid": 145,
           "roomName": "Docking Bay Climb",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -18,9 +18,9 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 149,
+          "roomid": 147,
           "roomName": "Crew Quarters",
-          "nodeid": 6,
+          "nodeid": 5,
           "nodeName": "Bottom-Right Door",
           "position": "right"
         }
@@ -34,7 +34,7 @@
         {
           "area": "MDK",
           "subarea": "Docking Bay",
-          "roomid": 144,
+          "roomid": 145,
           "roomName": "Docking Bay Climb",
           "nodeid": 3,
           "nodeName": "Left-Lower Door",
@@ -59,9 +59,9 @@
         {
           "area": "MDK",
           "subarea": "Docking Bay",
-          "roomid": 144,
+          "roomid": 145,
           "roomName": "Docking Bay Climb",
-          "nodeid": 4,
+          "nodeid": 5,
           "nodeName": "Bottom-Left Door",
           "position": "left"
         },
@@ -109,7 +109,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 154,
+          "roomid": 155,
           "roomName": "Operations Ventilation Maintenance Room",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -134,7 +134,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 155,
+          "roomid": 154,
           "roomName": "Operations Ventilation",
           "nodeid": 1,
           "nodeName": "Top-Left Door",
@@ -143,9 +143,9 @@
         {
           "area": "MDK",
           "subarea": "Upper Main Deck",
-          "roomid": 166,
+          "roomid": 165,
           "roomName": "Habitation Deck",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Top-Right Door",
           "position": "right"
         }
@@ -159,7 +159,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 155,
+          "roomid": 154,
           "roomName": "Operations Ventilation",
           "nodeid": 3,
           "nodeName": "Left Door",
@@ -184,7 +184,7 @@
         {
           "area": "MDK",
           "subarea": "East Main Deck",
-          "roomid": 155,
+          "roomid": 154,
           "roomName": "Operations Ventilation",
           "nodeid": 6,
           "nodeName": "Bottom-Right Door",
@@ -245,7 +245,7 @@
           "subarea": "West Main Deck",
           "roomid": 169,
           "roomName": "Central Nexus / Nexus Storage / Concourse",
-          "nodeid": 9,
+          "nodeid": 1,
           "nodeName": "Concourse - Top-Right Door",
           "position": "right"
         }

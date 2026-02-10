@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 215,
+  "id": 216,
   "name": "L-X-NOC Tube Access",
   "area": "NOC",
   "subarea": "Upper NOC",
@@ -110,6 +110,9 @@
   ],
   "roomImageFile": "NOC Room 79700.jpg",
   "roomAddress": "0x79700",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

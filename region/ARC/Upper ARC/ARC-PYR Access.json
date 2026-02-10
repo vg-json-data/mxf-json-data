@@ -17,27 +17,6 @@
   ],
   "nodes": [
     {
-      "id": 4,
-      "idMinorItemPlm": "0x52",
-      "name": "ARC-PYR Access - Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 160,
-          "y": 104,
-          "w": 40,
-          "h": 40
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7DF76",
-      "mapTileX": 26,
-      "mapTileY": 11
-    },
-    {
       "id": 1,
       "name": "Top-Right Tunnel",
       "nodeType": "door",
@@ -105,6 +84,27 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 4,
+      "idMinorItemPlm": "0x52",
+      "name": "ARC-PYR Access - Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 176,
+          "y": 128,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7DF76",
+      "mapTileX": 26,
+      "mapTileY": 11
     }
   ],
   "strats": [
@@ -204,6 +204,9 @@
   ],
   "roomImageFile": "ARC Room 78F00.jpg",
   "roomAddress": "0x78F00",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 8,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

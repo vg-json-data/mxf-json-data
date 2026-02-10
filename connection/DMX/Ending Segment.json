@@ -36,7 +36,7 @@
           "subarea": "Ending Segment",
           "roomid": 117,
           "roomName": "Hornoad Sewer / Hornoad Shaft / Sewer Bottom",
-          "nodeid": 3,
+          "nodeid": 5,
           "nodeName": "Hornoad Shaft - Top Door",
           "position": "top"
         },
@@ -86,7 +86,7 @@
           "subarea": "Ending Segment",
           "roomid": 117,
           "roomName": "Hornoad Sewer / Hornoad Shaft / Sewer Bottom",
-          "nodeid": 2,
+          "nodeid": 3,
           "nodeName": "Hornoad Sewer - Top Door",
           "position": "top"
         },
@@ -111,7 +111,7 @@
           "subarea": "Ending Segment",
           "roomid": 117,
           "roomName": "Hornoad Sewer / Hornoad Shaft / Sewer Bottom",
-          "nodeid": 5,
+          "nodeid": 2,
           "nodeName": "Sewer Bottom - Left Door",
           "position": "left"
         },

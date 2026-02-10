@@ -141,6 +141,9 @@
   ],
   "roomImageFile": "SRX Room 7A800.jpg",
   "roomAddress": "0x7A800",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

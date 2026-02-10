@@ -64,6 +64,22 @@
     },
     {
       "id": 3,
+      "name": "Left of Orange Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 96,
+          "y": 624,
+          "w": 24,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 4,
       "idMinorItemPlm": "0x53",
       "name": "Crow's Nest - Power Bomb Tank",
       "nodeType": "item",
@@ -82,22 +98,6 @@
       "nodeAddress": "0x7DF84",
       "mapTileX": 29,
       "mapTileY": 12
-    },
-    {
-      "id": 4,
-      "name": "Left of Orange Geron",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 96,
-          "y": 624,
-          "w": 24,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -214,7 +214,7 @@
       "name": "Base",
       "link": [
         1,
-        3
+        4
       ],
       "requires": [
         {
@@ -251,7 +251,7 @@
         "B"
       ],
       "collectsItems": [
-        3
+        4
       ],
       "setsFlags": [
         "f_CrowsNest_PowerBombTank_Collected"
@@ -261,7 +261,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        3
       ],
       "requires": [
         {
@@ -284,7 +284,7 @@
       "name": "Base",
       "link": [
         2,
-        4
+        3
       ],
       "requires": [
         "h_JumpAssist"
@@ -293,7 +293,7 @@
     {
       "name": "Base",
       "link": [
-        3,
+        4,
         1
       ],
       "requires": [
@@ -303,7 +303,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         1
       ],
       "requires": [
@@ -326,7 +326,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         2
       ],
       "requires": []
@@ -334,8 +334,8 @@
     {
       "name": "Kill Orange Geron",
       "link": [
-        4,
-        4
+        3,
+        3
       ],
       "requires": [
         "h_killOrangeGeron"
@@ -350,8 +350,8 @@
     {
       "name": "Destroy both Super Missile Blocks via Diffusion",
       "link": [
-        4,
-        4
+        3,
+        3
       ],
       "requires": [
         {
@@ -369,6 +369,8 @@
   ],
   "roomImageFile": "ARC Room 79000.jpg",
   "roomAddress": "0x79000",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 13,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

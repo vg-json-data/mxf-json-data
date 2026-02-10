@@ -18,29 +18,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Left-Lower Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 136,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -61,6 +38,29 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "Left-Lower Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 136,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
     }
   ],
   "obstacles": [
@@ -71,39 +71,6 @@
     }
   ],
   "strats": [
-    {
-      "name": "Base",
-      "link": [
-        1,
-        2
-      ],
-      "requires": [
-        {
-          "and": [
-            "SpaceJump",
-            {
-              "or": [
-                {
-                  "ammo": {
-                    "type": "Super",
-                    "count": 1
-                  }
-                },
-                {
-                  "ammo": {
-                    "type": "Diffusion",
-                    "count": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "clearsObstacles": [
-        "A"
-      ]
-    },
     {
       "name": "Base",
       "link": [
@@ -136,10 +103,45 @@
       "clearsObstacles": [
         "A"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "SpaceJump",
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
     }
   ],
   "roomImageFile": "AQA Room 78900.jpg",
   "roomAddress": "0x78900",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "enemies": [],
+  "notables": []
 }

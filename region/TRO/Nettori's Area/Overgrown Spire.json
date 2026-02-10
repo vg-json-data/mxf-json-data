@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 357,
+  "id": 358,
   "name": "Overgrown Spire",
   "area": "TRO",
   "subarea": "Nettori's Area",
@@ -64,29 +64,6 @@
     },
     {
       "id": 3,
-      "name": "Left-Lower Door",
-      "nodeType": "door",
-      "nodeSubType": "blue",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 608,
-          "w": 48,
-          "h": 64
-        }
-      ],
-      "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
-      "doorEnvironments": [
-        {
-          "physics": "air"
-        }
-      ]
-    },
-    {
-      "id": 4,
       "name": "Right Tunnel",
       "nodeType": "door",
       "nodeSubType": "passage",
@@ -102,6 +79,29 @@
       "color": "#ffffff",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Left-Lower Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 608,
+          "w": 48,
+          "h": 64
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
@@ -275,7 +275,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        3
       ],
       "requires": [
         "Morph"
@@ -293,7 +293,7 @@
       "name": "Base",
       "link": [
         2,
-        4
+        3
       ],
       "requires": [
         "Morph"
@@ -302,7 +302,7 @@
     {
       "name": "Base",
       "link": [
-        3,
+        4,
         5
       ],
       "requires": []
@@ -310,7 +310,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         2
       ],
       "requires": [
@@ -320,7 +320,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         5
       ],
       "requires": [
@@ -346,7 +346,7 @@
       "name": "Base",
       "link": [
         5,
-        3
+        4
       ],
       "requires": []
     },
@@ -374,6 +374,9 @@
   ],
   "roomImageFile": "TRO Room 7A600.jpg",
   "roomAddress": "0x7A600",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 14,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

@@ -115,6 +115,7 @@
     }
   ],
   "notables": [],
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 3,
+  "nextNotableId": 1,
+  "obstacles": []
 }

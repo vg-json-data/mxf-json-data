@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
-  "id": 67,
+  "id": 66,
   "name": "ARC Data Room",
   "area": "ARC",
   "subarea": "Lower ARC",
@@ -64,6 +64,23 @@
     },
     {
       "id": 3,
+      "name": "Data Station",
+      "nodeType": "utility",
+      "nodeSubType": "data",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 112,
+          "y": 160,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "color": "#3a3ac2",
+      "nodeAddress": "0x0"
+    },
+    {
+      "id": 4,
       "name": "ARC Data Room - ARC Data",
       "nodeType": "item",
       "nodeSubType": "visible",
@@ -80,23 +97,6 @@
       "nodeItem": "IceMissile",
       "nodeAddress": "0x0",
       "note": ""
-    },
-    {
-      "id": 4,
-      "name": "Data Station",
-      "nodeType": "utility",
-      "nodeSubType": "data",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 112,
-          "y": 160,
-          "w": 32,
-          "h": 32
-        }
-      ],
-      "color": "#3a3ac2",
-      "nodeAddress": "0x0"
     }
   ],
   "strats": [
@@ -104,7 +104,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        3
       ],
       "requires": []
     },
@@ -112,14 +112,14 @@
       "name": "Base",
       "link": [
         2,
-        4
+        3
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         1
       ],
       "requires": []
@@ -127,7 +127,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         2
       ],
       "requires": []
@@ -135,11 +135,11 @@
     {
       "name": "Base",
       "link": [
-        4,
-        4
+        3,
+        3
       ],
       "collectsItems": [
-        3
+        4
       ],
       "setsFlags": [
         "f_ARCDataRoom_DataDownloaded"
@@ -149,6 +149,9 @@
   ],
   "roomImageFile": "Misc Room Reusable 3.jpg",
   "roomAddress": "0x0",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

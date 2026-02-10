@@ -20,6 +20,29 @@
   "nodes": [
     {
       "id": 1,
+      "name": "Right-Top Door",
+      "nodeType": "door",
+      "nodeSubType": "blue",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 544,
+          "y": 0,
+          "w": 64,
+          "h": 32
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
+    },
+    {
+      "id": 2,
       "name": "Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -42,7 +65,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
@@ -65,7 +88,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Middle of the Room",
       "nodeType": "junction",
       "nodeSubType": "visible",
@@ -85,5 +108,6 @@
   "strats": [],
   "notables": [],
   "nextStratId": 1,
-  "nextNotableId": 1
+  "nextNotableId": 1,
+  "obstacles": []
 }

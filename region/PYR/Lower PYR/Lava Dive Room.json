@@ -432,6 +432,9 @@
   ],
   "roomImageFile": "PYR Room 7A300.jpg",
   "roomAddress": "0x7A300",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 6,
+  "nextNotableId": 1,
+  "obstacles": [],
+  "enemies": [],
+  "notables": []
 }

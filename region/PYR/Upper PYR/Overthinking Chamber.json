@@ -91,6 +91,38 @@
     },
     {
       "id": 3,
+      "name": "Left of Broken Door",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 904,
+          "y": 128,
+          "w": 24,
+          "h": 24
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 4,
+      "name": "Above Lava",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 816,
+          "y": 392,
+          "w": 24,
+          "h": 24
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 5,
       "idMinorItemPlm": "0x35",
       "name": "Overthinking Chamber - Power Bomb Tank",
       "nodeType": "item",
@@ -109,38 +141,6 @@
       "nodeAddress": "0x7DA7A",
       "mapTileX": 32,
       "mapTileY": 14
-    },
-    {
-      "id": 4,
-      "name": "Left of Broken Door",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 904,
-          "y": 128,
-          "w": 24,
-          "h": 24
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
-      "id": 5,
-      "name": "Above Lava",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 816,
-          "y": 392,
-          "w": 24,
-          "h": 24
-        }
-      ],
-      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -162,7 +162,7 @@
       "quantity": 1,
       "betweenNodes": [
         1,
-        4
+        3
       ],
       "id": "e1"
     },
@@ -171,8 +171,8 @@
       "enemyName": "Sova",
       "quantity": 1,
       "betweenNodes": [
-        3,
-        5
+        5,
+        4
       ],
       "id": "e2"
     }
@@ -183,7 +183,7 @@
       "devNote": "FIXME: Shinepark frames, Check if speedbooster lv1 strat is possible",
       "link": [
         1,
-        3
+        5
       ],
       "requires": [
         {
@@ -225,7 +225,7 @@
       "name": "Base",
       "link": [
         1,
-        4
+        3
       ],
       "requires": [
         {
@@ -239,7 +239,7 @@
                   "enemyKill": {
                     "enemies": [
                       [
-                        "e1"
+                        "Sidehopper"
                       ]
                     ]
                   }
@@ -261,7 +261,7 @@
       "name": "Reach from Left Door to Left of Broken Door Shinecharged",
       "link": [
         1,
-        4
+        3
       ],
       "requires": [
         {
@@ -283,8 +283,8 @@
     {
       "name": "Return to Above Lava via Lava Dive",
       "link": [
-        3,
-        5
+        5,
+        4
       ],
       "requires": [
         {
@@ -323,8 +323,8 @@
     {
       "name": "Return to Above Lava via Speed Booster Blocks",
       "link": [
-        3,
-        5
+        5,
+        4
       ],
       "requires": [
         {
@@ -342,7 +342,7 @@
     {
       "name": "Base",
       "link": [
-        4,
+        3,
         1
       ],
       "requires": [
@@ -372,8 +372,8 @@
     {
       "name": "Destroy Power Bomb Blocks",
       "link": [
-        4,
-        4
+        3,
+        3
       ],
       "requires": [
         {
@@ -392,8 +392,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        5
+        3,
+        4
       ],
       "requires": [
         {
@@ -414,8 +414,8 @@
     {
       "name": "Come In Shinecharged",
       "link": [
-        4,
-        5
+        3,
+        4
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -439,8 +439,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        3
+        4,
+        5
       ],
       "requires": [
         {
@@ -464,7 +464,7 @@
                           "enemyKill": {
                             "enemies": [
                               [
-                                "e2"
+                                "Sova"
                               ]
                             ]
                           }
@@ -505,8 +505,8 @@
     {
       "name": "Come In Shinecharged, Break Speedbooster Blocks",
       "link": [
-        5,
-        3
+        4,
+        5
       ],
       "entranceCondition": {
         "comeInShinecharged": {}
@@ -537,8 +537,8 @@
     {
       "name": "Base",
       "link": [
-        5,
-        4
+        4,
+        3
       ],
       "requires": [
         {
@@ -575,8 +575,8 @@
     {
       "name": "Destroy Power Bomb Block",
       "link": [
-        5,
-        5
+        4,
+        4
       ],
       "requires": [
         "h_usePowerBomb"
@@ -588,6 +588,7 @@
   ],
   "roomImageFile": "PYR Room 79200.jpg",
   "roomAddress": "0x79200",
-  "nextStratId": 1,
-  "nextNotableId": 1
+  "nextStratId": 14,
+  "nextNotableId": 1,
+  "notables": []
 }

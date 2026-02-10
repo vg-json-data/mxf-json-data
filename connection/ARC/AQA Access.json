@@ -9,9 +9,9 @@
         {
           "area": "ARC",
           "subarea": "AQA Access",
-          "roomid": 62,
+          "roomid": 63,
           "roomName": "ARC Etecoon Room Access",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Top-Left Tunnel",
           "position": "left"
         },
@@ -20,7 +20,7 @@
           "subarea": "AQA Access",
           "roomid": 65,
           "roomName": "ARC-AQA Elevator",
-          "nodeid": 1,
+          "nodeid": 2,
           "nodeName": "Top-Right Tunnel",
           "position": "right"
         }
@@ -34,16 +34,16 @@
         {
           "area": "ARC",
           "subarea": "AQA Access",
-          "roomid": 62,
+          "roomid": 63,
           "roomName": "ARC Etecoon Room Access",
-          "nodeid": 2,
+          "nodeid": 1,
           "nodeName": "Top-Right Door",
           "position": "right"
         },
         {
           "area": "ARC",
           "subarea": "AQA Access",
-          "roomid": 63,
+          "roomid": 62,
           "roomName": "ARC Etecoon Room",
           "nodeid": 1,
           "nodeName": "Left Door",
@@ -59,7 +59,7 @@
         {
           "area": "ARC",
           "subarea": "AQA Access",
-          "roomid": 62,
+          "roomid": 63,
           "roomName": "ARC Etecoon Room Access",
           "nodeid": 3,
           "nodeName": "Left-Lower Tunnel",
