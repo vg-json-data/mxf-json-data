@@ -111,7 +111,7 @@
           "physics": "air"
         }
       ],
-      "useImplicitDoorUnlocks": true,
+      "useImplicitDoorUnlocks": false,
       "mapTileMask": [
         [
           0,
@@ -198,7 +198,7 @@
           "physics": "air"
         }
       ],
-      "useImplicitDoorUnlocks": true,
+      "useImplicitDoorUnlocks": false,
       "mapTileMask": [
         [
           0,

@@ -61,7 +61,7 @@
           "physics": "air"
         }
       ],
-      "useImplicitDoorUnlocks": true,
+      "useImplicitDoorUnlocks": false,
       "mapTileMask": [
         [
           0,
