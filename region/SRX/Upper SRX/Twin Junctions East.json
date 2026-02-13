@@ -256,7 +256,12 @@
         1
       ],
       "requires": [
-        "h_killRedGeron"
+        {
+          "and": [
+            "h_killRedGeron",
+            "f_SRXAuxiliaryRoom_Engaged"
+          ]
+        }
       ],
       "clearsObstacles": [
         "A"
@@ -273,8 +278,15 @@
       ],
       "requires": [
         {
-          "obstaclesCleared": [
-            "A"
+          "or": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "not": "f_SRXAuxiliaryRoom_Engaged"
+            }
           ]
         }
       ]
@@ -287,8 +299,15 @@
       ],
       "requires": [
         {
-          "obstaclesCleared": [
-            "A"
+          "or": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "not": "f_SRXAuxiliaryRoom_Engaged"
+            }
           ]
         }
       ]
@@ -300,7 +319,12 @@
         2
       ],
       "requires": [
-        "h_killRedGeron"
+        {
+          "and": [
+            "h_killRedGeron",
+            "f_SRXAuxiliaryRoom_Engaged"
+          ]
+        }
       ],
       "clearsObstacles": [
         "A"
@@ -365,7 +389,5 @@
   "roomImageFile": "SRX Room 79700.jpg",
   "roomAddress": "0x79700",
   "nextStratId": 11,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
