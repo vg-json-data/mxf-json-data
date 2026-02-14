@@ -159,6 +159,11 @@
       "name": "Speedblock Spiral - Speed Blocks",
       "obstacleType": "inanimate",
       "id": "B"
+    },
+    {
+      "name": "Power Bomb Blocks",
+      "obstacleType": "inanimate",
+      "id": "C"
     }
   ],
   "enemies": [
@@ -170,16 +175,7 @@
         3,
         4
       ],
-      "id": "e1",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e1"
     }
   ],
   "strats": [
@@ -284,31 +280,6 @@
     {
       "name": "Base",
       "link": [
-        5,
-        1
-      ],
-      "requires": [
-        {
-          "obstaclesCleared": [
-            "B"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        5,
-        5
-      ],
-      "collectsItems": [
-        5
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
         3,
         4
       ],
@@ -361,11 +332,82 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "h_usePowerBomb",
+            "h_usePowerBomb"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_GerubusGully_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        1
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        5
+      ],
+      "collectsItems": [
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "h_JumpAssist",
+            {
+              "or": [
+                "canTrivialMidAirMorph",
+                "canIBJ",
+                "SuperJump"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "roomImageFile": "ARC Room 78E00.jpg",
   "roomAddress": "0x78E00",
-  "nextStratId": 10,
-  "nextNotableId": 1,
-  "notables": []
+  "nextStratId": 12,
+  "nextNotableId": 1
 }

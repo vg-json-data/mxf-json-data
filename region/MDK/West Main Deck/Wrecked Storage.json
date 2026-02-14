@@ -108,12 +108,7 @@
         3
       ],
       "requires": [
-        {
-          "ammo": {
-            "type": "PowerBomb",
-            "count": 1
-          }
-        }
+        "h_usePowerBomb"
       ],
       "collectsItems": [
         3
@@ -134,8 +129,5 @@
   "roomImageFile": "MDK Room 30.png",
   "roomAddress": "0x0",
   "nextStratId": 5,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
