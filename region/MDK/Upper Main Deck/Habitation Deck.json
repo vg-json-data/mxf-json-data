@@ -144,6 +144,14 @@
     {
       "name": "Base",
       "link": [
+        1,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
         2,
         1
       ],
@@ -202,10 +210,18 @@
     {
       "name": "Base",
       "link": [
-        1,
-        2
+        2,
+        5
       ],
-      "requires": []
+      "requires": [
+        "h_bombThings"
+      ],
+      "collectsItems": [
+        5
+      ],
+      "setsFlags": [
+        "f_HabitationDeck_EnergyTankRight_Collected"
+      ]
     },
     {
       "name": "Come In With Spark",
@@ -271,8 +287,6 @@
   ],
   "roomImageFile": "MDK Room 27.png",
   "roomAddress": "0x0",
-  "nextStratId": 9,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextStratId": 10,
+  "nextNotableId": 1
 }
