@@ -2288,6 +2288,33 @@
               "devNote": "",
               "extensionTechs": [
                 {
+                  "id": 186,
+                  "name": "canHorizontalSparkIntoTemporaryBlue",
+                  "techRequires": [
+                    "canHorizontalShinespark"
+                  ],
+                  "otherRequires": [],
+                  "note": [
+                    "The ability to shinespark horizontally towards a slope and regain temporary blue. New feature introduced in X-Fusion, ported over from the GBA titles."
+                  ],
+                  "devNote": "",
+                  "extensionTechs": [
+                    {
+                      "id": 187,
+                      "name": "canConsecutiveHorizontalSparkIntoTemporaryBlue",
+                      "techRequires": [
+                        "canHorizontalShinespark"
+                      ],
+                      "otherRequires": [],
+                      "note": [
+                        "The ability to consecutively shinespark horizontally towards a slope several times, and maintain temporary blue. Though complex, this is expected for Zazabi Speedway."
+                      ],
+                      "devNote": "",
+                      "extensionTechs": []
+                    }
+                  ]
+                },
+                {
                   "id": 143,
                   "name": "canMidairShinespark",
                   "techRequires": [
@@ -3023,5 +3050,5 @@
       ]
     }
   ],
-  "nextTechId": 186
+  "nextTechId": 188
 }
