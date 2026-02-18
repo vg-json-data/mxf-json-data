@@ -155,38 +155,6 @@
       ]
     },
     {
-      "id": 7,
-      "name": "Right of Red Geron",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 72,
-          "y": 608,
-          "w": 32,
-          "h": 64
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
-      "id": 8,
-      "name": "Transmutation Trial Ledge",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 288,
-          "y": 936,
-          "w": 32,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
       "id": 9,
       "idMinorItemPlm": "0x57",
       "name": "Frozen Tower - Missile Tank",
@@ -227,6 +195,38 @@
       "nodeAddress": "0x7E030",
       "mapTileX": 33,
       "mapTileY": 20
+    },
+    {
+      "id": 7,
+      "name": "Right of Red Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 72,
+          "y": 608,
+          "w": 32,
+          "h": 64
+        }
+      ],
+      "color": "#0000ff"
+    },
+    {
+      "id": 8,
+      "name": "Transmutation Trial Ledge",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 288,
+          "y": 936,
+          "w": 32,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -245,16 +245,7 @@
         3,
         4
       ],
-      "id": "e1",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e1"
     }
   ],
   "strats": [
@@ -442,18 +433,6 @@
     {
       "name": "Base",
       "link": [
-        9,
-        1
-      ],
-      "requires": [
-        {
-          "coldFrames": 1
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
         6,
         8
       ],
@@ -502,42 +481,18 @@
     {
       "name": "Base",
       "link": [
-        10,
-        6
-      ],
-      "requires": [
-        {
-          "and": [
-            "Morph",
-            {
-              "coldFrames": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        8,
-        6
-      ],
-      "requires": [
-        "Morph"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        8,
+        6,
         10
       ],
       "requires": [
         {
-          "and": [
-            "canTrickyUseFrozenEnemies",
+          "or": [
+            "SpaceJump",
             {
-              "coldFrames": 1
+              "and": [
+                "canLongIBJ",
+                "canBombAboveIBJ"
+              ]
             }
           ]
         }
@@ -620,11 +575,72 @@
       "setsFlags": [
         "f_FrozenTower_RedGeronDestroyed"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        6
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        10
+      ],
+      "requires": [
+        {
+          "and": [
+            "canTrickyUseFrozenEnemies",
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        10
+      ],
+      "setsFlags": [
+        "f_TransmutationTrial_MissileTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        1
+      ],
+      "requires": [
+        {
+          "coldFrames": 1
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        10,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "coldFrames": 1
+            }
+          ]
+        }
+      ]
     }
   ],
   "roomImageFile": "ARC Room 79A00.jpg",
   "roomAddress": "0x79A00",
-  "nextStratId": 17,
-  "nextNotableId": 1,
-  "notables": []
+  "nextStratId": 18,
+  "nextNotableId": 1
 }

@@ -263,7 +263,17 @@
       "requires": [
         {
           "and": [
-            "canTrivialMidAirMorph",
+            {
+              "or": [
+                {
+                  "and": [
+                    "canTrivialMidAirMorph",
+                    "canIBJ"
+                  ]
+                },
+                "SuperJump"
+              ]
+            },
             {
               "obstaclesCleared": [
                 "A"
@@ -313,6 +323,24 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        "Wave"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
     },
     {
       "name": "Base",
@@ -389,30 +417,10 @@
           ]
         }
       ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        4
-      ],
-      "requires": [
-        "Wave"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
-        3
-      ],
-      "requires": []
     }
   ],
   "roomImageFile": "ARC Room 7A100.jpg",
   "roomAddress": "0x7A100",
   "nextStratId": 10,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

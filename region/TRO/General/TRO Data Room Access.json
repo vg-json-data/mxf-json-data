@@ -156,19 +156,30 @@
     },
     {
       "name": "Base",
+      "note": "Alternate route involves jumping through the top-left ceiling near the Bottom-Right Door and Trivial Mid-Air Morphing into a small one-way tunnel.",
       "link": [
         3,
         2
       ],
       "requires": [
         {
-          "and": [
+          "or": [
             {
-              "obstaclesCleared": [
-                "A"
+              "and": [
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                },
+                "Morph"
               ]
             },
-            "Morph"
+            {
+              "and": [
+                "h_JumpAssist",
+                "canTrivialMidAirMorph"
+              ]
+            }
           ]
         }
       ]
@@ -177,7 +188,5 @@
   "roomImageFile": "TRO Room 79500.jpg",
   "roomAddress": "0x79500",
   "nextStratId": 6,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

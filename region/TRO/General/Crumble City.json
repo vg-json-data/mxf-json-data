@@ -86,22 +86,6 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Bottom of the Room",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 1016,
-          "y": 328,
-          "w": 72,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
       "id": 5,
       "idMinorItemPlm": "0x25",
       "name": "Crumble City [Top-Left] - Missile Tank",
@@ -142,6 +126,22 @@
       "nodeAddress": "0x7D7EA",
       "mapTileX": 25,
       "mapTileY": 16
+    },
+    {
+      "id": 4,
+      "name": "Bottom of the Room",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 1016,
+          "y": 328,
+          "w": 72,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "strats": [
@@ -163,30 +163,6 @@
         2
       ],
       "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        6
-      ],
-      "requires": [
-        {
-          "or": [
-            "SpaceJump",
-            {
-              "and": [
-                {
-                  "and": [
-                    "canCrumbleJump",
-                    "canWalljump"
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "name": "Base",
@@ -221,18 +197,26 @@
     {
       "name": "Base",
       "link": [
-        6,
-        4
+        3,
+        6
       ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        5,
-        4
-      ],
-      "requires": []
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            {
+              "and": [
+                {
+                  "and": [
+                    "canCrumbleJump",
+                    "canWalljump"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Base",
@@ -243,6 +227,14 @@
       "requires": [
         "h_shinechargeMaxRunway"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
     },
     {
       "name": "Spark up the room",
@@ -289,7 +281,40 @@
       "name": "Base",
       "link": [
         4,
-        2
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_shinechargeMaxRunway",
+            {
+              "shinespark": {
+                "frames": 14
+              }
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_CrumbleCity_PowerBombTank_Collected"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        4
       ],
       "requires": []
     },
@@ -300,9 +325,6 @@
   ],
   "roomImageFile": "TRO Room 78E00.jpg",
   "roomAddress": "0x78E00",
-  "nextStratId": 12,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextStratId": 13,
+  "nextNotableId": 1
 }
