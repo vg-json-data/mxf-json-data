@@ -395,6 +395,16 @@
     {
       "name": "Base",
       "link": [
+        3,
+        5
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
         4,
         3
       ],
@@ -423,6 +433,6 @@
   ],
   "roomImageFile": "SRX Room 79400.jpg",
   "roomAddress": "0x79400",
-  "nextStratId": 15,
+  "nextStratId": 16,
   "nextNotableId": 1
 }

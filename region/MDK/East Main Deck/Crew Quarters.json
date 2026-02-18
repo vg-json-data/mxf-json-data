@@ -23,6 +23,7 @@
       "nodeSubType": "gray",
       "nodeAddress": "0x0",
       "doorOrientation": "right",
+      "useImplicitDoorUnlocks": false,
       "geometry": [
         {
           "shape": "rect",
@@ -235,14 +236,6 @@
     {
       "name": "Base",
       "link": [
-        3,
-        4
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
         2,
         4
       ],
@@ -251,8 +244,8 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
+        3,
+        4
       ],
       "requires": []
     },
@@ -268,19 +261,17 @@
       "name": "Base",
       "link": [
         4,
-        5
+        3
       ],
       "requires": []
     },
     {
       "name": "Base",
       "link": [
-        6,
+        4,
         5
       ],
-      "requires": [
-        "h_bombThings"
-      ]
+      "requires": []
     },
     {
       "name": "Base",
@@ -295,6 +286,16 @@
       "link": [
         5,
         6
+      ],
+      "requires": [
+        "h_bombThings"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        5
       ],
       "requires": [
         "h_bombThings"
@@ -326,8 +327,5 @@
   "roomImageFile": "MDK Room 18.png",
   "roomAddress": "0x0",
   "nextStratId": 12,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

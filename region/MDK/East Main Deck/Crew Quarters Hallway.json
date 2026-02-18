@@ -23,6 +23,7 @@
       "nodeSubType": "gray",
       "nodeAddress": "0x0",
       "doorOrientation": "left",
+      "useImplicitDoorUnlocks": false,
       "geometry": [
         {
           "shape": "rect",
@@ -152,16 +153,7 @@
           ]
         }
       ],
-      "id": "e1",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e1"
     },
     {
       "groupName": "Medium Yameba",
@@ -181,16 +173,7 @@
           ]
         }
       ],
-      "id": "e2",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e2"
     }
   ],
   "strats": [
@@ -429,7 +412,5 @@
   "roomImageFile": "MDK Room 19.png",
   "roomAddress": "0x0",
   "nextStratId": 5,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "notables": []
+  "nextNotableId": 1
 }
