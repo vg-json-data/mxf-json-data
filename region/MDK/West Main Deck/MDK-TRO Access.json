@@ -118,6 +118,14 @@
                   ]
                 }
               ]
+            },
+            {
+              "resourceAtMost": [
+                {
+                  "type": "PowerBomb",
+                  "count": 0
+                }
+              ]
             }
           ]
         }
@@ -139,6 +147,14 @@
                   "obstaclesCleared": [
                     "A"
                   ]
+                }
+              ]
+            },
+            {
+              "resourceAtMost": [
+                {
+                  "type": "PowerBomb",
+                  "count": 0
                 }
               ]
             }
@@ -178,7 +194,5 @@
   "roomImageFile": "MDK Room 14.png",
   "roomAddress": "0x0",
   "nextStratId": 5,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
