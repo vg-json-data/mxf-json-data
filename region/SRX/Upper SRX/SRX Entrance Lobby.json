@@ -289,6 +289,20 @@
     {
       "name": "Base",
       "link": [
+        1,
+        6
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_SRXEntranceLobby_MissileTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
         2,
         1
       ],
@@ -397,10 +411,18 @@
       "requires": [
         "h_bombThings"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": []
     }
   ],
   "roomImageFile": "SRX Room 79400.jpg",
   "roomAddress": "0x79400",
-  "nextStratId": 13,
+  "nextStratId": 15,
   "nextNotableId": 1
 }
