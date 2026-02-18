@@ -157,14 +157,9 @@
   ],
   "obstacles": [
     {
-      "name": "Data Room Checkpoint - Gate",
-      "obstacleType": "inanimate",
-      "id": "A"
-    },
-    {
       "name": "Twin Junctions West - Red Geron",
       "obstacleType": "inanimate",
-      "id": "B"
+      "id": "A"
     }
   ],
   "strats": [
@@ -218,16 +213,6 @@
     {
       "name": "Base",
       "link": [
-        6,
-        3
-      ],
-      "requires": [
-        "Morph"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
         3,
         1
       ],
@@ -238,16 +223,6 @@
             "f_TwinJunctionsWest_RedGeronDestroyed"
           ]
         }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        3,
-        6
-      ],
-      "requires": [
-        "Morph"
       ]
     },
     {
@@ -269,6 +244,16 @@
     {
       "name": "Base",
       "link": [
+        3,
+        6
+      ],
+      "requires": [
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
         4,
         5
       ],
@@ -285,17 +270,31 @@
       ],
       "requires": [
         {
-          "obstaclesCleared": [
-            "A"
+          "or": [
+            "Wave",
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
           ]
         }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        3
+      ],
+      "requires": [
+        "Morph"
       ]
     }
   ],
   "roomImageFile": "SRX Room 79C00.jpg",
   "roomAddress": "0x79C00",
   "nextStratId": 11,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
