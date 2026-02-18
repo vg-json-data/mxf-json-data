@@ -156,6 +156,7 @@
               "or": [
                 {
                   "and": [
+                    "canTrivialMidAirMorph",
                     {
                       "or": [
                         {
@@ -175,8 +176,15 @@
                           ]
                         }
                       ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "coldFrames": 1
                     },
-                    "canTrivialMidAirMorph"
+                    "canIBJ"
                   ]
                 },
                 {
@@ -190,7 +198,6 @@
                 }
               ]
             },
-            "canIBJ",
             {
               "obstaclesCleared": [
                 "A"
@@ -227,7 +234,5 @@
   "roomImageFile": "ARC Room 79700.jpg",
   "roomAddress": "0x79700",
   "nextStratId": 6,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
