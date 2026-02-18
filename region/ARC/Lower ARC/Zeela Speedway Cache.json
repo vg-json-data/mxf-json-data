@@ -102,7 +102,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             {
               "shinespark": {
@@ -129,7 +129,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             {
               "shinespark": {
@@ -162,7 +162,7 @@
                         {
                           "and": [
                             {
-                              "coldFrames": 1
+                              "coldFrames": 99999
                             },
                             "SuperJump"
                           ]
@@ -170,7 +170,7 @@
                         {
                           "and": [
                             {
-                              "coldFrames": 1
+                              "coldFrames": 99999
                             },
                             "SpaceJump"
                           ]
@@ -182,7 +182,7 @@
                 {
                   "and": [
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     },
                     "canIBJ"
                   ]
@@ -190,7 +190,7 @@
                 {
                   "and": [
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     },
                     "canMidAirMorph",
                     "h_JumpAssist"
@@ -224,7 +224,7 @@
           "and": [
             "Morph",
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }

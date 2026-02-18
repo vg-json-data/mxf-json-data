@@ -196,7 +196,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -208,7 +208,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -220,7 +220,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -232,7 +232,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -293,7 +293,7 @@
                           "and": [
                             "SpaceJump",
                             {
-                              "coldFrames": 1
+                              "coldFrames": 99999
                             }
                           ]
                         },
@@ -301,7 +301,7 @@
                           "and": [
                             "SuperJump",
                             {
-                              "coldFrames": 1
+                              "coldFrames": 99999
                             }
                           ]
                         },
@@ -309,7 +309,7 @@
                           "and": [
                             "canWalljump",
                             {
-                              "coldFrames": 1
+                              "coldFrames": 99999
                             }
                           ]
                         },
@@ -317,7 +317,7 @@
                           "and": [
                             "canCrouchJump",
                             {
-                              "coldFrames": 1
+                              "coldFrames": 99999
                             }
                           ]
                         },
@@ -325,7 +325,7 @@
                           "and": [
                             "canIBJ",
                             {
-                              "coldFrames": 1
+                              "coldFrames": 99999
                             }
                           ]
                         }
@@ -347,7 +347,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     }

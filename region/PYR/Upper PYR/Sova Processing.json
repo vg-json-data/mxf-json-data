@@ -184,7 +184,7 @@
                   "and": [
                     "ScrewAttack",
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 },
@@ -199,7 +199,7 @@
                       }
                     },
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 }
@@ -208,7 +208,7 @@
             "SpaceJump",
             "canTrivialMidAirMorph",
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             }
           ]
         }
@@ -227,7 +227,7 @@
               "and": [
                 "Gravity",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             },
@@ -256,16 +256,16 @@
               "and": [
                 "Gravity",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 },
                 {
-                  "lavaFrames": 1
+                  "lavaFrames": 99999
                 },
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 },
                 {
-                  "lavaFrames": 1
+                  "lavaFrames": 99999
                 }
               ]
             },
@@ -273,10 +273,10 @@
               "and": [
                 "canSuitlessLavaDive",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 },
                 {
-                  "lavaFrames": 1
+                  "lavaFrames": 99999
                 }
               ]
             }
@@ -312,7 +312,7 @@
                   "and": [
                     "canSuitlessLavaDive",
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 },
@@ -320,7 +320,7 @@
                   "and": [
                     "Gravity",
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 }
@@ -348,7 +348,7 @@
                       "and": [
                         "ScrewAttack",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     },
@@ -356,7 +356,7 @@
                       "and": [
                         "h_bombThings",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     }
@@ -373,7 +373,7 @@
                       "and": [
                         "ScrewAttack",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     },
@@ -381,7 +381,7 @@
                       "and": [
                         "h_bombThings",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     }
@@ -411,10 +411,10 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         },
                         {
-                          "lavaFrames": 1
+                          "lavaFrames": 99999
                         }
                       ]
                     },
@@ -422,10 +422,10 @@
                       "and": [
                         "canConsecutiveAlternatingWallJump",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         },
                         {
-                          "lavaFrames": 1
+                          "lavaFrames": 99999
                         }
                       ]
                     },
@@ -433,10 +433,10 @@
                       "and": [
                         "canIBJ",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         },
                         {
-                          "lavaFrames": 1
+                          "lavaFrames": 99999
                         }
                       ]
                     }
@@ -446,7 +446,7 @@
                   "and": [
                     "canWalljump",
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 }
@@ -461,10 +461,10 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         },
                         {
-                          "lavaFrames": 1
+                          "lavaFrames": 99999
                         }
                       ]
                     },
@@ -472,10 +472,10 @@
                       "and": [
                         "canConsecutiveAlternatingWallJump",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         },
                         {
-                          "lavaFrames": 1
+                          "lavaFrames": 99999
                         }
                       ]
                     },
@@ -483,10 +483,10 @@
                       "and": [
                         "canSuitlessUnderwaterIBJ",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         },
                         {
-                          "lavaFrames": 1
+                          "lavaFrames": 99999
                         }
                       ]
                     }
@@ -496,7 +496,7 @@
                   "and": [
                     "canWalljump",
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 }
@@ -524,7 +524,7 @@
                       "and": [
                         "ScrewAttack",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     },
@@ -532,7 +532,7 @@
                       "and": [
                         "h_bombThings",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     }
@@ -549,7 +549,7 @@
                       "and": [
                         "ScrewAttack",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     },
@@ -557,7 +557,7 @@
                       "and": [
                         "h_bombThings",
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     }

@@ -140,7 +140,7 @@
               "and": [
                 "SpaceJump",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             },
@@ -158,7 +158,7 @@
                           ]
                         },
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     },
@@ -197,7 +197,7 @@
               "and": [
                 "SpaceJump",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             },
@@ -215,7 +215,7 @@
                           ]
                         },
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         }
                       ]
                     },

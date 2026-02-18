@@ -272,7 +272,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             "h_usePowerBomb"
           ]
@@ -297,7 +297,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -323,7 +323,7 @@
                   "and": [
                     "SpaceJump",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -331,7 +331,7 @@
                   "and": [
                     "canIBJ",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -339,7 +339,7 @@
                   "and": [
                     "canSpringBallJumpMidAir",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -351,7 +351,7 @@
                     },
                     "SuperJump",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 }
@@ -384,7 +384,7 @@
               }
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -400,7 +400,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             "h_usePowerBomb"
           ]
@@ -418,7 +418,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -438,7 +438,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -450,7 +450,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -462,7 +462,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -525,7 +525,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -573,7 +573,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -587,7 +587,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -607,7 +607,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }

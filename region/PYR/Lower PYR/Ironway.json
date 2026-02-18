@@ -151,7 +151,7 @@
             },
             "h_shinechargeMaxRunway",
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             }
           ]
         }
@@ -211,7 +211,7 @@
             },
             "Morph",
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             }
           ]
         }
@@ -296,7 +296,7 @@
                   "and": [
                     "Bombs",
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 },
@@ -309,7 +309,7 @@
                       }
                     },
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 }

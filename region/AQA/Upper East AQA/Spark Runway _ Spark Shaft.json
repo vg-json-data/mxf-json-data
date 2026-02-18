@@ -214,7 +214,7 @@
                   "aqaWaterLevel": 0
                 },
                 {
-                  "electricityFrames": 1
+                  "electricityFrames": 99999
                 }
               ]
             },
@@ -261,7 +261,7 @@
                               "and": [
                                 "canLongIBJ",
                                 {
-                                  "electricityFrames": 1
+                                  "electricityFrames": 99999
                                 }
                               ]
                             },
@@ -269,7 +269,7 @@
                               "and": [
                                 "SpaceJump",
                                 {
-                                  "electricityFrames": 1
+                                  "electricityFrames": 99999
                                 }
                               ]
                             }

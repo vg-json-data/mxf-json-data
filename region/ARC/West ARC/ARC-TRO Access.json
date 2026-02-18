@@ -75,7 +75,7 @@
           "and": [
             "h_usePowerBomb",
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -92,7 +92,7 @@
           "and": [
             "h_usePowerBomb",
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }

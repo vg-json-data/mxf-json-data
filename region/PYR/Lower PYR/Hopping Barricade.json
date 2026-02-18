@@ -265,7 +265,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -277,7 +277,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -289,7 +289,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -301,7 +301,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -318,7 +318,7 @@
               "and": [
                 "SpaceJump",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             },
@@ -326,7 +326,7 @@
               "and": [
                 "SpikeBreaker",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             }
@@ -342,7 +342,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -359,7 +359,7 @@
               "and": [
                 "SpaceJump",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             },
@@ -367,7 +367,7 @@
               "and": [
                 "SpikeBreaker",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             }

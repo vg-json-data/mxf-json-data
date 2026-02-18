@@ -190,7 +190,7 @@
           "and": [
             "h_shinechargeMaxRunway",
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             },
             {
               "obstaclesCleared": [
@@ -296,18 +296,18 @@
                   "and": [
                     "Gravity",
                     {
-                      "lavaFrames": 1
+                      "lavaFrames": 99999
                     },
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 },
                 {
-                  "lavaFrames": 1
+                  "lavaFrames": 99999
                 },
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             },
@@ -330,10 +330,10 @@
         {
           "and": [
             {
-              "lavaFrames": 1
+              "lavaFrames": 99999
             },
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             }
           ]
         }
@@ -352,18 +352,18 @@
               "and": [
                 "h_shinechargeMaxRunway",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 },
                 {
-                  "lavaFrames": 1
+                  "lavaFrames": 99999
                 }
               ]
             },
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             },
             {
-              "lavaFrames": 1
+              "lavaFrames": 99999
             }
           ]
         }
@@ -379,7 +379,7 @@
         {
           "and": [
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             },
             "h_usePowerBomb"
           ]
@@ -450,10 +450,10 @@
                 "Gravity",
                 "SuperJump",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 },
                 {
-                  "lavaFrames": 1
+                  "lavaFrames": 99999
                 },
                 "Morph",
                 {
@@ -470,10 +470,10 @@
                           }
                         },
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         },
                         {
-                          "lavaFrames": 1
+                          "lavaFrames": 99999
                         }
                       ]
                     },
@@ -487,10 +487,10 @@
                           }
                         },
                         {
-                          "heatFrames": 1
+                          "heatFrames": 99999
                         },
                         {
-                          "lavaFrames": 1
+                          "lavaFrames": 99999
                         }
                       ]
                     }
@@ -520,12 +520,10 @@
               }
             },
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             },
             {
-              "lavaFramesWithEnergyDrops": {
-                "frames": 1
-              }
+              "lavaFrames": 99999
             }
           ]
         }
@@ -561,7 +559,7 @@
             },
             "canTrivialMidAirMorph",
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             },
             {
               "obstaclesCleared": [

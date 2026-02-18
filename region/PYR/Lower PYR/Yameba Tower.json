@@ -95,7 +95,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -107,7 +107,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -126,7 +126,7 @@
                   "metroidFrames": 1
                 },
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             }
@@ -147,7 +147,7 @@
               "metroidFrames": 1
             },
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             }
           ]
         }

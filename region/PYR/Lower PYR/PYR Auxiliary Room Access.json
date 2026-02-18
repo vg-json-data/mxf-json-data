@@ -180,7 +180,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -192,7 +192,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -207,7 +207,7 @@
           "and": [
             "ScrewAttack",
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             }
           ]
         }
@@ -224,7 +224,7 @@
           "and": [
             "ScrewAttack",
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             }
           ]
         }
@@ -246,7 +246,7 @@
                   "and": [
                     "canTrickyDodgeEnemies",
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 },
@@ -265,7 +265,7 @@
                       }
                     },
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 }
@@ -286,7 +286,7 @@
           "and": [
             "h_JumpAssist",
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             }
           ]
         }
@@ -300,7 +300,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -317,7 +317,7 @@
               "and": [
                 "canTrickyDodgeEnemies",
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             },
@@ -336,7 +336,7 @@
                   }
                 },
                 {
-                  "heatFrames": 1
+                  "heatFrames": 99999
                 }
               ]
             }

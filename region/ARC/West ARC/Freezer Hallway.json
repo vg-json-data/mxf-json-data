@@ -108,7 +108,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -129,7 +129,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -168,7 +168,7 @@
           "and": [
             "h_shinechargeMaxRunway",
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }

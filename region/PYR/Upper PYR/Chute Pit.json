@@ -101,10 +101,10 @@
                       }
                     },
                     {
-                      "lavaFrames": 1
+                      "lavaFrames": 99999
                     },
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 },
@@ -118,10 +118,10 @@
                       }
                     },
                     {
-                      "lavaFrames": 1
+                      "lavaFrames": 99999
                     },
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 }
@@ -166,10 +166,10 @@
                       }
                     },
                     {
-                      "lavaFrames": 1
+                      "lavaFrames": 99999
                     },
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 },
@@ -183,20 +183,20 @@
                       }
                     },
                     {
-                      "lavaFrames": 1
+                      "lavaFrames": 99999
                     },
                     {
-                      "heatFrames": 1
+                      "heatFrames": 99999
                     }
                   ]
                 }
               ]
             },
             {
-              "lavaFrames": 1
+              "lavaFrames": 99999
             },
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             }
           ]
         }

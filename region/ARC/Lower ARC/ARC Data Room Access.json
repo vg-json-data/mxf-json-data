@@ -112,7 +112,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             {
               "obstaclesCleared": [
@@ -172,7 +172,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -188,7 +188,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             {
               "obstaclesCleared": [
@@ -245,7 +245,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }

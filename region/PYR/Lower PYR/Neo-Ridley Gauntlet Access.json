@@ -118,7 +118,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -130,7 +130,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -142,7 +142,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -154,7 +154,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     },
@@ -168,7 +168,7 @@
         {
           "and": [
             {
-              "heatFrames": 1
+              "heatFrames": 99999
             },
             {
               "or": [
@@ -195,7 +195,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 1
+          "heatFrames": 99999
         }
       ]
     }

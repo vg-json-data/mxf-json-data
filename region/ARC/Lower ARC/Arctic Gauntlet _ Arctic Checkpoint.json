@@ -280,7 +280,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -318,7 +318,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -379,7 +379,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ],
       "resetsObstacles": [
@@ -412,7 +412,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }

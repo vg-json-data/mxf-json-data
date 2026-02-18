@@ -259,7 +259,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             "Morph"
           ]
@@ -282,7 +282,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             "SpaceJump"
           ]
@@ -315,7 +315,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             {
               "obstaclesCleared": [
@@ -336,7 +336,7 @@
         {
           "and": [
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             {
               "or": [
@@ -376,7 +376,7 @@
             {
               "and": [
                 {
-                  "coldFrames": 1
+                  "coldFrames": 99999
                 },
                 "SpaceJump"
               ]
@@ -384,7 +384,7 @@
             {
               "and": [
                 {
-                  "coldFrames": 1
+                  "coldFrames": 99999
                 },
                 "canTrivialUseFrozenEnemies",
                 {
@@ -399,7 +399,7 @@
             {
               "and": [
                 {
-                  "coldFrames": 1
+                  "coldFrames": 99999
                 },
                 {
                   "enemyKill": {
@@ -426,7 +426,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -446,7 +446,7 @@
                   "and": [
                     "SuperJump",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -460,7 +460,7 @@
                     },
                     "canWalljump",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -468,7 +468,7 @@
                   "and": [
                     "canLongIBJ",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 }
@@ -521,7 +521,7 @@
             },
             "h_JumpAssist",
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -542,7 +542,7 @@
               ]
             },
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -556,7 +556,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -597,7 +597,7 @@
           "and": [
             "canTrickyUseFrozenEnemies",
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -617,7 +617,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -632,7 +632,7 @@
           "and": [
             "Morph",
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }

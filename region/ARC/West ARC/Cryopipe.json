@@ -132,7 +132,7 @@
                   "and": [
                     "canConsecutiveAlternatingWallJump",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -140,7 +140,7 @@
                   "and": [
                     "canLongIBJ",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -148,7 +148,7 @@
                   "and": [
                     "SpaceJump",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 }
@@ -159,7 +159,7 @@
                 "Morph",
                 "f_ARCAuxiliaryRoom_Engaged",
                 {
-                  "coldFrames": 1
+                  "coldFrames": 99999
                 }
               ]
             }
@@ -178,7 +178,7 @@
           "and": [
             "Morph",
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             },
             {
               "or": [
@@ -186,7 +186,7 @@
                   "and": [
                     "Grapple",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -194,7 +194,7 @@
                   "and": [
                     "SpaceJump",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -207,7 +207,7 @@
                       ]
                     },
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 }
@@ -225,7 +225,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -237,7 +237,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -252,7 +252,7 @@
           "and": [
             "Morph",
             {
-              "coldFrames": 1
+              "coldFrames": 99999
             }
           ]
         }
@@ -271,7 +271,7 @@
               "and": [
                 "h_bombThings",
                 {
-                  "coldFrames": 1
+                  "coldFrames": 99999
                 }
               ]
             },
@@ -280,7 +280,7 @@
                 "Morph",
                 "SuperJump",
                 {
-                  "coldFrames": 1
+                  "coldFrames": 99999
                 }
               ]
             }
@@ -301,7 +301,7 @@
               "and": [
                 "h_bombThings",
                 {
-                  "coldFrames": 1
+                  "coldFrames": 99999
                 }
               ]
             },
@@ -310,7 +310,7 @@
                 "Morph",
                 "SuperJump",
                 {
-                  "coldFrames": 1
+                  "coldFrames": 99999
                 }
               ]
             }
@@ -326,7 +326,7 @@
       ],
       "requires": [
         {
-          "coldFrames": 1
+          "coldFrames": 99999
         }
       ]
     },
@@ -345,7 +345,7 @@
                   "and": [
                     "canConsecutiveAlternatingWallJump",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -353,7 +353,7 @@
                   "and": [
                     "canLongIBJ",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 },
@@ -361,7 +361,7 @@
                   "and": [
                     "SpaceJump",
                     {
-                      "coldFrames": 1
+                      "coldFrames": 99999
                     }
                   ]
                 }
@@ -372,7 +372,7 @@
                 "Morph",
                 "f_ARCAuxiliaryRoom_Engaged",
                 {
-                  "coldFrames": 1
+                  "coldFrames": 99999
                 }
               ]
             }
