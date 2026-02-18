@@ -205,7 +205,9 @@
         2,
         4
       ],
-      "requires": []
+      "requires": [
+        "f_NeoCrocomire_Defeated"
+      ]
     },
     {
       "name": "Base",
@@ -229,7 +231,9 @@
         4,
         2
       ],
-      "requires": []
+      "requires": [
+        "f_NeoCrocomire_Defeated"
+      ]
     },
     {
       "name": "Base",
@@ -252,8 +256,5 @@
   "roomImageFile": "PYR Room 7A000.jpg",
   "roomAddress": "0x7A000",
   "nextStratId": 7,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
