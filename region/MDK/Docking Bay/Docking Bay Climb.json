@@ -183,15 +183,35 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
+        3
+      ],
+      "requires": []
+    },
+    {
+      "name": "Destroy Power Bomb Blocks",
+      "link": [
+        4,
+        4
+      ],
+      "requires": [
+        "h_usePowerBomb"
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
         5
       ],
       "requires": [
         {
-          "ammo": {
-            "type": "PowerBomb",
-            "count": 1
-          }
+          "obstaclesCleared": [
+            "A"
+          ]
         }
       ],
       "clearsObstacles": [
@@ -209,34 +229,20 @@
     {
       "name": "Base",
       "link": [
-        4,
-        3
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
+        5,
         5
       ],
       "requires": [
         {
-          "ammo": {
-            "type": "PowerBomb",
-            "count": 1
-          }
+          "obstaclesCleared": [
+            "A"
+          ]
         }
-      ],
-      "clearsObstacles": [
-        "A"
       ]
     }
   ],
   "roomImageFile": "MDK Room 20.png",
   "roomAddress": "0x0",
-  "nextStratId": 10,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextStratId": 11,
+  "nextNotableId": 1
 }
