@@ -155,7 +155,8 @@
                 "canLongIBJ"
               ]
             },
-            "SpaceJump"
+            "SpaceJump",
+            "canYakuzaArenaSuperJumpEscape"
           ]
         }
       ]
@@ -199,8 +200,5 @@
   "roomImageFile": "MDK Room 6.png",
   "roomAddress": "0x0",
   "nextStratId": 6,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

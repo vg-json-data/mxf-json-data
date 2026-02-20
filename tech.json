@@ -1271,6 +1271,22 @@
           "devNote": "",
           "extensionTechs": [
             {
+              "id": 188,
+              "name": "canYakuzaArenaSuperJumpEscape",
+              "techRequires": [],
+              "otherRequires": [
+                "SuperJump",
+                "canWallJump"
+              ],
+              "note": [
+                "Utilizing Super Jump and a single Wall Jump to escape Yakuza's Arena.",
+                "The left side of the battle field must not be destroyed during the fight",
+                "The player can then use the rubble to gain enough height to escape."
+              ],
+              "devNote": "",
+              "extensionTechs": []
+            },
+            {
               "id": 83,
               "name": "canPreciseWalljump",
               "techRequires": [
@@ -3050,5 +3066,5 @@
       ]
     }
   ],
-  "nextTechId": 188
+  "nextTechId": 189
 }
