@@ -182,12 +182,23 @@
           "and": [
             "Morph",
             {
-              "obstaclesCleared": [
-                "A"
+              "or": [
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                },
+                "f_NettoriArena_CoreXAbsorbed"
               ]
             }
           ]
         }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_ReoCourtyard_FrozenEnemyObstacleCleared"
       ]
     },
     {
@@ -246,12 +257,23 @@
               ]
             },
             {
-              "obstaclesCleared": [
-                "A"
+              "or": [
+                {
+                  "obstaclesCleared": [
+                    "A"
+                  ]
+                },
+                "f_NettoriArena_CoreXAbsorbed"
               ]
             }
           ]
         }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_ReoCourtyard_FrozenEnemyObstacleCleared"
       ]
     },
     {
@@ -313,7 +335,5 @@
   "roomImageFile": "TRO Room 78B00.jpg",
   "roomAddress": "0x78B00",
   "nextStratId": 11,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
