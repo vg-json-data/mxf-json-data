@@ -119,12 +119,31 @@
     },
     {
       "name": "Base",
+      "note": "If we run into the SA-X here (Nettori hasn't been defeated), then ensure that the player is either comfortable dodging the SA-X, or that they have at least 399 Energy in total.",
       "link": [
         2,
         4
       ],
       "requires": [
-        "Morph"
+        {
+          "and": [
+            "Morph",
+            {
+              "or": [
+                "f_NettoriArena_CoreXAbsorbed",
+                "canTrickyDodgeEnemies",
+                {
+                  "resourceCapacity": [
+                    {
+                      "type": "Energy",
+                      "count": 399
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -185,8 +204,5 @@
   "roomImageFile": "TRO Room 7A000x.jpg",
   "roomAddress": "0x7A000",
   "nextStratId": 7,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
