@@ -214,6 +214,27 @@
       ]
     },
     {
+      "id": 8,
+      "idMinorItemPlm": "0x0C",
+      "name": "Silo Scaffolding - Power Bomb Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 904,
+          "y": 192,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7D46D",
+      "mapTileX": 36,
+      "mapTileY": 19
+    },
+    {
       "id": 6,
       "name": "Top-Left Runway",
       "nodeType": "junction",
@@ -244,27 +265,6 @@
         }
       ],
       "color": "#0000ff"
-    },
-    {
-      "id": 8,
-      "idMinorItemPlm": "0x0C",
-      "name": "Silo Scaffolding - Power Bomb Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 904,
-          "y": 192,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "PowerBomb",
-      "nodeAddress": "0x7D46D",
-      "mapTileX": 36,
-      "mapTileY": 19
     }
   ],
   "obstacles": [
@@ -283,16 +283,7 @@
         1,
         7
       ],
-      "id": "e1",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e1"
     },
     {
       "groupName": "Zebesian (Lower Half)",
@@ -302,16 +293,7 @@
         3,
         4
       ],
-      "id": "e2",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e2"
     },
     {
       "groupName": "Zebesian (Top-Left)",
@@ -321,16 +303,7 @@
         8,
         6
       ],
-      "id": "e3",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e3"
     }
   ],
   "strats": [
@@ -349,28 +322,6 @@
         5
       ],
       "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        2,
-        7
-      ],
-      "requires": [
-        {
-          "or": [
-            "SpaceJump",
-            "canCrumbleJump",
-            "canCeilingBombJump",
-            {
-              "and": [
-                "SuperJump",
-                "Morph"
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "name": "Come in Shinecharged, Spark to the Top-Left Runway",
@@ -438,26 +389,22 @@
               "or": [
                 {
                   "and": [
+                    "canConsecutiveAlternatingWallJump",
                     {
-                      "and": [
-                        "canConsecutiveAlternatingWallJump",
+                      "or": [
                         {
-                          "or": [
-                            {
-                              "enemyDamage": {
-                                "enemy": "Zebesian",
-                                "type": "laser",
-                                "hits": 1
-                              }
-                            },
-                            {
-                              "enemyDamage": {
-                                "enemy": "Zebesian",
-                                "type": "contact",
-                                "hits": 1
-                              }
-                            }
-                          ]
+                          "enemyDamage": {
+                            "enemy": "Zebesian",
+                            "type": "laser",
+                            "hits": 1
+                          }
+                        },
+                        {
+                          "enemyDamage": {
+                            "enemy": "Zebesian",
+                            "type": "contact",
+                            "hits": 1
+                          }
                         }
                       ]
                     }
@@ -512,6 +459,28 @@
               ]
             },
             "canTrivialMidAirMorph"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        7
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            "canCrumbleJump",
+            "canCeilingBombJump",
+            {
+              "and": [
+                "SuperJump",
+                "Morph"
+              ]
+            }
           ]
         }
       ]
@@ -585,12 +554,77 @@
       ]
     },
     {
+      "name": "Destroy Speed Booster Blocks",
+      "link": [
+        6,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "h_shinechargeMaxRunway",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Zebesian"
+                  ]
+                ]
+              }
+            },
+            {
+              "or": [
+                "canSpeedball",
+                "canShinechargeMovement"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ]
+    },
+    {
       "name": "Base",
       "link": [
-        8,
-        2
+        6,
+        8
       ],
-      "requires": []
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            "Morph",
+            {
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        8
+      ],
+      "setsFlags": [
+        "f_SiloScaffolding_PowerBombTank_Collected"
+      ]
     },
     {
       "name": "Base",
@@ -655,84 +689,14 @@
     {
       "name": "Base",
       "link": [
-        6,
-        8
+        8,
+        2
       ],
-      "requires": [
-        {
-          "and": [
-            {
-              "obstaclesCleared": [
-                "A"
-              ]
-            },
-            "Morph",
-            {
-              "or": [
-                {
-                  "ammo": {
-                    "type": "Super",
-                    "count": 1
-                  }
-                },
-                {
-                  "ammo": {
-                    "type": "Diffusion",
-                    "count": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "collectsItems": [
-        8
-      ],
-      "setsFlags": [
-        "f_SiloScaffolding_PowerBombTank_Collected"
-      ]
-    },
-    {
-      "name": "Destroy Speed Booster Blocks",
-      "link": [
-        6,
-        6
-      ],
-      "requires": [
-        {
-          "and": [
-            "h_shinechargeMaxRunway",
-            {
-              "enemyKill": {
-                "enemies": [
-                  [
-                    "Zebesian"
-                  ]
-                ]
-              }
-            },
-            {
-              "or": [
-                {
-                  "and": [
-                    "canSpeedball",
-                    "canShinechargeMovement"
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "clearsObstacles": [
-        "A"
-      ]
+      "requires": []
     }
   ],
   "roomImageFile": "MDK Room 5.png",
   "roomAddress": "0x0",
   "nextStratId": 14,
-  "nextNotableId": 1,
-  "notables": []
+  "nextNotableId": 1
 }
