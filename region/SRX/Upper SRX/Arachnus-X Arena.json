@@ -311,7 +311,8 @@
         4
       ],
       "setsFlags": [
-        "f_ArachnusXArena_CoreXAbsorbed"
+        "f_ArachnusXArena_CoreXAbsorbed",
+        "f_ArachnusXArena_DoorsUnlocked"
       ],
       "requires": []
     }
