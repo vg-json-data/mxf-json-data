@@ -146,7 +146,7 @@
       "color": "#37c90e",
       "nodeItem": "Missile",
       "nodeAddress": "0x7DA69",
-      "nodeAltAddress": "0x7DAA2",
+      "nodeAltAddress": "0x7DA7D",
       "mapTileX": 34,
       "mapTileY": 13
     },
@@ -168,7 +168,7 @@
       "color": "#37c90e",
       "nodeItem": "Missile",
       "nodeAddress": "0x7DA6F",
-      "nodeAltAddress": "0x7DAA8",
+      "nodeAltAddress": "0x7DA83",
       "mapTileX": 34,
       "mapTileY": 14
     }
