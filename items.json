@@ -40,8 +40,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 12,
-        "itemBit": "0x0004",
+        "paletteRow": "0x0000",
         "bossBit": "0x0004",
         "speedXY": "0x0102",
         "gatherX": "0x0180",
@@ -55,8 +54,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 13,
-        "itemBit": "0x1000",
+        "paletteRow": "0xFFE0",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -70,8 +68,7 @@
       "wram": "0x7E09A8",
       "data": {
         "itemType": "beam",
-        "messageBoxId": 4,
-        "itemBit": "0x1000",
+        "paletteRow": "0xFFE0",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -85,8 +82,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 14,
-        "itemBit": "0x0100",
+        "paletteRow": "0x0060",
         "bossBit": "0x0002",
         "speedXY": "0x0202",
         "gatherX": "0x00E0",
@@ -100,8 +96,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 9,
-        "itemBit": "0x0002",
+        "paletteRow": "0xFFE0",
         "bossBit": "0x0004",
         "speedXY": "0x0202",
         "gatherX": "0x0080",
@@ -115,8 +110,7 @@
       "wram": "0x7E09A8",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 5,
-        "itemBit": "0x4000",
+        "paletteRow": "0x00A0",
         "bossBit": "0x0002",
         "speedXY": "0xF0F0",
         "gatherX": "0x0200",
@@ -130,8 +124,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 15,
-        "itemBit": "0x2000",
+        "paletteRow": "0x00C0",
         "bossBit": "0x0002",
         "speedXY": "0x0202",
         "gatherX": "0x0100",
@@ -145,8 +138,7 @@
       "wram": "0x7E09A8",
       "data": {
         "itemType": "beam",
-        "messageBoxId": 6,
-        "itemBit": "0x0004",
+        "paletteRow": "0x00E0",
         "bossBit": "0x0002",
         "speedXY": "0x9030",
         "gatherX": "0x0080",
@@ -160,8 +152,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 18,
-        "itemBit": "0x0001",
+        "paletteRow": "0x0100",
         "bossBit": "0x0002",
         "speedXY": "0xFFFF",
         "gatherX": "0x0100",
@@ -175,8 +166,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 10,
-        "itemBit": "0x8000",
+        "paletteRow": "0x0120",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -190,8 +180,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 16,
-        "itemBit": "0x0200",
+        "paletteRow": "0x0140",
         "bossBit": "0x0001",
         "speedXY": "0x0302",
         "gatherX": "0x0080",
@@ -205,8 +194,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 20,
-        "itemBit": "0x0080",
+        "paletteRow": "0x0160",
         "bossBit": "0x0001",
         "speedXY": "0x0203",
         "gatherX": "0x0080",
@@ -220,8 +208,7 @@
       "wram": "0x7E09A8",
       "data": {
         "itemType": "beam",
-        "messageBoxId": 7,
-        "itemBit": "0x0002",
+        "paletteRow": "0x0180",
         "bossBit": "0x0001",
         "speedXY": "0x0180",
         "gatherX": "0x0280",
@@ -235,8 +222,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 19,
-        "itemBit": "0x0020",
+        "paletteRow": "0x01A0",
         "bossBit": "0x0001",
         "speedXY": "0x0202",
         "gatherX": "0x0080",
@@ -250,12 +236,11 @@
       "wram": "0x7E09A8",
       "data": {
         "itemType": "beam",
-        "messageBoxId": 8,
-        "itemBit": "0x0001",
+        "paletteRow": "0x01C0",
         "bossBit": "0x0001",
         "speedXY": "0xA011",
         "gatherX": "0x0100",
-        "gatherY": "0x0080",
+        "gatherY": "0x0099",
         "health": "0x0300",
         "damage": "0x0050"
       }
@@ -265,8 +250,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 17,
-        "itemBit": "0x0008",
+        "paletteRow": "0x01E0",
         "bossBit": "0x0001",
         "speedXY": "0x0204",
         "gatherX": "0x0080",
@@ -280,8 +264,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 11,
-        "itemBit": "0x0010",
+        "paletteRow": "0x0200",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -295,8 +278,7 @@
       "wram": "0x7E09A4",
       "data": {
         "itemType": "equipment",
-        "messageBoxId": 21,
-        "itemBit": "0x0800",
+        "paletteRow": "0x0220",
         "bossBit": "0x0001",
         "speedXY": "0x0303",
         "gatherX": "0x0100",
@@ -312,8 +294,7 @@
       "pcAddress": "0x8580C0",
       "data": {
         "itemType": "xreserve",
-        "messageBoxId": 255,
-        "itemBit": "0x0000",
+        "paletteRow": "0xFFE0",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -327,8 +308,7 @@
       "pcAddress": "0x8580D0",
       "data": {
         "itemType": "xreserve",
-        "messageBoxId": 255,
-        "itemBit": "0x0000",
+        "paletteRow": "0xFFE0",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -342,8 +322,7 @@
       "pcAddress": "0x8580E0",
       "data": {
         "itemType": "xreserve",
-        "messageBoxId": 255,
-        "itemBit": "0x0000",
+        "paletteRow": "0xFFE0",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -357,8 +336,7 @@
       "pcAddress": "0x8580F0",
       "data": {
         "itemType": "xreserve",
-        "messageBoxId": 255,
-        "itemBit": "0x0000",
+        "paletteRow": "0xFFE0",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -372,8 +350,7 @@
       "pcAddress": "0x858100",
       "data": {
         "itemType": "xreserve",
-        "messageBoxId": 255,
-        "itemBit": "0x0000",
+        "paletteRow": "0xFFE0",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -387,8 +364,7 @@
       "pcAddress": "0x858110",
       "data": {
         "itemType": "xreserve",
-        "messageBoxId": 255,
-        "itemBit": "0x0000",
+        "paletteRow": "0xFFE0",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -402,8 +378,7 @@
       "pcAddress": "0x858120",
       "data": {
         "itemType": "xreserve",
-        "messageBoxId": 255,
-        "itemBit": "0x0000",
+        "paletteRow": "0xFFE0",
         "bossBit": "0xFFFF",
         "speedXY": "0xFFFF",
         "gatherX": "0xFFFF",
@@ -413,31 +388,20 @@
       }
     }
   ],
-  "progressiveUpgrades": [
+  "goldGadoraXItem": [
     {
-      "name": "SuperMissile",
-      "pcAddress": "0x028190",
-      "value": "0x0040"
-    },
-    {
-      "name": "IceMissile",
-      "pcAddress": "0x028192",
-      "value": "0x0090"
-    },
-    {
-      "name": "DiffusionMissile",
-      "pcAddress": "0x028194",
-      "value": "0x0100"
-    },
-    {
-      "name": "SpeedBooster",
-      "pcAddress": "0x028196",
-      "value": "0x0060"
-    },
-    {
-      "name": "SpeedBoosterLv2",
-      "pcAddress": "0x028198",
-      "value": "0x0110"
+      "name": "Gold Gadora-X",
+      "pcAddress": "0x8580C0",
+      "data": {
+        "itemType": "equipment",
+        "paletteRow": "0x0080",
+        "bossBit": "0x0004",
+        "speedXY": "0x0202",
+        "gatherX": "0x0080",
+        "gatherY": "0x0080",
+        "health": "0x0180",
+        "damage": "0x0020"
+      }
     }
   ],
   "expansionItems": [
@@ -576,7 +540,7 @@
         "name": "f_AllAuxiliaryStations_Active",
         "address": "7ED821",
         "bit": 1,
-        "description": "All Auxiliary Stations active + Omega"
+        "description": "All Auxiliary Stations active \u002B Omega"
       },
       {
         "name": "f_OmegaMetroidArena_EscapeActivated",
@@ -896,7 +860,7 @@
         "name": "f_PYRGreenNavigationRoom_TalkingToAdam",
         "address": "7ED832",
         "bit": 3,
-        "description": "[PYR Green Navigation Room] Talking to \"Adam\" (Unlocks the door too)"
+        "description": "[PYR Green Navigation Room] Talking to \u0022Adam\u0022 (Unlocks the door too)"
       },
       {
         "name": "f_AQANavigationRoom_TalkingToAdam",
@@ -2402,7 +2366,7 @@
         "name": "f_XMode",
         "address": "000000",
         "bit": 0,
-        "description": "Placeholder flag to indicate X-Mode is enabled. (Not to be confused with X-Ray glitching in Super Metroid: it's a special game mode in X-Fusion)"
+        "description": "Placeholder flag to indicate X-Mode is enabled. (Not to be confused with X-Ray glitching in Super Metroid: it\u0027s a special game mode in X-Fusion)"
       }
     ]
   }

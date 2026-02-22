@@ -36,8 +36,7 @@
       "additionalProperties": false,
       "required": [
         "itemType",
-        "messageBoxId",
-        "itemBit",
+        "paletteRow",
         "bossBit",
         "speedXY",
         "gatherX",
@@ -47,8 +46,7 @@
       ],
       "properties": {
         "itemType": { "$ref": "#/definitions/itemType" },
-        "messageBoxId": { "type": "integer" },
-        "itemBit": { "$ref": "#/definitions/hexString" },
+        "paletteRow": { "$ref": "#/definitions/hexString" },
         "bossBit": { "$ref": "#/definitions/hexString" },
         "speedXY": { "$ref": "#/definitions/hexString" },
         "gatherX": { "$ref": "#/definitions/hexString" },
@@ -132,21 +130,21 @@
         }
       }
     },
-
-    "progressiveUpgrades": {
+    
+    "goldGadoraXItem": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["name", "pcAddress", "value"],
+        "required": ["name", "pcAddress", "data"],
         "properties": {
           "name": { "type": "string" },
           "pcAddress": { "$ref": "#/definitions/hexString" },
-          "value": { "$ref": "#/definitions/hexString" }
+          "data": { "$ref": "#/definitions/coreItemData" }
         }
       }
     },
-
+    
     "expansionItems": {
       "type": "array",
       "items": {
