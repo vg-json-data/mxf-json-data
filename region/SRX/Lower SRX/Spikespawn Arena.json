@@ -123,21 +123,29 @@
         2,
         2
       ],
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              [
+                "Spikespawn",
+                "Golden Arachnus-X Core"
+              ]
+            ]
+          }
+        }
+      ],
       "collectsItems": [
         2
       ],
       "setsFlags": [
         "f_SpikespawnArena_CoreXAbsorbed",
         "f_SpikespawnArena_DoorsUnlocked"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "SRX Room 7AA00.jpg",
   "roomAddress": "0x7AA00",
   "nextStratId": 4,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

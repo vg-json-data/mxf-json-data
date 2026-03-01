@@ -112,10 +112,10 @@
                           "and": [
                             "Gravity",
                             {
-                              "heatFrames": 99999
+                              "heatFrames": 501
                             },
                             {
-                              "lavaFrames": 99999
+                              "lavaFrames": 501
                             }
                           ]
                         },
@@ -123,10 +123,10 @@
                           "and": [
                             "canSuitlessLavaDive",
                             {
-                              "heatFrames": 99999
+                              "heatFrames": 501
                             },
                             {
-                              "lavaFrames": 99999
+                              "lavaFrames": 501
                             }
                           ]
                         }
@@ -143,10 +143,10 @@
                           "and": [
                             "Gravity",
                             {
-                              "heatFrames": 99999
+                              "heatFrames": 501
                             },
                             {
-                              "lavaFrames": 99999
+                              "lavaFrames": 501
                             }
                           ]
                         },
@@ -154,10 +154,10 @@
                           "and": [
                             "canSuitlessLavaDive",
                             {
-                              "heatFrames": 99999
+                              "heatFrames": 501
                             },
                             {
-                              "lavaFrames": 99999
+                              "lavaFrames": 501
                             }
                           ]
                         }
@@ -192,10 +192,10 @@
                           "and": [
                             "SpaceJump",
                             {
-                              "heatFrames": 99999
+                              "heatFrames": 501
                             },
                             {
-                              "lavaFrames": 99999
+                              "lavaFrames": 501
                             }
                           ]
                         },
@@ -203,10 +203,10 @@
                           "and": [
                             "canConsecutiveAlternatingWallJump",
                             {
-                              "heatFrames": 99999
+                              "heatFrames": 501
                             },
                             {
-                              "lavaFrames": 99999
+                              "lavaFrames": 501
                             }
                           ]
                         }
@@ -219,10 +219,10 @@
                     "canSuitlessLavaDive",
                     "canUnderwaterWalljump",
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     },
                     {
-                      "lavaFrames": 99999
+                      "lavaFrames": 501
                     }
                   ]
                 }
@@ -251,10 +251,10 @@
                   "and": [
                     "Gravity",
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     },
                     {
-                      "lavaFrames": 99999
+                      "lavaFrames": 501
                     }
                   ]
                 },
@@ -262,10 +262,10 @@
                   "and": [
                     "canSuitlessLavaDive",
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     },
                     {
-                      "lavaFrames": 99999
+                      "lavaFrames": 501
                     }
                   ]
                 }
@@ -314,10 +314,10 @@
                           "and": [
                             "SpaceJump",
                             {
-                              "heatFrames": 99999
+                              "heatFrames": 501
                             },
                             {
-                              "lavaFrames": 99999
+                              "lavaFrames": 501
                             }
                           ]
                         },
@@ -325,10 +325,10 @@
                           "and": [
                             "canConsecutiveAlternatingWallJump",
                             {
-                              "heatFrames": 99999
+                              "heatFrames": 501
                             },
                             {
-                              "lavaFrames": 99999
+                              "lavaFrames": 501
                             }
                           ]
                         }
@@ -345,10 +345,10 @@
                           "and": [
                             "canUnderwaterWalljump",
                             {
-                              "heatFrames": 99999
+                              "heatFrames": 501
                             },
                             {
-                              "lavaFrames": 99999
+                              "lavaFrames": 501
                             }
                           ]
                         }
@@ -380,10 +380,10 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         },
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     },
@@ -391,10 +391,10 @@
                       "and": [
                         "canConsecutiveAlternatingWallJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         },
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     },
@@ -402,10 +402,10 @@
                       "and": [
                         "canLongIBJ",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         },
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     }
@@ -418,10 +418,10 @@
                 "canSuitlessLavaDive",
                 "canUnderwaterWalljump",
                 {
-                  "heatFrames": 99999
+                  "heatFrames": 501
                 },
                 {
-                  "lavaFrames": 99999
+                  "lavaFrames": 501
                 }
               ]
             }

@@ -84,7 +84,9 @@
       "id": 2,
       "name": "Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -95,16 +97,83 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_GoldenArachnusXArena_DoorLeftUnlocked"
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "strats": [
+    {
+      "name": "Arachnus-X Fight",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "not": "f_GoldenArachnusXArena_GAXRetreats"
+            },
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Golden Arachnus-X"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "setsFlags": [
+        "f_GoldenArachnusXArena_GAXRetreats",
+        "f_GoldenArachnusXArena_DoorLeftUnlocked"
+      ]
+    },
     {
       "name": "Base",
       "link": [
@@ -172,9 +241,6 @@
   ],
   "roomImageFile": "SRX Room 7A900.jpg",
   "roomAddress": "0x7A900",
-  "nextStratId": 3,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextStratId": 4,
+  "nextNotableId": 1
 }

@@ -86,22 +86,6 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Left of Green Geron",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 56,
-          "y": 112,
-          "w": 40,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
       "id": 5,
       "idMinorItemPlm": "0x45",
       "name": "Broken Bridge - Energy Tank",
@@ -121,6 +105,22 @@
       "nodeAddress": "0x7DD19",
       "mapTileX": 20,
       "mapTileY": 11
+    },
+    {
+      "id": 4,
+      "name": "Left of Green Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 56,
+          "y": 112,
+          "w": 40,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -145,6 +145,9 @@
       ],
       "requires": [
         "h_killGreenGeron"
+      ],
+      "clearsObstacles": [
+        "A"
       ],
       "setsFlags": [
         "f_BrokenBridge_GreenGeronDestroyed"
@@ -176,6 +179,20 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "collectsItems": [
+        5
+      ],
+      "setsFlags": [
+        "f_BrokenBridge_EnergyTank_Collected"
+      ],
+      "requires": []
     },
     {
       "name": "Base",
@@ -220,28 +237,6 @@
     {
       "name": "Base",
       "link": [
-        2,
-        5
-      ],
-      "collectsItems": [
-        5
-      ],
-      "setsFlags": [
-        "f_BrokenBridge_EnergyTank_Collected"
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        5,
-        2
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
         4,
         1
       ],
@@ -265,12 +260,18 @@
       "setsFlags": [
         "f_BrokenBridge_GreenGeronDestroyed"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        2
+      ],
+      "requires": []
     }
   ],
   "roomImageFile": "AQA Room 7A200.jpg",
   "roomAddress": "0x7A200",
   "nextStratId": 10,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

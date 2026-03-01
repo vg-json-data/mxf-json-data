@@ -66,21 +66,34 @@
         1,
         1
       ],
+      "requires": [
+        {
+          "or": [
+            "f_NeoRidleyArena_CoreXAbsorbed",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Neo-Ridley",
+                    "Neo-Ridley Core-X"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ],
       "collectsItems": [
         2
       ],
       "setsFlags": [
         "f_NeoRidleyArena_CoreXAbsorbed",
         "f_ElevatorToNeoRidley_DoorsUnlocked"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "PYR Room 7B600.jpg",
   "roomAddress": "0x7B600",
   "nextStratId": 2,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

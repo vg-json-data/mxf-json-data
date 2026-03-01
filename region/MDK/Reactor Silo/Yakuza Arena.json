@@ -187,14 +187,25 @@
         3,
         3
       ],
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              [
+                "Yakuza",
+                "Yakuza Core-X"
+              ]
+            ]
+          }
+        }
+      ],
       "collectsItems": [
         3
       ],
       "setsFlags": [
         "f_YakuzaArena_CoreXAbsorbed",
         "f_YakuzaArena_DoorsUnlocked"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "MDK Room 6.png",

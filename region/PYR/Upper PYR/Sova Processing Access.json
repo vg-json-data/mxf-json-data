@@ -86,22 +86,6 @@
       ]
     },
     {
-      "id": 4,
-      "name": "At Crumble Wall",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 208,
-          "y": 88,
-          "w": 32,
-          "h": 56
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
       "id": 5,
       "idMinorItemPlm": "0x32",
       "name": "Sova Processing Access - Hidden Power Bomb Tank",
@@ -121,6 +105,22 @@
       "nodeAddress": "0x7DA11",
       "mapTileX": 23,
       "mapTileY": 17
+    },
+    {
+      "id": 4,
+      "name": "At Crumble Wall",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 208,
+          "y": 88,
+          "w": 32,
+          "h": 56
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -137,7 +137,20 @@
   ],
   "strats": [
     {
-      "name": "Leave Shinecharged",
+      "name": "Destroy Crumble Wall",
+      "link": [
+        1,
+        4
+      ],
+      "requires": [
+        "Morph"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Leave With Temporary Blue",
       "link": [
         2,
         2
@@ -156,7 +169,7 @@
         }
       ],
       "exitCondition": {
-        "leaveShinecharged": {}
+        "leaveWithTemporaryBlue": {}
       }
     },
     {
@@ -174,19 +187,6 @@
       ]
     },
     {
-      "name": "Destroy Crumble Wall",
-      "link": [
-        1,
-        4
-      ],
-      "requires": [
-        "Morph"
-      ],
-      "clearsObstacles": [
-        "B"
-      ]
-    },
-    {
       "name": "Destroy Speed Booster Blocks",
       "link": [
         3,
@@ -197,6 +197,20 @@
       ],
       "clearsObstacles": [
         "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        3,
+        4
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
       ]
     },
     {
@@ -222,16 +236,28 @@
     {
       "name": "Base",
       "link": [
-        3,
-        4
+        4,
+        1
       ],
       "requires": [
-        {
-          "obstaclesCleared": [
-            "B"
-          ]
-        }
+        "canTrivialMidAirMorph"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        2
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        3
+      ],
+      "requires": []
     },
     {
       "name": "Base",
@@ -251,38 +277,10 @@
           ]
         }
       ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
-        2
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
-        1
-      ],
-      "requires": [
-        "canTrivialMidAirMorph"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
-        3
-      ],
-      "requires": []
     }
   ],
   "roomImageFile": "PYR Room 78E00.jpg",
   "roomAddress": "0x78E00",
   "nextStratId": 11,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

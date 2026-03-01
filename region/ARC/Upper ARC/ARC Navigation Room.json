@@ -121,20 +121,27 @@
         3,
         3
       ],
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              [
+                "Wide Core-X"
+              ]
+            ]
+          }
+        }
+      ],
       "collectsItems": [
         3
       ],
       "setsFlags": [
         "f_ARCNavigationRoom_CoreXAbsorbed"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "Misc Room Reusable 3.jpg",
   "roomAddress": "0x0",
   "nextStratId": 6,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

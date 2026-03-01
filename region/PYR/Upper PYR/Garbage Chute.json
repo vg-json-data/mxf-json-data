@@ -132,6 +132,48 @@
       ]
     },
     {
+      "id": 9,
+      "idMinorItemPlm": "0x30",
+      "name": "Garbage Chute [Top] - Power Bomb Tank",
+      "nodeType": "item",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 24,
+          "y": 48,
+          "w": 32,
+          "h": 48
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "PowerBomb",
+      "nodeAddress": "0x7DA03",
+      "mapTileX": 21,
+      "mapTileY": 10
+    },
+    {
+      "id": 10,
+      "idMinorItemPlm": "0x31",
+      "name": "Garbage Chute [Middle] - Hidden Missile Tank",
+      "nodeType": "item",
+      "nodeSubType": "hidden",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 80,
+          "y": 720,
+          "w": 16,
+          "h": 16
+        }
+      ],
+      "color": "#37c90e",
+      "nodeItem": "Missile",
+      "nodeAddress": "0x7DA09",
+      "mapTileX": 21,
+      "mapTileY": 12
+    },
+    {
       "id": 6,
       "name": "Above Right Door",
       "nodeType": "junction",
@@ -178,48 +220,6 @@
         }
       ],
       "color": "#0000ff"
-    },
-    {
-      "id": 9,
-      "idMinorItemPlm": "0x30",
-      "name": "Garbage Chute [Top] - Power Bomb Tank",
-      "nodeType": "item",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 24,
-          "y": 48,
-          "w": 32,
-          "h": 48
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "PowerBomb",
-      "nodeAddress": "0x7DA03",
-      "mapTileX": 21,
-      "mapTileY": 10
-    },
-    {
-      "id": 10,
-      "idMinorItemPlm": "0x31",
-      "name": "Garbage Chute [Middle] - Hidden Missile Tank",
-      "nodeType": "item",
-      "nodeSubType": "hidden",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 80,
-          "y": 720,
-          "w": 16,
-          "h": 16
-        }
-      ],
-      "color": "#37c90e",
-      "nodeItem": "Missile",
-      "nodeAddress": "0x7DA09",
-      "mapTileX": 21,
-      "mapTileY": 12
     }
   ],
   "obstacles": [
@@ -242,6 +242,16 @@
       "name": "Bottom-Left Screw Blocks",
       "obstacleType": "inanimate",
       "id": "D"
+    },
+    {
+      "name": "Super Missile Blocks (Bottom-Left)",
+      "obstacleType": "inanimate",
+      "id": "E"
+    },
+    {
+      "name": "Bottom-Floor Speed Booster Blocks",
+      "obstacleType": "inanimate",
+      "id": "F"
     }
   ],
   "strats": [
@@ -327,13 +337,13 @@
       "name": "Base",
       "link": [
         2,
-        10
+        6
       ],
       "requires": [
         {
           "and": [
             {
-              "heatFrames": 341
+              "heatFrames": 130
             },
             "ScrewAttack",
             {
@@ -351,13 +361,13 @@
       "name": "Base",
       "link": [
         2,
-        6
+        10
       ],
       "requires": [
         {
           "and": [
             {
-              "heatFrames": 130
+              "heatFrames": 341
             },
             "ScrewAttack",
             {
@@ -447,64 +457,23 @@
       ]
     },
     {
-      "name": "Come In Shinecharged",
+      "name": "Come In With Temporary Blue",
       "link": [
         4,
         8
       ],
+      "entranceCondition": {
+        "comeInWithTemporaryBlue": {}
+      },
       "requires": [
         {
           "heatFrames": 60
         }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        9,
-        1
-      ],
-      "requires": [
-        {
-          "and": [
-            "Morph",
-            {
-              "heatFrames": 370
-            }
-          ]
-        }
       ],
       "clearsObstacles": [
-        "C"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        9,
-        9
+        "F"
       ],
-      "collectsItems": [
-        9
-      ],
-      "setsFlags": [
-        "f_GarbageChute_PowerBombTank_Collected"
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        10,
-        10
-      ],
-      "collectsItems": [
-        10
-      ],
-      "setsFlags": [
-        "f_GarbageChute_MissileTank_Collected"
-      ],
-      "requires": []
+      "endsWithShineCharge": true
     },
     {
       "name": "Reach Top-Right Door with Wall Jumps",
@@ -603,6 +572,23 @@
     {
       "name": "Base",
       "link": [
+        7,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "heatFrames": 140
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
         8,
         5
       ],
@@ -621,33 +607,6 @@
       ],
       "clearsObstacles": [
         "D"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        8,
-        9
-      ],
-      "requires": [
-        {
-          "and": [
-            {
-              "shinespark": {
-                "frames": 150
-              }
-            },
-            {
-              "heatFrames": 150
-            }
-          ]
-        }
-      ],
-      "clearsObstacles": [
-        "B"
-      ],
-      "resetsObstacles": [
-        "A"
       ]
     },
     {
@@ -700,27 +659,117 @@
       ]
     },
     {
+      "name": "Destroy Super Missile Blocks (Bottom-Left)",
+      "link": [
+        8,
+        8
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 3
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "E"
+      ]
+    },
+    {
       "name": "Base",
       "link": [
-        7,
-        3
+        8,
+        9
+      ],
+      "startsWithShineCharge": true,
+      "requires": [
+        {
+          "and": [
+            {
+              "shinespark": {
+                "frames": 150
+              }
+            },
+            {
+              "heatFrames": 150
+            },
+            {
+              "obstaclesCleared": [
+                "E"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
+      ],
+      "resetsObstacles": [
+        "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        1
       ],
       "requires": [
         {
           "and": [
             "Morph",
             {
-              "heatFrames": 140
+              "heatFrames": 370
             }
           ]
         }
+      ],
+      "clearsObstacles": [
+        "C"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        9,
+        9
+      ],
+      "collectsItems": [
+        9
+      ],
+      "setsFlags": [
+        "f_GarbageChute_PowerBombTank_Collected"
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        10,
+        10
+      ],
+      "collectsItems": [
+        10
+      ],
+      "setsFlags": [
+        "f_GarbageChute_MissileTank_Collected"
+      ],
+      "requires": []
     }
   ],
   "roomImageFile": "PYR Room 78D00.jpg",
   "roomAddress": "0x78D00",
-  "nextStratId": 22,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextStratId": 23,
+  "nextNotableId": 1
 }

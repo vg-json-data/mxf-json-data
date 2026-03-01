@@ -3,7 +3,7 @@
   "id": 352,
   "name": "Nettori Arena",
   "area": "TRO",
-  "subarea": "Nettori\u0027s Area",
+  "subarea": "Nettori's Area",
   "roomEnvironments": [
     {
       "heated": false,
@@ -86,22 +86,6 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Nettori Arena 1",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 288,
-          "y": 352,
-          "w": 168,
-          "h": 88
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
       "id": 5,
       "name": "Nettori Arena - Plasma Beam",
       "nodeType": "item",
@@ -119,9 +103,33 @@
       "nodeItem": "Plasma",
       "nodeAddress": "0x0",
       "note": ""
+    },
+    {
+      "id": 4,
+      "name": "Nettori Arena 1",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 288,
+          "y": 352,
+          "w": 168,
+          "h": 88
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        4
+      ],
+      "requires": []
+    },
     {
       "name": "Base",
       "link": [
@@ -143,8 +151,18 @@
     {
       "name": "Base",
       "link": [
-        1,
-        4
+        4,
+        2
+      ],
+      "requires": [
+        "f_NettoriArena_CoreXAbsorbed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
       ],
       "requires": []
     },
@@ -160,21 +178,6 @@
       "name": "Base",
       "link": [
         5,
-        5
-      ],
-      "collectsItems": [
-        5
-      ],
-      "setsFlags": [
-        "f_NettoriArena_CoreXAbsorbed",
-        "f_NettoriArena_DoorsUnlocked"
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        5,
         4
       ],
       "requires": []
@@ -182,27 +185,37 @@
     {
       "name": "Base",
       "link": [
-        4,
-        2
-      ],
-      "requires": [
-        "f_NettoriArena_CoreXAbsorbed"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
+        5,
         5
       ],
-      "requires": []
+      "requires": [
+        {
+          "or": [
+            "f_NettoriArena_CoreXAbsorbed",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Nettori",
+                    "Plasma Core-X"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "collectsItems": [
+        5
+      ],
+      "setsFlags": [
+        "f_NettoriArena_CoreXAbsorbed",
+        "f_NettoriArena_DoorsUnlocked"
+      ]
     }
   ],
   "roomImageFile": "TRO Room 7A300.jpg",
   "roomAddress": "0x7A300",
   "nextStratId": 9,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

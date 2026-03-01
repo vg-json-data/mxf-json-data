@@ -101,10 +101,10 @@
                       }
                     },
                     {
-                      "lavaFrames": 99999
+                      "lavaFrames": 501
                     },
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     }
                   ]
                 },
@@ -118,10 +118,10 @@
                       }
                     },
                     {
-                      "lavaFrames": 99999
+                      "lavaFrames": 501
                     },
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     }
                   ]
                 }
@@ -134,7 +134,8 @@
                     "canSuitlessLavaDive",
                     "canWalljump"
                   ]
-                }
+                },
+                "Gravity"
               ]
             }
           ]
@@ -166,10 +167,10 @@
                       }
                     },
                     {
-                      "lavaFrames": 99999
+                      "lavaFrames": 501
                     },
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     }
                   ]
                 },
@@ -183,20 +184,20 @@
                       }
                     },
                     {
-                      "lavaFrames": 99999
+                      "lavaFrames": 501
                     },
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     }
                   ]
                 }
               ]
             },
             {
-              "lavaFrames": 99999
+              "lavaFrames": 501
             },
             {
-              "heatFrames": 99999
+              "heatFrames": 501
             }
           ]
         }
@@ -206,7 +207,5 @@
   "roomImageFile": "PYR Room 7B100.jpg",
   "roomAddress": "0x7B100",
   "nextStratId": 3,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "notables": []
+  "nextNotableId": 1
 }

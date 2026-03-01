@@ -169,7 +169,7 @@
           "and": [
             "Morph",
             {
-              "lavaFrames": 99999
+              "lavaFrames": 501
             }
           ]
         }
@@ -198,7 +198,7 @@
                       "and": [
                         "Gravity",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     },
@@ -206,7 +206,7 @@
                       "and": [
                         "canSuitlessLavaDive",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     }
@@ -229,7 +229,7 @@
                       "and": [
                         "Gravity",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     },
@@ -237,7 +237,7 @@
                       "and": [
                         "canSuitlessLavaDive",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     }
@@ -259,7 +259,7 @@
                       "and": [
                         "Gravity",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     },
@@ -267,7 +267,7 @@
                       "and": [
                         "canSuitlessLavaDive",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     }
@@ -343,7 +343,7 @@
           "and": [
             "Morph",
             {
-              "lavaFrames": 99999
+              "lavaFrames": 501
             }
           ]
         }
@@ -372,7 +372,7 @@
                       "and": [
                         "Gravity",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     },
@@ -380,7 +380,7 @@
                       "and": [
                         "canSuitlessLavaDive",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     }
@@ -403,7 +403,7 @@
                       "and": [
                         "Gravity",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     },
@@ -411,7 +411,7 @@
                       "and": [
                         "canSuitlessLavaDive",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     }
@@ -433,7 +433,7 @@
                       "and": [
                         "Gravity",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     },
@@ -441,7 +441,7 @@
                       "and": [
                         "canSuitlessLavaDive",
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         }
                       ]
                     }

@@ -3,7 +3,7 @@
   "id": 259,
   "name": "Phantomire Arena",
   "area": "PYR",
-  "subarea": "Neo-Crocomire\u0027s Lair",
+  "subarea": "Neo-Crocomire's Lair",
   "roomEnvironments": [
     {
       "heated": false,
@@ -242,7 +242,24 @@
         4
       ],
       "requires": [
-        "f_PYRDataRoom_DataDownloaded"
+        {
+          "and": [
+            "f_PYRDataRoom_DataDownloaded",
+            {
+              "not": "f_PhantomireArena_CoreXAbsorbed"
+            },
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Phantomire",
+                    "Phantomire Core-X"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
       ],
       "collectsItems": [
         4

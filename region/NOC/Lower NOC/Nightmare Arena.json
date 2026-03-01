@@ -78,7 +78,7 @@
         {
           "and": [
             "h_JumpAssist",
-            "f_NightmareArena_CoreXAbsorbed"
+            "f_NightmareArena_DoorsUnlocked"
           ]
         }
       ]
@@ -89,20 +89,34 @@
         2,
         2
       ],
+      "requires": [
+        {
+          "or": [
+            "f_NightmareArena_CoreXAbsorbed",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Nightmare-X",
+                    "Nightmare-X Core"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ],
       "collectsItems": [
         2
       ],
       "setsFlags": [
-        "f_NightmareArena_CoreXAbsorbed"
-      ],
-      "requires": []
+        "f_NightmareArena_CoreXAbsorbed",
+        "f_NightmareArena_DoorsUnlocked"
+      ]
     }
   ],
   "roomImageFile": "NOC Room 7B100.jpg",
   "roomAddress": "0x7B100",
   "nextStratId": 4,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

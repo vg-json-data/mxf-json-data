@@ -141,19 +141,22 @@
         1,
         5
       ],
-      "id": "e1",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 0,
-          "y": 0,
-          "w": 16,
-          "h": 16
-        }
-      ]
+      "id": "e1"
     }
   ],
   "strats": [
+    {
+      "name": "Base",
+      "link": [
+        1,
+        5
+      ],
+      "requires": [
+        {
+          "coldFrames": 500
+        }
+      ]
+    },
     {
       "name": "Leave With Runway via Frozen Enemy",
       "link": [
@@ -189,6 +192,34 @@
       "requires": []
     },
     {
+      "name": "Leave Shinecharged via Frozen Enemy",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "canTrivialUseFrozenEnemies",
+            {
+              "canShineCharge": {
+                "usedTiles": 16,
+                "openEnd": 1,
+                "steepDownTiles": 2
+              }
+            },
+            {
+              "coldFrames": 500
+            }
+          ]
+        }
+      ],
+      "exitCondition": {
+        "leaveShinecharged": {}
+      },
+      "endsWithShineCharge": true
+    },
+    {
       "name": "Base",
       "link": [
         2,
@@ -205,18 +236,6 @@
       "link": [
         3,
         2
-      ],
-      "requires": [
-        {
-          "coldFrames": 500
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        1,
-        5
       ],
       "requires": [
         {
@@ -354,8 +373,6 @@
   ],
   "roomImageFile": "ARC Room 79600.jpg",
   "roomAddress": "0x79600",
-  "nextStratId": 9,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "notables": []
+  "nextStratId": 10,
+  "nextNotableId": 1
 }

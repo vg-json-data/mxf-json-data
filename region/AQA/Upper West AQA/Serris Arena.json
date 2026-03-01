@@ -214,21 +214,29 @@
         3,
         3
       ],
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              [
+                "Serris-X",
+                "Serris-X Core"
+              ]
+            ]
+          }
+        }
+      ],
       "collectsItems": [
         3
       ],
       "setsFlags": [
         "f_SerrisArena_CoreXAbsorbed",
         "f_SerrisArena_DoorsUnlocked"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "AQA Room 7A500.jpg",
   "roomAddress": "0x7A500",
   "nextStratId": 5,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

@@ -197,21 +197,29 @@
         3,
         3
       ],
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              [
+                "Meta Draygon-X",
+                "Meta Draygon-X Core"
+              ]
+            ]
+          }
+        }
+      ],
       "collectsItems": [
         3
       ],
       "setsFlags": [
         "f_MetaDraygonXArena_CoreXAbsorbed",
         "f_MetaDraygonXArena_DoorsUnlocked"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "AQA Room 7B700.jpg",
   "roomAddress": "0x7B700",
   "nextStratId": 5,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

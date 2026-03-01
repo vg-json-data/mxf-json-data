@@ -3,7 +3,7 @@
   "id": 257,
   "name": "Neo-Crocomire Arena",
   "area": "PYR",
-  "subarea": "Neo-Crocomire\u0027s Lair",
+  "subarea": "Neo-Crocomire's Lair",
   "roomEnvironments": [
     {
       "heated": false,
@@ -183,10 +183,25 @@
         1,
         3
       ],
+      "requires": [
+        {
+          "or": [
+            "f_NeoCrocomire_Defeated",
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Neo-Crocomire"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ],
       "setsFlags": [
         "f_NeoCrocomire_Defeated"
-      ],
-      "requires": []
+      ]
     },
     {
       "name": "Base",

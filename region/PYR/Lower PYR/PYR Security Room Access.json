@@ -152,17 +152,17 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
                     {
                       "and": [
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         },
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
@@ -170,7 +170,7 @@
                       "and": [
                         "f_NeoRidleyArena_CoreXAbsorbed",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     }
@@ -187,17 +187,17 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
                     {
                       "and": [
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         },
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
@@ -205,7 +205,7 @@
                       "and": [
                         "f_NeoRidleyArena_CoreXAbsorbed",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     }
@@ -265,17 +265,17 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
                     {
                       "and": [
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         },
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
@@ -283,7 +283,7 @@
                       "and": [
                         "f_NeoRidleyArena_CoreXAbsorbed",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     }
@@ -300,17 +300,17 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
                     {
                       "and": [
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         },
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
@@ -318,7 +318,7 @@
                       "and": [
                         "f_NeoRidleyArena_CoreXAbsorbed",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     }
@@ -345,7 +345,7 @@
               ]
             },
             {
-              "heatFrames": 99999
+              "heatFrames": 501
             }
           ]
         }
@@ -369,17 +369,17 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
                     {
                       "and": [
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         },
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
@@ -387,7 +387,7 @@
                       "and": [
                         "f_NeoRidleyArena_CoreXAbsorbed",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     }
@@ -404,17 +404,17 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
                     {
                       "and": [
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         },
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
@@ -422,7 +422,7 @@
                       "and": [
                         "f_NeoRidleyArena_CoreXAbsorbed",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     }
@@ -457,17 +457,17 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
                     {
                       "and": [
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         },
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
@@ -475,7 +475,7 @@
                       "and": [
                         "f_NeoRidleyArena_CoreXAbsorbed",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     }
@@ -492,17 +492,17 @@
                       "and": [
                         "SpaceJump",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
                     {
                       "and": [
                         {
-                          "lavaFrames": 99999
+                          "lavaFrames": 501
                         },
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     },
@@ -510,7 +510,7 @@
                       "and": [
                         "f_NeoRidleyArena_CoreXAbsorbed",
                         {
-                          "heatFrames": 99999
+                          "heatFrames": 501
                         }
                       ]
                     }
@@ -539,7 +539,7 @@
             },
             "h_shinechargeMaxRunway",
             {
-              "heatFrames": 99999
+              "heatFrames": 501
             },
             "f_NeoRidleyArena_CoreXAbsorbed",
             {
@@ -585,17 +585,17 @@
                   "and": [
                     "SpaceJump",
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     }
                   ]
                 },
                 {
                   "and": [
                     {
-                      "lavaFrames": 99999
+                      "lavaFrames": 501
                     },
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     }
                   ]
                 }
@@ -623,7 +623,7 @@
                   "and": [
                     "SpaceJump",
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     }
                   ]
                 },
@@ -632,7 +632,7 @@
                     "SuperJump",
                     "canWalljump",
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     }
                   ]
                 },
@@ -640,7 +640,7 @@
                   "and": [
                     "canIBJ",
                     {
-                      "heatFrames": 99999
+                      "heatFrames": 501
                     }
                   ]
                 }
@@ -666,7 +666,7 @@
           "and": [
             "Morph",
             {
-              "heatFrames": 99999
+              "heatFrames": 501
             }
           ]
         }
@@ -683,7 +683,7 @@
           "and": [
             "Morph",
             {
-              "heatFrames": 99999
+              "heatFrames": 501
             }
           ]
         }
@@ -704,7 +704,7 @@
               ]
             },
             {
-              "heatFrames": 99999
+              "heatFrames": 501
             }
           ]
         }
@@ -736,7 +736,7 @@
               ]
             },
             {
-              "heatFrames": 99999
+              "heatFrames": 501
             }
           ]
         }

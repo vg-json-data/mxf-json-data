@@ -176,7 +176,7 @@
                           "and": [
                             "ScrewAttack",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -184,7 +184,7 @@
                           "and": [
                             "Bombs",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -197,7 +197,7 @@
                               }
                             },
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         }
@@ -216,7 +216,7 @@
                           "and": [
                             "ScrewAttack",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -224,7 +224,7 @@
                           "and": [
                             "Bombs",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -237,7 +237,7 @@
                               }
                             },
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         }
@@ -270,7 +270,7 @@
                   "and": [
                     "Gravity",
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 },
@@ -280,7 +280,7 @@
                       "disableEquipment": "Gravity"
                     },
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 }
@@ -311,7 +311,7 @@
                           "and": [
                             "Gravity",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -321,7 +321,7 @@
                               "disableEquipment": "Gravity"
                             },
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -342,7 +342,7 @@
                           "and": [
                             "Gravity",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -352,7 +352,7 @@
                               "disableEquipment": "Gravity"
                             },
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -389,7 +389,7 @@
                   "and": [
                     "Gravity",
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 },
@@ -399,7 +399,7 @@
                       "disableEquipment": "Gravity"
                     },
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 }
@@ -431,7 +431,7 @@
                   "aqaWaterLevel": 2
                 },
                 {
-                  "electricityFrames": 99999
+                  "electricityFrames": 501
                 }
               ]
             }
@@ -466,7 +466,7 @@
                   "and": [
                     "Gravity",
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 },
@@ -476,7 +476,7 @@
                       "disableEquipment": "Gravity"
                     },
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 }
@@ -515,7 +515,7 @@
                           "and": [
                             "ScrewAttack",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -523,7 +523,7 @@
                           "and": [
                             "Bombs",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -536,7 +536,7 @@
                               }
                             },
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         }
@@ -555,7 +555,7 @@
                           "and": [
                             "ScrewAttack",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -563,7 +563,7 @@
                           "and": [
                             "Bombs",
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         },
@@ -576,7 +576,7 @@
                               }
                             },
                             {
-                              "electricityFrames": 99999
+                              "electricityFrames": 501
                             }
                           ]
                         }
@@ -610,7 +610,7 @@
               "and": [
                 "Gravity",
                 {
-                  "electricityFrames": 99999
+                  "electricityFrames": 501
                 }
               ]
             },
@@ -620,7 +620,7 @@
                   "disableEquipment": "Gravity"
                 },
                 {
-                  "electricityFrames": 99999
+                  "electricityFrames": 501
                 }
               ]
             }
@@ -649,7 +649,7 @@
                       "and": [
                         "Gravity",
                         {
-                          "electricityFrames": 99999
+                          "electricityFrames": 501
                         }
                       ]
                     },
@@ -659,7 +659,7 @@
                           "disableEquipment": "Gravity"
                         },
                         {
-                          "electricityFrames": 99999
+                          "electricityFrames": 501
                         }
                       ]
                     }
@@ -697,7 +697,7 @@
                   "and": [
                     "Gravity",
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 },
@@ -707,7 +707,7 @@
                       "disableEquipment": "Gravity"
                     },
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 }
@@ -741,7 +741,7 @@
                   "and": [
                     "Gravity",
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 },
@@ -751,7 +751,7 @@
                       "disableEquipment": "Gravity"
                     },
                     {
-                      "electricityFrames": 99999
+                      "electricityFrames": 501
                     }
                   ]
                 }
@@ -793,7 +793,7 @@
                   "aqaWaterLevel": 2
                 },
                 {
-                  "electricityFrames": 99999
+                  "electricityFrames": 501
                 }
               ]
             }

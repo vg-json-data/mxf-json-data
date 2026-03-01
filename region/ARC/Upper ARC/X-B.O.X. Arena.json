@@ -124,25 +124,42 @@
       ]
     },
     {
-      "name": "Base",
+      "name": "Destroy X-B.O.X.",
       "link": [
         3,
         3
+      ],
+      "requires": [
+        {
+          "and": [
+            "f_NightmareArena_CoreXAbsorbed",
+            {
+              "or": [
+                "f_XBOXArena_CoreXAbsorbed",
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "Security Robot B.O.X."
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
       ],
       "collectsItems": [
         3
       ],
       "setsFlags": [
         "f_XBOXArena_CoreXAbsorbed"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "ARC Room 79100.jpg",
   "roomAddress": "0x79100",
   "nextStratId": 6,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }

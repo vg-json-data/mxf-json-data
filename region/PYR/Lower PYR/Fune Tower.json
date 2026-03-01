@@ -113,7 +113,7 @@
       ],
       "requires": [
         {
-          "heatFrames": 99999
+          "heatFrames": 501
         }
       ]
     },
@@ -130,7 +130,7 @@
               "and": [
                 "SpaceJump",
                 {
-                  "heatFrames": 99999
+                  "heatFrames": 501
                 }
               ]
             },
@@ -144,7 +144,7 @@
                   }
                 },
                 {
-                  "heatFrames": 99999
+                  "heatFrames": 501
                 }
               ]
             }

@@ -202,14 +202,28 @@
     {
       "name": "Break Spike Blocks",
       "link": [
-        2,
-        2
+        1,
+        1
       ],
       "requires": [
         "SpikeBreaker"
       ],
       "clearsObstacles": [
         "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
+        2
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
       ]
     },
     {
@@ -232,6 +246,19 @@
       ]
     },
     {
+      "name": "Break Spike Blocks",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "SpikeBreaker"
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
       "name": "Base",
       "link": [
         2,
@@ -241,33 +268,6 @@
         "A"
       ],
       "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        1,
-        2
-      ],
-      "requires": [
-        {
-          "obstaclesCleared": [
-            "B"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Break Spike Blocks",
-      "link": [
-        1,
-        1
-      ],
-      "requires": [
-        "SpikeBreaker"
-      ],
-      "clearsObstacles": [
-        "B"
-      ]
     },
     {
       "name": "Base",
@@ -306,20 +306,29 @@
         4,
         4
       ],
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              [
+                "Arachnus-X",
+                "Arachnus-X Core"
+              ]
+            ]
+          }
+        }
+      ],
       "collectsItems": [
         4
       ],
       "setsFlags": [
         "f_ArachnusXArena_CoreXAbsorbed",
         "f_ArachnusXArena_DoorsUnlocked"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "SRX Room 79800.jpg",
   "roomAddress": "0x79800",
   "nextStratId": 9,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
