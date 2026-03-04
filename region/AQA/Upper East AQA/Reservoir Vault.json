@@ -86,22 +86,6 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Above Speed Booster Blocks",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 640,
-          "y": 240,
-          "w": 48,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
       "id": 5,
       "idMinorItemPlm": "0x41",
       "name": "Reservoir Vault - Missile Tank",
@@ -121,6 +105,22 @@
       "nodeAddress": "0x7DC91",
       "mapTileX": 38,
       "mapTileY": 8
+    },
+    {
+      "id": 4,
+      "name": "Above Speed Booster Blocks",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 640,
+          "y": 240,
+          "w": 48,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -162,6 +162,34 @@
       ],
       "clearsObstacles": [
         "D"
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        1,
+        1
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "B"
       ]
     },
     {
@@ -267,6 +295,73 @@
     {
       "name": "Base",
       "link": [
+        4,
+        3
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Middle Super Missile Blocks",
+      "link": [
+        4,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "ammo": {
+                "type": "Super",
+                "count": 2
+              }
+            },
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "C"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            },
+            "Morph",
+            {
+              "or": [
+                "h_JumpAssist",
+                "canCrouchJump"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
         5,
         1
       ],
@@ -290,6 +385,25 @@
         2
       ],
       "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        4
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "C"
+              ]
+            },
+            "Morph"
+          ]
+        }
+      ]
     },
     {
       "name": "Destroy Power Bomb Blocks",
@@ -336,98 +450,10 @@
       "clearsObstacles": [
         "C"
       ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        5,
-        4
-      ],
-      "requires": [
-        {
-          "and": [
-            {
-              "obstaclesCleared": [
-                "C"
-              ]
-            },
-            "Morph"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
-        3
-      ],
-      "requires": [
-        {
-          "obstaclesCleared": [
-            "A"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
-        5
-      ],
-      "requires": [
-        {
-          "and": [
-            {
-              "obstaclesCleared": [
-                "C"
-              ]
-            },
-            "Morph",
-            {
-              "or": [
-                "h_JumpAssist",
-                "canCrouchJump"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Destroy Middle Super Missile Blocks",
-      "link": [
-        4,
-        4
-      ],
-      "requires": [
-        {
-          "or": [
-            {
-              "ammo": {
-                "type": "Super",
-                "count": 2
-              }
-            },
-            {
-              "ammo": {
-                "type": "Diffusion",
-                "count": 1
-              }
-            }
-          ]
-        }
-      ],
-      "clearsObstacles": [
-        "C"
-      ]
     }
   ],
   "roomImageFile": "AQA Room 78F00.jpg",
   "roomAddress": "0x78F00",
-  "nextStratId": 15,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextStratId": 16,
+  "nextNotableId": 1
 }

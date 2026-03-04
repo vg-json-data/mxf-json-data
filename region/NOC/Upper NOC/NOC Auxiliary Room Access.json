@@ -133,11 +133,6 @@
       "link": [
         1,
         2
-      ],
-      "requires": [
-        {
-          "doorUnlockedAtNode": 2
-        }
       ]
     },
     {

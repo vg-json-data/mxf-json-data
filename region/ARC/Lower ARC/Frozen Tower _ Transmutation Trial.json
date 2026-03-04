@@ -296,7 +296,12 @@
         3
       ],
       "requires": [
-        "h_killRedGeron"
+        {
+          "and": [
+            "f_ARCAuxiliaryRoom_Engaged",
+            "h_killRedGeron"
+          ]
+        }
       ],
       "clearsObstacles": [
         "A"
@@ -567,7 +572,12 @@
         7
       ],
       "requires": [
-        "h_killRedGeron"
+        {
+          "and": [
+            "f_ARCAuxiliaryRoom_Engaged",
+            "h_killRedGeron"
+          ]
+        }
       ],
       "clearsObstacles": [
         "A"

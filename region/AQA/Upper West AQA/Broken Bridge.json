@@ -257,6 +257,9 @@
       "requires": [
         "h_killGreenGeron"
       ],
+      "clearsObstacles": [
+        "A"
+      ],
       "setsFlags": [
         "f_BrokenBridge_GreenGeronDestroyed"
       ]
