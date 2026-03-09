@@ -1388,7 +1388,7 @@
         "name": "f_GenesisSpeedway_MissileTank_Collected",
         "address": "7ED870",
         "bit": 6,
-        "description": "[Genesis Speedway] Missile Tank Collected"
+        "description": "[Ventilation Speedway] Missile Tank Collected"
       },
       {
         "name": "f_OperationsVentilation_MissileTankUpper_Collected",

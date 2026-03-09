@@ -78,14 +78,14 @@
     },
     {
       "connectionType": "HorizontalDoor",
-      "description": "Horizontal Door connection between [Genesis Speedway - Left Door] and [Nexus Crossing - Bottom-Right Door]",
+      "description": "Horizontal Door connection between [Ventilation Speedway - Left Door] and [Nexus Crossing - Bottom-Right Door]",
       "direction": "Bidirectional",
       "nodes": [
         {
           "area": "MDK",
           "subarea": "East Main Deck",
           "roomid": 150,
-          "roomName": "Genesis Speedway",
+          "roomName": "Ventilation Speedway",
           "nodeid": 1,
           "nodeName": "Left Door",
           "position": "left"

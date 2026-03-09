@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
   "id": 150,
-  "name": "Genesis Speedway",
+  "name": "Ventilation Speedway",
   "area": "MDK",
   "subarea": "East Main Deck",
   "roomEnvironments": [
@@ -65,7 +65,7 @@
     {
       "id": 3,
       "idMinorItemPlm": "0x06",
-      "name": "Genesis Speedway - Missile Tank",
+      "name": "Ventilation Speedway - Missile Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
