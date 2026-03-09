@@ -86,20 +86,68 @@
         2,
         2
       ],
+      "requires": [
+        {
+          "and": [
+            {
+              "or": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "Sciser"
+                      ]
+                    ],
+                    "excludedWeapons": [
+                      "Missile"
+                    ]
+                  }
+                },
+                {
+                  "and": [
+                    {
+                      "resourceCapacity": [
+                        {
+                          "type": "Missile",
+                          "count": 6
+                        }
+                      ]
+                    },
+                    {
+                      "enemyKill": {
+                        "enemies": [
+                          [
+                            "Sciser"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Golden Sciser-X"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ],
       "collectsItems": [
         2
       ],
       "setsFlags": [
         "f_AQAReserveXRoom_ReserveXCollected"
-      ],
-      "requires": []
+      ]
     }
   ],
   "roomImageFile": "AQA Room 78C00.jpg",
   "roomAddress": "0x78C00",
   "nextStratId": 4,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
