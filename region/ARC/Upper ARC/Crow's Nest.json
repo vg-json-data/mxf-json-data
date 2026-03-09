@@ -1,7 +1,7 @@
 {
   "$schema": "../../../schema/mxf-room.schema.json",
   "id": 85,
-  "name": "Crow\u0027s Nest",
+  "name": "Crow's Nest",
   "area": "ARC",
   "subarea": "Upper ARC",
   "roomEnvironments": [
@@ -63,25 +63,9 @@
       ]
     },
     {
-      "id": 3,
-      "name": "Left of Orange Geron",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 96,
-          "y": 624,
-          "w": 24,
-          "h": 40
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
       "id": 4,
       "idMinorItemPlm": "0x53",
-      "name": "Crow\u0027s Nest - Power Bomb Tank",
+      "name": "Crow's Nest - Power Bomb Tank",
       "nodeType": "item",
       "nodeSubType": "visible",
       "geometry": [
@@ -98,6 +82,22 @@
       "nodeAddress": "0x7DF5F",
       "mapTileX": 29,
       "mapTileY": 12
+    },
+    {
+      "id": 3,
+      "name": "Left of Orange Geron",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 96,
+          "y": 624,
+          "w": 24,
+          "h": 40
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "obstacles": [
@@ -214,6 +214,35 @@
       "name": "Base",
       "link": [
         1,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "obstaclesCleared": [
+                    "C"
+                  ]
+                },
+                "Morph"
+              ]
+            },
+            "f_NightmareArena_CoreXAbsorbed"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        1,
         4
       ],
       "requires": [
@@ -260,44 +289,11 @@
     {
       "name": "Base",
       "link": [
-        1,
-        3
-      ],
-      "requires": [
-        {
-          "or": [
-            {
-              "obstaclesCleared": [
-                "A"
-              ]
-            },
-            {
-              "obstaclesCleared": [
-                "C"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
         2,
         3
       ],
       "requires": [
         "h_JumpAssist"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
-        1
-      ],
-      "requires": [
-        "Wave"
       ]
     },
     {
@@ -315,10 +311,16 @@
               ]
             },
             {
-              "obstaclesCleared": [
-                "C"
+              "and": [
+                {
+                  "obstaclesCleared": [
+                    "C"
+                  ]
+                },
+                "Morph"
               ]
-            }
+            },
+            "f_NightmareArena_CoreXAbsorbed"
           ]
         }
       ]
@@ -365,12 +367,20 @@
         "B",
         "C"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        1
+      ],
+      "requires": [
+        "Wave"
+      ]
     }
   ],
   "roomImageFile": "ARC Room 79000.jpg",
   "roomAddress": "0x79000",
   "nextStratId": 13,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
