@@ -21,6 +21,8 @@
       "name": "Left Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -31,11 +33,52 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "X-B.O.X. Arena Lock",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_XBOXArena_CoreXAbsorbed"
+              ]
+            }
+          ],
+          "lock": [
+            "f_NightmareArena_CoreXAbsorbed"
+          ]
         }
       ]
     },
@@ -44,6 +87,8 @@
       "name": "Right Door",
       "nodeType": "door",
       "nodeSubType": "blue",
+      "nodeAddress": "0x0",
+      "doorOrientation": "right",
       "geometry": [
         {
           "shape": "rect",
@@ -54,11 +99,52 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "right",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "X-B.O.X. Arena Lock",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_XBOXArena_CoreXAbsorbed"
+              ]
+            }
+          ],
+          "lock": [
+            "f_NightmareArena_CoreXAbsorbed"
+          ]
         }
       ]
     },
