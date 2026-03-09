@@ -38,7 +38,6 @@
           "physics": "air"
         }
       ],
-      "useImplicitDoorUnlocks": false,
       "mapTileMask": [
         [
           0,
@@ -73,7 +72,7 @@
             {
               "name": "Unlock Door",
               "requires": [
-                "f_BarrierCoreXChozoRoom_CoreXRevealed"
+                "f_BarrierCoreXChozoRoom_DoorsUnlocked"
               ]
             }
           ]
@@ -102,7 +101,6 @@
           "physics": "air"
         }
       ],
-      "useImplicitDoorUnlocks": false,
       "mapTileMask": [
         [
           0,
@@ -137,7 +135,7 @@
             {
               "name": "Unlock Door",
               "requires": [
-                "f_BarrierCoreXArena_CoreXAbsorbed"
+                "f_BarrierCoreXChozoRoom_DoorsUnlocked"
               ]
             }
           ]
@@ -207,7 +205,8 @@
         3
       ],
       "setsFlags": [
-        "f_BarrierCoreXArena_CoreXAbsorbed"
+        "f_BarrierCoreXArena_CoreXAbsorbed",
+        "f_BarrierCoreXChozoRoom_DoorsUnlocked"
       ],
       "requires": [
         {
