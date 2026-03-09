@@ -164,7 +164,7 @@
         2
       ],
       "requires": [
-        "canTrivialUseFrozenEnemies"
+        "canUseFrozenEnemies"
       ],
       "exitCondition": {
         "leaveWithRunway": {
@@ -200,7 +200,7 @@
       "requires": [
         {
           "and": [
-            "canTrivialUseFrozenEnemies",
+            "canUseFrozenEnemies",
             {
               "canShineCharge": {
                 "usedTiles": 16,

@@ -142,7 +142,7 @@
             "Speedbooster without HiJump will reduce Samus' jump height when running and turning Speedbooster off will enable her to jump normally while running.",
             "Disabling HiJump will give more time to perform a mid-air morph.",
             "Disabling Gravity will allow Samus to float farther in water, or jump slower for a mid-air morph.",
-            "Beams may need to be disabled to control how enemies are killed (i.e. Remove plasma for canUseFrozenEnemies, or remove ice to effeciently use heat room farm points)."
+            "Beams may need to be disabled to control how enemies are killed (i.e. Remove Diffusion Missile for canUseFrozenEnemies, or remove Ice Missiles to effeciently use heat room farm points with missiles)."
           ],
           "devNote": [
             "Note that this tech is not applied requiring the item to be not collected with canRiskPermanentLossOfAccess, as this is a low-level tech.",
@@ -1919,7 +1919,7 @@
                 "IceMissile"
               ],
               "note": [
-                "Can use Ice Beam to freeze enemies to use as platforms.",
+                "Can use Ice Missiles to freeze enemies to use as platforms.",
                 "This only includes the most basic examples, where enemies can be easily positioned and refrozen without risk of killing them."
               ],
               "devNote": "",
@@ -1932,8 +1932,8 @@
                   ],
                   "otherRequires": [],
                   "note": [
-                    "Can use Ice Beam to freeze enemies in nontrivial situations, such as to use as a platform or to wall jump off of.",
-                    "This may require removing Plasma Beam in order to prevent freezing and then killing the enemy with a single shot."
+                    "Can use Ice Missiles to freeze enemies in nontrivial situations, such as to use as a platform or to wall jump off of.",
+                    "This may require disabling Diffusion Missile equipment in order to prevent freezing and then killing the enemy with a single shot."
                   ],
                   "devNote": "",
                   "extensionTechs": [
@@ -1956,8 +1956,8 @@
                       ],
                       "otherRequires": [],
                       "note": [
-                        "The ability to use Ice Beam to freeze enemies in precise positions.",
-                        "If Supers are available, they can be used to knock wall crawlers off walls and freeze them mid air."
+                        "The ability to use Ice Missiles to freeze enemies in precise positions.",
+                        "This includes knocking wall crawlers off walls and freezing them mid-air."
                       ],
                       "devNote": "",
                       "extensionTechs": [

@@ -424,7 +424,7 @@
                     "canCrouchJump"
                   ]
                 },
-                "canTrivialUseFrozenEnemies",
+                "canUseFrozenEnemies",
                 {
                   "ammo": {
                     "type": "Ice Missile",
@@ -510,7 +510,7 @@
                         "canCrouchJump"
                       ]
                     },
-                    "canTrivialUseFrozenEnemies",
+                    "canUseFrozenEnemies",
                     {
                       "ammo": {
                         "type": "Ice Missile",
@@ -594,7 +594,7 @@
             },
             {
               "and": [
-                "canTrivialUseFrozenEnemies",
+                "canUseFrozenEnemies",
                 "h_JumpAssist"
               ]
             }

@@ -391,7 +391,7 @@
                 {
                   "coldFrames": 500
                 },
-                "canTrivialUseFrozenEnemies",
+                "canUseFrozenEnemies",
                 {
                   "ammo": {
                     "type": "Ice Missile",
