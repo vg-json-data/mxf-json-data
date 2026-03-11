@@ -140,6 +140,23 @@
       ]
     },
     {
+      "name": "Leave With Runway",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        "Gravity"
+      ],
+      "exitCondition": {
+        "leaveWithRunway": {
+          "length": 3,
+          "openEnd": 1,
+          "gentleUpTiles": 2
+        }
+      }
+    },
+    {
       "name": "Base",
       "link": [
         2,
@@ -256,6 +273,6 @@
   ],
   "roomImageFile": "AQA Room 7AE00.jpg",
   "roomAddress": "0x7AE00",
-  "nextStratId": 6,
+  "nextStratId": 7,
   "nextNotableId": 1
 }
