@@ -597,7 +597,12 @@
           "and": [
             "ScrewAttack",
             {
-              "lavaFrames": 15
+              "or": [
+                {
+                  "lavaFrames": 15
+                },
+                "f_PYRAuxiliaryRoom_Engaged"
+              ]
             },
             {
               "heatFrames": 80

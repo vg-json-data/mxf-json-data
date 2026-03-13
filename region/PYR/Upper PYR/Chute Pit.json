@@ -101,7 +101,12 @@
                       }
                     },
                     {
-                      "lavaFrames": 501
+                      "or": [
+                        {
+                          "lavaFrames": 501
+                        },
+                        "f_PYRAuxiliaryRoom_Engaged"
+                      ]
                     },
                     {
                       "heatFrames": 501
@@ -118,7 +123,12 @@
                       }
                     },
                     {
-                      "lavaFrames": 501
+                      "or": [
+                        {
+                          "lavaFrames": 501
+                        },
+                        "f_PYRAuxiliaryRoom_Engaged"
+                      ]
                     },
                     {
                       "heatFrames": 501
@@ -167,7 +177,12 @@
                       }
                     },
                     {
-                      "lavaFrames": 501
+                      "or": [
+                        {
+                          "lavaFrames": 501
+                        },
+                        "f_PYRAuxiliaryRoom_Engaged"
+                      ]
                     },
                     {
                       "heatFrames": 501
@@ -184,7 +199,12 @@
                       }
                     },
                     {
-                      "lavaFrames": 501
+                      "or": [
+                        {
+                          "lavaFrames": 501
+                        },
+                        "f_PYRAuxiliaryRoom_Engaged"
+                      ]
                     },
                     {
                       "heatFrames": 501
@@ -194,7 +214,12 @@
               ]
             },
             {
-              "lavaFrames": 501
+              "or": [
+                {
+                  "lavaFrames": 501
+                },
+                "f_PYRAuxiliaryRoom_Engaged"
+              ]
             },
             {
               "heatFrames": 501
