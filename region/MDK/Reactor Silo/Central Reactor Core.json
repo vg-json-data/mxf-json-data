@@ -109,22 +109,6 @@
       ]
     },
     {
-      "id": 5,
-      "name": "Top-Left Alcove",
-      "nodeType": "junction",
-      "nodeSubType": "visible",
-      "geometry": [
-        {
-          "shape": "rect",
-          "x": 136,
-          "y": 128,
-          "w": 24,
-          "h": 32
-        }
-      ],
-      "color": "#0000ff"
-    },
-    {
       "id": 6,
       "idMinorItemPlm": "0x0B",
       "name": "Central Reactor Core - Hidden Missile Tank",
@@ -144,6 +128,22 @@
       "nodeAddress": "0x7D45D",
       "mapTileX": 31,
       "mapTileY": 19
+    },
+    {
+      "id": 5,
+      "name": "Top-Left Alcove",
+      "nodeType": "junction",
+      "nodeSubType": "visible",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 136,
+          "y": 128,
+          "w": 24,
+          "h": 32
+        }
+      ],
+      "color": "#0000ff"
     }
   ],
   "strats": [
@@ -171,13 +171,12 @@
       ],
       "requires": [
         {
-          "and": [
-            {
-              "or": [
-                "canCeilingBombJump",
-                "SpaceJump"
-              ]
-            }
+          "or": [
+            "canCeilingBombJump",
+            "SpaceJump",
+            "SpeedBooster",
+            "SpeedBoosterLv2",
+            "canWalljump"
           ]
         }
       ]
@@ -284,16 +283,6 @@
     {
       "name": "Base",
       "link": [
-        6,
-        5
-      ],
-      "requires": [
-        "Morph"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
         5,
         1
       ],
@@ -333,13 +322,20 @@
       "setsFlags": [
         "f_CentralReactorCore_MissileTank_Collected"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        5
+      ],
+      "requires": [
+        "Morph"
+      ]
     }
   ],
   "roomImageFile": "MDK Room 3.png",
   "roomAddress": "0x0",
   "nextStratId": 14,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
