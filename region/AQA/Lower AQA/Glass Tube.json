@@ -205,7 +205,6 @@
       "requires": [
         {
           "or": [
-            "canSuitlessUnderwaterIBJ",
             {
               "and": [
                 "canSuitlessWaterRoom",
@@ -213,7 +212,7 @@
                   "or": [
                     "SuperJump",
                     "SpaceJump",
-                    "canIBJ"
+                    "canSuitlessUnderwaterIBJ"
                   ]
                 }
               ]
