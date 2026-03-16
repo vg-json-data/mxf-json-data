@@ -249,14 +249,38 @@
               "not": "f_PhantomireArena_CoreXAbsorbed"
             },
             {
-              "enemyKill": {
-                "enemies": [
-                  [
-                    "Phantomire",
-                    "Phantomire Core-X"
+              "and": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "Phantomire",
+                        "Phantomire Core-X"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "or": [
+                    {
+                      "resourceCapacity": [
+                        {
+                          "type": "Missile",
+                          "count": 30
+                        }
+                      ]
+                    },
+                    {
+                      "resourceCapacity": [
+                        {
+                          "type": "ReserveEnergy",
+                          "count": 100
+                        }
+                      ]
+                    }
                   ]
-                ]
-              }
+                }
+              ]
             }
           ]
         }

@@ -175,7 +175,41 @@
         1,
         2
       ],
-      "requires": []
+      "requires": [
+        {
+          "and": [
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Neo-Crocomire"
+                  ]
+                ]
+              }
+            },
+            {
+              "or": [
+                {
+                  "resourceCapacity": [
+                    {
+                      "type": "Missile",
+                      "count": 30
+                    }
+                  ]
+                },
+                {
+                  "resourceCapacity": [
+                    {
+                      "type": "ReserveEnergy",
+                      "count": 100
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Base",
@@ -186,16 +220,7 @@
       "requires": [
         {
           "or": [
-            "f_NeoCrocomire_Defeated",
-            {
-              "enemyKill": {
-                "enemies": [
-                  [
-                    "Neo-Crocomire"
-                  ]
-                ]
-              }
-            }
+            "f_NeoCrocomire_Defeated"
           ]
         }
       ],

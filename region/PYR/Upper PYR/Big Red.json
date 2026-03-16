@@ -244,9 +244,14 @@
   ],
   "obstacles": [
     {
-      "name": "Super Missile Blocks",
+      "name": "Super Missile Blocks (Below Right-Lower Door)",
       "obstacleType": "inanimate",
       "id": "A"
+    },
+    {
+      "name": "Super Missile Blocks (Below \"Above Left-Lower Tunnel\")",
+      "obstacleType": "inanimate",
+      "id": "B"
     }
   ],
   "enemies": [
@@ -329,22 +334,6 @@
       ]
     },
     {
-      "name": "Base",
-      "link": [
-        5,
-        6
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        5,
-        11
-      ],
-      "requires": []
-    },
-    {
       "name": "Destroy Super Missile Blocks",
       "link": [
         4,
@@ -376,14 +365,6 @@
       "name": "Base",
       "link": [
         4,
-        11
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
         10
       ],
       "requires": [
@@ -394,6 +375,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        11
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        11
+      ],
+      "requires": []
     },
     {
       "name": "Base",
@@ -420,6 +425,65 @@
       "requires": [
         "h_JumpAssist"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        6
+      ],
+      "requires": [
+        {
+          "obstaclesCleared": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Destroy Super Missile Blocks",
+      "link": [
+        8,
+        8
+      ],
+      "requires": [
+        {
+          "ammo": {
+            "type": "Super",
+            "count": 1
+          }
+        }
+      ],
+      "clearsObstacles": [
+        "B"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        8,
+        10
+      ],
+      "requires": []
     },
     {
       "name": "Base",
@@ -460,6 +524,56 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        10,
+        8
+      ],
+      "requires": [
+        {
+          "or": [
+            "SpaceJump",
+            {
+              "and": [
+                {
+                  "or": [
+                    "Grapple",
+                    "canTrickyUseFrozenEnemies"
+                  ]
+                },
+                "canWalljump"
+              ]
+            },
+            {
+              "and": [
+                {
+                  "enemyKill": {
+                    "enemies": [
+                      [
+                        "Sidehopper",
+                        "Sidehopper"
+                      ]
+                    ]
+                  }
+                },
+                "canIBJ"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        10,
+        9
+      ],
+      "requires": [
+        "h_JumpAssist"
       ]
     },
     {
@@ -521,104 +635,10 @@
       "clearsObstacles": [
         "A"
       ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        10,
-        9
-      ],
-      "requires": [
-        "h_JumpAssist"
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        10,
-        8
-      ],
-      "requires": [
-        {
-          "or": [
-            "SpaceJump",
-            {
-              "and": [
-                {
-                  "or": [
-                    "Grapple",
-                    "canTrickyUseFrozenEnemies"
-                  ]
-                },
-                "canWalljump"
-              ]
-            },
-            {
-              "and": [
-                {
-                  "enemyKill": {
-                    "enemies": [
-                      [
-                        "Sidehopper",
-                        "Sidehopper"
-                      ]
-                    ]
-                  }
-                },
-                "canIBJ"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        8,
-        5
-      ],
-      "requires": [
-        {
-          "and": [
-            {
-              "ammo": {
-                "type": "Super",
-                "count": 1
-              }
-            },
-            "Morph"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        8,
-        6
-      ],
-      "requires": [
-        {
-          "ammo": {
-            "type": "Super",
-            "count": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "Base",
-      "link": [
-        8,
-        10
-      ],
-      "requires": []
     }
   ],
   "roomImageFile": "PYR Room 79400.jpg",
   "roomAddress": "0x79400",
-  "nextStratId": 25,
-  "nextNotableId": 1,
-  "notables": []
+  "nextStratId": 26,
+  "nextNotableId": 1
 }

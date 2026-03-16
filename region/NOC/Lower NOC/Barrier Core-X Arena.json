@@ -218,7 +218,8 @@
             ],
             "excludedWeapons": [
               "SpeedBooster",
-              "SpeedBoosterLv2"
+              "SpeedBoosterLv2",
+              "Shinespark"
             ]
           }
         }

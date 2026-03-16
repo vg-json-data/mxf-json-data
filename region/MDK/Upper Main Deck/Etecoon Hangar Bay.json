@@ -20,7 +20,9 @@
       "id": 1,
       "name": "Left Door",
       "nodeType": "door",
-      "nodeSubType": "blue",
+      "nodeSubType": "gray",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
       "geometry": [
         {
           "shape": "rect",
@@ -31,11 +33,50 @@
         }
       ],
       "color": "#ffffff",
-      "nodeAddress": "0x0",
-      "doorOrientation": "left",
       "doorEnvironments": [
         {
           "physics": "air"
+        }
+      ],
+      "useImplicitDoorUnlocks": false,
+      "mapTileMask": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "locks": [
+        {
+          "name": "Locked Door",
+          "lockType": "gameFlag",
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                "f_MDKSecurityRoom_DoorsUnlocked"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -130,6 +171,29 @@
           "physics": "air"
         }
       ]
+    },
+    {
+      "id": 6,
+      "name": "Right Tunnel",
+      "nodeType": "door",
+      "nodeSubType": "passage",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 400,
+          "y": 192,
+          "w": 112,
+          "h": 16
+        }
+      ],
+      "color": "#ffffff",
+      "nodeAddress": "0x0",
+      "doorOrientation": "left",
+      "doorEnvironments": [
+        {
+          "physics": "air"
+        }
+      ]
     }
   ],
   "strats": [
@@ -185,7 +249,17 @@
         1
       ],
       "requires": [
-        "f_MDKSecurityRoom_DoorsUnlocked"
+        "Morph"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        6
+      ],
+      "requires": [
+        "Morph"
       ]
     },
     {
@@ -213,13 +287,20 @@
       "requires": [
         "f_MDKSecurityRoom_DoorsUnlocked"
       ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        6,
+        2
+      ],
+      "requires": [
+        "Morph"
+      ]
     }
   ],
   "roomImageFile": "MDK Room 26.png",
   "roomAddress": "0x0",
-  "nextStratId": 9,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextStratId": 11,
+  "nextNotableId": 1
 }
