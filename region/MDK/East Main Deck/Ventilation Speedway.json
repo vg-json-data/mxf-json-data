@@ -138,6 +138,27 @@
       ]
     },
     {
+      "name": "Reach Missile Tank without Bombs/PBs via Camera Manip",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "and": [
+            "Morph",
+            "canCameraManip"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "collectsItems": [
+        3
+      ]
+    },
+    {
       "name": "Base",
       "link": [
         3,
@@ -183,8 +204,6 @@
   ],
   "roomImageFile": "MDK Room 31.png",
   "roomAddress": "0x0",
-  "nextStratId": 8,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextStratId": 9,
+  "nextNotableId": 1
 }
