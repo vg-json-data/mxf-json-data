@@ -89,7 +89,12 @@
         2
       ],
       "requires": [
-        "canNeutralDamageBoost"
+        {
+          "and": [
+            "Gravity",
+            "canNeutralDamageBoost"
+          ]
+        }
       ],
       "collectsItems": [
         2
@@ -102,13 +107,29 @@
         1
       ],
       "requires": []
+    },
+    {
+      "name": "Reach Missile Tank with Owtch Damage Boost (No Gravity)",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "canPreciseWalljump",
+            "canTrickyWalljump",
+            "canNeutralDamageBoost"
+          ]
+        }
+      ],
+      "collectsItems": [
+        2
+      ]
     }
   ],
   "roomImageFile": "TRO Room 78800.jpg",
   "roomAddress": "0x78800",
-  "nextStratId": 4,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextStratId": 5,
+  "nextNotableId": 1
 }
