@@ -199,14 +199,38 @@
       ],
       "requires": [
         {
-          "enemyKill": {
-            "enemies": [
-              [
-                "Meta Draygon-X",
-                "Meta Draygon-X Core"
+          "and":[
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Meta Draygon-X",
+                    "Meta Draygon-X Core"
+                  ]
+                ]
+              }
+            },
+            {
+              "or":[
+                "Gravity",
+                {
+                  "and":[
+                    "canSuitlessWaterRoom",
+                    "canTrickyDodgeEnemies"
+                  ]
+                },
+                {
+                  "resourceCapacity": [
+                    {
+                      "type":
+                      "ReserveEnergy",
+                      "count": 200
+                    }
+                  ]
+                }
               ]
-            ]
-          }
+            }
+          ]
         }
       ],
       "collectsItems": [
