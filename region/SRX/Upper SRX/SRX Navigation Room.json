@@ -38,7 +38,7 @@
           "physics": "air"
         }
       ],
-      "useImplicitDoorUnlocks": false,
+      "useImplicitDoorUnlocks": true,
       "mapTileMask": [
         [
           0,
@@ -73,7 +73,7 @@
             {
               "name": "Talk to Adam",
               "requires": [
-                "f_SRXNavigationRoom_TalkingToAdam"
+                "f_SRXNavigationRoom_DoorsUnlocked"
               ]
             }
           ]
@@ -192,7 +192,8 @@
         4
       ],
       "setsFlags": [
-        "f_SRXNavigationRoom_TalkingToAdam"
+        "f_SRXNavigationRoom_TalkingToAdam",
+        "f_SRXNavigationRoom_DoorsUnlocked"
       ],
       "requires": []
     }

@@ -38,6 +38,7 @@
           "physics": "air"
         }
       ],
+      "useImplicitDoorUnlocks": true,
       "mapTileMask": [
         [
           0,
@@ -72,7 +73,7 @@
             {
               "name": "Unlock Door",
               "requires": [
-                "f_ArachnusXArena_DoorsUnlocked"
+                "f_SRXNavigationRoom_DoorsUnlocked"
               ]
             }
           ]
