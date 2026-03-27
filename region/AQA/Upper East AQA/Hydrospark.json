@@ -206,14 +206,41 @@
       "requires": [
         {
           "and": [
-            "h_bombThings",
+            {
+              "or": [
+                "h_bombThings",
+                {
+                  "and": [
+                    "Gravity",
+                    "h_shinechargeMaxRunway",
+                    {
+                      "and": [
+                        "canShinespark",
+                        "canMidairShinespark",
+                        "canShinechargeMovement"
+                      ]
+                    },
+                    {
+                      "shinespark": {
+                        "frames": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "or": [
                 "SuperJump",
                 {
                   "and": [
                     "Gravity",
-                    "canIBJ"
+                    {
+                      "or": [
+                        "canIBJ",
+                        "canTrivialMidAirMorph"
+                      ]
+                    }
                   ]
                 },
                 {

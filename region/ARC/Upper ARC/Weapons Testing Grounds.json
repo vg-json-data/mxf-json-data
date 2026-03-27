@@ -38,7 +38,6 @@
           "physics": "air"
         }
       ],
-      "useImplicitDoorUnlocks": false,
       "mapTileMask": [
         [
           0,
@@ -83,9 +82,22 @@
           ],
           "lock": [
             {
-              "or": [
+              "and": [
+                {
+                  "resourceCapacity": [
+                    {
+                      "type": "PowerBomb",
+                      "count": 1
+                    }
+                  ]
+                },
+                {
+                  "not": "f_WeaponsTestingGrounds_WTGSAXChaseBegins"
+                },
                 "f_WeaponsTestingGrounds_PowerBombTank_Collected",
-                "f_TurboTunnel_WTGSAXChaseOver"
+                {
+                  "not": "f_WeaponsTestingGrounds_DoorsUnlocked"
+                }
               ]
             }
           ]
@@ -253,7 +265,16 @@
           ]
         }
       ],
-      "id": "e1"
+      "id": "e1",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      ]
     },
     {
       "groupName": "Gerubus",
@@ -266,7 +287,16 @@
       "spawn": [
         "f_TurboTunnel_WTGSAXChaseOver"
       ],
-      "id": "e2"
+      "id": "e2",
+      "geometry": [
+        {
+          "shape": "rect",
+          "x": 0,
+          "y": 0,
+          "w": 16,
+          "h": 16
+        }
+      ]
     }
   ],
   "strats": [
