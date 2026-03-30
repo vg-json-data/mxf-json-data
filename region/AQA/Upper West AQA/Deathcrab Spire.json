@@ -225,6 +225,35 @@
       ]
     },
     {
+      "name": "Come In With Blue Speed, Reach Top-Left Tunnel",
+      "link": [
+        2,
+        1
+      ],
+      "entranceCondition": {
+        "comeInWithBlueSpeed": {}
+      },
+      "requires": [
+        "canSpeedball"
+      ]
+    },
+    {
+      "name": "Come In With Blue Speed, Leave With Blue Speed",
+      "link": [
+        2,
+        1
+      ],
+      "entranceCondition": {
+        "comeInWithBlueSpeed": {}
+      },
+      "requires": [
+        "canSpeedball"
+      ],
+      "exitCondition": {
+        "leaveWithBlueSpeed": {}
+      }
+    },
+    {
       "name": "Base",
       "link": [
         2,
@@ -422,8 +451,6 @@
   ],
   "roomImageFile": "AQA Room 7A300.jpg",
   "roomAddress": "0x7A300",
-  "nextStratId": 15,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextStratId": 17,
+  "nextNotableId": 1
 }

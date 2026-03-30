@@ -128,7 +128,25 @@
                   ]
                 },
                 "SpaceJump",
-                "canConsecutiveSingleWallJump"
+                "canConsecutiveSingleWallJump",
+                {
+                  "and": [
+                    "SuperJump",
+                    "SpeedBooster",
+                    "canWalljump"
+                  ]
+                },
+                {
+                  "and": [
+                    "canRecursiveShortCharge",
+                    {
+                      "shinespark": {
+                        "frames": 20,
+                        "excessFrames": 10
+                      }
+                    }
+                  ]
+                }
               ]
             }
           ]

@@ -2820,6 +2820,21 @@
           "devNote": "",
           "extensionTechs": [
             {
+              "id": 192,
+              "name": "canShinesparkCeilingClip",
+              "techRequires": [
+                "canCeilingClip"
+              ],
+              "otherRequires": [
+                "SpeedBooster"
+              ],
+              "note": [
+                "Crouching and sparking upward within a 2-tile-high gap to clip through a 1-tile-high ceiling. Very easy to do."
+              ],
+              "devNote": "",
+              "extensionTechs": []
+            },
+            {
               "id": 167,
               "name": "canPreciseCeilingClip",
               "techRequires": [
@@ -3150,5 +3165,5 @@
       ]
     }
   ],
-  "nextTechId": 192
+  "nextTechId": 193
 }
