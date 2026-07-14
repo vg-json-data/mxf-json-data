@@ -701,12 +701,7 @@
       "requires": [
         {
           "and": [
-            {
-              "or": [
-                "SpeedBoosterLv2",
-                "ScrewAttack"
-              ]
-            },
+            "SpeedBoosterLv2",
             "h_shinechargeMaxRunway",
             {
               "heatFrames": 501
