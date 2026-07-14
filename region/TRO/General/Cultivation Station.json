@@ -185,8 +185,8 @@
     {
       "name": "Kill Green Geron",
       "link": [
-        3,
-        3
+        2,
+        2
       ],
       "requires": [
         "h_killGreenGeron"
@@ -197,6 +197,130 @@
       "setsFlags": [
         "f_CultivationStation_GreenGeronDestroyed"
       ]
+    },
+    {
+      "name": "Come In Shinecharging, Kill Green Geron",
+      "link": [
+        2,
+        2
+      ],
+      "entranceCondition": {
+        "comeInShinecharging": {
+          "length": 9,
+          "openEnd": 0,
+          "gentleDownTiles": 4
+        }
+      },
+      "requires": [
+        {
+          "and": [
+            {
+              "and": [
+                "canShinespark",
+                "canShinechargeMovement"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "shinespark": {
+                    "frames": 1,
+                    "excessFrames": 9
+                  }
+                },
+                "canChainTemporaryBlue"
+              ]
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_CultivationStation_GreenGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Kill Green Geron via Chained Shortcharge Spark",
+      "note": "Build up speed from the upper half of the room and perform a series of horizontal shinespark chains to eventually spark into the Green Geron to kill it.",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "canShineCharge": {
+                "usedTiles": 20,
+                "openEnd": 1,
+                "gentleUpTiles": 4,
+                "gentleDownTiles": 4
+              }
+            },
+            {
+              "and": [
+                "canShinechargeMovement",
+                "canConsecutiveHorizontalSparkIntoTemporaryBlue"
+              ]
+            },
+            {
+              "shinespark": {
+                "frames": 1,
+                "excessFrames": 9
+              }
+            }
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_CultivationStation_GreenGeronDestroyed"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        3
+      ],
+      "requires": [
+        {
+          "or": [
+            "Morph",
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        2,
+        6
+      ],
+      "collectsItems": [
+        6
+      ],
+      "setsFlags": [
+        "f_CultivationStation_MissileTank_Collected"
+      ],
+      "requires": []
     },
     {
       "name": "Base",
@@ -233,37 +357,10 @@
       ]
     },
     {
-      "name": "Base",
-      "link": [
-        3,
-        4
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        2,
-        3
-      ],
-      "requires": [
-        {
-          "or": [
-            "Morph",
-            {
-              "obstaclesCleared": [
-                "A"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Kill Green Geron",
       "link": [
-        2,
-        2
+        3,
+        3
       ],
       "requires": [
         "h_killGreenGeron"
@@ -278,22 +375,8 @@
     {
       "name": "Base",
       "link": [
-        2,
-        5
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        2,
-        6
-      ],
-      "collectsItems": [
-        6
-      ],
-      "setsFlags": [
-        "f_CultivationStation_MissileTank_Collected"
+        3,
+        4
       ],
       "requires": []
     },
@@ -346,8 +429,6 @@
   ],
   "roomImageFile": "TRO Room 78F00.jpg",
   "roomAddress": "0x78F00",
-  "nextStratId": 14,
-  "nextNotableId": 1,
-  "enemies": [],
-  "notables": []
+  "nextStratId": 16,
+  "nextNotableId": 1
 }
