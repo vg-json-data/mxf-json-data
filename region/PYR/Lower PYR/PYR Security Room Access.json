@@ -693,10 +693,10 @@
       ]
     },
     {
-      "name": "Base",
+      "name": "Destroy Speed Booster Blocks",
       "link": [
         4,
-        5
+        4
       ],
       "requires": [
         {
@@ -711,7 +711,7 @@
                 },
                 {
                   "and": [
-                    "SpeedBoosterLv2",
+                    "SpeedBooster",
                     {
                       "and": [
                         "canShinechargeMovement",
@@ -724,18 +724,39 @@
               ]
             },
             {
-              "heatFrames": 501
-            },
-            {
               "obstaclesCleared": [
                 "B"
               ]
+            },
+            {
+              "heatFrames": 501
             }
           ]
         }
       ],
       "clearsObstacles": [
         "A"
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        4,
+        5
+      ],
+      "requires": [
+        {
+          "and": [
+            {
+              "obstaclesCleared": [
+                "B"
+              ]
+            },
+            {
+              "heatFrames": 501
+            }
+          ]
+        }
       ]
     },
     {
@@ -762,6 +783,6 @@
   ],
   "roomImageFile": "PYR Room 7B700.jpg",
   "roomAddress": "0x7B700",
-  "nextStratId": 14,
+  "nextStratId": 15,
   "nextNotableId": 1
 }
