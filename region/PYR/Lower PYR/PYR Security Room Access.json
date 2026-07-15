@@ -701,12 +701,31 @@
       "requires": [
         {
           "and": [
-            "SpeedBoosterLv2",
-            "h_shinechargeMaxRunway",
+            {
+              "or": [
+                {
+                  "and": [
+                    "h_shinechargeMaxRunway",
+                    "f_PYRAuxiliaryRoom_Engaged"
+                  ]
+                },
+                {
+                  "and": [
+                    "SpeedBoosterLv2",
+                    {
+                      "and": [
+                        "canShinechargeMovement",
+                        "canShinechargeMovementComplex",
+                        "canShinechargeMovementTricky"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "heatFrames": 501
             },
-            "f_PYRAuxiliaryRoom_Engaged",
             {
               "obstaclesCleared": [
                 "B"
