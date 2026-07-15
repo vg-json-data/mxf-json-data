@@ -343,6 +343,9 @@
       ],
       "collectsItems": [
         5
+      ],
+      "setsFlags": [
+        "f_PYRSecurityRoomAccess_PowerBombTank_Collected"
       ]
     },
     {
@@ -764,8 +767,8 @@
           "and": [
             {
               "obstaclesCleared": [
-                "B",
-                "A"
+                "A",
+                "B"
               ]
             },
             {
@@ -776,6 +779,9 @@
       ],
       "collectsItems": [
         5
+      ],
+      "setsFlags": [
+        "f_PYRSecurityRoomAccess_PowerBombTank_Collected"
       ]
     },
     {
