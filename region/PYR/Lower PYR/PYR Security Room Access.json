@@ -314,8 +314,19 @@
           "and": [
             "canShinechargeMovementComplex",
             {
-              "obstaclesCleared": [
-                "B"
+              "or": [
+                {
+                  "ammo": {
+                    "type": "Super",
+                    "count": 1
+                  }
+                },
+                {
+                  "ammo": {
+                    "type": "Diffusion",
+                    "count": 1
+                  }
+                }
               ]
             },
             {
@@ -327,7 +338,11 @@
         }
       ],
       "clearsObstacles": [
-        "A"
+        "A",
+        "B"
+      ],
+      "collectsItems": [
+        5
       ]
     },
     {
@@ -749,7 +764,8 @@
           "and": [
             {
               "obstaclesCleared": [
-                "B"
+                "B",
+                "A"
               ]
             },
             {
@@ -757,6 +773,9 @@
             }
           ]
         }
+      ],
+      "collectsItems": [
+        5
       ]
     },
     {
