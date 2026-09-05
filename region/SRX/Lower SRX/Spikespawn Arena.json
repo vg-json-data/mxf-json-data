@@ -131,7 +131,8 @@
                 "Spikespawn",
                 "Golden Arachnus-X Core"
               ]
-            ]
+            ],
+            "excludedWeapons":["PowerBeam","Charge"]
           }
         }
       ],

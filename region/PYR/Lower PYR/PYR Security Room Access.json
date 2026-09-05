@@ -126,6 +126,11 @@
       "name": "Super Missile Blocks",
       "obstacleType": "inanimate",
       "id": "B"
+    },
+    {
+      "name": "Wave Gate",
+      "obstacleType": "inanimate",
+      "id": "C"
     }
   ],
   "strats": [
@@ -218,6 +223,14 @@
       ]
     },
     {
+      "name": "Open Wave Gate",
+      "link": [
+        2,
+        2
+      ],
+      "requires": []
+    },
+    {
       "name": "Base",
       "link": [
         2,
@@ -258,6 +271,11 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "obstaclesCleared": [
+                    "C"
+                  ]
                 }
               ]
             },
@@ -292,6 +310,11 @@
                         }
                       ]
                     }
+                  ]
+                },
+                {
+                  "obstaclesCleared": [
+                    "C"
                   ]
                 }
               ]
@@ -532,11 +555,6 @@
           "or": [
             {
               "and": [
-                "Wave"
-              ]
-            },
-            {
-              "and": [
                 "ScrewAttack",
                 {
                   "or": [
@@ -566,6 +584,11 @@
                         }
                       ]
                     }
+                  ]
+                },
+                {
+                  "obstaclesCleared": [
+                    "C"
                   ]
                 }
               ]
@@ -601,6 +624,11 @@
                         }
                       ]
                     }
+                  ]
+                },
+                {
+                  "obstaclesCleared": [
+                    "C"
                   ]
                 }
               ]
@@ -757,6 +785,26 @@
       ]
     },
     {
+      "name": "Open Wave Gate",
+      "link": [
+        4,
+        4
+      ],
+      "requires": [
+        {
+          "or": [
+            "Wave",
+            {
+              "ammo": {
+                "type": "Diffusion",
+                "count": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Base",
       "link": [
         4,
@@ -808,6 +856,6 @@
   ],
   "roomImageFile": "PYR Room 7B700.jpg",
   "roomAddress": "0x7B700",
-  "nextStratId": 15,
+  "nextStratId": 17,
   "nextNotableId": 1
 }

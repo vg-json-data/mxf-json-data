@@ -247,7 +247,9 @@
                     "Mini B.O.X.",
                     "Mini B.O.X."
                   ]
-                ]
+                ],
+                "explicitWeapons": ["Super","ScrewAttack"],
+                "excludedWeapons": ["PowerBeam", "SpeedEchoes", "Shinespark", "Missile"]
               }
             }
           ]

@@ -77,6 +77,16 @@
                     "Neo-Ridley",
                     "Neo-Ridley Core-X"
                   ]
+                ],
+                "explicitWeapons":[
+                  "Super", "IceMissile", "Diffusion", "ChargePlasma", "ChargeWidePlasma"
+                ],
+                "excludedWeapons":[
+                  "PowerBeam",
+                  "Charge",
+                  "SpeedBooster",
+                  "SpeedBoosterLv2",
+                  "Shinespark"
                 ]
               }
             }

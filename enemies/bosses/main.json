@@ -89,7 +89,15 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": [
+        "Grapple",
+        "UnchargedBeam",
+        "Bombs",
+        "PowerBombBlast",
+        "PowerBombPeriphery",
+        "BlueSuit",
+        "PseudoScrew"
+      ],
       "dropsUpgrade": [
         "Varia"
       ],
@@ -186,7 +194,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "invul": ["UnchargedBeam"],
       "dropsUpgrade": [],
       "areas": [
         "SRX"
@@ -341,7 +349,18 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": [
+        "Grapple",
+        "UnchargedBeam",
+        "Bombs",
+        "PowerBombBlast",
+        "PowerBombPeriphery",
+        "ScrewAttack",
+        "Shinespark",
+        "BlueSuit",
+        "SpeedEchoes",
+        "PseudoScrew"
+      ],
       "dropsUpgrade": [],
       "areas": [
         "AQA"
@@ -437,7 +456,14 @@
       "grapplable": false,
       "damageMultipliers": [],
       "invul": [
-        "UnchargedBeam"
+        "Grapple",
+        "UnchargedBeam",
+        "Bombs",
+        "ScrewAttack",
+        "Shinespark",
+        "BlueSuit",
+        "SpeedEchoes",
+        "PseudoScrew"
       ],
       "dropsUpgrade": [],
       "areas": [
@@ -533,7 +559,14 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": [
+        "Grapple",
+        "UnchargedBeam",
+        "Bombs",
+        "PowerBombBlast",
+        "PowerBombPeriphery",
+        "PseudoScrew"
+      ],
       "dropsUpgrade": [],
       "areas": [
         "NOC"
@@ -628,7 +661,17 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": [
+        "Grapple",
+        "UnchargedBeam",
+        "Bombs",
+        "PowerBombBlast",
+        "PowerBombPeriphery",
+        "ScrewAttack",
+        "Shinespark",
+        "BlueSuit",
+        "SpeedEchoes",
+        "PseudoScrew"],
       "dropsUpgrade": [],
       "areas": [
         "PYR"
@@ -756,7 +799,17 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": [
+        "Grapple",
+        "UnchargedBeam",
+        "Bombs",
+        "PowerBombBlast",
+        "PowerBombPeriphery",
+        "Shinespark",
+        "BlueSuit",
+        "SpeedEchoes",
+        "PseudoScrew"
+      ],
       "dropsUpgrade": [],
       "areas": [
         "ARC"
@@ -787,7 +840,17 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": [
+        "Grapple",
+        "UnchargedBeam",
+        "Bombs",
+        "PowerBombBlast",
+        "PowerBombPeriphery",
+        "Shinespark",
+        "BlueSuit",
+        "SpeedEchoes",
+        "PseudoScrew"
+      ],
       "dropsUpgrade": [],
       "areas": [
         "AQA"
@@ -851,7 +914,18 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": [
+        "Grapple",
+        "UnchargedBeam",
+        "Bombs",
+        "PowerBombBlast",
+        "PowerBombPeriphery",
+        "ScrewAttack",
+        "Shinespark",
+        "BlueSuit",
+        "SpeedEchoes",
+        "PseudoScrew"
+      ],
       "dropsUpgrade": [
         "SpikeBreaker"
       ],

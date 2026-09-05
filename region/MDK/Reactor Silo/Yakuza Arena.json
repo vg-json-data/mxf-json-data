@@ -195,7 +195,8 @@
                 "Yakuza",
                 "Yakuza Core-X"
               ]
-            ]
+            ],
+            "excludedWeapons":["PowerBeam","Charge"]
           }
         }
       ],

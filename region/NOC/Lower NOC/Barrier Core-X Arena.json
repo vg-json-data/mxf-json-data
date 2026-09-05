@@ -216,10 +216,16 @@
                 "Barrier Core-X"
               ]
             ],
+            "explicitWeapons": [
+              "Charge",
+              "ScrewAttack"
+            ],
             "excludedWeapons": [
               "SpeedBooster",
               "SpeedBoosterLv2",
-              "Shinespark"
+              "Shinespark",
+              "SpeedEchoes",
+              "UnchargedBeam"
             ]
           }
         }

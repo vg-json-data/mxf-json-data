@@ -216,14 +216,36 @@
       ],
       "requires": [
         {
-          "enemyKill": {
-            "enemies": [
-              [
-                "Serris-X",
-                "Serris-X Core"
+          "and": [
+            {
+              "or": [
+                "Grapple",
+                {
+                  "and": [
+                    "canConsecutiveSingleWallJump",
+                    "canSuitlessWaterRoom"
+                  ]
+                },
+                {
+                  "and": [
+                    "SuperJump",
+                    "canSuitlessWaterRoom"
+                  ]
+                },
+                "Gravity"
               ]
-            ]
-          }
+            },
+            {
+              "enemyKill": {
+                "enemies": [
+                  [
+                    "Serris-X"
+                  ]
+                ],
+                "explicitWeapons":["Super", "ScrewAttack"]
+              }
+            }
+          ]
         }
       ],
       "collectsItems": [

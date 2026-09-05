@@ -100,7 +100,8 @@
                     "Nightmare-X",
                     "Nightmare-X Core"
                   ]
-                ]
+                ],
+                "excludedWeapons":["PowerBeam","Charge","Speedbooster","SpeedBoosterLv2"]
               }
             }
           ]

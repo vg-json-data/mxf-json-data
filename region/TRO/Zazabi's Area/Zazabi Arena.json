@@ -442,7 +442,8 @@
                 "Zazabi-X (Red)",
                 "Zazabi Core-X"
               ]
-            ]
+            ],
+            "excludedWeapons":["Charge"]
           }
         }
       ],

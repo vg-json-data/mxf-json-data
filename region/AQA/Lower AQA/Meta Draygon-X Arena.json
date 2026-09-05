@@ -207,6 +207,17 @@
                     "Meta Draygon-X",
                     "Meta Draygon-X Core"
                   ]
+                ],
+                
+                "explicitWeapons":[
+                  "Super", "IceMissile", "Diffusion", "ChargePlasma", "ChargeWidePlasma"
+                ],
+                "excludedWeapons":[
+                  "PowerBeam",
+                  "Charge",
+                  "SpeedBooster",
+                  "SpeedBoosterLv2",
+                  "Shinespark"
                 ]
               }
             },

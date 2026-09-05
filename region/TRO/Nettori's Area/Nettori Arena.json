@@ -199,7 +199,8 @@
                     "Nettori",
                     "Plasma Core-X"
                   ]
-                ]
+                ],
+                "excludedWeapons":["PowerBeam","Charge"]
               }
             }
           ]
