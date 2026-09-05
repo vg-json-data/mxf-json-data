@@ -537,6 +537,35 @@
       "name": "Base",
       "link": [
         5,
+        2
+      ],
+      "requires": [
+        {
+          "or": [
+            {
+              "and": [
+                "Gravity",
+                {
+                  "heatFrames": 501
+                }
+              ]
+            },
+            {
+              "and": [
+                "canSuitlessLavaDive",
+                {
+                  "heatFrames": 328
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
         4
       ],
       "requires": [
@@ -599,6 +628,45 @@
     {
       "name": "Base",
       "link": [
+        5,
+        6
+      ],
+      "requires": [
+        {
+          "and": [
+            "ScrewAttack",
+            "SpaceJump",
+            "canTrivialMidAirMorph",
+            {
+              "heatFrames": 1152
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    "Gravity",
+                    {
+                      "heatFrames": 501
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "canSuitlessLavaDive",
+                    {
+                      "heatFrames": 328
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "link": [
         6,
         2
       ],
@@ -645,6 +713,6 @@
   ],
   "roomImageFile": "PYR Room 78F00.jpg",
   "roomAddress": "0x78F00",
-  "nextStratId": 12,
+  "nextStratId": 14,
   "nextNotableId": 1
 }

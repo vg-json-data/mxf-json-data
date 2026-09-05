@@ -209,6 +209,9 @@
             }
           ]
         }
+      ],
+      "setsFlags": [
+        "f_NeoCrocomire_Defeated"
       ]
     },
     {
