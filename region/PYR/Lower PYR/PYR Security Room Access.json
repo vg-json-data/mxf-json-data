@@ -228,7 +228,10 @@
         2,
         2
       ],
-      "requires": []
+      "requires": [],
+      "clearsObstacles": [
+        "C"
+      ]
     },
     {
       "name": "Base",
@@ -802,6 +805,9 @@
             }
           ]
         }
+      ],
+      "clearsObstacles": [
+        "C"
       ]
     },
     {

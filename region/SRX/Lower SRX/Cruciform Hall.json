@@ -183,6 +183,9 @@
             "steepDownTiles": 2
           }
         }
+      ],
+      "clearsObstacles": [
+        "A"
       ]
     },
     {
@@ -194,7 +197,10 @@
       "entranceCondition": {
         "comeInShinecharged": {}
       },
-      "requires": []
+      "requires": [],
+      "clearsObstacles": [
+        "A"
+      ]
     },
     {
       "name": "Base",
@@ -299,6 +305,9 @@
             "steepDownTiles": 2
           }
         }
+      ],
+      "clearsObstacles": [
+        "A"
       ]
     },
     {

@@ -856,6 +856,9 @@
             "count": 1
           }
         }
+      ],
+      "clearsObstacles": [
+        "D"
       ]
     },
     {
