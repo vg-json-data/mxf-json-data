@@ -25,7 +25,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "invul": ["Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "SRX"
@@ -56,7 +56,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "invul": ["Bombs"],
       "dropsUpgrade": [
         "Morph"
       ],
@@ -90,13 +90,18 @@
       "grapplable": false,
       "damageMultipliers": [],
       "invul": [
+        "Missile",
+        "Super",
+        "IceMissile",
+        "Diffusion",
         "Grapple",
         "UnchargedBeam",
         "Bombs",
         "PowerBombBlast",
         "PowerBombPeriphery",
         "BlueSuit",
-        "PseudoScrew"
+        "PseudoScrew",
+        "M"
       ],
       "dropsUpgrade": [
         "Varia"
@@ -130,7 +135,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "SuperMissile"
       ],
@@ -163,7 +168,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -194,7 +199,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "SRX"
@@ -225,7 +230,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "SRX"
@@ -256,7 +261,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -287,7 +292,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -318,7 +323,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -391,7 +396,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "SpeedBoosterLv2"
       ],
@@ -424,7 +429,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "PYR"
@@ -495,7 +500,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "ScrewAttack"
       ],
@@ -528,7 +533,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "TRO"
@@ -597,7 +602,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "Gravity"
       ],
@@ -630,7 +635,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "invul": ["Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "LX-0"
@@ -702,7 +707,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "Grapple"
       ],
@@ -735,7 +740,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "Plasma"
       ],
@@ -768,7 +773,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "invul": ["Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "DMX"
@@ -881,7 +886,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "SpeedBooster"
       ],
@@ -958,7 +963,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "invul": ["Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "SRX"
@@ -989,7 +994,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "invul": ["Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "TRO"
@@ -1020,7 +1025,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "Wave"
       ],
@@ -1053,7 +1058,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "Wide"
       ],
@@ -1128,7 +1133,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "SpaceJump"
       ],
@@ -1161,7 +1166,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [
         "SuperJump"
       ],
@@ -1194,7 +1199,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "TRO"
@@ -1225,7 +1230,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": ["UnchargedBeam"],
+      "invul": ["UnchargedBeam", "Bombs"],
       "dropsUpgrade": [],
       "areas": [
         "TRO"
