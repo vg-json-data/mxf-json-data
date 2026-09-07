@@ -170,7 +170,7 @@
   "enemies": [
     {
       "groupName": "Bull",
-      "enemyName": "Dessgeega",
+      "enemyName": "Bull",
       "quantity": 4,
       "betweenNodes": [
         1,
