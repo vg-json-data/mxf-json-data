@@ -111,9 +111,6 @@
         1,
         2
       ],
-      "entranceCondition": {
-        "comeInWithBlueSpeed": {}
-      },
       "requires": [
         {
           "or": [
@@ -131,6 +128,9 @@
             }
           ]
         }
+      ],
+      "clearsObstacles": [
+        "A"
       ],
       "collectsItems": [
         2
