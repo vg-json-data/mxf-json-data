@@ -144,7 +144,6 @@
                   "or": [
                     "f_EasyMode",
                     "f_NormalMode",
-                    "f_HardMode",
                     "f_SuperMode"
                   ]
                 }
