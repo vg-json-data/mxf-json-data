@@ -354,7 +354,7 @@
     {
       "connectionType": "ConnectionBridge",
       "description": "Connection Bridge connection between [Sector 0 Hard Exit Tube - Left Door] and [Just Don't Die Bend - Bottom-Right Door]",
-      "direction": "Bidirectional",
+      "direction": "Forward",
       "nodes": [
         {
           "area": "L-X",
