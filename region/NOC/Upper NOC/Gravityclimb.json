@@ -196,7 +196,33 @@
         2
       ],
       "requires": [
-        "canTrickyDodgeEnemies"
+        {
+          "or": [
+            {
+              "or": [
+                {
+                  "and": [
+                    "canDodgeWhileShooting",
+                    "Gravity"
+                  ]
+                },
+                "canTrickyDodgeEnemies"
+              ]
+            },
+            {
+              "ammo": {
+                "type": "Ice Missile",
+                "count": 3
+              }
+            },
+            {
+              "and": [
+                "ScrewAttack",
+                "Gravity"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
