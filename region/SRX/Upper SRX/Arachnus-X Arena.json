@@ -189,7 +189,7 @@
   ],
   "obstacles": [
     {
-      "name": "Crumble Blocks",
+      "name": "Crumble Blocks above Arachnus-X",
       "obstacleType": "inanimate",
       "id": "A"
     },
@@ -197,6 +197,11 @@
       "name": "Spike Blocks",
       "obstacleType": "inanimate",
       "id": "B"
+    },
+    {
+      "name": "Crumble Blocks under Top Door",
+      "obstacleType": "inanimate",
+      "id": "C"
     }
   ],
   "strats": [
@@ -219,13 +224,10 @@
         1,
         2
       ],
-      "requires": [
-        {
-          "obstaclesCleared": [
-            "B"
-          ]
-        }
-      ]
+      "resetsObstacles": [
+        "C"
+      ],
+      "requires": []
     },
     {
       "name": "Base",
@@ -307,25 +309,14 @@
         4,
         4
       ],
-      "requires": [
-        {
-          "enemyKill": {
-            "enemies": [
-              [
-                "Arachnus-X",
-                "Arachnus-X Core"
-              ]
-            ]
-          }
-        }
-      ],
       "collectsItems": [
         4
       ],
       "setsFlags": [
         "f_ArachnusXArena_CoreXAbsorbed",
         "f_ArachnusXArena_DoorsUnlocked"
-      ]
+      ],
+      "requires": []
     }
   ],
   "roomImageFile": "SRX Room 79800.jpg",
