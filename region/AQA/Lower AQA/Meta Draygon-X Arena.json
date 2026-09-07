@@ -235,11 +235,11 @@
                   ]
                 },
                 {
-                  "resourceCapacity": [
-                    {
-                      "type": "ReserveEnergy",
-                      "count": 200
-                    }
+                  "or": [
+                    "Charge",
+                    {"and": ["Wide", "Plasma"]},
+                    {"and": ["Wide", "Wave"]},
+                    {"and": ["Plasma", "Wave"]}
                   ]
                 },
                 {
@@ -247,12 +247,32 @@
                     {
                       "resourceCapacity": [
                         {
-                          "type": "Missile",
+                          "type": "ReserveEnergy",
                           "count": 200
                         }
                       ]
                     },
-                    "Charge"
+                    {
+                      "and": [
+                        "canBePatient",
+                        {
+                          "resourceCapacity": [
+                            {
+                              "type": "Energy",
+                              "count": 200
+                            }
+                          ]
+                        },
+                        {
+                          "resourceCapacity": [
+                            {
+                              "type": "Missile",
+                              "count": 45
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
