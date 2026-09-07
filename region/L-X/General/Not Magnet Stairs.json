@@ -136,7 +136,21 @@
         {
           "name": "Locked on Escape",
           "lockType": "gameFlag",
-          "unlockStrats": [],
+          "unlockStrats": [
+            {
+              "name": "Unlock Door",
+              "requires": [
+                {
+                  "or": [
+                    "f_EasyMode",
+                    "f_NormalMode",
+                    "f_HardMode",
+                    "f_SuperMode"
+                  ]
+                }
+              ]
+            }
+          ],
           "lock": [
             "f_OmegaMetroidArena_EscapeActivated"
           ]
