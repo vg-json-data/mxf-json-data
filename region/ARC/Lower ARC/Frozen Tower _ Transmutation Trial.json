@@ -273,6 +273,27 @@
       ]
     },
     {
+      "name": "Kill Red Geron",
+      "link": [
+        2,
+        2
+      ],
+      "requires": [
+        {
+          "and": [
+            "f_ARCAuxiliaryRoom_Engaged",
+            "h_killRedGeron"
+          ]
+        }
+      ],
+      "clearsObstacles": [
+        "A"
+      ],
+      "setsFlags": [
+        "f_FrozenTower_RedGeronDestroyed"
+      ]
+    },
+    {
       "name": "Base",
       "link": [
         2,
@@ -284,7 +305,29 @@
             {
               "coldFrames": 500
             },
-            "SpaceJump"
+            {
+              "or": [
+                "SpaceJump",
+                {
+                  "and": [
+                    "canTrickyDodgeEnemies",
+                    "canIBJ"
+                  ]
+                },
+                "canConsecutiveSingleWallJump",
+                {
+                  "and": [
+                    "f_ARCAuxiliaryRoom_Engaged",
+                    "canTrivialUseFrozenEnemies"
+                  ]
+                }
+              ]
+            },
+            {
+              "obstaclesCleared": [
+                "A"
+              ]
+            }
           ]
         }
       ]
@@ -651,6 +694,6 @@
   ],
   "roomImageFile": "ARC Room 79A00.jpg",
   "roomAddress": "0x79A00",
-  "nextStratId": 18,
+  "nextStratId": 19,
   "nextNotableId": 1
 }
