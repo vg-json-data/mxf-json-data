@@ -516,7 +516,7 @@
       "freezable": false,
       "grapplable": false,
       "damageMultipliers": [],
-      "invul": [],
+      "invul": ["ChargedBeam", "UnchargedBeam"],
       "areas": [
         "PYR"
       ],

@@ -88,7 +88,22 @@
       "setsFlags": [
         "f_BoilerRoom_ReserveXCollected"
       ],
-      "requires": []
+      "requires": [
+        {
+          "enemyKill": {
+            "enemies": [
+              ["Golden Zero-X"],
+              ["Golden Sciser-X"],
+              ["Golden Moto-X"],
+              ["Golden Gerubus-X"],
+              ["Golden Bull-X"],
+              ["Gold Space Pirate"]
+            ],
+            "explicitWeapons": ["ScrewAttack", "Super"],
+            "excludedWeapons": ["Missile"]
+          }
+        }
+      ]
     }
   ],
   "roomImageFile": "PYR Room 7A600.jpg",
