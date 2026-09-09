@@ -73,6 +73,8 @@
       "color": "#8d0cad",
       "nodeItem": "Bombs",
       "nodeAddress": "0x0",
+      "mapTileX": 29,
+      "mapTileY": 13,
       "note": ""
     }
   ],

@@ -56,6 +56,8 @@
       "color": "#8d0cad",
       "nodeItem": "Etecoon",
       "nodeAddress": "0x0",
+      "mapTileX": 31,
+      "mapTileY": 9,
       "note": ""
     }
   ],

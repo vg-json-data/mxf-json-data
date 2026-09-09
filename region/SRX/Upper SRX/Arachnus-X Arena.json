@@ -184,6 +184,8 @@
       "color": "#8d0cad",
       "nodeItem": "Morph",
       "nodeAddress": "0x0",
+      "mapTileX": 32,
+      "mapTileY": 12,
       "note": ""
     }
   ],

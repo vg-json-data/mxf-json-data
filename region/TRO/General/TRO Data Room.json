@@ -73,6 +73,8 @@
       "color": "#8d0cad",
       "nodeItem": "Charge",
       "nodeAddress": "0x0",
+      "mapTileX": 25,
+      "mapTileY": 21,
       "note": ""
     }
   ],

@@ -79,6 +79,8 @@
       "color": "#8d0cad",
       "nodeItem": "Wide",
       "nodeAddress": "0x0",
+      "mapTileX": 26,
+      "mapTileY": 16,
       "note": ""
     }
   ],

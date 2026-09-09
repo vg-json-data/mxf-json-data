@@ -159,6 +159,8 @@
       "color": "#8d0cad",
       "nodeItem": "Varia",
       "nodeAddress": "0x0",
+      "mapTileX": 24,
+      "mapTileY": 13,
       "note": ""
     }
   ],

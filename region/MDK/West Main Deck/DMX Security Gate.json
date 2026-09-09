@@ -55,6 +55,8 @@
       ],
       "color": "#ffffff",
       "nodeAddress": "0x0",
+      "mapTileX": 30,
+      "mapTileY": 15,
       "doorOrientation": "up",
       "doorEnvironments": [
         {

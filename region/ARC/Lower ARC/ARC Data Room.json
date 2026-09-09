@@ -96,6 +96,8 @@
       "color": "#8d0cad",
       "nodeItem": "IceMissile",
       "nodeAddress": "0x0",
+      "mapTileX": 31,
+      "mapTileY": 21,
       "note": ""
     }
   ],

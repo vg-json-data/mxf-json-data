@@ -187,6 +187,8 @@
       "color": "#8d0cad",
       "nodeItem": "Grapple",
       "nodeAddress": "0x0",
+      "mapTileX": 44,
+      "mapTileY": 20,
       "note": ""
     }
   ],

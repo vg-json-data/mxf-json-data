@@ -161,6 +161,8 @@
       "color": "#8d0cad",
       "nodeItem": "SpeedBooster",
       "nodeAddress": "0x0",
+      "mapTileX": 22,
+      "mapTileY": 8,
       "note": ""
     }
   ],

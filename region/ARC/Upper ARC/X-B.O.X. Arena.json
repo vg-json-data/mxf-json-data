@@ -165,6 +165,8 @@
       "color": "#8d0cad",
       "nodeItem": "Wave",
       "nodeAddress": "0x0",
+      "mapTileX": 30,
+      "mapTileY": 16,
       "note": ""
     }
   ],

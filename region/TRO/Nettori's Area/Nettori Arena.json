@@ -102,6 +102,8 @@
       "color": "#8d0cad",
       "nodeItem": "Plasma",
       "nodeAddress": "0x0",
+      "mapTileX": 37,
+      "mapTileY": 16,
       "note": ""
     },
     {

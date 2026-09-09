@@ -56,6 +56,8 @@
       "color": "#8d0cad",
       "nodeItem": "ScrewAttack",
       "nodeAddress": "0x0",
+      "mapTileX": 33,
+      "mapTileY": 24,
       "note": ""
     }
   ],

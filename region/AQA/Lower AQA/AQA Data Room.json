@@ -73,6 +73,8 @@
       "color": "#8d0cad",
       "nodeItem": "DiffusionMissile",
       "nodeAddress": "0x0",
+      "mapTileX": 30,
+      "mapTileY": 18,
       "note": ""
     }
   ],

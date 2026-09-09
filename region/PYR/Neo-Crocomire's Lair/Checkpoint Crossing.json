@@ -118,6 +118,8 @@
       "color": "#8d0cad",
       "nodeItem": "AuxPowerCell",
       "nodeAddress": "0x0",
+      "mapTileX": 43,
+      "mapTileY": 15,
       "note": ""
     }
   ],

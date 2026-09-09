@@ -225,6 +225,8 @@
       "color": "#8d0cad",
       "nodeItem": "SuperJump",
       "nodeAddress": "0x0",
+      "mapTileX": 33,
+      "mapTileY": 21,
       "note": ""
     },
     {
