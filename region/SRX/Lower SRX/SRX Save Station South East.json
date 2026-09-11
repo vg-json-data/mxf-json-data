@@ -54,7 +54,9 @@
         }
       ],
       "color": "#3a3ac2",
-      "nodeAddress": "0x0"
+      "nodeAddress": "0x0",
+      "mapTileX": 34,
+      "mapTileY": 20
     }
   ],
   "strats": [
