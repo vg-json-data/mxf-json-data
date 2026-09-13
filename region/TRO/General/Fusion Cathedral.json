@@ -341,18 +341,12 @@
     {
       "name": "Base",
       "link": [
-        5,
+        4,
         4
       ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        5,
-        11
-      ],
-      "requires": []
+      "requires": [
+        "Morph"
+      ]
     },
     {
       "name": "Base",
@@ -361,16 +355,6 @@
         5
       ],
       "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        4,
-        4
-      ],
-      "requires": [
-        "Morph"
-      ]
     },
     {
       "name": "Base",
@@ -430,6 +414,22 @@
     {
       "name": "Base",
       "link": [
+        5,
+        4
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        5,
+        11
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
         6,
         8
       ],
@@ -485,13 +485,27 @@
       "entranceCondition": {
         "comeInShinecharged": {}
       },
-      "requires": []
+      "requires": [
+        {
+          "and": [
+            "canShinechargeMovementComplex",
+            {
+              "shinespark": {
+                "frames": 25
+              }
+            },
+            {
+              "shineChargeFrames": 50
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Base",
       "link": [
-        8,
-        6
+        7,
+        8
       ],
       "requires": []
     },
@@ -499,7 +513,7 @@
       "name": "Base",
       "link": [
         8,
-        9
+        6
       ],
       "requires": []
     },
@@ -515,32 +529,16 @@
     {
       "name": "Base",
       "link": [
+        8,
+        9
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
         9,
         8
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        7,
-        8
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        11,
-        5
-      ],
-      "requires": []
-    },
-    {
-      "name": "Base",
-      "link": [
-        11,
-        6
       ],
       "requires": []
     },
@@ -582,14 +580,27 @@
     },
     {
       "name": "Base",
+      "link": [
+        11,
+        5
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
+      "link": [
+        11,
+        6
+      ],
+      "requires": []
+    },
+    {
+      "name": "Base",
       "requires": []
     }
   ],
   "roomImageFile": "TRO Room 79600x.jpg",
   "roomAddress": "0x79600",
   "nextStratId": 24,
-  "nextNotableId": 1,
-  "obstacles": [],
-  "enemies": [],
-  "notables": []
+  "nextNotableId": 1
 }
